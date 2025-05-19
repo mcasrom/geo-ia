@@ -1,0 +1,57 @@
+#+TITLE: 🔹 Strategic Syntax with Emacs
+#+SUBTITLE: Org Mode, AI, and Defense in the Digital Age
+#+OPTIONS: toc:nil num:nil
+#+DESCRIPTION: Welcome to Strategic Syntax with Emacs - Explore Emacs, Org Mode, and digital security.
+#+KEYWORDS: emacs, org-mode, programming, security, tutorials
+
+* Welcome to Strategic Syntax
+
+Explore the universe of Emacs, Org Mode, and digital security through articles, tutorials, and strategic analyses.
+
+* Recent Posts
+
+
+* Explore by Category
+
+- [[file:categories/blog.html][Blog]]
+- [[file:categories/technology.html][Technology]]
+- [[file:categories/tutorials.html][Tutorials]]
+- [[file:categories/reviews.html][Reviews]]
+- [[file:categories/personal.html][Personal]]
+- [[file:categories/security.html][Security]]
+- [[file:categories/orgmode.html][Orgmode]]
+** [[file:posts/testtest][testtest]]
+   /2025-05-06/
+
+   Write a brief description here...
+
+   [[/images/default.jpg][View featured image]]
+
+** [[file:posts/test][test]]
+   /2025-05-06/
+
+   Write a brief description here...
+
+   [[/images/default.jpg][View featured image]]
+
+** [[file:posts/polarizacin-sesgos-y-motivos-en-los-principales-chats-con-ia][Polarización, Sesgos y Motivos en los Principales Chats con IA]]
+   /2025-05-06/
+
+   Análisis crítico sobre la polarización, los sesgos y los intereses que influyen en modelos de lenguaje
+
+   [[/images/default.jpg][View featured image]]
+
+** [[file:posts/new-post][New Post]]
+   /2025-05-06/
+
+   Write a brief description here...
+
+   [[/images/default.jpg][View featured image]]
+
+** [[file:posts/interferencias-rusas-y-americanas-en-procesos-electorales-un-an-lisis-geopol-tico][Interferencias Rusas y Americanas en Procesos Electorales: Un Análisis Geopolítico]]
+   /2025-05-05/
+
+   Contextualización del fenómeno de interferencia electoral como herramienta de política exterior y proyección de poder geopolítico.
+
+   [[/images/ingerencias.png][View featured image]]
+
