@@ -1,0 +1,7 @@
+posts/
+pages/
+drafts/
+*.el
+backup/
+public_html/
+README.md

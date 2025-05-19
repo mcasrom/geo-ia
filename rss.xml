@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>El Mapa y el Código</title>
+<link>https://mcasrom.github.io/El-Mapa-y-el-C-digo/</link>
+<description>Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico.</description>
+<item>
+<title>"El poder del Ártico"</title>
+<link>https://mcasrom.github.io/El-Mapa-y-el-C-digo/posts/nuevo-articulo.html</link>
+<pubDate>dom, 18 may 2025 12:09:29 +0000</pubDate>
+<guid>https://mcasrom.github.io/El-Mapa-y-el-C-digo/posts/nuevo-articulo.html</guid>
+</item>
+<item>
+<title>Mapa Estratégico Global 2025</title>
+<link>https://mcasrom.github.io/El-Mapa-y-el-C-digo/posts/2025-05-17-mapa-estrategico.html</link>
+<pubDate>sáb, 17 may 2025 00:00:00 +0000</pubDate>
+<guid>https://mcasrom.github.io/El-Mapa-y-el-C-digo/posts/2025-05-17-mapa-estrategico.html</guid>
+</item>
+</channel>
+</rss>

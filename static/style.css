@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  max-width: 850px;
+  margin: auto;
+  background: #fefefe;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+.header, .nav, footer {
+  text-align: center;
+}
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #0077cc;
+}
+footer {
+  margin-top: 2rem;
+  font-size: 0.9em;
+  color: #666;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+

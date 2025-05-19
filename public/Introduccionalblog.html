@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduccionalblog</title>
+  <meta name="description" content="Blog creado con Emacs y Org-mode">
+  <meta name="author" content="Autor Desconocido">
+  <meta property="og:title" content="Introduccionalblog">
+  <meta property="og:description" content="Blog creado con Emacs y Org-mode">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/estilo/style.css">
+</head>
+<body>
+  <header class="nav">
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/posts/">Posts</a></li>
+        <li><a href="/pages/">Páginas</a></li>
+        <li><a href="/about.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Introduccionalblog</h1>
+    <h2>Blog GPT con Emacs</h2>
+    <p>
+<i>* Estilo mejorado para BlogGPT *</i>
+</p>
+
+<p>
+<i>* Variables y estilos base *</i>
+:root {
+  &#x2013;primary-color: #3498db;
+  &#x2013;secondary-color: #2c3e50;
+  &#x2013;accent-color: #e74c3c;
+  &#x2013;light-bg: #f9f9f9;
+  &#x2013;dark-bg: #1a1a1a;
+  &#x2013;text-color: #333;
+  &#x2013;light-text: #f9f9f9;
+  &#x2013;link-color: #2980b9;
+  &#x2013;link-hover: #3498db;
+  &#x2013;border-color: #ddd;
+  &#x2013;code-bg: #f6f8fa;
+  &#x2013;code-color: #24292e;
+  &#x2013;blockquote-bg: #f9f9f9;
+  &#x2013;blockquote-border: #e5e5e5;
+  &#x2013;success-color: #27ae60;
+  &#x2013;warning-color: #f39c12;
+  &#x2013;error-color: #e74c3c;
+  &#x2013;font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  &#x2013;font-mono: 'Cascadia Code', 'Fira Code', monospace;
+}
+</p>
+
+<p>
+<i>* Estilos básicos *</i>
+body {
+  font-family: var(&#x2013;font-sans);
+  line-height: 1.6;
+  color: var(&#x2013;text-color);
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+</p>
+
+<p>
+<i>* Encabezado y navegación *</i>
+header.nav {
+  background-color: var(&#x2013;secondary-color);
+  padding: 1em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+</p>
+
+<p>
+header.nav nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+</p>
+
+<p>
+header.nav nav ul li a {
+  color: var(&#x2013;light-text);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5em 0.8em;
+  border-radius: 4px;
+}
+</p>
+
+<p>
+header.nav nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+</p>
+
+<p>
+<i>* Contenido principal *</i>
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1.5em;
+}
+</p>
+
+<p>
+<i>* Títulos *</i>
+h1, h2, h3, h4, h5, h6 {
+  color: var(&#x2013;secondary-color);
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  line-height: 1.3;
+}
+</p>
+
+<p>
+h1 {
+  font-size: 2.5em;
+  border-bottom: 1px solid var(&#x2013;border-color);
+  padding-bottom: 0.3em;
+}
+</p>
+
+<p>
+h2 {
+  font-size: 1.8em;
+}
+</p>
+
+<p>
+h3 {
+  font-size: 1.5em;
+}
+</p>
+
+<p>
+<i>* Enlaces *</i>
+a {
+  color: var(&#x2013;link-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+</p>
+
+<p>
+a:hover {
+  color: var(&#x2013;link-hover);
+  text-decoration: underline;
+}
+</p>
+
+<p>
+<i>* Código *</i>
+code {
+  font-family: var(&#x2013;font-mono);
+  background-color: var(&#x2013;code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: var(&#x2013;code-color);
+}
+</p>
+
+<p>
+pre {
+  background-color: var(&#x2013;code-bg);
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  border: 1px solid var(&#x2013;border-color);
+}
+</p>
+
+<p>
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+</p>
+
+<p>
+<i>* Citas *</i>
+blockquote {
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  background-color: var(&#x2013;blockquote-bg);
+  border-left: 4px solid var(&#x2013;blockquote-border);
+  font-style: italic;
+}
+</p>
+
+<p>
+<i>* Listas *</i>
+ul, ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
+}
+</p>
+
+<p>
+li {
+  margin-bottom: 0.5em;
+}
+</p>
+
+<p>
+<i>* Tablas *</i>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+</p>
+
+<p>
+th, td {
+  padding: 0.75em;
+  border: 1px solid var(&#x2013;border-color);
+}
+</p>
+
+<p>
+th {
+  background-color: var(&#x2013;light-bg);
+  text-align: left;
+}
+</p>
+
+<p>
+<i>* Formularios *</i>
+.form-group {
+  margin-bottom: 1.5em;
+}
+</p>
+
+<p>
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+</p>
+
+<p>
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid var(&#x2013;border-color);
+  border-radius: 4px;
+  font-family: var(&#x2013;font-sans);
+  font-size: 1em;
+}
+</p>
+
+<p>
+button, input[type="submit"] {
+  background-color: var(&#x2013;primary-color);
+  color: white;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+</p>
+
+<p>
+button:hover, input[type="submit"]:hover {
+  background-color: var(&#x2013;link-hover);
+}
+</p>
+
+<p>
+<i>* Pie de página *</i>
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background-color: var(&#x2013;light-bg);
+  color: var(&#x2013;text-color);
+  font-size: 0.9em;
+  border-top: 1px solid var(&#x2013;border-color);
+  margin-top: 3em;
+}
+</p>
+
+<p>
+<i>* Última lista de posts en página de inicio *</i>
+.latest-posts {
+  background-color: var(&#x2013;light-bg);
+  padding: 1.5em;
+  border-radius: 8px;
+  margin: 2em 0;
+}
+</p>
+
+<p>
+.latest-posts h2 {
+  margin-top: 0;
+  border-bottom: 1px solid var(&#x2013;border-color);
+  padding-bottom: 0.5em;
+}
+</p>
+
+<p>
+#latest-posts-list {
+  list-style: none;
+  padding: 0;
+}
+</p>
+
+<p>
+#latest-posts-list li {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(&#x2013;border-color);
+}
+</p>
+
+<p>
+#latest-posts-list li:last-child {
+  border-bottom: none;
+}
+</p>
+
+<p>
+.post-date {
+  color: #777;
+  font-size: 0.9em;
+  margin-left: 0.5em;
+}
+</p>
+
+<p>
+.more-link {
+  display: inline-block;
+  margin-top: 1em;
+  font-weight: 600;
+}
+</p>
+
+<p>
+<i>* Responsividad *</i>
+@media (max-width: 768px) {
+  header.nav nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+</p>
+
+<p>
+h1 {
+  font-size: 2em;
+}
+</p>
+
+<p>
+  main {
+    padding: 0 1em;
+  }
+}
+</p>
+
+<p>
+<i>* Clases de utilidad *</i>
+.text-center {
+  text-align: center;
+}
+</p>
+
+<p>
+.text-success {
+  color: var(&#x2013;success-color);
+}
+</p>
+
+<p>
+.text-warning {
+  color: var(&#x2013;warning-color);
+}
+</p>
+
+<p>
+.text-error {
+  color: var(&#x2013;error-color);
+}
+</p>
+
+<p>
+<i>* Estilos para posts *</i>
+.post-meta {
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+</p>
+
+<p>
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+</p>
+
+<p>
+.tag {
+  background-color: var(&#x2013;light-bg);
+  padding: 0.3em 0.8em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  color: var(&#x2013;secondary-color);
+  border: 1px solid var(&#x2013;border-color);
+}
+</p>
+
+<p>
+<i>* Modo oscuro (opcional - para implementar más tarde) *</i>
+@media (prefers-color-scheme: dark) {
+  :root {
+    &#x2013;text-color: #e0e0e0;
+    &#x2013;light-bg: #333;
+    &#x2013;code-bg: #2d2d2d;
+    &#x2013;code-color: #e0e0e0;
+    &#x2013;blockquote-bg: #333;
+    &#x2013;blockquote-border: #555;
+    &#x2013;border-color: #444;
+  }
+</p>
+
+<p>
+body {
+  background-color: var(&#x2013;dark-bg);
+}
+</p>
+
+<p>
+a {
+  color: #64b5f6;
+}
+</p>
+
+<p>
+a:hover {
+  color: #90caf9;
+}
+</p>
+
+<p>
+  h1, h2, h3, h4, h5, h6 {
+    color: #90caf9;
+  }
+}
+</p>
+
+  </main>
+  <footer>
+    Autor: Autor Desconocido | Fecha: 2025-05-16 | © 2025
+  </footer>
+</body>
+</html>

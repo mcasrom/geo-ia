@@ -1,0 +1,29 @@
+#+TITLE: Blog Statistics
+#+DATE: 2025-05-06
+
+* General Summary
+- Published posts: 4
+- Drafts: 0
+- Pages: 1
+- Total words: 5358
+- Average words per post: 1339.5
+- Average reading time: 7.5 minutes
+
+* Categories
+- blog: 4 posts
+
+* Top Tags
+- emacs: 2 times
+- linux: 1 times
+- IA Sesgos Polarización ChatGPT Claude opiniones emacs: 1 times
+- opiniones: 1 times
+- democracia: 1 times
+- seguridad_nacional: 1 times
+- inteligencia: 1 times
+- relaciones_internacionale: 1 times
+- geopolitica: 1 times
+
+* Publishing Frequency
+- First post: 2025-05-05
+- Latest post: 2025-05-06
+- Posts in last 30 days: 4
