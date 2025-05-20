@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-20 mar 11:16 -->
+<!-- 2025-05-20 mar 11:15 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>New Post</title>
+<title>Post de Prueba: Visualizando Geoestrategia con Diagramas</title>
 <meta name="author" content="M. Castillo" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
@@ -204,13 +204,130 @@
  |
  <a accesskey="H" href="../index.html"> HOME </a>
 </div><div id="content" class="content">
-<h1 class="title">New Post
+<h1 class="title">Post de Prueba: Visualizando Geoestrategia con Diagramas
 <br />
-<span class="subtitle">subtittle</span>
+<span class="subtitle">Explorando herramientas de diagramación en Org-mode</span>
 </h1>
+<div id="outline-container-org2fa4e91" class="outline-2">
+<h2 id="org2fa4e91"><span class="section-number-2">1.</span> Introducción</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-Contenido inicial del post&#x2026;
+Este es un post de prueba para demostrar cómo generar imágenes en el blog utilizando PlantUML, Org Plot y Graphviz. Cada bloque de código incluye directivas `:file` para especificar el nombre de la imagen generada y `:exports both` para incluir tanto el código como el resultado en el HTML exportado.
 </p>
+</div>
+</div>
+<div id="outline-container-org2acd2d8" class="outline-2">
+<h2 id="org2acd2d8"><span class="section-number-2">2.</span> Diagrama de Secuencia con PlantUML</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+A continuación, un diagrama de secuencia que representa una interacción entre dos actores en un contexto geopolítico.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-plantuml">@startuml
+!theme cerulean
+actor "País A" as A
+actor "País B" as B
+A -&gt; B: Propuesta de tratado
+B --&gt; A: Respuesta favorable
+A -&gt; B: Firma del acuerdo
+note right: Acuerdo firmado el 2025-05-20
+@enduml
+</pre>
+</div>
+
+
+<div id="orgb30a899" class="figure">
+<p><img src="plantuml-test.png" alt="plantuml-test.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org1c74e4f" class="outline-2">
+<h2 id="org1c74e4f"><span class="section-number-2">3.</span> Gráfico de Tendencias con Org Plot</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Este gráfico muestra el crecimiento hipotético del gasto en defensa de un país entre 2020 y 2024.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-right">Gasto (miles de millones)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2020</td>
+<td class="org-right">100</td>
+</tr>
+
+<tr>
+<td class="org-right">2021</td>
+<td class="org-right">120</td>
+</tr>
+
+<tr>
+<td class="org-right">2022</td>
+<td class="org-right">150</td>
+</tr>
+
+<tr>
+<td class="org-right">2023</td>
+<td class="org-right">180</td>
+</tr>
+
+<tr>
+<td class="org-right">2024</td>
+<td class="org-right">200</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org92439a4" class="outline-2">
+<h2 id="org92439a4"><span class="section-number-2">4.</span> Diagrama de Relaciones con Graphviz</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Este diagrama representa relaciones geopolíticas entre tres países.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-dot">digraph G {
+  rankdir=LR;
+  A [label="Pa&#237;s A"];
+  B [label="Pa&#237;s B"];
+  C [label="Pa&#237;s C"];
+  A -&gt; B [label="Alianza"];
+  B -&gt; C [label="Conflicto"];
+  C -&gt; A [label="Neutral"];
+}
+</pre>
+</div>
+
+
+<div id="org9c11eb2" class="figure">
+<p><img src="graphviz-test.png" alt="graphviz-test.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org76cbcd1" class="outline-2">
+<h2 id="org76cbcd1"><span class="section-number-2">5.</span> Conclusión</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Los diagramas generados con PlantUML, Org Plot y Graphviz son herramientas poderosas para visualizar conceptos complejos en el análisis geopolítico. Este post de prueba demuestra cómo integrarlos en el blog "El Mapa y el Código" utilizando Org-mode.
+</p>
+</div>
+</div>
 </div>
 </body>
 </html>
