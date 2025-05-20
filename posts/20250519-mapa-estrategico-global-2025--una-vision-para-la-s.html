@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-05-20 mar 07:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mapa Estratégico Global 2025: Una Visión para la Sostenibilidad y el Progreso</title>
+<meta name="author" content="M. Castillo" />
+<meta name="description" content="Un análisis detallado del Mapa Estratégico Global 2025, con un diagrama PlantUML y estrategias para alinear objetivos globales en un mundo complejo." />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<meta charset="UTF-8"/>
+   <link rel="stylesheet" type="text/css" href="../style.css?v=1"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <link rel="alternate" type="application/rss+xml" href="../rss.xml" title="RSS Feed"/>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href="./"> UP </a>
+ |
+ <a accesskey="H" href="./index.html"> HOME </a>
+</div><div id="content" class="content">
+<h1 class="title">Mapa Estratégico Global 2025: Una Visión para la Sostenibilidad y el Progreso
+<br />
+<span class="subtitle">Mapa Estratégico Global 2025: Una Visión para la Sostenibilidad y el Progreso</span>
+</h1>
+<div id="outline-container-org944e5d3" class="outline-2">
+<h2 id="org944e5d3"><span class="section-number-2">1.</span> Introducción</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+En un mundo marcado por la incertidumbre económica, el cambio climático y la rápida transformación digital, la planificación estratégica para 2025 debe ser ágil, integral y orientada a resultados sostenibles. El <b><b>Mapa Estratégico Global 2025</b></b> propone un marco para alinear objetivos en cuatro perspectivas del <b>Balanced Scorecard</b> (BSC): financiera, cliente/sociedad, procesos internos, y aprendizaje y crecimiento. Este post analiza cómo gobiernos, organizaciones y comunidades pueden colaborar para alcanzar los Objetivos de Desarrollo Sostenible (ODS) y abordar desafíos globales, utilizando un diagrama PlantUML para visualizar las relaciones causales entre objetivos.
+</p>
+</div>
+</div>
+<div id="outline-container-org06d34b8" class="outline-2">
+<h2 id="org06d34b8"><span class="section-number-2">2.</span> Contexto Global 2025</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+El panorama global en 2025 está definido por:
+</p>
+
+<ul class="org-ul">
+<li><b><b>Crisis climática</b></b>: La emergencia planetaria exige reducir emisiones (por ejemplo, el Plan Estratégico TMB 2025 apunta a -17,000 toneladas de CO2).[](<a href="https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico">https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico</a>)</li>
+<li><b><b>Desigualdad</b></b>: Hasta 1,000 millones de personas podrían vivir en pobreza extrema para 2030 si no se actúa.[](<a href="https://strategicplan.undp.org/es/">https://strategicplan.undp.org/es/</a>)</li>
+<li><b><b>Transformación digital</b></b>: El 37% de las empresas sienten que sus ambiciones superan sus capacidades tecnológicas.[](<a href="https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/">https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/</a>)</li>
+<li><b><b>Competitividad</b></b>: El 39% de las empresas perciben que sus competidores avanzan más rápido.[](<a href="https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/">https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/</a>)</li>
+</ul>
+
+<p>
+El <b>Balanced Scorecard</b> ofrece un marco robusto para traducir la visión global en acciones concretas, conectando objetivos a través de relaciones causales.[](<a href="https://blog.mercately.com/marketing/mapa-estrategico/">https://blog.mercately.com/marketing/mapa-estrategico/</a>)
+</p>
+</div>
+</div>
+<div id="outline-container-org1e662dc" class="outline-2">
+<h2 id="org1e662dc"><span class="section-number-2">3.</span> Mapa Estratégico Global 2025</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Un mapa estratégico visualiza cómo los objetivos en las cuatro perspectivas del BSC se interconectan para crear valor. A continuación, presento un diagrama PlantUML que representa el Mapa Estratégico Global 2025, seguido de un análisis detallado.
+</p>
+
+<p>
+<b><b>Diagrama PlantUML</b></b>
+</p>
+
+
+<div id="org24ab3f0" class="figure">
+<p><img src="mapa-estrategico-2025.png" alt="mapa-estrategico-2025.png" />
+</p>
+</div>
+
+<p>
+Este diagrama ilustra cómo los objetivos se refuerzan mutuamente:
+</p>
+<ul class="org-ul">
+<li><b><b>Financiera</b></b>: Maximizar retornos sostenibles (F1) depende de optimizar recursos (F2) y reducir pobreza (C1).</li>
+<li><b><b>Sociedad</b></b>: Reducir pobreza (C1) impulsa retornos (F1), apoyado por acceso a servicios (C2) y equidad (C3).</li>
+<li><b><b>Procesos</b></b>: Tecnologías verdes (P1) mejoran servicios (C2), mientras que la colaboración multilateral (P3) promueve equidad (C3).</li>
+<li><b><b>Aprendizaje</b></b>: Capacidades digitales (A1) y la innovación (A3) habilitan tecnologías verdes (P1).</li>
+</ul>
+
+<p>
+<b><b>Análisis de Perspectivas</b></b>
+</p>
+
+<ol class="org-ol">
+<li><b><b>Perspectiva Financiera</b></b>:
+<ul class="org-ul">
+<li><b><b>F1: Maximizar retorno sostenible</b></b>: Priorizar inversiones en proyectos con impacto social y ambiental, como energías renovables (ejemplo: TMB 2025 reduce consumo energético un 6%).[](<a href="https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico">https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico</a>)</li>
+<li><b><b>F2: Optimizar recursos globales</b></b>: Reducir desperdicios en cadenas de suministro globales, apoyado por procesos internos (P2).</li>
+</ul></li>
+
+<li><b><b>Perspectiva Sociedad/Cliente</b></b>:
+<ul class="org-ul">
+<li><b><b>C1: Reducir pobreza extrema</b></b>: El PNUD estima que 1,000 millones podrían caer en pobreza extrema para 2030 sin acción. Estrategias incluyen transferencias sociales y empleo inclusivo.[](<a href="https://strategicplan.undp.org/es/">https://strategicplan.undp.org/es/</a>)</li>
+<li><b><b>C2: Mejorar acceso a servicios básicos</b></b>: Salud, educación y agua potable son fundamentales (ODS 3, 4, 6).</li>
+<li><b><b>C3: Promover equidad</b></b>: Iniciativas como las del PNUD 2022-2025 fomentan alianzas con comunidades marginadas.[](<a href="https://www.undp.org/es/publicaciones/plan-estrategico-del-pnud-2022-2025">https://www.undp.org/es/publicaciones/plan-estrategico-del-pnud-2022-2025</a>)</li>
+</ul></li>
+
+<li><b><b>Perspectiva Procesos Internos</b></b>:
+<ul class="org-ul">
+<li><b><b>P1: Implementar tecnologías verdes</b></b>: Ejemplo: TMB usa energía de metro para cargar autobuses.[](<a href="https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico">https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico</a>)</li>
+<li><b><b>P2: Optimizar cadenas de suministro</b></b>: Reducir huella de carbono mediante logística eficiente.</li>
+<li><b><b>P3: Fomentar colaboración multilateral</b></b>: El PNUD promueve alianzas para desafíos globales (pandemias, transiciones ecológicas).[](<a href="https://strategicplan.undp.org/es/">https://strategicplan.undp.org/es/</a>)</li>
+</ul></li>
+
+<li><b><b>Perspectiva Aprendizaje y Crecimiento</b></b>:
+<ul class="org-ul">
+<li><b><b>A1: Desarrollar capacidades digitales</b></b>: Capacitación en IA y ciberseguridad para cerrar brechas tecnológicas.[](<a href="https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/">https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/</a>)</li>
+<li><b><b>A2: Capacitar talento global</b></b>: Formación en habilidades verdes y liderazgo.</li>
+<li><b><b>A3: Fomentar innovación</b></b>: Inversión en I+D para soluciones sostenibles.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd07f913" class="outline-2">
+<h2 id="orgd07f913"><span class="section-number-2">4.</span> Implementación y Monitoreo</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+La creación del mapa estratégico sigue estos pasos:[](<a href="https://blog.mercately.com/marketing/mapa-estrategico/">https://blog.mercately.com/marketing/mapa-estrategico/</a>)
+</p>
+<ol class="org-ol">
+<li>Definir misión y visión global (por ejemplo, ODS 2030).</li>
+<li>Identificar objetivos estratégicos por perspectiva.</li>
+<li>Establecer relaciones causales (como en el diagrama).</li>
+<li>Definir KPIs (por ejemplo, % reducción de emisiones, tasa de pobreza).</li>
+<li>Comunicar a stakeholders y monitorear con herramientas como BSC.</li>
+</ol>
+
+<p>
+<b><b>Desafíos</b></b>:
+</p>
+<ul class="org-ul">
+<li><b><b>Resistencia al cambio</b></b>: La alineación organizacional requiere consenso.[](<a href="https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/">https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/</a>)</li>
+<li><b><b>Capacidades tecnológicas</b></b>: Las empresas deben superar limitaciones.[](<a href="https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/">https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/</a>)</li>
+<li><b><b>Incertidumbre</b></b>: Los mapas deben ser dinámicos para adaptarse a cambios.[](<a href="https://procesoadministrativo.net/mapa-estrategico-de-una-empresa/">https://procesoadministrativo.net/mapa-estrategico-de-una-empresa/</a>)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org08311b4" class="outline-2">
+<h2 id="org08311b4"><span class="section-number-2">5.</span> Conclusión</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+El Mapa Estratégico Global 2025 es una herramienta poderosa para alinear esfuerzos hacia un futuro sostenible. El diagrama PlantUML visualiza cómo los objetivos financieros, sociales, operativos y de aprendizaje se interconectan, proporcionando claridad y dirección. Organizaciones como el PNUD y TMB demuestran que la acción coordinada es posible. Para 2025, la clave será la colaboración, la innovación y la adaptabilidad.[](<a href="https://www.undp.org/es/publicaciones/plan-estrategico-del-pnud-2022-2025">https://www.undp.org/es/publicaciones/plan-estrategico-del-pnud-2022-2025</a>)[](<a href="https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico">https://www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico</a>)
+</p>
+</div>
+</div>
+<div id="outline-container-orgfd11fe7" class="outline-2">
+<h2 id="orgfd11fe7"><span class="section-number-2">6.</span> Referencias</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Source Global Research (2024). Anticipation: A Critical Capability for 2025. <a href="https://www.sourceglobalresearch.com/blog-post/anticipation-a-critical-capability-for-2025%5B%5D(https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/)">https://www.sourceglobalresearch.com/blog-post/anticipation-a-critical-capability-for-2025%5B%5D(https://exyge.com/nueva-mirada-a-la-estrategia-y-planificacion-empresarial/)</a></li>
+<li>Mercately Blog (2024). Mapa estratégico 2025: Claves para el éxito. <a href="https://blog.mercately.com[](https//blog.mercately.com/marketing/mapa-estrategico/)">https://blog.mercately.com[](https//blog.mercately.com/marketing/mapa-estrategico/)</a></li>
+<li>PNUD (2022). Plan Estratégico 2022-2025. <a href="https://strategicplan.undp.org[](https//strategicplan.undp.org/es/)">https://strategicplan.undp.org[](https//strategicplan.undp.org/es/)</a></li>
+<li>TMB (2025). Plan Estratégico TMB 2025. <a href="https://www.tmb.cat[](https//www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico)">https://www.tmb.cat[](https//www.tmb.cat/es/conoce-tmb/informacion-corporativa/plan-estrategico)</a></li>
+<li>PlantUML (2022). Crear diagramas UML desde texto. <a href="https://plantuml.com[](https//en.wikipedia.org/wiki/PlantUML)">https://plantuml.com[](https//en.wikipedia.org/wiki/PlantUML)</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgceb667c" class="outline-2">
+<h2 id="orgceb667c"><span class="section-number-2">7.</span> Nota Técnica: Corrección de Publicación</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Al generar este post, noté que `index.html` sigue usando `&lt;link href="/style.css"/&gt;` en lugar de `./style.css?v=1`, y el último commit a `gh-pages` no se subió (hace 40 minutos). Para resolverlo:
+</p>
+
+<ol class="org-ol">
+<li><p>
+<b><b>Verificar `mygeo/html-head`</b></b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(<span style="color: #219fd5; font-style: italic;">defvar</span> <span style="color: #1857a4;">mygeo/html-head</span>
+  <span style="color: #a44185;">"&lt;meta charset=\"UTF-8\"/&gt;</span>
+<span style="color: #a44185;">   &lt;link rel=\"stylesheet\" type=\"text/css\" href=\"./style.css?v=1\"/&gt;</span>
+<span style="color: #a44185;">   &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/&gt;</span>
+<span style="color: #a44185;">   &lt;link rel=\"alternate\" type=\"application/rss+xml\" href=\"./rss.xml\" title=\"RSS Feed\"/&gt;"</span>
+  <span style="color: #60a8a1; font-style: italic;">"Encabezado HTML com&#250;n para todas las p&#225;ginas."</span>)
+</pre>
+</div>
+<ul class="org-ul">
+<li>Guardar en `/home/mike/GeoBlog/mygeoblog.el`.</li>
+</ul></li>
+
+<li><p>
+<b><b>Limpiar y regenerar</b></b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">rm /home/mike/GeoBlog_html/*.html /home/mike/GeoBlog_html/*.css /home/mike/GeoBlog_html/*.xml
+rm -rf /home/mike/GeoBlog_html/images /home/mike/GeoBlog_html/static
+</pre>
+</div>
+<ul class="org-ul">
+<li><p>
+Cargar y publicar:
+</p>
+<div class="org-src-container">
+<pre class="src src-elisp">(load-file <span style="color: #a44185;">"/home/mike/GeoBlog/mygeoblog.el"</span>)
+(mygeo/publish-and-deploy <span style="color: #a44185;">"Post Mapa Estrat&#233;gico 2025 con CSS corregido"</span>)
+</pre>
+</div></li>
+</ul></li>
+
+<li><p>
+<b><b>Forzar despliegue</b></b>:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash"><span style="color: #dc3eb7;">cd</span> /home/mike/GeoBlog_html
+git add .
+git commit -m <span style="color: #a44185;">"Despliegue manual con ruta CSS corregida"</span>
+git pull --rebase origin gh-pages
+git push origin gh-pages
+</pre>
+</div></li>
+
+<li><b><b>Verificar</b></b>:
+<ul class="org-ul">
+<li>Local: `python3 -m http.server 8000` y abrir `<a href="http://localhost:8000/">http://localhost:8000/</a>`.</li>
+<li>Remoto: `<a href="https://mcasrom.github.io/geo-ia/">https://mcasrom.github.io/geo-ia/</a>`.</li>
+<li>Confirmar `&lt;link href="./style.css?v=1"/&gt;` y barra horizontal.</li>
+</ul></li>
+</ol>
+
+<p>
+Si persiste, compartir:
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">ls -R /home/mike/GeoBlog_html
+head -n 50 /home/mike/GeoBlog_html/index.html
+<span style="color: #dc3eb7;">cd</span> /home/mike/GeoBlog_html
+git status
+git log --oneline -n 5
+</pre>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
