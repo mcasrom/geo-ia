@@ -98,4 +98,19 @@ header a.email-link:hover {
   color: #1d4ed8; /* azul más oscuro */
   text-decoration: underline;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
+.plantuml-diagram {
+  background: white;
+  padding: 1em;
+  border: 1px solid #ddd;
+  margin: 1em 0;
+  text-align: center;
+}
+
+img.border {
+  border: 2px solid #333;
+}
