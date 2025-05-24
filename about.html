@@ -3,11 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-21 mié 09:21 -->
+<!-- 2025-05-24 sáb 12:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Sobre El Mapa y El Código</title>
-<meta name="author" content="El Mapa y El Código" />
+<title>About - Acerca del Blog</title>
+<meta name="author" content="GeoClaude4" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
   #content { max-width: 60em; margin: auto; }
@@ -71,7 +71,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
+  pre.src-js:before { content: 'JavaScript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -193,58 +193,500 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { }
 </style>
-<meta charset="UTF-8"/>
-   <link rel="stylesheet" type="text/css" href="./style.css?v=1"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   <link rel="alternate" type="application/rss+xml" href="./rss.xml" title="RSS Feed"/>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .blog-title {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .blog-subtitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  .blog-email {
+    font-size: 1em;
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+  
+  nav {
+    background-color: #34495e;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 0;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #2c3e50;
+    border-bottom-color: #3498db;
+  }
+  
+  .content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 30px 0;
+  }
+  
+  .post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .tag {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 2px 3px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .tag:hover {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .post-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .post-list h3 a:hover {
+    color: #3498db;
+  }
+  
+  .post-date {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .tag-cloud {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .archive-year {
+    background: #34495e;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+  }
+  
+  .archive-month {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .breadcrumb {
+    padding: 10px 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container { padding: 10px; }
+    .content { padding: 20px; }
+    .blog-title { font-size: 2em; }
+    nav ul { flex-direction: column; }
+    nav a { text-align: center; }
+  }
+</style>
 </head>
 <body>
-<div id="org-div-home-and-up">
- <a accesskey="h" href="./"> UP </a>
- |
- <a accesskey="H" href="./index.html"> HOME </a>
-</div><div id="content" class="content">
-<h1 class="title">Sobre El Mapa y El Código</h1>
-<div id="outline-container-orge696405" class="outline-2">
-<h2 id="orge696405">El Mapa y El Código</h2>
-<div class="outline-text-2" id="text-orge696405">
+<div id="preamble" class="status">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .blog-title {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .blog-subtitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  .blog-email {
+    font-size: 1em;
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+  
+  nav {
+    background-color: #34495e;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 0;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #2c3e50;
+    border-bottom-color: #3498db;
+  }
+  
+  .content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 30px 0;
+  }
+  
+  .post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .tag {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 2px 3px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .tag:hover {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .post-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .post-list h3 a:hover {
+    color: #3498db;
+  }
+  
+  .post-date {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .tag-cloud {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .archive-year {
+    background: #34495e;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+  }
+  
+  .archive-month {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .breadcrumb {
+    padding: 10px 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container { padding: 10px; }
+    .content { padding: 20px; }
+    .blog-title { font-size: 2em; }
+    nav ul { flex-direction: column; }
+    nav a { text-align: center; }
+  }
+</style><header>
+<div class="container">
+<h1 class="blog-title">El Mapa y El Código</h1>
+<p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+<p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html">🏠 Inicio</a></li>
+<li><a href="about.html">👤 About</a></li>
+<li><a href="contact.html">📧 Contact</a></li>
+<li><a href="archives.html">📚 Archives</a></li>
+<li><a href="tags.html">🏷️ Tags</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">About - Acerca del Blog</h1>
+<div id="outline-container-orgc9935ef" class="outline-2">
+<h2 id="orgc9935ef">👤 Acerca de El Mapa y El Código</h2>
+<div class="outline-text-2" id="text-orgc9935ef">
 <p>
-Este blog nace desde la inquietud y la curiosidad de entender el mundo en el que vivimos. <b>No está escrito desde un enfoque profesional</b>, sino desde la mirada de alguien que observa con atención los movimientos globales, la política internacional y la evolución tecnológica que impactan en nuestras vidas.
+Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico
 </p>
 
 <p>
-<b>El Mapa y El Código</b> es un espacio de análisis no académico, que conecta ideas, mapas y realidades en conflicto. Trata temas de geoestrategia, geopolítica y poder global desde una perspectiva crítica y accesible.
+Este blog explora la intersección de geoestrategia, política y tecnología, con un enfoque especial en el uso de Emacs para análisis geopolítico.
+</p>
+</div>
+<div id="outline-container-orgc2d9595" class="outline-3">
+<h3 id="orgc2d9595">🎯 Misión</h3>
+<div class="outline-text-3" id="text-orgc2d9595">
+<p>
+Proporcionar análisis profundos sobre:
+</p>
+
+<ul class="org-ul">
+<li>Geoestrategia global y tendencias políticas</li>
+<li>Impacto de la tecnología en la geopolítica</li>
+<li>Herramientas de análisis usando Emacs</li>
+<li>Mapeo de datos geopolíticos</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc59a541" class="outline-3">
+<h3 id="orgc59a541">👨‍💻 Autor</h3>
+<div class="outline-text-3" id="text-orgc59a541">
+<p>
+GeoClaude4 - Especialista en análisis geopolítico y tecnología
 </p>
 
 <p>
-Es un blog creado en <b>Emacs con Org Mode</b>, construido de forma artesanal y libre, y publicado automáticamente en <b>GitHub</b> con la ayuda de herramientas de <b>inteligencia artificial libre</b>.
+Contacto: mybloggingnotes@gmail.com
 </p>
 </div>
 </div>
-<div id="outline-container-orgb209e3b" class="outline-2">
-<h2 id="orgb209e3b">¿Por qué seguirlo?</h2>
-<div class="outline-text-2" id="text-orgb209e3b">
+<div id="outline-container-org0524165" class="outline-3">
+<h3 id="org0524165">🛠️ Tecnología</h3>
+<div class="outline-text-3" id="text-org0524165">
 <p>
-Porque el mundo cambia rápido y entenderlo no debería ser un privilegio. Aquí encontrarás artículos para pensar, enlaces para explorar y un intento sincero de leer el presente con mapas en una mano y código en la otra.
-</p>
-</div>
-</div>
-<div id="outline-container-org9aed4b0" class="outline-2">
-<h2 id="org9aed4b0">¿Quieres comentar o contactar?</h2>
-<div class="outline-text-2" id="text-org9aed4b0">
-<p>
-Estoy abierto a críticas, ideas o conversaciones. Puedes escribirme a:
+Este blog está construido con:
 </p>
 
-<p>
-📧 <code>mybloggingnotes@gmail.com</code>
-</p>
-
-<p>
-Gracias por visitar y ser parte de este proyecto independiente.
-</p>
+<ul class="org-ul">
+<li>Emacs Org-mode</li>
+<li>Sistema de publicación org-publish</li>
+<li>CSS personalizado</li>
+<li>Generación estática de HTML</li>
+</ul>
 </div>
 </div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-05-24 12:57</p>
+</div>
+</footer>
 </div>
 </body>
 </html>

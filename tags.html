@@ -1,103 +1,712 @@
-<!DOCTYPE html>
-<html lang="es">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Etiquetas - El Mapa y el Código</title>
-<meta charset="UTF-8"/>
-   <link rel="stylesheet" type="text/css" href="./style.css?v=1"/>
-   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-   <meta name="description" content="Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs."/>
-   <meta property="og:title" content="El Mapa y el Código"/>
-   <meta property="og:description" content="Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs."/>
-   <meta property="og:type" content="website"/>
-   <meta property="og:url" content="https://mcasrom.github.io/geo-ia/"/>
-   <meta property="og:image" content="https://mcasrom.github.io/geo-ia/logo.png"/>
-   <meta name="twitter:card" content="summary_large_image"/>
-   <meta name="twitter:title" content="El Mapa y el Código"/>
-   <meta name="twitter:description" content="Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs."/>
-   <meta name="twitter:image" content="https://mcasrom.github.io/geo-ia/logo.png"/>
-   <link rel="alternate" type="application/rss+xml" href="./rss.xml" title="RSS Feed"/>
+<!-- 2025-05-24 sáb 12:57 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tags - Explorar por Etiquetas</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .blog-title {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .blog-subtitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  .blog-email {
+    font-size: 1em;
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+  
+  nav {
+    background-color: #34495e;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 0;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #2c3e50;
+    border-bottom-color: #3498db;
+  }
+  
+  .content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 30px 0;
+  }
+  
+  .post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .tag {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 2px 3px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .tag:hover {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .post-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .post-list h3 a:hover {
+    color: #3498db;
+  }
+  
+  .post-date {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .tag-cloud {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .archive-year {
+    background: #34495e;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+  }
+  
+  .archive-month {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .breadcrumb {
+    padding: 10px 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container { padding: 10px; }
+    .content { padding: 20px; }
+    .blog-title { font-size: 2em; }
+    nav ul { flex-direction: column; }
+    nav a { text-align: center; }
+  }
+</style>
 </head>
 <body>
+<div id="preamble" class="status">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .blog-title {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .blog-subtitle {
+    font-size: 1.2em;
+    margin: 10px 0;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  .blog-email {
+    font-size: 1em;
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+  
+  nav {
+    background-color: #34495e;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    margin: 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    border-radius: 0;
+    transition: all 0.3s;
+    border-bottom: 3px solid transparent;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #2c3e50;
+    border-bottom-color: #3498db;
+  }
+  
+  .content {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 30px 0;
+  }
+  
+  .post-meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .tag {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 2px 3px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .tag:hover {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .post-list h3 {
+    margin-bottom: 10px;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  .post-list h3 a:hover {
+    color: #3498db;
+  }
+  
+  .post-date {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .tag-cloud {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .archive-year {
+    background: #34495e;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+  }
+  
+  .archive-month {
+    margin: 15px 0;
+    padding-left: 20px;
+  }
+  
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .breadcrumb {
+    padding: 10px 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .breadcrumb a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container { padding: 10px; }
+    .content { padding: 20px; }
+    .blog-title { font-size: 2em; }
+    nav ul { flex-direction: column; }
+    nav a { text-align: center; }
+  }
+</style><header>
 <div class="container">
-<header class="header-box">
-<div class="header-content">
-<img src="./logo.png" alt="Logo de El Mapa y el Código" class="header-logo">
-<div class="header-text">
-<h1 class="header-title">El Mapa y el Código</h1>
-<p class="header-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico.</p>
-<p class="header-contact">Autor: M. Castillo | <a href="mailto:mybloggingnotes@gmail.com" class="contact-link">mybloggingnotes@gmail.com</a></p>
-</div>
+<h1 class="blog-title">El Mapa y El Código</h1>
+<p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+<p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
 </div>
 </header>
-<nav class="main-nav">
+<nav>
+<div class="container">
 <ul>
-<li><a href="./index.html">Inicio</a></li>
-<li><a href="./about.html">Sobre El Mapa y El Código</a></li>
-<li><a href="./tags.html" class="active">Etiquetas</a></li>
-<li><a href="./contact.html">Contacto</a></li>
-<li><a href="./rss.xml">RSS</a></li>
+<li><a href="index.html">🏠 Inicio</a></li>
+<li><a href="about.html">👤 About</a></li>
+<li><a href="contact.html">📧 Contact</a></li>
+<li><a href="archives.html">📚 Archives</a></li>
+<li><a href="tags.html">🏷️ Tags</a></li>
 </ul>
+</div>
 </nav>
-<main>
-<h2>📚 Publicaciones por Etiquetas</h2>
-<ul class="tag-list">
-<li><strong>límites</strong><ul>
-<li><a href="./posts/2025-05-20-084608.html"> Los Límites de la Geoestrategia y Geopolítica Global y Local: Un Análisis Crítico</a></li>
-</ul></li>
-<li><strong>geoestrategia</strong><ul>
-<li><a href="./posts/20250519-la-ambigüedad-estrategica--concepto--evolucion-e-.html">La Ambigüedad Estratégica: Concepto, Evolución e Implicaciones</a></li>
-<li><a href="./posts/20250519--la-geoestrategia-mundial--origenes--evolucion-y-p.html"> La Geoestrategia Mundial: Orígenes, Evolución y Perspectivas Contemporáneas</a></li>
-<li><a href="./posts/2025-05-20-084608.html"> Los Límites de la Geoestrategia y Geopolítica Global y Local: Un Análisis Crítico</a></li>
-</ul></li>
-<li><strong>geopolítica</strong><ul>
-<li><a href="./posts/2025-05-20-084608.html"> Los Límites de la Geoestrategia y Geopolítica Global y Local: Un Análisis Crítico</a></li>
-</ul></li>
-<li><strong>análisis</strong><ul>
-<li><a href="./posts/2025-05-20-084608.html"> Los Límites de la Geoestrategia y Geopolítica Global y Local: Un Análisis Crítico</a></li>
-</ul></li>
-<li><strong>origen</strong><ul>
-<li><a href="./posts/20250519--la-geoestrategia-mundial--origenes--evolucion-y-p.html"> La Geoestrategia Mundial: Orígenes, Evolución y Perspectivas Contemporáneas</a></li>
-</ul></li>
-<li><strong>evolución</strong><ul>
-<li><a href="./posts/20250519--la-geoestrategia-mundial--origenes--evolucion-y-p.html"> La Geoestrategia Mundial: Orígenes, Evolución y Perspectivas Contemporáneas</a></li>
-</ul></li>
-<li><strong>emacs</strong><ul>
-<li><a href="./posts/20250519-la-ambigüedad-estrategica--concepto--evolucion-e-.html">La Ambigüedad Estratégica: Concepto, Evolución e Implicaciones</a></li>
-</ul></li>
-<li><strong>ambiguedad</strong><ul>
-<li><a href="./posts/20250519-la-ambigüedad-estrategica--concepto--evolucion-e-.html">La Ambigüedad Estratégica: Concepto, Evolución e Implicaciones</a></li>
-</ul></li>
-<li><strong>estrategia</strong><ul>
-<li><a href="./posts/20250519-mapa-estrategico-global-2025--una-vision-para-la-s.html">Mapa Estratégico Global 2025: Una Visión para la Sostenibilidad y el Progreso</a></li>
-</ul></li>
-<li><strong>sostenibilidad</strong><ul>
-<li><a href="./posts/20250519-mapa-estrategico-global-2025--una-vision-para-la-s.html">Mapa Estratégico Global 2025: Una Visión para la Sostenibilidad y el Progreso</a></li>
-</ul></li>
-<li><strong>balanced-scorecard</strong><ul>
-<li><a href="./posts/20250519-mapa-estrategico-global-2025--una-vision-para-la-s.html">Mapa Estratégico Global 2025: Una Visión para la Sostenibilidad y el Progreso</a></li>
-</ul></li>
-<li><strong>2025</strong><ul>
-<li><a href="./posts/20250519-mapa-estrategico-global-2025--una-vision-para-la-s.html">Mapa Estratégico Global 2025: Una Visión para la Sostenibilidad y el Progreso</a></li>
-</ul></li>
-<li><strong>geopolitica</strong><ul>
-<li><a href="./posts/20250521-panorama-geopol-tico-y-geoestrat-gico-global-desaf-os-y-tendencias-2025.html">Panorama Geopolítico y Geoestratégico Global: Desafíos y Tendencias 2025</a></li>
-</ul></li>
-<li><strong>seguridad</strong><ul>
-<li><a href="./posts/20250521-panorama-geopol-tico-y-geoestrat-gico-global-desaf-os-y-tendencias-2025.html">Panorama Geopolítico y Geoestratégico Global: Desafíos y Tendencias 2025</a></li>
-</ul></li>
-<li><strong>economia</strong><ul>
-<li><a href="./posts/20250521-panorama-geopol-tico-y-geoestrat-gico-global-desaf-os-y-tendencias-2025.html">Panorama Geopolítico y Geoestratégico Global: Desafíos y Tendencias 2025</a></li>
-</ul></li>
-<li><strong>tecnologia</strong><ul>
-<li><a href="./posts/20250521-panorama-geopol-tico-y-geoestrat-gico-global-desaf-os-y-tendencias-2025.html">Panorama Geopolítico y Geoestratégico Global: Desafíos y Tendencias 2025</a></li>
-</ul></li>
-<li><strong>clima</strong><ul>
-<li><a href="./posts/20250521-panorama-geopol-tico-y-geoestrat-gico-global-desaf-os-y-tendencias-2025.html">Panorama Geopolítico y Geoestratégico Global: Desafíos y Tendencias 2025</a></li>
-</ul></li>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Tags - Explorar por Etiquetas</h1>
+<div id="outline-container-org24287a9" class="outline-2">
+<h2 id="org24287a9">🏷️ Explorar Posts por Tags</h2>
+<div class="outline-text-2" id="text-org24287a9">
+<div class="tag-cloud">
+<h2>☁️ Nube de Tags</h2>
+<span class="tag">geoestrategia</span>
+<span class="tag">política</span>
+<span class="tag">tecnología</span>
+<span class="tag">global</span>
+<span class="tag">multipolaridad</span>
+<span class="tag">cibersegurida</span>
+<span class="tag">:cambio_climático</span>
+<span class="tag">energía</span>
+<span class="tag">IA</span>
+<span class="tag">geopolítica</span>
+<span class="tag">geostrategia</span>
+<span class="tag">orden_mundial</span>
+<span class="tag">análisis</span>
+</div>
+<div class="tags-detail">
+<h3>🏷️ geoestrategia</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
 </ul>
-</main>
+<h3>🏷️ política</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ tecnología</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ global</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ multipolaridad</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ cibersegurida</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ :cambio_climático</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ energía</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ IA</h3>
+<ul class="post-list">
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
+<h3>🏷️ geopolítica</h3>
+<ul class="post-list">
+<li><a href="2025-05-24-el-mapa-y-el-c-digo-geostrategia-geopol-tica-y-el-orden-global.html">El Mapa y El Código: Geostrategia, Geopolítica y el Orden Global</a> <em>(2025-05-24 04:36)</em></li>
+</ul>
+<h3>🏷️ geostrategia</h3>
+<ul class="post-list">
+<li><a href="2025-05-24-el-mapa-y-el-c-digo-geostrategia-geopol-tica-y-el-orden-global.html">El Mapa y El Código: Geostrategia, Geopolítica y el Orden Global</a> <em>(2025-05-24 04:36)</em></li>
+</ul>
+<h3>🏷️ orden_mundial</h3>
+<ul class="post-list">
+<li><a href="2025-05-24-el-mapa-y-el-c-digo-geostrategia-geopol-tica-y-el-orden-global.html">El Mapa y El Código: Geostrategia, Geopolítica y el Orden Global</a> <em>(2025-05-24 04:36)</em></li>
+</ul>
+<h3>🏷️ análisis</h3>
+<ul class="post-list">
+<li><a href="2025-05-24-el-mapa-y-el-c-digo-geostrategia-geopol-tica-y-el-orden-global.html">El Mapa y El Código: Geostrategia, Geopolítica y el Orden Global</a> <em>(2025-05-24 04:36)</em></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
 <footer>
-<p>© 2025 El Mapa y el Código | <a href="./contact.html">Contacto</a></p>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-05-24 12:57</p>
+</div>
 </footer>
 </div>
 </body>

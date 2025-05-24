@@ -6,7 +6,7 @@
 <!-- 2025-05-24 sáb 12:57 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Contact - Contacto</title>
+<title>Init - Configuración del Sistema</title>
 <meta name="author" content="GeoClaude4" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
@@ -622,59 +622,89 @@
 <div class="container">
 </div>
 <div id="content" class="content">
-<h1 class="title">Contact - Contacto</h1>
-<div id="outline-container-orgf4fe464" class="outline-2">
-<h2 id="orgf4fe464">📧 Contacto</h2>
-<div class="outline-text-2" id="text-orgf4fe464">
+<h1 class="title">Init - Configuración del Sistema</h1>
+<div id="outline-container-org8a3cacb" class="outline-2">
+<h2 id="org8a3cacb">⚙️ Configuración del Sistema GeoClaude4</h2>
+<div class="outline-text-2" id="text-org8a3cacb">
 <p>
-Para consultas, colaboraciones o comentarios:
+Esta página contiene información sobre la configuración y uso del sistema de blog.
 </p>
 </div>
-<div id="outline-container-orgc629027" class="outline-3">
-<h3 id="orgc629027">📬 Información de Contacto</h3>
-<div class="outline-text-3" id="text-orgc629027">
-<ul class="org-ul">
-<li>Email: mybloggingnotes@gmail.com</li>
-<li>Blog: El Mapa y El Código</li>
-<li>Respuesta típica: 24-48 horas</li>
-</ul>
+<div id="outline-container-orgb7a2c83" class="outline-3">
+<h3 id="orgb7a2c83">🚀 Comandos Principales</h3>
+<div class="outline-text-3" id="text-orgb7a2c83">
+<pre class="example" id="orgd0d5a14">
+M-x ggeoclaude4-init-blog      ; Inicializar blog
+M-x ggeoclaude4-new-post       ; Crear nuevo post
+M-x ggeoclaude4-new-page       ; Crear nueva página
+M-x ggeoclaude4-publish-blog   ; Publicar blog
+M-x ggeoclaude4-menu           ; Menú interactivo
+</pre>
 </div>
 </div>
-<div id="outline-container-orgbe22eec" class="outline-3">
-<h3 id="orgbe22eec">🤝 Colaboraciones</h3>
-<div class="outline-text-3" id="text-orgbe22eec">
+<div id="outline-container-orgae36581" class="outline-3">
+<h3 id="orgae36581">📁 Estructura de Directorios</h3>
+<div class="outline-text-3" id="text-orgae36581">
+<pre class="example" id="orgeaf9985">
+~/GeoClaude4/
+├── posts/          ; Posts del blog
+├── pages/          ; Páginas estáticas
+├── assets/         ; Recursos
+│   ├── css/        ; Estilos
+│   ├── js/         ; Scripts
+│   └── images/     ; Imágenes
+└── index.org       ; Página principal
+</pre>
+</div>
+</div>
+<div id="outline-container-org8c98c4d" class="outline-3">
+<h3 id="org8c98c4d">🎯 Variables de Configuración</h3>
+<div class="outline-text-3" id="text-org8c98c4d">
+<div class="org-src-container">
+<pre class="src src-emacs-lisp"><code>ggeoclaude4-blog-title           <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">T&#237;tulo del blog</span>
+ggeoclaude4-blog-subtitle        <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Subt&#237;tulo</span>
+ggeoclaude4-blog-email           <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Email de contacto</span>
+ggeoclaude4-base-directory       <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Directorio base</span>
+ggeoclaude4-publishing-directory <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Directorio de publicaci&#243;n</span>
+</code></pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org40f3c99" class="outline-3">
+<h3 id="org40f3c99">📝 Formato de Posts</h3>
+<div class="outline-text-3" id="text-org40f3c99">
 <p>
-Estoy interesado en colaborar en:
+Los posts deben incluir:
 </p>
 
 <ul class="org-ul">
-<li>Análisis geopolíticos conjuntos</li>
-<li>Desarrollo de herramientas de análisis</li>
-<li>Proyectos de visualización de datos</li>
-<li>Investigación académica</li>
+<li>#+TITLE: Título del post</li>
+<li>#+DATE: Fecha de publicación</li>
+<li>#+TAGS: etiquetas separadas por espacios</li>
+<li>#+DESCRIPTION: Descripción breve</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org82ea2ea" class="outline-3">
-<h3 id="org82ea2ea">🌐 Redes Sociales</h3>
-<div class="outline-text-3" id="text-org82ea2ea">
+<div id="outline-container-org5608c50" class="outline-3">
+<h3 id="org5608c50">🖼️ Manejo de Imágenes</h3>
+<div class="outline-text-3" id="text-org5608c50">
 <p>
-En desarrollo&#x2026; Próximamente enlaces a redes sociales.
-</p>
-</div>
-</div>
-<div id="outline-container-org23d43c2" class="outline-3">
-<h3 id="org23d43c2">💡 Sugerencias</h3>
-<div class="outline-text-3" id="text-org23d43c2">
-<p>
-¿Tienes ideas para el blog? ¡Compártelas!
+Use M-x ggeoclaude4-insert-and-copy-image para:
 </p>
 
 <ul class="org-ul">
-<li>Temas de análisis</li>
-<li>Mejoras técnicas</li>
-<li>Nuevas funcionalidades</li>
+<li>Copiar imágenes al directorio assets</li>
+<li>Generar enlaces relativos automáticamente</li>
+<li>Aplicar tamaños predefinidos según el nombre</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-org2785aeb" class="outline-3">
+<h3 id="org2785aeb">📊 Estadísticas</h3>
+<div class="outline-text-3" id="text-org2785aeb">
+<p>
+Use M-x ggeoclaude4-get-blog-stats para ver estadísticas del blog.
+</p>
 </div>
 </div>
 </div>
