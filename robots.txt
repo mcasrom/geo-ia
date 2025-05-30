@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
-Sitemap: https://mcasrom.github.io/GeoClaude4/sitemap.html
+Allow: /
+
+Sitemap: https://mcasrom.github.io/geo-ia/sitemap.xml
