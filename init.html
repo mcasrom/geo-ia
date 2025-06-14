@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-24 sáb 12:57 -->
+<!-- 2025-06-14 sáb 14:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Init - Configuración del Sistema</title>
@@ -194,121 +194,181 @@
   .org-svg { }
 </style>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
   
   body {
-    font-family: 'Georgia', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
-    color: #333;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 1rem;
   }
   
   header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    margin-bottom: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
   }
   
   .blog-title {
-    font-size: 2.5em;
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
   }
   
   .blog-subtitle {
-    font-size: 1.2em;
-    margin: 10px 0;
-    opacity: 0.9;
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
     max-width: 800px;
-    margin: 10px auto;
+    font-weight: 400;
   }
   
   .blog-email {
-    font-size: 1em;
-    margin: 10px 0;
-    opacity: 0.8;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
   }
   
   nav {
-    background-color: #34495e;
-    padding: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
   }
   
   nav ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   
   nav li {
-    margin: 0;
+    flex: 0 1 auto;
   }
   
   nav a {
-    color: white;
+    color: #2c3e50;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 0.75rem 1rem;
     display: block;
-    border-radius: 0;
-    transition: all 0.3s;
-    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
   }
   
   nav a:hover, nav a.active {
-    background-color: #2c3e50;
-    border-bottom-color: #3498db;
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
   }
   
   .content {
     background: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 30px 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
   }
   
-  .post-meta {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-left: 4px solid #3498db;
-    border-radius: 0 5px 5px 0;
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
   }
   
-  .tag {
-    background-color: #3498db;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    text-decoration: none;
-    margin: 2px 3px;
-    display: inline-block;
-    transition: background-color 0.3s;
-  }
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
   
-  .tag:hover {
-    background-color: #2980b9;
-    color: white;
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
   }
   
   .post-list {
@@ -317,204 +377,538 @@
   }
   
   .post-list li {
-    margin-bottom: 25px;
-    padding: 20px;
     background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
   .post-list h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
   }
   
   .post-list h3 a {
     color: #2c3e50;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   
   .post-list h3 a:hover {
-    color: #3498db;
+    color: #74b9ff;
   }
   
   .post-date {
-    color: #666;
-    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
   }
   
-  .tag-cloud {
-    text-align: center;
-    padding: 20px;
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
   
-  .archive-year {
-    background: #34495e;
-    color: white;
-    padding: 10px 15px;
-    margin: 20px 0 10px 0;
-    border-radius: 5px;
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
   }
   
-  .archive-month {
-    margin: 15px 0;
-    padding-left: 20px;
-  }
-  
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 50px;
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
   }
   
   .stats-box {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 12px;
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
   }
   
-  .breadcrumb {
-    padding: 10px 0;
-    color: #666;
-    font-size: 0.9em;
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
   }
   
-  .breadcrumb a {
-    color: #3498db;
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
     text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
   }
   
   @media (max-width: 768px) {
-    .container { padding: 10px; }
-    .content { padding: 20px; }
-    .blog-title { font-size: 2em; }
-    nav ul { flex-direction: column; }
-    nav a { text-align: center; }
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
   }
 </style>
 </head>
 <body>
 <div id="preamble" class="status">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
   
   body {
-    font-family: 'Georgia', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
-    color: #333;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 1rem;
   }
   
   header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    margin-bottom: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
   }
   
   .blog-title {
-    font-size: 2.5em;
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
   }
   
   .blog-subtitle {
-    font-size: 1.2em;
-    margin: 10px 0;
-    opacity: 0.9;
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
     max-width: 800px;
-    margin: 10px auto;
+    font-weight: 400;
   }
   
   .blog-email {
-    font-size: 1em;
-    margin: 10px 0;
-    opacity: 0.8;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
   }
   
   nav {
-    background-color: #34495e;
-    padding: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
   }
   
   nav ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   
   nav li {
-    margin: 0;
+    flex: 0 1 auto;
   }
   
   nav a {
-    color: white;
+    color: #2c3e50;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 0.75rem 1rem;
     display: block;
-    border-radius: 0;
-    transition: all 0.3s;
-    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
   }
   
   nav a:hover, nav a.active {
-    background-color: #2c3e50;
-    border-bottom-color: #3498db;
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
   }
   
   .content {
     background: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 30px 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
   }
   
-  .post-meta {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-left: 4px solid #3498db;
-    border-radius: 0 5px 5px 0;
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
   }
   
-  .tag {
-    background-color: #3498db;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    text-decoration: none;
-    margin: 2px 3px;
-    display: inline-block;
-    transition: background-color 0.3s;
-  }
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
   
-  .tag:hover {
-    background-color: #2980b9;
-    color: white;
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
   }
   
   .post-list {
@@ -523,99 +917,388 @@
   }
   
   .post-list li {
-    margin-bottom: 25px;
-    padding: 20px;
     background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
   .post-list h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
   }
   
   .post-list h3 a {
     color: #2c3e50;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   
   .post-list h3 a:hover {
-    color: #3498db;
+    color: #74b9ff;
   }
   
   .post-date {
-    color: #666;
-    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
   }
   
-  .tag-cloud {
-    text-align: center;
-    padding: 20px;
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
   
-  .archive-year {
-    background: #34495e;
-    color: white;
-    padding: 10px 15px;
-    margin: 20px 0 10px 0;
-    border-radius: 5px;
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
   }
   
-  .archive-month {
-    margin: 15px 0;
-    padding-left: 20px;
-  }
-  
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 50px;
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
   }
   
   .stats-box {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 12px;
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
   }
   
-  .breadcrumb {
-    padding: 10px 0;
-    color: #666;
-    font-size: 0.9em;
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
   }
   
-  .breadcrumb a {
-    color: #3498db;
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
     text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
   }
   
   @media (max-width: 768px) {
-    .container { padding: 10px; }
-    .content { padding: 20px; }
-    .blog-title { font-size: 2em; }
-    nav ul { flex-direction: column; }
-    nav a { text-align: center; }
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
   }
-</style><header>
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
 <div class="container">
-<h1 class="blog-title">El Mapa y El Código</h1>
-<p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
-<p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
 </div>
 </header>
 <nav>
 <div class="container">
 <ul>
-<li><a href="index.html">🏠 Inicio</a></li>
-<li><a href="about.html">👤 About</a></li>
-<li><a href="contact.html">📧 Contact</a></li>
-<li><a href="archives.html">📚 Archives</a></li>
-<li><a href="tags.html">🏷️ Tags</a></li>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
 </ul>
 </div>
 </nav>
@@ -623,29 +1306,30 @@
 </div>
 <div id="content" class="content">
 <h1 class="title">Init - Configuración del Sistema</h1>
-<div id="outline-container-org8a3cacb" class="outline-2">
-<h2 id="org8a3cacb">⚙️ Configuración del Sistema GeoClaude4</h2>
-<div class="outline-text-2" id="text-org8a3cacb">
+<div id="outline-container-org0afde6c" class="outline-2">
+<h2 id="org0afde6c">⚙️ Configuración del Sistema GeoClaude4</h2>
+<div class="outline-text-2" id="text-org0afde6c">
 <p>
 Esta página contiene información sobre la configuración y uso del sistema de blog.
 </p>
 </div>
-<div id="outline-container-orgb7a2c83" class="outline-3">
-<h3 id="orgb7a2c83">🚀 Comandos Principales</h3>
-<div class="outline-text-3" id="text-orgb7a2c83">
-<pre class="example" id="orgd0d5a14">
+<div id="outline-container-org1bbe903" class="outline-3">
+<h3 id="org1bbe903">🚀 Comandos Principales</h3>
+<div class="outline-text-3" id="text-org1bbe903">
+<pre class="example" id="org7780c00">
 M-x ggeoclaude4-init-blog      ; Inicializar blog
 M-x ggeoclaude4-new-post       ; Crear nuevo post
 M-x ggeoclaude4-new-page       ; Crear nueva página
-M-x ggeoclaude4-publish-blog   ; Publicar blog
+M-x ggeoclaude4-publish-blog   ; Publicar blog localmente
+M-x ggeoclaude4-publish-to-github ; Publicar a GitHub Pages
 M-x ggeoclaude4-menu           ; Menú interactivo
 </pre>
 </div>
 </div>
-<div id="outline-container-orgae36581" class="outline-3">
-<h3 id="orgae36581">📁 Estructura de Directorios</h3>
-<div class="outline-text-3" id="text-orgae36581">
-<pre class="example" id="orgeaf9985">
+<div id="outline-container-orgb85cc55" class="outline-3">
+<h3 id="orgb85cc55">📁 Estructura de Directorios</h3>
+<div class="outline-text-3" id="text-orgb85cc55">
+<pre class="example" id="org51bcadf">
 ~/GeoClaude4/
 ├── posts/          ; Posts del blog
 ├── pages/          ; Páginas estáticas
@@ -657,22 +1341,24 @@ M-x ggeoclaude4-menu           ; Menú interactivo
 </pre>
 </div>
 </div>
-<div id="outline-container-org8c98c4d" class="outline-3">
-<h3 id="org8c98c4d">🎯 Variables de Configuración</h3>
-<div class="outline-text-3" id="text-org8c98c4d">
+<div id="outline-container-orgd25ef32" class="outline-3">
+<h3 id="orgd25ef32">🎯 Variables de Configuración</h3>
+<div class="outline-text-3" id="text-orgd25ef32">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp"><code>ggeoclaude4-blog-title           <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">T&#237;tulo del blog</span>
 ggeoclaude4-blog-subtitle        <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Subt&#237;tulo</span>
 ggeoclaude4-blog-email           <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Email de contacto</span>
 ggeoclaude4-base-directory       <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Directorio base</span>
 ggeoclaude4-publishing-directory <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Directorio de publicaci&#243;n</span>
+ggeoclaude4-github-repo          <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">Repositorio GitHub</span>
+ggeoclaude4-github-pages-url     <span style="color: #8195b0; font-style: italic;">; </span><span style="color: #8195b0; font-style: italic;">URL de GitHub Pages</span>
 </code></pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org40f3c99" class="outline-3">
-<h3 id="org40f3c99">📝 Formato de Posts</h3>
-<div class="outline-text-3" id="text-org40f3c99">
+<div id="outline-container-orgef7793d" class="outline-3">
+<h3 id="orgef7793d">📝 Formato de Posts</h3>
+<div class="outline-text-3" id="text-orgef7793d">
 <p>
 Los posts deben incluir:
 </p>
@@ -685,9 +1371,9 @@ Los posts deben incluir:
 </ul>
 </div>
 </div>
-<div id="outline-container-org5608c50" class="outline-3">
-<h3 id="org5608c50">🖼️ Manejo de Imágenes</h3>
-<div class="outline-text-3" id="text-org5608c50">
+<div id="outline-container-org28bff63" class="outline-3">
+<h3 id="org28bff63">🖼️ Manejo de Imágenes</h3>
+<div class="outline-text-3" id="text-org28bff63">
 <p>
 Use M-x ggeoclaude4-insert-and-copy-image para:
 </p>
@@ -699,9 +1385,9 @@ Use M-x ggeoclaude4-insert-and-copy-image para:
 </ul>
 </div>
 </div>
-<div id="outline-container-org2785aeb" class="outline-3">
-<h3 id="org2785aeb">📊 Estadísticas</h3>
-<div class="outline-text-3" id="text-org2785aeb">
+<div id="outline-container-orgedf3181" class="outline-3">
+<h3 id="orgedf3181">📊 Estadísticas</h3>
+<div class="outline-text-3" id="text-orgedf3181">
 <p>
 Use M-x ggeoclaude4-get-blog-stats para ver estadísticas del blog.
 </p>
@@ -715,9 +1401,27 @@ Use M-x ggeoclaude4-get-blog-stats para ver estadísticas del blog.
 <div class="container">
 <p>© 2025 El Mapa y El Código</p>
 <p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
-<p>Última actualización: 2025-05-24 12:57</p>
+<p>Última actualización: 2025-06-14 14:37</p>
 </div>
 </footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
 </div>
 </body>
 </html>

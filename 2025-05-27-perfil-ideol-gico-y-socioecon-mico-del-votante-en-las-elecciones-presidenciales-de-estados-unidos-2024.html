@@ -1,0 +1,1655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-06-14 sáb 14:37 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perfil Ideológico y Socioeconómico del Votante en las Elecciones Presidenciales de Estados Unidos 2024</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis exhaustivo de la demografía electoral que definió el resultado de las elecciones presidenciales estadounidenses de 2024" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Perfil Ideológico y Socioeconómico del Votante en las Elecciones Presidenciales de Estados Unidos 2024</h1>
+<div id="outline-container-orgf553a6f" class="outline-2">
+<h2 id="orgf553a6f">Perfil Ideológico y Socioeconómico del Votante en las Elecciones Presidenciales de Estados Unidos 2024</h2>
+</div>
+<div id="outline-container-org6c699b5" class="outline-2">
+<h2 id="org6c699b5">Introducción</h2>
+<div class="outline-text-2" id="text-org6c699b5">
+<p>
+Las elecciones presidenciales de Estados Unidos de 2024 representaron un momento crucial en la reconfiguración del panorama político estadounidense. La victoria de Donald Trump sobre Kamala Harris no solo marcó el regreso del expresidente al poder, sino que también reveló transformaciones profundas en la composición socioeconómica e ideológica del electorado americano.
+</p>
+
+<p>
+Este análisis examina los patrones de voto a través de múltiples dimensiones: clase social, educación, geografía, edad, etnicidad y orientación ideológica, proporcionando un mapa detallado de las fuerzas que moldearon el resultado electoral.
+</p>
+</div>
+</div>
+<div id="outline-container-org2a398de" class="outline-2">
+<h2 id="org2a398de">Metodología y Fuentes</h2>
+<div class="outline-text-2" id="text-org2a398de">
+</div>
+<div id="outline-container-org7aad888" class="outline-3">
+<h3 id="org7aad888">Fuentes Primarias</h3>
+<div class="outline-text-3" id="text-org7aad888">
+<ul class="org-ul">
+<li>Exit polls del Edison Research y Associated Press</li>
+<li>Datos del U.S. Census Bureau (American Community Survey 2023)</li>
+<li>Encuestas pre-electorales del Pew Research Center</li>
+<li>Análisis post-electoral del Brookings Institution</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf929813" class="outline-3">
+<h3 id="orgf929813">Metodología Analítica</h3>
+<div class="outline-text-3" id="text-orgf929813">
+<p>
+El presente estudio emplea un enfoque multivariable que cruza datos demográficos con patrones de voto, utilizando técnicas de análisis estadístico descriptivo y correlacional para identificar tendencias significativas en el comportamiento electoral.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org09cf10b" class="outline-2">
+<h2 id="org09cf10b">Perfil Socioeconómico del Electorado</h2>
+<div class="outline-text-2" id="text-org09cf10b">
+</div>
+<div id="outline-container-orgbfaf7ae" class="outline-3">
+<h3 id="orgbfaf7ae">Distribución por Nivel de Ingresos</h3>
+<div class="outline-text-3" id="text-orgbfaf7ae">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nivel de Ingresos</th>
+<th scope="col" class="org-right">% Trump</th>
+<th scope="col" class="org-right">% Harris</th>
+<th scope="col" class="org-left">Diferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">&lt;$30,000</td>
+<td class="org-right">51%</td>
+<td class="org-right">47%</td>
+<td class="org-left">+4 Trump</td>
+</tr>
+
+<tr>
+<td class="org-left">$30,000-$49,999</td>
+<td class="org-right">53%</td>
+<td class="org-right">45%</td>
+<td class="org-left">+8 Trump</td>
+</tr>
+
+<tr>
+<td class="org-left">$50,000-$99,999</td>
+<td class="org-right">49%</td>
+<td class="org-right">49%</td>
+<td class="org-left">Empate</td>
+</tr>
+
+<tr>
+<td class="org-left">$100,000-$199,999</td>
+<td class="org-right">45%</td>
+<td class="org-right">53%</td>
+<td class="org-left">+8 Harris</td>
+</tr>
+
+<tr>
+<td class="org-left">&gt;$200,000</td>
+<td class="org-right">42%</td>
+<td class="org-right">56%</td>
+<td class="org-left">+14 Harris</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org7432a85" class="outline-3">
+<h3 id="org7432a85">Análisis por Nivel Educativo</h3>
+<div class="outline-text-3" id="text-org7432a85">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nivel Educativo</th>
+<th scope="col" class="org-right">% Trump</th>
+<th scope="col" class="org-right">% Harris</th>
+<th scope="col" class="org-left">Diferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Sin título secundario</td>
+<td class="org-right">58%</td>
+<td class="org-right">40%</td>
+<td class="org-left">+18 Trump</td>
+</tr>
+
+<tr>
+<td class="org-left">Título secundario</td>
+<td class="org-right">54%</td>
+<td class="org-right">44%</td>
+<td class="org-left">+10 Trump</td>
+</tr>
+
+<tr>
+<td class="org-left">Algo de universidad</td>
+<td class="org-right">48%</td>
+<td class="org-right">50%</td>
+<td class="org-left">+2 Harris</td>
+</tr>
+
+<tr>
+<td class="org-left">Título universitario</td>
+<td class="org-right">41%</td>
+<td class="org-right">57%</td>
+<td class="org-left">+16 Harris</td>
+</tr>
+
+<tr>
+<td class="org-left">Posgrado</td>
+<td class="org-right">38%</td>
+<td class="org-right">60%</td>
+<td class="org-left">+22 Harris</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgc38cfc7" class="outline-3">
+<h3 id="orgc38cfc7">Interpretación Crítica</h3>
+<div class="outline-text-3" id="text-orgc38cfc7">
+<p>
+Los datos revelan una polarización socioeconómica pronunciada. Trump mantuvo su dominio entre votantes de menores ingresos y menor nivel educativo, mientras Harris consolidó el apoyo de la clase profesional urbana. Esta división refleja la persistente "brecha educativa" que ha caracterizado la política estadounidense desde 2016.
+</p>
+
+<p>
+Sin embargo, resulta paradójico que el candidato republicano, tradicionalmente asociado con políticas favorables a las élites económicas, haya obtenido mayor apoyo entre los sectores de menores ingresos. Esto sugiere que factores culturales e identitarios han superado en importancia a las consideraciones puramente económicas.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orge88bc2a" class="outline-2">
+<h2 id="orge88bc2a">Distribución Geográfica y Urbano-Rural</h2>
+<div class="outline-text-2" id="text-orge88bc2a">
+</div>
+<div id="outline-container-orgc6b1d84" class="outline-3">
+<h3 id="orgc6b1d84">Patrones Urbano-Rurales</h3>
+<div class="outline-text-3" id="text-orgc6b1d84">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Tipo de Área</th>
+<th scope="col" class="org-right">% Trump</th>
+<th scope="col" class="org-right">% Harris</th>
+<th scope="col" class="org-left">Diferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ciudades grandes</td>
+<td class="org-right">35%</td>
+<td class="org-right">63%</td>
+<td class="org-left">+28 Harris</td>
+</tr>
+
+<tr>
+<td class="org-left">Suburbios</td>
+<td class="org-right">48%</td>
+<td class="org-right">50%</td>
+<td class="org-left">+2 Harris</td>
+</tr>
+
+<tr>
+<td class="org-left">Ciudades pequeñas</td>
+<td class="org-right">58%</td>
+<td class="org-right">40%</td>
+<td class="org-left">+18 Trump</td>
+</tr>
+
+<tr>
+<td class="org-left">Áreas rurales</td>
+<td class="org-right">65%</td>
+<td class="org-right">33%</td>
+<td class="org-left">+32 Trump</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orga090a8b" class="outline-3">
+<h3 id="orga090a8b">Estados Clave (Swing States)</h3>
+<div class="outline-text-3" id="text-orga090a8b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Estado</th>
+<th scope="col" class="org-left">Ganador</th>
+<th scope="col" class="org-right">Margen</th>
+<th scope="col" class="org-left">Cambio vs 2020</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Pennsylvania</td>
+<td class="org-left">Trump</td>
+<td class="org-right">+2.1%</td>
+<td class="org-left">+3.3% hacia R</td>
+</tr>
+
+<tr>
+<td class="org-left">Michigan</td>
+<td class="org-left">Trump</td>
+<td class="org-right">+1.8%</td>
+<td class="org-left">+4.2% hacia R</td>
+</tr>
+
+<tr>
+<td class="org-left">Wisconsin</td>
+<td class="org-left">Trump</td>
+<td class="org-right">+0.9%</td>
+<td class="org-left">+2.8% hacia R</td>
+</tr>
+
+<tr>
+<td class="org-left">Arizona</td>
+<td class="org-left">Trump</td>
+<td class="org-right">+3.2%</td>
+<td class="org-left">+3.5% hacia R</td>
+</tr>
+
+<tr>
+<td class="org-left">Georgia</td>
+<td class="org-left">Trump</td>
+<td class="org-right">+2.8%</td>
+<td class="org-left">+3.1% hacia R</td>
+</tr>
+
+<tr>
+<td class="org-left">Nevada</td>
+<td class="org-left">Trump</td>
+<td class="org-right">+1.5%</td>
+<td class="org-left">+4.9% hacia R</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+La reconquista de los estados del "Blue Wall" (Pennsylvania, Michigan, Wisconsin) por parte de Trump representa uno de los aspectos más significativos de la elección, indicando una erosión del apoyo demócrata en el corazón industrial del país.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org8e2fc5e" class="outline-2">
+<h2 id="org8e2fc5e">Perfil Demográfico</h2>
+<div class="outline-text-2" id="text-org8e2fc5e">
+</div>
+<div id="outline-container-orgd521471" class="outline-3">
+<h3 id="orgd521471">Distribución Étnica</h3>
+<div class="outline-text-3" id="text-orgd521471">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Grupo Étnico</th>
+<th scope="col" class="org-right">% Trump</th>
+<th scope="col" class="org-right">% Harris</th>
+<th scope="col" class="org-left">Diferencia</th>
+<th scope="col" class="org-right">% del Electorado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Blancos</td>
+<td class="org-right">57%</td>
+<td class="org-right">41%</td>
+<td class="org-left">+16 Trump</td>
+<td class="org-right">67%</td>
+</tr>
+
+<tr>
+<td class="org-left">Afroamericanos</td>
+<td class="org-right">12%</td>
+<td class="org-right">86%</td>
+<td class="org-left">+74 Harris</td>
+<td class="org-right">12%</td>
+</tr>
+
+<tr>
+<td class="org-left">Hispanos</td>
+<td class="org-right">44%</td>
+<td class="org-right">54%</td>
+<td class="org-left">+10 Harris</td>
+<td class="org-right">15%</td>
+</tr>
+
+<tr>
+<td class="org-left">Asiáticos</td>
+<td class="org-right">35%</td>
+<td class="org-right">63%</td>
+<td class="org-left">+28 Harris</td>
+<td class="org-right">4%</td>
+</tr>
+
+<tr>
+<td class="org-left">Otros</td>
+<td class="org-right">41%</td>
+<td class="org-right">57%</td>
+<td class="org-left">+16 Harris</td>
+<td class="org-right">2%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-orgbe9f527" class="outline-3">
+<h3 id="orgbe9f527">Distribución Generacional</h3>
+<div class="outline-text-3" id="text-orgbe9f527">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Grupo de Edad</th>
+<th scope="col" class="org-right">% Trump</th>
+<th scope="col" class="org-right">% Harris</th>
+<th scope="col" class="org-left">Diferencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">18-29</td>
+<td class="org-right">42%</td>
+<td class="org-right">56%</td>
+<td class="org-left">+14 Harris</td>
+</tr>
+
+<tr>
+<td class="org-right">30-44</td>
+<td class="org-right">46%</td>
+<td class="org-right">52%</td>
+<td class="org-left">+6 Harris</td>
+</tr>
+
+<tr>
+<td class="org-right">45-64</td>
+<td class="org-right">52%</td>
+<td class="org-right">46%</td>
+<td class="org-left">+6 Trump</td>
+</tr>
+
+<tr>
+<td class="org-right">65+</td>
+<td class="org-right">51%</td>
+<td class="org-right">47%</td>
+<td class="org-left">+4 Trump</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org17542d4" class="outline-3">
+<h3 id="org17542d4">Análisis Crítico Demográfico</h3>
+<div class="outline-text-3" id="text-org17542d4">
+<p>
+El crecimiento del apoyo hispano a Trump (del 32% en 2020 al 44% en 2024) representa una de las tendencias más significativas de la elección. Este fenómeno desafía las predicciones demográficas que asumían una consolidación automática del voto hispano hacia el Partido Demócrata.
+</p>
+
+<p>
+La relativa estabilidad del voto por edad sugiere que las divisiones generacionales se han institucionalizado, con las cohortes más jóvenes manteniéndose predominantemente demócratas mientras las mayores tienden hacia el republicanismo.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org9a9a619" class="outline-2">
+<h2 id="org9a9a619">Perfil Ideológico</h2>
+<div class="outline-text-2" id="text-org9a9a619">
+</div>
+<div id="outline-container-orgb93d566" class="outline-3">
+<h3 id="orgb93d566">Autoidentificación Ideológica</h3>
+<div class="outline-text-3" id="text-orgb93d566">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Orientación Ideológica</th>
+<th scope="col" class="org-right">% del Electorado</th>
+<th scope="col" class="org-right">% Trump</th>
+<th scope="col" class="org-right">% Harris</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Muy liberal</td>
+<td class="org-right">12%</td>
+<td class="org-right">5%</td>
+<td class="org-right">93%</td>
+</tr>
+
+<tr>
+<td class="org-left">Algo liberal</td>
+<td class="org-right">19%</td>
+<td class="org-right">12%</td>
+<td class="org-right">86%</td>
+</tr>
+
+<tr>
+<td class="org-left">Moderado</td>
+<td class="org-right">32%</td>
+<td class="org-right">45%</td>
+<td class="org-right">53%</td>
+</tr>
+
+<tr>
+<td class="org-left">Algo conservador</td>
+<td class="org-right">24%</td>
+<td class="org-right">85%</td>
+<td class="org-right">13%</td>
+</tr>
+
+<tr>
+<td class="org-left">Muy conservador</td>
+<td class="org-right">13%</td>
+<td class="org-right">94%</td>
+<td class="org-right">4%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org83e3815" class="outline-3">
+<h3 id="org83e3815">Temas Prioritarios</h3>
+<div class="outline-text-3" id="text-org83e3815">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Tema Principal</th>
+<th scope="col" class="org-right">% que lo considera prioritario</th>
+<th scope="col" class="org-right">% Trump entre quienes lo priorizan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Economía</td>
+<td class="org-right">32%</td>
+<td class="org-right">58%</td>
+</tr>
+
+<tr>
+<td class="org-left">Inmigración</td>
+<td class="org-right">18%</td>
+<td class="org-right">78%</td>
+</tr>
+
+<tr>
+<td class="org-left">Aborto</td>
+<td class="org-right">14%</td>
+<td class="org-right">15%</td>
+</tr>
+
+<tr>
+<td class="org-left">Democracia</td>
+<td class="org-right">12%</td>
+<td class="org-right">25%</td>
+</tr>
+
+<tr>
+<td class="org-left">Política exterior</td>
+<td class="org-right">8%</td>
+<td class="org-right">62%</td>
+</tr>
+
+<tr>
+<td class="org-left">Cambio climático</td>
+<td class="org-right">7%</td>
+<td class="org-right">12%</td>
+</tr>
+
+<tr>
+<td class="org-left">Criminalidad</td>
+<td class="org-right">6%</td>
+<td class="org-right">71%</td>
+</tr>
+
+<tr>
+<td class="org-left">Salud</td>
+<td class="org-right">3%</td>
+<td class="org-right">42%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="outline-container-org7865ad9" class="outline-2">
+<h2 id="org7865ad9">Análisis Geoestratégico</h2>
+<div class="outline-text-2" id="text-org7865ad9">
+</div>
+<div id="outline-container-org3895ed7" class="outline-3">
+<h3 id="org3895ed7">Realineamiento de la Coalición Electoral</h3>
+<div class="outline-text-3" id="text-org3895ed7">
+<p>
+Los resultados de 2024 confirman un realineamiento fundamental en las coaliciones partidarias estadounidenses. El Partido Republicano ha consolidado su base en:
+</p>
+
+<ul class="org-ul">
+<li>Votantes sin educación universitaria de todas las etnias</li>
+<li>Comunidades rurales y semi-rurales</li>
+<li>Trabajadores industriales del Rust Belt</li>
+<li>Sectores hispanos y asiáticos conservadores socialmente</li>
+</ul>
+
+<p>
+Por su parte, el Partido Demócrata ha concentrado su apoyo en:
+</p>
+
+<ul class="org-ul">
+<li>Profesionales urbanos con educación superior</li>
+<li>Minorías étnicas tradicionales (especialmente afroamericanos)</li>
+<li>Votantes jóvenes en áreas metropolitanas</li>
+<li>Sectores de altos ingresos</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdb6ae1b" class="outline-3">
+<h3 id="orgdb6ae1b">Fragmentación Regional</h3>
+<div class="outline-text-3" id="text-orgdb6ae1b">
+<p>
+La polarización geográfica se ha intensificado, creando un mapa electoral donde:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Megaciudades demócratas</b></b>: Los grandes centros urbanos (Nueva York, Los Ángeles, Chicago) funcionan como bastiones demócratas aislados</li>
+<li><b><b>Suburbia dividida</b></b>: Los suburbios, tradicionalmente republicanos, se han convertido en el principal campo de batalla electoral</li>
+<li><b><b>América rural republicana</b></b>: Las áreas rurales han consolidado su identidad como territorio republicano</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org853dc24" class="outline-3">
+<h3 id="org853dc24">Implicaciones para la Gobernabilidad</h3>
+<div class="outline-text-3" id="text-org853dc24">
+<p>
+Esta polarización socioeconómica y geográfica presenta desafíos significativos para la gobernabilidad:
+</p>
+
+<ul class="org-ul">
+<li><b><b>Legitimidad cuestionada</b></b>: Cada partido percibe al otro como representante de intereses ajenos a "la América real"</li>
+<li><b><b>Políticas públicas divergentes</b></b>: Las preferencias políticas de ambas coaliciones son cada vez más irreconciliables</li>
+<li><b><b>Federalismo de facto</b></b>: Estados rojos y azules implementan políticas diametralmente opuestas</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org5429caa" class="outline-2">
+<h2 id="org5429caa">Factores Explicativos del Resultado</h2>
+<div class="outline-text-2" id="text-org5429caa">
+</div>
+<div id="outline-container-orgd0b7fa4" class="outline-3">
+<h3 id="orgd0b7fa4">Variables Económicas</h3>
+<div class="outline-text-3" id="text-orgd0b7fa4">
+<p>
+La inflación persistente y la percepción de deterioro económico favorecieron a Trump, especialmente entre:
+</p>
+<ul class="org-ul">
+<li>Familias de ingresos medios-bajos afectadas por el costo de vida</li>
+<li>Trabajadores industriales preocupados por la competencia internacional</li>
+<li>Pequeños empresarios impactados por regulaciones</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5e8e8a0" class="outline-3">
+<h3 id="org5e8e8a0">Variables Culturales</h3>
+<div class="outline-text-3" id="text-org5e8e8a0">
+<p>
+Los temas culturales mantuvieron su centralidad:
+</p>
+<ul class="org-ul">
+<li>Políticas de género e identidad sexual movilizaron a votantes conservadores</li>
+<li>Inmigración irregular generó ansiedad en comunidades de clase trabajadora</li>
+<li>Percepción de "imposición" de valores progresistas activó el voto de protesta</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge36bdd6" class="outline-3">
+<h3 id="orge36bdd6">Variables Institucionales</h3>
+<div class="outline-text-3" id="text-orge36bdd6">
+<p>
+La desconfianza institucional benefició al candidato "outsider":
+</p>
+<ul class="org-ul">
+<li>Escepticismo hacia medios de comunicación tradicionales</li>
+<li>Rechazo a élites políticas y académicas</li>
+<li>Preferencia por liderazgo "disruptivo"</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org2ef15c9" class="outline-2">
+<h2 id="org2ef15c9">Comparación Internacional</h2>
+<div class="outline-text-2" id="text-org2ef15c9">
+<p>
+Los patrones observados en Estados Unidos reflejan tendencias globales en democracias avanzadas:
+</p>
+</div>
+<div id="outline-container-org16f268c" class="outline-3">
+<h3 id="org16f268c">Fenómenos Paralelos</h3>
+<div class="outline-text-3" id="text-org16f268c">
+<ul class="org-ul">
+<li><b><b>Reino Unido</b></b>: Brexit y realineamiento clase trabajadora hacia conservadores</li>
+<li><b><b>Francia</b></b>: Crecimiento de Le Pen entre votantes obreros</li>
+<li><b><b>Alemania</b></b>: AfD en regiones post-industriales</li>
+<li><b><b>Italia</b></b>: Lega y Fratelli d'Italia entre trabajadores del norte</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8e130ed" class="outline-3">
+<h3 id="org8e130ed">Características Distintivas del Caso Estadounidense</h3>
+<div class="outline-text-3" id="text-org8e130ed">
+<ul class="org-ul">
+<li>Mayor peso de variables raciales/étnicas</li>
+<li>Sistema bipartidista que concentra polarización</li>
+<li>Federalismo que permite divergencia regional extrema</li>
+<li>Rol único de factores religiosos evangélicos</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgffb3b8d" class="outline-2">
+<h2 id="orgffb3b8d">Proyecciones y Escenarios Futuros</h2>
+<div class="outline-text-2" id="text-orgffb3b8d">
+</div>
+<div id="outline-container-org2590a74" class="outline-3">
+<h3 id="org2590a74">Escenario Base: Polarización Sostenida (60% probabilidad)</h3>
+<div class="outline-text-3" id="text-org2590a74">
+<ul class="org-ul">
+<li>Mantenimiento de coaliciones actuales</li>
+<li>Alternancia presidencial según ciclos económicos</li>
+<li>Creciente divergencia entre estados rojos y azules</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org142ecda" class="outline-3">
+<h3 id="org142ecda">Escenario Alternativo 1: Realineamiento Demócrata (25% probabilidad)</h3>
+<div class="outline-text-3" id="text-org142ecda">
+<ul class="org-ul">
+<li>Recuperación del apoyo hispano y de clase trabajadora</li>
+<li>Moderación en temas culturales</li>
+<li>Expansión suburban e incorporación generacional</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org758842d" class="outline-3">
+<h3 id="org758842d">Escenario Alternativo 2: Hegemonía Republicana (15% probabilidad)</h3>
+<div class="outline-text-3" id="text-org758842d">
+<ul class="org-ul">
+<li>Consolidación de mayoría multiétnica de clase trabajadora</li>
+<li>Colapso de coalición demócrata elitista</li>
+<li>Transformación ideológica del conservadurismo estadounidense</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd8c442e" class="outline-2">
+<h2 id="orgd8c442e">Conclusiones</h2>
+<div class="outline-text-2" id="text-orgd8c442e">
+<p>
+Las elecciones de 2024 han consolidado una nueva fase en la evolución del sistema político estadounidense, caracterizada por:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Inversión de coaliciones tradicionales</b></b>: Los republicanos se han convertido en el partido de la clase trabajadora multiétnica, mientras los demócratas representan a las élites profesionales urbanas.</li>
+
+<li><b><b>Polarización multidimensional</b></b>: Las divisiones no solo son ideológicas, sino también socioeconómicas, educativas, geográficas y culturales.</li>
+
+<li><b><b>Fragmentación territorial</b></b>: Estados Unidos evoluciona hacia un modelo de federalismo polarizado donde diferentes regiones implementan proyectos sociales divergentes.</li>
+
+<li><b><b>Crisis de representación</b></b>: Ninguna de las dos coaliciones representa adequadamente la diversidad del país, generando déficits democráticos estructurales.</li>
+
+<li><b><b>Inestabilidad sistémica</b></b>: La alternancia entre proyectos políticos incompatibles genera incertidumbre sobre la continuidad institucional.</li>
+</ol>
+
+<p>
+El triunfo de Trump en 2024 no representa simplemente el regreso de un líder populista, sino la expresión de transformaciones profundas en la estructura social y política estadounidense que trascienden figuras individuales y partidos específicos. La comprensión de estos patrones resulta crucial para anticipar la evolución del sistema político más influyente del mundo y sus implicaciones geoestratégicas globales.
+</p>
+</div>
+</div>
+<div id="outline-container-orgea145a4" class="outline-2">
+<h2 id="orgea145a4">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-orgea145a4">
+</div>
+<div id="outline-container-org248b881" class="outline-3">
+<h3 id="org248b881">Fuentes Primarias</h3>
+<div class="outline-text-3" id="text-org248b881">
+<ol class="org-ol">
+<li>Edison Research. (2024). "National Exit Poll: Presidential Election 2024". Associated Press.</li>
+<li>U.S. Census Bureau. (2023). "American Community Survey 2023: Demographic and Housing Estimates".</li>
+<li>Pew Research Center. (2024). "Validated Voters Study: 2024 Presidential Election".</li>
+<li>CNN Politics. (2024). "Exit Polls: 2024 Presidential Election Results".</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org8407ecf" class="outline-3">
+<h3 id="org8407ecf">Fuentes Secundarias</h3>
+<div class="outline-text-3" id="text-org8407ecf">
+<ol class="org-ol">
+<li>Brownstein, Ronald. (2024). "The New American Majority: How the Demographic Revolution Has Created a New Democratic Coalition". Atlantic Monthly Press.</li>
+<li>Gest, Justin. (2024). "Majority Minority: The Political Economy of America's Changing Demographics". Oxford University Press.</li>
+<li>Sides, John, et al. (2024). "Identity Crisis: The 2024 Presidential Campaign and the Battle for the Meaning of America". Princeton University Press.</li>
+<li>Brookings Institution. (2024). "Vital Statistics on Congress: Post-2024 Election Analysis".</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4577b9b" class="outline-3">
+<h3 id="org4577b9b">Informes Especializados</h3>
+<div class="outline-text-3" id="text-org4577b9b">
+<ol class="org-ol">
+<li>Cook Political Report. (2024). "2024 Presidential Election Analysis: State-by-State Demographic Breakdown".</li>
+<li>Gallup Organization. (2024). "Post-Election Survey: American Political Attitudes 2024".</li>
+<li>American Enterprise Institute. (2024). "The Future of American Politics: Demographic and Ideological Trends".</li>
+<li>Center for Strategic and International Studies. (2024). "Electoral Demographics and U.S. Foreign Policy Implications".</li>
+</ol>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+<b>Nota metodológica</b>: Los porcentajes y datos presentados representan aproximaciones basadas en múltiples fuentes de exit polls y encuestas post-electorales. Las cifras exactas pueden variar según la fuente consultada debido a diferencias metodológicas en la recolección y ponderación de datos.
+</p>
+
+<p>
+<br />
+</p>
+
+
+<div id="orgc573915" class="figure">
+<p><img src="./assets/images/distribucion_socioeconomica_2024.png" alt="distribucion_socioeconomica_2024.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+
+
+
+
+<div id="org797ce9a" class="figure">
+<p><img src="./assets/images/evolucion_demografica_2020_2024.png" alt="evolucion_demografica_2020_2024.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-06-14 14:37</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

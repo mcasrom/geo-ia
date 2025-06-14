@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-05-24 sáb 12:57 -->
+<!-- 2025-06-14 sáb 14:37 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mapa del Sitio</title>
+<title>Sitemap - Mapa del Sitio</title>
 <meta name="author" content="GeoClaude4" />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
@@ -194,121 +194,181 @@
   .org-svg { }
 </style>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
   
   body {
-    font-family: 'Georgia', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
-    color: #333;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 1rem;
   }
   
   header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    margin-bottom: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
   }
   
   .blog-title {
-    font-size: 2.5em;
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
   }
   
   .blog-subtitle {
-    font-size: 1.2em;
-    margin: 10px 0;
-    opacity: 0.9;
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
     max-width: 800px;
-    margin: 10px auto;
+    font-weight: 400;
   }
   
   .blog-email {
-    font-size: 1em;
-    margin: 10px 0;
-    opacity: 0.8;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
   }
   
   nav {
-    background-color: #34495e;
-    padding: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
   }
   
   nav ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   
   nav li {
-    margin: 0;
+    flex: 0 1 auto;
   }
   
   nav a {
-    color: white;
+    color: #2c3e50;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 0.75rem 1rem;
     display: block;
-    border-radius: 0;
-    transition: all 0.3s;
-    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
   }
   
   nav a:hover, nav a.active {
-    background-color: #2c3e50;
-    border-bottom-color: #3498db;
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
   }
   
   .content {
     background: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 30px 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
   }
   
-  .post-meta {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-left: 4px solid #3498db;
-    border-radius: 0 5px 5px 0;
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
   }
   
-  .tag {
-    background-color: #3498db;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    text-decoration: none;
-    margin: 2px 3px;
-    display: inline-block;
-    transition: background-color 0.3s;
-  }
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
   
-  .tag:hover {
-    background-color: #2980b9;
-    color: white;
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
   }
   
   .post-list {
@@ -317,204 +377,538 @@
   }
   
   .post-list li {
-    margin-bottom: 25px;
-    padding: 20px;
     background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
   .post-list h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
   }
   
   .post-list h3 a {
     color: #2c3e50;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   
   .post-list h3 a:hover {
-    color: #3498db;
+    color: #74b9ff;
   }
   
   .post-date {
-    color: #666;
-    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
   }
   
-  .tag-cloud {
-    text-align: center;
-    padding: 20px;
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
   
-  .archive-year {
-    background: #34495e;
-    color: white;
-    padding: 10px 15px;
-    margin: 20px 0 10px 0;
-    border-radius: 5px;
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
   }
   
-  .archive-month {
-    margin: 15px 0;
-    padding-left: 20px;
-  }
-  
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 50px;
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
   }
   
   .stats-box {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 12px;
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
   }
   
-  .breadcrumb {
-    padding: 10px 0;
-    color: #666;
-    font-size: 0.9em;
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
   }
   
-  .breadcrumb a {
-    color: #3498db;
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
     text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
   }
   
   @media (max-width: 768px) {
-    .container { padding: 10px; }
-    .content { padding: 20px; }
-    .blog-title { font-size: 2em; }
-    nav ul { flex-direction: column; }
-    nav a { text-align: center; }
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
   }
 </style>
 </head>
 <body>
 <div id="preamble" class="status">
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
   
   body {
-    font-family: 'Georgia', serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
-    color: #333;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
   }
   
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 1rem;
   }
   
   header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
-    color: white;
-    padding: 30px 0;
-    text-align: center;
-    margin-bottom: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
   }
   
   .blog-title {
-    font-size: 2.5em;
-    margin: 0;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
   }
   
   .blog-subtitle {
-    font-size: 1.2em;
-    margin: 10px 0;
-    opacity: 0.9;
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
     max-width: 800px;
-    margin: 10px auto;
+    font-weight: 400;
   }
   
   .blog-email {
-    font-size: 1em;
-    margin: 10px 0;
-    opacity: 0.8;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
   }
   
   nav {
-    background-color: #34495e;
-    padding: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 999;
   }
   
   nav ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   
   nav li {
-    margin: 0;
+    flex: 0 1 auto;
   }
   
   nav a {
-    color: white;
+    color: #2c3e50;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 0.75rem 1rem;
     display: block;
-    border-radius: 0;
-    transition: all 0.3s;
-    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
   }
   
   nav a:hover, nav a.active {
-    background-color: #2c3e50;
-    border-bottom-color: #3498db;
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
   }
   
   .content {
     background: white;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 30px 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
   }
   
-  .post-meta {
-    color: #666;
-    font-size: 0.9em;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa;
-    border-left: 4px solid #3498db;
-    border-radius: 0 5px 5px 0;
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
   }
   
-  .tag {
-    background-color: #3498db;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    text-decoration: none;
-    margin: 2px 3px;
-    display: inline-block;
-    transition: background-color 0.3s;
-  }
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
   
-  .tag:hover {
-    background-color: #2980b9;
-    color: white;
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
   }
   
   .post-list {
@@ -523,144 +917,453 @@
   }
   
   .post-list li {
-    margin-bottom: 25px;
-    padding: 20px;
     background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
     border-radius: 8px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
   .post-list h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
   }
   
   .post-list h3 a {
     color: #2c3e50;
     text-decoration: none;
+    transition: color 0.3s ease;
   }
   
   .post-list h3 a:hover {
-    color: #3498db;
+    color: #74b9ff;
   }
   
   .post-date {
-    color: #666;
-    font-style: italic;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
   }
   
-  .tag-cloud {
-    text-align: center;
-    padding: 20px;
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
   }
   
-  .archive-year {
-    background: #34495e;
-    color: white;
-    padding: 10px 15px;
-    margin: 20px 0 10px 0;
-    border-radius: 5px;
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
   }
   
-  .archive-month {
-    margin: 15px 0;
-    padding-left: 20px;
-  }
-  
-  footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 50px;
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
   }
   
   .stats-box {
-    background: linear-gradient(135deg, #3498db, #2980b9);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 2rem;
+    border-radius: 12px;
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
   }
   
-  .breadcrumb {
-    padding: 10px 0;
-    color: #666;
-    font-size: 0.9em;
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
   }
   
-  .breadcrumb a {
-    color: #3498db;
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
     text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
   }
   
   @media (max-width: 768px) {
-    .container { padding: 10px; }
-    .content { padding: 20px; }
-    .blog-title { font-size: 2em; }
-    nav ul { flex-direction: column; }
-    nav a { text-align: center; }
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
   }
-</style><header>
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
 <div class="container">
-<h1 class="blog-title">El Mapa y El Código</h1>
-<p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
-<p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
 </div>
 </header>
 <nav>
 <div class="container">
 <ul>
-<li><a href="index.html">🏠 Inicio</a></li>
-<li><a href="about.html">👤 About</a></li>
-<li><a href="contact.html">📧 Contact</a></li>
-<li><a href="archives.html">📚 Archives</a></li>
-<li><a href="tags.html">🏷️ Tags</a></li>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
 </ul>
 </div>
 </nav>
 <div class="container">
 </div>
 <div id="content" class="content">
-<h1 class="title">Mapa del Sitio</h1>
-<div id="outline-container-org4c7c2f2" class="outline-2">
-<h2 id="org4c7c2f2">Todos los Posts</h2>
-<div class="outline-text-2" id="text-org4c7c2f2">
-</div>
-<div id="outline-container-orgdb458d7" class="outline-3">
-<h3 id="orgdb458d7"><a href="sitemap.html">Mapa del Sitio</a></h3>
-<div class="outline-text-3" id="text-orgdb458d7">
-<p>
-Última modificación: 2025-05-23
-</p>
-</div>
-</div>
-<div id="outline-container-orgaaa60b2" class="outline-3">
-<h3 id="orgaaa60b2"><a href="2025-05-24-el-mapa-y-el-c-digo-geostrategia-geopol-tica-y-el-orden-global.html">El Mapa y El Código: Geostrategia, Geopolítica y el Orden Global</a></h3>
-<div class="outline-text-3" id="text-orgaaa60b2">
-<p>
-Última modificación: 2025-05-24
-</p>
-</div>
-</div>
-<div id="outline-container-org9aced32" class="outline-3">
-<h3 id="org9aced32"><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a></h3>
-<div class="outline-text-3" id="text-org9aced32">
-<p>
-Última modificación: 2025-05-23
-</p>
-</div>
-</div>
-</div>
-<div id="outline-container-orgdde5aeb" class="outline-2">
-<h2 id="orgdde5aeb">Páginas Estáticas</h2>
-<div class="outline-text-2" id="text-orgdde5aeb">
-</div>
-<div id="outline-container-orgb2a115d" class="outline-3">
-<h3 id="orgb2a115d"><a href="archives.html">Archives</a></h3>
-</div>
-<div id="outline-container-org4d78fe6" class="outline-3">
-<h3 id="org4d78fe6"><a href="tags.html">Etiquetas</a></h3>
+<h1 class="title">Sitemap - Mapa del Sitio</h1>
+<div id="outline-container-org6225fbc" class="outline-2">
+<h2 id="org6225fbc">🗺️ Mapa del Sitio</h2>
+<div class="outline-text-2" id="text-org6225fbc">
+<h2>📄 Páginas Principales</h2>
+<ul class="post-list">
+<li><a href="index.html">Index</a></li>
+<li><a href="archives.html">Archives</a></li>
+<li><a href="tags.html">Tags</a></li>
+</ul>
+<h2>📝 Páginas Estáticas</h2>
+<ul class="post-list">
+<li><a href="about.html">About - Acerca del Blog</a></li>
+<li><a href="contact.html">Contact - Contacto</a></li>
+<li><a href="diagrama-geoestrat-gico.html">Diagrama Geoestratégico</a></li>
+<li><a href="init.html">Init - Configuración del Sistema</a></li>
+<li><a href="news-feed.html">Feeds News - Noticias Recientes</a></li>
+<li><a href="ranking-de-amenazas-geopol-ticas-2025.html">Ranking de Amenazas Geopolíticas 2025</a></li>
+<li><a href="sitemap.html">Sitemap - Mapa del Sitio</a></li>
+</ul>
+<h2>📚 Posts</h2>
+<ul class="post-list">
+<li><a href="2025-06-14-negociaciones-nucleares-ir-n-eeuu-2025-entre-la-diplomacia-y-la-confrontaci-n.html">Negociaciones Nucleares Irán-EEUU 2025: Entre la Diplomacia y la Confrontación</a> <em>(2025-06-14 14:26)</em></li>
+<li><a href="2025-06-14-el-conflicto-ir-n-israel-an-lisis-geopol-tico-de-una-crisis-nuclear-en-escalada.html">El Conflicto Irán-Israel: Análisis Geopolítico de una Crisis Nuclear en Escalada</a> <em>(2025-06-14 12:37)</em></li>
+<li><a href="2025-06-11-el-periodismo-oficialista-cuando-la-prensa-se-convierte-en-altavoz-del-poder.html">El Periodismo Oficialista: Cuando la Prensa se Convierte en Altavoz del Poder</a> <em>(2025-06-11 13:00)</em></li>
+<li><a href="2025-06-11-el-color-de-la-informaci-n-an-lisis-del-ecosistema-medi-tico-y-decisiones-pol-ticas-en-espa-a-2020-2025-.html">El Color de la Información: Análisis del Ecosistema Mediático y Decisiones Políticas en España (2020-2025)</a> <em>(2025-06-11 14:47)</em></li>
+<li><a href="2025-06-10-geopol-tica-de-los-datos-qui-n-controla-la-infraestructura-digital-mundial-.html">Geopolítica de los datos: ¿Quién controla la infraestructura digital mundial?</a> <em>(2025-06-10 15:33)</em></li>
+<li><a href="2025-06-10-el-declive-de-las-libertades-en-la-am-rica-de-trump-an-lisis-geopol-tico-2015-2025.html">El Declive de las Libertades en la América de Trump: Análisis Geopolítico 2015-2025</a> <em>(2025-06-10 21:52)</em></li>
+<li><a href="2025-06-09-la-humildad-estrat-gica-de-hegseth-an-lisis-cr-tico-de-la-nueva-doctrina-geopol-tica-de-trump-en-el-indo-pac-fico.html">La "Humildad Estratégica" de Hegseth: Análisis Crítico de la Nueva Doctrina Geopolítica de Trump en el Indo-Pacífico</a> <em>(2025-06-09 14:10)</em></li>
+<li><a href="2025-06-09-an-lisis-de-libertades-globales-evoluci-n-del-ndice-de-libertades-2015-2025-june-.html">Análisis de Libertades Globales: Evolución del Índice de Libertades 2015-2025 June </a> <em>(2025-06-09 19:17)</em></li>
+<li><a href="2025-06-08-la-pol-tica-del-bulo-y-antibulo-un-an-lisis-cr-tico-del-ecosistema-de-desinformaci-n-contempor-neo.html">La Política del Bulo y Antibulo: Un Análisis Crítico del Ecosistema de Desinformación Contemporáneo</a> <em>(2025-06-08 07:40)</em></li>
+<li><a href="2025-06-08-la-gesti-n-de-la-narrativa-como-arma-pol-tica-un-an-lisis-cr-tico-del-control-discursivo-en-el-poder-contempor-neo.html">La Gestión de la Narrativa como Arma Política: Un Análisis Crítico del Control Discursivo en el Poder Contemporáneo</a> <em>(2025-06-08 11:59)</em></li>
+<li><a href="2025-06-08-la-geoestrategia-de-taiw-n-an-lisis-integral-de-su-posici-n-en-el-orden-global.html">La Geoestrategia de Taiwán: Análisis Integral de su Posición en el Orden Global</a> <em>(2025-06-08 22:37)</em></li>
+<li><a href="2025-06-08-impacto-de-la-migraci-n-en-la-din-mica-poblacional.html">Impacto de la Migración en la Dinámica Poblacional</a> <em>(2025-06-08 12:48)</em></li>
+<li><a href="2025-06-08-esferas-de-influencia-de-la-doctrina-monroe-al-multipolarismo-contempor-neo.html">Esferas de Influencia: De la Doctrina Monroe al Multipolarismo Contemporáneo</a> <em>(2025-06-08 14:58)</em></li>
+<li><a href="2025-06-06-el-concepto-de-pol-tica-an-lisis-cr-tico-de-su-evoluci-n-hist-rica-y-percepci-n-contempor-nea.html">El Concepto de "Política": Análisis Crítico de su Evolución Histórica y Percepción Contemporánea</a> <em>(2025-06-06 14:12)</em></li>
+<li><a href="2025-06-06-el-circo-de-la-pol-tica-desprestigio-y-traici-n-al-mandato-popular.html">El circo de la política: Desprestigio y traición al mandato popular</a> <em>(2025-06-06 14:02)</em></li>
+<li><a href="2025-06-05-la-migraci-n-como-arma-geoestrat-gica-an-lisis-cr-tico-del-weaponized-migration-en-el-siglo-xxi-ii-.html">La Migración como Arma Geoestratégica: Análisis Crítico del "Weaponized Migration" en el Siglo XXI (ii)</a> <em>(2025-06-05 16:15)</em></li>
+<li><a href="2025-06-05-el-impacto-de-las-migraciones-en-la-geopol-tica-geoestrategia-y-el-balance-de-poder-global-i-.html">El Impacto de las Migraciones en la Geopolítica, Geoestrategia y el Balance de Poder Global (i)</a> <em>(2025-06-05 16:07)</em></li>
+<li><a href="2025-06-05-an-lisis-cr-tico-sobre-la-subida-del-gasto-en-defensa-del-2-al-5-del-pib-en-la-otan.html">Análisis crítico sobre la subida del gasto en defensa del 2% al 5% del PIB en la OTAN</a> <em>(2025-06-05 21:38)</em></li>
+<li><a href="2025-06-03-panorama-geopol-tico-de-am-rica-central-y-del-sur-balance-de-poder-y-transformaciones-sist-micas-en-2025.html">Panorama Geopolítico de América Central y del Sur: Balance de Poder y Transformaciones Sistémicas en 2025</a> <em>(2025-06-03 07:34)</em></li>
+<li><a href="2025-06-03-la-asociaci-n-estrat-gica-de-china-con-asia-din-mica-riesgos-y-realineamientos-regionales.html">La Asociación Estratégica de China con Asia: Dinámica, Riesgos y Realineamientos Regionales</a> <em>(2025-06-03 07:40)</em></li>
+<li><a href="2025-06-01-la-doctrina-trump-2-0-el-nuevo-realismo-americano-y-la-reconfiguraci-n-del-orden-transatl-ntico.html">La Doctrina Trump 2.0: El Nuevo Realismo Americano y la Reconfiguración del Orden Transatlántico</a> <em>(2025-06-01 09:43)</em></li>
+<li><a href="2025-05-31-navegando-la-tormenta-perfecta-nuestro-nuevo-ranking-de-amenazas.html">Navegando la Tormenta Perfecta: Nuestro Nuevo Ranking de Amenazas</a> <em>(2025-05-31 01:21)</em></li>
+<li><a href="2025-05-31-el-nuevo-mapa-del-poder-global.html">El Nuevo Mapa del Poder Global</a> <em>(2025-05-31 08:15)</em></li>
+<li><a href="2025-05-30-el-mundo-en-mayo-2025-cinco-crisis-geopol-ticas-que-redefinen-el-orden-global-actual.html">El Mundo en Mayo 2025: Cinco Crisis Geopolíticas que Redefinen el Orden Global Actual</a> <em>(2025-05-30 07:04)</em></li>
+<li><a href="2025-05-29-fuentes-abiertas-gratuitas-para-el-an-lisis-geopol-tico-y-geoestrat-gico.html">Fuentes Abiertas Gratuitas para el Análisis Geopolítico y Geoestratégico</a> <em>(2025-05-29 02:02)</em></li>
+<li><a href="2025-05-29-el-habeas-corpus-en-el-equilibrio-global-de-poder.html">El Habeas Corpus en el Equilibrio Global de Poder</a> <em>(2025-05-29 08:16)</em></li>
+<li><a href="2025-05-29-el-h-beas-corpus-bajo-asedio-an-lisis-cr-tico-de-las-intenciones-de-la-administraci-n-trump.html">El Hábeas Corpus bajo Asedio: Análisis Crítico de las Intenciones de la Administración Trump</a> <em>(2025-05-29 11:37)</em></li>
+<li><a href="2025-05-27-perfil-ideol-gico-y-socioecon-mico-del-votante-en-las-elecciones-presidenciales-de-estados-unidos-2024.html">Perfil Ideológico y Socioeconómico del Votante en las Elecciones Presidenciales de Estados Unidos 2024</a> <em>(2025-05-27 07:07)</em></li>
+<li><a href="2025-05-27-el-compromiso-del-2-del-pib-en-defensa-otan-entre-la-geopol-tica-y-los-intereses-econ-micos.html">El Compromiso del 2% del PIB en Defensa OTAN: Entre la Geopolítica y los Intereses Económicos</a> <em>(2025-05-27 06:42)</em></li>
+<li><a href="2025-05-27-diagramas-y-tablas-explicativas-el-compromiso-del-2-pib-otan-ii-.html">Diagramas y Tablas Explicativas - El Compromiso del 2% PIB OTAN (ii)</a> <em>(2025-05-27 06:51)</em></li>
+<li><a href="2025-05-26-visiones-geoestrat-gicas-de-los-grandes-bloques-mundiales-y-sus-l-deres.html">Visiones Geoestratégicas de los Grandes Bloques Mundiales y sus Líderes</a> <em>(2025-05-26 07:01)</em></li>
+<li><a href="2025-05-26-los-brics-origen-evoluci-n-actualidad-y-potencial-en-la-geoestrategia-global.html">Los BRICS: Origen, Evolución, Actualidad y Potencial en la Geoestrategia Global</a> <em>(2025-05-26 12:57)</em></li>
+<li><a href="2025-05-26-el-tablero-global-relaciones-geoestrat-gicas-y-el-balance-de-poder-en-2025.html">El Tablero Global: Relaciones Geoestratégicas y el Balance de Poder en 2025</a> <em>(2025-05-26 06:17)</em></li>
+<li><a href="2025-05-25-la-geopol-tica-del-conocimiento-artificial-an-lisis-de-sesgos-y-polarizaci-n-en-los-principales-chat-ia-globales.html">La Geopolítica del Conocimiento Artificial: Análisis de Sesgos y Polarización en los Principales Chat IA Globales</a> <em>(2025-05-25 09:00)</em></li>
+<li><a href="2025-05-24-el-mapa-y-el-c-digo-geostrategia-geopol-tica-y-el-orden-global.html">El Mapa y El Código: Geostrategia, Geopolítica y el Orden Global</a> <em>(2025-05-24 04:36)</em></li>
+<li><a href="2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html">Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</a> <em>(2025-05-23 03:45)</em></li>
+</ul>
 </div>
 </div>
 </div>
@@ -670,9 +1373,27 @@
 <div class="container">
 <p>© 2025 El Mapa y El Código</p>
 <p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
-<p>Última actualización: 2025-05-24 12:57</p>
+<p>Última actualización: 2025-06-14 14:37</p>
 </div>
 </footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
 </div>
 </body>
 </html>
