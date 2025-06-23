@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-06-23 lun 12:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TNP en Crisis: Arquitectura Nuclear Global y Sus Fisuras en 2025</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Evaluación exhaustiva del Tratado de No Proliferación Nuclear tras 57 años de vigencia, análisis de adhesiones y no adhesiones, limitaciones estructurales, impacto histórico y perspectivas futuras del régimen de no proliferación en un mundo multipolar" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<meta name="description" content="Evaluación exhaustiva del Tratado de No Proliferación Nuclear tras 57 años de vigencia, análisis de adhesiones y no adhesiones, limitaciones">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">TNP en Crisis: Arquitectura Nuclear Global y Sus Fisuras en 2025</h1>
+<div id="outline-container-org1284a27" class="outline-2">
+<h2 id="org1284a27">TNP en Crisis: Arquitectura Nuclear Global y Sus Fisuras en 2025</h2>
+<div class="outline-text-2" id="text-org1284a27">
+<p>
+El Tratado de No Proliferación Nuclear (TNP), con 191 Estados parte, representa el acuerdo multilateral de desarme con mayor número de adhesiones en la historia de la humanidad. Sin embargo, en 2025, este pilar fundamental del orden internacional nuclear enfrenta desafíos existenciales que cuestionan su relevancia y eficacia en un mundo multipolar cada vez más complejo.
+</p>
+
+<p>
+Tras 57 años de vigencia, el TNP se encuentra en una encrucijada crítica: mientras mantiene formalmente a la mayoría de la comunidad internacional bajo su paraguas normativo, la realidad geopolítica muestra fisuras profundas que amenazan con socavar todo el régimen de no proliferación.
+</p>
+</div>
+</div>
+<div id="outline-container-org207ca3e" class="outline-2">
+<h2 id="org207ca3e">Génesis y Arquitectura del Tratado</h2>
+<div class="outline-text-2" id="text-org207ca3e">
+</div>
+<div id="outline-container-org1537934" class="outline-3">
+<h3 id="org1537934">Contexto Histórico de Creación</h3>
+<div class="outline-text-3" id="text-org1537934">
+<p>
+Después de la Segunda Guerra Mundial, los países miembros de las Naciones Unidas decidieron que sería necesario impedir que se extendiera la posesión de armas nucleares, por el riesgo de que llegaran a manos irresponsables. El TNP, firmado en 1968 y en vigor desde 1970, surgió como respuesta a la creciente preocupación por la proliferación nuclear tras las pruebas de Francia (1960) y China (1964).
+</p>
+</div>
+</div>
+<div id="outline-container-org6f4d7df" class="outline-3">
+<h3 id="org6f4d7df">Los Tres Pilares Fundamentales</h3>
+<div class="outline-text-3" id="text-org6f4d7df">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Pilar</th>
+<th scope="col" class="org-left">Objetivo Principal</th>
+<th scope="col" class="org-left">Artículo TNP</th>
+<th scope="col" class="org-left">Estado 2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">No Proliferación</td>
+<td class="org-left">Prevenir extensión armas nucleares</td>
+<td class="org-left">I, II, III</td>
+<td class="org-left">Parcialmente exitoso</td>
+</tr>
+
+<tr>
+<td class="org-left">Desarme Nuclear</td>
+<td class="org-left">Eliminar arsenales existentes</td>
+<td class="org-left">VI</td>
+<td class="org-left">Fracaso evidente</td>
+</tr>
+
+<tr>
+<td class="org-left">Uso Pacífico</td>
+<td class="org-left">Promoción tecnología nuclear civil</td>
+<td class="org-left">IV</td>
+<td class="org-left">Relativamente exitoso</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+
+
+
+<div id="orga9416f9" class="figure">
+<p><img src="./assets/images/tnp_structure.png" alt="tnp_structure.png" width="1000px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org10e298f" class="outline-2">
+<h2 id="org10e298f">Análisis de Adhesión y No Adhesión</h2>
+<div class="outline-text-2" id="text-org10e298f">
+</div>
+<div id="outline-container-org577e51a" class="outline-3">
+<h3 id="org577e51a">Estados Parte del TNP (191 países)</h3>
+<div class="outline-text-3" id="text-org577e51a">
+</div>
+<div id="outline-container-org6a1dca6" class="outline-4">
+<h4 id="org6a1dca6">Potencias Nucleares Reconocidas (P5)</h4>
+<div class="outline-text-4" id="text-org6a1dca6">
+<p>
+Solo a cinco Estados se les permitió la posesión de armas nucleares: Estados Unidos (firmante en 1968), Reino Unido (1968), Francia (1992), Unión Soviética (1968, sustituida por Rusia), República Popular China (1992).
+</p>
+
+<p>
+La tardía adhesión de Francia y China (1992) reveló las limitaciones iniciales del tratado y la resistencia de potencias nucleares a renunciar a su autonomía estratégica.
+</p>
+</div>
+</div>
+<div id="outline-container-org9edf035" class="outline-4">
+<h4 id="org9edf035">Estados Sin Armas Nucleares</h4>
+<div class="outline-text-4" id="text-org9edf035">
+<p>
+La amplia mayoría de países firmantes han cumplido formalmente sus obligaciones de no proliferación, aunque varios mantienen capacidades tecnológicas avanzadas que podrían facilitar un programa de armas:
+</p>
+
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Región</th>
+<th scope="col" class="org-left">Países Clave</th>
+<th scope="col" class="org-left">Capacidad Técnica</th>
+<th scope="col" class="org-left">Motivaciones Potenciales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Europa</td>
+<td class="org-left">Alemania</td>
+<td class="org-left">Muy alta</td>
+<td class="org-left">Autonomía estratégica UE</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Italia</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Estatus regional</td>
+</tr>
+
+<tr>
+<td class="org-left">Asia-Pacífico</td>
+<td class="org-left">Japón</td>
+<td class="org-left">Muy alta</td>
+<td class="org-left">Amenazas China/Corea N.</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Corea del Sur</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Disuasión norcoreana</td>
+</tr>
+
+<tr>
+<td class="org-left">Oriente Medio</td>
+<td class="org-left">Arabia Saudí</td>
+<td class="org-left">Media-Alta</td>
+<td class="org-left">Rivalidad con Irán</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Turquía</td>
+<td class="org-left">Media</td>
+<td class="org-left">Influencia regional</td>
+</tr>
+
+<tr>
+<td class="org-left">América Latina</td>
+<td class="org-left">Brasil</td>
+<td class="org-left">Media</td>
+<td class="org-left">Liderazgo sudamericano</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Argentina</td>
+<td class="org-left">Media</td>
+<td class="org-left">Paridad con Brasil</td>
+</tr>
+</tbody>
+</table>
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org9e71432" class="outline-3">
+<h3 id="org9e71432">Estados No Firmantes: Los Outsiders del Sistema</h3>
+<div class="outline-text-3" id="text-org9e71432">
+</div>
+<div id="outline-container-org1287eba" class="outline-4">
+<h4 id="org1287eba">India: El Disidente Ideológico</h4>
+<div class="outline-text-4" id="text-org1287eba">
+<p>
+De los 4 países que son India, Pakistán, Israel y Sudán del Sur, solo India se opone vehementemente al tratado. India argumenta que el TNP es discriminatorio al legitimar el monopolio nuclear de las P5, considerándolo una estructura neocolonial que perpetúa desigualdades globales.
+</p>
+
+<p>
+<b><b>Argumentos indios contra el TNP:</b></b>
+</p>
+<ul class="org-ul">
+<li>Discriminación institucionalizada entre estados "nucleares" y "no nucleares"</li>
+<li>Ausencia de compromisos vinculantes de desarme por parte de las P5</li>
+<li>Necesidades de seguridad nacional frente a China y Pakistán</li>
+<li>Demanda de reconocimiento como potencia nuclear responsable</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0eda70d" class="outline-4">
+<h4 id="org0eda70d">Pakistán: En Busca de Reconocimiento</h4>
+<div class="outline-text-4" id="text-org0eda70d">
+<p>
+Pakistán solicita su reconocimiento como estado nuclear en el TNP. Su programa nuclear, desarrollado en respuesta a la capacidad india, refleja las dinámicas de carrera armamentística regional que el TNP no pudo prevenir.
+</p>
+</div>
+</div>
+<div id="outline-container-orga84c17e" class="outline-4">
+<h4 id="orga84c17e">Israel: La Ambigüedad Estratégica</h4>
+<div class="outline-text-4" id="text-orga84c17e">
+<p>
+Israel mantiene un estado de ambigüedad respecto a sus capacidades nucleares. Esta política de "opacidad nuclear" le permite mantener disuasión sin asumir las responsabilidades formales de un estado nuclear declarado.
+</p>
+</div>
+</div>
+<div id="outline-container-org3f9e0dd" class="outline-4">
+<h4 id="org3f9e0dd">Sudán del Sur: El Nuevo Actor</h4>
+<div class="outline-text-4" id="text-org3f9e0dd">
+<p>
+Como el estado más reciente del mundo (independencia en 2011), Sudán del Sur representa un caso único: un país que nació en la era nuclear pero no ha adherido al TNP, aunque carece de capacidades nucleares.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org33eff40" class="outline-3">
+<h3 id="org33eff40">El Caso Excepcional: Corea del Norte</h3>
+<div class="outline-text-3" id="text-org33eff40">
+<p>
+Corea del Norte ratificó el tratado, pero revocó su firma en 2003 tras una disputa con los inspectores sobre las "inspecciones de instalaciones nucleares no declaradas". Este precedente de retirada unilateral estableció un peligroso modelo que podría ser emulado por otros estados.
+</p>
+
+<p>
+<b><b>Cronología de la retirada norcoreana:</b></b>
+</p>
+<ul class="org-ul">
+<li>1985: Adhesión al TNP</li>
+<li>1993: Primera amenaza de retirada</li>
+<li>2003: Retirada efectiva del TNP</li>
+<li>2006: Primera prueba nuclear</li>
+<li>2025: Arsenal estimado de 50 ojivas</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9343c5f" class="outline-2">
+<h2 id="org9343c5f">Desarrollo Institucional y Evolución Normativa</h2>
+<div class="outline-text-2" id="text-org9343c5f">
+</div>
+<div id="outline-container-org186cb59" class="outline-3">
+<h3 id="org186cb59">Conferencias de Revisión: Motor de Evolución</h3>
+<div class="outline-text-3" id="text-org186cb59">
+<p>
+El mecanismo de revisión quinquenal ha servido como barómetro de la salud del régimen:
+</p>
+
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-left">Resultado</th>
+<th scope="col" class="org-left">Significado Político</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1995</td>
+<td class="org-left">Extensión indefinida</td>
+<td class="org-left">Consolidación post-Guerra Fría</td>
+</tr>
+
+<tr>
+<td class="org-right">2000</td>
+<td class="org-left">Programa de Acción (13 pasos)</td>
+<td class="org-left">Compromiso de desarme</td>
+</tr>
+
+<tr>
+<td class="org-right">2005</td>
+<td class="org-left">Fracaso total</td>
+<td class="org-left">Crisis de legitimidad</td>
+</tr>
+
+<tr>
+<td class="org-right">2010</td>
+<td class="org-left">Plan de Acción renovado</td>
+<td class="org-left">Recuperación parcial</td>
+</tr>
+
+<tr>
+<td class="org-right">2015</td>
+<td class="org-left">Sin documento final</td>
+<td class="org-left">Parálisis diplomática</td>
+</tr>
+
+<tr>
+<td class="org-right">2020</td>
+<td class="org-left">Postpuesto (COVID-19)</td>
+<td class="org-left">Incertidumbre institucional</td>
+</tr>
+
+<tr>
+<td class="org-right">2022</td>
+<td class="org-left">Fracaso por veto ruso</td>
+<td class="org-left">Geopolítica sobre desarme</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org30f6f84" class="outline-3">
+<h3 id="org30f6f84">Complementos Institucionales</h3>
+<div class="outline-text-3" id="text-org30f6f84">
+</div>
+<div id="outline-container-orgf5e66d8" class="outline-4">
+<h4 id="orgf5e66d8">Tratado de Prohibición Completa de Ensayos Nucleares (CTBT)</h4>
+<div class="outline-text-4" id="text-orgf5e66d8">
+<p>
+Aunque no en vigor, complementa el TNP prohibiendo todas las pruebas nucleares. Su ratificación pendiente por potencias clave (Estados Unidos, China) refleja las limitaciones del multilateralismo nuclear.
+</p>
+</div>
+</div>
+<div id="outline-container-org8a4197c" class="outline-4">
+<h4 id="org8a4197c">Tratado de Prohibición de Armas Nucleares (TPAN)</h4>
+<div class="outline-text-4" id="text-org8a4197c">
+<p>
+Adoptado en 2017, representa una alternativa radical al enfoque gradualista del TNP, buscando la prohibición total y eliminación de armas nucleares.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org896f0ec" class="outline-2">
+<h2 id="org896f0ec">Impacto Histórico y Logros</h2>
+<div class="outline-text-2" id="text-org896f0ec">
+</div>
+<div id="outline-container-orgb93e4f9" class="outline-3">
+<h3 id="orgb93e4f9">Éxitos Documentados</h3>
+<div class="outline-text-3" id="text-orgb93e4f9">
+</div>
+<div id="outline-container-org0d27f4c" class="outline-4">
+<h4 id="org0d27f4c">Prevención de Proliferación Masiva</h4>
+<div class="outline-text-4" id="text-org0d27f4c">
+<p>
+El TNP ha conseguido mantener el "club nuclear" en nueve miembros durante décadas, evitando predicciones apocalípticas de 20-30 potencias nucleares para el año 2000.
+</p>
+</div>
+</div>
+<div id="outline-container-orgea3fdb8" class="outline-4">
+<h4 id="orgea3fdb8">Promoción de Usos Pacíficos</h4>
+<div class="outline-text-4" id="text-orgea3fdb8">
+<p>
+El régimen ha facilitado la transferencia tecnológica nuclear para fines civiles, contribuyendo al desarrollo de la industria nuclear mundial.
+</p>
+</div>
+</div>
+<div id="outline-container-org880b829" class="outline-4">
+<h4 id="org880b829">Casos de Abandono Voluntario</h4>
+<div class="outline-text-4" id="text-org880b829">
+<ul class="org-ul">
+<li><b><b>Sudáfrica</b></b>: Desmanteló seis dispositivos nucleares antes de la adhesión (1991)</li>
+<li><b><b>Kazajstán, Bielorrusia, Ucrania</b></b>: Transfirieron arsenales soviéticos a Rusia</li>
+<li><b><b>Brasil, Argentina</b></b>: Abandonaron programas de armas en los años 80-90</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb70bc84" class="outline-3">
+<h3 id="orgb70bc84">Fracasos Evidentes</h3>
+<div class="outline-text-3" id="text-orgb70bc84">
+</div>
+<div id="outline-container-orgfa79095" class="outline-4">
+<h4 id="orgfa79095">Desarme Nuclear</h4>
+<div class="outline-text-4" id="text-orgfa79095">
+<p>
+Las potencias nucleares han modernizado y expandido sus arsenales en lugar de desarmar, violando el espíritu del Artículo VI.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfce1fca" class="outline-4">
+<h4 id="orgfce1fca">Casos de Proliferación</h4>
+<div class="outline-text-4" id="text-orgfce1fca">
+<p>
+India (1974), Pakistán (1998), Corea del Norte (2006) desarrollaron armas nucleares fuera del régimen TNP.
+</p>
+</div>
+</div>
+<div id="outline-container-org1d47b19" class="outline-4">
+<h4 id="org1d47b19">Crisis de Verificación</h4>
+<div class="outline-text-4" id="text-org1d47b19">
+<p>
+Los casos de Irak, Libia, Irán y Siria revelaron limitaciones en los sistemas de salvaguardias del OIEA.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd16a61b" class="outline-2">
+<h2 id="orgd16a61b">Limitaciones Estructurales y Desafíos Contemporáneos</h2>
+<div class="outline-text-2" id="text-orgd16a61b">
+</div>
+<div id="outline-container-org37f9344" class="outline-3">
+<h3 id="org37f9344">Defectos de Diseño Fundamental</h3>
+<div class="outline-text-3" id="text-org37f9344">
+</div>
+<div id="outline-container-org522d027" class="outline-4">
+<h4 id="org522d027">Discriminación Institucionalizada</h4>
+<div class="outline-text-4" id="text-org522d027">
+<p>
+El TNP crea dos categorías legales de estados, legitimando el monopolio nuclear de cinco potencias mientras niega este derecho a otros 186 países.
+</p>
+</div>
+</div>
+<div id="outline-container-org11b1370" class="outline-4">
+<h4 id="org11b1370">Artículo VI: Ambigüedad Deliberada</h4>
+<div class="outline-text-4" id="text-org11b1370">
+<p>
+"Perseguir de buena fe negociaciones sobre medidas eficaces" es una formulación vaga que permite interpretaciones divergentes sobre obligaciones de desarme.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf91bb54" class="outline-4">
+<h4 id="orgf91bb54">Mecanismo de Retirada (Artículo X)</h4>
+<div class="outline-text-4" id="text-orgf91bb54">
+<p>
+La posibilidad de retirada unilateral con tres meses de aviso socava la permanencia del compromiso de no proliferación.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org4af93c7" class="outline-3">
+<h3 id="org4af93c7">Desafíos del Siglo XXI</h3>
+<div class="outline-text-3" id="text-org4af93c7">
+</div>
+<div id="outline-container-orgf2dc2c8" class="outline-4">
+<h4 id="orgf2dc2c8">Erosión de la Bipolaridad</h4>
+<div class="outline-text-4" id="text-orgf2dc2c8">
+<p>
+El ascenso de China como tercera superpotencia nuclear complica las dinámicas tradicionales de control de armamentos diseñadas para un mundo bipolar.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf9b5fc5" class="outline-4">
+<h4 id="orgf9b5fc5">Nuevas Tecnologías</h4>
+<div class="outline-text-4" id="text-orgf9b5fc5">
+<p>
+Desarrollos en inteligencia artificial, ciberseguridad e hipersónicos escapan al marco regulatorio del TNP.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf66883e" class="outline-4">
+<h4 id="orgf66883e">Actores No Estatales</h4>
+<div class="outline-text-4" id="text-orgf66883e">
+<p>
+El riesgo de terrorismo nuclear no está adecuadamente abordado por un tratado diseñado para regular estados.
+</p>
+</div>
+</div>
+<div id="outline-container-org321ab5d" class="outline-4">
+<h4 id="org321ab5d">Polarización Geopolítica</h4>
+<div class="outline-text-4" id="text-org321ab5d">
+<p>
+Las tensiones entre potencias nucleares (Estados Unidos-Rusia, Estados Unidos-China, India-Pakistán) erosionan la cooperación multilateral.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orge9d485a" class="outline-2">
+<h2 id="orge9d485a">Evaluación Crítica: Balance de Costos y Beneficios</h2>
+<div class="outline-text-2" id="text-orge9d485a">
+</div>
+<div id="outline-container-org10b053e" class="outline-3">
+<h3 id="org10b053e">Logros Indiscutibles</h3>
+<div class="outline-text-3" id="text-org10b053e">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Métrica</th>
+<th scope="col" class="org-left">Sin TNP (Escenario)</th>
+<th scope="col" class="org-left">Con TNP (Realidad 2025)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Número de potencias nucleares</td>
+<td class="org-left">20-30 (predicción 1960s)</td>
+<td class="org-left">9 Estados</td>
+</tr>
+
+<tr>
+<td class="org-left">Transferencias de armas</td>
+<td class="org-left">Múltiples casos</td>
+<td class="org-left">Cero documentados</td>
+</tr>
+
+<tr>
+<td class="org-left">Uso civil tecnología nuclear</td>
+<td class="org-left">Limitado y caótico</td>
+<td class="org-left">Regulado e internacional</td>
+</tr>
+
+<tr>
+<td class="org-left">Norma anti-proliferación</td>
+<td class="org-left">Inexistente</td>
+<td class="org-left">Universalmente aceptada</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org0292fef" class="outline-3">
+<h3 id="org0292fef">Fracasos Críticos</h3>
+<div class="outline-text-3" id="text-org0292fef">
+</div>
+<div id="outline-container-org67048e0" class="outline-4">
+<h4 id="org67048e0">Hipocresía Nuclear</h4>
+<div class="outline-text-4" id="text-org67048e0">
+<p>
+Las P5 han invertido billones en modernización mientras predican desarme a otros estados.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbb8c882" class="outline-4">
+<h4 id="orgbb8c882">Selectividad Política</h4>
+<div class="outline-text-4" id="text-orgbb8c882">
+<p>
+Estados Unidos e India firmaron el Acuerdo Nuclear Civil (2008) violando el espíritu del TNP, mientras Irán enfrenta sanciones por actividades técnicamente legales.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb54d0cf" class="outline-4">
+<h4 id="orgb54d0cf">Obsolescencia Progresiva</h4>
+<div class="outline-text-4" id="text-orgb54d0cf">
+<p>
+El TNP fue diseñado para un mundo de 1968, no para las realidades geopolíticas de 2025.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org3960c4d" class="outline-2">
+<h2 id="org3960c4d">Perspectivas Futuras: Escenarios y Opciones</h2>
+<div class="outline-text-2" id="text-org3960c4d">
+</div>
+<div id="outline-container-orgbd53ab7" class="outline-3">
+<h3 id="orgbd53ab7">Escenario 1: Reforma Gradual (Probabilidad: 30%)</h3>
+<div class="outline-text-3" id="text-orgbd53ab7">
+<ul class="org-ul">
+<li>Modernización de salvaguardias OIEA</li>
+<li>Protocolos adicionales universales</li>
+<li>Mayor transparencia en arsenales P5</li>
+<li>Mecanismos de verificación reforzados</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdf49cd2" class="outline-3">
+<h3 id="orgdf49cd2">Escenario 2: Fragmentación Controlada (Probabilidad: 35%)</h3>
+<div class="outline-text-3" id="text-orgdf49cd2">
+<ul class="org-ul">
+<li>Reconocimiento de facto de India, Pakistán e Israel</li>
+<li>TNP "Plus" para estados tecnológicamente avanzados</li>
+<li>Regímenes regionales complementarios</li>
+<li>Coexistencia con TPAN</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd870810" class="outline-3">
+<h3 id="orgd870810">Escenario 3: Crisis Terminal (Probabilidad: 25%)</h3>
+<div class="outline-text-3" id="text-orgd870810">
+<ul class="org-ul">
+<li>Más retiradas al estilo norcoreano</li>
+<li>Colapso del consenso multilateral</li>
+<li>Proliferación en cascada regional</li>
+<li>Fragmentación en bloques geopolíticos</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf8ca7e5" class="outline-3">
+<h3 id="orgf8ca7e5">Escenario 4: Renovación Transformacional (Probabilidad: 10%)</h3>
+<div class="outline-text-3" id="text-orgf8ca7e5">
+<ul class="org-ul">
+<li>Compromiso real de desarme por P5</li>
+<li>Eliminación gradual de arsenales</li>
+<li>Transición hacia seguridad cooperativa</li>
+<li>TNP como modelo para otros regímenes</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org9937a2b" class="outline-2">
+<h2 id="org9937a2b">Recomendaciones Estratégicas</h2>
+<div class="outline-text-2" id="text-org9937a2b">
+</div>
+<div id="outline-container-orgf8482dd" class="outline-3">
+<h3 id="orgf8482dd">Reformas Inmediatas (2025-2030)</h3>
+<div class="outline-text-3" id="text-orgf8482dd">
+<ol class="org-ol">
+<li><b><b>Transparencia vinculante</b></b>: Obligar a las P5 a reportar números exactos de arsenales</li>
+<li><b><b>Criterios de progreso</b></b>: Establecer métricas cuantificables para el desarme</li>
+<li><b><b>Inclusión controlada</b></b>: Diálogo formal con India, Pakistán e Israel</li>
+<li><b><b>Fortalecimiento OIEA</b></b>: Recursos y autoridad para verificación avanzada</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd0847a9" class="outline-3">
+<h3 id="orgd0847a9">Transformaciones Estructurales (2030-2040)</h3>
+<div class="outline-text-3" id="text-orgd0847a9">
+<ol class="org-ol">
+<li><b><b>Artículo VI renovado</b></b>: Compromisos temporales específicos de desarme</li>
+<li><b><b>Mecanismo de retirada restrictivo</b></b>: Proceso más complejo y costoso</li>
+<li><b><b>Tecnologías emergentes</b></b>: Protocolos para IA, cyber y nuevas armas</li>
+<li><b><b>Gobernanza inclusiva</b></b>: Representación más equitativa en órganos directivos</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org0c13349" class="outline-2">
+<h2 id="org0c13349">Conclusión</h2>
+<div class="outline-text-2" id="text-org0c13349">
+<p>
+El TNP en 2025 se encuentra en una paradoja existencial: es simultáneamente el tratado de desarme más exitoso y el más fracasado de la historia. Ha prevento la proliferación masiva pero ha fallado en su promesa fundamental de desarme. Ha creado normas universales pero mantiene discriminaciones anacrónicas.
+</p>
+
+<p>
+Su supervivencia dependerá de la capacidad de adaptación a un mundo multipolar donde nuevos actores desafían el monopolio nuclear de las P5. La alternativa no es la perfección, sino el caos: un mundo sin TNP sería inevitablemente más peligroso, pero un TNP inmutable se volverá progresivamente irrelevante.
+</p>
+
+<p>
+El desafío para los próximos 25 años será transformar un tratado de la Guerra Fría en un instrumento eficaz para el siglo XXI, manteniendo sus logros mientras aborda sus fracasos fundamentales. La ventana de oportunidad se cierra rápidamente: la próxima década determinará si el TNP evoluciona o perece.
+</p>
+</div>
+</div>
+<div id="outline-container-orgfe384d7" class="outline-2">
+<h2 id="orgfe384d7">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-orgfe384d7">
+<ol class="org-ol">
+<li>International Atomic Energy Agency. "The NPT and IAEA Safeguards", Viena, 2025.</li>
+<li>United Nations Office for Disarmament Affairs. "2020 NPT Review Conference Background", Nueva York, 2024.</li>
+<li>Treaty on the Non-Proliferation of Nuclear Weapons, texto completo, 1968.</li>
+<li>Stockholm International Peace Research Institute. "SIPRI Yearbook 2025: NPT Assessment".</li>
+<li>Center for Strategic and International Studies. "The Future of the NPT Regime", Washington, 2025.</li>
+<li>Monterey Institute of International Studies. "Nuclear Non-Proliferation: A Critical Assessment", 2024.</li>
+<li>Council on Foreign Relations. "The NPT at 57: Crisis or Adaptation?", Nueva York, 2025.</li>
+<li>International Campaign to Abolish Nuclear Weapons. "TNP vs TPAN: Complementarity or Competition?", 2024.</li>
+</ol>
+
+<p>
+<br />
+</p>
+
+<p>
+<a href="2025-06-23-arsenal-nuclear-global-geopol-tica-de-la-disuasi-n-en-2025.html">- Arsenal Nuclear Global: Geopolítica de la Disuasión en 2025</a>
+</p>
+
+
+<p>
+<br />
+</p>
+
+<p class="post-meta">Publicado el 2025-06-23 12:14 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-06-23 12:46</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>
