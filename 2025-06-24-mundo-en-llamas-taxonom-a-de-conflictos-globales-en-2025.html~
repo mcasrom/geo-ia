@@ -1,0 +1,2111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mundo en Llamas: Taxonomía de Conflictos Globales en 2025</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis exhaustivo y multidimensional de los 56 conflictos activos globales en 2025, clasificados por naturaleza bélica, económica, religiosa y territorial, incluyendo evaluación de riesgos, tendencias evolutivas y proyecciones estratégicas" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="Análisis exhaustivo y multidimensional de los 56 conflictos activos globales en 2025, clasificados por naturaleza bélica, económica, religio">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Mundo en Llamas: Taxonomía de Conflictos Globales en 2025</h1>
+
+<div id="outline-container-org4884d48" class="outline-2">
+<h2 id="org4884d48">Introducción: El Panorama de Crisis Global</h2>
+<div class="outline-text-2" id="text-org4884d48">
+<p>
+El año 2025 marca un momento crítico en la historia contemporánea: 56 conflictos y guerras activas están transformando el orden mundial establecido tras la Segunda Guerra Mundial. Esta cifra representa el mayor número de conflictos simultáneos desde 1945, configurando un escenario de multipolaridad conflictiva donde las tensiones tradicionales se entrecruzan con nuevas formas de confrontación.
+</p>
+
+<p>
+A la guerra de Ucrania, que cumplirá en febrero de 2025 su tercer aniversario, se suma la masacre israelí en la Franja de Gaza, que durante este año ha escalado a una crisis regional, mientras el regreso de Trump le suma imprevisibilidad a un mundo ya de por sí volátil.
+</p>
+
+<p>
+Esta realidad multifacética exige un análisis taxonómico que trascienda las categorías tradicionales de conflicto, integrando dimensiones bélicas, económicas, religiosas, territoriales y tecnológicas en un marco analítico comprehensivo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6d59b77" class="outline-2">
+<h2 id="org6d59b77">Taxonomía de Conflictos: Clasificación Multidimensional</h2>
+<div class="outline-text-2" id="text-org6d59b77">
+</div>
+<div id="outline-container-org5fd2928" class="outline-3">
+<h3 id="org5fd2928">Conflictos Bélicos de Alta Intensidad</h3>
+<div class="outline-text-3" id="text-org5fd2928">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Conflicto</th>
+<th scope="col" class="org-right">Inicio</th>
+<th scope="col" class="org-left">Duración</th>
+<th scope="col" class="org-left">Víctimas/Año</th>
+<th scope="col" class="org-left">Países Involucrados</th>
+<th scope="col" class="org-left">Tipo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ucrania-Rusia</td>
+<td class="org-right">2022</td>
+<td class="org-left">3 años</td>
+<td class="org-left">200,000+</td>
+<td class="org-left">UA, RU, OTAN</td>
+<td class="org-left">Interestatal</td>
+</tr>
+
+<tr>
+<td class="org-left">Gaza-Israel</td>
+<td class="org-right">2023</td>
+<td class="org-left">15 meses</td>
+<td class="org-left">45,000+</td>
+<td class="org-left">IL, PS, LB, SY</td>
+<td class="org-left">Regional</td>
+</tr>
+
+<tr>
+<td class="org-left">Sudán (Civil)</td>
+<td class="org-right">2023</td>
+<td class="org-left">2 años</td>
+<td class="org-left">24,000+</td>
+<td class="org-left">SD</td>
+<td class="org-left">Intraestatal</td>
+</tr>
+
+<tr>
+<td class="org-left">Myanmar (Golpe)</td>
+<td class="org-right">2021</td>
+<td class="org-left">4 años</td>
+<td class="org-left">18,000+</td>
+<td class="org-left">MM</td>
+<td class="org-left">Interno</td>
+</tr>
+
+<tr>
+<td class="org-left">Etiopía-Tigray</td>
+<td class="org-right">2020</td>
+<td class="org-left">3 años</td>
+<td class="org-left">15,000+</td>
+<td class="org-left">ET</td>
+<td class="org-left">Étnico-regional</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org288d448" class="outline-3">
+<h3 id="org288d448">Conflictos Económicos y Comerciales</h3>
+<div class="outline-text-3" id="text-org288d448">
+</div>
+<div id="outline-container-orgf223fb3" class="outline-4">
+<h4 id="orgf223fb3">Guerras Arancelarias y Sanciones</h4>
+<div class="outline-text-4" id="text-orgf223fb3">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Eje de Tensión</th>
+<th scope="col" class="org-left">Sectores Afectados</th>
+<th scope="col" class="org-left">Impacto PIB</th>
+<th scope="col" class="org-left">Duración</th>
+<th scope="col" class="org-left">Escalabilidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">EE.UU.-China</td>
+<td class="org-left">Tecnología, Acero</td>
+<td class="org-left">-0.8% mundial</td>
+<td class="org-left">7 años</td>
+<td class="org-left">Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Occidente-Rusia</td>
+<td class="org-left">Energía, Finanzas</td>
+<td class="org-left">-2.1% europeo</td>
+<td class="org-left">3 años</td>
+<td class="org-left">Media</td>
+</tr>
+
+<tr>
+<td class="org-left">UE-Reino Unido</td>
+<td class="org-left">Servicios, Pesca</td>
+<td class="org-left">-0.4% bilateral</td>
+<td class="org-left">4 años</td>
+<td class="org-left">Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">India-Pakistán</td>
+<td class="org-left">Textil, Agrícola</td>
+<td class="org-left">-0.2% regional</td>
+<td class="org-left">Intermitente</td>
+<td class="org-left">Media</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+
+<p>
+Las guerras comerciales desestabilizan los mercados globales y afectan a la economía mundial mediante imposiciones arancelarias, aumentan los costos de producción, reducen la competitividad, mientras los BRICS alertan sobre el impacto de la guerra arancelaria y las sanciones en la economía global.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org198896e" class="outline-3">
+<h3 id="org198896e">Conflictos Religiosos y Sectarios</h3>
+<div class="outline-text-3" id="text-org198896e">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Región</th>
+<th scope="col" class="org-left">Conflicto Principal</th>
+<th scope="col" class="org-left">Grupos</th>
+<th scope="col" class="org-left">Intensidad</th>
+<th scope="col" class="org-left">Dimensión Internacional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Oriente Medio</td>
+<td class="org-left">Suní-Chiíta</td>
+<td class="org-left">SA vs IR</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Proxy wars regionales</td>
+</tr>
+
+<tr>
+<td class="org-left">Nigeria</td>
+<td class="org-left">Musulmanes-Cristianos</td>
+<td class="org-left">Boko Haram</td>
+<td class="org-left">Media</td>
+<td class="org-left">Terrorismo transnacional</td>
+</tr>
+
+<tr>
+<td class="org-left">India</td>
+<td class="org-left">Hindu-Musulmán</td>
+<td class="org-left">BJP vs Minorías</td>
+<td class="org-left">Media</td>
+<td class="org-left">Política doméstica</td>
+</tr>
+
+<tr>
+<td class="org-left">Myanmar</td>
+<td class="org-left">Budista-Rohingya</td>
+<td class="org-left">Ejército vs Minoría</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Crisis de refugiados</td>
+</tr>
+
+<tr>
+<td class="org-left">CAR</td>
+<td class="org-left">Cristiano-Musulmán</td>
+<td class="org-left">Seleka vs Anti-balaka</td>
+<td class="org-left">Media</td>
+<td class="org-left">Intervención internacional</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd1cd4ba" class="outline-3">
+<h3 id="orgd1cd4ba">Conflictos Territoriales y Fronterizos</h3>
+<div class="outline-text-3" id="text-orgd1cd4ba">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Disputa</th>
+<th scope="col" class="org-left">Países</th>
+<th scope="col" class="org-left">Área (km²)</th>
+<th scope="col" class="org-left">Población Afectada</th>
+<th scope="col" class="org-left">Recursos en Juego</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Mar de China Meridional</td>
+<td class="org-left">CN, PH, VN, MY</td>
+<td class="org-left">3,500,000</td>
+<td class="org-left">2.8 mil millones</td>
+<td class="org-left">Petróleo, gas, pesca</td>
+</tr>
+
+<tr>
+<td class="org-left">Cachemira</td>
+<td class="org-left">IN, PK, CN</td>
+<td class="org-left">222,000</td>
+<td class="org-left">15 millones</td>
+<td class="org-left">Agua, posición estratégica</td>
+</tr>
+
+<tr>
+<td class="org-left">Sahara Occidental</td>
+<td class="org-left">MA, RASD</td>
+<td class="org-left">266,000</td>
+<td class="org-left">600,000</td>
+<td class="org-left">Fosfatos, pesca</td>
+</tr>
+
+<tr>
+<td class="org-left">Nagorno-Karabaj</td>
+<td class="org-left">AM, AZ</td>
+<td class="org-left">11,458</td>
+<td class="org-left">150,000</td>
+<td class="org-left">Energía, corredores</td>
+</tr>
+
+<tr>
+<td class="org-left">Islas Kuriles</td>
+<td class="org-left">RU, JP</td>
+<td class="org-left">15,600</td>
+<td class="org-left">20,000</td>
+<td class="org-left">Pesca, posición naval</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+
+
+<div id="org197f0a9" class="figure">
+<p><img src="./assets/images/global_conflicts_topology.png" alt="global_conflicts_topology.png" width="1000px" />
+</p>
+</div>
+
+<p>
+<a href="./assets/images/global_conflicts_topology.png">Imagen</a>
+</p>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga0b33d6" class="outline-2">
+<h2 id="orga0b33d6">Análisis Regional: Focos de Inestabilidad</h2>
+<div class="outline-text-2" id="text-orga0b33d6">
+</div>
+<div id="outline-container-orged56818" class="outline-3">
+<h3 id="orged56818">Europa Oriental: El Epicentro Geopolítico</h3>
+<div class="outline-text-3" id="text-orged56818">
+<p>
+La guerra ruso-ucraniana ha redefinido la arquitectura de seguridad europea, con implicaciones que trascienden lo militar para abarcar dimensiones energéticas, alimentarias y migratorias. El conflicto ha provocado:
+</p>
+
+<ul class="org-ul">
+<li><b><b>Desplazamientos masivos</b></b>: 6.2 millones de refugiados ucranianos</li>
+<li><b><b>Crisis energética</b></b>: Reducción del 40% de suministro gasístico ruso a Europa</li>
+<li><b><b>Reconfiguración militar</b></b>: Expansión de la OTAN con Finlandia y Suecia</li>
+<li><b><b>Fragmentación económica</b></b>: Sanciones por valor de €240 mil millones</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49b6955" class="outline-3">
+<h3 id="org49b6955">Oriente Medio: Complejidad Multifactorial</h3>
+<div class="outline-text-3" id="text-org49b6955">
+<p>
+La región experimenta una convergencia de crisis que incluye:
+</p>
+</div>
+
+<div id="outline-container-org45db31a" class="outline-4">
+<h4 id="org45db31a">Conflictos Activos por Subregión</h4>
+<div class="outline-text-4" id="text-org45db31a">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Subregión</th>
+<th scope="col" class="org-left">Conflictos Principales</th>
+<th scope="col" class="org-left">Actores Clave</th>
+<th scope="col" class="org-left">Proxy Wars</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Levante</td>
+<td class="org-left">Siria, Líbano, Gaza</td>
+<td class="org-left">IR, TR, SA, IL</td>
+<td class="org-left">Hezbolá, Hamas</td>
+</tr>
+
+<tr>
+<td class="org-left">Golfo Pérsico</td>
+<td class="org-left">Yemen, Estrecho Hormuz</td>
+<td class="org-left">SA, IR, UAE</td>
+<td class="org-left">Houthis, PMU</td>
+</tr>
+
+<tr>
+<td class="org-left">Mesopotamia</td>
+<td class="org-left">Irak post-ISIS</td>
+<td class="org-left">IR, TR, EE.UU.</td>
+<td class="org-left">Milicias chiítas</td>
+</tr>
+
+<tr>
+<td class="org-left">Magreb</td>
+<td class="org-left">Libia, Túnez</td>
+<td class="org-left">TR, EG, UAE</td>
+<td class="org-left">Tribus, milicias</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5a9c1f7" class="outline-3">
+<h3 id="org5a9c1f7">África Subsahariana: Crisis de Gobernanza</h3>
+<div class="outline-text-3" id="text-org5a9c1f7">
+<p>
+El continente enfrenta una multiplicidad de conflictos interconectados:
+</p>
+
+<ul class="org-ul">
+<li><b><b>Sahel</b></b>: Insurgencias yihadistas en Mali, Burkina Faso, Níger</li>
+<li><b><b>Cuerno de África</b></b>: Crisis en Sudán, tensiones Etiopía-Eritrea</li>
+<li><b><b>África Central</b></b>: Inestabilidad en RDC, CAR, Chad</li>
+<li><b><b>África Occidental</b></b>: Piratería en Golfo de Guinea, tensiones étnicas Nigeria</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1339a68" class="outline-3">
+<h3 id="org1339a68">Asia-Pacífico: Tensiones Sistémicas</h3>
+<div class="outline-text-3" id="text-org1339a68">
+<p>
+La región experimenta el mayor riesgo de escalada entre grandes potencias:
+</p>
+</div>
+
+<div id="outline-container-org9b9cf5b" class="outline-4">
+<h4 id="org9b9cf5b">Puntos de Fricción Críticos</h4>
+<div class="outline-text-4" id="text-org9b9cf5b">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Zona</th>
+<th scope="col" class="org-right">Probabilidad Escalada</th>
+<th scope="col" class="org-left">Actores</th>
+<th scope="col" class="org-left">Implicaciones Globales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Taiwán</td>
+<td class="org-right">35% (2025-2030)</td>
+<td class="org-left">CN, TW, EE.UU., JP</td>
+<td class="org-left">Cadenas tecnológicas</td>
+</tr>
+
+<tr>
+<td class="org-left">Mar China Meridional</td>
+<td class="org-right">45%</td>
+<td class="org-left">CN, ASEAN, EE.UU.</td>
+<td class="org-left">Rutas comerciales</td>
+</tr>
+
+<tr>
+<td class="org-left">Península Coreana</td>
+<td class="org-right">25%</td>
+<td class="org-left">KP, KR, EE.UU., CN</td>
+<td class="org-left">Proliferación nuclear</td>
+</tr>
+
+<tr>
+<td class="org-left">India-China (LAC)</td>
+<td class="org-right">30%</td>
+<td class="org-left">IN, CN</td>
+<td class="org-left">Estabilidad asiática</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10cc440" class="outline-2">
+<h2 id="org10cc440">Conflictos Económicos: Nueva Guerra Fría Comercial</h2>
+<div class="outline-text-2" id="text-org10cc440">
+</div>
+<div id="outline-container-org1b54968" class="outline-3">
+<h3 id="org1b54968">Arquitectura de Guerra Comercial Global</h3>
+<div class="outline-text-3" id="text-org1b54968">
+<p>
+Las empresas vinculadas a gobiernos son las principales beneficiarias de las guerras comerciales, especialmente al momento de enfrentar barreras arancelarias, revelando la instrumentalización político-económica de los conflictos comerciales.
+</p>
+</div>
+
+<div id="outline-container-org0f722d7" class="outline-4">
+<h4 id="org0f722d7">Índice de Fragmentación Económica Global (IFEG)</h4>
+<div class="outline-text-4" id="text-org0f722d7">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Bloque</th>
+<th scope="col" class="org-left">Países Núcleo</th>
+<th scope="col" class="org-left">PIB Conjunto</th>
+<th scope="col" class="org-right">Comercio Intra-bloque</th>
+<th scope="col" class="org-left">Sanciones Aplicadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Occidental</td>
+<td class="org-left">EE.UU., UE, JP, CA, AU</td>
+<td class="org-left">$48.7 billones</td>
+<td class="org-right">42%</td>
+<td class="org-left">15,847 individuales</td>
+</tr>
+
+<tr>
+<td class="org-left">Sino-céntrico</td>
+<td class="org-left">CN, RU, IR, KP</td>
+<td class="org-left">$19.2 billones</td>
+<td class="org-right">23%</td>
+<td class="org-left">3,456 individuales</td>
+</tr>
+
+<tr>
+<td class="org-left">No Alineados</td>
+<td class="org-left">IN, BR, SA, TR, MX</td>
+<td class="org-left">$12.8 billones</td>
+<td class="org-right">18%</td>
+<td class="org-left">892 individuales</td>
+</tr>
+
+<tr>
+<td class="org-left">Swing States</td>
+<td class="org-left">ID, TH, VN, KZ, AE</td>
+<td class="org-left">$4.1 billones</td>
+<td class="org-right">35%</td>
+<td class="org-left">234 individuales</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org812a783" class="outline-3">
+<h3 id="org812a783">Sectores Estratégicos en Disputa</h3>
+<div class="outline-text-3" id="text-org812a783">
+</div>
+<div id="outline-container-orgf25086f" class="outline-4">
+<h4 id="orgf25086f">Tecnologías Críticas</h4>
+<div class="outline-text-4" id="text-orgf25086f">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Sector</th>
+<th scope="col" class="org-left">Líder Global</th>
+<th scope="col" class="org-left">Dependencia China</th>
+<th scope="col" class="org-left">Riesgo Fragmentación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Semiconductores</td>
+<td class="org-left">TW, KR, NL</td>
+<td class="org-left">65% manufactura</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Tierras Raras</td>
+<td class="org-left">CN</td>
+<td class="org-left">85% refinación</td>
+<td class="org-left">Extremo</td>
+</tr>
+
+<tr>
+<td class="org-left">Baterías EV</td>
+<td class="org-left">CN, JP, KR</td>
+<td class="org-left">70% cadena valor</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">5G/6G</td>
+<td class="org-left">CN, EE.UU., EU</td>
+<td class="org-left">40% patentes</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">IA/Computación</td>
+<td class="org-left">EE.UU., CN</td>
+<td class="org-left">30% investigación</td>
+<td class="org-left">Medio</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb6020c9" class="outline-2">
+<h2 id="orgb6020c9">Dimensión Religiosa: Resurgimiento del Sectarismo</h2>
+<div class="outline-text-2" id="text-orgb6020c9">
+</div>
+<div id="outline-container-org2032876" class="outline-3">
+<h3 id="org2032876">Geografía de Conflictos Religiosos</h3>
+<div class="outline-text-3" id="text-org2032876">
+<p>
+El resurgimiento de identidades religiosas como factores de conflicto refleja el fracaso de modelos seculares de organización estatal y la instrumentalización política de creencias:
+</p>
+</div>
+
+<div id="outline-container-org3f21a78" class="outline-4">
+<h4 id="org3f21a78">Intensidad de Conflictos Sectarios por Región</h4>
+<div class="outline-text-4" id="text-org3f21a78">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Región</th>
+<th scope="col" class="org-left">Índice Tensión</th>
+<th scope="col" class="org-left">Población Riesgo</th>
+<th scope="col" class="org-right">Conflictos Activos</th>
+<th scope="col" class="org-left">Tendencia 2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Oriente Medio</td>
+<td class="org-left">8.7/10</td>
+<td class="org-left">180 millones</td>
+<td class="org-right">12</td>
+<td class="org-left">Escalada</td>
+</tr>
+
+<tr>
+<td class="org-left">Asia Sur</td>
+<td class="org-left">7.2/10</td>
+<td class="org-left">420 millones</td>
+<td class="org-right">8</td>
+<td class="org-left">Estable-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">África Subsahariana</td>
+<td class="org-left">6.8/10</td>
+<td class="org-left">340 millones</td>
+<td class="org-right">15</td>
+<td class="org-left">Escalada</td>
+</tr>
+
+<tr>
+<td class="org-left">Asia Sudoriental</td>
+<td class="org-left">5.4/10</td>
+<td class="org-left">68 millones</td>
+<td class="org-right">4</td>
+<td class="org-left">Estable</td>
+</tr>
+
+<tr>
+<td class="org-left">Europa</td>
+<td class="org-left">3.1/10</td>
+<td class="org-left">25 millones</td>
+<td class="org-right">2</td>
+<td class="org-left">Descendente</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4d2e554" class="outline-3">
+<h3 id="org4d2e554">Vectores de Propagación Sectaria</h3>
+<div class="outline-text-3" id="text-org4d2e554">
+<ol class="org-ol">
+<li><b><b>Proxy Wars</b></b>: Utilización de grupos religiosos como instrumentos geopolíticos</li>
+<li><b><b>Migración Forzada</b></b>: Desplazamientos masivos alterando demografías locales</li>
+<li><b><b>Radicalización Digital</b></b>: Plataformas online acelerando polarización religiosa</li>
+<li><b><b>Competencia Geopolítica</b></b>: Potencias regionales instrumentalizando divisiones sectarias</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2478647" class="outline-2">
+<h2 id="org2478647">Evaluación de Riesgos: Matriz de Probabilidades 2025-2030</h2>
+<div class="outline-text-2" id="text-org2478647">
+</div>
+<div id="outline-container-org370813e" class="outline-3">
+<h3 id="org370813e">Escenarios de Escalada por Región</h3>
+<div class="outline-text-3" id="text-org370813e">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Región</th>
+<th scope="col" class="org-left">Escenario Más Probable</th>
+<th scope="col" class="org-right">Probabilidad</th>
+<th scope="col" class="org-left">Impacto Global</th>
+<th scope="col" class="org-left">Mitigación Posible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Europa Oriental</td>
+<td class="org-left">Prolongación guerra UA-RU</td>
+<td class="org-right">70%</td>
+<td class="org-left">Alto</td>
+<td class="org-left">Negociación territorial</td>
+</tr>
+
+<tr>
+<td class="org-left">Oriente Medio</td>
+<td class="org-left">Escalada Israel-Irán</td>
+<td class="org-right">45%</td>
+<td class="org-left">Muy Alto</td>
+<td class="org-left">Diplomacia multilateral</td>
+</tr>
+
+<tr>
+<td class="org-left">Asia-Pacífico</td>
+<td class="org-left">Crisis Taiwán-China</td>
+<td class="org-right">35%</td>
+<td class="org-left">Extremo</td>
+<td class="org-left">Disuasión multilateral</td>
+</tr>
+
+<tr>
+<td class="org-left">África</td>
+<td class="org-left">Fragmentación estados</td>
+<td class="org-right">60%</td>
+<td class="org-left">Medio</td>
+<td class="org-left">Intervención regional</td>
+</tr>
+
+<tr>
+<td class="org-left">América Latina</td>
+<td class="org-left">Crisis Venezuela-Guyana</td>
+<td class="org-right">25%</td>
+<td class="org-left">Bajo</td>
+<td class="org-left">Mediación OEA</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1de2650" class="outline-3">
+<h3 id="org1de2650">Índice de Vulnerabilidad Sistémica (IVS)</h3>
+<div class="outline-text-3" id="text-org1de2650">
+</div>
+<div id="outline-container-org3acb829" class="outline-4">
+<h4 id="org3acb829">Factores de Riesgo Transversal</h4>
+<div class="outline-text-4" id="text-org3acb829">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Factor</th>
+<th scope="col" class="org-right">Peso Relativo</th>
+<th scope="col" class="org-left">Tendencia 2025</th>
+<th scope="col" class="org-left">Países Más Vulnerables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Cambio Climático</td>
+<td class="org-right">25%</td>
+<td class="org-left">Aceleración</td>
+<td class="org-left">BD, PK, PH, VU</td>
+</tr>
+
+<tr>
+<td class="org-left">Desigualdad Económica</td>
+<td class="org-right">20%</td>
+<td class="org-left">Incremento</td>
+<td class="org-left">ZA, BR, CO, CL</td>
+</tr>
+
+<tr>
+<td class="org-left">Debilidad Institucional</td>
+<td class="org-right">18%</td>
+<td class="org-left">Estable</td>
+<td class="org-left">AF, IQ, LY, YE</td>
+</tr>
+
+<tr>
+<td class="org-left">Polarización Social</td>
+<td class="org-right">15%</td>
+<td class="org-left">Incremento</td>
+<td class="org-left">EE.UU., BR, IN, TR</td>
+</tr>
+
+<tr>
+<td class="org-left">Competencia Geopolítica</td>
+<td class="org-right">12%</td>
+<td class="org-left">Intensificación</td>
+<td class="org-left">TW, UA, SY, LB</td>
+</tr>
+
+<tr>
+<td class="org-left">Recursos Escasos</td>
+<td class="org-right">10%</td>
+<td class="org-left">Crítico</td>
+<td class="org-left">JO, LB, ER, DJ</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org317e979" class="outline-2">
+<h2 id="org317e979">Análisis de Actores: Poder y Responsabilidad</h2>
+<div class="outline-text-2" id="text-org317e979">
+</div>
+<div id="outline-container-org4c733f1" class="outline-3">
+<h3 id="org4c733f1">Superpotencias: Gestores o Disruptores</h3>
+<div class="outline-text-3" id="text-org4c733f1">
+</div>
+<div id="outline-container-orgc388173" class="outline-4">
+<h4 id="orgc388173">Estados Unidos: Hegemonía en Declive</h4>
+<div class="outline-text-4" id="text-orgc388173">
+<ul class="org-ul">
+<li><b><b>Capacidades</b></b>: Supremacía militar y tecnológica, pero con sobrecarga estratégica</li>
+<li><b><b>Limitaciones</b></b>: Polarización interna, fatiga de intervenciones externas</li>
+<li><b><b>Estrategia 2025</b></b>: "Competencia estratégica" con China, contención selectiva</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8c7df49" class="outline-4">
+<h4 id="org8c7df49">China: Potencia Ascendente</h4>
+<div class="outline-text-4" id="text-org8c7df49">
+<ul class="org-ul">
+<li><b><b>Capacidades</b></b>: Crecimiento económico sostenido, expansión militar acelerada</li>
+<li><b><b>Limitaciones</b></b>: Desafíos demográficos, dependencia tecnológica occidental</li>
+<li><b><b>Estrategia 2025</b></b>: "Reunificación" taiwanesa, hegemonía regional asiática</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2dae901" class="outline-4">
+<h4 id="org2dae901">Rusia: Potencia Revisionista</h4>
+<div class="outline-text-4" id="text-org2dae901">
+<ul class="org-ul">
+<li><b><b>Capacidades</b></b>: Arsenal nuclear, recursos energéticos, capacidad disruptiva</li>
+<li><b><b>Limitaciones</b></b>: Aislamiento internacional, economía sancionada, desgaste militar</li>
+<li><b><b>Estrategia 2025</b></b>: Supervivencia régimen, alianza China-Irán-Corea Norte</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge7fb7a0" class="outline-3">
+<h3 id="orge7fb7a0">Potencias Medias: Protagonismo Creciente</h3>
+<div class="outline-text-3" id="text-orge7fb7a0">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">Rol Regional</th>
+<th scope="col" class="org-left">Capacidades Clave</th>
+<th scope="col" class="org-left">Conflictos Protagonizados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Turquía</td>
+<td class="org-left">Bisagra euro-asiática</td>
+<td class="org-left">Militar, geográfica</td>
+<td class="org-left">Siria, Libia, Nagorno-Karabaj</td>
+</tr>
+
+<tr>
+<td class="org-left">India</td>
+<td class="org-left">Hegemonía sur-asiática</td>
+<td class="org-left">Demográfica, tecnológica</td>
+<td class="org-left">Cachemira, frontera china</td>
+</tr>
+
+<tr>
+<td class="org-left">Brasil</td>
+<td class="org-left">Liderazgo sudamericano</td>
+<td class="org-left">Económica, diplomática</td>
+<td class="org-left">Venezuela, Amazonía</td>
+</tr>
+
+<tr>
+<td class="org-left">Arabia Saudí</td>
+<td class="org-left">Hegemonía del Golfo</td>
+<td class="org-left">Energética, financiera</td>
+<td class="org-left">Yemen, rivalidad iraní</td>
+</tr>
+
+<tr>
+<td class="org-left">Israel</td>
+<td class="org-left">Potencia militar regional</td>
+<td class="org-left">Tecnológica, militar</td>
+<td class="org-left">Palestina, confrontación Irán</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2262704" class="outline-2">
+<h2 id="org2262704">Tendencias Emergentes: Nuevas Dimensiones del Conflicto</h2>
+<div class="outline-text-2" id="text-org2262704">
+</div>
+<div id="outline-container-org43221c3" class="outline-3">
+<h3 id="org43221c3">Ciberguerra: El Quinto Dominio</h3>
+<div class="outline-text-3" id="text-org43221c3">
+</div>
+<div id="outline-container-orgb3f9a84" class="outline-4">
+<h4 id="orgb3f9a84">Principales Ciberataques Estatales 2025</h4>
+<div class="outline-text-4" id="text-orgb3f9a84">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Origen</th>
+<th scope="col" class="org-left">Objetivo</th>
+<th scope="col" class="org-left">Sector Afectado</th>
+<th scope="col" class="org-left">Impacto Estimado</th>
+<th scope="col" class="org-left">Atribución</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Rusia</td>
+<td class="org-left">Ucrania/OTAN</td>
+<td class="org-left">Infraestructura crítica</td>
+<td class="org-left">$12 mil millones</td>
+<td class="org-left">Confirmada</td>
+</tr>
+
+<tr>
+<td class="org-left">China</td>
+<td class="org-left">EE.UU./Taiwán</td>
+<td class="org-left">Tecnológico/Militar</td>
+<td class="org-left">$8 mil millones</td>
+<td class="org-left">Alta probabilidad</td>
+</tr>
+
+<tr>
+<td class="org-left">Irán</td>
+<td class="org-left">Israel/Arabia Saudí</td>
+<td class="org-left">Energético/Financiero</td>
+<td class="org-left">$3 mil millones</td>
+<td class="org-left">Probable</td>
+</tr>
+
+<tr>
+<td class="org-left">Corea Norte</td>
+<td class="org-left">Corea Sur/Japón</td>
+<td class="org-left">Financiero/Gubernamental</td>
+<td class="org-left">$1.2 mil millones</td>
+<td class="org-left">Confirmada</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd9e13fe" class="outline-3">
+<h3 id="orgd9e13fe">Guerra de Información: Batalla por la Narrativa</h3>
+<div class="outline-text-3" id="text-orgd9e13fe">
+<p>
+La manipulación informativa se consolida como instrumento de confrontación estratégica:
+</p>
+
+<ul class="org-ul">
+<li><b><b>Desinformación electoral</b></b>: Interferencia en 67 procesos electorales (2020-2025)</li>
+<li><b><b>Polarización social</b></b>: Amplificación artificial de divisiones internas</li>
+<li><b><b>Guerra cultural</b></b>: Instrumentalización de identidades e historias nacionales</li>
+<li><b><b>Diplomacia pública</b></b>: Competencia por influencia en opinión pública global</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdb2e290" class="outline-2">
+<h2 id="orgdb2e290">Proyecciones Estratégicas 2025-2030</h2>
+<div class="outline-text-2" id="text-orgdb2e290">
+</div>
+<div id="outline-container-orgabb8e07" class="outline-3">
+<h3 id="orgabb8e07">Escenario Base: Multipolaridad Conflictiva (Probabilidad: 45%)</h3>
+<div class="outline-text-3" id="text-orgabb8e07">
+<ul class="org-ul">
+<li>Mantenimiento de 50-60 conflictos activos simultáneos</li>
+<li>Fragmentación económica en 3-4 bloques geopolíticos</li>
+<li>Escalada controlada sin confrontación directa entre superpotencias</li>
+<li>Institucionalización de la competencia estratégica</li>
+</ul>
+</div>
+
+<div id="outline-container-org9227133" class="outline-4">
+<h4 id="org9227133">Indicadores Clave</h4>
+<div class="outline-text-4" id="text-org9227133">
+<ul class="org-ul">
+<li>PIB global: Crecimiento 2.1% anual (vs 3.2% histórico)</li>
+<li>Comercio internacional: Reducción 15% respecto niveles 2019</li>
+<li>Desplazados: Incremento a 120 millones personas</li>
+<li>Gasto militar: Crecimiento 6% anual global</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org01d87c5" class="outline-3">
+<h3 id="org01d87c5">Escenario Optimista: Estabilización Gradual (Probabilidad: 25%)</h3>
+<div class="outline-text-3" id="text-org01d87c5">
+<ul class="org-ul">
+<li>Resolución negociada de 2-3 conflictos principales (Ucrania, Gaza)</li>
+<li>Renovación arquitectura multilateral (ONU, G7, G20)</li>
+<li>Cooperación forzada ante desafíos globales (clima, pandemias)</li>
+<li>Reducción tensiones comerciales USA-China</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0b362e4" class="outline-3">
+<h3 id="org0b362e4">Escenario Pesimista: Escalada Sistémica (Probabilidad: 30%)</h3>
+<div class="outline-text-3" id="text-org0b362e4">
+<ul class="org-ul">
+<li>Confrontación directa China-EE.UU. sobre Taiwán</li>
+<li>Escalada nuclear regional (India-Pakistán, Israel-Irán)</li>
+<li>Colapso estatal múltiple en África y Oriente Medio</li>
+<li>Fragmentación definitiva orden económico global</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge4fac01" class="outline-2">
+<h2 id="orge4fac01">Recomendaciones Estratégicas</h2>
+<div class="outline-text-2" id="text-orge4fac01">
+</div>
+<div id="outline-container-org5d0d43b" class="outline-3">
+<h3 id="org5d0d43b">Para la Comunidad Internacional</h3>
+<div class="outline-text-3" id="text-org5d0d43b">
+<ol class="org-ol">
+<li><b><b>Prevención Estructural</b></b>: Inversión masiva en desarrollo socioeconómico zonas vulnerables</li>
+<li><b><b>Diplomacia Anticipatoria</b></b>: Sistemas de alerta temprana y mediación preventiva</li>
+<li><b><b>Cooperación Forzada</b></b>: Institucionalización gestión crisis globales (clima, pandemias)</li>
+<li><b><b>Reformas Institucionales</b></b>: Adaptación organismos multilaterales a realidad multipolar</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org240a128" class="outline-3">
+<h3 id="org240a128">Para Estados Individuales</h3>
+<div class="outline-text-3" id="text-org240a128">
+<ol class="org-ol">
+<li><b><b>Resiliencia Nacional</b></b>: Fortalecimiento cohesión social y instituciones democráticas</li>
+<li><b><b>Diversificación Estratégica</b></b>: Reducción dependencias críticas de potencias rivales</li>
+<li><b><b>Diplomacia Multi-Vector</b></b>: Evitar alineamientos exclusivos en bloques geopolíticos</li>
+<li><b><b>Inversión Defensiva</b></b>: Modernización capacidades disuasorias convencionales y cibernéticas</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge8a6ea6" class="outline-2">
+<h2 id="orge8a6ea6">Conclusiones: Navegando la Tormenta Global</h2>
+<div class="outline-text-2" id="text-orge8a6ea6">
+<ul class="org-ul">
+<li>El año 2025 representa un punto de inflexión en la historia contemporánea, donde la convergencia de crisis múltiples desafía la capacidad humana de gestión colectiva de conflictos. Con 56 conflictos activos, la humanidad enfrenta su momento más peligroso desde 1945, requiriendo una renovación urgente de enfoques, instituciones y mecanismos de cooperación internacional.</li>
+
+<li>La taxonomía multidimensional revela que los conflictos contemporáneos trascienden categorías tradicionales, entrelazando dimensiones bélicas, económicas, religiosas y territoriales en un ecosistema complejo de crisis interconectadas. Esta realidad exige respuestas igual de sofisticadas, que combinen prevención, gestión y resolución en estrategias integrales.</li>
+
+<li>La próxima década determinará si la humanidad logra adaptar sus instituciones y prácticas a un mundo multipolar inherentemente más complejo, o si la incapacidad de gestión colectiva precipita una fragmentación sistémica con consecuencias impredecibles para la civilización global.</li>
+
+<li>El momento no admite inacción: cada día de retraso en la respuesta institucional aumenta exponencialmente los costos humanos, económicos y ambientales de un orden mundial en desintegración.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org45971f3" class="outline-2">
+<h2 id="org45971f3">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org45971f3">
+<ol class="org-ol">
+<li>International Crisis Group. "10 conflictos para tener en la mira en 2025", Bruselas, 2025.</li>
+<li>Uppsala Conflict Data Program. "Armed Conflicts Dataset 2025", Universidad de Uppsala.</li>
+<li>El Orden Mundial. "Los conflictos que marcarán el 2025 - Mapas", Madrid, 2025.</li>
+<li>El País Internacional. "El 2025 recibe un mundo en guerra: hay 56 conflictos activos", 2025.</li>
+<li>Stockholm International Peace Research Institute. "SIPRI Conflict Barometer 2025".</li>
+<li>Institute for Economics and Peace. "Global Peace Index 2025", Sídney.</li>
+<li>Council on Foreign Relations. "Global Conflict Tracker 2025", Nueva York.</li>
+<li>Armed Conflict Location &amp; Event Data Project. "ACLED Global Dashboard 2025".</li>
+<li>Heidelberg Institute for International Conflict Research. "Conflict Barometer 2025".</li>
+<li>United Nations High Commissioner for Refugees. "Global Displacement Report 2025".</li>
+</ol>
+
+
+
+<p>
+<br />
+</p>
+
+<p class="post-meta">Publicado el 2025-06-24 14:26 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

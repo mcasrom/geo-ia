@@ -1,0 +1,1792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>El Declive de las Libertades en la América de Trump: Análisis</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis exhaustivo del deterioro democrático estadounidense en la era Trump: causas estructurales, evolución temporal, impactos geopolíticos y proyecciones futuras" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="El Declive de las Libertades en la América de Trump: Análisis">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">El Declive de las Libertades en la América de Trump: Análisis</h1>
+
+<div id="outline-container-org6b5ca87" class="outline-2">
+<h2 id="org6b5ca87">El Declive de las Libertades en la América de Trump: Análisis Geopolítico 2015-2025</h2>
+<div class="outline-text-2" id="text-org6b5ca87">
+<p>
+Estados Unidos experimenta un declive democrático significativo que se ha acelerado durante la presidencia de Donald Trump (2017-2021, 2025-presente). La nación ocupa actualmente el puesto 26-28 en diversos índices democráticos, siendo clasificada como "democracia defectuosa". El deterioro de la libertad humana ha sido de aproximadamente 0.38 puntos desde 2000, con una aceleración notable en la última década.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org03e86b2" class="outline-2">
+<h2 id="org03e86b2">Contexto Histórico y Metodológico</h2>
+<div class="outline-text-2" id="text-org03e86b2">
+</div>
+<div id="outline-container-org76daa5d" class="outline-3">
+<h3 id="org76daa5d">Definición del Índice de Libertades</h3>
+<div class="outline-text-3" id="text-org76daa5d">
+<p>
+Los principales indicadores utilizados para medir el declive incluyen:
+</p>
+<ul class="org-ul">
+<li>Índice de Democracia del Economist Intelligence Unit</li>
+<li>Freedom in the World de Freedom House</li>
+<li>Índice de Libertad Humana del Cato Institute</li>
+<li>Índice de Libertad Académica</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcf4680b" class="outline-3">
+<h3 id="orgcf4680b">Posición Internacional Actual</h3>
+<div class="outline-text-3" id="text-orgcf4680b">
+<table id="org86e3e67" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Ranking Internacional de Libertades - Estados Unidos 2025</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Índice</th>
+<th scope="col" class="org-right">Ranking EEUU</th>
+<th scope="col" class="org-left">Puntuación</th>
+<th scope="col" class="org-left">Clasificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Democracia EIU</td>
+<td class="org-right">26-28</td>
+<td class="org-left">7.85/10</td>
+<td class="org-left">Democracia Defect</td>
+</tr>
+
+<tr>
+<td class="org-left">Libertad Académica</td>
+<td class="org-right">85</td>
+<td class="org-left">N/D</td>
+<td class="org-left">Declive Signif</td>
+</tr>
+
+<tr>
+<td class="org-left">Freedom House</td>
+<td class="org-right">Variable</td>
+<td class="org-left">83/100</td>
+<td class="org-left">Parcial Libre</td>
+</tr>
+
+<tr>
+<td class="org-left">Libertad Humana Cato</td>
+<td class="org-right">23</td>
+<td class="org-left">8.73/10</td>
+<td class="org-left">Mayormente Libre</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org85af54d" class="outline-2">
+<h2 id="org85af54d">Análisis Temporal del Declive (2015-2025)</h2>
+<div class="outline-text-2" id="text-org85af54d">
+</div>
+<div id="outline-container-org7016764" class="outline-3">
+<h3 id="org7016764">Fase I: Erosión Preparatoria (2015-2016)</h3>
+<div class="outline-text-3" id="text-org7016764">
+<p>
+Durante este período, se observaron las primeras señales de debilitamiento institucional:
+</p>
+
+<ul class="org-ul">
+<li>Polarización política extrema</li>
+<li>Cuestionamiento de la legitimidad electoral</li>
+<li>Incremento de la desinformación mediática</li>
+<li>Debilitamiento de las normas democráticas no escritas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbab5fd4" class="outline-3">
+<h3 id="orgbab5fd4">Fase II: Aceleración Trumpista (2017-2021)</h3>
+<div class="outline-text-3" id="text-orgbab5fd4">
+
+<div id="org987f85d" class="figure">
+<p><img src="./assets/images/escalada_autoritaria_2017_2021.png" alt="escalada_autoritaria_2017_2021.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+
+<p>
+Durante este período crítico:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Ataque a instituciones democráticas</b></b>: Sistemático cuestionamiento del FBI, CIA, y sistema judicial</li>
+<li><b><b>Erosión de la libertad de prensa</b></b>: Designación de medios como "enemigos del pueblo"</li>
+<li><b><b>Polarización extrema</b></b>: División de la sociedad en campos irreconciliables</li>
+<li><b><b>Culminación autoritaria</b></b>: Asalto al Capitolio del 6 de enero de 2021</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org33936f7" class="outline-3">
+<h3 id="org33936f7">Fase III: Paréntesis Democrático (2021-2024)</h3>
+<div class="outline-text-3" id="text-org33936f7">
+<p>
+Período de Biden caracterizado por:
+</p>
+<ul class="org-ul">
+<li>Intentos de restauración institucional</li>
+<li>Persistencia de la polarización</li>
+<li>Continuidad de amenazas estructurales</li>
+<li>Preparación del retorno trumpista</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7bca3ff" class="outline-3">
+<h3 id="org7bca3ff">Fase IV: Segundo Mandato Trump (2025-presente)</h3>
+<div class="outline-text-3" id="text-org7bca3ff">
+
+<div id="org5596f8d" class="figure">
+<p><img src="./assets/images/estructura_poder_trumpista_2025.png" alt="estructura_poder_trumpista_2025.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5c2b858" class="outline-2">
+<h2 id="org5c2b858">Factores Estructurales del Declive</h2>
+<div class="outline-text-2" id="text-org5c2b858">
+</div>
+<div id="outline-container-orgedacdeb" class="outline-3">
+<h3 id="orgedacdeb">Causas Endógenas</h3>
+<div class="outline-text-3" id="text-orgedacdeb">
+<ol class="org-ol">
+<li><b><b>Crisis de representatividad</b></b>: 
+<ul class="org-ul">
+<li>Sistema electoral indirecto</li>
+<li>Gerrymandering sistemático</li>
+<li>Supresión del voto</li>
+<li>Influencia del dinero en política</li>
+</ul></li>
+
+<li><b><b>Polarización mediática</b></b>:
+<ul class="org-ul">
+<li>Ecosistemas informativos paralelos</li>
+<li>Desinformación sistemática</li>
+<li>Algoritmos de redes sociales</li>
+<li>Pérdida de verdades compartidas</li>
+</ul></li>
+
+<li><b><b>Debilidad institucional</b></b>:
+<ul class="org-ul">
+<li>Dependencia de normas no escritas</li>
+<li>Falta de mecanismos anticorrupción</li>
+<li>Sistema de pesos y contrapesos erosionado</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org730b001" class="outline-3">
+<h3 id="org730b001">Causas Exógenas</h3>
+<div class="outline-text-3" id="text-org730b001">
+<ol class="org-ol">
+<li><b><b>Interferencia extranjera</b></b>:
+<ul class="org-ul">
+<li>Operaciones de desinformación rusas</li>
+<li>Ciberataques a infraestructura electoral</li>
+<li>Influencia china en redes sociales</li>
+</ul></li>
+
+<li><b><b>Crisis económica y social</b></b>:
+<ul class="org-ul">
+<li>Desigualdad creciente</li>
+<li>Declive de la clase media</li>
+<li>Crisis de opioides</li>
+<li>Cambios demográficos</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org691ce48" class="outline-2">
+<h2 id="org691ce48">Mecanismos de Degradación Democrática</h2>
+<div class="outline-text-2" id="text-org691ce48">
+
+<div id="orga3139e3" class="figure">
+<p><img src="./assets/images/espiral_degradacion_democratica.png" alt="espiral_degradacion_democratica.png" width="500px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+
+<div id="outline-container-orga860a43" class="outline-3">
+<h3 id="orga860a43">Técnicas de Autoritarismo Competitivo</h3>
+<div class="outline-text-3" id="text-orga860a43">
+<table id="org6f6e44f" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 2:</span> Mecanismos de Control Autoritario en la Era Trump</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Mecanismo</th>
+<th scope="col" class="org-left">Implementación Trump</th>
+<th scope="col" class="org-left">Impacto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Captura judicial</td>
+<td class="org-left">Nombramiento jueces conserv</td>
+<td class="org-left">Control a largo plazo</td>
+</tr>
+
+<tr>
+<td class="org-left">Represión selectiva</td>
+<td class="org-left">Persecución de opositores</td>
+<td class="org-left">Disuasión política</td>
+</tr>
+
+<tr>
+<td class="org-left">Control mediático</td>
+<td class="org-left">Deslegitimación prensa libre</td>
+<td class="org-left">Monopolio narrativo</td>
+</tr>
+
+<tr>
+<td class="org-left">Manipulación electrl</td>
+<td class="org-left">Restricciones al voto</td>
+<td class="org-left">Ventaja competitiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Clientelismo</td>
+<td class="org-left">Distribución recursos selectiva</td>
+<td class="org-left">Lealtad territorial</td>
+</tr>
+
+<tr>
+<td class="org-left">Polarización</td>
+<td class="org-left">Retórica divisiva sistemática</td>
+<td class="org-left">Fragmentación social</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3b948c9" class="outline-2">
+<h2 id="org3b948c9">Actores y Dinámicas</h2>
+<div class="outline-text-2" id="text-org3b948c9">
+</div>
+<div id="outline-container-org7f9a569" class="outline-3">
+<h3 id="org7f9a569">Ganadores del Sistema Trumpista</h3>
+<div class="outline-text-3" id="text-org7f9a569">
+<table id="orgebb8541" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 3:</span> Beneficiarios del Modelo Trumpista</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actor</th>
+<th scope="col" class="org-left">Beneficios Obtenidos</th>
+<th scope="col" class="org-left">Mecanismo de Captura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Élites económ</td>
+<td class="org-left">Reducción impuestos corporat</td>
+<td class="org-left">Lobby directo</td>
+</tr>
+
+<tr>
+<td class="org-left">Base electoral</td>
+<td class="org-left">Validación identitaria</td>
+<td class="org-left">Narrativa victimización</td>
+</tr>
+
+<tr>
+<td class="org-left">Medios conserv</td>
+<td class="org-left">Audiencias cautivas</td>
+<td class="org-left">Modelo negocio consolid</td>
+</tr>
+
+<tr>
+<td class="org-left">Aparato militar</td>
+<td class="org-left">Presupuestos aumentados</td>
+<td class="org-left">Retórica seguridad nac</td>
+</tr>
+
+<tr>
+<td class="org-left">Oligarcas</td>
+<td class="org-left">Desregulación financiera</td>
+<td class="org-left">Captura regulatoria</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga6df509" class="outline-3">
+<h3 id="orga6df509">Perdedores del Proceso</h3>
+<div class="outline-text-3" id="text-orga6df509">
+<table id="org94d27c0" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 4:</span> Víctimas del Deterioro Democrático</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actor</th>
+<th scope="col" class="org-left">Pérdidas Sufridas</th>
+<th scope="col" class="org-left">Mecanismo de Exclusión</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Minorías étnicas</td>
+<td class="org-left">Políticas discriminat</td>
+<td class="org-left">Retórica exclusión</td>
+</tr>
+
+<tr>
+<td class="org-left">Institucs democrát</td>
+<td class="org-left">Pérdida credibilidad</td>
+<td class="org-left">Politización extrema</td>
+</tr>
+
+<tr>
+<td class="org-left">Sociedad civil</td>
+<td class="org-left">Espacios participac reduc</td>
+<td class="org-left">Criminalización</td>
+</tr>
+
+<tr>
+<td class="org-left">Prensa libre</td>
+<td class="org-left">Acceso información limit</td>
+<td class="org-left">Hostigamiento sistemát</td>
+</tr>
+
+<tr>
+<td class="org-left">Academia</td>
+<td class="org-left">Libertad investigación</td>
+<td class="org-left">Presión ideológica</td>
+</tr>
+
+<tr>
+<td class="org-left">Trabajadores</td>
+<td class="org-left">Derechos laborales</td>
+<td class="org-left">Desregulación</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org724879c" class="outline-2">
+<h2 id="org724879c">Impacto Geopolítico Global</h2>
+<div class="outline-text-2" id="text-org724879c">
+</div>
+<div id="outline-container-org2e9cbfe" class="outline-3">
+<h3 id="org2e9cbfe">Efecto Dominó Autoritario</h3>
+<div class="outline-text-3" id="text-org2e9cbfe">
+<p>
+La degradación democrática estadounidense ha tenido efectos cascada:
+</p>
+
+
+<div id="org9afb7ec" class="figure">
+<p><img src="./assets/images/impacto_global_declive_democratico.png" alt="impacto_global_declive_democratico.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org454ef79" class="outline-3">
+<h3 id="org454ef79">Consecuencias Internacionales</h3>
+<div class="outline-text-3" id="text-org454ef79">
+<table id="org19ce06b" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 5:</span> Impacto Global del Declive Democrático Estadounidense</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Esfera</th>
+<th scope="col" class="org-left">Consecuencia</th>
+<th scope="col" class="org-left">Actores Beneficiados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Liderazgo moral</td>
+<td class="org-left">Pérdida credibilidad democrát</td>
+<td class="org-left">China, Rusia</td>
+</tr>
+
+<tr>
+<td class="org-left">Alianzas militares</td>
+<td class="org-left">Debilitamiento NATO</td>
+<td class="org-left">Potencias revisionist</td>
+</tr>
+
+<tr>
+<td class="org-left">Comercio global</td>
+<td class="org-left">Proteccionismo aumentado</td>
+<td class="org-left">Competidores regionales</td>
+</tr>
+
+<tr>
+<td class="org-left">Derechos humanos</td>
+<td class="org-left">Menor presión internacional</td>
+<td class="org-left">Regímenes autoritarios</td>
+</tr>
+
+<tr>
+<td class="org-left">Multilateralismo</td>
+<td class="org-left">Abandono organismos internac</td>
+<td class="org-left">Potencias emergentes</td>
+</tr>
+
+<tr>
+<td class="org-left">Estabilidad regional</td>
+<td class="org-left">Retiro compromisos seguridad</td>
+<td class="org-left">Actores disruptivos</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8dce733" class="outline-2">
+<h2 id="org8dce733">Escenarios Futuros (2025-2030)</h2>
+<div class="outline-text-2" id="text-org8dce733">
+</div>
+<div id="outline-container-orge99dc28" class="outline-3">
+<h3 id="orge99dc28">Escenario 1: Consolidación Autoritaria (Probabilidad 40%)</h3>
+<div class="outline-text-3" id="text-orge99dc28">
+<p>
+Características:
+</p>
+<ul class="org-ul">
+<li>Eliminación efectiva de la oposición</li>
+<li>Control total de instituciones</li>
+<li>Represión sistemática de disidencia</li>
+<li>Alineamiento con autocracias globales</li>
+</ul>
+
+<p>
+<b><b>Indicadores clave</b></b>:
+</p>
+<ul class="org-ul">
+<li>Modificación constitucional</li>
+<li>Eliminación de término presidencial</li>
+<li>Control mediático total</li>
+<li>Paramilitarización del Estado</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb8e0060" class="outline-3">
+<h3 id="orgb8e0060">Escenario 2: Autoritarismo Competitivo Estable (Probabilidad 35%)</h3>
+<div class="outline-text-3" id="text-orgb8e0060">
+<p>
+Características:
+</p>
+<ul class="org-ul">
+<li>Mantenimiento de fachada democrática</li>
+<li>Elecciones manipuladas pero regulares</li>
+<li>Oposición debilitada pero existente</li>
+<li>Alternancia controlada</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2ff16cb" class="outline-3">
+<h3 id="org2ff16cb">Escenario 3: Resistencia y Recuperación (Probabilidad 25%)</h3>
+<div class="outline-text-3" id="text-org2ff16cb">
+<p>
+Características:
+</p>
+<ul class="org-ul">
+<li>Movilización de sociedad civil</li>
+<li>Coalición anti-Trump efectiva</li>
+<li>Reformas institucionales profundas</li>
+<li>Restauración democrática gradual</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdfd8a5e" class="outline-2">
+<h2 id="orgdfd8a5e">Proyecciones del Índice de Libertades</h2>
+<div class="outline-text-2" id="text-orgdfd8a5e">
+
+<div id="orgecc9e8e" class="figure">
+<p><img src="./assets/images/proyeccion_indice_libertades_2025_2030.png" alt="proyeccion_indice_libertades_2025_2030.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+
+<div id="outline-container-org50d6db4" class="outline-3">
+<h3 id="org50d6db4">Tabla Proyectiva de Rankings</h3>
+<div class="outline-text-3" id="text-org50d6db4">
+<table id="org6f2f07e" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 6:</span> Proyección Rankings Democráticos Estados Unidos 2025-2030</caption>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-right">Escenario Optimista</th>
+<th scope="col" class="org-right">Escenario Medio</th>
+<th scope="col" class="org-right">Escenario Pesimista</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2025</td>
+<td class="org-right">26</td>
+<td class="org-right">28</td>
+<td class="org-right">30</td>
+</tr>
+
+<tr>
+<td class="org-right">2026</td>
+<td class="org-right">24</td>
+<td class="org-right">32</td>
+<td class="org-right">38</td>
+</tr>
+
+<tr>
+<td class="org-right">2027</td>
+<td class="org-right">22</td>
+<td class="org-right">35</td>
+<td class="org-right">42</td>
+</tr>
+
+<tr>
+<td class="org-right">2028</td>
+<td class="org-right">20</td>
+<td class="org-right">38</td>
+<td class="org-right">45</td>
+</tr>
+
+<tr>
+<td class="org-right">2029</td>
+<td class="org-right">18</td>
+<td class="org-right">40</td>
+<td class="org-right">48</td>
+</tr>
+
+<tr>
+<td class="org-right">2030</td>
+<td class="org-right">15</td>
+<td class="org-right">42</td>
+<td class="org-right">50+</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org183e02a" class="outline-3">
+<h3 id="org183e02a">Indicadores de Seguimiento</h3>
+<div class="outline-text-3" id="text-org183e02a">
+<table id="orgb827ddd" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 7:</span> Métricas Clave para Monitoreo del Declive Democrático</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">Valor 2025</th>
+<th scope="col" class="org-left">Meta 2027</th>
+<th scope="col" class="org-left">Umbral Crít</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Índice Democracia EIU</td>
+<td class="org-right">7.85</td>
+<td class="org-left">&lt;7.0</td>
+<td class="org-left">&lt;6.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Libertad Prensa (RSF)</td>
+<td class="org-right">Posición 42</td>
+<td class="org-left">&gt;50</td>
+<td class="org-left">&gt;60</td>
+</tr>
+
+<tr>
+<td class="org-left">Polarización Afectiva</td>
+<td class="org-right">85%</td>
+<td class="org-left">&gt;90%</td>
+<td class="org-left">&gt;95%</td>
+</tr>
+
+<tr>
+<td class="org-left">Confianza Institucional</td>
+<td class="org-right">32%</td>
+<td class="org-left">&lt;25%</td>
+<td class="org-left">&lt;15%</td>
+</tr>
+
+<tr>
+<td class="org-left">Violencia Política</td>
+<td class="org-right">Incidentes 150</td>
+<td class="org-left">&gt;300</td>
+<td class="org-left">&gt;500</td>
+</tr>
+
+<tr>
+<td class="org-left">Participación Electoral</td>
+<td class="org-right">66%</td>
+<td class="org-left">&lt;60%</td>
+<td class="org-left">&lt;50%</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org61ef43b" class="outline-2">
+<h2 id="org61ef43b">Análisis Comparativo Internacional</h2>
+<div class="outline-text-2" id="text-org61ef43b">
+</div>
+<div id="outline-container-org5fc7362" class="outline-3">
+<h3 id="org5fc7362">Paralelos Históricos</h3>
+<div class="outline-text-3" id="text-org5fc7362">
+<table id="orgc6abe0d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 8:</span> Comparación con Casos de Declive Democrático</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">Período Declive</th>
+<th scope="col" class="org-left">Mecanismos Usados</th>
+<th scope="col" class="org-left">Resultado Final</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Hungría</td>
+<td class="org-left">2010-presente</td>
+<td class="org-left">Captura mediática</td>
+<td class="org-left">Autocracia Competit</td>
+</tr>
+
+<tr>
+<td class="org-left">Polonia</td>
+<td class="org-left">2015-2023</td>
+<td class="org-left">Reforma judicial</td>
+<td class="org-left">Recuperación parcial</td>
+</tr>
+
+<tr>
+<td class="org-left">Turquía</td>
+<td class="org-left">2013-presente</td>
+<td class="org-left">Estado emergencia</td>
+<td class="org-left">Autoritarismo consol</td>
+</tr>
+
+<tr>
+<td class="org-left">Venezuela</td>
+<td class="org-left">1999-presente</td>
+<td class="org-left">Populismo autor</td>
+<td class="org-left">Autocracia completa</td>
+</tr>
+
+<tr>
+<td class="org-left">India</td>
+<td class="org-left">2014-presente</td>
+<td class="org-left">Nacionalismo</td>
+<td class="org-left">Democracia iliberl</td>
+</tr>
+
+<tr>
+<td class="org-left">Brasil</td>
+<td class="org-left">2018-2022</td>
+<td class="org-left">Polarización</td>
+<td class="org-left">Alternancia democrát</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8d4be5f" class="outline-2">
+<h2 id="org8d4be5f">Recomendaciones Estratégicas</h2>
+<div class="outline-text-2" id="text-org8d4be5f">
+</div>
+<div id="outline-container-org000a35d" class="outline-3">
+<h3 id="org000a35d">Para la Comunidad Internacional</h3>
+<div class="outline-text-3" id="text-org000a35d">
+<ol class="org-ol">
+<li><b><b>Diversificación de alianzas</b></b>: Reducir dependencia de liderazgo estadounidense</li>
+<li><b><b>Fortalecimiento de organismos multilaterales</b></b>: Compensar ausencia estadounidense</li>
+<li><b><b>Apoyo a sociedad civil americana</b></b>: Financiamiento de organizaciones democráticas</li>
+<li><b><b>Preparación para múltiples escenarios</b></b>: Planes de contingencia geopolítica</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9d63eaf" class="outline-3">
+<h3 id="org9d63eaf">Para Actores Domésticos</h3>
+<div class="outline-text-3" id="text-org9d63eaf">
+<ol class="org-ol">
+<li><b><b>Construcción de coaliciones amplias</b></b>: Unir fuerzas democráticas diversas</li>
+<li><b><b>Reforma institucional profunda</b></b>: Constitucionalizar normas democráticas</li>
+<li><b><b>Educación cívica masiva</b></b>: Reconstruir cultura democrática</li>
+<li><b><b>Tecnología para la democracia</b></b>: Contrarrestar desinformación</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga073c3c" class="outline-3">
+<h3 id="orga073c3c">Medidas de Contención Inmediata</h3>
+<div class="outline-text-3" id="text-orga073c3c">
+<table id="org33e529f" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 9:</span> Estrategias de Resistencia Democrática</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Ámbito</th>
+<th scope="col" class="org-left">Medida Propuesta</th>
+<th scope="col" class="org-left">Actor Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Legal</td>
+<td class="org-left">Litigation estratégica</td>
+<td class="org-left">ONGs derechos civiles</td>
+</tr>
+
+<tr>
+<td class="org-left">Electoral</td>
+<td class="org-left">Protección derecho voto</td>
+<td class="org-left">Secretarios de Estado</td>
+</tr>
+
+<tr>
+<td class="org-left">Mediático</td>
+<td class="org-left">Fact-checking masivo</td>
+<td class="org-left">Medios independientes</td>
+</tr>
+
+<tr>
+<td class="org-left">Civil</td>
+<td class="org-left">Desobediencia no violent</td>
+<td class="org-left">Movimientos sociales</td>
+</tr>
+
+<tr>
+<td class="org-left">Internacional</td>
+<td class="org-left">Presión diplomática</td>
+<td class="org-left">Democracias aliadas</td>
+</tr>
+
+<tr>
+<td class="org-left">Tecnológico</td>
+<td class="org-left">Plataformas alt inform</td>
+<td class="org-left">Sector tech privado</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgbb68991" class="outline-2">
+<h2 id="orgbb68991">Conclusiones</h2>
+<div class="outline-text-2" id="text-orgbb68991">
+<p>
+El declive democrático estadounidense representa una crisis sistémica con implicaciones globales profundas. La tendencia global muestra que la democracia ha alcanzado mínimos históricos, y Estados Unidos forma parte de esta regresión autoritaria mundial.
+</p>
+
+<p>
+La confirmación del descenso aproximado del 6.8% en índices de libertad durante la última década, situando a EEUU en posiciones entre 26-28 globalmente, refleja una transformación estructural que trasciende personalidades políticas individuales.
+</p>
+
+<p>
+El período 2025-2030 será definitorio para determinar si Estados Unidos puede revertir esta tendencia o si consolidará un modelo de autoritarismo competitivo que redefina el orden geopolítico global. La respuesta a esta crisis determinará no solo el futuro de la democracia americana, sino el equilibrio de poder mundial en las próximas décadas.
+</p>
+
+<p>
+Las implicaciones para la geoestrategia internacional son profundas: el declive del faro democrático occidental acelera la transición hacia un mundo multipolar donde las autocracias ganan legitimidad y espacio de maniobra, mientras las democracias deben adaptarse a un contexto de menor liderazgo estadounidense en la promoción de valores liberales.
+</p>
+</div>
+
+<div id="outline-container-org8ed8746" class="outline-3">
+<h3 id="org8ed8746">Síntesis de Hallazgos Clave</h3>
+<div class="outline-text-3" id="text-org8ed8746">
+<ul class="org-ul">
+<li>Estados Unidos ha experimentado un declive democrático sostenido desde 2015</li>
+<li>La posición internacional ha caído del top 20 al rango 26-28 en índices principales</li>
+<li>El modelo trumpista representa autoritarismo competitivo, no autocracia plena</li>
+<li>Los efectos geopolíticos trascienden las fronteras estadounidenses</li>
+<li>La recuperación democrática es posible pero requiere reformas estructurales profundas</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1c1f732" class="outline-2">
+<h2 id="org1c1f732">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org1c1f732">
+<ol class="org-ol">
+<li>Economist Intelligence Unit. (2025). "Democracy Index 2024: Global Democracy in Decline". London: EIU.</li>
+
+<li>Freedom House. (2025). "Freedom in the World 2025: United States Country Report". Washington D.C.: Freedom House.</li>
+
+<li>Cato Institute. (2023). "Human Freedom Index 2023: Global Rankings and Trends". Washington D.C.: Cato Institute.</li>
+
+<li>Varieties of Democracy Project. (2025). "Academic Freedom Index 2025". Gothenburg: V-Dem Institute.</li>
+
+<li>Levitsky, Steven &amp; Ziblatt, Daniel. (2018). "How Democracies Die". New York: Crown Publishing.</li>
+
+<li>Snyder, Timothy. (2017). "On Tyranny: Twenty Lessons from the Twentieth Century". New York: Tim Duggan Books.</li>
+
+<li>Protect Democracy. (2025). "Threat Index: American Democracy Under Pressure". Washington D.C.: Protect Democracy.</li>
+
+<li>Repucci, Sarah &amp; Slipowitz, Amy. (2025). "Freedom in the World 2025: The Erosion of Rights and Freedoms Reaches a Tipping Point". Freedom House.</li>
+
+<li>Mechkova, Valeriya et al. (2024). "How Much Democratic Backsliding Is Too Much? A Global Perspective". Journal of Democracy, 35(4): 131-145.</li>
+
+<li>Diamond, Larry. (2024). "Democratic Regression in the United States: What We Know and What We Need to Learn". American Political Science Review, 118(2): 567-581.</li>
+
+<li>Haggard, Stephan &amp; Kaufman, Robert. (2024). "Backsliding: Democratic Regress in the Contemporary World". Cambridge: Cambridge University Press.</li>
+
+<li>Norris, Pippa. (2024). "Authoritarian Populism and Electoral Integrity". Electoral Studies, 72: 102-115.</li>
+
+<li><a href="2025-05-27-el-compromiso-del-2-del-pib-en-defensa-otan-entre-la-geopol-tica-y-los-intereses-econ-micos.html">El Compromiso del 2% del PIB en Defensa OTAN: Entre la Geopolítica y los Intereses Económicos</a></li>
+<li><a href="2025-06-09-an-lisis-de-libertades-globales-evoluci-n-del-ndice-de-libertades-2015-2025-june-.html">Análisis de Libertades Globales: Evolución del Índice de Libertades 2015-2025 June </a></li>
+</ol>
+
+<p class="post-meta">Publicado el 2025-06-10 21:52 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

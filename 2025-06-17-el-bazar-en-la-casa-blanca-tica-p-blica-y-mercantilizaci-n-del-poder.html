@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-06-17 mar 15:18 -->
+<!-- 2025-07-19 sáb 20:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>El Bazar en la Casa Blanca: Ética Pública y Mercantilización del Poder</title>
 <meta name="author" content="GeoClaude4" />
 <meta name="description" content="Análisis de la ética pública y la mercantilización del poder en la política moderna." />
 <meta name="generator" content="Org Mode" />
-<style type="text/css">
+<style>
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -72,7 +72,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -192,545 +192,9 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
 </style>
-<style>
-  * { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #2c3e50;
-    font-size: 16px;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  header {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
-    color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  header .container {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .header-text {
-    flex: 1;
-    text-align: left;
-  }
-
-/* Estilo para posicionar logo a la derecha */
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.header-text {
-  flex: 1;
-  min-width: 250px;
-}
-.header-logo {
-  flex-shrink: 0;
-  padding-left: 20px;
-}
-.blog-logo {
-  max-height: 80px;
-  width: auto;
-}
-  
-  .blog-logo {
-    max-width: 150px;
-    height: auto;
-    margin-left: 1rem;
-  }
-  
-  .blog-title {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    letter-spacing: -0.02em;
-  }
-  
-  .blog-subtitle {
-    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
-    margin-bottom: 0.5rem;
-    color: #ecf0f1;
-    opacity: 0.95;
-    line-height: 1.4;
-    max-width: 800px;
-    font-weight: 400;
-  }
-  
-  .blog-email {
-    font-size: clamp(0.75rem, 2vw, 1rem);
-    color: #bdc3c7;
-    opacity: 0.9;
-  }
-  
-  .blog-email a {
-    color: #74b9ff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-weight: 500;
-  }
-  
-  .blog-email a:hover {
-    color: #0984e3;
-    text-decoration: underline;
-  }
-  
-  nav {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding: 0.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    flex: 0 1 auto;
-  }
-  
-  nav a {
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    display: block;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-    white-space: nowrap;
-  }
-  
-  nav a:hover, nav a.active {
-    background: #74b9ff;
-    color: white;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
-  }
-  
-  .content {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    margin: 2rem 0;
-    border: 1px solid rgba(0,0,0,0.05);
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    line-height: 1.3;
-  }
-  
-  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
-  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
-  
-  p {
-    margin-bottom: 1rem;
-    line-height: 1.7;
-    color: #34495e;
-  }
-  
-  .post-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .post-list li {
-    background: #f8f9fa;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #74b9ff;
-    transition: all 0.3s ease;
-  }
-  
-  .post-list li:hover {
-    background: #e3f2fd;
-    transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  
-  .post-list h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-  }
-  
-  .post-list h3 a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .post-list h3 a:hover {
-    color: #74b9ff;
-  }
-  
-  .post-date {
-    color: #7f8c8d;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-  }
-  
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  
-  .tag {
-    background: #ddd6fe;
-    color: #5b21b6;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .tag:hover {
-    background: #c4b5fd;
-    transform: scale(1.05);
-  }
-  
-  .stats-box {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    margin-bottom: 2rem;
-    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
-  }
-  
-  .stats-box h2 {
-    color: white;
-    margin-bottom: 1rem;
-  }
-  
-  .stats-box p {
-    color: white;
-    opacity: 0.9;
-  }
-  
-  .archive-year {
-    background: #2c3e50;
-    color: white;
-    padding: 1rem;
-    margin: 2rem 0 1rem 0;
-    border-radius: 8px;
-  }
-  
-  .archive-year h2 {
-    color: white;
-    margin: 0;
-  }
-  
-  .archive-month {
-    background: white;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    border-left: 4px solid #74b9ff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .tag-cloud {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .tag-cloud h2 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .tag-cloud .tag {
-    margin: 0.25rem;
-    display: inline-block;
-  }
-  
-  footer {
-    background: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-  }
-  
-  footer p {
-    color: #bdc3c7;
-    margin-bottom: 0.5rem;
-  }
-  
-  a {
-    color: #74b9ff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #0984e3;
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .container {
-      padding: 0 1.5rem;
-    }
-    
-    .content {
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-    }
-    
-    nav ul {
-      gap: 0.25rem;
-    }
-    
-    nav a {
-      padding: 0.625rem 0.875rem;
-      font-size: 0.85rem;
-    }
-    
-    .header-text {
-      flex: 1;
-    }
-    
-    .blog-logo {
-      max-width: 120px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    body {
-      font-size: 15px;
-    }
-    
-    .container {
-      padding: 0 1rem;
-    }
-    
-    header .container {
-      padding: 0.75rem 1rem;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .header-text {
-      text-align: center;
-      margin-bottom: 0.5rem;
-    }
-    
-    .blog-logo {
-      max-width: 100px;
-      margin-left: 0;
-    }
-    
-    .content {
-      padding: 1.25rem;
-      margin: 1rem 0;
-    }
-    
-    nav {
-      padding: 0.25rem 0;
-    }
-    
-    nav ul {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    
-    nav li {
-      flex: 1 1 45%;
-      min-width: 120px;
-    }
-    
-    nav a {
-      padding: 0.5rem 0.5rem;
-      font-size: 0.8rem;
-      text-align: center;
-    }
-    
-    .post-list li {
-      padding: 1.25rem;
-    }
-    
-    .stats-box {
-      padding: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    body {
-      font-size: 14px;
-    }
-    
-    .container {
-      padding: 0 0.75rem;
-    }
-    
-    header .container {
-      padding: 0.5rem 0.75rem;
-    }
-    
-    .content {
-      padding: 1rem;
-      margin: 0.75rem 0;
-      border-radius: 8px;
-    }
-    
-    nav li {
-      flex: 1 1 100%;
-      margin: 0.125rem 0;
-    }
-    
-    nav a {
-      padding: 0.5rem;
-      font-size: 0.75rem;
-      border-radius: 6px;
-    }
-    
-    .post-list li {
-      padding: 1rem;
-    }
-    
-    .tags {
-      gap: 0.25rem;
-    }
-    
-    .tag {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.6rem;
-    }
-    
-    .stats-box {
-      padding: 1.25rem;
-    }
-    
-    .archive-month {
-      padding: 1.25rem;
-    }
-    
-    .blog-logo {
-      max-width: 80px;
-    }
-  }
-  
-  @media (max-width: 360px) {
-    .container {
-      padding: 0 0.5rem;
-    }
-    
-    header .container {
-      padding: 0.5rem;
-    }
-    
-    .content {
-      padding: 0.875rem;
-      margin: 0.5rem 0;
-    }
-    
-    nav a {
-      padding: 0.4rem;
-      font-size: 0.7rem;
-    }
-    
-    .post-list li {
-      padding: 0.875rem;
-    }
-    
-    .stats-box {
-      padding: 1rem;
-    }
-    
-    .blog-logo {
-      max-width: 70px;
-    }
-  }
-  
-  /* Mejoras para tablets en orientación landscape */
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    nav ul {
-      justify-content: center;
-    }
-    
-    nav li {
-      flex: 0 1 auto;
-    }
-    
-    nav a {
-      padding: 0.75rem 1.25rem;
-    }
-    
-    .blog-logo {
-      max-width: 130px;
-    }
-  }
-  
-  /* Optimizaciones adicionales para touch */
-  @media (hover: none) and (pointer: coarse) {
-    nav a, .post-list li, .tag {
-      transform: none;
-    }
-    
-    nav a:hover, .post-list li:hover, .tag:hover {
-      transform: none;
-    }
-    
-    nav a:active {
-      background: #74b9ff;
-      color: white;
-    }
-  }
-</style>
+<meta name="description" content="Análisis de la ética pública y la mercantilización del poder en la política moderna.">
 </head>
 <body>
 <div id="preamble" class="status">
@@ -1307,21 +771,23 @@ gtag('config', 'G-D0JDZ5P5C1');
 </div>
 <div id="content" class="content">
 <h1 class="title">El Bazar en la Casa Blanca: Ética Pública y Mercantilización del Poder</h1>
-<div id="outline-container-orgcfff8d1" class="outline-2">
-<h2 id="orgcfff8d1">El Bazar en la Casa Blanca: Ética Pública y Mercantilización del Poder</h2>
-<div class="outline-text-2" id="text-orgcfff8d1">
+
+<div id="outline-container-org34e7829" class="outline-2">
+<h2 id="org34e7829">El Bazar en la Casa Blanca: Ética Pública y Mercantilización del Poder</h2>
+<div class="outline-text-2" id="text-org34e7829">
 <p>
 La comercialización de productos tecnológicos por parte del presidente de Estados Unidos durante su mandato representa una transgresión sin precedentes de las normas éticas tradicionales del cargo. Este análisis examina las implicaciones de la mercantilización del poder ejecutivo y sus consecuencias para la integridad institucional.
 </p>
 </div>
 </div>
-<div id="outline-container-org31a154f" class="outline-2">
-<h2 id="org31a154f">El Precedente Histórico</h2>
-<div class="outline-text-2" id="text-org31a154f">
+
+<div id="outline-container-org6523a07" class="outline-2">
+<h2 id="org6523a07">El Precedente Histórico</h2>
+<div class="outline-text-2" id="text-org6523a07">
 </div>
-<div id="outline-container-org373995a" class="outline-3">
-<h3 id="org373995a">Separación Tradicional de Intereses</h3>
-<div class="outline-text-3" id="text-org373995a">
+<div id="outline-container-orgb96c2bf" class="outline-3">
+<h3 id="orgb96c2bf">Separación Tradicional de Intereses</h3>
+<div class="outline-text-3" id="text-orgb96c2bf">
 <p>
 Históricamente, la presidencia estadounidense se ha caracterizado por una separación clara entre el cargo público y los intereses comerciales privados. Esta norma no escrita se fundamenta en:
 </p>
@@ -1334,9 +800,10 @@ Históricamente, la presidencia estadounidense se ha caracterizado por una separ
 </ul>
 </div>
 </div>
-<div id="outline-container-org213a1fd" class="outline-3">
-<h3 id="org213a1fd">Erosión de Normas Éticas</h3>
-<div class="outline-text-3" id="text-org213a1fd">
+
+<div id="outline-container-org2e4c1e2" class="outline-3">
+<h3 id="org2e4c1e2">Erosión de Normas Éticas</h3>
+<div class="outline-text-3" id="text-org2e4c1e2">
 <p>
 La comercialización directa de productos desde el cargo presidencial constituye una ruptura paradigmática que plantea interrogantes fundamentales:
 </p>
@@ -1349,13 +816,14 @@ La comercialización directa de productos desde el cargo presidencial constituye
 </div>
 </div>
 </div>
-<div id="outline-container-orgc5ed66f" class="outline-2">
-<h2 id="orgc5ed66f">Análisis del Caso: El Smartphone Presidencial</h2>
-<div class="outline-text-2" id="text-orgc5ed66f">
+
+<div id="outline-container-orge28a171" class="outline-2">
+<h2 id="orge28a171">Análisis del Caso: El Smartphone Presidencial</h2>
+<div class="outline-text-2" id="text-orge28a171">
 </div>
-<div id="outline-container-org2ea0fa2" class="outline-3">
-<h3 id="org2ea0fa2">Características del Producto</h3>
-<div class="outline-text-3" id="text-org2ea0fa2">
+<div id="outline-container-orge6e8c0c" class="outline-3">
+<h3 id="orge6e8c0c">Características del Producto</h3>
+<div class="outline-text-3" id="text-orge6e8c0c">
 <p>
 La promoción de un dispositivo tecnológico desde la presidencia presenta múltiples dimensiones problemáticas:
 </p>
@@ -1368,9 +836,10 @@ La promoción de un dispositivo tecnológico desde la presidencia presenta múlt
 </ul>
 </div>
 </div>
-<div id="outline-container-org87b8c67" class="outline-3">
-<h3 id="org87b8c67">Implicaciones Regulatorias</h3>
-<div class="outline-text-3" id="text-org87b8c67">
+
+<div id="outline-container-org332a9d2" class="outline-3">
+<h3 id="org332a9d2">Implicaciones Regulatorias</h3>
+<div class="outline-text-3" id="text-org332a9d2">
 <p>
 La comercialización presidencial de tecnología genera interrogantes sobre:
 </p>
@@ -1384,20 +853,22 @@ La comercialización presidencial de tecnología genera interrogantes sobre:
 </div>
 </div>
 </div>
-<div id="outline-container-org1d3f45b" class="outline-2">
-<h2 id="org1d3f45b">Marco Ético y Conflictos de Interés</h2>
-<div class="outline-text-2" id="text-org1d3f45b">
+
+<div id="outline-container-org4f232b0" class="outline-2">
+<h2 id="org4f232b0">Marco Ético y Conflictos de Interés</h2>
+<div class="outline-text-2" id="text-org4f232b0">
 </div>
-<div id="outline-container-org3fefff8" class="outline-3">
-<h3 id="org3fefff8">Principios Éticos Fundamentales</h3>
-<div class="outline-text-3" id="text-org3fefff8">
+<div id="outline-container-org27ab3ad" class="outline-3">
+<h3 id="org27ab3ad">Principios Éticos Fundamentales</h3>
+<div class="outline-text-3" id="text-org27ab3ad">
 <p>
 La ética pública se sustenta en principios básicos que esta práctica compromete:
 </p>
 </div>
-<div id="outline-container-org502db7d" class="outline-4">
-<h4 id="org502db7d">Imparcialidad</h4>
-<div class="outline-text-4" id="text-org502db7d">
+
+<div id="outline-container-org2ded8ea" class="outline-4">
+<h4 id="org2ded8ea">Imparcialidad</h4>
+<div class="outline-text-4" id="text-org2ded8ea">
 <ul class="org-ul">
 <li>El cargo público debe servir al interés general, no a intereses particulares</li>
 <li>Las decisiones deben basarse en el bien común, no en beneficios personales</li>
@@ -1405,9 +876,10 @@ La ética pública se sustenta en principios básicos que esta práctica comprom
 </ul>
 </div>
 </div>
-<div id="outline-container-org8462448" class="outline-4">
-<h4 id="org8462448">Integridad</h4>
-<div class="outline-text-4" id="text-org8462448">
+
+<div id="outline-container-org6b12d3e" class="outline-4">
+<h4 id="org6b12d3e">Integridad</h4>
+<div class="outline-text-4" id="text-org6b12d3e">
 <ul class="org-ul">
 <li>Coherencia entre valores declarados y acciones realizadas</li>
 <li>Transparencia en motivaciones y objetivos</li>
@@ -1415,9 +887,10 @@ La ética pública se sustenta en principios básicos que esta práctica comprom
 </ul>
 </div>
 </div>
-<div id="outline-container-org7b07755" class="outline-4">
-<h4 id="org7b07755">Responsabilidad</h4>
-<div class="outline-text-4" id="text-org7b07755">
+
+<div id="outline-container-org10c239b" class="outline-4">
+<h4 id="org10c239b">Responsabilidad</h4>
+<div class="outline-text-4" id="text-org10c239b">
 <ul class="org-ul">
 <li>Rendición de cuentas por el uso del cargo</li>
 <li>Responsabilidad fiduciaria hacia la ciudadanía</li>
@@ -1426,9 +899,10 @@ La ética pública se sustenta en principios básicos que esta práctica comprom
 </div>
 </div>
 </div>
-<div id="outline-container-orgc8eea7c" class="outline-3">
-<h3 id="orgc8eea7c">Conflictos de Interés Evidentes</h3>
-<div class="outline-text-3" id="text-orgc8eea7c">
+
+<div id="outline-container-orga8fafda" class="outline-3">
+<h3 id="orga8fafda">Conflictos de Interés Evidentes</h3>
+<div class="outline-text-3" id="text-orga8fafda">
 <p>
 La comercialización presidencial genera múltiples conflictos:
 </p>
@@ -1442,13 +916,14 @@ La comercialización presidencial genera múltiples conflictos:
 </div>
 </div>
 </div>
-<div id="outline-container-orge8524ee" class="outline-2">
-<h2 id="orge8524ee">Precedentes Internacionales y Comparación</h2>
-<div class="outline-text-2" id="text-orge8524ee">
+
+<div id="outline-container-org61a3201" class="outline-2">
+<h2 id="org61a3201">Precedentes Internacionales y Comparación</h2>
+<div class="outline-text-2" id="text-org61a3201">
 </div>
-<div id="outline-container-org36b56d1" class="outline-3">
-<h3 id="org36b56d1">Estándares Democráticos Globales</h3>
-<div class="outline-text-3" id="text-org36b56d1">
+<div id="outline-container-orge7b8898" class="outline-3">
+<h3 id="orge7b8898">Estándares Democráticos Globales</h3>
+<div class="outline-text-3" id="text-orge7b8898">
 <p>
 En democracias consolidadas, existen mecanismos para prevenir estas situaciones:
 </p>
@@ -1461,22 +936,24 @@ En democracias consolidadas, existen mecanismos para prevenir estas situaciones:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgba69596" class="outline-3">
-<h3 id="orgba69596">El Caso Estadounidense en Perspectiva</h3>
-<div class="outline-text-3" id="text-orgba69596">
+
+<div id="outline-container-orgf95fd60" class="outline-3">
+<h3 id="orgf95fd60">El Caso Estadounidense en Perspectiva</h3>
+<div class="outline-text-3" id="text-orgf95fd60">
 <p>
 Estados Unidos presenta paradójicamente menos restricciones formales que otras democracias, dependiendo más de normas informales que han demostrado ser insuficientes ante liderazgos transgresortes.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org17ef9dc" class="outline-2">
-<h2 id="org17ef9dc">Implicaciones Geopolíticas</h2>
-<div class="outline-text-2" id="text-org17ef9dc">
+
+<div id="outline-container-org914d9ed" class="outline-2">
+<h2 id="org914d9ed">Implicaciones Geopolíticas</h2>
+<div class="outline-text-2" id="text-org914d9ed">
 </div>
-<div id="outline-container-org3a9411f" class="outline-3">
-<h3 id="org3a9411f">Credibilidad Internacional</h3>
-<div class="outline-text-3" id="text-org3a9411f">
+<div id="outline-container-org5d3f237" class="outline-3">
+<h3 id="org5d3f237">Credibilidad Internacional</h3>
+<div class="outline-text-3" id="text-org5d3f237">
 <p>
 La comercialización presidencial afecta la percepción internacional de Estados Unidos:
 </p>
@@ -1489,9 +966,10 @@ La comercialización presidencial afecta la percepción internacional de Estados
 </ul>
 </div>
 </div>
-<div id="outline-container-org08a98b5" class="outline-3">
-<h3 id="org08a98b5">Efectos en Alianzas</h3>
-<div class="outline-text-3" id="text-org08a98b5">
+
+<div id="outline-container-orge980c2f" class="outline-3">
+<h3 id="orge980c2f">Efectos en Alianzas</h3>
+<div class="outline-text-3" id="text-orge980c2f">
 <p>
 Los socios tradicionales de Estados Unidos enfrentan dilemas:
 </p>
@@ -1504,13 +982,14 @@ Los socios tradicionales de Estados Unidos enfrentan dilemas:
 </div>
 </div>
 </div>
-<div id="outline-container-org2e85194" class="outline-2">
-<h2 id="org2e85194">Consecuencias para la Democracia Estadounidense</h2>
-<div class="outline-text-2" id="text-org2e85194">
+
+<div id="outline-container-org056b7a4" class="outline-2">
+<h2 id="org056b7a4">Consecuencias para la Democracia Estadounidense</h2>
+<div class="outline-text-2" id="text-org056b7a4">
 </div>
-<div id="outline-container-orgd71d1b7" class="outline-3">
-<h3 id="orgd71d1b7">Normalización de la Transgresión</h3>
-<div class="outline-text-3" id="text-orgd71d1b7">
+<div id="outline-container-org247f5ec" class="outline-3">
+<h3 id="org247f5ec">Normalización de la Transgresión</h3>
+<div class="outline-text-3" id="text-org247f5ec">
 <p>
 La aceptación de estas prácticas establece precedentes peligrosos:
 </p>
@@ -1523,9 +1002,10 @@ La aceptación de estas prácticas establece precedentes peligrosos:
 </ul>
 </div>
 </div>
-<div id="outline-container-org158ad99" class="outline-3">
-<h3 id="org158ad99">Impacto en la Confianza Institucional</h3>
-<div class="outline-text-3" id="text-org158ad99">
+
+<div id="outline-container-orgc1cbf2b" class="outline-3">
+<h3 id="orgc1cbf2b">Impacto en la Confianza Institucional</h3>
+<div class="outline-text-3" id="text-orgc1cbf2b">
 <p>
 La mercantilización del poder presidencial afecta:
 </p>
@@ -1539,13 +1019,14 @@ La mercantilización del poder presidencial afecta:
 </div>
 </div>
 </div>
-<div id="outline-container-orge0a3e8d" class="outline-2">
-<h2 id="orge0a3e8d">Análisis Psicológico del Fenómeno</h2>
-<div class="outline-text-2" id="text-orge0a3e8d">
+
+<div id="outline-container-org6869a62" class="outline-2">
+<h2 id="org6869a62">Análisis Psicológico del Fenómeno</h2>
+<div class="outline-text-2" id="text-org6869a62">
 </div>
-<div id="outline-container-org7022036" class="outline-3">
-<h3 id="org7022036">Perfil del Líder Comercializador</h3>
-<div class="outline-text-3" id="text-org7022036">
+<div id="outline-container-orge114c58" class="outline-3">
+<h3 id="orge114c58">Perfil del Líder Comercializador</h3>
+<div class="outline-text-3" id="text-orge114c58">
 <p>
 La fusión de roles presidenciales y comerciales revela características psicológicas específicas:
 </p>
@@ -1558,9 +1039,10 @@ La fusión de roles presidenciales y comerciales revela características psicol�
 </ul>
 </div>
 </div>
-<div id="outline-container-orga2393eb" class="outline-3">
-<h3 id="orga2393eb">Respuesta del Electorado</h3>
-<div class="outline-text-3" id="text-orga2393eb">
+
+<div id="outline-container-orgccca5d7" class="outline-3">
+<h3 id="orgccca5d7">Respuesta del Electorado</h3>
+<div class="outline-text-3" id="text-orgccca5d7">
 <p>
 La tolerancia ciudadana hacia estas prácticas sugiere:
 </p>
@@ -1574,13 +1056,14 @@ La tolerancia ciudadana hacia estas prácticas sugiere:
 </div>
 </div>
 </div>
-<div id="outline-container-org3340421" class="outline-2">
-<h2 id="org3340421">Propuestas de Reforma</h2>
-<div class="outline-text-2" id="text-org3340421">
+
+<div id="outline-container-orgcc6c3b8" class="outline-2">
+<h2 id="orgcc6c3b8">Propuestas de Reforma</h2>
+<div class="outline-text-2" id="text-orgcc6c3b8">
 </div>
-<div id="outline-container-org5b40aeb" class="outline-3">
-<h3 id="org5b40aeb">Marcos Regulatorios Necesarios</h3>
-<div class="outline-text-3" id="text-org5b40aeb">
+<div id="outline-container-org6d36146" class="outline-3">
+<h3 id="org6d36146">Marcos Regulatorios Necesarios</h3>
+<div class="outline-text-3" id="text-org6d36146">
 <p>
 Para prevenir futuras transgresiones, se requieren:
 </p>
@@ -1593,9 +1076,10 @@ Para prevenir futuras transgresiones, se requieren:
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf6cac05" class="outline-3">
-<h3 id="orgf6cac05">Fortalecimiento Institucional</h3>
-<div class="outline-text-3" id="text-orgf6cac05">
+
+<div id="outline-container-orgbeab99f" class="outline-3">
+<h3 id="orgbeab99f">Fortalecimiento Institucional</h3>
+<div class="outline-text-3" id="text-orgbeab99f">
 <ul class="org-ul">
 <li>Creación de oficinas de ética independientes con poder real</li>
 <li>Requisitos de divulgación financiera más estrictos</li>
@@ -1605,13 +1089,14 @@ Para prevenir futuras transgresiones, se requieren:
 </div>
 </div>
 </div>
-<div id="outline-container-org00ea3c8" class="outline-2">
-<h2 id="org00ea3c8">Conclusiones</h2>
-<div class="outline-text-2" id="text-org00ea3c8">
+
+<div id="outline-container-org53e7a9b" class="outline-2">
+<h2 id="org53e7a9b">Conclusiones</h2>
+<div class="outline-text-2" id="text-org53e7a9b">
 </div>
-<div id="outline-container-org0ff2313" class="outline-3">
-<h3 id="org0ff2313">La Mercantilización del Poder como Síntoma</h3>
-<div class="outline-text-3" id="text-org0ff2313">
+<div id="outline-container-org1fbf6c5" class="outline-3">
+<h3 id="org1fbf6c5">La Mercantilización del Poder como Síntoma</h3>
+<div class="outline-text-3" id="text-org1fbf6c5">
 <p>
 La comercialización presidencial no es un fenómeno aislado, sino expresión de una transformación más profunda en la concepción del poder público:
 </p>
@@ -1624,9 +1109,10 @@ La comercialización presidencial no es un fenómeno aislado, sino expresión de
 </ol>
 </div>
 </div>
-<div id="outline-container-org9c6fd36" class="outline-3">
-<h3 id="org9c6fd36">Riesgos para la Democracia</h3>
-<div class="outline-text-3" id="text-org9c6fd36">
+
+<div id="outline-container-org11b0e31" class="outline-3">
+<h3 id="org11b0e31">Riesgos para la Democracia</h3>
+<div class="outline-text-3" id="text-org11b0e31">
 <p>
 Esta práctica representa riesgos sistémicos:
 </p>
@@ -1639,9 +1125,10 @@ Esta práctica representa riesgos sistémicos:
 </ul>
 </div>
 </div>
-<div id="outline-container-org49d96ea" class="outline-3">
-<h3 id="org49d96ea">Reflexión Final</h3>
-<div class="outline-text-3" id="text-org49d96ea">
+
+<div id="outline-container-orgc030330" class="outline-3">
+<h3 id="orgc030330">Reflexión Final</h3>
+<div class="outline-text-3" id="text-orgc030330">
 <p>
 La comercialización del cargo presidencial constituye una prueba de fuego para la democracia estadounidense. La respuesta institucional y ciudadana a estas transgresiones determinará si Estados Unidos puede restaurar estándares éticos o si acepta una nueva normalidad donde el poder público se subordina al beneficio privado.
 </p>
@@ -1652,9 +1139,10 @@ El mundo observa si la democracia más poderosa del planeta puede distinguir ent
 </div>
 </div>
 </div>
-<div id="outline-container-org004cdb3" class="outline-2">
-<h2 id="org004cdb3">Referencias Documentales</h2>
-<div class="outline-text-2" id="text-org004cdb3">
+
+<div id="outline-container-org59720df" class="outline-2">
+<h2 id="org59720df">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org59720df">
 <ul class="org-ul">
 <li>Office of Government Ethics. "Standards of Ethical Conduct for Employees of the Executive Branch."</li>
 <li>Thompson, Dennis F. "Ethics in Congress: From Individual to Institutional Corruption." Brookings Institution Press, 1995.</li>
@@ -1689,7 +1177,7 @@ El mundo observa si la democracia más poderosa del planeta puede distinguir ent
 <div class="container">
 <p>© 2025 El Mapa y El Código</p>
 <p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
-<p>Última actualización: 2025-06-17 15:18</p>
+<p>Última actualización: 2025-07-19 20:10</p>
 </div>
 </footer>
 <!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->

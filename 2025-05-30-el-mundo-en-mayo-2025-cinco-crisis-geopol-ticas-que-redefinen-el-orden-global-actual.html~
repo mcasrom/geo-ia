@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>El Mundo en Mayo 2025: Cinco Crisis Geopolíticas que Redefinen el</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis crítico de las cinco crisis geopolíticas más determinantes de mayo 2025: la rivalidad sino-estadounidense, los conflictos activos, las tensiones en el Estrecho de Taiwán, el retorno del trumpismo y la fragmentación del orden internacional" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="El Mundo en Mayo 2025: Cinco Crisis Geopolíticas que Redefinen el">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">El Mundo en Mayo 2025: Cinco Crisis Geopolíticas que Redefinen el</h1>
+
+<div id="outline-container-org2362901" class="outline-2">
+<h2 id="org2362901">El Mundo en Mayo 2025: Cinco Crisis Geopolíticas que Redefinen el Orden Global Actual</h2>
+</div>
+<div id="outline-container-orgbe1a1e6" class="outline-2">
+<h2 id="orgbe1a1e6">Introducción: Un Tablero Global en Transformación</h2>
+<div class="outline-text-2" id="text-orgbe1a1e6">
+<p>
+El mes de mayo de 2025 ha cristalizado como un punto de inflexión en la arquitectura geopolítica mundial. Cinco vectores críticos convergen para reconfigurar el equilibrio de poder global, generando un escenario de volatilidad sin precedentes desde el fin de la Guerra Fría. Este análisis examina las dinámicas subyacentes que están moldeando un nuevo orden internacional, caracterizado por la fragmentación, la competencia entre grandes potencias y la erosión de las instituciones multilaterales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e3c80b" class="outline-2">
+<h2 id="org7e3c80b">Marco Analítico: Las Cinco Crisis Convergentes</h2>
+<div class="outline-text-2" id="text-org7e3c80b">
+</div>
+<div id="outline-container-org5101f43" class="outline-3">
+<h3 id="org5101f43">1. La Gran Competencia: Estados Unidos vs. China</h3>
+<div class="outline-text-3" id="text-org5101f43">
+<p>
+La rivalidad entre Washington y Beijing ha evolucionado más allá de una simple competencia comercial para convertirse en una confrontación sistémica que abarca todas las dimensiones del poder nacional.
+</p>
+</div>
+
+<div id="outline-container-orgcbbec35" class="outline-4">
+<h4 id="orgcbbec35">Dimensión Económica</h4>
+<div class="outline-text-4" id="text-orgcbbec35">
+<p>
+La implementación de aranceles del 60% a productos chinos y hasta 20% a otros socios comerciales por parte de la administración Trump marca un punto de no retorno en la desacoplamiento (decoupling) de las dos mayores economías mundiales. Esta medida no solo altera los flujos comerciales globales, sino que acelera la formación de bloques económicos rivales.
+</p>
+
+
+<div id="org64c5214" class="figure">
+<p><img src="./assets/images/economic-decoupling.png" alt="economic-decoupling.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaae7d93" class="outline-4">
+<h4 id="orgaae7d93">Dimensión Tecnológica</h4>
+<div class="outline-text-4" id="text-orgaae7d93">
+<p>
+La guerra tecnológica se intensifica con restricciones en semiconductores, inteligencia artificial y tecnologías críticas. China responde con inversiones masivas en I+D+i y estrategias de autosuficiencia tecnológica.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org73b844c" class="outline-4">
+<h4 id="org73b844c">Dimensión Militar</h4>
+<div class="outline-text-4" id="text-org73b844c">
+<p>
+El refuerzo de la presencia militar estadounidense en el Indo-Pacífico contrasta con la modernización acelerada del Ejército Popular de Liberación, creando nuevos equilibrios de disuasión.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org079bceb" class="outline-3">
+<h3 id="org079bceb">2. Conflictos Activos: La Multipolaridad Violenta</h3>
+<div class="outline-text-3" id="text-org079bceb">
+</div>
+<div id="outline-container-org0cbc3b6" class="outline-4">
+<h4 id="org0cbc3b6">Guerra en Ucrania: El Frente Europeo</h4>
+<div class="outline-text-4" id="text-org0cbc3b6">
+<p>
+El conflicto ucraniano entra en su cuarto año con implicaciones que trascienden las fronteras europeas. La continuidad del apoyo occidental bajo la presidencia Trump genera incertidumbres estratégicas significativas.
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="org6c62651"></a>Impactos Sistémicos:<br />
+<div class="outline-text-5" id="text-org6c62651">
+<ul class="org-ul">
+<li>Reconfiguración de la arquitectura de seguridad europea</li>
+<li>Crisis energética estructural</li>
+<li>Fortalecimiento de la cohesión OTAN vs. fatiga bélica</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org0dfe297" class="outline-4">
+<h4 id="org0dfe297">Medio Oriente: El Nudo Gordiano</h4>
+<div class="outline-text-4" id="text-org0dfe297">
+<p>
+Los conflictos en Gaza, Siria, Yemen y las tensiones con Irán mantienen la región como epicentro de inestabilidad global, con efectos en los precios energéticos y las rutas comerciales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgecb6203" class="outline-4">
+<h4 id="orgecb6203">Sudán: La Crisis Olvidada</h4>
+<div class="outline-text-4" id="text-orgecb6203">
+<p>
+El conflicto sudanés ejemplifica cómo las crisis regionales pueden tener efectos sistémicos en un mundo interconectado, afectando rutas migratorias y estabilidad regional.
+</p>
+
+
+<div id="org3fd0464" class="figure">
+<p><img src="./assets/images/conflict-map.png" alt="conflict-map.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org390b792" class="outline-3">
+<h3 id="org390b792">3. El Estrecho de Taiwán: La Próxima Crisis</h3>
+<div class="outline-text-3" id="text-org390b792">
+<p>
+Las tensiones en el Estrecho de Taiwán representan potencialmente el mayor riesgo geopolítico del siglo XXI. La modernización militar china, incluyendo el establecimiento de nuevas academias para la Fuerza de Apoyo de Información y Logístico Conjunto, señala preparativos serios para un posible escenario de conflicto.
+</p>
+</div>
+
+<div id="outline-container-org8e895c2" class="outline-4">
+<h4 id="org8e895c2">Factores de Escalada:</h4>
+<div class="outline-text-4" id="text-org8e895c2">
+<ol class="org-ol">
+<li><b><b>Capacidades Militares</b></b>: Modernización acelerada del EPL</li>
+<li><b><b>Retórica Política</b></b>: Comparaciones taiwanesas con Ucrania</li>
+<li><b><b>Dinámicas Electorales</b></b>: Presiones internas en ambos lados</li>
+<li><b><b>Factor Temporal</b></b>: Ventana de oportunidad estratégica</li>
+</ol>
+
+
+<div id="org77b38b4" class="figure">
+<p><img src="./assets/images/taiwan-crisis.png" alt="taiwan-crisis.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf57a4b" class="outline-3">
+<h3 id="orgbf57a4b">4. El Retorno del Trumpismo: América Primero 2.0</h3>
+<div class="outline-text-3" id="text-orgbf57a4b">
+<p>
+La segunda presidencia de Trump introduce elementos de impredecibilidad en un sistema internacional ya desestabilizado. La agenda "América Primero" redefinida tiene implicaciones profundas para el liderazgo global estadounidense.
+</p>
+</div>
+
+<div id="outline-container-org8b8317f" class="outline-4">
+<h4 id="org8b8317f">Características Clave:</h4>
+<div class="outline-text-4" id="text-org8b8317f">
+<ul class="org-ul">
+<li><b><b>Reducción de Compromisos Globales</b></b>: Menor presencia militar mundial</li>
+<li><b><b>Presión sobre Aliados</b></b>: Exigencia de mayor burden-sharing</li>
+<li><b><b>Unilateralismo Comercial</b></b>: Política arancelaria agresiva</li>
+<li><b><b>Pragmatismo Transaccional</b></b>: Relaciones bilaterales ad-hoc</li>
+</ul>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Área</th>
+<th scope="col" class="org-left">Política Obama/Biden</th>
+<th scope="col" class="org-left">Política Trump 2.0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Comercio</td>
+<td class="org-left">Multilateralismo TPP</td>
+<td class="org-left">Bilateralismo Arancelario</td>
+</tr>
+
+<tr>
+<td class="org-left">Defensa</td>
+<td class="org-left">Burden Sharing Gradual</td>
+<td class="org-left">Reducción Drástica</td>
+</tr>
+
+<tr>
+<td class="org-left">Clima</td>
+<td class="org-left">Liderazgo Global</td>
+<td class="org-left">America First Energy</td>
+</tr>
+
+<tr>
+<td class="org-left">Alianzas</td>
+<td class="org-left">Institucionalización</td>
+<td class="org-left">Transaccionalismo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org99f5fc5" class="outline-3">
+<h3 id="org99f5fc5">5. Fragmentación del Orden Internacional</h3>
+<div class="outline-text-3" id="text-org99f5fc5">
+<p>
+El orden liberal internacional enfrenta su crisis más profunda desde 1945. La convergencia de fuerzas populistas, nacionalistas y autoritarias erosiona las bases del sistema multilateral.
+</p>
+</div>
+
+<div id="outline-container-orgca1180b" class="outline-4">
+<h4 id="orgca1180b">Manifestaciones de la Crisis:</h4>
+<div class="outline-text-4" id="text-orgca1180b">
+<ol class="org-ol">
+<li><b><b>Populismo Global</b></b>: Limitación de inmigración y proteccionismo</li>
+<li><b><b>Crisis Institucional</b></b>: Debilitamiento de organismos multilaterales</li>
+<li><b><b>Bloques Rivales</b></b>: Formación de alianzas alternativas</li>
+<li><b><b>Deglobalización</b></b>: Reshoring y nearshoring masivos</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9e3e05e" class="outline-2">
+<h2 id="org9e3e05e">Análisis de Riesgos Sistémicos</h2>
+<div class="outline-text-2" id="text-org9e3e05e">
+</div>
+<div id="outline-container-orgc5c17e6" class="outline-3">
+<h3 id="orgc5c17e6">Matriz de Riesgos Geopolíticos</h3>
+<div class="outline-text-3" id="text-orgc5c17e6">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Riesgo</th>
+<th scope="col" class="org-left">Probabilidad</th>
+<th scope="col" class="org-left">Impacto</th>
+<th scope="col" class="org-left">Horizonte Temporal</th>
+<th scope="col" class="org-left">Mitigación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Conflicto Taiwán</td>
+<td class="org-left">Media</td>
+<td class="org-left">Muy Alto</td>
+<td class="org-left">2-5 años</td>
+<td class="org-left">Disuasión Multilateral</td>
+</tr>
+
+<tr>
+<td class="org-left">Escalada Ucrania</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Alto</td>
+<td class="org-left">6-12 meses</td>
+<td class="org-left">Negociación Mediada</td>
+</tr>
+
+<tr>
+<td class="org-left">Guerra Comercial Total</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Alto</td>
+<td class="org-left">Inmediato</td>
+<td class="org-left">Diálogo Bilateral</td>
+</tr>
+
+<tr>
+<td class="org-left">Crisis Energética Global</td>
+<td class="org-left">Media</td>
+<td class="org-left">Alto</td>
+<td class="org-left">1-2 años</td>
+<td class="org-left">Diversificación</td>
+</tr>
+
+<tr>
+<td class="org-left">Colapso Institucional</td>
+<td class="org-left">Baja</td>
+<td class="org-left">Muy Alto</td>
+<td class="org-left">5-10 años</td>
+<td class="org-left">Reforma Multilateral</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org6ed3087" class="outline-3">
+<h3 id="org6ed3087">Escenarios Prospectivos</h3>
+<div class="outline-text-3" id="text-org6ed3087">
+</div>
+<div id="outline-container-org2c6d7d5" class="outline-4">
+<h4 id="org2c6d7d5">Escenario 1: Confrontación Bipolar (Probabilidad: 40%)</h4>
+<div class="outline-text-4" id="text-org2c6d7d5">
+<p>
+Consolidación de dos bloques antagónicos liderados por EEUU y China, con conflictos proxy permanentes y desacoplamiento económico total.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a731d1" class="outline-4">
+<h4 id="org5a731d1">Escenario 2: Multipolaridad Caótica (Probabilidad: 35%)</h4>
+<div class="outline-text-4" id="text-org5a731d1">
+<p>
+Fragmentación en múltiples polos de poder sin hegemonía clara, caracterizada por inestabilidad permanente y conflictos recurrentes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5449275" class="outline-4">
+<h4 id="org5449275">Escenario 3: Nuevo Equilibrio Cooperativo (Probabilidad: 25%)</h4>
+<div class="outline-text-4" id="text-org5449275">
+<p>
+Emergencia gradual de nuevos mecanismos de gobernanza global que acomoden tanto a potencias establecidas como emergentes.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org058c3de" class="outline-2">
+<h2 id="org058c3de">Implicaciones para el Orden Global</h2>
+<div class="outline-text-2" id="text-org058c3de">
+</div>
+<div id="outline-container-orgade2f8e" class="outline-3">
+<h3 id="orgade2f8e">Transformaciones Estructurales</h3>
+<div class="outline-text-3" id="text-orgade2f8e">
+<p>
+La convergencia de estas cinco crisis está produciendo transformaciones estructurales irreversibles:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Fin de la Unipolaridad</b></b>: El momento unipolar estadounidense llega definitivamente a su fin</li>
+<li><b><b>Multipolaridad Conflictiva</b></b>: Emergencia de un sistema multipolar caracterizado por la confrontación</li>
+<li><b><b>Regionalización</b></b>: Fortalecimiento de bloques regionales como respuesta a la incertidumbre global</li>
+<li><b><b>Tecnopolítica</b></b>: La tecnología como nuevo campo de batalla geopolítico</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org6960daf" class="outline-3">
+<h3 id="org6960daf">Dinámicas de Poder Emergentes</h3>
+<div class="outline-text-3" id="text-org6960daf">
+</div>
+<div id="outline-container-org881288b" class="outline-4">
+<h4 id="org881288b">Poder Tradicional vs. Poder Asimétrico</h4>
+<div class="outline-text-4" id="text-org881288b">
+<p>
+Los actores estatales mantienen relevancia, pero actores no estatales (corporaciones tecnológicas, grupos terroristas, redes criminales) adquieren capacidades de influencia sistémica.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org455e33f" class="outline-4">
+<h4 id="org455e33f">Geografía de la Influencia</h4>
+<div class="outline-text-4" id="text-org455e33f">
+<p>
+Los espacios de influencia se redefinen más allá de criterios geográficos tradicionales, incluyendo ciberespacio, espacio exterior y océanos profundos.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfe1fd0b" class="outline-2">
+<h2 id="orgfe1fd0b">Conclusiones: Navegando la Incertidumbre Estratégica</h2>
+<div class="outline-text-2" id="text-orgfe1fd0b">
+<p>
+El análisis de mayo 2025 revela un sistema internacional en transición profunda, caracterizado por:
+</p>
+</div>
+
+<div id="outline-container-org3c4e1fa" class="outline-3">
+<h3 id="org3c4e1fa">Tendencias Irreversibles:</h3>
+<div class="outline-text-3" id="text-org3c4e1fa">
+<ol class="org-ol">
+<li><b><b>Competencia Sistémica</b></b>: La rivalidad sino-estadounidense estructurará el sistema internacional por décadas</li>
+<li><b><b>Fragmentación Normativa</b></b>: Erosión del consenso sobre normas y instituciones internacionales</li>
+<li><b><b>Conflictividad Permanente</b></b>: Normalización de crisis múltiples y simultáneas</li>
+<li><b><b>Incertidumbre Estratégica</b></b>: Impredecibilidad como característica sistémica</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd1736ed" class="outline-3">
+<h3 id="orgd1736ed">Desafíos para la Estabilidad Global:</h3>
+<div class="outline-text-3" id="text-orgd1736ed">
+<ul class="org-ul">
+<li>Ausencia de mecanismos efectivos de gestión de crisis</li>
+<li>Erosión de la confianza estratégica entre grandes potencias</li>
+<li>Debilitamiento de instituciones multilaterales</li>
+<li>Proliferación de tecnologías disruptivas sin marcos regulatorios</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbf721c8" class="outline-3">
+<h3 id="orgbf721c8">Recomendaciones Estratégicas:</h3>
+<div class="outline-text-3" id="text-orgbf721c8">
+<p>
+Para navegar este entorno de alta volatilidad, los actores internacionales deberían:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Desarrollar Capacidades de Adaptación</b></b>: Flexibilidad estratégica para responder a cambios rápidos</li>
+<li><b><b>Diversificar Asociaciones</b></b>: Reducir dependencias estratégicas excesivas</li>
+<li><b><b>Invertir en Resiliencia</b></b>: Fortalecer capacidades de respuesta a crisis múltiples</li>
+<li><b><b>Promover Diálogo Estratégico</b></b>: Mantener canales de comunicación incluso en contextos adversariales</li>
+</ol>
+
+<p>
+El mundo de mayo 2025 nos muestra un sistema internacional en transformación acelerada, donde las certezas del pasado han dado paso a un escenario de competencia constante y adaptación permanente. La capacidad de los actores internacionales para navegar esta complejidad determinará la estabilidad y prosperidad global en las décadas venideras.
+</p>
+
+<p>
+&#x2014;
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3720e7a" class="outline-2">
+<h2 id="org3720e7a">Referencias y Fuentes</h2>
+<div class="outline-text-2" id="text-org3720e7a">
+</div>
+<div id="outline-container-org7a45ea3" class="outline-3">
+<h3 id="org7a45ea3">Fuentes Primarias:</h3>
+<div class="outline-text-3" id="text-org7a45ea3">
+<ul class="org-ul">
+<li>Análisis de inteligencia estratégica contemporánea</li>
+<li>Informes de think tanks especializados</li>
+<li>Declaraciones oficiales de gobiernos y organismos internacionales</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org688e61d" class="outline-3">
+<h3 id="org688e61d">Metodología:</h3>
+<div class="outline-text-3" id="text-org688e61d">
+<p>
+Este análisis se basa en el seguimiento sistemático de fuentes abiertas especializadas en geopolítica y relaciones internacionales, aplicando marcos analíticos de la escuela realista de relaciones internacionales y teorías de transición hegemónica.
+</p>
+
+
+<p class="post-meta">Publicado el 2025-05-30 07:04 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

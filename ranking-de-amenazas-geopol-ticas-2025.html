@@ -3,13 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-06-14 sáb 14:43 -->
+<!-- 2025-07-19 sáb 20:11 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Ranking de Amenazas Geopolíticas 2025</title>
 <meta name="author" content="GeoClaude4" />
 <meta name="generator" content="Org Mode" />
-<style type="text/css">
+<style>
   #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
@@ -71,7 +71,7 @@
   pre.src-haskell:before { content: 'Haskell'; }
   pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'JavaScript'; }
+  pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
   pre.src-ledger:before { content: 'Ledger'; }
   pre.src-lisp:before { content: 'Lisp'; }
@@ -191,545 +191,9 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+  .org-svg { width: 90%; }
 </style>
-<style>
-  * { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-  }
-  
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #2c3e50;
-    font-size: 16px;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  header {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
-    color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  header .container {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .header-text {
-    flex: 1;
-    text-align: left;
-  }
-
-/* Estilo para posicionar logo a la derecha */
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.header-text {
-  flex: 1;
-  min-width: 250px;
-}
-.header-logo {
-  flex-shrink: 0;
-  padding-left: 20px;
-}
-.blog-logo {
-  max-height: 80px;
-  width: auto;
-}
-  
-  .blog-logo {
-    max-width: 150px;
-    height: auto;
-    margin-left: 1rem;
-  }
-  
-  .blog-title {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-    letter-spacing: -0.02em;
-  }
-  
-  .blog-subtitle {
-    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
-    margin-bottom: 0.5rem;
-    color: #ecf0f1;
-    opacity: 0.95;
-    line-height: 1.4;
-    max-width: 800px;
-    font-weight: 400;
-  }
-  
-  .blog-email {
-    font-size: clamp(0.75rem, 2vw, 1rem);
-    color: #bdc3c7;
-    opacity: 0.9;
-  }
-  
-  .blog-email a {
-    color: #74b9ff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-weight: 500;
-  }
-  
-  .blog-email a:hover {
-    color: #0984e3;
-    text-decoration: underline;
-  }
-  
-  nav {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    padding: 0.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    flex: 0 1 auto;
-  }
-  
-  nav a {
-    color: #2c3e50;
-    text-decoration: none;
-    padding: 0.75rem 1rem;
-    display: block;
-    font-weight: 500;
-    font-size: 0.9rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    border: 1px solid transparent;
-    white-space: nowrap;
-  }
-  
-  nav a:hover, nav a.active {
-    background: #74b9ff;
-    color: white;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
-  }
-  
-  .content {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    margin: 2rem 0;
-    border: 1px solid rgba(0,0,0,0.05);
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    line-height: 1.3;
-  }
-  
-  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
-  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
-  
-  p {
-    margin-bottom: 1rem;
-    line-height: 1.7;
-    color: #34495e;
-  }
-  
-  .post-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .post-list li {
-    background: #f8f9fa;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid #74b9ff;
-    transition: all 0.3s ease;
-  }
-  
-  .post-list li:hover {
-    background: #e3f2fd;
-    transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  
-  .post-list h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.25rem;
-  }
-  
-  .post-list h3 a {
-    color: #2c3e50;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .post-list h3 a:hover {
-    color: #74b9ff;
-  }
-  
-  .post-date {
-    color: #7f8c8d;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-  }
-  
-  .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  
-  .tag {
-    background: #ddd6fe;
-    color: #5b21b6;
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .tag:hover {
-    background: #c4b5fd;
-    transform: scale(1.05);
-  }
-  
-  .stats-box {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    margin-bottom: 2rem;
-    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
-  }
-  
-  .stats-box h2 {
-    color: white;
-    margin-bottom: 1rem;
-  }
-  
-  .stats-box p {
-    color: white;
-    opacity: 0.9;
-  }
-  
-  .archive-year {
-    background: #2c3e50;
-    color: white;
-    padding: 1rem;
-    margin: 2rem 0 1rem 0;
-    border-radius: 8px;
-  }
-  
-  .archive-year h2 {
-    color: white;
-    margin: 0;
-  }
-  
-  .archive-month {
-    background: white;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    border-left: 4px solid #74b9ff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .tag-cloud {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  
-  .tag-cloud h2 {
-    margin-bottom: 1.5rem;
-  }
-  
-  .tag-cloud .tag {
-    margin: 0.25rem;
-    display: inline-block;
-  }
-  
-  footer {
-    background: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-  }
-  
-  footer p {
-    color: #bdc3c7;
-    margin-bottom: 0.5rem;
-  }
-  
-  a {
-    color: #74b9ff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: #0984e3;
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .container {
-      padding: 0 1.5rem;
-    }
-    
-    .content {
-      padding: 1.5rem;
-      margin: 1.5rem 0;
-    }
-    
-    nav ul {
-      gap: 0.25rem;
-    }
-    
-    nav a {
-      padding: 0.625rem 0.875rem;
-      font-size: 0.85rem;
-    }
-    
-    .header-text {
-      flex: 1;
-    }
-    
-    .blog-logo {
-      max-width: 120px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    body {
-      font-size: 15px;
-    }
-    
-    .container {
-      padding: 0 1rem;
-    }
-    
-    header .container {
-      padding: 0.75rem 1rem;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .header-text {
-      text-align: center;
-      margin-bottom: 0.5rem;
-    }
-    
-    .blog-logo {
-      max-width: 100px;
-      margin-left: 0;
-    }
-    
-    .content {
-      padding: 1.25rem;
-      margin: 1rem 0;
-    }
-    
-    nav {
-      padding: 0.25rem 0;
-    }
-    
-    nav ul {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    
-    nav li {
-      flex: 1 1 45%;
-      min-width: 120px;
-    }
-    
-    nav a {
-      padding: 0.5rem 0.5rem;
-      font-size: 0.8rem;
-      text-align: center;
-    }
-    
-    .post-list li {
-      padding: 1.25rem;
-    }
-    
-    .stats-box {
-      padding: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    body {
-      font-size: 14px;
-    }
-    
-    .container {
-      padding: 0 0.75rem;
-    }
-    
-    header .container {
-      padding: 0.5rem 0.75rem;
-    }
-    
-    .content {
-      padding: 1rem;
-      margin: 0.75rem 0;
-      border-radius: 8px;
-    }
-    
-    nav li {
-      flex: 1 1 100%;
-      margin: 0.125rem 0;
-    }
-    
-    nav a {
-      padding: 0.5rem;
-      font-size: 0.75rem;
-      border-radius: 6px;
-    }
-    
-    .post-list li {
-      padding: 1rem;
-    }
-    
-    .tags {
-      gap: 0.25rem;
-    }
-    
-    .tag {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.6rem;
-    }
-    
-    .stats-box {
-      padding: 1.25rem;
-    }
-    
-    .archive-month {
-      padding: 1.25rem;
-    }
-    
-    .blog-logo {
-      max-width: 80px;
-    }
-  }
-  
-  @media (max-width: 360px) {
-    .container {
-      padding: 0 0.5rem;
-    }
-    
-    header .container {
-      padding: 0.5rem;
-    }
-    
-    .content {
-      padding: 0.875rem;
-      margin: 0.5rem 0;
-    }
-    
-    nav a {
-      padding: 0.4rem;
-      font-size: 0.7rem;
-    }
-    
-    .post-list li {
-      padding: 0.875rem;
-    }
-    
-    .stats-box {
-      padding: 1rem;
-    }
-    
-    .blog-logo {
-      max-width: 70px;
-    }
-  }
-  
-  /* Mejoras para tablets en orientación landscape */
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    nav ul {
-      justify-content: center;
-    }
-    
-    nav li {
-      flex: 0 1 auto;
-    }
-    
-    nav a {
-      padding: 0.75rem 1.25rem;
-    }
-    
-    .blog-logo {
-      max-width: 130px;
-    }
-  }
-  
-  /* Optimizaciones adicionales para touch */
-  @media (hover: none) and (pointer: coarse) {
-    nav a, .post-list li, .tag {
-      transform: none;
-    }
-    
-    nav a:hover, .post-list li:hover, .tag:hover {
-      transform: none;
-    }
-    
-    nav a:active {
-      background: #74b9ff;
-      color: white;
-    }
-  }
-</style>
+<meta name="description" content="Ranking de Amenazas Geopolíticas 2025">
 </head>
 <body>
 <div id="preamble" class="status">
@@ -1306,22 +770,24 @@ gtag('config', 'G-D0JDZ5P5C1');
 </div>
 <div id="content" class="content">
 <h1 class="title">Ranking de Amenazas Geopolíticas 2025</h1>
-<div id="outline-container-orgf81170a" class="outline-2">
-<h2 id="orgf81170a">Ranking de Amenazas Geopolíticas 2025</h2>
+
+<div id="outline-container-org15b86f4" class="outline-2">
+<h2 id="org15b86f4">Ranking de Amenazas Geopolíticas 2025</h2>
 </div>
 
 
-<div id="outline-container-org8fc0909" class="outline-2">
-<h2 id="org8fc0909">Introducción</h2>
-<div class="outline-text-2" id="text-org8fc0909">
+<div id="outline-container-orgf10b537" class="outline-2">
+<h2 id="orgf10b537">Introducción</h2>
+<div class="outline-text-2" id="text-orgf10b537">
 <p>
 El panorama geopolítico actual se caracteriza por una creciente fragmentación del orden global, intensificación de rivalidades entre grandes potencias, y desafíos emergentes que reconfiguran las relaciones internacionales. Este documento presenta los 10 temas más relevantes y candentes que están definiendo la geoestrategia contemporánea.
 </p>
 </div>
 </div>
-<div id="outline-container-orgeaa5e29" class="outline-2">
-<h2 id="orgeaa5e29">Metodología de Ponderación y Seguimiento</h2>
-<div class="outline-text-2" id="text-orgeaa5e29">
+
+<div id="outline-container-org610484f" class="outline-2">
+<h2 id="org610484f">Metodología de Ponderación y Seguimiento</h2>
+<div class="outline-text-2" id="text-org610484f">
 <p>
 Los factores de ponderación consideran:
 </p>
@@ -1333,9 +799,10 @@ Los factores de ponderación consideran:
 <li><b><b>Relevancia Mediática</b></b> (15%): Atención y debate público internacional</li>
 </ul>
 </div>
-<div id="outline-container-orgbacea16" class="outline-3">
-<h3 id="orgbacea16">Sistema de Seguimiento de Tendencias</h3>
-<div class="outline-text-3" id="text-orgbacea16">
+
+<div id="outline-container-orge532c38" class="outline-3">
+<h3 id="orge532c38">Sistema de Seguimiento de Tendencias</h3>
+<div class="outline-text-3" id="text-orge532c38">
 <ul class="org-ul">
 <li><b><b>↗ +X</b></b>: Ascenso de X posiciones respecto a revisión anterior (febrero 2025)</li>
 <li><b><b>↘ -X</b></b>: Descenso de X posiciones respecto a revisión anterior</li>
@@ -1346,9 +813,10 @@ Los factores de ponderación consideran:
 </div>
 </div>
 </div>
-<div id="outline-container-org39e5c04" class="outline-2">
-<h2 id="org39e5c04">Los 10 Topics Geopolíticos Más Candentes de 2025</h2>
-<div class="outline-text-2" id="text-org39e5c04">
+
+<div id="outline-container-org1da0213" class="outline-2">
+<h2 id="org1da0213">Los 10 Topics Geopolíticos Más Candentes de 2025</h2>
+<div class="outline-text-2" id="text-org1da0213">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1520,13 +988,14 @@ Los factores de ponderación consideran:
 </tbody>
 </table>
 </div>
-<div id="outline-container-org97cbe09" class="outline-3">
-<h3 id="org97cbe09">Análisis de Tendencias y Movimientos</h3>
-<div class="outline-text-3" id="text-org97cbe09">
+
+<div id="outline-container-orgc6921fe" class="outline-3">
+<h3 id="orgc6921fe">Análisis de Tendencias y Movimientos</h3>
+<div class="outline-text-3" id="text-orgc6921fe">
 </div>
-<div id="outline-container-org4180803" class="outline-4">
-<h4 id="org4180803">Principales Subidas en el Ranking:</h4>
-<div class="outline-text-4" id="text-org4180803">
+<div id="outline-container-orge69f7c1" class="outline-4">
+<h4 id="orge69f7c1">Principales Subidas en el Ranking:</h4>
+<div class="outline-text-4" id="text-orge69f7c1">
 <ul class="org-ul">
 <li><b><b>Guerra Comercial y Proteccionismo Global</b></b> (+3 posiciones): El mayor ascenso, impulsado por las políticas arancelarias agresivas de la segunda administración Trump y la escalada de represalias comerciales chinas.</li>
 
@@ -1536,17 +1005,19 @@ Los factores de ponderación consideran:
 </ul>
 </div>
 </div>
-<div id="outline-container-org2e70275" class="outline-4">
-<h4 id="org2e70275">Principal Caída en el Ranking:</h4>
-<div class="outline-text-4" id="text-org2e70275">
+
+<div id="outline-container-orga4f3c46" class="outline-4">
+<h4 id="orga4f3c46">Principal Caída en el Ranking:</h4>
+<div class="outline-text-4" id="text-orga4f3c46">
 <ul class="org-ul">
 <li><b><b>Conflictos en Ucrania y Medio Oriente</b></b> (-6 posiciones): La mayor caída del ranking, reflejando una cierta "normalización" de estos conflictos en la percepción global, aunque mantienen alta urgencia temporal.</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge3f6371" class="outline-4">
-<h4 id="orge3f6371">Posiciones Estables:</h4>
-<div class="outline-text-4" id="text-orge3f6371">
+
+<div id="outline-container-orgd6ccf8c" class="outline-4">
+<h4 id="orgd6ccf8c">Posiciones Estables:</h4>
+<div class="outline-text-4" id="text-orgd6ccf8c">
 <ul class="org-ul">
 <li><b><b>Fragmentación del Orden Multilateral</b></b> (posición 3): Mantiene su relevancia como fenómeno estructural de fondo.</li>
 <li><b><b>Seguridad Energética y Transición Verde</b></b> (posición 4): Estabilidad que refleja su importancia constante pero no urgente.</li>
@@ -1555,9 +1026,10 @@ Los factores de ponderación consideran:
 </div>
 </div>
 </div>
-<div id="outline-container-org3b3b31b" class="outline-3">
-<h3 id="org3b3b31b">Análisis Detallado por Topic</h3>
-<div class="outline-text-3" id="text-org3b3b31b">
+
+<div id="outline-container-orgf5ca5b1" class="outline-3">
+<h3 id="orgf5ca5b1">Análisis Detallado por Topic</h3>
+<div class="outline-text-3" id="text-orgf5ca5b1">
 <p>
 La rivalidad entre las dos superpotencias define el panorama geopolítico actual. La cuestión de Taiwan representa el punto de mayor tensión, con China preparándose potencialmente para una invasión hacia 2027 y Estados Unidos reforzando su compromiso defensivo. La administración Trump ha intensificado la competencia mediante aranceles del 145% sobre productos chinos y políticas de contención tecnológica.
 </p>
@@ -1566,9 +1038,10 @@ La rivalidad entre las dos superpotencias define el panorama geopolítico actual
 <b>Factores críticos:</b> Capacidad militar china, determinación estadounidense, reacciones de aliados asiáticos.
 </p>
 </div>
-<div id="outline-container-org9837ecc" class="outline-4">
-<h4 id="org9837ecc">2. Guerra Comercial y Proteccionismo Global (8.7/10)</h4>
-<div class="outline-text-4" id="text-org9837ecc">
+
+<div id="outline-container-org69e17ea" class="outline-4">
+<h4 id="org69e17ea">2. Guerra Comercial y Proteccionismo Global (8.7/10)</h4>
+<div class="outline-text-4" id="text-org69e17ea">
 <p>
 El retorno de políticas proteccionistas bajo la segunda administración Trump, con aranceles de hasta 20% sobre socios comerciales y 60% sobre China, está reconfigurando las cadenas de suministro globales. Esta tendencia amenaza con fragmentar aún más la economía mundial y acelerar el desacoplamiento económico.
 </p>
@@ -1578,9 +1051,10 @@ El retorno de políticas proteccionistas bajo la segunda administración Trump, 
 </p>
 </div>
 </div>
-<div id="outline-container-org0fd26ba" class="outline-4">
-<h4 id="org0fd26ba">3. Fragmentación del Orden Multilateral (8.4/10)</h4>
-<div class="outline-text-4" id="text-org0fd26ba">
+
+<div id="outline-container-org8ff4320" class="outline-4">
+<h4 id="org8ff4320">3. Fragmentación del Orden Multilateral (8.4/10)</h4>
+<div class="outline-text-4" id="text-org8ff4320">
 <p>
 Las instituciones internacionales enfrentan una crisis de legitimidad y efectividad. El surgimiento de bloques alternativos (BRICS ampliado, Organización de Cooperación de Shanghai) desafía el orden occidental tradicional, mientras que el populismo erosiona el compromiso con el multilateralismo.
 </p>
@@ -1590,9 +1064,10 @@ Las instituciones internacionales enfrentan una crisis de legitimidad y efectivi
 </p>
 </div>
 </div>
-<div id="outline-container-org8036747" class="outline-4">
-<h4 id="org8036747">4. Seguridad Energética y Transición Verde (8.1/10)</h4>
-<div class="outline-text-4" id="text-org8036747">
+
+<div id="outline-container-orgaf69321" class="outline-4">
+<h4 id="orgaf69321">4. Seguridad Energética y Transición Verde (8.1/10)</h4>
+<div class="outline-text-4" id="text-orgaf69321">
 <p>
 La intersección entre necesidades energéticas, cambio climático y rivalidades geopolíticas crea tensiones complejas. Europa lucha por diversificar sus fuentes energéticas post-Rusia, mientras que la transición verde enfrenta resistencia política y dependencias de minerales críticos controlados por rivales estratégicos.
 </p>
@@ -1602,9 +1077,10 @@ La intersección entre necesidades energéticas, cambio climático y rivalidades
 </p>
 </div>
 </div>
-<div id="outline-container-org24463d4" class="outline-4">
-<h4 id="org24463d4">5. Ciberseguridad y Guerra Híbrida (7.8/10)</h4>
-<div class="outline-text-4" id="text-org24463d4">
+
+<div id="outline-container-org4f47078" class="outline-4">
+<h4 id="org4f47078">5. Ciberseguridad y Guerra Híbrida (7.8/10)</h4>
+<div class="outline-text-4" id="text-org4f47078">
 <p>
 Los ataques cibernéticos estatales y no estatales se intensifican, targeting infraestructura crítica, procesos electorales y sistemas financieros. La guerra híbrida combina elementos militares, económicos, informativos y cibernéticos, difuminando las líneas entre paz y conflicto.
 </p>
@@ -1614,9 +1090,10 @@ Los ataques cibernéticos estatales y no estatales se intensifican, targeting in
 </p>
 </div>
 </div>
-<div id="outline-container-org2fa6fb0" class="outline-4">
-<h4 id="org2fa6fb0">6. Crisis Migratoria y Populismo (7.5/10)</h4>
-<div class="outline-text-4" id="text-org2fa6fb0">
+
+<div id="outline-container-org13897b8" class="outline-4">
+<h4 id="org13897b8">6. Crisis Migratoria y Populismo (7.5/10)</h4>
+<div class="outline-text-4" id="text-org13897b8">
 <p>
 Los flujos migratorios masivos alimentan el ascenso de movimientos populistas que desafían las políticas de inmigración liberal y la integración europea. Esta dinámica amenaza la cohesión social y política en democracias occidentales.
 </p>
@@ -1626,9 +1103,10 @@ Los flujos migratorios masivos alimentan el ascenso de movimientos populistas qu
 </p>
 </div>
 </div>
-<div id="outline-container-org64abb82" class="outline-4">
-<h4 id="org64abb82">7. Conflictos en Ucrania y Medio Oriente (7.3/10)</h4>
-<div class="outline-text-4" id="text-org64abb82">
+
+<div id="outline-container-org4ecf10c" class="outline-4">
+<h4 id="org4ecf10c">7. Conflictos en Ucrania y Medio Oriente (7.3/10)</h4>
+<div class="outline-text-4" id="text-org4ecf10c">
 <p>
 Aunque no son los conflictos más "nuevos", su persistencia y evolución continúan impactando la estabilidad regional y global. La guerra en Ucrania redefine la arquitectura de seguridad europea, mientras que las tensiones en Medio Oriente afectan los precios energéticos globales.
 </p>
@@ -1638,9 +1116,10 @@ Aunque no son los conflictos más "nuevos", su persistencia y evolución contin�
 </p>
 </div>
 </div>
-<div id="outline-container-org8f2ed04" class="outline-4">
-<h4 id="org8f2ed04">8. Cambio Climático como Multiplicador de Amenazas (7.0/10)</h4>
-<div class="outline-text-4" id="text-org8f2ed04">
+
+<div id="outline-container-org9a6e560" class="outline-4">
+<h4 id="org9a6e560">8. Cambio Climático como Multiplicador de Amenazas (7.0/10)</h4>
+<div class="outline-text-4" id="text-org9a6e560">
 <p>
 El cambio climático actúa como acelerador de conflictos existentes, exacerbando problemas de migración, escasez de recursos y inestabilidad política. Su impacto a largo plazo requiere cooperación internacional en un momento de fragmentación geopolítica.
 </p>
@@ -1650,9 +1129,10 @@ El cambio climático actúa como acelerador de conflictos existentes, exacerband
 </p>
 </div>
 </div>
-<div id="outline-container-org024073f" class="outline-4">
-<h4 id="org024073f">9. Redefinición de Alianzas Estratégicas (6.8/10)</h4>
-<div class="outline-text-4" id="text-org024073f">
+
+<div id="outline-container-orgf57c82d" class="outline-4">
+<h4 id="orgf57c82d">9. Redefinición de Alianzas Estratégicas (6.8/10)</h4>
+<div class="outline-text-4" id="text-orgf57c82d">
 <p>
 Las alianzas tradicionales se adaptan a nuevas realidades mientras emergen nuevos partnerships. AUKUS, Quad, y la expansión de BRICS reflejan la reconfiguración del sistema de alianzas global hacia una mayor multipolaridad.
 </p>
@@ -1662,9 +1142,10 @@ Las alianzas tradicionales se adaptan a nuevas realidades mientras emergen nuevo
 </p>
 </div>
 </div>
-<div id="outline-container-org645ed4c" class="outline-4">
-<h4 id="org645ed4c">10. Rivalidad Tecnológica y Desacoplamiento (6.5/10)</h4>
-<div class="outline-text-4" id="text-org645ed4c">
+
+<div id="outline-container-org22f4764" class="outline-4">
+<h4 id="org22f4764">10. Rivalidad Tecnológica y Desacoplamiento (6.5/10)</h4>
+<div class="outline-text-4" id="text-org22f4764">
 <p>
 La competencia por el liderazgo en tecnologías críticas (IA, semiconductores, 5G, quantum computing) impulsa políticas de desacoplamiento selectivo. Controles de exportación y restricciones de inversión crean "cortinas de silicio" que fragmentan la innovación global.
 </p>
@@ -1676,9 +1157,10 @@ La competencia por el liderazgo en tecnologías críticas (IA, semiconductores, 
 </div>
 </div>
 </div>
-<div id="outline-container-org6ba52cb" class="outline-2">
-<h2 id="org6ba52cb">Conclusiones y Tendencias Emergentes</h2>
-<div class="outline-text-2" id="text-org6ba52cb">
+
+<div id="outline-container-org5942527" class="outline-2">
+<h2 id="org5942527">Conclusiones y Tendencias Emergentes</h2>
+<div class="outline-text-2" id="text-org5942527">
 <p>
 El orden geopolítico actual se caracteriza por:
 </p>
@@ -1691,9 +1173,10 @@ El orden geopolítico actual se caracteriza por:
 <li><b><b>Hibridización de Conflictos</b></b>: Difuminación entre guerra y paz, interno y externo</li>
 </ol>
 </div>
-<div id="outline-container-org2b29bf4" class="outline-3">
-<h3 id="org2b29bf4">Implicaciones para 2025-2027</h3>
-<div class="outline-text-3" id="text-org2b29bf4">
+
+<div id="outline-container-org3ef5509" class="outline-3">
+<h3 id="org3ef5509">Implicaciones para 2025-2027</h3>
+<div class="outline-text-3" id="text-org3ef5509">
 <ul class="org-ul">
 <li>Escalada probable en tensiones Taiwan-China hacia 2027</li>
 <li>Intensificación de guerras comerciales y tecnológicas</li>
@@ -1704,16 +1187,18 @@ El orden geopolítico actual se caracteriza por:
 </div>
 </div>
 </div>
-<div id="outline-container-org5272ec4" class="outline-2">
-<h2 id="org5272ec4">Próximas Revisiones y Metodología de Seguimiento</h2>
-<div class="outline-text-2" id="text-org5272ec4">
+
+<div id="outline-container-org0dbcde8" class="outline-2">
+<h2 id="org0dbcde8">Próximas Revisiones y Metodología de Seguimiento</h2>
+<div class="outline-text-2" id="text-org0dbcde8">
 <p>
 Este documento será actualizado trimestralmente para reflejar desarrollos emergentes y cambios en las ponderaciones de riesgo. El seguimiento longitudinal permite identificar tendencias emergentes y evaluar la evolución de prioridades geopolíticas.
 </p>
 </div>
-<div id="outline-container-org2d4c6f8" class="outline-3">
-<h3 id="org2d4c6f8">Calendario de Revisiones:</h3>
-<div class="outline-text-3" id="text-org2d4c6f8">
+
+<div id="outline-container-org78f4811" class="outline-3">
+<h3 id="org78f4811">Calendario de Revisiones:</h3>
+<div class="outline-text-3" id="text-org78f4811">
 <ul class="org-ul">
 <li><b><b>Agosto 2025</b></b>: Revisión post-verano europeo y análisis de tensiones Taiwan</li>
 <li><b><b>Noviembre 2025</b></b>: Evaluación pre-2026 y impacto de elecciones europeas</li>
@@ -1721,9 +1206,10 @@ Este documento será actualizado trimestralmente para reflejar desarrollos emerg
 </ul>
 </div>
 </div>
-<div id="outline-container-org32c0f32" class="outline-3">
-<h3 id="org32c0f32">Metodología de Comparación Histórica:</h3>
-<div class="outline-text-3" id="text-org32c0f32">
+
+<div id="outline-container-orgaf9e93a" class="outline-3">
+<h3 id="orgaf9e93a">Metodología de Comparación Histórica:</h3>
+<div class="outline-text-3" id="text-orgaf9e93a">
 <ul class="org-ul">
 <li>Se mantiene consistencia en criterios de ponderación</li>
 <li>Los cambios de posición reflejan evolución real de amenazas, no cambios metodológicos</li>
@@ -1748,7 +1234,7 @@ Este documento será actualizado trimestralmente para reflejar desarrollos emerg
 <div class="container">
 <p>© 2025 El Mapa y El Código</p>
 <p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
-<p>Última actualización: 2025-06-14 14:43</p>
+<p>Última actualización: 2025-07-19 20:11</p>
 </div>
 </footer>
 <!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->

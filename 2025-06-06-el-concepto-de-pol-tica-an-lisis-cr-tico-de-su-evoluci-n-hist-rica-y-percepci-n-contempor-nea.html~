@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>El Concepto de "Política": Análisis Crítico de su Evolución Histórica</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Este análisis crítico examina la evolución del concepto de &quot;política&quot; desde sus raíces clásicas en la polis griega hasta su percepción contemporánea. A través de un recorrido histórico por la Edad Media, el Renacimiento, la Ilustración y la modernidad, se exploran los cambios en su significado, funciones y actores. Se contrasta la visión idealista de la política con su práctica real y se analizan las percepciones divergentes entre políticos y ciudadanos en la actualidad." />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="El Concepto de "Política": Análisis Crítico de su Evolución Histórica">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">El Concepto de "Política": Análisis Crítico de su Evolución Histórica</h1>
+
+<div id="outline-container-org04b694f" class="outline-2">
+<h2 id="org04b694f">El Concepto de "Política": Análisis Crítico de su Evolución Histórica y Percepción Contemporánea</h2>
+</div>
+
+<div id="outline-container-org5e10681" class="outline-2">
+<h2 id="org5e10681">Introducción</h2>
+<div class="outline-text-2" id="text-org5e10681">
+<p>
+El término "política" ha experimentado una transformación radical desde sus orígenes clásicos hasta su interpretación contemporánea. Esta evolución semántica refleja no solo cambios en las estructuras de poder, sino también en la percepción ciudadana sobre la gestión de los asuntos públicos. El presente análisis examina críticamente esta evolución, contrastando la concepción teórica con la práctica real y las percepciones diferenciadas entre políticos y ciudadanos.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org727d4d8" class="outline-2">
+<h2 id="org727d4d8">Orígenes Etimológicos y Conceptuales</h2>
+<div class="outline-text-2" id="text-org727d4d8">
+</div>
+<div id="outline-container-orgab2b249" class="outline-3">
+<h3 id="orgab2b249">Raíces Clásicas</h3>
+<div class="outline-text-3" id="text-orgab2b249">
+<p>
+El concepto de política deriva del griego <b>politiké</b> (πολιτική), relacionado con <b>polis</b> (πόλις), que significaba ciudad-Estado. Aristóteles definió la política como la "ciencia suprema" que busca el bien común de la comunidad. Esta concepción originaria establecía la política como:
+</p>
+
+<ul class="org-ul">
+<li>Arte de gobernar la ciudad</li>
+<li>Búsqueda del bien común (<b>summum bonum</b>)</li>
+<li>Actividad inherentemente ética</li>
+<li>Participación ciudadana activa</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc3107dc" class="outline-3">
+<h3 id="orgc3107dc">Evolución Romana</h3>
+<div class="outline-text-3" id="text-orgc3107dc">
+<p>
+Los romanos ampliaron el concepto con <b>res publica</b> (cosa pública), enfatizando:
+</p>
+
+<ul class="org-ul">
+<li>Administración de bienes comunes</li>
+<li>Institucionalización del poder</li>
+<li>Separación entre lo público y privado</li>
+<li>Desarrollo del derecho público</li>
+</ul>
+
+
+<div id="org452c1fb" class="figure">
+<p><img src="./assets/images/concepto_clasico_popular.png" alt="concepto_clasico_popular.png" width="800px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbdb1081" class="outline-2">
+<h2 id="orgbdb1081">Desarrollo Histórico del Concepto</h2>
+<div class="outline-text-2" id="text-orgbdb1081">
+</div>
+<div id="outline-container-org07c72e6" class="outline-3">
+<h3 id="org07c72e6">Edad Media: Teología Política</h3>
+<div class="outline-text-3" id="text-org07c72e6">
+<p>
+Durante el período medieval, la política se reinterpretó bajo parámetros teológicos:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="power-structure">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Aspecto</th>
+<th scope="col" class="org-left">Concepción Medieval</th>
+<th scope="col" class="org-left">Implicaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Legitimidad</td>
+<td class="org-left">Origen divino del poder</td>
+<td class="org-left">Teocracia política</td>
+</tr>
+
+<tr>
+<td class="org-left">Finalidad</td>
+<td class="org-left">Salvación del alma</td>
+<td class="org-left">Subordinación a la Iglesia</td>
+</tr>
+
+<tr>
+<td class="org-left">Participación</td>
+<td class="org-left">Limitada a élites</td>
+<td class="org-left">Exclusión popular</td>
+</tr>
+
+<tr>
+<td class="org-left">Método</td>
+<td class="org-left">Revelación y tradición</td>
+<td class="org-left">Dogmatismo político</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org1c43434" class="outline-3">
+<h3 id="org1c43434">Renacimiento: Maquiavelo y la Política Moderna</h3>
+<div class="outline-text-3" id="text-org1c43434">
+<p>
+Nicolás Maquiavelo revolucionó el concepto político con "El Príncipe" (1513), introduciendo:
+</p>
+
+<ul class="org-ul">
+<li>Separación entre política y moral</li>
+<li>Pragmatismo gubernamental</li>
+<li>Razón de Estado</li>
+<li>Realismo político</li>
+</ul>
+
+
+<div id="org8cffb99" class="figure">
+<p><img src="./assets/images/maquiavelo_renacimiento.png" alt="maquiavelo_renacimiento.png" width="1000px" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org018223f" class="outline-3">
+<h3 id="org018223f">Ilustración: Contractualismo y Soberanía Popular</h3>
+<div class="outline-text-3" id="text-org018223f">
+<p>
+Los pensadores ilustrados redefinieron la política basándose en:
+</p>
+</div>
+
+<div id="outline-container-org2fec436" class="outline-4">
+<h4 id="org2fec436">Hobbes: Estado Absoluto</h4>
+<div class="outline-text-4" id="text-org2fec436">
+<ul class="org-ul">
+<li>Contrato social por supervivencia</li>
+<li>Leviatán como garante del orden</li>
+<li>Autoridad indivisible</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf3332c4" class="outline-4">
+<h4 id="orgf3332c4">Locke: Gobierno Limitado</h4>
+<div class="outline-text-4" id="text-orgf3332c4">
+<ul class="org-ul">
+<li>Derechos naturales inalienables</li>
+<li>Separación de poderes</li>
+<li>Consentimiento de los gobernados</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org61a998f" class="outline-4">
+<h4 id="org61a998f">Rousseau: Voluntad General</h4>
+<div class="outline-text-4" id="text-org61a998f">
+<ul class="org-ul">
+<li>Soberanía popular indelegable</li>
+<li>Democracia directa</li>
+<li>Bien común sobre intereses particulares</li>
+</ul>
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="power-structure">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Pensador</th>
+<th scope="col" class="org-left">Concepto Clave</th>
+<th scope="col" class="org-left">Implicación Política</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Hobbes</td>
+<td class="org-left">Estado de naturaleza</td>
+<td class="org-left">Autoridad absoluta necesaria</td>
+</tr>
+
+<tr>
+<td class="org-left">Locke</td>
+<td class="org-left">Derechos naturales</td>
+<td class="org-left">Gobierno limitado y consensual</td>
+</tr>
+
+<tr>
+<td class="org-left">Rousseau</td>
+<td class="org-left">Voluntad general</td>
+<td class="org-left">Democracia participativa</td>
+</tr>
+
+<tr>
+<td class="org-left">Montesquieu</td>
+<td class="org-left">Separación de poderes</td>
+<td class="org-left">Equilibrio institucional</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge1627be" class="outline-2">
+<h2 id="orge1627be">Modernidad: Institucionalización y Profesionalización</h2>
+<div class="outline-text-2" id="text-orge1627be">
+</div>
+<div id="outline-container-org503f6bc" class="outline-3">
+<h3 id="org503f6bc">Siglo XIX: Estado-Nación</h3>
+<div class="outline-text-3" id="text-org503f6bc">
+<p>
+La consolidación del Estado-nación moderno transformó la política en:
+</p>
+
+<ul class="org-ul">
+<li>Sistema burocrático profesional</li>
+<li>Partidos políticos organizados</li>
+<li>Sufragio ampliado progresivamente</li>
+<li>Ideologías políticas sistematizadas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4f2d3e6" class="outline-3">
+<h3 id="org4f2d3e6">Siglo XX: Democracia de Masas</h3>
+<div class="outline-text-3" id="text-org4f2d3e6">
+<p>
+El siglo XX introdujo nuevas dinámicas:
+</p>
+
+
+<div id="orgbf7388b" class="figure">
+<p><img src="./assets/images/decmocracia_de_masas.png" alt="decmocracia_de_masas.png" width="1000px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0eb1a6a" class="outline-2">
+<h2 id="org0eb1a6a">Situación Contemporánea: Divergencias Perceptuales</h2>
+<div class="outline-text-2" id="text-org0eb1a6a">
+</div>
+<div id="outline-container-orgdc62865" class="outline-3">
+<h3 id="orgdc62865">Visión de los Políticos Profesionales</h3>
+<div class="outline-text-3" id="text-orgdc62865">
+<p>
+Los políticos contemporáneos tienden a conceptualizar la política como:
+</p>
+</div>
+
+<div id="outline-container-org87de3ad" class="outline-4">
+<h4 id="org87de3ad">Aspectos Positivos (Autodefinición)</h4>
+<div class="outline-text-4" id="text-org87de3ad">
+<ul class="org-ul">
+<li>Servicio público vocacional</li>
+<li>Gestión técnica especializada</li>
+<li>Representación democrática</li>
+<li>Solución de problemas complejos</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbcd0c0c" class="outline-4">
+<h4 id="orgbcd0c0c">Características Operativas</h4>
+<div class="outline-text-4" id="text-orgbcd0c0c">
+<ul class="org-ul">
+<li>Negociación y consenso</li>
+<li>Expertise técnico</li>
+<li>Responsabilidad institucional</li>
+<li>Visión a largo plazo</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7c3ab74" class="outline-3">
+<h3 id="org7c3ab74">Percepción Ciudadana</h3>
+<div class="outline-text-3" id="text-org7c3ab74">
+<p>
+La ciudadanía contemporánea presenta una visión más crítica:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="power-structure">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Aspecto</th>
+<th scope="col" class="org-left">Percepción Ciudadana</th>
+<th scope="col" class="org-left">Evidencia Empírica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Motivación</td>
+<td class="org-left">Búsqueda de poder personal</td>
+<td class="org-left">Encuestas de confianza institucional</td>
+</tr>
+
+<tr>
+<td class="org-left">Competencia</td>
+<td class="org-left">Incompetencia técnica</td>
+<td class="org-left">Evaluación de políticas públicas</td>
+</tr>
+
+<tr>
+<td class="org-left">Honestidad</td>
+<td class="org-left">Corrupción sistémica</td>
+<td class="org-left">Índices de transparencia</td>
+</tr>
+
+<tr>
+<td class="org-left">Representatividad</td>
+<td class="org-left">Desconexión con realidad</td>
+<td class="org-left">Distancia social política-ciudadanía</td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="orgf52fd06" class="figure">
+<p><img src="./assets/images/percepcion_ciudadana.png" alt="percepcion_ciudadana.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdcc97f5" class="outline-2">
+<h2 id="orgdcc97f5">Análisis Crítico: Factores de Divergencia</h2>
+<div class="outline-text-2" id="text-orgdcc97f5">
+</div>
+<div id="outline-container-org7d7954c" class="outline-3">
+<h3 id="org7d7954c">Transformaciones Estructurales</h3>
+<div class="outline-text-3" id="text-org7d7954c">
+</div>
+<div id="outline-container-org597316b" class="outline-4">
+<h4 id="org597316b">Mediatización de la Política</h4>
+<div class="outline-text-4" id="text-org597316b">
+<p>
+La política contemporánea se caracteriza por:
+</p>
+
+<ul class="org-ul">
+<li>Predominio de la imagen sobre el contenido</li>
+<li>Simplificación de mensajes complejos</li>
+<li>Personalización del debate político</li>
+<li>Espectacularización del conflicto</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4aa2864" class="outline-4">
+<h4 id="org4aa2864">Profesionalización Política</h4>
+<div class="outline-text-4" id="text-org4aa2864">
+<p>
+El surgimiento de una "clase política" profesional ha generado:
+</p>
+
+<ul class="org-ul">
+<li>Distanciamiento de la experiencia ciudadana común</li>
+<li>Desarrollo de intereses corporativos específicos</li>
+<li>Tecnificación del lenguaje político</li>
+<li>Burocratización de la participación</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org40b4aae" class="outline-3">
+<h3 id="org40b4aae">Factores Socio-económicos</h3>
+<div class="outline-text-3" id="text-org40b4aae">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="power-structure">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Factor</th>
+<th scope="col" class="org-left">Impacto en la Percepción</th>
+<th scope="col" class="org-left">Consecuencias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Desigualdad creciente</td>
+<td class="org-left">Desconfianza en instituciones</td>
+<td class="org-left">Populismo y anti-sistema</td>
+</tr>
+
+<tr>
+<td class="org-left">Globalización</td>
+<td class="org-left">Pérdida soberanía nacional</td>
+<td class="org-left">Nacionalismo reactivo</td>
+</tr>
+
+<tr>
+<td class="org-left">Crisis económicas</td>
+<td class="org-left">Cuestionamiento competencia</td>
+<td class="org-left">Búsqueda alternativas</td>
+</tr>
+
+<tr>
+<td class="org-left">Redes sociales</td>
+<td class="org-left">Información fragmentada</td>
+<td class="org-left">Polarización política</td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="orga7f356a" class="figure">
+<p><img src="./assets/images/factores.png" alt="factores.png" width="1000px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbbd7d12" class="outline-2">
+<h2 id="orgbbd7d12">Consecuencias de la Divergencia Conceptual</h2>
+<div class="outline-text-2" id="text-orgbbd7d12">
+</div>
+<div id="outline-container-orga398124" class="outline-3">
+<h3 id="orga398124">Impacto en la Democracia</h3>
+<div class="outline-text-3" id="text-orga398124">
+<p>
+La divergencia entre concepciones políticas genera:
+</p>
+</div>
+
+<div id="outline-container-orge47f459" class="outline-4">
+<h4 id="orge47f459">Déficit Democrático</h4>
+<div class="outline-text-4" id="text-orge47f459">
+<ul class="org-ul">
+<li>Baja participación electoral</li>
+<li>Desconfianza en instituciones representativas</li>
+<li>Proliferación de movimientos anti-sistema</li>
+<li>Polarización extrema del debate público</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3d79808" class="outline-4">
+<h4 id="org3d79808">Crisis de Representación</h4>
+<div class="outline-text-4" id="text-org3d79808">
+<ul class="org-ul">
+<li>Desconexión élite-ciudadanía</li>
+<li>Surgimiento de outsiders políticos</li>
+<li>Fragmentación del sistema de partidos</li>
+<li>Cuestionamiento de la democracia liberal</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org142b59d" class="outline-3">
+<h3 id="org142b59d">Respuestas Emergentes</h3>
+<div class="outline-text-3" id="text-org142b59d">
+</div>
+<div id="outline-container-org87e95f0" class="outline-4">
+<h4 id="org87e95f0">Nuevas Formas de Participación</h4>
+<div class="outline-text-4" id="text-org87e95f0">
+<ul class="org-ul">
+<li>Democracia participativa</li>
+<li>Consultas ciudadanas</li>
+<li>Plataformas digitales de participación</li>
+<li>Movimientos sociales horizontales</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6e17096" class="outline-4">
+<h4 id="org6e17096">Reformas Institucionales</h4>
+<div class="outline-text-4" id="text-org6e17096">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="border" class="power-structure">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Tipo de Reforma</th>
+<th scope="col" class="org-left">Objetivo</th>
+<th scope="col" class="org-left">Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Transparencia</td>
+<td class="org-left">Mayor accountability</td>
+<td class="org-left">Leyes de acceso a información</td>
+</tr>
+
+<tr>
+<td class="org-left">Participación</td>
+<td class="org-left">Inclusión ciudadana</td>
+<td class="org-left">Presupuestos participativos</td>
+</tr>
+
+<tr>
+<td class="org-left">Control</td>
+<td class="org-left">Limitación poder político</td>
+<td class="org-left">Organismos anticorrupción</td>
+</tr>
+
+<tr>
+<td class="org-left">Representación</td>
+<td class="org-left">Mayor diversidad</td>
+<td class="org-left">Cuotas de género/etnia</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdafd36a" class="outline-2">
+<h2 id="orgdafd36a">Perspectivas Futuras</h2>
+<div class="outline-text-2" id="text-orgdafd36a">
+</div>
+<div id="outline-container-org4e4b723" class="outline-3">
+<h3 id="org4e4b723">Tendencias Identificadas</h3>
+<div class="outline-text-3" id="text-org4e4b723">
+
+<div id="orgc39cbd5" class="figure">
+<p><img src="./assets/images/perspectivas.png" alt="perspectivas.png" width="1000px" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org5084bc2" class="outline-3">
+<h3 id="org5084bc2">Desafíos Pendientes</h3>
+<div class="outline-text-3" id="text-org5084bc2">
+</div>
+<div id="outline-container-org5ae72a6" class="outline-4">
+<h4 id="org5ae72a6">Reconciliación Conceptual</h4>
+<div class="outline-text-4" id="text-org5ae72a6">
+<ul class="org-ul">
+<li>Recuperar dimensión ética de la política</li>
+<li>Equilibrar expertise técnico con legitimidad democrática</li>
+<li>Reducir brecha comunicativa política-ciudadanía</li>
+<li>Revitalizar cultura cívica participativa</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6cf11be" class="outline-4">
+<h4 id="org6cf11be">Adaptación Institucional</h4>
+<div class="outline-text-4" id="text-org6cf11be">
+<ul class="org-ul">
+<li>Incorporar nuevas tecnologías democráticas</li>
+<li>Flexibilizar estructuras representativas</li>
+<li>Fortalecer mecanismos de accountability</li>
+<li>Promover transparencia real</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org811254d" class="outline-2">
+<h2 id="org811254d">Conclusiones</h2>
+<div class="outline-text-2" id="text-org811254d">
+</div>
+<div id="outline-container-org851958e" class="outline-3">
+<h3 id="org851958e">Síntesis Analítica</h3>
+<div class="outline-text-3" id="text-org851958e">
+<p>
+El análisis revela una evolución del concepto político desde su origen clásico orientado al bien común hacia una percepción contemporánea marcada por la desconfianza y la instrumentalización. Esta transformación refleja cambios estructurales profundos en las sociedades modernas, pero también evidencia una crisis de legitimidad democrática que requiere respuestas innovadoras.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0229195" class="outline-3">
+<h3 id="org0229195">Diagnóstico Crítico</h3>
+<div class="outline-text-3" id="text-org0229195">
+<p>
+La divergencia perceptual entre políticos y ciudadanos no es meramente comunicacional, sino que refleja transformaciones estructurales que han alterado fundamentalmente la naturaleza de la actividad política. La profesionalización, mediatización y globalización han creado dinámicas que alejan la práctica política de su concepción original de servicio al bien común.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33491d7" class="outline-3">
+<h3 id="org33491d7">Recomendaciones</h3>
+<div class="outline-text-3" id="text-org33491d7">
+</div>
+<div id="outline-container-orge92dc87" class="outline-4">
+<h4 id="orge92dc87">Para la Clase Política</h4>
+<div class="outline-text-4" id="text-orge92dc87">
+<ul class="org-ul">
+<li>Recuperar conexión con experiencia ciudadana común</li>
+<li>Priorizar transparencia y accountability</li>
+<li>Simplificar comunicación sin perder rigor</li>
+<li>Fomentar participación ciudadana real</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org57f88e3" class="outline-4">
+<h4 id="org57f88e3">Para la Ciudadanía</h4>
+<div class="outline-text-4" id="text-org57f88e3">
+<ul class="org-ul">
+<li>Desarrollar mayor comprensión de complejidad política</li>
+<li>Participar activamente en espacios democráticos</li>
+<li>Ejercer control ciudadano informado</li>
+<li>Evitar simplificaciones extremas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org028d378" class="outline-4">
+<h4 id="org028d378">Para las Instituciones</h4>
+<div class="outline-text-4" id="text-org028d378">
+<ul class="org-ul">
+<li>Modernizar mecanismos participativos</li>
+<li>Incorporar tecnologías democráticas</li>
+<li>Fortalecer transparencia y rendición de cuentas</li>
+<li>Promover educación cívica actualizada</li>
+</ul>
+
+
+<div id="org06a6230" class="figure">
+<p><img src="./assets/images/recomendaciones.png" alt="recomendaciones.png" width="1000px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org774856e" class="outline-2">
+<h2 id="org774856e">Referencias</h2>
+<div class="outline-text-2" id="text-org774856e">
+</div>
+<div id="outline-container-orgf612040" class="outline-3">
+<h3 id="orgf612040">Fuentes Clásicas</h3>
+<div class="outline-text-3" id="text-orgf612040">
+<ul class="org-ul">
+<li>Aristóteles. (2009). <b>Política</b>. Madrid: Gredos. (Obra original publicada s. IV a.C.)</li>
+<li>Cicerón, M.T. (2001). <b>De Re Publica</b>. Barcelona: Planeta-Agostini. (Obra original s. I a.C.)</li>
+<li>Maquiavelo, N. (2010). <b>El Príncipe</b>. Madrid: Alianza Editorial. (Obra original 1513)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org820d475" class="outline-3">
+<h3 id="org820d475">Pensamiento Político Moderno</h3>
+<div class="outline-text-3" id="text-org820d475">
+<ul class="org-ul">
+<li>Hobbes, T. (2003). <b>Leviatán</b>. Madrid: Losada. (Obra original 1651)</li>
+<li>Locke, J. (2006). <b>Segundo Tratado sobre el Gobierno Civil</b>. Madrid: Tecnos. (Obra original 1689)</li>
+<li>Rousseau, J.J. (2007). <b>El Contrato Social</b>. Barcelona: Península. (Obra original 1762)</li>
+<li>Montesquieu, C. (2002). <b>Del Espíritu de las Leyes</b>. Madrid: Tecnos. (Obra original 1748)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org67f9847" class="outline-3">
+<h3 id="org67f9847">Análisis Contemporáneo</h3>
+<div class="outline-text-3" id="text-org67f9847">
+<ul class="org-ul">
+<li>Bobbio, N. (1996). <b>El futuro de la democracia</b>. México: Fondo de Cultura Económica.</li>
+<li>Dahl, R. (2012). <b>La democracia y sus críticos</b>. Barcelona: Paidós.</li>
+<li>Held, D. (2007). <b>Modelos de democracia</b>. Madrid: Alianza Editorial.</li>
+<li>Manin, B. (1998). <b>Los principios del gobierno representativo</b>. Madrid: Alianza Editorial.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbd64182" class="outline-3">
+<h3 id="orgbd64182">Estudios sobre Crisis Democrática</h3>
+<div class="outline-text-3" id="text-orgbd64182">
+<ul class="org-ul">
+<li>Levitsky, S. &amp; Ziblatt, D. (2018). <b>Cómo mueren las democracias</b>. Barcelona: Ariel.</li>
+<li>Mounk, Y. (2018). <b>El pueblo contra la democracia</b>. Barcelona: Paidós.</li>
+<li>Rosanvallon, P. (2020). <b>El siglo del populismo</b>. Barcelona: Galaxia Gutenberg.</li>
+<li>Tormey, S. (2015). <b>The End of Representative Politics</b>. Cambridge: Polity Press.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4150ac2" class="outline-3">
+<h3 id="org4150ac2">Fuentes de Datos</h3>
+<div class="outline-text-3" id="text-org4150ac2">
+<ul class="org-ul">
+<li>Latinobarómetro. (2023). <b>Informe Latinobarómetro 2023</b>. Santiago: Corporación Latinobarómetro.</li>
+<li>Transparency International. (2024). <b>Corruption Perceptions Index 2024</b>. Berlín: TI.</li>
+<li>World Values Survey. (2022). <b>Wave 7 Results</b>. Estocolmo: WVS Association.</li>
+<li><p>
+Eurobarómetro. (2024). <b>Standard Eurobarometer 100</b>. Bruselas: Comisión Europea.
+</p>
+
+<p>
+<a href="2025-06-06-el-circo-de-la-pol-tica-desprestigio-y-traici-n-al-mandato-popular.html">El circo de la política: Desprestigio y traición al mandato popular</a>
+</p></li>
+</ul>
+<p>
+&#x2014;
+</p>
+
+<p class="verse">
+<b>"La política es demasiado seria para dejarla solo en manos de los políticos"</b><br />
+- Charles de Gaulle<br />
+<br />
+<b>"La democracia es la peor forma de gobierno, excepto por todas las demás que se han intentado"</b><br />
+- Winston Churchill<br />
+</p>
+
+
+<p class="post-meta">Publicado el 2025-06-06 14:12 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

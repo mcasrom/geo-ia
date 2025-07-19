@@ -1,0 +1,2436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Feeds News - Noticias Recientes</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Feeds News - Noticias Recientes</h1>
+
+<div id="outline-container-orgd7e4dee" class="outline-2">
+<h2 id="orgd7e4dee">📰 Noticias Recientes</h2>
+<div class="outline-text-2" id="text-orgd7e4dee">
+<p>
+Últimas noticias sobre geopolítica, geoestrategia y equilibrio de poder de los últimos 5 días.
+</p>
+
+<ul class="post-list">
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/17/world/europe/germany-uk-merz-starmer-meeting.html" target="_blank">Germany’s Merz and UK’s Starmer Sign Mutual Defense Pact as U.S. Steps Back</a></h3>
+<p class="post-date">📅 2025-07-17 18:28</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/17/india-air-force-crisis-iaf-jaguar-crash/" target="_blank">India’s Air Force Is in Crisis</a></h3>
+<p class="post-date">📅 2025-07-17 17:30</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/intimites/article/2025/07/17/en-espagne-fiesta-des-le-berceau-et-soirees-pyjama-jusqu-au-bout-de-la-nuit_6621767_6190330.html" target="_blank">En Espagne, fiesta dès le berceau et soirées pyjama jusqu’au bout de la nuit</a></h3>
+<p class="post-date">📅 2025-07-17 17:30</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/17/syria-israel-druze-border/" target="_blank">Turmoil gives Druze divided between Syria and Israel rare moment of contact</a></h3>
+<p class="post-date">📅 2025-07-17 17:26</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/17/world/middleeast/israel-syria-druse-diplomacy.html" target="_blank">Why Israel Attacked Syria</a></h3>
+<p class="post-date">📅 2025-07-17 16:25</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/afrique/article/2025/07/17/a-la-tete-du-g20-l-afrique-du-sud-plaide-pour-une-revitalisation-du-multilateralisme_6621738_3212.html" target="_blank">A la tête du G20, l’Afrique du Sud plaide pour une « revitalisation du multilatéralisme »</a></h3>
+<p class="post-date">📅 2025-07-17 15:36</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/live/2025/07/17/en-direct-guerre-en-ukraine-livraisons-de-systemes-patriot-nouveau-gouvernement-ukrainien-le-point-sur-la-situation_6620967_3210.html" target="_blank">En direct, guerre en Ukraine : livraisons de systèmes Patriot, nouveau gouvernement ukrainien… Le point sur la situation</a></h3>
+<p class="post-date">📅 2025-07-17 15:30</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/12/trump_doctrine_is_the_nixon_doctrine_20_1122313.html" target="_blank">Trump Doctrine is the Nixon Doctrine 2.0</a></h3>
+<p class="post-date">📅 2025-07-17 14:46</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/space_force_sets_guidelines_prioritizing_military_missions_1123238.html" target="_blank">Space Force Sets Guidelines Prioritizing Military Missions</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/us_military_trains_to_defend_panama_canal_from_china_threat_1123246.html" target="_blank">US Military Trains to Defend Panama Canal From China Threat</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/uss_george_washington_joins_talisman_sabre_drills_off_australia_1123251.html" target="_blank">USS George Washington Joins Talisman Sabre Drills off Australia</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/russian_envoy_warns_of_response_if_greenland_conflict_erupts_1123248.html" target="_blank">Russian Envoy Warns of Response if Greenland Conflict Erupts</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/putins_troops_poisoned_by_laced_bottles_of_water_1123224.html" target="_blank">Putin's Troops 'Poisoned by Laced Bottles of Water'</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/aircraft_carrier_spotted_in_waters_near_iran_1123233.html" target="_blank">Aircraft Carrier Spotted in Waters Near Iran</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/american_strikes_destroyed_one_of_three_iranian_nuke_sites_1123221.html" target="_blank">American Strikes Destroyed One of Three Iranian Nuke Sites</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/17/the_nearing_crisis_of_demographics_1123218.html" target="_blank">The Nearing Crisis of Demographics</a></h3>
+<p class="post-date">📅 2025-07-17 14:44</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/08/chinas_second_continent_1121269.html" target="_blank">China's Second Continent</a></h3>
+<p class="post-date">📅 2025-07-17 14:25</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/17/russia-internet-censorship/" target="_blank">New Russian law criminalizes online searches for controversial content</a></h3>
+<p class="post-date">📅 2025-07-17 13:36</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/article/2025/07/17/frappes-sur-damas-israel-impose-ses-lignes-rouges-au-nouveau-pouvoir-syrien_6621725_3210.html" target="_blank">Syrie : en bombardant Damas, Israël impose ses lignes rouges au nouveau pouvoir</a></h3>
+<p class="post-date">📅 2025-07-17 13:03</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/guerre-au-proche-orient/article/2025/07/17/a-gaza-un-raid-sur-l-eglise-catholique-fait-plusieurs-blesses-selon-le-patriarcat-latin-de-jerusalem_6621717_6325529.html" target="_blank">Gaza : trois morts dans le bombardement de l’église catholique de la Sainte-Famille, la France dénonce une attaque « inadmissible »</a></h3>
+<p class="post-date">📅 2025-07-17 11:52</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/article/2025/07/17/en-syrie-les-forces-gouvernementales-se-retirent-de-toute-la-province-de-souweida-a-majorite-druze_6621711_3210.html" target="_blank">En Syrie, les forces gouvernementales se retirent de Souweïda, à majorité druze ; un cessez-le-feu « obtenu par la force », affirme Benyamin Nétanyahou</a></h3>
+<p class="post-date">📅 2025-07-17 11:21</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/vivir/feijoo-pide-plan-regeneracion-institucional-democratica-cursos-verano-ceu/20250717105234973124.html" target="_blank">Feijóo pide un plan de regeneración institucional y democrática en los Cursos de Verano del CEU</a></h3>
+<p class="post-date">📅 2025-07-17 10:52</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/live/2025/07/17/en-direct-guerre-en-ukraine-nouvelle-nuit-d-attaques-de-drones-entre-moscou-et-kiev_6620967_3210.html" target="_blank">En direct, guerre en Ukraine : les préparatifs pour les livraisons de systèmes Patriot sont en cours, selon le commandant suprême des forces alliées en Europe de l’OTAN</a></h3>
+<p class="post-date">📅 2025-07-17 10:13</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/17/sudan-civil-war-rsf-massacre-military/" target="_blank">Drugs, blood and terror: Inside a paramilitary massacre in Sudan</a></h3>
+<p class="post-date">📅 2025-07-17 10:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/islas-canarias/2025-07-17/colision-frontal-heridos-la-laguna-1tps-1tna_4174570/" target="_blank">Seis heridos, tres de ellos menores, tras una colisión frontal de dos coches en La Laguna (Tenerife)</a></h3>
+<p class="post-date">📅 2025-07-17 09:51</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/afrique/article/2025/07/17/l-armee-francaise-met-fin-a-sa-presence-permanente-au-senegal_6621701_3212.html" target="_blank">La France met fin à sa présence militaire permanente au Sénégal</a></h3>
+<p class="post-date">📅 2025-07-17 09:41</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/hogar/vileda-turbo-mercadona/20250717092703973105.html" target="_blank">Vileda Turbo Mercadona: El secreto detrás de la fregona que arrasa en ventas</a></h3>
+<p class="post-date">📅 2025-07-17 09:27</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/medios/mozos-arousa-reaparecen-tv-uno-ellos-asi-es-nuevo-proyecto-secreto/20250716204113973053.html" target="_blank">Los Mozos de Arousa reaparecen en TV sin uno de ellos: así es su nuevo proyecto secreto</a></h3>
+<p class="post-date">📅 2025-07-17 07:12</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/medios/movistar-plus-estrena-funcion-que-evitara-discusiones-casa/20250716204821973054.html" target="_blank">Movistar Plus+ estrena una función que te evitará discusiones en casa</a></h3>
+<p class="post-date">📅 2025-07-17 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/afrique/article/2025/07/17/au-maroc-reglements-de-comptes-apres-la-fuite-a-l-etranger-d-un-ancien-chef-espion_6621683_3212.html" target="_blank">Au Maroc, règlements de comptes après la fuite à l’étranger d’un ancien chef espion</a></h3>
+<p class="post-date">📅 2025-07-17 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-17/rincon-fluvial-espana-plan-familia-amigos-1qrt-1tna_4174062/" target="_blank">El paraíso verde del norte de España que alberga un plan perfecto y refrescante para hacer con amigos y familia</a></h3>
+<p class="post-date">📅 2025-07-17 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/cataluna/2025-07-17/vuelve-cataluna-campana-intentar-tapar-e-matriculas_4171264/" target="_blank">Vuelve a Cataluña la campaña para intentar tapar la E de España en las matrículas</a></h3>
+<p class="post-date">📅 2025-07-17 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/andalucia/2025-07-17/discoteca-terraza-aire-libre-malaga-1qrt-1tna_4173937/" target="_blank">La discoteca al aire libre a la que tienes que ir en Málaga: en la zona de moda y con vistas al mar</a></h3>
+<p class="post-date">📅 2025-07-17 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/motor/mas-9-millones-vehiculos-punto-mira-decision/20250716213055973062.html" target="_blank">Más de 9 millones de vehículos, en el punto de mira por esta decisión</a></h3>
+<p class="post-date">📅 2025-07-17 06:45</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/motor/madrid-agota-ayudas-plan-moves-iii-2025-es-unica-opcion-viable-ahora/20250716214123973066.html" target="_blank">Madrid agota las ayudas del Plan Moves III 2025: esta es la única opción viable ahora</a></h3>
+<p class="post-date">📅 2025-07-17 06:40</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/live/2025/07/17/en-direct-guerre-en-ukraine-le-point-sur-la-situation-jeudi-17-juillet_6620967_3210.html" target="_blank">En direct, guerre en Ukraine : les dernières informations</a></h3>
+<p class="post-date">📅 2025-07-17 06:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/motor/hyundai-sentencia-cambio-manual-futuro-tiene-embrague/20250717062927973061.html" target="_blank">Hyundai sentencia el cambio manual: “El futuro ya no tiene embrague”</a></h3>
+<p class="post-date">📅 2025-07-17 06:29</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/defensa/coloso-inteligencia-militar-atraca-tenerife-mision-es-mas-delicada-que-parece/20250716192714973048.html" target="_blank">Un coloso de inteligencia militar atraca en Tenerife: su misión es más delicada de lo que parece</a></h3>
+<p class="post-date">📅 2025-07-17 06:25</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/consumo/vinagre-blanco-frente-vinagre-limpieza-que-son-mismo-como-usarlos-correctamente/20250716172248973022.html" target="_blank">Vinagre blanco frente al vinagre de limpieza: por qué no son lo mismo y cómo usarlos correctamente</a></h3>
+<p class="post-date">📅 2025-07-17 06:23</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/defensa/robotican-sorprende-europa-fuerzas-especiales-incorporan-dron-hibrido-funcion-inesperada/20250716192231973046.html" target="_blank">Robotican sorprende a Europa: fuerzas especiales incorporan este dron híbrido con una función inesperada</a></h3>
+<p class="post-date">📅 2025-07-17 06:18</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/article/2025/07/17/syrie-apres-les-frappes-israeliennes-le-president-syrien-annonce-transferer-le-maintien-de-la-securite-a-souweida-a-des-factions-locales-druzes_6621605_3211.html" target="_blank">En Syrie, le pouvoir transfère le contrôle de la ville de Souweïda aux « factions » druzes après les bombardements israéliens</a></h3>
+<p class="post-date">📅 2025-07-17 06:18</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/defensa/llegada-mas-esperada-juan-sebastian-elcano-es-historia-que-ocurrio-marin-dejo-huella/20250716193322973051.html" target="_blank">La llegada más esperada del Juan Sebastián Elcano ya es historia: lo que ocurrió en Marín dejó huella</a></h3>
+<p class="post-date">📅 2025-07-17 06:15</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/dinero/quien-cobra-mas-pension-viudedad-2025-que/20250716210553973057.html" target="_blank">Quién cobra más pensión de viudedad en 2025 y por qué</a></h3>
+<p class="post-date">📅 2025-07-17 06:15</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/motor/citroen-c3-aircross-suv-eco-7-plazas-precio-imbatible/20250717061130973076.html" target="_blank">Citroën C3 Aircross: SUV Eco, 7 plazas y un precio imbatible</a></h3>
+<p class="post-date">📅 2025-07-17 06:11</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/article/2025/07/17/a-torre-pacheco-l-ultradroite-et-l-extreme-droite-espagnoles-attisent-des-affrontements-racistes_6621681_3210.html" target="_blank">Dans la ville espagnole de Torre-Pacheco, après l’agression d’un retraité, l’extrême droite attise la violence raciste</a></h3>
+<p class="post-date">📅 2025-07-17 06:06</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/motor/byd-lanza-carga-mas-rapida-china-europa-sera-siguiente/20250716214722973067.html" target="_blank">BYD lanza su carga más rápida en China y Europa será la siguiente</a></h3>
+<p class="post-date">📅 2025-07-17 06:05</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/guardia-civil/juega-multa-historica-adelantar-coche-plena-doble-linea/20250716191605973043.html" target="_blank">Se juega una multa histórica por adelantar a este coche en plena doble línea</a></h3>
+<p class="post-date">📅 2025-07-17 06:05</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/defensa/rumania-da-paso-inedito-defensa-firmara-otono-acuerdo-israel/20250716193105973050.html" target="_blank">Rumanía da un paso inédito en defensa: firmará este otoño un acuerdo con Israel</a></h3>
+<p class="post-date">📅 2025-07-17 06:05</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencialdigital.com/articulo/guardia-civil/guardia-civil-desactiva-celula-ultra-que-planeaba-ataque-masivo-murcia/20250716192023973044.html" target="_blank">Guardia Civil desactiva célula ultra que planeaba un ataque masivo en Murcia</a></h3>
+<p class="post-date">📅 2025-07-17 05:55</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://connortumbleson.com/2021/07/19/the-xbox-and-a20-line/" target="_blank">Original Xbox Hacks: The A20 CPU Gate</a></h3>
+<p class="post-date">📅 2025-07-17 05:22</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/14/taiwans_journey_to_geopolitical_hotspot_1122419.html" target="_blank">Taiwan's Journey to Geopolitical Hotspot</a></h3>
+<p class="post-date">📅 2025-07-17 05:17</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/01/seeing_as_strategystrategic_imagination_1119953.html" target="_blank">Seeing as Strategy—Strategic Imagination</a></h3>
+<p class="post-date">📅 2025-07-17 05:08</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/podcasts/article/2025/07/17/le-monde-de-trump-soutien-a-israel-et-remodelage-du-moyen-orient-5-5_6621666_5463015.html" target="_blank">Le monde de Trump : soutien à Israël et remodelage du Moyen-Orient (5/5)</a></h3>
+<p class="post-date">📅 2025-07-17 05:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/international/article/2025/07/17/the-young-gazans-killed-at-al-baqa-cafe_6743446_4.html" target="_blank">The young Gazans killed at Al-Baqa café</a></h3>
+<p class="post-date">📅 2025-07-17 04:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/16/world/americas/trump-tariffs-mexico-cartels.html" target="_blank">Trump Has Promised More Tariffs on Mexico. What Happens Next?</a></h3>
+<p class="post-date">📅 2025-07-17 03:30</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/17/6877f094fdddff52438b45dd.html" target="_blank">Volodimir Zelenski mueve su gobierno para aprovechar el "momento Melania"</a></h3>
+<p class="post-date">📅 2025-07-17 02:55</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.miskatonic.org/2025/07/16/emacs-stable/" target="_blank">William Denton: I'm sticking with Emacs stable releases</a></h3>
+<p class="post-date">📅 2025-07-17 02:54</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.smithsonianmag.com/smithsonian-institution/to-combat-summer-reading-slumps-this-timeless-childrens-television-show-tried-to-bridge-the-literacy-gap-with-the-magic-of-stories-180986984/" target="_blank">“Reading Rainbow” was created to combat summer reading slumps</a></h3>
+<p class="post-date">📅 2025-07-17 02:43</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://evgeniipendragon.com/posts/i-was-wrong-about-robots-txt/" target="_blank">I was wrong about robots.txt</a></h3>
+<p class="post-date">📅 2025-07-17 02:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://tonsky.me/blog/gaslight-driven-development/" target="_blank">Gaslight-driven development</a></h3>
+<p class="post-date">📅 2025-07-17 02:26</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://xboxdevwiki.net/17_Mistakes_Microsoft_Made_in_the_Xbox_Security_System" target="_blank">Mistakes Microsoft made in the Xbox security system (2005)</a></h3>
+<p class="post-date">📅 2025-07-17 02:23</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/16/world/middleeast/israel-syria-damascus-strikes.html" target="_blank">Israel Strikes Syria’s Capital, Sending Warning to Government</a></h3>
+<p class="post-date">📅 2025-07-17 00:56</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/16/world/middleeast/gaza-aid-site-stampede-ghf.html" target="_blank">At Least 20 Killed in Stampede Outside a Gaza Aid Site</a></h3>
+<p class="post-date">📅 2025-07-17 00:33</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/papel/lideres/2025/07/17/68778a8ce9cf4a810b8b45a4.html" target="_blank">Ramón Campayo, probablemente el hombre más inteligente del mundo: "Leo un libro de 400 páginas en una hora y he memorizado 64 números binarios, ceros y unos, en un segundo"</a></h3>
+<p class="post-date">📅 2025-07-17 00:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://tendollaradventure.com/sample/" target="_blank">Show HN: A 'Choose Your Own Adventure' written in Emacs Org Mode</a></h3>
+<p class="post-date">📅 2025-07-16 23:58</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/16/syria-israel-strike-defense-ministry-druze/" target="_blank">Israel bombs Damascus, stoking conflict with Syria’s new government</a></h3>
+<p class="post-date">📅 2025-07-16 23:53</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/international/article/2025/07/16/russia-is-facing-a-labor-shortage_6743443_4.html" target="_blank">Russia is facing a labor shortage</a></h3>
+<p class="post-date">📅 2025-07-16 23:45</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/16/world/europe/ibiza-spain-tourism-drug-crisis.html" target="_blank">Club Drugs Strain Health System on Ibiza, Spain’s Party Island</a></h3>
+<p class="post-date">📅 2025-07-16 23:42</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/16/world/europe/europe-border-checks-immigration.html" target="_blank">Migration Fears Turn Europe’s Borderless Dreams Into Traffic Nightmares</a></h3>
+<p class="post-date">📅 2025-07-16 23:42</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/international/article/2025/07/16/syria-says-pulling-troops-from-druze-heartland-after-us-request_6743442_4.html" target="_blank">Syria says pulling troops from Druze heartland after US request</a></h3>
+<p class="post-date">📅 2025-07-16 23:29</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/16/syria-israel-bombing-damascus-druze-cease-fire-suwayda/" target="_blank">Damascus, Druze Minority Agree to Cease-Fire in Syria</a></h3>
+<p class="post-date">📅 2025-07-16 23:20</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/video/world/middleeast/100000010278804/why-so-many-afghans-have-been-forced-out-of-iran.html" target="_blank">Why So Many Afghans Have Been Forced Out of Iran</a></h3>
+<p class="post-date">📅 2025-07-16 23:17</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/16/israel-netanyahu-coalition-shas-politics/" target="_blank">Ultra-Orthodox party quits Israeli coalition, weakening Netanyahu</a></h3>
+<p class="post-date">📅 2025-07-16 23:07</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/16/croatia-segregation-bosnia-dayton/" target="_blank">Croatia’s Quiet War in Bosnia</a></h3>
+<p class="post-date">📅 2025-07-16 23:05</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://smallandroidphone.com/" target="_blank">I want an iPhone Mini-sized Android phone (2022)</a></h3>
+<p class="post-date">📅 2025-07-16 23:01</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/cronica/2025/07/16/6877dcf6e9cf4a95208b45b6.html" target="_blank">El miedo de la primera generación inmigrante que encontró futuro en Torre Pacheco: "Ha llegado gente más violenta, irrespetuosa. Son muy pocos, pero hay que actuar con ellos"</a></h3>
+<p class="post-date">📅 2025-07-16 22:54</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://github.com/Netflix/metaflow" target="_blank">Metaflow: Build, Manage and Deploy AI/ML Systems</a></h3>
+<p class="post-date">📅 2025-07-16 22:34</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/economie/article/2025/07/16/bruxelles-promet-de-consacrer-131-milliards-d-euros-a-la-defense-et-a-l-espace_6621658_3234.html" target="_blank">Bruxelles promet de consacrer 131 milliards d’euros à la défense et à l’espace</a></h3>
+<p class="post-date">📅 2025-07-16 21:50</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://drew.silcock.dev/blog/artisanal-git/" target="_blank">Artisanal handcrafted Git repositories</a></h3>
+<p class="post-date">📅 2025-07-16 21:45</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/cultura/2025/07/16/68777c99e85ece4d6e8b45a4.html" target="_blank">El asesinato de Bernard von Bredow, el alemán al que torturaron hasta la muerte en Paraguay para robarle su colección de violines Stradivarius</a></h3>
+<p class="post-date">📅 2025-07-16 21:42</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/16/world/europe/russia-trump-ultimatum.html" target="_blank">Russia Appears Unfazed by Trump’s Ukraine War Ultimatum</a></h3>
+<p class="post-date">📅 2025-07-16 21:34</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/15/world/middleeast/druse-syria-bedouin-israel-fighting.html" target="_blank">What to Know About Israel’s Attack in Syria and the Druse Minority</a></h3>
+<p class="post-date">📅 2025-07-16 21:09</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.oregonlive.com/silicon-forest/2025/07/intels-retreat-is-unlike-anything-its-done-before-in-oregon.html" target="_blank">Intel's retreat is unlike anything it's done before in Oregon</a></h3>
+<p class="post-date">📅 2025-07-16 21:08</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.sciencealert.com/signs-of-autism-could-be-encoded-in-the-way-you-walk" target="_blank">Signs of autism could be encoded in the way you walk</a></h3>
+<p class="post-date">📅 2025-07-16 20:43</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/international/article/2025/07/16/netanyahu-loses-majority-as-second-ultra-orthodox-party-quit-coalition_6743436_4.html" target="_blank">Netanyahu loses majority as second ultra-Orthodox party quits coalition</a></h3>
+<p class="post-date">📅 2025-07-16 20:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/politics/article/2025/07/16/french-pm-s-planned-2026-budget-cuts-could-slow-growth-experts-say_6743435_5.html" target="_blank">French PM's planned 2026 budget cuts could slow growth, experts say</a></h3>
+<p class="post-date">📅 2025-07-16 20:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/guerre-au-proche-orient/article/2025/07/16/gaza-20-personnes-sont-mortes-alors-qu-elles-attendaient-de-l-aide-pres-d-un-centre-humanitaire_6621648_6325529.html" target="_blank">Bande de Gaza : 20 personnes sont mortes alors qu’elles attendaient de l’aide près d’un centre humanitaire</a></h3>
+<p class="post-date">📅 2025-07-16 19:47</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.instantdb.com/essays/agents" target="_blank">How and where will agents ship software?</a></h3>
+<p class="post-date">📅 2025-07-16 19:47</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.ycombinator.com/companies/weave-3/jobs/SqFnIFE-founding-ai-engineer" target="_blank">Weave (YC W25) is hiring an AI engineer</a></h3>
+<p class="post-date">📅 2025-07-16 19:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://techcrunch.com/2025/07/16/ex-waymo-engineers-launch-bedrock-robotics-with-80m-to-automate-construction/" target="_blank">Ex-Waymo engineers launch Bedrock Robotics to automate construction</a></h3>
+<p class="post-date">📅 2025-07-16 18:48</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/article/2025/07/16/friedrich-merz-a-londres-pour-signer-un-traite-d-amitie-contenant-un-large-volet-de-defense_6621643_3210.html" target="_blank">Le chancelier allemand Friedrich Merz en visite au Royaume-Uni pour signer un traité d’amitié, avec un large volet défense</a></h3>
+<p class="post-date">📅 2025-07-16 18:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/15/technology/israel-iran-psychological-warfare.html" target="_blank">Israel and Iran Usher In New Era of Psychological Warfare</a></h3>
+<p class="post-date">📅 2025-07-16 18:25</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/afrique/article/2025/07/16/senegal-ousmane-sonko-premier-ministre-sur-la-defensive-attaque-y-compris-son-camp_6621632_3212.html" target="_blank">Sénégal : Ousmane Sonko, premier ministre sur la défensive, attaque y compris son camp</a></h3>
+<p class="post-date">📅 2025-07-16 17:30</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.newscientist.com/article/2487013-weve-discovered-a-new-kind-of-magnetism-what-can-we-do-with-it/" target="_blank">Altermagnets: The first new type of magnet in nearly a century</a></h3>
+<p class="post-date">📅 2025-07-16 17:11</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/international/video/2025/07/16/syrie-les-images-des-frappes-israeliennes-sur-le-quartier-general-de-la-defense_6621628_3210.html" target="_blank">Syrie : les images des frappes israéliennes sur le quartier général de la défense</a></h3>
+<p class="post-date">📅 2025-07-16 16:52</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://arxiv.org/abs/2507.11473" target="_blank">Chain of thought monitorability: A new and fragile opportunity for AI safety</a></h3>
+<p class="post-date">📅 2025-07-16 16:39</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.zeroentropy.dev/blog/improving-rag-with-elo-scores" target="_blank">Show HN: Improving search ranking with chess Elo scores</a></h3>
+<p class="post-date">📅 2025-07-16 16:17</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/16/roman-erotic-pompeii-mosaic-nazi-loot/" target="_blank">Decades after a Nazi captain stole an erotic Roman mosaic, it returns to Pompeii</a></h3>
+<p class="post-date">📅 2025-07-16 15:29</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/16/who_is_seizing_us_defense_contracts_1122973.html" target="_blank">Who is "Seizing" U.S. Defense Contracts?</a></h3>
+<p class="post-date">📅 2025-07-16 14:41</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/16/submarine_uss_connecticut_to_return_to_service_in_2026_1122974.html" target="_blank">Submarine USS Connecticut to Return To Service In 2026</a></h3>
+<p class="post-date">📅 2025-07-16 14:41</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/16/no_long-range_missiles_for_ukraine_trump_1122976.html" target="_blank">No Long-Range Missiles For Ukraine: Trump</a></h3>
+<p class="post-date">📅 2025-07-16 14:41</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/14/is_man_or_machine_the_greater_nuclear_danger_1122414.html" target="_blank">Is Man or Machine the Greater Nuclear Danger?</a></h3>
+<p class="post-date">📅 2025-07-16 14:41</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/16/russia_warns_of_nuclear_armageddon_1122986.html" target="_blank">Russia Warns of Nuclear Armageddon</a></h3>
+<p class="post-date">📅 2025-07-16 14:41</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/16/trump_sends_weapons_to_ukraine_by_the_numbers_1122959.html" target="_blank">Trump Sends Weapons to Ukraine: By the Numbers</a></h3>
+<p class="post-date">📅 2025-07-16 14:41</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/03/the_big_nuclear_wink_1120483.html" target="_blank">The Big Nuclear Wink</a></h3>
+<p class="post-date">📅 2025-07-16 14:25</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.realcleardefense.com/2025/07/02/americas_battery_blind_spot_thats_undermining_us_defense_security_1120195.html" target="_blank">America's Battery Blind Spot That's Undermining U.S. Defense Security</a></h3>
+<p class="post-date">📅 2025-07-16 14:08</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/immigration/2025/07/16/citizenship-revocation-laws-trump/" target="_blank">Can Trump revoke citizenship, and how often does it happen worldwide?</a></h3>
+<p class="post-date">📅 2025-07-16 12:48</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-16/el-aplaudido-monologo-alsina-hoy_4173830/" target="_blank">El aplaudido monólogo de Carlos Alsina hoy: "Todo el mundo sabe que Pedro Sánchez era contrario a la amnistía"</a></h3>
+<p class="post-date">📅 2025-07-16 11:29</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/politics/article/2025/07/16/french-pm-bets-on-national-effort-against-curse-of-debt_6743422_5.html" target="_blank">François Bayrou's uncertain budget gamble</a></h3>
+<p class="post-date">📅 2025-07-16 11:17</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://github.com/aws/pgactive" target="_blank">Pgactive: Postgres active-active replication extension</a></h3>
+<p class="post-date">📅 2025-07-16 11:15</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://prm.ua/en/ukrainian-hackers-destroyed-the-it-infrastructure-of-a-russian-drone-manufacturer-what-is-known/" target="_blank">Ukrainian hackers destroyed the IT infrastructure of Russian drone manufacturer</a></h3>
+<p class="post-date">📅 2025-07-16 10:18</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.cesarsotovalero.net/blog/i-am-switching-to-python-and-actually-liking-it.html" target="_blank">I'm switching to Python and actually liking it</a></h3>
+<p class="post-date">📅 2025-07-16 09:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://mozillagfx.wordpress.com/2025/07/15/shipping-webgpu-on-windows-in-firefox-141/" target="_blank">Shipping WebGPU on Windows in Firefox 141</a></h3>
+<p class="post-date">📅 2025-07-16 08:32</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://blog.pupred.com/blog/puttyvsbitvise/" target="_blank">Hijacking Trust? Bitvise Under Fire for Controlling Domain of FOSS Project PuTTY</a></h3>
+<p class="post-date">📅 2025-07-16 08:22</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://github.com/nextflow-io/nextflow" target="_blank">Nextflow: System for creating scalable, portable, reproducible workflows</a></h3>
+<p class="post-date">📅 2025-07-16 07:30</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-16/entrevista-hanan-serroukh-torre-pacheco-inmigracion_4172913/" target="_blank">Hanan Serroukh: "Torre Pacheco es el reflejo de la gestión del Gobierno en inmigración"</a></h3>
+<p class="post-date">📅 2025-07-16 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-16/sanchez-viaje-mauritania-pateras-canarias_4173703/" target="_blank">Sánchez viaja a Mauritania para apuntalar el país del que salió la mitad de las pateras llegadas a Canarias</a></h3>
+<p class="post-date">📅 2025-07-16 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/castilla-y-leon/2025-07-16/ciudad-espanola-castilla-leon-catedral-visitar-1qrt-1tna_4173296/" target="_blank">La ciudad española con una de las catedrales más impresionantes que es perfecta para visitar en verano</a></h3>
+<p class="post-date">📅 2025-07-16 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/madrid/2025-07-16/piscinas-naturales-cascadas-madrid-verano-1qrt-1tna_4173127/" target="_blank">Tres escapadas fresquitas en Madrid: entre piscinas naturales y cascadas ideales para ir este verano</a></h3>
+<p class="post-date">📅 2025-07-16 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/16/us-vietnam-trade-deal-trump-tariffs/" target="_blank">The U.S.-Vietnam Trade Deal Makes No Sense</a></h3>
+<p class="post-date">📅 2025-07-16 06:30</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://github.com/vvaltchev/tilck" target="_blank">Tilck: A Tiny Linux-Compatible Kernel</a></h3>
+<p class="post-date">📅 2025-07-16 05:50</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://blog.cloudflare.com/cloudflare-1-1-1-1-incident-on-july-14-2025/" target="_blank">Cloudflare 1.1.1.1 Incident on July 14, 2025</a></h3>
+<p class="post-date">📅 2025-07-16 05:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://grapheneos.social/@GrapheneOS/114825492698412916" target="_blank">Lead GrapheneOS developer was forcibly conscripted into a war</a></h3>
+<p class="post-date">📅 2025-07-16 05:26</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/le-monde-africa/article/2025/07/16/soldiers-found-us-and-told-us-to-undress-in-ethiopia-silence-surrounds-tigray-war-s-mass-rapes_6743416_124.html" target="_blank">'Soldiers found us and told us to undress': In Ethiopia, silence shrouds Tigray war's mass rapes</a></h3>
+<p class="post-date">📅 2025-07-16 05:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://arstechnica.com/space/2025/07/congress-moves-to-reject-bulk-of-white-houses-proposed-nasa-cuts/" target="_blank">Congress moves to reject bulk of White House's proposed NASA cuts</a></h3>
+<p class="post-date">📅 2025-07-16 04:56</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://geminiprotocol.net/news/2025_06_20.gmi" target="_blank">Six Years of Gemini</a></h3>
+<p class="post-date">📅 2025-07-16 04:37</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://gwern.net/ai-daydreaming" target="_blank">LLM Daydreaming</a></h3>
+<p class="post-date">📅 2025-07-16 04:22</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/15/world/europe/ukraine-weapons-europe-trump.html" target="_blank">Trump’s Shift on Ukraine Is Good News for Europe, for Now</a></h3>
+<p class="post-date">📅 2025-07-16 03:33</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://gpuhammer.com/" target="_blank">GPUHammer: Rowhammer attacks on GPU memories are practical</a></h3>
+<p class="post-date">📅 2025-07-16 02:05</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/15/us/politics/trump-military-aid-explainer.html" target="_blank">How Much Military Aid Has the U.S. Given to Ukraine? Here’s What to Know.</a></h3>
+<p class="post-date">📅 2025-07-16 00:19</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.texasmonthly.com/news-politics/texas-flood-firsthand-account/" target="_blank">My Family and the Flood</a></h3>
+<p class="post-date">📅 2025-07-16 00:07</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.anthropic.com/news/claude-for-financial-services" target="_blank">Claude for Financial Services</a></h3>
+<p class="post-date">📅 2025-07-16 00:03</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://connect.mozilla.org/t5/discussions/where-s-firefox-going-next-you-tell-us/m-p/100698#M39094" target="_blank">Where's Firefox going next?</a></h3>
+<p class="post-date">📅 2025-07-15 23:03</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/15/syria-druze-sweida-israel-unrest/" target="_blank">Israeli airstrikes target Syrian government troops amid sectarian unrest</a></h3>
+<p class="post-date">📅 2025-07-15 22:50</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://go.dev/blog/fips140" target="_blank">The FIPS 140-3 Go Cryptographic Module</a></h3>
+<p class="post-date">📅 2025-07-15 22:42</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/15/world/europe/ukraine-weapons-us-nato.html" target="_blank">Ukraine Will Get U.S. Weapons in a New Way. Here’s What We Know.</a></h3>
+<p class="post-date">📅 2025-07-15 22:10</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/international/article/2025/07/15/israeli-ultra-orthodox-party-quits-the-ruling-coalition_6743407_4.html" target="_blank">Israeli ultra-Orthodox party quits the ruling coalition</a></h3>
+<p class="post-date">📅 2025-07-15 22:03</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://cartesia.ai/blog/hierarchical-modeling" target="_blank">Hierarchical Modeling (H-Nets)</a></h3>
+<p class="post-date">📅 2025-07-15 21:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/culture/article/2025/07/15/emmy-nominations-severance-leads-for-drama-the-studio-breaks-though-in-comedy_6743406_30.html" target="_blank">Emmy nominations: 'Severance' leads for drama, 'The Studio' breaks though in comedy</a></h3>
+<p class="post-date">📅 2025-07-15 21:06</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.juliascope.com/" target="_blank">Show HN: Beyond Z²+C, Plot Any Fractal</a></h3>
+<p class="post-date">📅 2025-07-15 20:24</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nubero.ch/blog/015/" target="_blank">Designing for the Eye: Optical corrections in architecture and typography</a></h3>
+<p class="post-date">📅 2025-07-15 19:48</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.neowin.net/news/kdes-android-tv-alternative-plasma-bigscreen-rises-from-the-dead-with-a-better-ui/" target="_blank">Plasma Bigscreen rises from the dead with a better UI</a></h3>
+<p class="post-date">📅 2025-07-15 19:35</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.reuters.com/technology/mira-muratis-ai-startup-thinking-machines-raises-2-billion-a16z-led-round-2025-07-15/" target="_blank">Mira Murati’s AI startup Thinking Machines valued at $12B in early-stage funding</a></h3>
+<p class="post-date">📅 2025-07-15 19:19</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://the-nerve-blog.ghost.io/to-be-a-better-programmer-write-little-proofs-in-your-head/" target="_blank">To be a better programmer, write little proofs in your head</a></h3>
+<p class="post-date">📅 2025-07-15 19:05</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://news.ycombinator.com/item?id=44573320" target="_blank">CoinTracker (YC W18) is hiring to solve crypto taxes and accounting (remote)</a></h3>
+<p class="post-date">📅 2025-07-15 19:00</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/15/world/middleeast/netanyahu-ultra-orthodox-draft.html" target="_blank">Netanyahu’s Ultra-Orthodox Allies Threaten His Coalition Government</a></h3>
+<p class="post-date">📅 2025-07-15 18:57</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://calv.info/openai-reflections" target="_blank">Reflections on OpenAI</a></h3>
+<p class="post-date">📅 2025-07-15 18:49</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.nist.gov/news-events/news/2025/07/nist-ion-clock-sets-new-record-most-accurate-clock-world" target="_blank">NIST ion clock sets new record for most accurate clock</a></h3>
+<p class="post-date">📅 2025-07-15 17:56</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.matthieulc.com/posts/shoggoth-mini" target="_blank">Show HN: Shoggoth Mini – A soft tentacle robot powered by GPT-4o and RL</a></h3>
+<p class="post-date">📅 2025-07-15 17:46</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/15/sudan-civil-war-catastrophe-washington/" target="_blank">Washington Can Keep Sudan’s Civil War From Getting Worse</a></h3>
+<p class="post-date">📅 2025-07-15 17:13</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-15/detenido-mataro-lider-movimiento-ultra-torre-pacheco_4173355/" target="_blank">Detienen en Barcelona al líder de un grupo ultra por incitar a la "cacería" de magrebíes en Torre Pacheco</a></h3>
+<p class="post-date">📅 2025-07-15 17:10</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/15/trump-russia-ukraine-putin-zelensky-timeline/" target="_blank">A timeline of Trump’s quotes, shifts and U-turns on Russia and Ukraine</a></h3>
+<p class="post-date">📅 2025-07-15 17:01</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://torrentfreak.com/cloudflare-starts-blocking-pirate-sites-for-uk-users-thats-a-pretty-big-deal-250715/" target="_blank">Cloudflare Starts Blocking Pirate Sites for UK Users</a></h3>
+<p class="post-date">📅 2025-07-15 16:33</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.washingtonpost.com/world/2025/07/15/trump-russia-putin-war/" target="_blank">As Trump turns toward Ukraine, Russians wonder if an opportunity was missed</a></h3>
+<p class="post-date">📅 2025-07-15 16:09</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-15/prision-sin-fianza-detenido-redenteria-agresion-torre-pacheco_4173291/" target="_blank">Prisión sin fianza para el detenido en Rentería (Gipuzkoa) por la agresión de Torre Pacheco</a></h3>
+<p class="post-date">📅 2025-07-15 15:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-15/alcalde-torre-pacheco-gobierno-1qrt_4173265/" target="_blank">Quién es el alcalde de Torre-Pacheco: este es el partido que gobierna</a></h3>
+<p class="post-date">📅 2025-07-15 15:41</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.assemblymag.com/articles/91581-the-moving-assembly-line-turns-100" target="_blank">The Moving Assembly Line Turns 100 (2013)</a></h3>
+<p class="post-date">📅 2025-07-15 15:23</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.ycombinator.com/companies/crimson/jobs/kCikzj1-founding-engineer-full-stack" target="_blank">Crimson (YC X25) is hiring founding engineers in London</a></h3>
+<p class="post-date">📅 2025-07-15 14:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://github.com/trymirai/uzu" target="_blank">Show HN: We made our own inference engine for Apple Silicon</a></h3>
+<p class="post-date">📅 2025-07-15 13:29</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-15/fiscalia-diligencias-vox-murcia-odio-torre-pacheco-incidentes_4173045/" target="_blank">Fiscalía abre diligencias al presidente de Vox en Murcia por delito de odio tras sus declaraciones de Torre Pacheco</a></h3>
+<p class="post-date">📅 2025-07-15 12:46</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/galicia/2025/07/15/68762946fdddffd10b8b4578.html" target="_blank">Hallan el cuerpo sin vida de una persona flotando junto a un barco volcado en Moaña (Pontevedra)</a></h3>
+<p class="post-date">📅 2025-07-15 12:25</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/international/article/2025/07/15/trump-acknowledges-failure-on-ukraine-war-promises-weapons-and-sanctions_6743385_4.html" target="_blank">Trump acknowledges failure on Ukraine war, promises weapons and sanctions</a></h3>
+<p class="post-date">📅 2025-07-15 11:57</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/yodona/vida-saludable/2025/07/15/6874dc74fdddff44448b4595.html" target="_blank">¿Cuál es el secreto de Jennifer Lopez para estar mucho mejor a los 55 años que a los 30?</a></h3>
+<p class="post-date">📅 2025-07-15 11:54</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elconfidencial.com/espana/2025-07-15/aplaudido-monologo-carlos-alsina-hoy-1qrt_4172971/" target="_blank">La aplaudida reflexión de Carlos Alsina hoy: "Fijemos un modelo que satisfaga los partidos políticos en Cataluña"</a></h3>
+<p class="post-date">📅 2025-07-15 11:47</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/15/68761fb5e4d4d8041d8b457b.html" target="_blank">El Tribunal Supremo revisará el 22 de julio si Santos Cerdán debe seguir o no en prisión</a></h3>
+<p class="post-date">📅 2025-07-15 11:46</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/culture/article/2025/07/15/photography-politics-and-protest-collide-at-rencontres-d-arles_6743384_30.html" target="_blank">Photography, politics and protest collide at Rencontres d'Arles</a></h3>
+<p class="post-date">📅 2025-07-15 11:42</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/15/68760688e9cf4a4c798b4571.html" target="_blank">Médicos sin Fronteras revela que la cooperante española asesinada en 2021 en Etiopía fue ejecutada</a></h3>
+<p class="post-date">📅 2025-07-15 09:43</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://blogs.elconfidencial.com/espana/tribuna/2025-07-15/antisemitismo-aumento-real-instituto-elcano_4172255/" target="_blank">El antisemitismo sí ha aumentado: una puntualización necesaria al Real Instituto Elcano</a></h3>
+<p class="post-date">📅 2025-07-15 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://clickhouse.com/blog/sigterm-postgres-mystery" target="_blank">When Sigterm Does Nothing: A Postgres Mystery</a></h3>
+<p class="post-date">📅 2025-07-15 06:43</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://tomrenner.com/posts/llm-inevitabilism/" target="_blank">LLM Inevitabilism</a></h3>
+<p class="post-date">📅 2025-07-15 06:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.newyorker.com/culture/critics-notebook/the-new-literalism-plaguing-todays-biggest-movies" target="_blank">Literalism plaguing today’s movies</a></h3>
+<p class="post-date">📅 2025-07-15 05:52</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://lyons-den.com/whitepapers/aws-lambda-silent-crash.pdf" target="_blank">AWS Lambda Silent Crash – A Platform Failure, Not an Application Bug [pdf]</a></h3>
+<p class="post-date">📅 2025-07-15 03:22</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/15/68754c9dfc6c83ab088b4592.html" target="_blank">Interior no moviliza a los Antidisturbios en Torre Pacheco por falta de dinero: "Tenía que haber tres pelotones y sólo hay uno, contraviene el manual de seguridad"</a></h3>
+<p class="post-date">📅 2025-07-15 02:52</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/pais-vasco/2025/07/15/68754b1021efa0e8198b45a3.html" target="_blank">Pedro Sánchez desgaja la Seguridad Social al ceder al PNV el pago de las prestaciones por desempleo a 44.700 vascos</a></h3>
+<p class="post-date">📅 2025-07-15 02:51</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://dewlinemuseum.com/" target="_blank">DEWLine Museum – The Distant Early Warning Radar Line</a></h3>
+<p class="post-date">📅 2025-07-15 00:28</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://github.com/ml-explore/mlx/pull/1983" target="_blank">Apple's MLX adding CUDA support</a></h3>
+<p class="post-date">📅 2025-07-14 23:40</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/14/trump-ukraine-russia-weapons-patriot-secondary-tariffs-nato-rutte/" target="_blank">Trump Threatens Secondary Tariffs Against Russia’s Trade Partners</a></h3>
+<p class="post-date">📅 2025-07-14 23:32</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/deportes/ciclismo/tour-de-francia/2025/07/14/6875410bfc6c838c028b4596.html" target="_blank">La llamativa felicidad de Vingegaard y la "presión" del Visma contra Pogacar: "Estamos siguiendo nuestro plan"</a></h3>
+<p class="post-date">📅 2025-07-14 22:45</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/14/us/politics/trump-putin-russia-ukraine.html" target="_blank">Trump Threatens Russia With Sanctions and Vows U.S. Weapon Support for Ukraine</a></h3>
+<p class="post-date">📅 2025-07-14 22:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.caltech.edu/about/news/ligo-detects-most-massive-black-hole-merger-to-date" target="_blank">LIGO detects most massive black hole merger to date</a></h3>
+<p class="post-date">📅 2025-07-14 22:06</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.nytimes.com/2025/07/14/world/middleeast/syria-clashes-deaths-bedouin-druse.html" target="_blank">Clashes Between Bedouin and Druse in Syria Kill More Than 50, Health Official and Rights Group Say</a></h3>
+<p class="post-date">📅 2025-07-14 22:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://neural-os.com/" target="_blank">NeuralOS: An operating system powered by neural networks</a></h3>
+<p class="post-date">📅 2025-07-14 21:54</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/14/687557a7fc6c83fc038b4596.html" target="_blank">Juanma Moreno se reunirá con Page y Barbón para promover "una alianza en defensa de la igualdad" frente al "cupo separatista"</a></h3>
+<p class="post-date">📅 2025-07-14 21:29</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://research.trychroma.com/context-rot" target="_blank">Context Rot: How increasing input tokens impacts LLM performance</a></h3>
+<p class="post-date">📅 2025-07-14 21:25</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/14/6875275621efa0755a8b45a4.html" target="_blank">Trump promete sanciones secundarias del "100%" a Rusia si no se llega a un acuerdo de paz con Ucrania en 50 días</a></h3>
+<p class="post-date">📅 2025-07-14 20:21</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://cognition.ai/blog/windsurf" target="_blank">Cognition (Devin AI) to Acquire Windsurf</a></h3>
+<p class="post-date">📅 2025-07-14 20:07</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://sachachua.com/blog/2025/07/2025-07-14-emacs-news/" target="_blank">Sacha Chua: 2025-07-14 Emacs news</a></h3>
+<p class="post-date">📅 2025-07-14 18:52</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://irreal.org/blog/?p=13123" target="_blank">Irreal: Do We Really Need Lisp Machines?</a></h3>
+<p class="post-date">📅 2025-07-14 18:09</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://assemblingamerica.substack.com/p/there-is-no-meritocracy-without-lottocracy" target="_blank">Random selection is necessary to create stable meritocratic institutions</a></h3>
+<p class="post-date">📅 2025-07-14 17:28</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://xnacly.me/posts/2025/fast-lexer-strategies/" target="_blank">Strategies for Fast Lexers</a></h3>
+<p class="post-date">📅 2025-07-14 16:42</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://kiro.dev/blog/introducing-kiro/" target="_blank">Kiro: A new agentic IDE</a></h3>
+<p class="post-date">📅 2025-07-14 16:24</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/14/muhammadu-buhari-death-obituary-nigeria/" target="_blank">Despite Good Intentions, Muhammadu Buhari Failed Nigeria</a></h3>
+<p class="post-date">📅 2025-07-14 16:14</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.lemonde.fr/en/international/article/2025/07/14/france-unveils-new-defense-road-map-to-address-geopolitical-challenges_6743358_4.html" target="_blank">France unveils new defense roadmap to address geopolitical challenges</a></h3>
+<p class="post-date">📅 2025-07-14 15:24</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/14/6874f45ffc6c83ac088b457f.html" target="_blank">Al menos 89 muertos en enfrentamientos entre drusos y beduinos en el sur de Siria</a></h3>
+<p class="post-date">📅 2025-07-14 14:50</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/14/6874d0c1fdddff43448b4582.html" target="_blank">Cerdán pide al Supremo una copia de todas las grabaciones realizadas por Koldo donde se repartían las mordidas</a></h3>
+<p class="post-date">📅 2025-07-14 14:28</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/14/6874db27e4d4d854478b4597.html" target="_blank">Abascal culpa de los altercados en Torre Pacheco a las políticas del "bipartidismo" y reivindica su discurso migratorio: "Si decir la verdad trae crispación, la habrá"</a></h3>
+<p class="post-date">📅 2025-07-14 14:18</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/14/iran-israel-us-trump-nuclear-weapons-attack-strike-war/" target="_blank">Iran and the Logic of Limited Wars</a></h3>
+<p class="post-date">📅 2025-07-14 12:43</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/14/6874c9a7e85ecef64e8b4585.html" target="_blank">Emmanuel Macron muestra el músculo militar de Francia en el desfile del 14 de julio</a></h3>
+<p class="post-date">📅 2025-07-14 12:10</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://foreignpolicy.com/2025/07/14/immigrant-heritage-lyndon-johnson-nationality-act/" target="_blank">How Lyndon Johnson Moved the Nation Forward on Immigration</a></h3>
+<p class="post-date">📅 2025-07-14 12:00</p>
+<div class="tags"><span class="tag">unread</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/14/68749b98e9cf4a8d6b8b4589.html" target="_blank">Un hombre asesina a su ex pareja con un fusil en Jalisco y el crimen queda registrado en un vídeo viral que indigna a México</a></h3>
+<p class="post-date">📅 2025-07-14 08:03</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/14/687495d4fc6c838d028b4570.html" target="_blank">Trump enviará sistemas de misiles Patriot a Ucrania pero dice que Europa pagará por ellos</a></h3>
+<p class="post-date">📅 2025-07-14 07:41</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://blogs.elconfidencial.com/espana/tribuna/2025-07-14/independencia-judicial-separacion-poderes-1hms_4167981/" target="_blank">Ni conservadores ni progresistas: jueces independientes</a></h3>
+<p class="post-date">📅 2025-07-14 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://blogs.elconfidencial.com/espana/tribuna/2025-07-14/corrupcion-politica-empresarios-espana-1hms_4171055/" target="_blank">Somos empresarios, no tramposos</a></h3>
+<p class="post-date">📅 2025-07-14 07:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/14/6873f29bfdddff99458b4575.html" target="_blank">Lo que falla en la Defensa española: esfuerzos descoordinados, falta de personal y menos exportación</a></h3>
+<p class="post-date">📅 2025-07-14 02:35</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://protesilaos.com/codelog/2025-07-14-common-questions-about-prot-asks-videos-emacs-life/" target="_blank">Protesilaos Stavrou: Common questions about the ‘Prot Asks’ videos on Emacs and Life</a></h3>
+<p class="post-date">📅 2025-07-14 02:00</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/13/6873eb97e85eced84e8b4578.html" target="_blank">La propaganda y la encuesta</a></h3>
+<p class="post-date">📅 2025-07-13 23:58</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://emacsninja.com/posts/cve-2025-1244-from-emacs-url-handler-to-rce.html" target="_blank">Vasilij Schneidermann: CVE-2025-1244: From Emacs URL Handler to RCE</a></h3>
+<p class="post-date">📅 2025-07-13 22:57</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/encuestas/2025/07/13/6873a373e4d4d88b1d8b4585.html" target="_blank">El 70% de los españoles respalda las deportaciones de migrantes ilegales</a></h3>
+<p class="post-date">📅 2025-07-13 22:47</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.djangoproject.com/weblog/2025/jul/13/happy-20th-birthday-django/" target="_blank">Happy 20th Birthday, Django</a></h3>
+<p class="post-date">📅 2025-07-13 20:44</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/13/6873f8d6fdddff8b458b458b.html" target="_blank">Macron anuncia un aumento sin precedentes del gasto en Defensa: "Nunca desde 1945 la libertad de Europa ha estado tan amenazada"</a></h3>
+<p class="post-date">📅 2025-07-13 20:31</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/13/6873978421efa04e1d8b45a4.html" target="_blank">Kiev mata a los agentes rusos que asesinaron esta semana a un coronel de la inteligencia ucraniana</a></h3>
+<p class="post-date">📅 2025-07-13 20:19</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/espana/2025/07/12/68729b11e9cf4a6e038b456e.html" target="_blank">López Miras llama a la calma ante el polvorín en Torre Pacheco tras la agresión a un vecino y las amenazas a migrantes: "No se puede tolerar las llamadas a la violencia"</a></h3>
+<p class="post-date">📅 2025-07-13 18:58</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.cse.iitb.ac.in/~mythili/virtcc/papers/vmware.pdf" target="_blank">VMware Workstation: Bringing Virtualization to the x86 Architecture (2012) [pdf]</a></h3>
+<p class="post-date">📅 2025-07-13 16:33</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://menerdu.vercel.app/" target="_blank">Show HN: I built this to talk Danish to my girlfriend – works with any language</a></h3>
+<p class="post-date">📅 2025-07-13 13:38</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://www.elmundo.es/internacional/2025/07/13/68737497e4d4d84a208b4582.html" target="_blank">El presidente iraní resultó levemente herido durante un bombardeo de Israel en junio</a></h3>
+<p class="post-date">📅 2025-07-13 10:57</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://donovan-ratefison.mg/2025/07/13/My-Emacs-Journey-Agenda/" target="_blank">Donovan R.: My Emacs journey (3) - Agenda for everyone</a></h3>
+<p class="post-date">📅 2025-07-13 10:07</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+<li>
+<h3><a href="https://taonaw.com/2025/07/12/launching-a-script-with-a.html" target="_blank">TAONAW - Emacs and Org Mode: Launching a script with a keyboard shortcut on a Mac?</a></h3>
+<p class="post-date">📅 2025-07-13 01:17</p>
+<div class="tags"><span class="tag">sin tags</span></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

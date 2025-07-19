@@ -1,0 +1,1851 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 20:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Crisis Art.5 OTAN: Opciones Cumplimiento vs Volatilidad Trump</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Analisis critico opciones cumplimiento Art.5 ante demanda 5% PIB" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="Analisis critico opciones cumplimiento Art.5 ante demanda 5% PIB">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Crisis Art.5 OTAN: Opciones Cumplimiento vs Volatilidad Trump</h1>
+
+<div id="outline-container-org2d4506a" class="outline-2">
+<h2 id="org2d4506a">CRISIS EXISTENCIAL DEL ARTÍCULO 5</h2>
+<div class="outline-text-2" id="text-org2d4506a">
+</div>
+<div id="outline-container-orgd862595" class="outline-3">
+<h3 id="orgd862595">Situación Crítica</h3>
+<div class="outline-text-3" id="text-orgd862595">
+<p>
+La credibilidad del Artículo 5 de la OTAN atraviesa su mayor crisis desde 1949. Las demandas del 5% PIB (3.5% + 1.5%), combinadas con la volatilidad extrema de Trump y sus amenazas contra Canadá, han transformado la defensa colectiva de principio sacrosanto en herramienta de chantaje político.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge522c30" class="outline-3">
+<h3 id="orge522c30">Parámetros de Crisis</h3>
+<div class="outline-text-3" id="text-orge522c30">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Elemento</th>
+<th scope="col" class="org-left">Estado Actual</th>
+<th scope="col" class="org-left">Nivel Crítico</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Credibilidad Art.5</td>
+<td class="org-left">EROSIONADA</td>
+<td class="org-left">EXTREMO</td>
+<td class="org-left">DESCENDENTE</td>
+</tr>
+
+<tr>
+<td class="org-left">Compromiso EEUU</td>
+<td class="org-left">CONDICIONAL</td>
+<td class="org-left">CRÍTICO</td>
+<td class="org-left">VOLÁTIL</td>
+</tr>
+
+<tr>
+<td class="org-left">Cohesión Alianza</td>
+<td class="org-left">FRAGMENTADA</td>
+<td class="org-left">ALTO</td>
+<td class="org-left">DETERIORO</td>
+</tr>
+
+<tr>
+<td class="org-left">Gasto Defensa Europeo</td>
+<td class="org-left">2.1% PIB PROMEDIO</td>
+<td class="org-left">INSUFICIENTE</td>
+<td class="org-left">ASCENDENTE</td>
+</tr>
+
+<tr>
+<td class="org-left">Amenazas Intra-OTAN</td>
+<td class="org-left">ACTIVAS</td>
+<td class="org-left">CRÍTICO</td>
+<td class="org-left">ESCALATORIO</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfa70368" class="outline-2">
+<h2 id="orgfa70368">CONTEXTO: LA TRANSFORMACIÓN DEL ARTÍCULO 5</h2>
+<div class="outline-text-2" id="text-orgfa70368">
+</div>
+<div id="outline-container-orge95b3a0" class="outline-3">
+<h3 id="orge95b3a0">Principio Original vs Realidad Actual</h3>
+<div class="outline-text-3" id="text-orge95b3a0">
+</div>
+<div id="outline-container-orgd7e21cc" class="outline-4">
+<h4 id="orgd7e21cc">Doctrina Fundacional (1949)</h4>
+<div class="outline-text-4" id="text-orgd7e21cc">
+<blockquote>
+<p>
+"Un ataque armado contra uno o más miembros se considerará ataque contra todos"
+</p>
+<ul class="org-ul">
+<li>Artículo 5, Tratado Washington 1949</li>
+</ul>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgc6b403b" class="outline-4">
+<h4 id="orgc6b403b">Degradación Trumpiana (2017-2025)</h4>
+<div class="outline-text-4" id="text-orgc6b403b">
+<ul class="org-ul">
+<li><b><b>2017</b></b>: Trump es el único presidente estadounidense que no respalda explícitamente Art.5</li>
+<li><b><b>2024</b></b>: "No defendería a aliados que no gasten suficiente y animaría a Rusia atacarlos"</li>
+<li><b><b>2025</b></b>: "EEUU no va a defender aliados que no cumplan sus requisitos de gasto"</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7df609c" class="outline-3">
+<h3 id="org7df609c">Diagrama: Evolución Credibilidad Artículo 5</h3>
+<div class="outline-text-3" id="text-org7df609c">
+<p>
+<br />
+</p>
+
+
+<div id="org36c936f" class="figure">
+<p><img src="./assets/images/art5-credibilidad.png" alt="art5-credibilidad.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb5e2e8f" class="outline-2">
+<h2 id="orgb5e2e8f">DEMANDAS 5% PIB: IMPOSIBILIDAD ESTRUCTURAL</h2>
+<div class="outline-text-2" id="text-orgb5e2e8f">
+</div>
+<div id="outline-container-orge192f9c" class="outline-3">
+<h3 id="orge192f9c">Desglose 3.5% + 1.5%</h3>
+<div class="outline-text-3" id="text-orge192f9c">
+</div>
+<div id="outline-container-orgcfc3928" class="outline-4">
+<h4 id="orgcfc3928">Estructura Propuesta</h4>
+<div class="outline-text-4" id="text-orgcfc3928">
+<ul class="org-ul">
+<li><b>3.5% Defensa Tradicional</b>: Personal, equipamiento, operaciones</li>
+<li><b>1.5% Capacidades Emergentes</b>: Ciberseguridad, espacio, IA militar</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org22895e5" class="outline-4">
+<h4 id="org22895e5">Realidad Fiscal Europea</h4>
+<div class="outline-text-4" id="text-org22895e5">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-right">PIB (Billones $)</th>
+<th scope="col" class="org-right">Gasto Actual</th>
+<th scope="col" class="org-left">5% PIB Reqd.</th>
+<th scope="col" class="org-left">Incremento Req.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-right">4.26</td>
+<td class="org-right">2.1%</td>
+<td class="org-left">213 B $</td>
+<td class="org-left">+123 B $</td>
+</tr>
+
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-right">2.94</td>
+<td class="org-right">2.3%</td>
+<td class="org-left">147 B $</td>
+<td class="org-left">+79 B $</td>
+</tr>
+
+<tr>
+<td class="org-left">Reino Unido</td>
+<td class="org-right">3.13</td>
+<td class="org-right">2.3%</td>
+<td class="org-left">157 B $</td>
+<td class="org-left">+85 B $</td>
+</tr>
+
+<tr>
+<td class="org-left">Italia</td>
+<td class="org-right">2.11</td>
+<td class="org-right">1.6%</td>
+<td class="org-left">106 B $</td>
+<td class="org-left">+72 B $</td>
+</tr>
+
+<tr>
+<td class="org-left">España</td>
+<td class="org-right">1.40</td>
+<td class="org-right">1.3%</td>
+<td class="org-left">70 B $</td>
+<td class="org-left">+52 B $</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>TOTAL REQD</b></td>
+<td class="org-right">-</td>
+<td class="org-right">-</td>
+<td class="org-left">693 B $</td>
+<td class="org-left">+411 B $</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4eb00de" class="outline-4">
+<h4 id="org4eb00de">Imposibilidad de Implementación</h4>
+<div class="outline-text-4" id="text-org4eb00de">
+<p>
+Mark Rutte advierte sobre "capacidad de absorción": imposible gastar incrementos masivos en un año sin generar inflación y desperdicio.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd3cbf36" class="outline-2">
+<h2 id="orgd3cbf36">AMENAZAS TRUMP CONTRA CANADÁ: FRACTURA INTRA-OTAN</h2>
+<div class="outline-text-2" id="text-orgd3cbf36">
+</div>
+<div id="outline-container-org8b7e317" class="outline-3">
+<h3 id="org8b7e317">Escalada de Amenazas</h3>
+<div class="outline-text-3" id="text-org8b7e317">
+</div>
+<div id="outline-container-orgb9a1d9e" class="outline-4">
+<h4 id="orgb9a1d9e">Cronología 2024-2025</h4>
+<div class="outline-text-4" id="text-orgb9a1d9e">
+<ul class="org-ul">
+<li><b><b>Dic 2024</b></b>: "Canadá debería ser estado 51"</li>
+<li><b><b>Ene 2025</b></b>: Aranceles 25% productos canadienses</li>
+<li><b><b>Feb 2025</b></b>: "Usa fuerza económica para anexión"</li>
+<li><b><b>Mar 2025</b></b>: Ultimátum $61B sistema antimisiles</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org17e4cbf" class="outline-4">
+<h4 id="org17e4cbf">Impacto en Artículo 5</h4>
+<div class="outline-text-4" id="text-org17e4cbf">
+<p>
+Las amenazas contra Canadá crean precedente devastador: si EEUU amenaza anexar aliado OTAN, ¿qué credibilidad tiene su compromiso de defender otros miembros?
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0944310" class="outline-3">
+<h3 id="org0944310">Diagrama: Crisis Canadá-EEUU en OTAN</h3>
+<div class="outline-text-3" id="text-org0944310">
+<p>
+<br />
+</p>
+
+
+<div id="org85fb345" class="figure">
+<p><img src="./assets/images/crisis-canada-nato.png" alt="crisis-canada-nato.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org57a4cd4" class="outline-2">
+<h2 id="org57a4cd4">VOLATILIDAD TRUMP: FACTOR DE DESESTABILIZACIÓN</h2>
+<div class="outline-text-2" id="text-org57a4cd4">
+</div>
+<div id="outline-container-orgac735a7" class="outline-3">
+<h3 id="orgac735a7">Patrones de Comportamiento Errático</h3>
+<div class="outline-text-3" id="text-orgac735a7">
+</div>
+<div id="outline-container-orga2e101f" class="outline-4">
+<h4 id="orga2e101f">Inconsistencias Sistemáticas</h4>
+<div class="outline-text-4" id="text-orga2e101f">
+<ul class="org-ul">
+<li><b><b>2018</b></b>: "Probablemente apoyaría Art.5 pero quiere más gasto"</li>
+<li><b><b>2024</b></b>: "Animaría a Rusia atacar aliados morosos"</li>
+<li><b><b>2025</b></b>: "EEUU no defendería a aliados insuficientes"</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf608352" class="outline-4">
+<h4 id="orgf608352">Personalización Extrema de Política Exterior</h4>
+<div class="outline-text-4" id="text-orgf608352">
+<p>
+La política exterior estadounidense depende completamente de caprichos personales Trump, no de intereses nacionales o compromisos institucionales.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgde4d63a" class="outline-3">
+<h3 id="orgde4d63a">El Silencio Europeo Cómplice</h3>
+<div class="outline-text-3" id="text-orgde4d63a">
+<p>
+Ante amenazas Trump contra Canadá y Groenlandia, "no ha habido condena pública directa por líderes aliados — parece que nos encontramos solos".
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd1a2cbc" class="outline-2">
+<h2 id="orgd1a2cbc">OPCIONES DE CUMPLIMIENTO ARTÍCULO 5</h2>
+<div class="outline-text-2" id="text-orgd1a2cbc">
+</div>
+<div id="outline-container-orgca6479b" class="outline-3">
+<h3 id="orgca6479b">Opción 1: Cumplimiento Incondicional (Status Quo Degradado)</h3>
+<div class="outline-text-3" id="text-orgca6479b">
+</div>
+<div id="outline-container-orgb02a73a" class="outline-4">
+<h4 id="orgb02a73a">Características</h4>
+<div class="outline-text-4" id="text-orgb02a73a">
+<ul class="org-ul">
+<li>Mantener compromiso Art.5 pese a volatilidad Trump</li>
+<li>Aceptar demandas 5% PIB gradualmente</li>
+<li>Esperanza que Trump modere posiciones</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf2d31e0" class="outline-4">
+<h4 id="orgf2d31e0">Análisis Crítico</h4>
+<div class="outline-text-4" id="text-orgf2d31e0">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Aspecto</th>
+<th scope="col" class="org-left">Evaluación</th>
+<th scope="col" class="org-left">Probabilidad Éxito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Viabilidad</td>
+<td class="org-left">BAJA</td>
+<td class="org-left">15%</td>
+</tr>
+
+<tr>
+<td class="org-left">Costo Fiscal</td>
+<td class="org-left">INSOSTENIBLE</td>
+<td class="org-left">-</td>
+</tr>
+
+<tr>
+<td class="org-left">Credibilidad</td>
+<td class="org-left">NULA</td>
+<td class="org-left">-</td>
+</tr>
+
+<tr>
+<td class="org-left">Dependencia</td>
+<td class="org-left">EXTREMA</td>
+<td class="org-left">-</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge357141" class="outline-4">
+<h4 id="orge357141">Riesgos</h4>
+<div class="outline-text-4" id="text-orge357141">
+<ul class="org-ul">
+<li>Trump puede abandonar Art.5 unilateralmente</li>
+<li>Europa queda sin capacidades autónomas</li>
+<li>Chantaje permanente sobre gasto</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga66be07" class="outline-3">
+<h3 id="orga66be07">Opción 2: Cumplimiento Condicional (Reciprocidad)</h3>
+<div class="outline-text-3" id="text-orga66be07">
+</div>
+<div id="outline-container-orgcc236fc" class="outline-4">
+<h4 id="orgcc236fc">Características</h4>
+<div class="outline-text-4" id="text-orgcc236fc">
+<ul class="org-ul">
+<li>Art.5 válido solo si EEUU respeta soberanía aliados</li>
+<li>Suspensión automática si amenazas intra-OTAN</li>
+<li>Escalada gradual capacidades europeas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdb065c8" class="outline-4">
+<h4 id="orgdb065c8">Diagrama PlantUML: Matriz Decisión Condicional</h4>
+<div class="outline-text-4" id="text-orgdb065c8">
+<p>
+<br />
+</p>
+
+<p width="600px">
+<img src="./assets/images/decision-condicional.png" alt="decision-condicional.png" width="600px" />
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org611fecd" class="outline-4">
+<h4 id="org611fecd">Ventajas</h4>
+<div class="outline-text-4" id="text-org611fecd">
+<ul class="org-ul">
+<li>Protege soberanía europea</li>
+<li>Incentiva comportamiento responsable EEUU</li>
+<li>Desarrolla capacidades alternativas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org41176d2" class="outline-4">
+<h4 id="org41176d2">Desventajas</h4>
+<div class="outline-text-4" id="text-org41176d2">
+<ul class="org-ul">
+<li>Acelera fragmentación transatlántica</li>
+<li>Deja vacío seguridad temporal</li>
+<li>Complejidad implementación</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd10e955" class="outline-3">
+<h3 id="orgd10e955">Opción 3: Autonomía Estratégica Europea (Independencia)</h3>
+<div class="outline-text-3" id="text-orgd10e955">
+</div>
+<div id="outline-container-org71c238f" class="outline-4">
+<h4 id="org71c238f">Características</h4>
+<div class="outline-text-4" id="text-org71c238f">
+<ul class="org-ul">
+<li>Desarrollo capacidades defensa independientes</li>
+<li>Art.5 limitado a amenazas externas</li>
+<li>Nueva arquitectura seguridad europea</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb0594a5" class="outline-4">
+<h4 id="orgb0594a5">Requisitos Capacidades</h4>
+<div class="outline-text-4" id="text-orgb0594a5">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Capacidad Estratégica</th>
+<th scope="col" class="org-right">Costo (B€)</th>
+<th scope="col" class="org-left">Plazo</th>
+<th scope="col" class="org-left">Dependencia EEUU Actual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Disuasión Nuclear</td>
+<td class="org-right">200-300</td>
+<td class="org-left">15a</td>
+<td class="org-left">TOTAL</td>
+</tr>
+
+<tr>
+<td class="org-left">Comando &amp; Control</td>
+<td class="org-right">50-75</td>
+<td class="org-left">8a</td>
+<td class="org-left">CRÍTICA</td>
+</tr>
+
+<tr>
+<td class="org-left">Inteligencia Satélite</td>
+<td class="org-right">25-40</td>
+<td class="org-left">5a</td>
+<td class="org-left">ALTA</td>
+</tr>
+
+<tr>
+<td class="org-left">Logística Estratégica</td>
+<td class="org-right">100-150</td>
+<td class="org-left">10a</td>
+<td class="org-left">ALTA</td>
+</tr>
+
+<tr>
+<td class="org-left">Defensa Antimisiles</td>
+<td class="org-right">150-200</td>
+<td class="org-left">12a</td>
+<td class="org-left">TOTAL</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left"><b>TOTAL ESTIMADO</b></td>
+<td class="org-right">525-765</td>
+<td class="org-left">15a</td>
+<td class="org-left">-</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge8d0583" class="outline-4">
+<h4 id="orge8d0583">Ventajas</h4>
+<div class="outline-text-4" id="text-orge8d0583">
+<ul class="org-ul">
+<li>Elimina dependencia volátil Trump</li>
+<li>Fortalece soberanía europea</li>
+<li>Credibilidad propia disuasión</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc2c925f" class="outline-4">
+<h4 id="orgc2c925f">Desventajas</h4>
+<div class="outline-text-4" id="text-orgc2c925f">
+<ul class="org-ul">
+<li>Costo astronómico</li>
+<li>Vacío capacidades transitorio</li>
+<li>Resistencia EEUU</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org50d4dc3" class="outline-3">
+<h3 id="org50d4dc3">Opción 4: Fragmentación Controlada (Realismo)</h3>
+<div class="outline-text-3" id="text-org50d4dc3">
+</div>
+<div id="outline-container-org4a260ef" class="outline-4">
+<h4 id="org4a260ef">Características</h4>
+<div class="outline-text-4" id="text-org4a260ef">
+<ul class="org-ul">
+<li>Reconocimiento formal muerte Art.5 tradicional</li>
+<li>Alianzas bilaterales/multilaterales específicas</li>
+<li>Coexistencia OTAN formal + estructuras reales</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgff85eaa" class="outline-4">
+<h4 id="orgff85eaa">Arquitectura Propuesta</h4>
+<div class="outline-text-4" id="text-orgff85eaa">
+<ul class="org-ul">
+<li><b>OTAN Formal</b>: Burocracia residual sin Art.5 creíble</li>
+<li><b>Alianza Franco-Británica</b>: Disuasión nuclear europea</li>
+<li><b>Grupo Visegrado Plus</b>: Defensa Europa Oriental</li>
+<li><b>Eje Mediterráneo</b>: España-Italia-Francia sur</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc9da1db" class="outline-2">
+<h2 id="orgc9da1db">EVALUACIÓN COMPARATIVA OPCIONES</h2>
+<div class="outline-text-2" id="text-orgc9da1db">
+</div>
+<div id="outline-container-orgefb34b7" class="outline-3">
+<h3 id="orgefb34b7">Matriz Evaluación Multi-Criterio</h3>
+<div class="outline-text-3" id="text-orgefb34b7">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Opción</th>
+<th scope="col" class="org-left">Credibilidad</th>
+<th scope="col" class="org-left">Viabilidad</th>
+<th scope="col" class="org-left">Costo</th>
+<th scope="col" class="org-left">Soberanía</th>
+<th scope="col" class="org-left">TOTAL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Cumpl. Incond.</td>
+<td class="org-left">2/10</td>
+<td class="org-left">3/10</td>
+<td class="org-left">2/10</td>
+<td class="org-left">1/10</td>
+<td class="org-left">8/40</td>
+</tr>
+
+<tr>
+<td class="org-left">Cumpl. Cond.</td>
+<td class="org-left">6/10</td>
+<td class="org-left">6/10</td>
+<td class="org-left">5/10</td>
+<td class="org-left">7/10</td>
+<td class="org-left">24/40</td>
+</tr>
+
+<tr>
+<td class="org-left">Autonomía Estrat.</td>
+<td class="org-left">8/10</td>
+<td class="org-left">4/10</td>
+<td class="org-left">3/10</td>
+<td class="org-left">9/10</td>
+<td class="org-left">24/40</td>
+</tr>
+
+<tr>
+<td class="org-left">Fragment. Contr.</td>
+<td class="org-left">7/10</td>
+<td class="org-left">7/10</td>
+<td class="org-left">6/10</td>
+<td class="org-left">8/10</td>
+<td class="org-left">28/40</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org85049c1" class="outline-3">
+<h3 id="org85049c1">Recomendación Estratégica</h3>
+<div class="outline-text-3" id="text-org85049c1">
+<p>
+<b>FRAGMENTACIÓN CONTROLADA</b> emerge como opción más realista:
+</p>
+<ul class="org-ul">
+<li>Reconoce muerte Art.5 tradicional</li>
+<li>Desarrolla capacidades alternativas graduales</li>
+<li>Mantiene vínculos útiles con EEUU post-Trump</li>
+<li>Preserva soberanía europea</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org25e45f5" class="outline-2">
+<h2 id="org25e45f5">ESCENARIOS IMPLEMENTACIÓN</h2>
+<div class="outline-text-2" id="text-org25e45f5">
+</div>
+<div id="outline-container-org9ee1885" class="outline-3">
+<h3 id="org9ee1885">Escenario A: "Divorce Amicable" (Probabilidad: 25%)</h3>
+<div class="outline-text-3" id="text-org9ee1885">
+</div>
+<div id="outline-container-org9fbb483" class="outline-4">
+<h4 id="org9fbb483">Desarrollo</h4>
+<div class="outline-text-4" id="text-org9fbb483">
+<ul class="org-ul">
+<li>Europa anuncia desarrollo autonomía estratégica gradual</li>
+<li>EEUU acepta reducción rol europeo</li>
+<li>Transición ordenada 2025-2035</li>
+<li>OTAN se transforma en foro consulta</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga7c6443" class="outline-4">
+<h4 id="orga7c6443">Indicadores</h4>
+<div class="outline-text-4" id="text-orga7c6443">
+<ul class="org-ul">
+<li>Reducción tropas estadounidenses Europa</li>
+<li>Inversión europea capacidades estratégicas</li>
+<li>Nuevos acuerdos bilaterales</li>
+<li>Restructuración comando OTAN</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org05f2569" class="outline-3">
+<h3 id="org05f2569">Escenario B: "Crisis Catalizadora" (Probabilidad: 40%)</h3>
+<div class="outline-text-3" id="text-org05f2569">
+</div>
+<div id="outline-container-org71c95f7" class="outline-4">
+<h4 id="org71c95f7">Desarrollo</h4>
+<div class="outline-text-4" id="text-org71c95f7">
+<ul class="org-ul">
+<li>Provocación rusa testa Art.5 con Trump presidente</li>
+<li>Respuesta estadounidense ambigua/insuficiente</li>
+<li>Europa forzada desarrollar respuesta autónoma</li>
+<li>Aceleración desacoplamiento transatlántico</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org89c189b" class="outline-4">
+<h4 id="org89c189b">Diagrama: Secuencia Crisis Catalizadora</h4>
+<div class="outline-text-4" id="text-org89c189b">
+<p>
+<br />
+</p>
+
+
+<div id="orgc741d4d" class="figure">
+<p><img src="./assets/images/crisis-catalizadora.png" alt="crisis-catalizadora.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5f3d6c0" class="outline-3">
+<h3 id="org5f3d6c0">Escenario C: "Colapso Completo" (Probabilidad: 35%)</h3>
+<div class="outline-text-3" id="text-org5f3d6c0">
+</div>
+<div id="outline-container-org0bd236e" class="outline-4">
+<h4 id="org0bd236e">Desarrollo</h4>
+<div class="outline-text-4" id="text-org0bd236e">
+<ul class="org-ul">
+<li>Trump abandona formalmente Art.5</li>
+<li>Europa sin capacidades alternativas desarrolladas</li>
+<li>Ventana vulnerabilidad 2025-2030</li>
+<li>Realineamiento geopolítico radical</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6814a1c" class="outline-4">
+<h4 id="org6814a1c">Consecuencias</h4>
+<div class="outline-text-4" id="text-org6814a1c">
+<ul class="org-ul">
+<li>Rusia prueba resolución europea</li>
+<li>China aprovecha debilidad occidental</li>
+<li>Proliferación nuclear (Alemania, Polonia)</li>
+<li>Nueva Guerra Fría multipolar</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4aabb54" class="outline-2">
+<h2 id="org4aabb54">RECOMENDACIONES URGENTES</h2>
+<div class="outline-text-2" id="text-org4aabb54">
+</div>
+<div id="outline-container-orgbd57cab" class="outline-3">
+<h3 id="orgbd57cab">Para Europa (Horizonte 12 meses)</h3>
+<div class="outline-text-3" id="text-orgbd57cab">
+</div>
+<div id="outline-container-org1f496d0" class="outline-4">
+<h4 id="org1f496d0">Medidas Inmediatas</h4>
+<div class="outline-text-4" id="text-org1f496d0">
+<ol class="org-ol">
+<li><b>Declaración Soberanía</b>: Art.5 válido solo si EEUU respeta soberanía aliados</li>
+<li><b>Fondo Emergencia Defensa</b>: €50B para capacidades críticas inmediatas</li>
+<li><b>Alianza Franco-Británica Plus</b>: Extensión disuasión nuclear a socios</li>
+<li><b>Comando Europeo Independiente</b>: Estructura C4I autónoma</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfab6c1e" class="outline-4">
+<h4 id="orgfab6c1e">Hitos Críticos 2025</h4>
+<div class="outline-text-4" id="text-orgfab6c1e">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Mes</th>
+<th scope="col" class="org-left">Hito</th>
+<th scope="col" class="org-left">Responsable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Jul</td>
+<td class="org-left">Cumbre Emergencia Europea</td>
+<td class="org-left">Consejo Europeo</td>
+</tr>
+
+<tr>
+<td class="org-left">Ago</td>
+<td class="org-left">Creación Fondo Defensa</td>
+<td class="org-left">BCE/Parlamento EU</td>
+</tr>
+
+<tr>
+<td class="org-left">Sep</td>
+<td class="org-left">Comando Europeo Piloto</td>
+<td class="org-left">Francia/Alemania</td>
+</tr>
+
+<tr>
+<td class="org-left">Oct</td>
+<td class="org-left">Declaración Autonomía</td>
+<td class="org-left">27 EEUU Miembros</td>
+</tr>
+
+<tr>
+<td class="org-left">Nov</td>
+<td class="org-left">Primera Respuesta Autónoma</td>
+<td class="org-left">Comando Europeo</td>
+</tr>
+
+<tr>
+<td class="org-left">Dic</td>
+<td class="org-left">Evaluación Año 1</td>
+<td class="org-left">Think Tanks</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcb93130" class="outline-3">
+<h3 id="orgcb93130">Para OTAN (Adaptación Institucional)</h3>
+<div class="outline-text-3" id="text-orgcb93130">
+</div>
+<div id="outline-container-org13c63a1" class="outline-4">
+<h4 id="org13c63a1">Reformas Estructurales</h4>
+<div class="outline-text-4" id="text-org13c63a1">
+<ol class="org-ol">
+<li><b>Artículo 5 Bis</b>: Versión europea con garantías mutuas sin EEUU</li>
+<li><b>Comando Dual</b>: Estructura OTAN + Comando Europeo paralelo</li>
+<li><b>Financiación Diferenciada</b>: Presupuesto europeo separado</li>
+<li><b>Mecanismo Suspensión</b>: Art.5 inactivo si amenazas intra-OTAN</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb081074" class="outline-2">
+<h2 id="orgb081074">CONCLUSIONES: EL FIN DE UNA ERA</h2>
+<div class="outline-text-2" id="text-orgb081074">
+</div>
+<div id="outline-container-org6c47c13" class="outline-3">
+<h3 id="org6c47c13">Muerte del Artículo 5 Tradicional</h3>
+<div class="outline-text-3" id="text-org6c47c13">
+<p>
+El Art.5 como compromiso incondicional de defensa colectiva está muerto. La volatilidad Trump, las demandas imposibles del 5% PIB y las amenazas contra Canadá han demolido 76 años de consenso transatlántico.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga274ebc" class="outline-3">
+<h3 id="orga274ebc">Imperativo de Realismo Estratégico</h3>
+<div class="outline-text-3" id="text-orga274ebc">
+<p>
+Europa debe abandonar ilusiones sobre fiabilidad estadounidense. Trump ha demostrado que ve aliados como vasallos, no socios. La supervivencia europea requiere autonomía estratégica inmediata.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2eaaad0" class="outline-3">
+<h3 id="org2eaaad0">Ventana de Oportunidad Histórica</h3>
+<div class="outline-text-3" id="text-org2eaaad0">
+<p>
+Paradójicamente, la destrucción Trump del orden tradicional abre oportunidad única para Europa de desarrollar capacidades estratégicas propias y liberarse de dependencia tóxica.
+</p>
+
+<blockquote>
+<p>
+"El Art.5 sobrevivió a la Guerra Fría, pero no pudo sobrevivir a Trump. 
+La pregunta ya no es si Europa desarrollará autonomía estratégica, 
+sino si lo hará antes de que sea demasiado tarde."
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org97e3ed5" class="outline-3">
+<h3 id="org97e3ed5">Realidad Geopolítica 2025</h3>
+<div class="outline-text-3" id="text-org97e3ed5">
+<ul class="org-ul">
+<li><b>EEUU</b>: Socio no fiable, volátil, amenaza intra-OTAN</li>
+<li><b>Rusia</b>: Oportunista, esperando debilidad occidental</li>
+<li><b>China</b>: Beneficiaria fragmentación transatlántica</li>
+<li><b>Europa</b>: En transición hacia autonomía forzada</li>
+</ul>
+
+<p>
+La credibilidad del Art.5 no está "sujeta" al lunático Trump: <b><b>ha sido destruida por él</b></b>. Europa debe actuar en consecuencia.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6710ab0" class="outline-2">
+<h2 id="org6710ab0">REFERENCIAS DOCUMENTALES</h2>
+<div class="outline-text-2" id="text-org6710ab0">
+</div>
+<div id="outline-container-orgfd5cb54" class="outline-3">
+<h3 id="orgfd5cb54">Tratados y Documentos Oficiales</h3>
+<div class="outline-text-3" id="text-orgfd5cb54">
+<ul class="org-ul">
+<li>Tratado Washington 1949, Artículo 5</li>
+<li>Declaraciones Trump Truth Social 2024-2025</li>
+<li>Discursos Mark Rutte, Secretario General OTAN 2025</li>
+<li>Comunicados Oficiales Consejo Atlántico Norte</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7c920fe" class="outline-3">
+<h3 id="org7c920fe">Fuentes Analíticas Primarias</h3>
+<div class="outline-text-3" id="text-org7c920fe">
+<ul class="org-ul">
+<li>Reuters: "Trump seen likely to support NATO's Article 5 but wants more spending"</li>
+<li>NBC News: "Donald Trump's silence on NATO's Article 5 is a big deal"</li>
+<li>CBC News: "Trump's NATO comments should be taken seriously"</li>
+<li>The Conversation: "Trump's threats against Canada put NATO in tough spot"</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1c57545" class="outline-3">
+<h3 id="org1c57545">Estudios Estratégicos</h3>
+<div class="outline-text-3" id="text-org1c57545">
+<ul class="org-ul">
+<li>Brookings Institution: "Trump's NATO Article 5 problem" (2022)</li>
+<li>Chatham House: "NATO summit spending promises" (2025)</li>
+<li>CEPA: "Why NATO's Article 5 Is So Misunderstood" (2024)</li>
+<li>Foreign Policy: "Trump's Article 5 Omission Attack Against NATO" (2017)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd2414a5" class="outline-3">
+<h3 id="orgd2414a5">Datos Económicos y Militares</h3>
+<div class="outline-text-3" id="text-orgd2414a5">
+<ul class="org-ul">
+<li>SIPRI Database: Gasto militar por país 2024-2025</li>
+<li>NATO: Defence Expenditure Statistics 2025</li>
+<li>IISS Military Balance 2025</li>
+<li>Stockholm Peace Research Institute: Arms Transfer Database</li>
+</ul>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+<br />
+</p>
+
+<p class="post-meta">Publicado el 2025-06-22 14:23 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 20:11</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

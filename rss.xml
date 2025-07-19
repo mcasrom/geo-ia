@@ -1,68 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GeoClaude4: El blog de Geoestrategia e IA</title>
     <link>https://mcasrom.github.io/geo-ia</link>
     <description>Blog sobre geoestrategia, tecnología y poder global</description>
+    <atom:link href="https://mcasrom.github.io/geo-ia/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>El Mapa y El Código: Geostrategia, Geopolítica y el Orden Global</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-24-el-mapa-y-el-c-digo-geostrategia-geopol-tica-y-el-orden-global.html</link>
-      <pubDate>2025-05-24 04:36</pubDate>
+      <title>Impacto Gasto Defensa NATO 3.5% + 1.5%: Propuesta Trump</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-25-impacto-gasto-defensa-nato-3-5-1-5-propuesta-trump.html</link>
+      <pubDate>mié, 25 jun 2025 09:11:00 +0200</pubDate>
+      <description>Análisis exhaustivo del impacto económico, político y estratégico de la propuesta de Donald Trump de incrementar el gasto en defensa NATO al 5% del PIB, estructurado en 3.5% defensa directa + 1.5% seguridad ampliada, incluyendo implicaciones fiscales para los 32 países miembros, mecanismos de implementación y efectos en la cohesión de la alianza transatlántica</description>
     </item>
     <item>
-      <title>Las 10 Áreas Críticas en Geoestrategia y Poder Global (2025)</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-23-las-10-reas-cr-ticas-en-geoestrategia-y-poder-global-2025-.html</link>
-      <pubDate>2025-05-23 03:45</pubDate>
+      <title>El Caso Excepcional: Situación Nuclear de Corea del Norte</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-24-el-caso-excepcional-situaci-n-nuclear-de-corea-del-norte.html</link>
+      <pubDate>mar, 24 jun 2025 20:00:00 +0200</pubDate>
+      <description>Análisis crítico de la situación nuclear y geoestratégica de Corea del Norte, su retirada del TNP y su impacto global.</description>
     </item>
     <item>
-      <title>La Geopolítica del Conocimiento Artificial: Análisis de Sesgos y Polarización en los Principales Chat IA Globales</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-25-la-geopol-tica-del-conocimiento-artificial-an-lisis-de-sesgos-y-polarizaci-n-en-los-principales-chat-ia-globales.html</link>
-      <pubDate>2025-05-25 09:00</pubDate>
+      <title>Israel: La Anomalía del TNP y la Ambigüedad Nuclear Estratégica</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-24-israel-la-anomal-a-del-tnp-y-la-ambig-edad-nuclear-estrat-gica.html</link>
+      <pubDate>mar, 24 jun 2025 15:02:00 +0200</pubDate>
+      <description>Análisis crítico sobre la posición anómala de Israel respecto al Tratado de No Proliferación Nuclear y su política de ambigüedad estratégica.</description>
     </item>
     <item>
-      <title>El Tablero Global: Relaciones Geoestratégicas y el Balance de Poder en 2025</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-26-el-tablero-global-relaciones-geoestrat-gicas-y-el-balance-de-poder-en-2025.html</link>
-      <pubDate>2025-05-26 06:17</pubDate>
+      <title>Mundo en Llamas: Taxonomía de Conflictos Globales en 2025</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-24-mundo-en-llamas-taxonom-a-de-conflictos-globales-en-2025.html</link>
+      <pubDate>mar, 24 jun 2025 14:26:00 +0200</pubDate>
+      <description>Análisis exhaustivo y multidimensional de los 56 conflictos activos globales en 2025, clasificados por naturaleza bélica, económica, religiosa y territorial, incluyendo evaluación de riesgos, tendencias evolutivas y proyecciones estratégicas</description>
     </item>
     <item>
-      <title>Los BRICS: Origen, Evolución, Actualidad y Potencial en la Geoestrategia Global</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-26-los-brics-origen-evoluci-n-actualidad-y-potencial-en-la-geoestrategia-global.html</link>
-      <pubDate>2025-05-26 12:57</pubDate>
+      <title>Pulso España-OTAN: Laberinto del Gasto en Defensa 2025</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-23-pulso-espa-a-otan-laberinto-del-gasto-en-defensa-2025.html</link>
+      <pubDate>lun, 23 jun 2025 21:12:00 +0200</pubDate>
+      <description>Análisis crítico del enfrentamiento Sánchez-Rutte sobre gasto militar del 5% PIB, explorando narrativas, post-verdades y consecuencias geopolíticas del mayor desafío presupuestario español en décadas.</description>
     </item>
     <item>
-      <title>Perfil Ideológico y Socioeconómico del Votante en las Elecciones Presidenciales de Estados Unidos 2024</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-27-perfil-ideol-gico-y-socioecon-mico-del-votante-en-las-elecciones-presidenciales-de-estados-unidos-2024.html</link>
-      <pubDate>2025-05-27 07:07</pubDate>
+      <title>TNP en Crisis: Arquitectura Nuclear Global y Sus Fisuras en 2025</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-23-tnp-en-crisis-arquitectura-nuclear-global-y-sus-fisuras-en-2025.html</link>
+      <pubDate>lun, 23 jun 2025 12:14:00 +0200</pubDate>
+      <description>Evaluación exhaustiva del Tratado de No Proliferación Nuclear tras 57 años de vigencia, análisis de adhesiones y no adhesiones, limitaciones estructurales, impacto histórico y perspectivas futuras del régimen de no proliferación en un mundo multipolar</description>
     </item>
     <item>
-      <title>Diagramas y Tablas Explicativas - El Compromiso del 2% PIB OTAN (ii)</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-27-diagramas-y-tablas-explicativas-el-compromiso-del-2-pib-otan-ii-.html</link>
-      <pubDate>2025-05-27 06:51</pubDate>
+      <title>Arsenal Nuclear Global: Geopolítica de la Disuasión en 2025</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-23-arsenal-nuclear-global-geopol-tica-de-la-disuasi-n-en-2025.html</link>
+      <pubDate>lun, 23 jun 2025 12:06:00 +0200</pubDate>
+      <description>Análisis crítico del estado actual de arsenales nucleares mundiales, distribución de poder entre las nueve potencias nucleares, modernización de capacidades, países aspirantes y escenarios de riesgo en el panorama geopolítico de 2025</description>
     </item>
     <item>
-      <title>El Compromiso del 2% del PIB en Defensa OTAN: Entre la Geopolítica y los Intereses Económicos</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-27-el-compromiso-del-2-del-pib-en-defensa-otan-entre-la-geopol-tica-y-los-intereses-econ-micos.html</link>
-      <pubDate>2025-05-27 06:42</pubDate>
+      <title>Crisis Art.5 OTAN: Opciones Cumplimiento vs Volatilidad Trump</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-22-crisis-art-5-otan-opciones-cumplimiento-vs-volatilidad-trump.html</link>
+      <pubDate>dom, 22 jun 2025 14:23:00 +0200</pubDate>
+      <description>Analisis critico opciones cumplimiento Art.5 ante demanda 5% PIB</description>
     </item>
     <item>
-      <title>Fuentes Abiertas Gratuitas para el Análisis Geopolítico y Geoestratégico</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-29-fuentes-abiertas-gratuitas-para-el-an-lisis-geopol-tico-y-geoestrat-gico.html</link>
-      <pubDate>2025-05-29 02:02</pubDate>
+      <title>Credibilidad en la Política Española: Crisis y Consecuencias</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-22-credibilidad-en-la-pol-tica-espa-ola-crisis-y-consecuencias.html</link>
+      <pubDate>dom, 22 jun 2025 13:53:00 +0200</pubDate>
+      <description>Análisis crítico de la credibilidad en la política española, su origen, evolución, situación actual y consecuencias. </description>
     </item>
     <item>
-      <title>Visiones Geoestratégicas de los Grandes Bloques Mundiales y sus Líderes</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-26-visiones-geoestrat-gicas-de-los-grandes-bloques-mundiales-y-sus-l-deres.html</link>
-      <pubDate>2025-05-26 07:01</pubDate>
+      <title>Los Acuerdos de Abraham: Análisis Crítico y Situación Actual</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-21-los-acuerdos-de-abraham-an-lisis-cr-tico-y-situaci-n-actual.html</link>
+      <pubDate>sáb, 21 jun 2025 14:42:00 +0200</pubDate>
+      <description>Análisis detallado y crítico de los Acuerdos de Abraham firmados en 2020, examinando sus orígenes, desarrollo, implicaciones geopolíticas, actores involucrados, y situación actual tras el conflicto Gaza-Israel, con especial atención a las consecuencias no previstas y limitaciones estructurales.</description>
     </item>
     <item>
-      <title>El Habeas Corpus en el Equilibrio Global de Poder</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-29-el-habeas-corpus-en-el-equilibrio-global-de-poder.html</link>
-      <pubDate>2025-05-29 08:16</pubDate>
+      <title>La Obsesión de Trump con el Premio Nobel de la Paz</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-21-la-obsesi-n-de-trump-con-el-premio-nobel-de-la-paz.html</link>
+      <pubDate>sáb, 21 jun 2025 14:25:00 +0200</pubDate>
+      <description>Análisis detallado de la obsesión de Donald Trump con el Premio Nobel de la Paz, examinando sus orígenes, manifestaciones durante ambos mandatos presidenciales, y las consecuencias políticas de esta búsqueda de reconocimiento internacional.</description>
     </item>
     <item>
-      <title>El Hábeas Corpus bajo Asedio: Análisis Crítico de las Intenciones de la Administración Trump</title>
-      <link>https://mcasrom.github.io/geo-ia/2025-05-29-el-h-beas-corpus-bajo-asedio-an-lisis-cr-tico-de-las-intenciones-de-la-administraci-n-trump.html</link>
-      <pubDate>2025-05-29 11:37</pubDate>
+      <title>Abismo creciente: desafección ciudadana y desconexión de la clase</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-21-abismo-creciente-desafecci-n-ciudadana-y-desconexi-n-de-la-clase-pol-tica.html</link>
+      <pubDate>sáb, 21 jun 2025 14:11:00 +0200</pubDate>
+      <description>Análisis crítico sobre la ruptura entre la ciudadanía y sus representantes políticos, las causas estructurales de esta desconexión, y las consecuencias sobre la legitimidad democrática.</description>
+    </item>
+    <item>
+      <title>Análisis del alza al 5% en defensa de la OTAN: Rutte, líder pragmático</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-20-an-lisis-del-alza-al-5-en-defensa-de-la-otan-rutte-l-der-pragm-tico.html</link>
+      <pubDate>vie, 20 jun 2025 11:39:00 +0200</pubDate>
+      <description>Análisis detallado y exhaustivo de las motivaciones detrás del incremento </description>
+    </item>
+    <item>
+      <title>Análisis del Equilibrio Geopolítico en Oriente Medio desde la Crisis</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-19-an-lisis-del-equilibrio-geopol-tico-en-oriente-medio-desde-la-crisis-iran-1979.html</link>
+      <pubDate>jue, 19 jun 2025 18:42:00 +0200</pubDate>
+      <description>Análisis Analítico del Equilibrio Geopolítico en Oriente Medio desde la Crisis Iraní de 1979</description>
+    </item>
+    <item>
+      <title>Composición Geopolítica, Cultural y Económica de los Países de</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-19-composici-n-geopol-tica-cultural-y-econ-mica-de-los-pa-ses-de-oriente-medio.html</link>
+      <pubDate>jue, 19 jun 2025 18:37:00 +0200</pubDate>
+      <description>Análisis_detallado de la composición de los países de Oriente Medio, incluyendo aspectos geopolíticos, demográficos, culturales, religiosos y económicos, con tablas y diagramas para ilustrar la diversidad y complejidad regional. </description>
+    </item>
+    <item>
+      <title>Casos de Corrupción en España (1975-2025)</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-18-casos-de-corrupci-n-en-espa-a-1975-2025-.html</link>
+      <pubDate>mié, 18 jun 2025 13:48:00 +0200</pubDate>
+      <description>Análisis de 75 escándalos de corrupción en España, desde Matesa hasta Cerdán</description>
+    </item>
+    <item>
+      <title>Corrupción Política en España: Análisis desde la Transición</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-18-corrupci-n-pol-tica-en-espa-a-an-lisis-desde-la-transici-n.html</link>
+      <pubDate>mié, 18 jun 2025 13:40:00 +0200</pubDate>
+      <description>Análisis detallado de los principales casos de corrupción política en España desde el establecimiento de la democracia, incluyendo evolución temporal, impacto institucional y patrones sistémicos.</description>
+    </item>
+    <item>
+      <title>El Bazar en la Casa Blanca: Ética Pública y Mercantilización del Poder</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-17-el-bazar-en-la-casa-blanca-tica-p-blica-y-mercantilizaci-n-del-poder.html</link>
+      <pubDate>mar, 17 jun 2025 15:11:00 +0200</pubDate>
+      <description>Análisis de la ética pública y la mercantilización del poder en la política moderna.</description>
+    </item>
+    <item>
+      <title>Responsabilidad ante el Conocimiento y el Deber de Conocer</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-17-responsabilidad-ante-el-conocimiento-y-el-deber-de-conocer.html</link>
+      <pubDate>mar, 17 jun 2025 13:05:00 +0200</pubDate>
+      <description>Análisis crítico sobre la responsabilidad política y ética ante el conocimiento o el deber de conocer en casos de corrupción, centrado en el caso Ábalos, Cerdán y Koldo durante el gobierno de Pedro Sánchez. Incluye tablas comparativas, referencias documentales y un diagrama explicativo en PlantUML.</description>
+    </item>
+    <item>
+      <title>Lord Acton y la Corrupción del Poder: Una Reflexión</title>
+      <link>https://mcasrom.github.io/geo-ia/2025-06-16-lord-acton-y-la-corrupci-n-del-poder-una-reflexi-n.html</link>
+      <pubDate>lun, 16 jun 2025 20:44:00 +0200</pubDate>
+      <description>Análisis crítico de la máxima de Lord Acton sobre la corrupción del poder aplicada al contexto político español contemporáneo, con comparaciones internacionales y propuestas de reforma institucional</description>
     </item>
   </channel>
 </rss>

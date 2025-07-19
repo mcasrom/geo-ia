@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Esferas de Influencia: De la Doctrina Monroe al Multipolarismo</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis histórico y contemporáneo de las esferas de influencia desde sus orígenes decimonónicos hasta el sistema multipolar actual, examinando la evolución del concepto, casos históricos clave y las dinámicas geopolíticas emergentes entre las grandes potencias." />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="Esferas de Influencia: De la Doctrina Monroe al Multipolarismo">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Esferas de Influencia: De la Doctrina Monroe al Multipolarismo</h1>
+
+<div id="outline-container-orgde6a176" class="outline-2">
+<h2 id="orgde6a176">Esferas de Influencia: De la Doctrina Monroe al Multipolarismo Contemporáneo</h2>
+<div class="outline-text-2" id="text-orgde6a176">
+<p>
+El concepto de <b>esferas de influencia</b> constituye uno de los pilares fundamentales para comprender la arquitectura del poder global. Desde sus orígenes decimonónicos hasta su manifestación en el sistema multipolar contemporáneo, estas zonas de predominio geopolítico han determinado el curso de la historia internacional y continúan siendo clave para analizar las dinámicas de poder actuales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9b7fc68" class="outline-2">
+<h2 id="org9b7fc68">Génesis Histórica del Concepto</h2>
+<div class="outline-text-2" id="text-org9b7fc68">
+</div>
+<div id="outline-container-org68ae40c" class="outline-3">
+<h3 id="org68ae40c">Los Antecedentes: Del Equilibrio Westfaliano a las Grandes Potencias</h3>
+<div class="outline-text-3" id="text-org68ae40c">
+<p>
+El sistema de Westfalia (1648) estableció los fundamentos de la soberanía estatal moderna, pero fue durante el siglo XIX cuando el concepto de esferas de influencia adquirió su forma definitiva. La expansión imperial europea y el declive del Imperio Otomano crearon vacíos de poder que las grandes potencias se apresuraron a llenar.
+</p>
+
+
+<div id="org19d9b0a" class="figure">
+<p><img src="./assets/images/spheres-origin.png" alt="spheres-origin.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7ec3295" class="outline-3">
+<h3 id="org7ec3295">La Doctrina Monroe: Primer Paradigma Moderno</h3>
+<div class="outline-text-3" id="text-org7ec3295">
+<p>
+La Doctrina Monroe (1823) representa el primer enunciado explícito de una esfera de influencia en términos modernos. James Monroe declaró que América era para los americanos, estableciendo un precedente que perduraría dos siglos.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Principio</th>
+<th scope="col" class="org-left">Descripción</th>
+<th scope="col" class="org-left">Implicaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">No Colonización</td>
+<td class="org-left">Europa no debe establecer nuevas colonias en América</td>
+<td class="org-left">Hegemonía estadounidense en el hemisferio</td>
+</tr>
+
+<tr>
+<td class="org-left">No Intervención</td>
+<td class="org-left">EE.UU. no intervendrá en asuntos europeos</td>
+<td class="org-left">Aislamiento estratégico selectivo</td>
+</tr>
+
+<tr>
+<td class="org-left">Reciprocidad</td>
+<td class="org-left">Europa no debe intervenir en América</td>
+<td class="org-left">Legitimación de intervenciones futuras</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd8c4877" class="outline-2">
+<h2 id="orgd8c4877">Consolidación en el Siglo XIX</h2>
+<div class="outline-text-2" id="text-orgd8c4877">
+</div>
+<div id="outline-container-org58a69e3" class="outline-3">
+<h3 id="org58a69e3">El "Gran Juego" Anglo-Ruso</h3>
+<div class="outline-text-3" id="text-org58a69e3">
+<p>
+El enfrentamiento entre el Imperio Británico y el Imperio Ruso en Asia Central (1813-1907) cristalizó la noción moderna de competencia por esferas de influencia. Esta rivalidad geopolítica estableció patrones que se repetirían en conflictos posteriores.
+</p>
+
+
+<div id="org0636d90" class="figure">
+<p><img src="./assets/images/great-game.png" alt="great-game.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1da3752" class="outline-3">
+<h3 id="org1da3752">La Conferencia de Berlín y el Reparto de África</h3>
+<div class="outline-text-3" id="text-org1da3752">
+<p>
+La Conferencia de Berlín (1884-1885) formalizó el concepto de esferas de influencia a través del reparto sistemático de África entre las potencias europeas.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Potencia</th>
+<th scope="col" class="org-left">Territorios Principales</th>
+<th scope="col" class="org-left">Estrategia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Reino Unido</td>
+<td class="org-left">Egipto, Sudáfrica, Nigeria</td>
+<td class="org-left">Control de rutas comerciales</td>
+</tr>
+
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-left">África Occidental, Madagascar</td>
+<td class="org-left">Expansión continental</td>
+</tr>
+
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-left">África Oriental, Camerún</td>
+<td class="org-left">Llegada tardía, compensación</td>
+</tr>
+
+<tr>
+<td class="org-left">Bélgica</td>
+<td class="org-left">Congo</td>
+<td class="org-left">Explotación económica intensiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Portugal</td>
+<td class="org-left">Angola, Mozambique</td>
+<td class="org-left">Mantenimiento histórico</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org875c968" class="outline-2">
+<h2 id="org875c968">Las Esferas de Influencia en el Siglo XX</h2>
+<div class="outline-text-2" id="text-org875c968">
+</div>
+<div id="outline-container-orgfb45701" class="outline-3">
+<h3 id="orgfb45701">La Era de los Bloques: 1945-1991</h3>
+<div class="outline-text-3" id="text-orgfb45701">
+<p>
+La Guerra Fría representó la cristalización más perfecta del concepto de esferas de influencia, dividiendo el mundo en dos bloques antagónicos.
+</p>
+
+
+<div id="org437420a" class="figure">
+<p><img src="./assets/images/cold-war-spheres.png" alt="cold-war-spheres.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd450f07" class="outline-3">
+<h3 id="orgd450f07">Acuerdos de Yalta y la División del Mundo</h3>
+<div class="outline-text-3" id="text-orgd450f07">
+<p>
+Los Acuerdos de Yalta (1945) formalizaron la división de Europa en esferas de influencia, estableciendo un precedente para la bipolaridad de posguerra.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Región</th>
+<th scope="col" class="org-left">Esfera de Influencia</th>
+<th scope="col" class="org-left">Mecanismo de Control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Europa Occidental</td>
+<td class="org-left">Estados Unidos</td>
+<td class="org-left">Plan Marshall, OTAN</td>
+</tr>
+
+<tr>
+<td class="org-left">Europa Oriental</td>
+<td class="org-left">Unión Soviética</td>
+<td class="org-left">COMECON, Pacto de Varsovia</td>
+</tr>
+
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-left">División</td>
+<td class="org-left">Ocupación cuatripartita</td>
+</tr>
+
+<tr>
+<td class="org-left">Corea</td>
+<td class="org-left">División</td>
+<td class="org-left">Zonas de ocupación</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcfd78b2" class="outline-2">
+<h2 id="orgcfd78b2">Transformaciones Post-Guerra Fría</h2>
+<div class="outline-text-2" id="text-orgcfd78b2">
+</div>
+<div id="outline-container-org7fb77de" class="outline-3">
+<h3 id="org7fb77de">El Momento Unipolar (1991-2008)</h3>
+<div class="outline-text-3" id="text-org7fb77de">
+<p>
+La disolución de la Unión Soviética creó un vacío geopolítico que Estados Unidos llenó temporalmente, estableciendo una hegemonía global sin precedentes.
+</p>
+
+
+<div id="org7c189b2" class="figure">
+<p><img src="./assets/images/unipolar-moment.png" alt="unipolar-moment.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org876c585" class="outline-3">
+<h3 id="org876c585">El Resurgimiento de las Potencias Regionales</h3>
+<div class="outline-text-3" id="text-org876c585">
+<p>
+A partir de 2008, el sistema internacional experimentó una transición hacia el multipolarismo, con el resurgimiento de potencias regionales que desafiaron la hegemonía estadounidense.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Potencia</th>
+<th scope="col" class="org-left">Región de Influencia</th>
+<th scope="col" class="org-left">Instrumentos</th>
+<th scope="col" class="org-left">Desafíos a EE.UU.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">China</td>
+<td class="org-left">Asia-Pacífico</td>
+<td class="org-left">BRI, AIIB</td>
+<td class="org-left">Disputa comercial, Taiwan</td>
+</tr>
+
+<tr>
+<td class="org-left">Rusia</td>
+<td class="org-left">Europa Oriental, Asia Central</td>
+<td class="org-left">Energía, militar</td>
+<td class="org-left">Ucrania, Siria</td>
+</tr>
+
+<tr>
+<td class="org-left">India</td>
+<td class="org-left">Océano Índico, Asia del Sur</td>
+<td class="org-left">Quad, Act East</td>
+<td class="org-left">Limitados</td>
+</tr>
+
+<tr>
+<td class="org-left">Irán</td>
+<td class="org-left">Oriente Medio</td>
+<td class="org-left">Proxies, chiitas</td>
+<td class="org-left">Programa nuclear</td>
+</tr>
+
+<tr>
+<td class="org-left">Turquía</td>
+<td class="org-left">Mediterráneo Oriental</td>
+<td class="org-left">Neo-otomanismo</td>
+<td class="org-left">Siria, Libia</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdcc7b17" class="outline-2">
+<h2 id="orgdcc7b17">Esferas de Influencia Contemporáneas</h2>
+<div class="outline-text-2" id="text-orgdcc7b17">
+</div>
+<div id="outline-container-orgea689e4" class="outline-3">
+<h3 id="orgea689e4">El Pivote Asiático y la Respuesta China</h3>
+<div class="outline-text-3" id="text-orgea689e4">
+<p>
+La estrategia estadounidense del "Pivot to Asia" (2011) y la respuesta china a través de la Iniciativa de la Franja y la Ruta han redefinido las dinámicas geopolíticas en Asia-Pacífico.
+</p>
+
+
+<div id="org99a32b2" class="figure">
+<p><img src="./assets/images/asia-pacific-competition.png" alt="asia-pacific-competition.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd8f9cd0" class="outline-3">
+<h3 id="orgd8f9cd0">La Doctrina Putin y la Esfera Post-Soviética</h3>
+<div class="outline-text-3" id="text-orgd8f9cd0">
+<p>
+Rusia ha desarrollado una doctrina explícita de esferas de influencia en el espacio post-soviético, utilizando instrumentos económicos, energéticos y militares.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">Status</th>
+<th scope="col" class="org-left">Instrumentos Rusos</th>
+<th scope="col" class="org-left">Nivel de Influencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bielorrusia</td>
+<td class="org-left">Satélite</td>
+<td class="org-left">Energía, militar</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Kazajstán</td>
+<td class="org-left">Aliado estratégico</td>
+<td class="org-left">OTSC, energía</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Armenia</td>
+<td class="org-left">Dependiente</td>
+<td class="org-left">Base militar, energía</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Kirguistán</td>
+<td class="org-left">Influencia rusa</td>
+<td class="org-left">Base militar, remesas</td>
+<td class="org-left">Medio-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Uzbekistán</td>
+<td class="org-left">Equilibrio</td>
+<td class="org-left">Cooperación limitada</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Georgia</td>
+<td class="org-left">Hostil</td>
+<td class="org-left">Territorio ocupado</td>
+<td class="org-left">Negativo</td>
+</tr>
+
+<tr>
+<td class="org-left">Ucrania</td>
+<td class="org-left">En disputa</td>
+<td class="org-left">Guerra, proxies</td>
+<td class="org-left">Conflictivo</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9f873b6" class="outline-2">
+<h2 id="org9f873b6">Instrumentos Contemporáneos de las Esferas de Influencia</h2>
+<div class="outline-text-2" id="text-org9f873b6">
+</div>
+<div id="outline-container-org143bea6" class="outline-3">
+<h3 id="org143bea6">Poder Económico: BRI vs. Iniciativas Occidentales</h3>
+<div class="outline-text-3" id="text-org143bea6">
+
+<div id="org0474aa6" class="figure">
+<p><img src="./assets/images/economic-instruments.png" alt="economic-instruments.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9996c8e" class="outline-3">
+<h3 id="org9996c8e">Poder Militar: Bases y Alianzas</h3>
+<div class="outline-text-3" id="text-org9996c8e">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Potencia</th>
+<th scope="col" class="org-left">Bases Extranjeras</th>
+<th scope="col" class="org-left">Alianzas Militares</th>
+<th scope="col" class="org-left">Gasto Militar (2024)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Estados Unidos</td>
+<td class="org-left">750+ bases</td>
+<td class="org-left">OTAN, Quad, AUKUS</td>
+<td class="org-left">$877 billones</td>
+</tr>
+
+<tr>
+<td class="org-left">China</td>
+<td class="org-left">5 bases confirmadas</td>
+<td class="org-left">SCO, limitadas</td>
+<td class="org-left">$292 billones</td>
+</tr>
+
+<tr>
+<td class="org-left">Rusia</td>
+<td class="org-left">20+ bases</td>
+<td class="org-left">OTSC, limitadas</td>
+<td class="org-left">$109 billones</td>
+</tr>
+
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-left">15+ bases</td>
+<td class="org-left">Sahel, Índico</td>
+<td class="org-left">$61 billones</td>
+</tr>
+
+<tr>
+<td class="org-left">Reino Unido</td>
+<td class="org-left">10+ bases</td>
+<td class="org-left">AUKUS, Commonwealth</td>
+<td class="org-left">$74 billones</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge9fa3db" class="outline-2">
+<h2 id="orge9fa3db">Desafíos y Limitaciones del Concepto</h2>
+<div class="outline-text-2" id="text-orge9fa3db">
+</div>
+<div id="outline-container-org62d3de1" class="outline-3">
+<h3 id="org62d3de1">La Erosión Westfaliana: Actores No Estatales</h3>
+<div class="outline-text-3" id="text-org62d3de1">
+<p>
+El sistema internacional contemporáneo enfrenta el desafío de actores no estatales que trascienden las esferas de influencia tradicionales.
+</p>
+
+
+<div id="orgb0ec0d5" class="figure">
+<p><img src="./assets/images/non-state-actors.png" alt="non-state-actors.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9b6626f" class="outline-3">
+<h3 id="org9b6626f">La Paradoja de la Interdependencia</h3>
+<div class="outline-text-3" id="text-org9b6626f">
+<p>
+La globalización económica ha creado una paradoja: mientras las potencias compiten por esferas de influencia, permanecen económicamente interdependientes.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Relación</th>
+<th scope="col" class="org-left">Comercio Bilateral (2023)</th>
+<th scope="col" class="org-left">Dependencia Mutua</th>
+<th scope="col" class="org-left">Tensión Geopolítica</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">EE.UU.-China</td>
+<td class="org-left">$690 billones</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Muy Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">UE-Rusia</td>
+<td class="org-left">$158 billones (pre-2022)</td>
+<td class="org-left">Energética</td>
+<td class="org-left">Muy Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">China-UE</td>
+<td class="org-left">$847 billones</td>
+<td class="org-left">Comercial</td>
+<td class="org-left">Media</td>
+</tr>
+
+<tr>
+<td class="org-left">EE.UU.-India</td>
+<td class="org-left">$191 billones</td>
+<td class="org-left">Tecnológica</td>
+<td class="org-left">Baja</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org671b7df" class="outline-2">
+<h2 id="org671b7df">Implicaciones para el Orden Internacional</h2>
+<div class="outline-text-2" id="text-org671b7df">
+</div>
+<div id="outline-container-org4dc30a8" class="outline-3">
+<h3 id="org4dc30a8">Hacia un Mundo Multipolar: El Fin de la Hegemonía</h3>
+<div class="outline-text-3" id="text-org4dc30a8">
+<p>
+El sistema internacional evoluciona hacia un multipolarismo complejo donde múltiples potencias mantienen esferas de influencia superpuestas y a menudo conflictivas.
+</p>
+
+
+<div id="orgaba96d9" class="figure">
+<p><img src="./assets/images/multipolar-world.png" alt="multipolar-world.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgc9122d5" class="outline-3">
+<h3 id="orgc9122d5">El Dilema de las Potencias Medias</h3>
+<div class="outline-text-3" id="text-orgc9122d5">
+<p>
+Las potencias medias enfrentan el desafío de navegar entre múltiples esferas de influencia, adoptando estrategias de <b>hedging</b> para maximizar su autonomía.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Potencia Media</th>
+<th scope="col" class="org-left">Estrategia Principal</th>
+<th scope="col" class="org-left">Balancing Acts</th>
+<th scope="col" class="org-left">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Turquía</td>
+<td class="org-left">Multi-alineamiento</td>
+<td class="org-left">OTAN vs. Rusia</td>
+<td class="org-left">Autonomía aumentada</td>
+</tr>
+
+<tr>
+<td class="org-left">Brasil</td>
+<td class="org-left">Autonomía regional</td>
+<td class="org-left">EE.UU. vs. China</td>
+<td class="org-left">Liderazgo sudamericano</td>
+</tr>
+
+<tr>
+<td class="org-left">Indonesia</td>
+<td class="org-left">No alineamiento</td>
+<td class="org-left">Quad vs. China</td>
+<td class="org-left">Neutralidad activa</td>
+</tr>
+
+<tr>
+<td class="org-left">Arabia Saudí</td>
+<td class="org-left">Diversificación</td>
+<td class="org-left">EE.UU. vs. China</td>
+<td class="org-left">Maximización opciones</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org66f005a" class="outline-2">
+<h2 id="org66f005a">Prospectiva: El Futuro de las Esferas de Influencia</h2>
+<div class="outline-text-2" id="text-org66f005a">
+</div>
+<div id="outline-container-org597afef" class="outline-3">
+<h3 id="org597afef">Escenarios Emergentes</h3>
+<div class="outline-text-3" id="text-org597afef">
+
+<div id="org5018f19" class="figure">
+<p><img src="./assets/images/future-scenarios.png" alt="future-scenarios.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcf3d864" class="outline-3">
+<h3 id="orgcf3d864">Factores Determinantes</h3>
+<div class="outline-text-3" id="text-orgcf3d864">
+<table border="2" cellspacing="0" cellpadding="6" rules="all" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Factor</th>
+<th scope="col" class="org-left">Impacto</th>
+<th scope="col" class="org-left">Dirección Probable</th>
+<th scope="col" class="org-left">Consecuencias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Crecimiento económico relativo</td>
+<td class="org-left">Alto</td>
+<td class="org-left">Convergencia China-EE.UU.</td>
+<td class="org-left">Bipolaridad económica</td>
+</tr>
+
+<tr>
+<td class="org-left">Innovación tecnológica</td>
+<td class="org-left">Muy Alto</td>
+<td class="org-left">Competencia EE.UU.-China</td>
+<td class="org-left">Desacoplamiento selectivo</td>
+</tr>
+
+<tr>
+<td class="org-left">Cambio climático</td>
+<td class="org-left">Medio</td>
+<td class="org-left">Cooperación necesaria</td>
+<td class="org-left">Nuevas alianzas verdes</td>
+</tr>
+
+<tr>
+<td class="org-left">Demografía</td>
+<td class="org-left">Medio</td>
+<td class="org-left">Envejecimiento occidental</td>
+<td class="org-left">Ventaja países jóvenes</td>
+</tr>
+
+<tr>
+<td class="org-left">Recursos naturales</td>
+<td class="org-left">Alto</td>
+<td class="org-left">Escasez creciente</td>
+<td class="org-left">Competencia intensificada</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb803132" class="outline-2">
+<h2 id="orgb803132">Conclusiones</h2>
+<div class="outline-text-2" id="text-orgb803132">
+<p>
+Las esferas de influencia han evolucionado desde conceptos decimonónicos relativamente simples hasta complejas redes de poder superpuestas en el siglo XXI. El multipolarismo emergente presenta tanto oportunidades como desafíos para la estabilidad internacional.
+</p>
+
+<p>
+La clave para entender el futuro radica en reconocer que las esferas de influencia contemporáneas son más fluidas, superpuestas y contestadas que sus predecesoras históricas. En este contexto, la habilidad de las potencias para adaptarse a la realidad multipolar determinará su éxito geopolítico.
+</p>
+
+<p>
+El concepto de esferas de influencia permanece relevante, pero su manifestación en el siglo XXI requiere marcos conceptuales más sofisticados que reconozcan la complejidad del poder en la era global.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge080391" class="outline-2">
+<h2 id="orge080391">Referencias</h2>
+<div class="outline-text-2" id="text-orge080391">
+<ol class="org-ol">
+<li>Kissinger, Henry A. <i>World Order</i>. New York: Penguin Books, 2014.</li>
+
+<li>Mearsheimer, John J. <i>The Tragedy of Great Power Politics</i>. New York: W.W. Norton, 2001.</li>
+
+<li>Kagan, Robert. <i>The Return of History and the End of Dreams</i>. New York: Knopf, 2008.</li>
+
+<li>Allison, Graham. <i>Destined for War: Can America and China Escape Thucydides's Trap?</i> Boston: Houghton Mifflin Harcourt, 2017.</li>
+
+<li>Zakaria, Fareed. <i>The Post-American World: Release 2.0</i>. New York: W.W. Norton, 2011.</li>
+
+<li>Walt, Stephen M. <i>The Origins of Alliances</i>. Ithaca: Cornell University Press, 1987.</li>
+
+<li>Gilpin, Robert. <i>War and Change in World Politics</i>. Cambridge: Cambridge University Press, 1981.</li>
+
+<li>Kennedy, Paul. <i>The Rise and Fall of the Great Powers</i>. New York: Random House, 1987.</li>
+
+<li>Brzezinski, Zbigniew. <i>The Grand Chessboard: American Primacy and Its Geostrategic Imperatives</i>. New York: Basic Books, 1997.</li>
+
+<li>Layne, Christopher. "The Unipolar Illusion Revisited: The Coming End of the United States' Unipolar Moment." <i>International Security</i> 31, no. 2 (2006): 7-41.</li>
+</ol>
+
+<!-- Tags: #geopolitica #realismo #balance-poder #multipolarismo -->
+
+
+<p class="post-meta">Publicado el 2025-06-08 14:58 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

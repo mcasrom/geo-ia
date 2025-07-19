@@ -1,0 +1,2275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 20:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Impacto Gasto Defensa NATO 3.5% + 1.5%: Propuesta Trump</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis exhaustivo del impacto económico, político y estratégico de la propuesta de Donald Trump de incrementar el gasto en defensa NATO al 5% del PIB, estructurado en 3.5% defensa directa + 1.5% seguridad ampliada, incluyendo implicaciones fiscales para los 32 países miembros, mecanismos de implementación y efectos en la cohesión de la alianza transatlántica" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Impacto Gasto Defensa NATO 3.5% + 1.5%: Propuesta Trump</h1>
+
+<div id="outline-container-org684b20a" class="outline-2">
+<h2 id="org684b20a">Impacto Gasto Defensa NATO 3.5% + 1.5%: Propuesta Trump</h2>
+<div class="outline-text-2" id="text-org684b20a">
+<p>
+La propuesta de Donald Trump de elevar el gasto en defensa de los países NATO a un 5% del PIB (estructurado como 3.5% defensa directa + 1.5% seguridad ampliada) representa un cambio paradigmático en la financiación de la alianza atlántica. Este análisis examina las implicaciones económicas, políticas y estratégicas de esta demanda sin precedentes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7a8606b" class="outline-2">
+<h2 id="org7a8606b">Marco Contextual y Antecedentes</h2>
+<div class="outline-text-2" id="text-org7a8606b">
+</div>
+<div id="outline-container-org6a94c30" class="outline-3">
+<h3 id="org6a94c30">Evolución del Compromiso de Gasto NATO</h3>
+<div class="outline-text-3" id="text-org6a94c30">
+<table border="2" cellspacing="0" cellpadding="5" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-right">2014</th>
+<th scope="col" class="org-right">2024</th>
+<th scope="col" class="org-left">Meta Trump 5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Estados Unidos</td>
+<td class="org-right">3.6%</td>
+<td class="org-right">3.2%</td>
+<td class="org-left">Mantiene</td>
+</tr>
+
+<tr>
+<td class="org-left">Polonia</td>
+<td class="org-right">1.9%</td>
+<td class="org-right">4.1%</td>
+<td class="org-left">Cercano</td>
+</tr>
+
+<tr>
+<td class="org-left">Estonia</td>
+<td class="org-right">2.0%</td>
+<td class="org-right">3.4%</td>
+<td class="org-left">Comprometido</td>
+</tr>
+
+<tr>
+<td class="org-left">Lituania</td>
+<td class="org-right">0.9%</td>
+<td class="org-right">2.9%</td>
+<td class="org-left">Comprometido</td>
+</tr>
+
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-right">1.2%</td>
+<td class="org-right">2.1%</td>
+<td class="org-left">Desafío mayor</td>
+</tr>
+
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-right">2.1%</td>
+<td class="org-right">2.0%</td>
+<td class="org-left">Desafío mayor</td>
+</tr>
+
+<tr>
+<td class="org-left">España</td>
+<td class="org-right">0.9%</td>
+<td class="org-right">1.3%</td>
+<td class="org-left">Desafío crítico</td>
+</tr>
+
+<tr>
+<td class="org-left">Italia</td>
+<td class="org-right">1.5%</td>
+<td class="org-right">1.6%</td>
+<td class="org-left">Desafío crítico</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org601fa26" class="outline-3">
+<h3 id="org601fa26">Génesis de la Propuesta Trump</h3>
+<div class="outline-text-3" id="text-org601fa26">
+<p>
+La demanda surge de múltiples factores estratégicos:
+</p>
+
+<ul class="org-ul">
+<li>Cambio en el balance geopolítico mundial</li>
+<li>Presión fiscal estadounidense por burden-sharing</li>
+<li>Amenaza percibida de China y Rusia</li>
+<li>Necesidad de modernización tecnológica militar</li>
+</ul>
+
+
+<div id="orgec28b1b" class="figure">
+<p><img src="./assets/images/trump-motivations.png" alt="trump-motivations.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd610d0d" class="outline-2">
+<h2 id="orgd610d0d">Análisis del Impacto Fiscal por Países</h2>
+<div class="outline-text-2" id="text-orgd610d0d">
+</div>
+<div id="outline-container-org4a83f56" class="outline-3">
+<h3 id="org4a83f56">Impacto en el Déficit Público</h3>
+<div class="outline-text-3" id="text-org4a83f56">
+<p>
+La implementación del 5% representaría incrementos presupuestarios masivos:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="5" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-right">PIB 2024 (€T)</th>
+<th scope="col" class="org-right">Gasto Actual (€B)</th>
+<th scope="col" class="org-left">Gasto Requerido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-right">4.3</td>
+<td class="org-right">90</td>
+<td class="org-left">215 (+125)</td>
+</tr>
+
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-right">2.9</td>
+<td class="org-right">58</td>
+<td class="org-left">145 (+87)</td>
+</tr>
+
+<tr>
+<td class="org-left">Reino Unido</td>
+<td class="org-right">3.1</td>
+<td class="org-right">75</td>
+<td class="org-left">155 (+80)</td>
+</tr>
+
+<tr>
+<td class="org-left">Italia</td>
+<td class="org-right">2.1</td>
+<td class="org-right">34</td>
+<td class="org-left">105 (+71)</td>
+</tr>
+
+<tr>
+<td class="org-left">España</td>
+<td class="org-right">1.4</td>
+<td class="org-right">18</td>
+<td class="org-left">70 (+52)</td>
+</tr>
+
+<tr>
+<td class="org-left">Países Bajos</td>
+<td class="org-right">1.0</td>
+<td class="org-right">17</td>
+<td class="org-left">50 (+33)</td>
+</tr>
+
+<tr>
+<td class="org-left">Polonia</td>
+<td class="org-right">0.7</td>
+<td class="org-right">29</td>
+<td class="org-left">35 (+6)</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+
+<div id="outline-container-org10bceb9" class="outline-4">
+<h4 id="org10bceb9">Consecuencias en Déficit</h4>
+<div class="outline-text-4" id="text-org10bceb9">
+<ul class="org-ul">
+<li><b><b>Alemania</b></b>: Riesgo de superar el 3% de déficit del Pacto de Estabilidad</li>
+<li><b><b>Francia</b></b>: Presión adicional sobre déficit ya elevado (5.5%)</li>
+<li><b><b>Italia</b></b>: Compromete reducción de deuda pública (137% PIB)</li>
+<li><b><b>España</b></b>: Impacto moderado pero significativo</li>
+</ul>
+
+
+<div id="org450d071" class="figure">
+<p><img src="./assets/images/fiscal-impact.png" alt="fiscal-impact.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9186ca8" class="outline-2">
+<h2 id="org9186ca8">Mecanismos de Implementación y Acuerdo</h2>
+<div class="outline-text-2" id="text-org9186ca8">
+</div>
+<div id="outline-container-orgeb247ad" class="outline-3">
+<h3 id="orgeb247ad">Estructura Propuesta por Rutte</h3>
+<div class="outline-text-3" id="text-orgeb247ad">
+<p>
+La propuesta del Secretario General NATO Mark Rutte estructura el 5%:
+</p>
+<ul class="org-ul">
+<li><b><b>3.5% PIB</b></b>: Gasto militar directo tradicional</li>
+<li><b><b>1.5% PIB</b></b>: Gasto en seguridad ampliada (ciberseguridad, inteligencia, infraestructura crítica)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf475509" class="outline-3">
+<h3 id="orgf475509">Proceso de Negociación</h3>
+<div class="outline-text-3" id="text-orgf475509">
+<table border="2" cellspacing="0" cellpadding="5" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fase</th>
+<th scope="col" class="org-left">Período</th>
+<th scope="col" class="org-left">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Propuesta Inicial</td>
+<td class="org-left">Enero 2025</td>
+<td class="org-left">Resistencia UE</td>
+</tr>
+
+<tr>
+<td class="org-left">Consultas</td>
+<td class="org-left">Feb-Mayo 2025</td>
+<td class="org-left">Reformulación</td>
+</tr>
+
+<tr>
+<td class="org-left">Cumbre La Haya</td>
+<td class="org-left">Junio 2025</td>
+<td class="org-left">Acuerdo Parcial</td>
+</tr>
+
+<tr>
+<td class="org-left">Implementación</td>
+<td class="org-left">2025-2032</td>
+<td class="org-left">Gradual</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6d3436d" class="outline-3">
+<h3 id="org6d3436d">Mecanismos de Cumplimiento</h3>
+<div class="outline-text-3" id="text-org6d3436d">
+
+<div id="org7a9c422" class="figure">
+<p><img src="./assets/images/compliance-mechanism.png" alt="compliance-mechanism.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1845371" class="outline-2">
+<h2 id="org1845371">Análisis Político: Ganadores y Perdedores</h2>
+<div class="outline-text-2" id="text-org1845371">
+</div>
+<div id="outline-container-org8def048" class="outline-3">
+<h3 id="org8def048">Ganadores</h3>
+<div class="outline-text-3" id="text-org8def048">
+</div>
+<div id="outline-container-org4bf22ed" class="outline-4">
+<h4 id="org4bf22ed">Estados Unidos</h4>
+<div class="outline-text-4" id="text-org4bf22ed">
+<ul class="org-ul">
+<li>Reducción burden-sharing de 68.7% a 53.8%</li>
+<li>Fortalecimiento industria militar</li>
+<li>Mayor legitimidad demandas futuras</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd4d2fad" class="outline-4">
+<h4 id="orgd4d2fad">Industria Militar</h4>
+<div class="outline-text-4" id="text-orgd4d2fad">
+<ul class="org-ul">
+<li>Mercado expandido €400B anuales adicionales</li>
+<li>Consolidación tecnológica</li>
+<li>Empleos especializados</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcff572d" class="outline-4">
+<h4 id="orgcff572d">Europa Oriental</h4>
+<div class="outline-text-4" id="text-orgcff572d">
+<ul class="org-ul">
+<li>Mayor seguridad percibida</li>
+<li>Inversión en capacidades nacionales</li>
+<li>Fortalecimiento posición geopolítica</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb53f8ec" class="outline-3">
+<h3 id="orgb53f8ec">Perdedores</h3>
+<div class="outline-text-3" id="text-orgb53f8ec">
+</div>
+<div id="outline-container-org50f8a78" class="outline-4">
+<h4 id="org50f8a78">Programas Sociales Europeos</h4>
+<div class="outline-text-4" id="text-org50f8a78">
+<ul class="org-ul">
+<li>Presión sobre gasto público social</li>
+<li>Posible reducción servicios welfare</li>
+<li>Tensión política interna</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge795691" class="outline-4">
+<h4 id="orge795691">Contribuyentes</h4>
+<div class="outline-text-4" id="text-orge795691">
+<ul class="org-ul">
+<li>Mayor carga fiscal directa/indirecta</li>
+<li>Oportunidad coste inversión productiva</li>
+<li>Impacto inflacionario potencial</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org64ee069" class="outline-4">
+<h4 id="org64ee069">Pacto de Estabilidad UE</h4>
+<div class="outline-text-4" id="text-org64ee069">
+<ul class="org-ul">
+<li>Flexibilización forzada reglas fiscales</li>
+<li>Debilitamiento disciplina presupuestaria</li>
+<li>Tensión integración europea</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge66efe7" class="outline-2">
+<h2 id="orge66efe7">Impacto en la Política MAGA</h2>
+<div class="outline-text-2" id="text-orge66efe7">
+</div>
+<div id="outline-container-org0e99b1c" class="outline-3">
+<h3 id="org0e99b1c">Dimensión Electoral</h3>
+<div class="outline-text-3" id="text-org0e99b1c">
+<p>
+La propuesta satisface pilares centrales MAGA:
+</p>
+<ul class="org-ul">
+<li><b><b>America First</b></b>: Reducción compromisos financieros US</li>
+<li><b><b>Strength</b></b>: Proyección poder militar</li>
+<li><b><b>Fairness</b></b>: Burden-sharing equilibrado</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6782f63" class="outline-3">
+<h3 id="org6782f63">Tensiones Internas</h3>
+<div class="outline-text-3" id="text-org6782f63">
+<table border="2" cellspacing="0" cellpadding="5" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Facción</th>
+<th scope="col" class="org-left">Posición</th>
+<th scope="col" class="org-left">Argumentos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Aislacionistas</td>
+<td class="org-left">Escéptica</td>
+<td class="org-left">Sobre-compromiso</td>
+</tr>
+
+<tr>
+<td class="org-left">Halcones</td>
+<td class="org-left">Favorable</td>
+<td class="org-left">Deterrence</td>
+</tr>
+
+<tr>
+<td class="org-left">Fiscales</td>
+<td class="org-left">Condicional</td>
+<td class="org-left">Reducción US</td>
+</tr>
+
+<tr>
+<td class="org-left">Populistas</td>
+<td class="org-left">Ambivalente</td>
+<td class="org-left">Focus Doméstico</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org78f9c29" class="outline-2">
+<h2 id="org78f9c29">Dilema: Defensa vs. Gasto Social</h2>
+<div class="outline-text-2" id="text-org78f9c29">
+</div>
+<div id="outline-container-org0c1f07b" class="outline-3">
+<h3 id="org0c1f07b">Trade-offs Presupuestarios</h3>
+<div class="outline-text-3" id="text-org0c1f07b">
+<p>
+El incremento al 5% implica decisiones distributivas críticas:
+</p>
+</div>
+
+<div id="outline-container-org0363462" class="outline-4">
+<h4 id="org0363462">Escenario 1: Mantenimiento Gasto Social</h4>
+<div class="outline-text-4" id="text-org0363462">
+<ul class="org-ul">
+<li>Incremento déficit 2-3 puntos PIB</li>
+<li>Violación reglas fiscales UE</li>
+<li>Presión inflacionaria</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfeb37ed" class="outline-4">
+<h4 id="orgfeb37ed">Escenario 2: Reducción Gasto Social</h4>
+<div class="outline-text-4" id="text-orgfeb37ed">
+<ul class="org-ul">
+<li>Tensión social y política</li>
+<li>Debilitamiento welfare state</li>
+<li>Resistencia electoral</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6516b58" class="outline-4">
+<h4 id="org6516b58">Escenario 3: Incremento Fiscal</h4>
+<div class="outline-text-4" id="text-org6516b58">
+<ul class="org-ul">
+<li>Impactos competitividad</li>
+<li>Fuga capitales</li>
+<li>Recesión potencial</li>
+</ul>
+
+<p>
+<br />
+</p>
+
+
+<div id="orga43cbe6" class="figure">
+<p><img src="./assets/images/policy-trilemma.png" alt="policy-trilemma.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0e0d97d" class="outline-2">
+<h2 id="org0e0d97d">Implementación del Acuerdo: 32 Países NATO</h2>
+<div class="outline-text-2" id="text-org0e0d97d">
+</div>
+<div id="outline-container-org928a49b" class="outline-3">
+<h3 id="org928a49b">Clasificación por Capacidad de Implementación</h3>
+<div class="outline-text-3" id="text-org928a49b">
+</div>
+<div id="outline-container-org2ccd9c0" class="outline-4">
+<h4 id="org2ccd9c0">Tier 1: Implementación Viable (8 países)</h4>
+<div class="outline-text-4" id="text-org2ccd9c0">
+<ul class="org-ul">
+<li>Estados Unidos, Polonia, Estonia, Lituania, Letonia, Reino Unido, Grecia, Noruega</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1154416" class="outline-4">
+<h4 id="org1154416">Tier 2: Implementación Desafiante (12 países)</h4>
+<div class="outline-text-4" id="text-org1154416">
+<ul class="org-ul">
+<li>Alemania, Francia, Países Bajos, Dinamarca, República Checa, Eslovaquia, Eslovenia, Croacia, Montenegro, Macedonia del Norte, Albania, Turquía</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org02bffed" class="outline-4">
+<h4 id="org02bffed">Tier 3: Implementación Crítica (12 países)</h4>
+<div class="outline-text-4" id="text-org02bffed">
+<ul class="org-ul">
+<li>Italia, España, Bélgica, Portugal, Luxemburgo, Islandia, Canadá, Hungría, Rumania, Bulgaria, Finlandia, Suecia</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga34d1e2" class="outline-3">
+<h3 id="orga34d1e2">Cronograma Escalonado</h3>
+<div class="outline-text-3" id="text-orga34d1e2">
+<table border="2" cellspacing="0" cellpadding="5" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Período</th>
+<th scope="col" class="org-right">Meta</th>
+<th scope="col" class="org-left">Países Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2025-2027</td>
+<td class="org-right">3.0%</td>
+<td class="org-left">Tier 1</td>
+</tr>
+
+<tr>
+<td class="org-right">2027-2030</td>
+<td class="org-right">4.0%</td>
+<td class="org-left">Tier 1+2</td>
+</tr>
+
+<tr>
+<td class="org-right">2030-2032</td>
+<td class="org-right">5.0%</td>
+<td class="org-left">Todos</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10a8e4d" class="outline-2">
+<h2 id="org10a8e4d">Principio de Solidaridad NATO</h2>
+<div class="outline-text-2" id="text-org10a8e4d">
+</div>
+<div id="outline-container-org8b36584" class="outline-3">
+<h3 id="org8b36584">Reinterpretación Artículo 5</h3>
+<div class="outline-text-3" id="text-org8b36584">
+<p>
+La propuesta Trump implica una reinterpretación condicional:
+</p>
+<ul class="org-ul">
+<li>Solidaridad vinculada a contribución financiera</li>
+<li>Cuestionamiento automático respuesta colectiva</li>
+<li>Gradación compromisos según compliance</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org781c4e9" class="outline-3">
+<h3 id="org781c4e9">Impacto en Cohesión Alianza</h3>
+<div class="outline-text-3" id="text-org781c4e9">
+
+<div id="orgadc13c8" class="figure">
+<p><img src="./assets/images/solidarity-impact.png" alt="solidarity-impact.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org03f304f" class="outline-2">
+<h2 id="org03f304f">Mecanismos de Incumplimiento</h2>
+<div class="outline-text-2" id="text-org03f304f">
+</div>
+<div id="outline-container-org77f4a33" class="outline-3">
+<h3 id="org77f4a33">Sanciones Graduales</h3>
+<div class="outline-text-3" id="text-org77f4a33">
+</div>
+<div id="outline-container-orge5817e2" class="outline-4">
+<h4 id="orge5817e2">Nivel 1: Diplomático</h4>
+<div class="outline-text-4" id="text-orge5817e2">
+<ul class="org-ul">
+<li>Exclusión reuniones restringidas</li>
+<li>Reducción acceso información clasificada</li>
+<li>Presión pública bilateral</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcd0e16e" class="outline-4">
+<h4 id="orgcd0e16e">Nivel 2: Operacional</h4>
+<div class="outline-text-4" id="text-orgcd0e16e">
+<ul class="org-ul">
+<li>Limitación ejercicios conjuntos</li>
+<li>Reducción intercambio tecnológico</li>
+<li>Menor prioridad en crisis</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9dbcf12" class="outline-4">
+<h4 id="org9dbcf12">Nivel 3: Estructural</h4>
+<div class="outline-text-4" id="text-org9dbcf12">
+<ul class="org-ul">
+<li>Cuestionamiento Artículo 5</li>
+<li>Exclusión comando integrado</li>
+<li>Revisión status alianza</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge0e4642" class="outline-3">
+<h3 id="orge0e4642">Precedentes Históricos</h3>
+<div class="outline-text-3" id="text-orge0e4642">
+<table border="2" cellspacing="0" cellpadding="5" rules="all" frame="border">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">Incumplimiento</th>
+<th scope="col" class="org-left">Consecuencias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-left">Salida 1966</td>
+<td class="org-left">Reintegración '09</td>
+</tr>
+
+<tr>
+<td class="org-left">Turquía</td>
+<td class="org-left">Crisis S-400</td>
+<td class="org-left">Suspensión F-35</td>
+</tr>
+
+<tr>
+<td class="org-left">Hungría</td>
+<td class="org-left">Divergencias</td>
+<td class="org-left">Aislamiento</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbc50287" class="outline-2">
+<h2 id="orgbc50287">Impacto Sistémico y Proyecciones</h2>
+<div class="outline-text-2" id="text-orgbc50287">
+</div>
+<div id="outline-container-orgfb952e7" class="outline-3">
+<h3 id="orgfb952e7">Transformación Arquitectura Seguridad</h3>
+<div class="outline-text-3" id="text-orgfb952e7">
+<p>
+La implementación exitosa implicaría:
+</p>
+<ul class="org-ul">
+<li>Militarización relativa Europa</li>
+<li>Autonomía estratégica europea acelerada</li>
+<li>Reconfiguración balance global poder</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8ddd9b2" class="outline-3">
+<h3 id="org8ddd9b2">Escenarios Futuros</h3>
+<div class="outline-text-3" id="text-org8ddd9b2">
+</div>
+<div id="outline-container-orge99c458" class="outline-4">
+<h4 id="orge99c458">Escenario A: Implementación Exitosa</h4>
+<div class="outline-text-4" id="text-orge99c458">
+<ul class="org-ul">
+<li>NATO fortalecida pero transformada</li>
+<li>Europa militarmente autónoma</li>
+<li>Rebalance burden-sharing</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc6e762a" class="outline-4">
+<h4 id="orgc6e762a">Escenario B: Implementación Parcial</h4>
+<div class="outline-text-4" id="text-orgc6e762a">
+<ul class="org-ul">
+<li>Fragmentación interna NATO</li>
+<li>Europa de dos velocidades defensa</li>
+<li>Tensión transatlántica persistente</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga284cbe" class="outline-4">
+<h4 id="orga284cbe">Escenario C: Fracaso Implementación</h4>
+<div class="outline-text-4" id="text-orga284cbe">
+<ul class="org-ul">
+<li>Crisis existencial NATO</li>
+<li>Realineamientos geopolíticos</li>
+<li>Multipolaridad acelerada</li>
+</ul>
+
+
+<div id="org6d84d53" class="figure">
+<p><img src="./assets/images/future-scenarios.png" alt="future-scenarios.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1ff2350" class="outline-2">
+<h2 id="org1ff2350">Conclusiones y Recomendaciones</h2>
+<div class="outline-text-2" id="text-org1ff2350">
+</div>
+<div id="outline-container-orgfd21216" class="outline-3">
+<h3 id="orgfd21216">Evaluación Crítica</h3>
+<div class="outline-text-3" id="text-orgfd21216">
+<p>
+La propuesta Trump 3.5%+1.5% representa un test existencial para NATO que trasciende consideraciones puramente militares. Las implicaciones fiscales, políticas y estratégicas requieren una respuesta coordinada que balancee:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Legitimidad de la demanda estadounidense</b></b> por mayor burden-sharing</li>
+<li><b><b>Realidades fiscales europeas</b></b> en contexto post-COVID</li>
+<li><b><b>Cohesión alianza</b></b> frente amenazas externas crecientes</li>
+<li><b><b>Sostenibilidad política</b></b> interna en democracias occidentales</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgbf2b1ef" class="outline-3">
+<h3 id="orgbf2b1ef">Recomendaciones Estratégicas</h3>
+<div class="outline-text-3" id="text-orgbf2b1ef">
+</div>
+<div id="outline-container-org33f39c4" class="outline-4">
+<h4 id="org33f39c4">Para Europa</h4>
+<div class="outline-text-4" id="text-org33f39c4">
+<ul class="org-ul">
+<li>Desarrollo plan implementación gradual realista</li>
+<li>Coordinación respuesta UE para minimizar fragmentación</li>
+<li>Inversión prioritaria en capacidades críticas vs. expansión cuantitativa</li>
+<li>Diálogo social para legitimizar incremento gasto defensa</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc04b9d1" class="outline-4">
+<h4 id="orgc04b9d1">Para Estados Unidos</h4>
+<div class="outline-text-4" id="text-orgc04b9d1">
+<ul class="org-ul">
+<li>Flexibilidad temporal en implementación</li>
+<li>Reconocimiento contribuciones no-financieras (geografía, hosting)</li>
+<li>Mantenimiento compromisos Artículo 5 durante transición</li>
+<li>Apoyo transferencia tecnológica para facilitar cumplimiento</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd9d25d7" class="outline-4">
+<h4 id="orgd9d25d7">Para NATO</h4>
+<div class="outline-text-4" id="text-orgd9d25d7">
+<ul class="org-ul">
+<li>Clarificación metodología cálculo 1.5% "seguridad ampliada"</li>
+<li>Mecanismos compliance transparentes y graduales</li>
+<li>Preservación principio solidaridad en proceso transición</li>
+<li>Fortalecimiento diálogo civil-militar</li>
+</ul>
+
+<p>
+La implementación exitosa requiere visión estratégica compartida que trascienda ciclos electorales nacionales y priorice la coherencia de la alianza atlántica como garante del orden liberal internacional.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc2bcefa" class="outline-2">
+<h2 id="orgc2bcefa">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-orgc2bcefa">
+<ol class="org-ol">
+<li>NATO Official Documents
+<ul class="org-ul">
+<li>NATO Defence Expenditure Report 2024</li>
+<li>Strategic Concept 2022</li>
+<li>Article 5 Framework</li>
+</ul></li>
+
+<li>Análisis Académicos
+<ul class="org-ul">
+<li>Peterson Institute for International Economics (PIIE, 2025)</li>
+<li>Atlantic Council Defence Spending Analysis</li>
+<li>Brookings NATO Future Studies</li>
+</ul></li>
+
+<li>Fuentes Gubernamentales
+<ul class="org-ul">
+<li>US Department of Defense Budget 2025</li>
+<li>European Defence Fund Reports</li>
+<li>National Security Strategies 2024-2025</li>
+</ul></li>
+
+<li>Media Especializada
+<ul class="org-ul">
+<li>Defence News NATO Coverage</li>
+<li>Jane's Defence Weekly Analysis</li>
+<li>Breaking Defense Reports</li>
+</ul></li>
+</ol>
+
+<p>
+&#x2014;
+<b>Documento generado para análisis estratégico - Junio 2025</b>
+</p>
+
+
+
+<p>
+<br />
+</p>
+
+<p class="post-meta">Publicado el 2025-06-25 09:11 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 20:11</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

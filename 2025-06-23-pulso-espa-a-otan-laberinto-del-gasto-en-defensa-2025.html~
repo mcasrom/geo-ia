@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pulso España-OTAN: Laberinto del Gasto en Defensa 2025</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis crítico del enfrentamiento Sánchez-Rutte sobre gasto militar del 5% PIB, explorando narrativas, post-verdades y consecuencias geopolíticas del mayor desafío presupuestario español en décadas." />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="Análisis crítico del enfrentamiento Sánchez-Rutte sobre gasto militar del 5% PIB, explorando narrativas, post-verdades y consecuencias geopo">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Pulso España-OTAN: Laberinto del Gasto en Defensa 2025</h1>
+
+<div id="outline-container-org77e09aa" class="outline-2">
+<h2 id="org77e09aa">Pulso España-OTAN: Laberinto del Gasto en Defensa 2025</h2>
+</div>
+<div id="outline-container-org019b04b" class="outline-2">
+<h2 id="org019b04b">Introducción: La Tensión Estructural</h2>
+<div class="outline-text-2" id="text-org019b04b">
+<p>
+El enfrentamiento dialéctico entre Pedro Sánchez y Mark Rutte sobre el gasto en defensa trasciende una mera disputa presupuestaria. Representa la colisión entre dos visiones incompatibles del Estado moderno: el modelo de bienestar social europeo versus el paradigma de seguridad colectiva transatlántica. 
+</p>
+
+<p>
+Este análisis profundiza en las complejidades, contradicciones y consecuencias de una negociación que define el futuro de España en la arquitectura de seguridad occidental.
+</p>
+</div>
+
+<div id="outline-container-org9f1dd61" class="outline-3">
+<h3 id="org9f1dd61">El Cambio de Paradigma Post-Ucrania</h3>
+<div class="outline-text-3" id="text-org9f1dd61">
+<p>
+La invasión rusa de Ucrania activó la "doctrina del miedo útil" en la OTAN. El compromiso del 2% del PIB se reveló insuficiente ante la nueva realidad geopolítica. España ha incrementado el gasto en defensa en un 70% en la última década, pero resulta insuficiente ante las nuevas exigencias.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org979cd8b" class="outline-2">
+<h2 id="org979cd8b">Contexto Geopolítico: La Presión de la Nueva Guerra Fría</h2>
+<div class="outline-text-2" id="text-org979cd8b">
+</div>
+<div id="outline-container-org406ddfd" class="outline-3">
+<h3 id="org406ddfd">Las Cifras de la Discordia</h3>
+<div class="outline-text-3" id="text-org406ddfd">
+<p>
+Los números revelan la magnitud del desafío:
+</p>
+
+<ul class="org-ul">
+<li><b>España 2024</b>: 1,28% del PIB (≈18.000 millones de euros)</li>
+<li><b>Compromiso Sánchez</b>: 2,1% para 2027 (≈30.000 millones de euros)</li>
+<li><b>Exigencia OTAN</b>: 5% para 2035 (≈72.000 millones de euros)</li>
+</ul>
+
+<p>
+La diferencia representa aproximadamente 42.000 millones de euros anuales adicionales, equivalente a más del 80% del presupuesto actual de sanidad española.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e922ff" class="outline-3">
+<h3 id="org4e922ff">El Factor Trump 2.0</h3>
+<div class="outline-text-3" id="text-org4e922ff">
+<p>
+La presión estadounidense, intensificada bajo la administración Trump, ha convertido el gasto en defensa en el termómetro de la lealtad atlántica. España es el único país de la OTAN que rechaza de momento el aumento del gasto en defensa al 5% que pide EEUU.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc7494b6" class="outline-2">
+<h2 id="orgc7494b6">Las Posiciones: Anatomía de un Desencuentro</h2>
+<div class="outline-text-2" id="text-orgc7494b6">
+</div>
+<div id="outline-container-org79d0587" class="outline-3">
+<h3 id="org79d0587">Pedro Sánchez: La Resistencia del Estado de Bienestar</h3>
+<div class="outline-text-3" id="text-org79d0587">
+</div>
+<div id="outline-container-orgc390f7e" class="outline-4">
+<h4 id="orgc390f7e">Argumentos Explícitos</h4>
+<div class="outline-text-4" id="text-orgc390f7e">
+<p>
+Sánchez ha enviado una carta al secretario general de la OTAN trasladando que España no puede comprometerse a aumentar el gasto en defensa al 5% del PIB, argumentando que tal compromiso es "incompatible con el Estado de bienestar".
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf9e9f77" class="outline-4">
+<h4 id="orgf9e9f77">Estrategia Narrativa</h4>
+<div class="outline-text-4" id="text-orgf9e9f77">
+<ol class="org-ol">
+<li><b>Eficiencia sobre Cantidad</b>: "La clave no es gastar más, es gastar mejor"</li>
+<li><b>Capacidades Reales</b>: Un gasto del 2,1% será suficiente para cubrir las inversiones requeridas</li>
+<li><b>Legitimidad Democrática</b>: Priorización del gasto social como mandato electoral</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1eec2b8" class="outline-4">
+<h4 id="org1eec2b8">Argumentos Implícitos</h4>
+<div class="outline-text-4" id="text-org1eec2b8">
+<ul class="org-ul">
+<li><b>Rechazo a la Militarización</b>: Resistencia a la transformación de España en una economía militarizada</li>
+<li><b>Soberanía Presupuestaria</b>: Defensa del derecho nacional a determinar prioridades de gasto</li>
+<li><b>Crítica al Complejo Militar-Industrial</b>: Cuestionamiento implícito de los beneficiarios del aumento</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4b70bdb" class="outline-3">
+<h3 id="org4b70bdb">Mark Rutte: El Arquitecto de la Disciplina Atlántica</h3>
+<div class="outline-text-3" id="text-org4b70bdb">
+</div>
+<div id="outline-container-org5e5a240" class="outline-4">
+<h4 id="org5e5a240">Posición Oficial</h4>
+<div class="outline-text-4" id="text-org5e5a240">
+<p>
+Rutte señala en su carta que "España está convencida de que puede cumplir los nuevos objetivos de capacidad acordados con una trayectoria de gasto inferior al 5% (3,5% en defensa básica, 1,5% en seguridad relacionada) del PIB".
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcf0b225" class="outline-4">
+<h4 id="orgcf0b225">Estrategia de Presión</h4>
+<div class="outline-text-4" id="text-orgcf0b225">
+<ol class="org-ol">
+<li><b>Flexibilidad Condicional</b>: Reconocimiento de un enfoque diferenciado manteniendo las metas</li>
+<li><b>Responsabilidad Colectiva</b>: Énfasis en la carga compartida de la seguridad</li>
+<li><b>Precedente Peligroso</b>: Preocupación por el efecto dominó en otros aliados</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org5e87cc4" class="outline-4">
+<h4 id="org5e87cc4">La Contradicción Rutte</h4>
+<div class="outline-text-4" id="text-org5e87cc4">
+<p>
+Las declaraciones públicas evidencian una contradicción estratégica: la OTAN afirma que España tendrá que gastar el 3,5% del PIB en Defensa, mientras que en privado, Rutte confirma en su misiva que España no estará obligada a gastar el 5% de su PIB en defensa.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd88194d" class="outline-2">
+<h2 id="orgd88194d">Análisis Crítico: Verdades, Medias Verdades y Post-Verdades</h2>
+<div class="outline-text-2" id="text-orgd88194d">
+</div>
+<div id="outline-container-orgad40e1c" class="outline-3">
+<h3 id="orgad40e1c">Verdades Documentadas</h3>
+<div class="outline-text-3" id="text-orgad40e1c">
+<ol class="org-ol">
+<li><b>Realidad Presupuestaria</b>: España gasta actualmente 1,28% del PIB en defensa (2024)</li>
+<li><b>Compromiso Previo</b>: El objetivo del 2% para 2029 fue establecido y reafirmado múltiples veces</li>
+<li><b>Aumento Real</b>: El 70% de incremento en la última década es verificable</li>
+<li><b>Intercambio Epistolar</b>: Las cartas entre Sánchez y Rutte están documentadas</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org42882d5" class="outline-3">
+<h3 id="org42882d5">Post-Verdades y Narrativas Distorsionadas</h3>
+<div class="outline-text-3" id="text-org42882d5">
+</div>
+<div id="outline-container-org1d49b37" class="outline-4">
+<h4 id="org1d49b37">Por Parte de Sánchez</h4>
+<div class="outline-text-4" id="text-org1d49b37">
+<ol class="org-ol">
+<li><b>"Exención Histórica"</b>: Sánchez ha anunciado que ha alcanzado un acuerdo con la OTAN por el cual España queda exenta de elevar su gasto militar hasta el 5% del PIB. Sin embargo, las evidencias sugieren flexibilidad temporal, no exención permanente.</li>
+
+<li><b>"Acuerdo Definitivo"</b>: La presentación del intercambio epistolar como un acuerdo sellado distorsiona la naturaleza provisional de las negociaciones.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org54dd8c8" class="outline-4">
+<h4 id="org54dd8c8">Por Parte de la OTAN</h4>
+<div class="outline-text-4" id="text-org54dd8c8">
+<ol class="org-ol">
+<li><b>Flexibilidad Real</b>: La OTAN niega haber pactado una excepción con Sánchez y afirma que España tendrá que gastar el 3,5% del PIB en Defensa, contradiciéndose con las comunicaciones privadas.</li>
+
+<li><b>Presión Diferenciada</b>: La OTAN aplica presión selectiva, mostrando mayor flexibilidad con países estratégicamente importantes.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1d5d3d9" class="outline-3">
+<h3 id="org1d5d3d9">Medias Verdades y Ambigüedades</h3>
+<div class="outline-text-3" id="text-org1d5d3d9">
+<ol class="org-ol">
+<li><b>Los "Objetivos de Capacidad"</b>: La referencia a que el 2,1% cumple los objetivos es técnicamente correcta pero ignora la evolución de las amenazas</li>
+<li><b>El 5% como "Objetivo Conjunto"</b>: La OTAN presenta el 5% como meta colectiva, pero cada país debe contribuir individualmente</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd10f635" class="outline-2">
+<h2 id="orgd10f635">Los Actores en Sombra: Estados Unidos y el Factor Geopolítico</h2>
+<div class="outline-text-2" id="text-orgd10f635">
+</div>
+<div id="outline-container-orgd3d392d" class="outline-3">
+<h3 id="orgd3d392d">La Influencia Estadounidense</h3>
+<div class="outline-text-3" id="text-orgd3d392d">
+</div>
+<div id="outline-container-orge87510f" class="outline-4">
+<h4 id="orge87510f">Estrategias de Presión</h4>
+<div class="outline-text-4" id="text-orge87510f">
+<ol class="org-ol">
+<li><b>Aislamiento Diplomático</b>: Presentar a España como el "free rider" de la alianza</li>
+<li><b>Condicionalidad</b>: Vincular la cooperación en otros ámbitos al gasto en defensa</li>
+<li><b>Presión Bilateral</b>: Negociaciones directas al margen de los canales multilaterales</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaa01a58" class="outline-3">
+<h3 id="orgaa01a58">El Cálculo Geopolítico de Sánchez</h3>
+<div class="outline-text-3" id="text-orgaa01a58">
+<p>
+La resistencia española no es meramente presupuestaria, sino estratégica:
+</p>
+
+<ol class="org-ol">
+<li><b>Diversificación de Alianzas</b>: Mantenimiento de relaciones equilibradas con múltiples actores</li>
+<li><b>Liderazgo del Sur Europeo</b>: Posicionamiento como alternativa al atlantismo incondicional</li>
+<li><b>Cohesión Interna</b>: Preservación del consenso social en torno al Estado de bienestar</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga04b1d4" class="outline-2">
+<h2 id="orga04b1d4">Análisis Económico: El Coste de la Seguridad</h2>
+<div class="outline-text-2" id="text-orga04b1d4">
+</div>
+<div id="outline-container-orgeeda700" class="outline-3">
+<h3 id="orgeeda700">Impacto Presupuestario</h3>
+<div class="outline-text-3" id="text-orgeeda700">
+<p>
+Para 2025, el aumento del gasto en defensa anunciado sumará una décima al crecimiento del PIB, pero elevará dos décimas el déficit. Extrapolar esta fórmula al 5% del PIB revelaría consecuencias fiscales devastadoras.
+</p>
+</div>
+
+<div id="outline-container-org14b220a" class="outline-4">
+<h4 id="org14b220a">Escenarios de Impacto</h4>
+<div class="outline-text-4" id="text-org14b220a">
+</div>
+<ul class="org-ul">
+<li><a id="org4d904c3"></a>Escenario A: Cumplimiento del 2,1% (Posición Sánchez)<br />
+<div class="outline-text-5" id="text-org4d904c3">
+<ul class="org-ul">
+<li>Inversión adicional: ~12.000 millones de euros anuales</li>
+<li>Impacto en déficit: +0,8 puntos del PIB</li>
+<li>Sectores afectados: Mantenimiento del gasto social</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org4dfa1f6"></a>Escenario B: Cumplimiento del 3,5% + 1,5% (Exigencia OTAN)<br />
+<div class="outline-text-5" id="text-org4dfa1f6">
+<ul class="org-ul">
+<li>Inversión adicional: ~54.000 millones de euros anuales</li>
+<li>Impacto en déficit: +3,6 puntos del PIB</li>
+<li>Sectores afectados: Recortes masivos en sanidad, educación y protección social</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4573e86" class="outline-3">
+<h3 id="org4573e86">Efectos Multiplicadores</h3>
+<div class="outline-text-3" id="text-org4573e86">
+<p>
+La industria de defensa española, dominada por empresas como Indra, Navantia y Airbus Defence, se beneficiaría del aumento del gasto, pero el efecto multiplicador en el PIB sería inferior al de inversiones en infraestructura civil o I+D+i.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org26a0bb3" class="outline-2">
+<h2 id="org26a0bb3">Comparación Internacional: Lecciones y Precedentes</h2>
+<div class="outline-text-2" id="text-org26a0bb3">
+</div>
+<div id="outline-container-org8a63e5c" class="outline-3">
+<h3 id="org8a63e5c">Modelos de Resistencia</h3>
+<div class="outline-text-3" id="text-org8a63e5c">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">% PIB Defensa</th>
+<th scope="col" class="org-left">Estrategia</th>
+<th scope="col" class="org-left">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-left">2,1%</td>
+<td class="org-left">Autonomía estratégica</td>
+<td class="org-left">Resistencia exitosa</td>
+</tr>
+
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-left">2,1%</td>
+<td class="org-left">Aumento gradual post-2022</td>
+<td class="org-left">Presión contenida</td>
+</tr>
+
+<tr>
+<td class="org-left">Reino U.</td>
+<td class="org-left">2,3%</td>
+<td class="org-left">Cumplimiento mínimo</td>
+<td class="org-left">Debate interno</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org064aa91" class="outline-3">
+<h3 id="org064aa91">Modelos de Cumplimiento</h3>
+<div class="outline-text-3" id="text-org064aa91">
+<p>
+<br />
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">% PIB Defensa</th>
+<th scope="col" class="org-left">Motivación</th>
+<th scope="col" class="org-left">Consecuencias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Polonia</td>
+<td class="org-left">4,2%</td>
+<td class="org-left">Amenaza existencial</td>
+<td class="org-left">Militarización social</td>
+</tr>
+
+<tr>
+<td class="org-left">Bálticos</td>
+<td class="org-left">2,5%+</td>
+<td class="org-left">Supervivencia</td>
+<td class="org-left">Gasto social limitado</td>
+</tr>
+
+<tr>
+<td class="org-left">EEUU</td>
+<td class="org-left">3,4%</td>
+<td class="org-left">Hegemonía global</td>
+<td class="org-left">Complejo militar</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb55b80c" class="outline-2">
+<h2 id="orgb55b80c">Visualización: Diferencias en Compromisos</h2>
+<div class="outline-text-2" id="text-orgb55b80c">
+<p>
+<br />
+</p>
+
+
+<div id="org77b2600" class="figure">
+<p><img src="./assets/images/nato_commitments.png" alt="nato_commitments.png" width="600px" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Diagrama de compromisos de defensa: Sánchez vs. Rutte</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org502e488" class="outline-2">
+<h2 id="org502e488">Análisis de Narrativas: La Guerra de los Marcos</h2>
+<div class="outline-text-2" id="text-org502e488">
+</div>
+<div id="outline-container-org58d9da8" class="outline-3">
+<h3 id="org58d9da8">Marco Sánchez: "Defensa Inteligente"</h3>
+<div class="outline-text-3" id="text-org58d9da8">
+<ul class="org-ul">
+<li><b>Eficiencia</b>: "Gastar mejor, no más"</li>
+<li><b>Soberanía</b>: "Decisiones nacionales sobre prioridades"</li>
+<li><b>Justicia Social</b>: "Estado de bienestar vs. militarización"</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org420025b" class="outline-3">
+<h3 id="org420025b">Marco Rutte: "Responsabilidad Compartida"</h3>
+<div class="outline-text-3" id="text-org420025b">
+<ul class="org-ul">
+<li><b>Solidaridad</b>: "Carga compartida de la seguridad"</li>
+<li><b>Realismo</b>: "Amenazas reales requieren recursos reales"</li>
+<li><b>Compromiso</b>: "Credibilidad de la alianza"</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf58a3b8" class="outline-3">
+<h3 id="orgf58a3b8">Marco Mediático: La Simplificación</h3>
+<div class="outline-text-3" id="text-orgf58a3b8">
+<p>
+Los medios tienden a presentar el debate como "España vs. OTAN", omitiendo las complejidades internas de la alianza y las posiciones matizadas de otros países.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5653354" class="outline-2">
+<h2 id="org5653354">Escenarios Futuros: Navegando la Incertidumbre</h2>
+<div class="outline-text-2" id="text-org5653354">
+</div>
+<div id="outline-container-org43d51a4" class="outline-3">
+<h3 id="org43d51a4">Escenario 1: Compromiso Español (Probabilidad: 60%)</h3>
+<div class="outline-text-3" id="text-org43d51a4">
+<p>
+España acepta un incremento gradual hasta el 3% para 2030, evitando el 5% pero superando su propuesta inicial del 2,1%.
+</p>
+</div>
+
+<div id="outline-container-orgacceb46" class="outline-4">
+<h4 id="orgacceb46">Consecuencias</h4>
+<div class="outline-text-4" id="text-orgacceb46">
+<ul class="org-ul">
+<li>Mantenimiento de la cohesión atlántica</li>
+<li>Presión fiscal moderada</li>
+<li>Precedente de flexibilidad para otros países</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org42b40bc" class="outline-3">
+<h3 id="org42b40bc">Escenario 2: Resistencia Total (Probabilidad: 25%)</h3>
+<div class="outline-text-3" id="text-org42b40bc">
+<p>
+España mantiene su posición del 2,1% y resiste toda presión adicional.
+</p>
+</div>
+
+<div id="outline-container-org69dde64" class="outline-4">
+<h4 id="org69dde64">Consecuencias</h4>
+<div class="outline-text-4" id="text-org69dde64">
+<ul class="org-ul">
+<li>Deterioro de relaciones con EEUU</li>
+<li>Posible aislamiento en la OTAN</li>
+<li>Fortalecimiento de alternativas europeas de defensa</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga33f34d" class="outline-3">
+<h3 id="orga33f34d">Escenario 3: Capitulación (Probabilidad: 15%)</h3>
+<div class="outline-text-3" id="text-orga33f34d">
+<p>
+España acepta el 5% bajo presión extrema.
+</p>
+</div>
+
+<div id="outline-container-orgf987006" class="outline-4">
+<h4 id="orgf987006">Consecuencias</h4>
+<div class="outline-text-4" id="text-orgf987006">
+<ul class="org-ul">
+<li>Crisis del Estado de bienestar</li>
+<li>Inestabilidad política interna</li>
+<li>Modelo para presionar a otros aliados reticentes</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb32610a" class="outline-2">
+<h2 id="orgb32610a">Conclusiones: La Tormenta Perfecta</h2>
+<div class="outline-text-2" id="text-orgb32610a">
+</div>
+<div id="outline-container-orgb918b71" class="outline-3">
+<h3 id="orgb918b71">La Paradoja Española</h3>
+<div class="outline-text-3" id="text-orgb918b71">
+<p>
+España enfrenta una paradoja estratégica: su éxito en mantener estabilidad social y crecimiento económico la convierte en un objetivo para demandas de mayor gasto militar que podrían erosionar precisamente esos logros.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb99cc44" class="outline-3">
+<h3 id="orgb99cc44">La Lección de la Flexibilidad</h3>
+<div class="outline-text-3" id="text-orgb99cc44">
+<p>
+La OTAN ha cerrado un acuerdo para que los aliados se comprometan a aumentar el gasto en defensa hasta el 5% del PIB en el plazo de 2035, dando flexibilidad a España. Esta flexibilidad, aunque limitada, sugiere que la presión española ha tenido efecto.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org85f84fa" class="outline-3">
+<h3 id="org85f84fa">El Precedente Histórico</h3>
+<div class="outline-text-3" id="text-org85f84fa">
+<p>
+La resistencia española, independientemente de su éxito final, establece un precedente de que los países pueden negociar términos diferenciados dentro de la alianza, desafiando la narrativa de uniformidad absoluta.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org01a37b7" class="outline-3">
+<h3 id="org01a37b7">Reflexión Final</h3>
+<div class="outline-text-3" id="text-org01a37b7">
+<p>
+El debate trasciende las cifras presupuestarias para tocar el corazón de la identidad europea: ¿Puede Europa mantener su modelo de Estado de bienestar en un contexto de creciente militarización global? 
+</p>
+
+<p>
+La respuesta que dé España resonará mucho más allá de sus fronteras, influenciando el futuro del proyecto europeo y la arquitectura de seguridad occidental.
+</p>
+
+<p>
+La cumbre de la OTAN de 2025 no solo decidirá el presupuesto de defensa español, sino que escribirá un capítulo definitivo sobre los límites de la soberanía nacional en un mundo interdependiente y las posibilidades de resistencia organizada a las presiones hegemónicas.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb1d6762" class="outline-2">
+<h2 id="orgb1d6762">Referencias y Fuentes Documentales</h2>
+<div class="outline-text-2" id="text-orgb1d6762">
+<ul class="org-ul">
+<li>Intercambio epistolar Sánchez-Rutte (19-22 junio 2025)</li>
+<li>Declaraciones oficiales de La Moncloa y OTAN</li>
+<li>Análisis presupuestario del Ministerio de Hacienda</li>
+<li>Documentos internos de la cumbre de La Haya 2025</li>
+<li>Informes de think tanks europeos y estadounidenses</li>
+</ul>
+
+<blockquote>
+<p>
+Análisis actualizado hasta el 23 de junio de 2025
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orga7a8de2" class="outline-2">
+<h2 id="orga7a8de2"><span class="todo TODO">TODO</span> Tareas Pendientes</h2>
+<div class="outline-text-2" id="text-orga7a8de2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Actualizar con resultados oficiales cumbre OTAN 2025</li>
+<li class="off"><code>[&#xa0;]</code> Incorporar reacciones parlamentarias españolas</li>
+<li class="off"><code>[&#xa0;]</code> Analizar impacto en opinión pública española</li>
+<li class="off"><code>[&#xa0;]</code> Seguimiento posiciones otros países del sur europeo</li>
+<li class="off"><code>[&#xa0;]</code> Evaluar respuesta del complejo militar-industrial español</li>
+</ul>
+
+
+
+
+
+<p>
+<br />
+</p>
+<p class="post-meta">Publicado el 2025-06-23 21:12 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

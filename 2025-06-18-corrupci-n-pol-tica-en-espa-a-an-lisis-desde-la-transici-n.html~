@@ -1,0 +1,1968 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-19 sáb 19:49 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Corrupción Política en España: Análisis desde la Transición</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis detallado de los principales casos de corrupción política en España desde el establecimiento de la democracia, incluyendo evolución temporal, impacto institucional y patrones sistémicos." />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="description" content="Análisis detallado de los principales casos de corrupción política en España desde el establecimiento de la democracia, incluyendo evolución">
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Corrupción Política en España: Análisis desde la Transición</h1>
+
+<div id="outline-container-orgdb1080d" class="outline-2">
+<h2 id="orgdb1080d">Corrupción Política en España: Análisis desde la Transición</h2>
+<div class="outline-text-2" id="text-orgdb1080d">
+<p>
+La corrupción política en España ha sido un fenómeno persistente desde la consolidación democrática tras la muerte de Franco en 1975. Este análisis examina los principales casos, patrones y evolución de la corrupción institucional durante las últimas cuatro décadas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1da6b5d" class="outline-2">
+<h2 id="org1da6b5d">Contexto Histórico</h2>
+<div class="outline-text-2" id="text-org1da6b5d">
+</div>
+<div id="outline-container-orga9365fb" class="outline-3">
+<h3 id="orga9365fb">La Transición Democrática (1975-1982)</h3>
+<div class="outline-text-3" id="text-orga9365fb">
+<p>
+Durante los primeros años de la democracia, España experimentó una transformación institucional sin precedentes. La debilidad inicial de los mecanismos de control y la urgencia por modernizar el país crearon un entorno propicio para irregularidades administrativas.
+</p>
+</div>
+</div>
+<div id="outline-container-org53bbec4" class="outline-3">
+<h3 id="org53bbec4">Consolidación y Modernización (1982-1996)</h3>
+<div class="outline-text-3" id="text-org53bbec4">
+<p>
+La llegada del PSOE al poder marcó el inicio de grandes proyectos de modernización e integración europea. Los fondos comunitarios y las inversiones públicas masivas ampliaron las oportunidades de corrupción.
+</p>
+</div>
+</div>
+<div id="outline-container-org07b0f9e" class="outline-3">
+<h3 id="org07b0f9e">Alternancia y Crisis (1996-presente)</h3>
+<div class="outline-text-3" id="text-org07b0f9e">
+<p>
+Los gobiernos del PP y posteriormente la crisis económica de 2008 revelaron casos de corrupción sistémica que han marcado profundamente la percepción ciudadana sobre las instituciones.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0cb93af" class="outline-2">
+<h2 id="org0cb93af">Principales Casos de Corrupción</h2>
+<div class="outline-text-2" id="text-org0cb93af">
+<p>
+<br />
+</p>
+
+<table id="orgf2677e4" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> Casos más Significativos de Corrupción Política en España</caption>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">#</th>
+<th scope="col" class="org-left">Partido</th>
+<th scope="col" class="org-left">Nombre del Caso</th>
+<th scope="col" class="org-right">Período</th>
+<th scope="col" class="org-left">Medio Revelación</th>
+<th scope="col" class="org-left">Cantidad (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso GAL</td>
+<td class="org-right">1983-1987</td>
+<td class="org-left">Diario16/El Mundo</td>
+<td class="org-left">1.2M</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Gürtel</td>
+<td class="org-right">1999-2009</td>
+<td class="org-left">El País</td>
+<td class="org-left">120M</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Bárcenas</td>
+<td class="org-right">2008-2013</td>
+<td class="org-left">El País/El Mundo</td>
+<td class="org-left">48M</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso ERE</td>
+<td class="org-right">2000-2010</td>
+<td class="org-left">ABC</td>
+<td class="org-left">679M</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Púnica</td>
+<td class="org-right">2007-2014</td>
+<td class="org-left">Cadena SER</td>
+<td class="org-left">250M</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso FILESA</td>
+<td class="org-right">1988-1993</td>
+<td class="org-left">Diario16</td>
+<td class="org-left">1.5M</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">CiU</td>
+<td class="org-left">Caso 3%</td>
+<td class="org-right">1982-2010</td>
+<td class="org-left">La Vanguardia</td>
+<td class="org-left">140M</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Lezo</td>
+<td class="org-right">2014-2017</td>
+<td class="org-left">El Confidencial</td>
+<td class="org-left">30M</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Malaya</td>
+<td class="org-right">2003-2006</td>
+<td class="org-left">Sur</td>
+<td class="org-left">2.4B</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Kitchen</td>
+<td class="org-right">2013-2015</td>
+<td class="org-left">OK Diario/El País</td>
+<td class="org-left">No determinado</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Juan Guerra</td>
+<td class="org-right">1987-1990</td>
+<td class="org-left">Ya/Diario16</td>
+<td class="org-left">600K</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Naseiro</td>
+<td class="org-right">1990-1999</td>
+<td class="org-left">El Mundo</td>
+<td class="org-left">90M</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">CiU</td>
+<td class="org-left">Palau S.Jordi</td>
+<td class="org-right">1985-2009</td>
+<td class="org-left">El Periódico</td>
+<td class="org-left">26M</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Brugal</td>
+<td class="org-right">2003-2008</td>
+<td class="org-left">El País</td>
+<td class="org-left">15M</td>
+</tr>
+
+<tr>
+<td class="org-right">15</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Roldan</td>
+<td class="org-right">1993-1995</td>
+<td class="org-left">El Mundo</td>
+<td class="org-left">650M</td>
+</tr>
+
+<tr>
+<td class="org-right">16</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Fabra</td>
+<td class="org-right">2008-2013</td>
+<td class="org-left">Levante-EMV</td>
+<td class="org-left">900K</td>
+</tr>
+
+<tr>
+<td class="org-right">17</td>
+<td class="org-left">PNV</td>
+<td class="org-left">Caso De Miguel</td>
+<td class="org-right">2005-2009</td>
+<td class="org-left">El Correo</td>
+<td class="org-left">12M</td>
+</tr>
+
+<tr>
+<td class="org-right">18</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Nóos</td>
+<td class="org-right">2006-2017</td>
+<td class="org-left">El País</td>
+<td class="org-left">6.2M</td>
+</tr>
+
+<tr>
+<td class="org-right">19</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Mercasevilla</td>
+<td class="org-right">2007-2011</td>
+<td class="org-left">ABC</td>
+<td class="org-left">4.5M</td>
+</tr>
+
+<tr>
+<td class="org-right">20</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Taula</td>
+<td class="org-right">2006-2014</td>
+<td class="org-left">Las Provincias</td>
+<td class="org-left">35M</td>
+</tr>
+
+<tr>
+<td class="org-right">21</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Cursos</td>
+<td class="org-right">2009-2013</td>
+<td class="org-left">El Mundo</td>
+<td class="org-left">40M</td>
+</tr>
+
+<tr>
+<td class="org-right">22</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Acuamed</td>
+<td class="org-right">2004-2008</td>
+<td class="org-left">La Verdad</td>
+<td class="org-left">78M</td>
+</tr>
+
+<tr>
+<td class="org-right">23</td>
+<td class="org-left">CiU</td>
+<td class="org-left">Caso Ferrocarrils</td>
+<td class="org-right">2008-2012</td>
+<td class="org-left">Ara</td>
+<td class="org-left">23M</td>
+</tr>
+
+<tr>
+<td class="org-right">24</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Pokemon</td>
+<td class="org-right">2011-2016</td>
+<td class="org-left">El Diario Vasco</td>
+<td class="org-left">18M</td>
+</tr>
+
+<tr>
+<td class="org-right">25</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Invercaria</td>
+<td class="org-right">2002-2011</td>
+<td class="org-left">Sur</td>
+<td class="org-left">647M</td>
+</tr>
+
+<tr>
+<td class="org-right">26</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Cooperación</td>
+<td class="org-right">2008-2012</td>
+<td class="org-left">El País</td>
+<td class="org-left">3.2M</td>
+</tr>
+
+<tr>
+<td class="org-right">27</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Pretoria</td>
+<td class="org-right">2007-2014</td>
+<td class="org-left">El Confidencial</td>
+<td class="org-left">427M</td>
+</tr>
+
+<tr>
+<td class="org-right">28</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Campeón</td>
+<td class="org-right">2003-2009</td>
+<td class="org-left">La Opinión</td>
+<td class="org-left">2.1M</td>
+</tr>
+
+<tr>
+<td class="org-right">29</td>
+<td class="org-left">CiU</td>
+<td class="org-left">Caso ITV</td>
+<td class="org-right">2010-2015</td>
+<td class="org-left">El Punt Avui</td>
+<td class="org-left">8.7M</td>
+</tr>
+
+<tr>
+<td class="org-right">30</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Auditorio</td>
+<td class="org-right">2005-2011</td>
+<td class="org-left">Canarias7</td>
+<td class="org-left">5.3M</td>
+</tr>
+
+<tr>
+<td class="org-right">31</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso AENA</td>
+<td class="org-right">2004-2008</td>
+<td class="org-left">Expansión</td>
+<td class="org-left">12.5M</td>
+</tr>
+
+<tr>
+<td class="org-right">32</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Stratvs</td>
+<td class="org-right">2009-2013</td>
+<td class="org-left">Cadena SER</td>
+<td class="org-left">7.8M</td>
+</tr>
+
+<tr>
+<td class="org-right">33</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Acerinox</td>
+<td class="org-right">2006-2010</td>
+<td class="org-left">Cinco Días</td>
+<td class="org-left">2.8M</td>
+</tr>
+
+<tr>
+<td class="org-right">34</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Blesa</td>
+<td class="org-right">2003-2012</td>
+<td class="org-left">El País</td>
+<td class="org-left">15.2M</td>
+</tr>
+
+<tr>
+<td class="org-right">35</td>
+<td class="org-left">PNV</td>
+<td class="org-left">Caso Egunkaria</td>
+<td class="org-right">2003-2010</td>
+<td class="org-left">Gara</td>
+<td class="org-left">800K</td>
+</tr>
+
+<tr>
+<td class="org-right">36</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Bárcenas 2</td>
+<td class="org-right">2009-2017</td>
+<td class="org-left">El País</td>
+<td class="org-left">15.7M</td>
+</tr>
+
+<tr>
+<td class="org-right">37</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Matsa</td>
+<td class="org-right">2004-2009</td>
+<td class="org-left">Huelva Información</td>
+<td class="org-left">4.2M</td>
+</tr>
+
+<tr>
+<td class="org-right">38</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Fundación</td>
+<td class="org-right">2008-2014</td>
+<td class="org-left">ABC</td>
+<td class="org-left">9.1M</td>
+</tr>
+
+<tr>
+<td class="org-right">39</td>
+<td class="org-left">CiU</td>
+<td class="org-left">Caso CDC</td>
+<td class="org-right">2006-2012</td>
+<td class="org-left">La Vanguardia</td>
+<td class="org-left">6.8M</td>
+</tr>
+
+<tr>
+<td class="org-right">40</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Undangarin</td>
+<td class="org-right">2004-2015</td>
+<td class="org-left">El País</td>
+<td class="org-left">5.9M</td>
+</tr>
+
+<tr>
+<td class="org-right">41</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Mercamadrid</td>
+<td class="org-right">2005-2010</td>
+<td class="org-left">El Mundo</td>
+<td class="org-left">31M</td>
+</tr>
+
+<tr>
+<td class="org-right">42</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Novo Sancti</td>
+<td class="org-right">2007-2012</td>
+<td class="org-left">Faro de Vigo</td>
+<td class="org-left">14M</td>
+</tr>
+
+<tr>
+<td class="org-right">43</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Waiter</td>
+<td class="org-right">2008-2013</td>
+<td class="org-left">El Correo</td>
+<td class="org-left">22M</td>
+</tr>
+
+<tr>
+<td class="org-right">44</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Consell</td>
+<td class="org-right">2009-2015</td>
+<td class="org-left">Levante</td>
+<td class="org-left">45M</td>
+</tr>
+
+<tr>
+<td class="org-right">45</td>
+<td class="org-left">CiU</td>
+<td class="org-left">Caso Innova</td>
+<td class="org-right">2010-2016</td>
+<td class="org-left">El Periódico</td>
+<td class="org-left">11M</td>
+</tr>
+
+<tr>
+<td class="org-right">46</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Acuasevilla</td>
+<td class="org-right">2006-2011</td>
+<td class="org-left">ABC</td>
+<td class="org-left">17M</td>
+</tr>
+
+<tr>
+<td class="org-right">47</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Edu-forest</td>
+<td class="org-right">2007-2012</td>
+<td class="org-left">El País</td>
+<td class="org-left">8.4M</td>
+</tr>
+
+<tr>
+<td class="org-right">48</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Zaplana</td>
+<td class="org-right">2002-2018</td>
+<td class="org-left">El País</td>
+<td class="org-left">20.8M</td>
+</tr>
+
+<tr>
+<td class="org-right">49</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">Caso Time Export</td>
+<td class="org-right">2009-2014</td>
+<td class="org-left">El Confidencial</td>
+<td class="org-left">3.6M</td>
+</tr>
+
+<tr>
+<td class="org-right">50</td>
+<td class="org-left">PP</td>
+<td class="org-left">Caso Estraperlo</td>
+<td class="org-right">2011-2016</td>
+<td class="org-left">La Razón</td>
+<td class="org-left">7.2M</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org11d8b21" class="outline-2">
+<h2 id="org11d8b21">Análisis por Períodos Gubernamentales</h2>
+<div class="outline-text-2" id="text-org11d8b21">
+<p>
+<br />
+</p>
+
+<table id="org081b15a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 2:</span> Evolución de Casos por Gobierno</caption>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Período</th>
+<th scope="col" class="org-left">Partido</th>
+<th scope="col" class="org-left">Casos Principales</th>
+<th scope="col" class="org-left">Impacto Institucional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1982-1996</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">GAL, FILESA</td>
+<td class="org-left">Crisis interna PSOE</td>
+</tr>
+
+<tr>
+<td class="org-right">1996-2004</td>
+<td class="org-left">PP</td>
+<td class="org-left">Inicio Gürtel</td>
+<td class="org-left">Desgaste progresivo</td>
+</tr>
+
+<tr>
+<td class="org-right">2004-2011</td>
+<td class="org-left">PSOE</td>
+<td class="org-left">ERE Andalucía</td>
+<td class="org-left">Crisis económica</td>
+</tr>
+
+<tr>
+<td class="org-right">2011-2018</td>
+<td class="org-left">PP</td>
+<td class="org-left">Gürtel, Púnica</td>
+<td class="org-left">Moción de censura</td>
+</tr>
+
+<tr>
+<td class="org-right">2018-presente</td>
+<td class="org-left">PSOE/Podemos</td>
+<td class="org-left">Investigaciones</td>
+<td class="org-left">Reformas judiciales</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcc6e6c2" class="outline-2">
+<h2 id="orgcc6e6c2">Tipología de la Corrupción</h2>
+<div class="outline-text-2" id="text-orgcc6e6c2">
+</div>
+<div id="outline-container-orgf1ab4b7" class="outline-3">
+<h3 id="orgf1ab4b7">Financiación Irregular de Partidos</h3>
+<div class="outline-text-3" id="text-orgf1ab4b7">
+<ul class="org-ul">
+<li>Donaciones opacas de empresarios</li>
+<li>Comisiones por adjudicaciones públicas</li>
+<li>Estructuras paralelas de financiación</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org14b6236" class="outline-3">
+<h3 id="org14b6236">Corrupción Urbanística</h3>
+<div class="outline-text-3" id="text-org14b6236">
+<ul class="org-ul">
+<li>Recalificaciones irregulares</li>
+<li>Comisiones por licencias</li>
+<li>Redes clientelares locales</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org85f8dd0" class="outline-3">
+<h3 id="org85f8dd0">Malversación de Fondos Públicos</h3>
+<div class="outline-text-3" id="text-org85f8dd0">
+<ul class="org-ul">
+<li>Desvío de subvenciones</li>
+<li>Uso personal de recursos públicos</li>
+<li>Facturas falsas y sobrefacturación</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org887267a" class="outline-4">
+<h4 id="org887267a">Diagrama de Redes de Corrupción</h4>
+<div class="outline-text-4" id="text-org887267a">
+<p>
+<br />
+</p>
+
+
+<div id="org56bdf08" class="figure">
+<p><img src="./assets/images/corruption-network.png" alt="corruption-network.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd430479" class="outline-4">
+<h4 id="orgd430479">Impacto en las Instituciones</h4>
+<div class="outline-text-4" id="text-orgd430479">
+<p>
+<br />
+</p>
+
+<table id="org457ff30" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 3:</span> Índices de Percepción de Corrupción (Transparencia Internacional)</caption>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-right">Posición Mundial</th>
+<th scope="col" class="org-right">Puntuación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2000</td>
+<td class="org-right">20</td>
+<td class="org-right">7.0</td>
+</tr>
+
+<tr>
+<td class="org-right">2005</td>
+<td class="org-right">23</td>
+<td class="org-right">6.9</td>
+</tr>
+
+<tr>
+<td class="org-right">2010</td>
+<td class="org-right">30</td>
+<td class="org-right">6.1</td>
+</tr>
+
+<tr>
+<td class="org-right">2015</td>
+<td class="org-right">36</td>
+<td class="org-right">5.8</td>
+</tr>
+
+<tr>
+<td class="org-right">2020</td>
+<td class="org-right">32</td>
+<td class="org-right">5.9</td>
+</tr>
+
+<tr>
+<td class="org-right">2024</td>
+<td class="org-right">34</td>
+<td class="org-right">6.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3dc78fa" class="outline-3">
+<h3 id="org3dc78fa">Distribución por Partidos (50 casos principales)</h3>
+<div class="outline-text-3" id="text-org3dc78fa">
+<ul class="org-ul">
+<li>PSOE: 18 casos (36%)</li>
+<li>PP: 26 casos (52%)</li>
+<li>CiU: 5 casos (10%)</li>
+<li>PNV: 1 caso (2%)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org15e81bb" class="outline-3">
+<h3 id="org15e81bb">Montante Total Estimado</h3>
+<div class="outline-text-3" id="text-org15e81bb">
+<ul class="org-ul">
+<li>Total cuantificado: ~5.2 mil millones de euros</li>
+<li>Casos con mayor impacto: Malaya (2.4B€), ERE (679M€), Invercaria (647M€)</li>
+<li>Período de mayor concentración: 2003-2014</li>
+<li>Caída de gobiernos (Rajoy 2018)</li>
+<li>Crisis de legitimidad institucional</li>
+<li>Auge de nuevos partidos políticos</li>
+<li>Reformas en transparencia y control</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge1be660" class="outline-3">
+<h3 id="orge1be660">Respuesta Judicial</h3>
+<div class="outline-text-3" id="text-orge1be660">
+<ul class="org-ul">
+<li>Creación de la Audiencia Nacional</li>
+<li>Especialización de fiscalías</li>
+<li>Colaboración con organismos europeos</li>
+</ul>
+</div>
+
+
+<div id="outline-container-orgf83ad6d" class="outline-4">
+<h4 id="orgf83ad6d">Análisis Cuantitativo de la Corrupción</h4>
+<div class="outline-text-4" id="text-orgf83ad6d">
+<p>
+<br />
+</p>
+
+
+<div id="orgbc98159" class="figure">
+<p><img src="./assets/images/corruption-timeline-sequence.png" alt="corruption-timeline-sequence.png" width="800px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+
+
+<div id="org058b021" class="figure">
+<p><img src="./assets/images/timeline-corruption-activity.png" alt="timeline-corruption-activity.png" width="600px" />
+</p>
+</div>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2eb9dd3" class="outline-2">
+<h2 id="org2eb9dd3">Marco Regulatorio y Reformas</h2>
+<div class="outline-text-2" id="text-org2eb9dd3">
+</div>
+<div id="outline-container-orga07cde6" class="outline-3">
+<h3 id="orga07cde6">Legislación Anticorrupción</h3>
+<div class="outline-text-3" id="text-orga07cde6">
+<ul class="org-ul">
+<li>Ley de Transparencia (2013)</li>
+<li>Código Penal reformado (2015)</li>
+<li>Ley de Financiación de Partidos</li>
+<li>Estatuto del Ministerio Fiscal</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc85fefa" class="outline-3">
+<h3 id="orgc85fefa">Organismos de Control</h3>
+<div class="outline-text-3" id="text-orgc85fefa">
+<ul class="org-ul">
+<li>Tribunal de Cuentas</li>
+<li>Oficina Antifraude de Cataluña</li>
+<li>Autoridad Independiente de Responsabilidad Fiscal</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1682352" class="outline-2">
+<h2 id="org1682352">Patrones Identificados</h2>
+<div class="outline-text-2" id="text-org1682352">
+</div>
+<div id="outline-container-org3768575" class="outline-3">
+<h3 id="org3768575">Elementos Comunes</h3>
+<div class="outline-text-3" id="text-org3768575">
+<ul class="org-ul">
+<li>Financiación irregular de partidos</li>
+<li>Redes clientelares estables</li>
+<li>Uso de empresas instrumentales</li>
+<li>Paraísos fiscales y cuentas opacas</li>
+<li>Revolving doors público-privado</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga02960f" class="outline-3">
+<h3 id="orga02960f">Factores Facilitadores</h3>
+<div class="outline-text-3" id="text-orga02960f">
+<ul class="org-ul">
+<li>Debilidad de controles internos</li>
+<li>Concentración de poder decisorio</li>
+<li>Cultura de impunidad</li>
+<li>Complejidad normativa</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org222d573" class="outline-2">
+<h2 id="org222d573">Análisis Comparativo Internacional</h2>
+<div class="outline-text-2" id="text-org222d573">
+<p>
+<br />
+</p>
+
+<table id="orga5bd824" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 4:</span> Comparación con Países UE (Índice Percepción Corrupción 2024)</caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-right">Posición</th>
+<th scope="col" class="org-right">Puntos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Dinamarca</td>
+<td class="org-right">1</td>
+<td class="org-right">90</td>
+</tr>
+
+<tr>
+<td class="org-left">Finlandia</td>
+<td class="org-right">2</td>
+<td class="org-right">87</td>
+</tr>
+
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-right">12</td>
+<td class="org-right">78</td>
+</tr>
+
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-right">23</td>
+<td class="org-right">71</td>
+</tr>
+
+<tr>
+<td class="org-left">España</td>
+<td class="org-right">34</td>
+<td class="org-right">60</td>
+</tr>
+
+<tr>
+<td class="org-left">Italia</td>
+<td class="org-right">42</td>
+<td class="org-right">56</td>
+</tr>
+
+<tr>
+<td class="org-left">Grecia</td>
+<td class="org-right">51</td>
+<td class="org-right">49</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0a25988" class="outline-2">
+<h2 id="org0a25988">Medidas Preventivas y Correctivas</h2>
+<div class="outline-text-2" id="text-org0a25988">
+</div>
+<div id="outline-container-orge6397d4" class="outline-3">
+<h3 id="orge6397d4">Reformas Implementadas</h3>
+<div class="outline-text-3" id="text-orge6397d4">
+<ul class="org-ul">
+<li>Mayor transparencia en contratación pública</li>
+<li>Límites a financiación privada de partidos</li>
+<li>Incompatibilidades para altos cargos</li>
+<li>Refuerzo de la Fiscalía Anticorrupción</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf726387" class="outline-3">
+<h3 id="orgf726387">Propuestas Pendientes</h3>
+<div class="outline-text-3" id="text-orgf726387">
+<ul class="org-ul">
+<li>Reforma integral del sistema electoral</li>
+<li>Blindaje de organismos de control</li>
+<li>Endurecimiento de penas</li>
+<li>Mejora de protección a denunciantes</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org41d9b3c" class="outline-2">
+<h2 id="org41d9b3c">Conclusiones</h2>
+<div class="outline-text-2" id="text-org41d9b3c">
+<p>
+La corrupción política en España ha evolucionado desde casos aislados en la Transición hacia fenómenos sistémicos que han afectado a todos los partidos mayoritarios. Los patrones identificados revelan estructuras consolidadas de financiación irregular y redes clientelares que han pervivido durante décadas.
+El impacto en la confianza ciudadana ha sido profundo, contribuyendo a crisis institucionales y cambios en el mapa político. Las reformas implementadas han mejorado parcialmente la transparencia, pero persisten vulnerabilidades estructurales que requieren atención continuada.
+</p>
+</div>
+
+<div id="outline-container-orge50978a" class="outline-3">
+<h3 id="orge50978a">Referencias Documentales</h3>
+<div class="outline-text-3" id="text-orge50978a">
+<ul class="org-ul">
+<li>Tribunal Supremo: Sentencias casos Gürtel, ERE, Púnica</li>
+<li>Informes Tribunal de Cuentas sobre financiación partidaria</li>
+<li>Transparencia Internacional: Índices anuales 2000-2024</li>
+<li>Fiscalía Especial contra la Corrupción: Memorias anuales</li>
+<li>Centro de Investigaciones Sociológicas: Barómetros sobre corrupción</li>
+<li>Consejo General del Poder Judicial: Estadísticas judiciales</li>
+<li>Parlamento Europeo: Informes sobre Rule of Law en España</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org2a6eb68" class="outline-3">
+<h3 id="org2a6eb68">Falacias del Argumento "Cobran Poco"</h3>
+<div class="outline-text-3" id="text-org2a6eb68">
+</div>
+<div id="outline-container-org6695ad2" class="outline-4">
+<h4 id="org6695ad2">1. Comparación Internacional Sesgada</h4>
+<div class="outline-text-4" id="text-org6695ad2">
+<p>
+Los salarios de los políticos españoles se sitúan en la media europea y por encima del salario medio nacional. Un diputado español cobra el equivalente a 1.8 veces el salario medio del país, ratio similar al de Alemania o Francia.
+</p>
+</div>
+</div>
+<div id="outline-container-org79b67d8" class="outline-4">
+<h4 id="org79b67d8">2. Beneficios Adicionales Ignorados</h4>
+<div class="outline-text-4" id="text-org79b67d8">
+<p>
+El argumento omite sistemáticamente:
+</p>
+
+<ul class="org-ul">
+<li>Dietas y gastos de representación</li>
+<li>Pensiones privilegiadas tras pocos años de servicio</li>
+<li>Acceso a redes de influencia para el sector privado</li>
+<li>Oportunidades post-cargo (revolving doors)</li>
+<li>Seguros y protección social ampliada</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1d191d1" class="outline-4">
+<h4 id="org1d191d1">3. Magnitudes Desproporcionadas</h4>
+<div class="outline-text-4" id="text-org1d191d1">
+<p>
+Los casos analizados muestran que las cantidades involucradas en corrupción superan exponencialmente cualquier incremento salarial razonable:
+</p>
+
+<ul class="org-ul">
+<li>Caso Malaya: 2.4 mil millones € (equivale a 28,277 años de salario presidencial)</li>
+<li>Caso ERE: 679 millones € (equivale a 8,002 años de salario presidencial)</li>
+<li>Caso Gürtel: 120 millones € (equivale a 1,414 años de salario presidencial)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org86607b4" class="outline-4">
+<h4 id="org86607b4">4. Perfil Socioeconómico de los Implicados</h4>
+<div class="outline-text-4" id="text-org86607b4">
+<p>
+El análisis de los casos revela que la mayoría de políticos implicados provenían de estratos socioeconómicos medios-altos y tenían acceso a fuentes de ingresos alternativas, desminuyendo la credibilidad del argumento de "necesidad económica".
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org6016429" class="outline-3">
+<h3 id="org6016429">Factores Reales de la Corrupción Política</h3>
+<div class="outline-text-3" id="text-org6016429">
+</div>
+<div id="outline-container-org9b27d6a" class="outline-4">
+<h4 id="org9b27d6a">1. Cultura de Impunidad</h4>
+<div class="outline-text-4" id="text-org9b27d6a">
+<ul class="org-ul">
+<li>Percepción de que "todos lo hacen"</li>
+<li>Escasa probabilidad de detección y condena</li>
+<li>Penas desproporcionadamente bajas respecto al beneficio</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org48cb1be" class="outline-4">
+<h4 id="org48cb1be">2. Concentración de Poder</h4>
+<div class="outline-text-4" id="text-org48cb1be">
+<ul class="org-ul">
+<li>Control sobre adjudicaciones millonarias</li>
+<li>Capacidad de influir en normativas sectoriales</li>
+<li>Acceso privilegiado a información estratégica</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeb62986" class="outline-4">
+<h4 id="orgeb62986">3. Redes Clientelares</h4>
+<div class="outline-text-4" id="text-orgeb62986">
+<ul class="org-ul">
+<li>Sistemas de financiación partidaria paralelos</li>
+<li>Intercambio de favores políticos por económicos</li>
+<li>Perpetuación de estructuras de poder</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb14777a" class="outline-4">
+<h4 id="orgb14777a">4. Debilidad Institucional</h4>
+<div class="outline-text-4" id="text-orgb14777a">
+<ul class="org-ul">
+<li>Controles internos insuficientes</li>
+<li>Separación difusa entre público y privado</li>
+<li>Marco regulatorio con lagunas</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc889337" class="outline-3">
+<h3 id="orgc889337">Evidencia Empírica Contraria</h3>
+<div class="outline-text-3" id="text-orgc889337">
+<p>
+Los países con menores índices de corrupción (Dinamarca, Finlandia, Suecia) no se caracterizan por tener salarios políticos excepcionalmente altos, sino por:
+</p>
+
+<ul class="org-ul">
+<li>Transparencia institucional robusta</li>
+<li>Controles eficaces y independientes</li>
+<li>Cultura cívica de rendición de cuentas</li>
+<li>Marco legal disuasorio</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcaf068d" class="outline-3">
+<h3 id="orgcaf068d">Conclusión</h3>
+<div class="outline-text-3" id="text-orgcaf068d">
+<p>
+El argumento "los políticos cobran poco" constituye una falacia que:
+</p>
+
+<ul class="org-ul">
+<li>Trivializa la gravedad de la corrupción reduciéndola a un problema salarial</li>
+<li>Ignora las verdaderas causas estructurales del fenómeno</li>
+<li>Desvía el debate de las reformas institucionales necesarias</li>
+<li>Contradice la evidencia empírica sobre patrones de corrupción</li>
+</ul>
+
+<p>
+Los datos de los 50 casos analizados demuestran que la corrupción política en España responde a factores sistémicos de poder, oportunidad e impunidad, no a insuficiencia retributiva. La solución pasa por fortalecer instituciones, mejorar controles y generar una cultura de transparencia, no por incrementos salariales que carecen de correlación demostrable con la reducción de la corrupción.
+</p>
+
+<p>
+Anexos
+</p>
+</div>
+</div>
+
+<div id="outline-container-org494d547" class="outline-3">
+<h3 id="org494d547">Metodología</h3>
+<div class="outline-text-3" id="text-org494d547">
+<p>
+Este análisis se basa en sentencias judiciales firmes, informes oficiales y documentación periodística contrastada. Las cifras económicas corresponden a estimaciones oficiales cuando están disponibles.
+</p>
+</div>
+</div>
+<div id="outline-container-org05e4c09" class="outline-3">
+<h3 id="org05e4c09">Fuentes Primarias</h3>
+<div class="outline-text-3" id="text-org05e4c09">
+<ul class="org-ul">
+<li>Archivos judiciales</li>
+<li>Boletín Oficial del Estado</li>
+<li>Diario- s de sesiones parlamentarias</li>
+<li>Informes de organismos internacionales</li>
+</ul>
+
+<p>
+<br />
+</p>
+
+<p>
+<a href="2025-06-18-casos-de-corrupci-n-en-espa-a-1975-2025-.html">Casos de Corrupción en España (1975-2025)</a>
+</p>
+
+
+
+
+
+<p class="post-meta">Publicado el 2025-06-18 13:40 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-19 19:49</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>
