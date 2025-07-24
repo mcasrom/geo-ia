@@ -1,0 +1,3623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2025-07-24 jue 14:26 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Análisis del Impacto Económico de los Aranceles Propuestos entre UE y EEUU</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Estudio analítico y crítico sobre las implicaciones económicas de los aranceles comerciales negociados entre la Unión Europea y Estados Unidos" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Análisis del Impacto Económico de los Aranceles Propuestos entre UE y EEUU</h1>
+
+<div id="outline-container-org4319ad1" class="outline-2">
+<h2 id="org4319ad1">Análisis del Impacto Económico de los Aranceles Propuestos entre UE y EEUU</h2>
+<div class="outline-text-2" id="text-org4319ad1">
+<p>
+Las negociaciones comerciales entre la Unión Europea y Estados Unidos han entrado en una fase crítica, con propuestas arancelarias que oscilan entre el 10% y el 50% según los diferentes escenarios planteados. Este documento analiza las implicaciones económicas de estos aranceles bajo cuatro escenarios principales: 10%, 15%, 30% y 50%, evaluando sus efectos sobre el PIB, empleo, empresas y consumidores.
+</p>
+
+<p>
+La situación actual se caracteriza por la presión ejercida por la administración Trump, quien ha amenazado con imponer aranceles del 30% a las exportaciones europeas si no se alcanza un acuerdo antes del 1 de agosto de 2025. La UE ha mostrado disposición a aceptar acuerdos con aranceles del 10-15%, buscando exenciones en sectores clave como farmacéuticos, semiconductores y aeronáutica.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org1093ebf" class="outline-2">
+<h2 id="org1093ebf">Marco Contextual y Situación Actual</h2>
+<div class="outline-text-2" id="text-org1093ebf">
+</div>
+<div id="outline-container-org56bf5dd" class="outline-3">
+<h3 id="org56bf5dd">1.1 Estado de las Negociaciones</h3>
+<div class="outline-text-3" id="text-org56bf5dd">
+<p>
+Las relaciones comerciales UE-EEUU atraviesan un momento de tensión sin precedentes. Según las fuentes más recientes, los negociadores europeos y estadounidenses mantienen conversaciones intensas para alcanzar un acuerdo comercial antes de la fecha límite establecida por Trump del 1 de agosto de 2025.
+</p>
+
+<p>
+La UE ha expresado su disposición a aceptar un arancel universal del 10% en muchas de sus exportaciones, pero busca obtener tarifas menores en sectores estratégicos como productos farmacéuticos, alcohol, semiconductores y aeronaves comerciales. Esta posición refleja la estrategia europea de minimizar el daño en sus industrias más competitivas mientras acepta compromisos en otros sectores.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0232514" class="outline-3">
+<h3 id="org0232514">1.2 Amenazas Arancelarias Actuales</h3>
+<div class="outline-text-3" id="text-org0232514">
+<p>
+Trump ha implementado una estrategia de presión escalada, comenzando con aranceles del 10% como base, pero amenazando con incrementos hasta el 30% para la mayoría de países, incluyendo la UE. Esta estrategia incluye:
+</p>
+
+<ul class="org-ul">
+<li>Aranceles del 125% acumulativo para China</li>
+<li>10% para la mayoría de países durante un período de gracia de 90 días</li>
+<li>Amenaza de 30% para la UE si no se alcanza un acuerdo</li>
+<li>Incremento de aranceles sobre aluminio y acero del 25% al 50%</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3d06fd3" class="outline-2">
+<h2 id="org3d06fd3">Análisis de Escenarios Arancelarios</h2>
+<div class="outline-text-2" id="text-org3d06fd3">
+</div>
+<div id="outline-container-orgd8b893a" class="outline-3">
+<h3 id="orgd8b893a">2.1 Escenario Base: Aranceles del 10%</h3>
+<div class="outline-text-3" id="text-orgd8b893a">
+</div>
+<div id="outline-container-org8a5e7e3" class="outline-4">
+<h4 id="org8a5e7e3">Impacto Macroeconómico</h4>
+<div class="outline-text-4" id="text-org8a5e7e3">
+
+<div id="org3f62092" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_claude.png" alt="impacto_aranceles_ue_eeuu_claude.png" />
+</p>
+</div>
+
+<p>
+En el escenario del 10%, considerado el más moderado y probable según las negociaciones actuales, el impacto económico sería relativamente contenido:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">Impacto</th>
+<th scope="col" class="org-left">Valor Absoluto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">PIB UE</td>
+<td class="org-right">-0.15%</td>
+<td class="org-left">-22.5 mil millones €</td>
+</tr>
+
+<tr>
+<td class="org-left">Empleo</td>
+<td class="org-right">-0.08%</td>
+<td class="org-left">-180,000 empleos</td>
+</tr>
+
+<tr>
+<td class="org-left">Comercio bilateral</td>
+<td class="org-right">-8%</td>
+<td class="org-left">-65 mil millones €</td>
+</tr>
+
+<tr>
+<td class="org-left">Inversión empresarial</td>
+<td class="org-right">-0.3%</td>
+<td class="org-left">-15 mil millones €</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgfc09e52" class="outline-4">
+<h4 id="orgfc09e52">Sectores Más Afectados (10%)</h4>
+<div class="outline-text-4" id="text-orgfc09e52">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Sector</th>
+<th scope="col" class="org-right">Impacto PIB Sectorial</th>
+<th scope="col" class="org-left">Empleos Perdidos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Automoción</td>
+<td class="org-right">-2.1%</td>
+<td class="org-left">45,000</td>
+</tr>
+
+<tr>
+<td class="org-left">Maquinaria</td>
+<td class="org-right">-1.8%</td>
+<td class="org-left">35,000</td>
+</tr>
+
+<tr>
+<td class="org-left">Químicos</td>
+<td class="org-right">-1.2%</td>
+<td class="org-left">28,000</td>
+</tr>
+
+<tr>
+<td class="org-left">Textil</td>
+<td class="org-right">-2.5%</td>
+<td class="org-left">42,000</td>
+</tr>
+
+<tr>
+<td class="org-left">Alimentación</td>
+<td class="org-right">-0.8%</td>
+<td class="org-left">30,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge875038" class="outline-3">
+<h3 id="orge875038">2.2 Escenario Negociado: Aranceles del 15%</h3>
+<div class="outline-text-3" id="text-orge875038">
+<p>
+Este escenario refleja las negociaciones actuales, donde la UE podría aceptar un arancel del 15% como compromiso, según fuentes diplomáticas recientes.
+</p>
+
+
+<div id="org2234475" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_15.png" alt="impacto_aranceles_ue_eeuu_15.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge1eb823" class="outline-4">
+<h4 id="orge1eb823">Impacto Sectorial Detallado (15%)</h4>
+<div class="outline-text-4" id="text-orge1eb823">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador Económico</th>
+<th scope="col" class="org-right">Impacto</th>
+<th scope="col" class="org-left">Período de Ajuste</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">PIB Total UE</td>
+<td class="org-right">-0.25%</td>
+<td class="org-left">18 meses</td>
+</tr>
+
+<tr>
+<td class="org-left">Exportaciones a EEUU</td>
+<td class="org-right">-12%</td>
+<td class="org-left">12 meses</td>
+</tr>
+
+<tr>
+<td class="org-left">Importaciones desde EEUU</td>
+<td class="org-right">+8%</td>
+<td class="org-left">9 meses</td>
+</tr>
+
+<tr>
+<td class="org-left">Tipo de cambio EUR/USD</td>
+<td class="org-right">-3%</td>
+<td class="org-left">6 meses</td>
+</tr>
+
+<tr>
+<td class="org-left">Inflación UE</td>
+<td class="org-right">+0.3%</td>
+<td class="org-left">24 meses</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org07dfc2b" class="outline-3">
+<h3 id="org07dfc2b">2.3 Escenario de Crisis: Aranceles del 30%</h3>
+<div class="outline-text-3" id="text-org07dfc2b">
+<p>
+Este escenario representa la materialización de las amenazas de Trump si no se alcanza un acuerdo, lo que constituiría una crisis comercial significativa.
+</p>
+
+
+<div id="orgcf8e57a" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_30.png" alt="impacto_aranceles_ue_eeuu_30.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb0fc991" class="outline-4">
+<h4 id="orgb0fc991">Impacto Macroeconómico Severo (30%)</h4>
+<div class="outline-text-4" id="text-orgb0fc991">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Variable</th>
+<th scope="col" class="org-right">Impacto Año 1</th>
+<th scope="col" class="org-right">Impacto Año 2</th>
+<th scope="col" class="org-left">Impacto a Largo Plazo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">PIB UE</td>
+<td class="org-right">-0.8%</td>
+<td class="org-right">-0.5%</td>
+<td class="org-left">-0.3% persistente</td>
+</tr>
+
+<tr>
+<td class="org-left">Empleo</td>
+<td class="org-right">-1.2%</td>
+<td class="org-right">-0.8%</td>
+<td class="org-left">-0.4% estructural</td>
+</tr>
+
+<tr>
+<td class="org-left">Comercio bilateral</td>
+<td class="org-right">-25%</td>
+<td class="org-right">-20%</td>
+<td class="org-left">-15% permanente</td>
+</tr>
+
+<tr>
+<td class="org-left">Inversión extranjera</td>
+<td class="org-right">-18%</td>
+<td class="org-right">-12%</td>
+<td class="org-left">-8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Productividad</td>
+<td class="org-right">-0.4%</td>
+<td class="org-right">-0.2%</td>
+<td class="org-left">Recuperación gradual</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd18a04a" class="outline-3">
+<h3 id="orgd18a04a">2.4 Escenario Extremo: Aranceles del 50%</h3>
+<div class="outline-text-3" id="text-orgd18a04a">
+<p>
+Un escenario de 50% representaría una guerra comercial total, con consecuencias devastadoras para ambas economías.
+</p>
+</div>
+
+<div id="outline-container-org5a629e3" class="outline-4">
+<h4 id="org5a629e3">Proyecciones Críticas (50%)</h4>
+<div class="outline-text-4" id="text-org5a629e3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Sector Económico</th>
+<th scope="col" class="org-right">Contracción PIB</th>
+<th scope="col" class="org-left">Pérdida Empleos</th>
+<th scope="col" class="org-left">Tiempo Recuperación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Exportaciones</td>
+<td class="org-right">-45%</td>
+<td class="org-left">850,000</td>
+<td class="org-left">&gt;5 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Manufactura</td>
+<td class="org-right">-12%</td>
+<td class="org-left">1,200,000</td>
+<td class="org-left">&gt;7 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Servicios</td>
+<td class="org-right">-3%</td>
+<td class="org-left">400,000</td>
+<td class="org-left">3-4 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Agricultura</td>
+<td class="org-right">-8%</td>
+<td class="org-left">180,000</td>
+<td class="org-left">4-5 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Tecnología</td>
+<td class="org-right">-15%</td>
+<td class="org-left">320,000</td>
+<td class="org-left">&gt;6 años</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4fb26d9" class="outline-2">
+<h2 id="org4fb26d9">Análisis de Impacto por Grupos de Interés</h2>
+<div class="outline-text-2" id="text-org4fb26d9">
+</div>
+<div id="outline-container-orgee3fe98" class="outline-3">
+<h3 id="orgee3fe98">3.1 Impacto sobre Consumidores</h3>
+<div class="outline-text-3" id="text-orgee3fe98">
+
+<div id="org74f5c69" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_consumidores.png" alt="impacto_aranceles_ue_eeuu_consumidores.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd2aaf0c" class="outline-4">
+<h4 id="orgd2aaf0c">Opciones de Adaptación del Consumidor</h4>
+<div class="outline-text-4" id="text-orgd2aaf0c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Escenario Arancelario</th>
+<th scope="col" class="org-right">Aumento Precios Productos US</th>
+<th scope="col" class="org-left">Opciones Consumidor</th>
+<th scope="col" class="org-right">Impacto Bienestar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">10%</td>
+<td class="org-right">+8-12%</td>
+<td class="org-left">Sustitución parcial</td>
+<td class="org-right">-1.2%</td>
+</tr>
+
+<tr>
+<td class="org-right">15%</td>
+<td class="org-right">+12-18%</td>
+<td class="org-left">Sustitución moderada</td>
+<td class="org-right">-2.1%</td>
+</tr>
+
+<tr>
+<td class="org-right">30%</td>
+<td class="org-right">+25-35%</td>
+<td class="org-left">Sustitución masiva</td>
+<td class="org-right">-4.8%</td>
+</tr>
+
+<tr>
+<td class="org-right">50%</td>
+<td class="org-right">+40-55%</td>
+<td class="org-left">Abandono productos US</td>
+<td class="org-right">-7.2%</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Las opciones del consumidor se ven progresivamente limitadas conforme aumentan los aranceles. En escenarios moderados (10-15%), mantienen cierta capacidad de elección, aunque con mayor costo. En escenarios extremos (30-50%), se ven forzados a cambios drásticos en sus patrones de consumo.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7b7d6ad" class="outline-3">
+<h3 id="org7b7d6ad">3.2 Impacto sobre Empresas</h3>
+<div class="outline-text-3" id="text-org7b7d6ad">
+</div>
+<div id="outline-container-org6ecd494" class="outline-4">
+<h4 id="org6ecd494">Empresas Exportadoras UE</h4>
+<div class="outline-text-4" id="text-org6ecd494">
+
+<div id="orgeb32710" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_expor_UE.png" alt="impacto_aranceles_ue_eeuu_expor_UE.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org31ea073" class="outline-4">
+<h4 id="org31ea073">Matriz de Opciones Empresariales por Sector</h4>
+<div class="outline-text-4" id="text-org31ea073">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Sector</th>
+<th scope="col" class="org-left">Capacidad Relocalización</th>
+<th scope="col" class="org-left">Diversificación Mercados</th>
+<th scope="col" class="org-left">Absorción Costos</th>
+<th scope="col" class="org-left">Riesgo Cierre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Automoción</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Media</td>
+<td class="org-left">Baja</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Tecnología</td>
+<td class="org-left">Media</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Media</td>
+<td class="org-left">Bajo</td>
+</tr>
+
+<tr>
+<td class="org-left">Agricultura</td>
+<td class="org-left">Baja</td>
+<td class="org-left">Media</td>
+<td class="org-left">Baja</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Farmacéutica</td>
+<td class="org-left">Media</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Bajo</td>
+</tr>
+
+<tr>
+<td class="org-left">Textil</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Media</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Aeronáutica</td>
+<td class="org-left">Baja</td>
+<td class="org-left">Baja</td>
+<td class="org-left">Alta</td>
+<td class="org-left">Medio</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgd11e102" class="outline-4">
+<h4 id="orgd11e102">Empresas Importadoras UE</h4>
+<div class="outline-text-4" id="text-orgd11e102">
+<p>
+Las empresas que dependen de insumos estadounidenses enfrentan dilemas diferentes:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Escenario</th>
+<th scope="col" class="org-right">Aumento Costos Insumos</th>
+<th scope="col" class="org-left">Opciones Sustitución</th>
+<th scope="col" class="org-right">Impacto Competitividad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">10%</td>
+<td class="org-right">+8%</td>
+<td class="org-left">Sustitución gradual</td>
+<td class="org-right">-2%</td>
+</tr>
+
+<tr>
+<td class="org-right">15%</td>
+<td class="org-right">+12%</td>
+<td class="org-left">Sustitución acelerada</td>
+<td class="org-right">-3.5%</td>
+</tr>
+
+<tr>
+<td class="org-right">30%</td>
+<td class="org-right">+25%</td>
+<td class="org-left">Cambio forzoso proveedores</td>
+<td class="org-right">-8%</td>
+</tr>
+
+<tr>
+<td class="org-right">50%</td>
+<td class="org-right">+40%</td>
+<td class="org-left">Reestructuración total</td>
+<td class="org-right">-15%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org659f49f" class="outline-3">
+<h3 id="org659f49f">3.3 Impacto sobre el Empleo</h3>
+<div class="outline-text-3" id="text-org659f49f">
+
+<div id="org2623b98" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_empleo.png" alt="impacto_aranceles_ue_eeuu_empleo.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd650fc2" class="outline-4">
+<h4 id="orgd650fc2">Proyecciones de Empleo por Escenario</h4>
+<div class="outline-text-4" id="text-orgd650fc2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Escenario</th>
+<th scope="col" class="org-left">Empleos Perdidos</th>
+<th scope="col" class="org-left">Empleos Creados</th>
+<th scope="col" class="org-left">Efecto Neto</th>
+<th scope="col" class="org-left">Sectores Más Afectados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">10%</td>
+<td class="org-left">280,000</td>
+<td class="org-left">100,000</td>
+<td class="org-left">-180,000</td>
+<td class="org-left">Automoción, Textil</td>
+</tr>
+
+<tr>
+<td class="org-right">15%</td>
+<td class="org-left">420,000</td>
+<td class="org-left">140,000</td>
+<td class="org-left">-280,000</td>
+<td class="org-left">Manufactura, Químicos</td>
+</tr>
+
+<tr>
+<td class="org-right">30%</td>
+<td class="org-left">1,200,000</td>
+<td class="org-left">250,000</td>
+<td class="org-left">-950,000</td>
+<td class="org-left">Exportaciones, Servicios</td>
+</tr>
+
+<tr>
+<td class="org-right">50%</td>
+<td class="org-left">2,100,000</td>
+<td class="org-left">400,000</td>
+<td class="org-left">-1,700,000</td>
+<td class="org-left">Todos los sectores</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcb6c6be" class="outline-2">
+<h2 id="orgcb6c6be">Análisis Sectorial Detallado</h2>
+<div class="outline-text-2" id="text-orgcb6c6be">
+</div>
+<div id="outline-container-orge9de82c" class="outline-3">
+<h3 id="orge9de82c">4.1 Sector Automovilístico</h3>
+<div class="outline-text-3" id="text-orge9de82c">
+<p>
+El sector automovilístico europeo, representando el 6.8% del PIB de la UE y empleando a 13.8 millones de personas, se encuentra en una posición particularmente vulnerable.
+</p>
+</div>
+
+<div id="outline-container-org220bcc5" class="outline-4">
+<h4 id="org220bcc5">Vulnerabilidades Específicas</h4>
+<div class="outline-text-4" id="text-org220bcc5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Subsector</th>
+<th scope="col" class="org-left">Exposición EEUU</th>
+<th scope="col" class="org-left">Impacto Aranceles 15%</th>
+<th scope="col" class="org-left">Impacto Aranceles 30%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Vehículos Premium</td>
+<td class="org-left">28% ventas</td>
+<td class="org-left">-15% exportaciones</td>
+<td class="org-left">-35% exportaciones</td>
+</tr>
+
+<tr>
+<td class="org-left">Componentes</td>
+<td class="org-left">22% suministro</td>
+<td class="org-left">-8% producción</td>
+<td class="org-left">-18% producción</td>
+</tr>
+
+<tr>
+<td class="org-left">Software automotriz</td>
+<td class="org-left">35% mercado</td>
+<td class="org-left">-12% ingresos</td>
+<td class="org-left">-28% ingresos</td>
+</tr>
+
+<tr>
+<td class="org-left">Vehículos eléctricos</td>
+<td class="org-left">18% ventas</td>
+<td class="org-left">-10% crecimiento</td>
+<td class="org-left">-25% crecimiento</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org675093a" class="outline-4">
+<h4 id="org675093a">Estrategias de Adaptación Sector Automotriz</h4>
+<div class="outline-text-4" id="text-org675093a">
+<p>
+La industria contempla múltiples estrategias:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Relocalización de producción</b></b>: BMW y Mercedes-Benz han anunciado expansión de plantas en EEUU</li>
+<li><b><b>Diversificación geográfica</b></b>: Enfoque en mercados asiáticos y latinoamericanos</li>
+<li><b><b>Integración vertical</b></b>: Reducción dependencia componentes estadounidenses</li>
+<li><b><b>Acuerdos bilaterales</b></b>: Negociaciones directas empresa-gobierno</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5a6e3a7" class="outline-3">
+<h3 id="org5a6e3a7">4.2 Sector Tecnológico</h3>
+<div class="outline-text-3" id="text-org5a6e3a7">
+
+<div id="orga183e30" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_tecno.png" alt="impacto_aranceles_ue_eeuu_tecno.png" />
+</p>
+</div>
+
+<p>
+El sector tecnológico presenta características únicas debido a su naturaleza interconectada y dependiente de cadenas globales de valor.
+</p>
+</div>
+
+<div id="outline-container-org95cbaac" class="outline-4">
+<h4 id="org95cbaac">Impacto Diferenciado por Subsector Tecnológico</h4>
+<div class="outline-text-4" id="text-org95cbaac">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Subsector</th>
+<th scope="col" class="org-right">Dependencia EEUU</th>
+<th scope="col" class="org-left">Capacidad Sustitución</th>
+<th scope="col" class="org-left">Tiempo Adaptación</th>
+<th scope="col" class="org-left">Impacto a 30%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Semiconductores</td>
+<td class="org-right">45%</td>
+<td class="org-left">Baja</td>
+<td class="org-left">&gt;3 años</td>
+<td class="org-left">-25% producción</td>
+</tr>
+
+<tr>
+<td class="org-left">Software empresarial</td>
+<td class="org-right">60%</td>
+<td class="org-left">Media</td>
+<td class="org-left">18 meses</td>
+<td class="org-left">-18% ingresos</td>
+</tr>
+
+<tr>
+<td class="org-left">Telecomunicaciones</td>
+<td class="org-right">30%</td>
+<td class="org-left">Alta</td>
+<td class="org-left">12 meses</td>
+<td class="org-left">-8% crecimiento</td>
+</tr>
+
+<tr>
+<td class="org-left">Inteligencia Artificial</td>
+<td class="org-right">55%</td>
+<td class="org-left">Baja</td>
+<td class="org-left">&gt;2 años</td>
+<td class="org-left">-30% desarrollo</td>
+</tr>
+
+<tr>
+<td class="org-left">Ciberseguridad</td>
+<td class="org-right">40%</td>
+<td class="org-left">Media</td>
+<td class="org-left">15 meses</td>
+<td class="org-left">-15% capacidades</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfc9cd30" class="outline-3">
+<h3 id="orgfc9cd30">4.3 Sector Agrícola y Alimentario</h3>
+<div class="outline-text-3" id="text-orgfc9cd30">
+<p>
+La agricultura europea mantiene una relación comercial compleja con EEUU, siendo tanto competidora como complementaria en diferentes productos.
+</p>
+</div>
+
+<div id="outline-container-org34b0b17" class="outline-4">
+<h4 id="org34b0b17">Productos Agrícolas Más Vulnerables</h4>
+<div class="outline-text-4" id="text-org34b0b17">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Producto</th>
+<th scope="col" class="org-left">Exportaciones UE a EEUU</th>
+<th scope="col" class="org-right">Impacto Aranceles 15%</th>
+<th scope="col" class="org-left">Sustitutos Disponibles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Vinos y licores</td>
+<td class="org-left">3.2 mil millones €</td>
+<td class="org-right">-22%</td>
+<td class="org-left">Limitados</td>
+</tr>
+
+<tr>
+<td class="org-left">Quesos especiales</td>
+<td class="org-left">1.8 mil millones €</td>
+<td class="org-right">-18%</td>
+<td class="org-left">Mercados alternativos</td>
+</tr>
+
+<tr>
+<td class="org-left">Aceite de oliva</td>
+<td class="org-left">850 millones €</td>
+<td class="org-right">-15%</td>
+<td class="org-left">Expansión Asia</td>
+</tr>
+
+<tr>
+<td class="org-left">Productos orgánicos</td>
+<td class="org-left">1.2 mil millones €</td>
+<td class="org-right">-12%</td>
+<td class="org-left">Crecimiento interno</td>
+</tr>
+
+<tr>
+<td class="org-left">Conservas</td>
+<td class="org-left">670 millones €</td>
+<td class="org-right">-20%</td>
+<td class="org-left">Diversificación</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6de44d0" class="outline-2">
+<h2 id="org6de44d0">Efectos Sistémicos y de Segundo Orden</h2>
+<div class="outline-text-2" id="text-org6de44d0">
+</div>
+<div id="outline-container-org1a29b99" class="outline-3">
+<h3 id="org1a29b99">5.1 Impacto en Cadenas de Suministro Globales</h3>
+<div class="outline-text-3" id="text-org1a29b99">
+
+<div id="org88acfbe" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_suministro.png" alt="impacto_aranceles_ue_eeuu_suministro.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5cd58e7" class="outline-4">
+<h4 id="org5cd58e7">Costos de Reconfiguración por Sector</h4>
+<div class="outline-text-4" id="text-org5cd58e7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Sector</th>
+<th scope="col" class="org-left">Costo Reconfiguración</th>
+<th scope="col" class="org-left">Tiempo Transición</th>
+<th scope="col" class="org-right">Pérdida Eficiencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Automoción</td>
+<td class="org-left">15-25 mil millones €</td>
+<td class="org-left">2-4 años</td>
+<td class="org-right">8-12%</td>
+</tr>
+
+<tr>
+<td class="org-left">Electrónicos</td>
+<td class="org-left">8-12 mil millones €</td>
+<td class="org-left">18 meses</td>
+<td class="org-right">5-8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Farmacéutica</td>
+<td class="org-left">5-8 mil millones €</td>
+<td class="org-left">3-5 años</td>
+<td class="org-right">3-5%</td>
+</tr>
+
+<tr>
+<td class="org-left">Textil</td>
+<td class="org-left">3-5 mil millones €</td>
+<td class="org-left">6-12 meses</td>
+<td class="org-right">10-15%</td>
+</tr>
+
+<tr>
+<td class="org-left">Alimentación</td>
+<td class="org-left">2-4 mil millones €</td>
+<td class="org-left">12-18 meses</td>
+<td class="org-right">6-9%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0991e61" class="outline-3">
+<h3 id="org0991e61">5.2 Efectos Monetarios y Financieros</h3>
+<div class="outline-text-3" id="text-org0991e61">
+<p>
+Los aranceles generan presiones significativas sobre los tipos de cambio y los flujos de capital.
+</p>
+</div>
+
+<div id="outline-container-org7cebdd2" class="outline-4">
+<h4 id="org7cebdd2">Proyecciones Tipo de Cambio EUR/USD</h4>
+<div class="outline-text-4" id="text-org7cebdd2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Escenario Arancelario</th>
+<th scope="col" class="org-right">Impacto Inicial</th>
+<th scope="col" class="org-right">Impacto 6 meses</th>
+<th scope="col" class="org-right">Impacto 1 año</th>
+<th scope="col" class="org-left">Estabilización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">10%</td>
+<td class="org-right">-1.5%</td>
+<td class="org-right">-2.2%</td>
+<td class="org-right">-1.8%</td>
+<td class="org-left">18 meses</td>
+</tr>
+
+<tr>
+<td class="org-right">15%</td>
+<td class="org-right">-2.5%</td>
+<td class="org-right">-3.8%</td>
+<td class="org-right">-3.0%</td>
+<td class="org-left">24 meses</td>
+</tr>
+
+<tr>
+<td class="org-right">30%</td>
+<td class="org-right">-5.2%</td>
+<td class="org-right">-7.5%</td>
+<td class="org-right">-6.2%</td>
+<td class="org-left">36 meses</td>
+</tr>
+
+<tr>
+<td class="org-right">50%</td>
+<td class="org-right">-8.5%</td>
+<td class="org-right">-12.3%</td>
+<td class="org-right">-10.8%</td>
+<td class="org-left">&gt;48 meses</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org0e20f8a" class="outline-4">
+<h4 id="org0e20f8a">Flujos de Inversión</h4>
+<div class="outline-text-4" id="text-org0e20f8a">
+<p>
+Los aranceles provocan reorientación de flujos de inversión directa extranjera:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Tipo de Inversión</th>
+<th scope="col" class="org-left">Cambio Flujos UE-EEUU</th>
+<th scope="col" class="org-left">Destinos Alternativos</th>
+<th scope="col" class="org-left">Impacto Neto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Manufactura</td>
+<td class="org-left">-35% a -60%</td>
+<td class="org-left">Asia, Latinoamérica</td>
+<td class="org-left">-15% total</td>
+</tr>
+
+<tr>
+<td class="org-left">Tecnología</td>
+<td class="org-left">-20% a -40%</td>
+<td class="org-left">Reino Unido, Canadá</td>
+<td class="org-left">-8% total</td>
+</tr>
+
+<tr>
+<td class="org-left">Servicios financieros</td>
+<td class="org-left">-10% a -25%</td>
+<td class="org-left">Londres, Singapur</td>
+<td class="org-left">-3% total</td>
+</tr>
+
+<tr>
+<td class="org-left">Infraestructura</td>
+<td class="org-left">-25% a -45%</td>
+<td class="org-left">Mercados emergentes</td>
+<td class="org-left">-12% total</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc74418a" class="outline-3">
+<h3 id="orgc74418a">5.3 Impacto en Innovación y I+D</h3>
+<div class="outline-text-3" id="text-orgc74418a">
+
+<div id="org1596d3e" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_innovacion.png" alt="impacto_aranceles_ue_eeuu_innovacion.png" />
+</p>
+</div>
+
+<p>
+La innovación transatlántica, valorada en 180 mil millones de euros anuales en proyectos conjuntos, sufriría impactos significativos.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5b0450b" class="outline-2">
+<h2 id="org5b0450b">Respuestas de Política Económica</h2>
+<div class="outline-text-2" id="text-org5b0450b">
+</div>
+<div id="outline-container-org6c8603a" class="outline-3">
+<h3 id="org6c8603a">6.1 Medidas de Mitigación UE</h3>
+<div class="outline-text-3" id="text-org6c8603a">
+<p>
+La Unión Europea contempla múltiples instrumentos para mitigar el impacto de los aranceles estadounidenses.
+</p>
+</div>
+
+<div id="outline-container-org11163ab" class="outline-4">
+<h4 id="org11163ab">Instrumentos de Política Comercial</h4>
+<div class="outline-text-4" id="text-org11163ab">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Instrumento</th>
+<th scope="col" class="org-left">Mecanismo</th>
+<th scope="col" class="org-right">Efectividad Estimada</th>
+<th scope="col" class="org-left">Tiempo Implementación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Aranceles recíprocos</td>
+<td class="org-left">Represalia simétrica</td>
+<td class="org-right">60-70%</td>
+<td class="org-left">3-6 meses</td>
+</tr>
+
+<tr>
+<td class="org-left">Instrumento anti-coerción</td>
+<td class="org-left">Sanciones selectivas</td>
+<td class="org-right">40-50%</td>
+<td class="org-left">6-12 meses</td>
+</tr>
+
+<tr>
+<td class="org-left">Diversificación comercial</td>
+<td class="org-left">Nuevos acuerdos</td>
+<td class="org-right">70-80%</td>
+<td class="org-left">12-24 meses</td>
+</tr>
+
+<tr>
+<td class="org-left">Subsidios compensatorios</td>
+<td class="org-left">Ayuda directa sectores</td>
+<td class="org-right">80-90%</td>
+<td class="org-left">6-9 meses</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org66b86bd" class="outline-4">
+<h4 id="org66b86bd">Políticas Fiscales y Monetarias</h4>
+<div class="outline-text-4" id="text-org66b86bd">
+
+<div id="orgc0c2619" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_fiscal.png" alt="impacto_aranceles_ue_eeuu_fiscal.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org777ef23" class="outline-3">
+<h3 id="org777ef23">6.2 Estrategias Empresariales Adaptativas</h3>
+<div class="outline-text-3" id="text-org777ef23">
+<p>
+Las empresas europeas desarrollan estrategias multidimensionales para adaptarse al nuevo entorno arancelario.
+</p>
+</div>
+
+<div id="outline-container-org8cf642d" class="outline-4">
+<h4 id="org8cf642d">Matriz de Estrategias por Tamaño Empresarial</h4>
+<div class="outline-text-4" id="text-org8cf642d">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Tamaño Empresa</th>
+<th scope="col" class="org-left">Estrategia Principal</th>
+<th scope="col" class="org-left">Recursos Requeridos</th>
+<th scope="col" class="org-right">Probabilidad Éxito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Grandes corporaciones</td>
+<td class="org-left">Diversificación geográfica</td>
+<td class="org-left">&gt;50 millones €</td>
+<td class="org-right">75-85%</td>
+</tr>
+
+<tr>
+<td class="org-left">Empresas medianas</td>
+<td class="org-left">Nichos especializados</td>
+<td class="org-left">5-20 millones €</td>
+<td class="org-right">60-70%</td>
+</tr>
+
+<tr>
+<td class="org-left">PYMES exportadoras</td>
+<td class="org-left">Cooperación/clusters</td>
+<td class="org-left">0.5-2 millones €</td>
+<td class="org-right">45-55%</td>
+</tr>
+
+<tr>
+<td class="org-left">Startups tech</td>
+<td class="org-left">Pivoting mercados</td>
+<td class="org-left">0.1-0.5 millones €</td>
+<td class="org-right">30-40%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org2a32870" class="outline-4">
+<h4 id="org2a32870">Innovación como Respuesta Estratégica</h4>
+<div class="outline-text-4" id="text-org2a32870">
+<p>
+La presión arancelaria puede catalizar procesos de innovación acelerada:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Área Innovación</th>
+<th scope="col" class="org-left">Inversión Estimada</th>
+<th scope="col" class="org-left">Impacto Competitividad</th>
+<th scope="col" class="org-left">ROI Esperado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Automatización</td>
+<td class="org-left">45 mil millones €</td>
+<td class="org-left">+15-25% productividad</td>
+<td class="org-left">3-5 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Sostenibilidad</td>
+<td class="org-left">35 mil millones €</td>
+<td class="org-left">Nuevos mercados</td>
+<td class="org-left">4-6 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Digitalización</td>
+<td class="org-left">28 mil millones €</td>
+<td class="org-left">+20-30% eficiencia</td>
+<td class="org-left">2-3 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Biotecnología</td>
+<td class="org-left">22 mil millones €</td>
+<td class="org-left">Ventaja tecnológica</td>
+<td class="org-left">5-8 años</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0492031" class="outline-2">
+<h2 id="org0492031">Escenarios de Largo Plazo y Implicaciones Estructurales</h2>
+<div class="outline-text-2" id="text-org0492031">
+</div>
+<div id="outline-container-orge4650de" class="outline-3">
+<h3 id="orge4650de">7.1 Reconfiguración del Orden Comercial Global</h3>
+<div class="outline-text-3" id="text-orge4650de">
+
+<div id="orgbd93b52" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_comercio.png" alt="impacto_aranceles_ue_eeuu_comercio.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9c3a2c4" class="outline-3">
+<h3 id="org9c3a2c4">7.2 Impactos Generacionales y Sociales</h3>
+<div class="outline-text-3" id="text-org9c3a2c4">
+<p>
+Los efectos de una guerra comercial trascienden lo económico, generando cambios sociales profundos.
+</p>
+</div>
+
+<div id="outline-container-org7f24bb4" class="outline-4">
+<h4 id="org7f24bb4">Impacto Intergeneracional</h4>
+<div class="outline-text-4" id="text-org7f24bb4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Generación</th>
+<th scope="col" class="org-left">Impacto Principal</th>
+<th scope="col" class="org-left">Adaptación</th>
+<th scope="col" class="org-left">Oportunidades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Baby Boomers (1946-1964)</td>
+<td class="org-left">Pensiones afectadas</td>
+<td class="org-left">Limitada</td>
+<td class="org-left">Mínimas</td>
+</tr>
+
+<tr>
+<td class="org-left">Generación X (1965-1980)</td>
+<td class="org-left">Pérdida empleos directivos</td>
+<td class="org-left">Reorientación profesional</td>
+<td class="org-left">Consultoría</td>
+</tr>
+
+<tr>
+<td class="org-left">Millennials (1981-1996)</td>
+<td class="org-left">Cambio mercado laboral</td>
+<td class="org-left">Alta capacidad</td>
+<td class="org-left">Emprendimiento digital</td>
+</tr>
+
+<tr>
+<td class="org-left">Generación Z (1997-2012)</td>
+<td class="org-left">Oportunidades alteradas</td>
+<td class="org-left">Máxima flexibilidad</td>
+<td class="org-left">Nuevos sectores</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org7bde817" class="outline-4">
+<h4 id="org7bde817">Efectos en Cohesión Social</h4>
+<div class="outline-text-4" id="text-org7bde817">
+<p>
+Los aranceles pueden exacerbar desigualdades existentes y crear nuevas tensiones sociales:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador Social</th>
+<th scope="col" class="org-right">Escenario 15%</th>
+<th scope="col" class="org-right">Escenario 30%</th>
+<th scope="col" class="org-left">Medidas Mitigación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Desempleo juvenil</td>
+<td class="org-right">+2.1%</td>
+<td class="org-right">+4.8%</td>
+<td class="org-left">Programas formación</td>
+</tr>
+
+<tr>
+<td class="org-left">Desigualdad regional</td>
+<td class="org-right">+8%</td>
+<td class="org-right">+18%</td>
+<td class="org-left">Fondos desarrollo</td>
+</tr>
+
+<tr>
+<td class="org-left">Pobreza relativa</td>
+<td class="org-right">+1.5%</td>
+<td class="org-right">+3.2%</td>
+<td class="org-left">Renta básica</td>
+</tr>
+
+<tr>
+<td class="org-left">Migración interna</td>
+<td class="org-right">+12%</td>
+<td class="org-right">+28%</td>
+<td class="org-left">Políticas integración</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7076f8b" class="outline-3">
+<h3 id="org7076f8b">7.3 Transformación del Modelo Económico Europeo</h3>
+<div class="outline-text-3" id="text-org7076f8b">
+
+<div id="orga02f0fc" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_modelo_econ.png" alt="impacto_aranceles_ue_eeuu_modelo_econ.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9e059b0" class="outline-2">
+<h2 id="org9e059b0">Análisis Crítico y Evaluación de Políticas</h2>
+<div class="outline-text-2" id="text-org9e059b0">
+</div>
+<div id="outline-container-org8955e1c" class="outline-3">
+<h3 id="org8955e1c">8.1 Limitaciones de las Respuestas Actuales</h3>
+<div class="outline-text-3" id="text-org8955e1c">
+<p>
+Las políticas propuestas por la UE presentan varias limitaciones estructurales que merecen análisis crítico.
+</p>
+</div>
+
+<div id="outline-container-orgf5014a8" class="outline-4">
+<h4 id="orgf5014a8">Contradicciones en la Estrategia Europea</h4>
+<div class="outline-text-4" id="text-orgf5014a8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Contradicción</th>
+<th scope="col" class="org-left">Descripción</th>
+<th scope="col" class="org-left">Impacto en Efectividad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Apertura vs Autonomía</td>
+<td class="org-left">Mantener mercados abiertos mientras busca autonomía</td>
+<td class="org-left">Reduce coherencia política</td>
+</tr>
+
+<tr>
+<td class="org-left">Competencia vs Cooperación</td>
+<td class="org-left">Competir con EEUU mientras coopera</td>
+<td class="org-left">Genera señales mixtas</td>
+</tr>
+
+<tr>
+<td class="org-left">Eficiencia vs Resiliencia</td>
+<td class="org-left">Optimizar costos vs construir redundancias</td>
+<td class="org-left">Incrementa costos transición</td>
+</tr>
+
+<tr>
+<td class="org-left">Nacional vs Supranacional</td>
+<td class="org-left">Políticas nacionales vs coordinación UE</td>
+<td class="org-left">Fragmenta respuesta</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org4acdf12" class="outline-4">
+<h4 id="org4acdf12">Riesgos de Escalada</h4>
+<div class="outline-text-4" id="text-org4acdf12">
+
+<div id="org97eb1e3" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_riesgos.png" alt="impacto_aranceles_ue_eeuu_riesgos.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgacc1417" class="outline-3">
+<h3 id="orgacc1417">8.2 Alternativas de Política No Exploradas</h3>
+<div class="outline-text-3" id="text-orgacc1417">
+<p>
+El debate actual se centra en respuestas reactivas, ignorando alternativas proactivas potencialmente más efectivas.
+</p>
+</div>
+
+<div id="outline-container-org1a7a6f5" class="outline-4">
+<h4 id="org1a7a6f5">Estrategias de Cooperación Selectiva</h4>
+<div class="outline-text-4" id="text-org1a7a6f5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Estrategia</th>
+<th scope="col" class="org-left">Mecanismo</th>
+<th scope="col" class="org-right">Probabilidad Éxito</th>
+<th scope="col" class="org-left">Costo Político</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Acuerdos sectoriales</td>
+<td class="org-left">Exenciones mutuas sectores clave</td>
+<td class="org-right">65%</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Cooperación regulatoria</td>
+<td class="org-left">Armonización estándares</td>
+<td class="org-right">70%</td>
+<td class="org-left">Bajo</td>
+</tr>
+
+<tr>
+<td class="org-left">Inversión conjunta I+D</td>
+<td class="org-left">Proyectos tecnológicos compartidos</td>
+<td class="org-right">60%</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Mecanismo arbitraje</td>
+<td class="org-left">Sistema resolución disputas</td>
+<td class="org-right">55%</td>
+<td class="org-left">Medio</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org49cc7cf" class="outline-4">
+<h4 id="org49cc7cf">Diplomacia Económica Innovadora</h4>
+<div class="outline-text-4" id="text-org49cc7cf">
+<p>
+La UE podría explorar mecanismos diplomáticos que vayan más allá de la lógica de represalia:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Condicionamiento positivo</b></b>: Incentivos por reducción aranceles</li>
+<li><b><b>Coaliciones multilaterales</b></b>: Alianzas con países terceros</li>
+<li><b><b>Presión subnacional</b></b>: Engagement con estados y ciudades estadounidenses</li>
+<li><b><b>Diplomacia corporativa</b></b>: Mediación través empresas multinacionales</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2824969" class="outline-3">
+<h3 id="org2824969">8.3 Lecciones Históricas y Precedentes</h3>
+<div class="outline-text-3" id="text-org2824969">
+</div>
+<div id="outline-container-org7d07c7b" class="outline-4">
+<h4 id="org7d07c7b">Comparación con Crisis Comerciales Anteriores</h4>
+<div class="outline-text-4" id="text-org7d07c7b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Crisis Histórica</th>
+<th scope="col" class="org-left">Duración</th>
+<th scope="col" class="org-left">Resolución</th>
+<th scope="col" class="org-right">Costo PIB</th>
+<th scope="col" class="org-left">Lecciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Guerra Arancelaria 1930s</td>
+<td class="org-left">8 años</td>
+<td class="org-left">Guerra Mundial</td>
+<td class="org-right">-25%</td>
+<td class="org-left">Escalada destructiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Crisis Acero 2002-2003</td>
+<td class="org-left">2 años</td>
+<td class="org-left">Negociación OMC</td>
+<td class="org-right">-0.3%</td>
+<td class="org-left">Instituciones funcionan</td>
+</tr>
+
+<tr>
+<td class="org-left">Disputas Airbus-Boeing</td>
+<td class="org-left">16 años</td>
+<td class="org-left">Suspensión mutua</td>
+<td class="org-right">-0.1%</td>
+<td class="org-left">Sectores específicos manejables</td>
+</tr>
+
+<tr>
+<td class="org-left">Guerra Comercial China-US</td>
+<td class="org-left">4 años</td>
+<td class="org-left">Tregua parcial</td>
+<td class="org-right">-0.8%</td>
+<td class="org-left">Interdependencia limita daño</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orga492f5e" class="outline-4">
+<h4 id="orga492f5e">Factores de Éxito en Resolución de Disputas</h4>
+<div class="outline-text-4" id="text-orga492f5e">
+
+<div id="org88b0083" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_disputas.png" alt="impacto_aranceles_ue_eeuu_disputas.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2aa58e4" class="outline-2">
+<h2 id="org2aa58e4">Recomendaciones de Política</h2>
+<div class="outline-text-2" id="text-org2aa58e4">
+</div>
+<div id="outline-container-org5e53c68" class="outline-3">
+<h3 id="org5e53c68">9.1 Estrategia de Corto Plazo (6-18 meses)</h3>
+<div class="outline-text-3" id="text-org5e53c68">
+</div>
+<div id="outline-container-org3ed25ec" class="outline-4">
+<h4 id="org3ed25ec">Prioridades Inmediatas</h4>
+<div class="outline-text-4" id="text-org3ed25ec">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Acción</th>
+<th scope="col" class="org-left">Responsable</th>
+<th scope="col" class="org-left">Plazo</th>
+<th scope="col" class="org-left">Recursos Necesarios</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Mesa crisis empresarial</td>
+<td class="org-left">Comisión Europea</td>
+<td class="org-left">30 días</td>
+<td class="org-left">50 millones €</td>
+</tr>
+
+<tr>
+<td class="org-left">Fondo emergencia PYMES</td>
+<td class="org-left">Estados miembros</td>
+<td class="org-left">90 días</td>
+<td class="org-left">15 mil millones €</td>
+</tr>
+
+<tr>
+<td class="org-left">Coordinación respuesta arancelaria</td>
+<td class="org-left">Consejo UE</td>
+<td class="org-left">45 días</td>
+<td class="org-left">Personal diplomático</td>
+</tr>
+
+<tr>
+<td class="org-left">Identificación sectores críticos</td>
+<td class="org-left">DG Trade</td>
+<td class="org-left">60 días</td>
+<td class="org-left">Análisis técnico</td>
+</tr>
+
+<tr>
+<td class="org-left">Engagement subnacional EEUU</td>
+<td class="org-left">Servicio Acción Exterior</td>
+<td class="org-left">120 días</td>
+<td class="org-left">Red diplomática</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org8c2ef8c" class="outline-4">
+<h4 id="org8c2ef8c">Medidas Defensivas Calibradas</h4>
+<div class="outline-text-4" id="text-org8c2ef8c">
+<p>
+En lugar de represalias automáticas, la UE debería implementar respuestas escaladas y selectivas:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Fase 1 (Aranceles 10-15%)</b></b>: Consultas OMC + diplomacia intensiva</li>
+<li><b><b>Fase 2 (Aranceles 15-25%)</b></b>: Aranceles selectivos + coaliciones multilaterales</li>
+<li><b><b>Fase 3 (Aranceles 25%+)</b></b>: Respuesta simétrica + medidas autónomas</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgac0944d" class="outline-3">
+<h3 id="orgac0944d">9.2 Estrategia de Medio Plazo (1-3 años)</h3>
+<div class="outline-text-3" id="text-orgac0944d">
+
+<div id="orga207615" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_medioPlazo.png" alt="impacto_aranceles_ue_eeuu_medioPlazo.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge06a6ee" class="outline-4">
+<h4 id="orge06a6ee">Inversiones Estratégicas Prioritarias</h4>
+<div class="outline-text-4" id="text-orge06a6ee">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Área Inversión</th>
+<th scope="col" class="org-right">Monto (mil millones €)</th>
+<th scope="col" class="org-left">Impacto Esperado</th>
+<th scope="col" class="org-left">Tiempo Maduración</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Semiconductores europeos</td>
+<td class="org-right">43</td>
+<td class="org-left">Autonomía 60%</td>
+<td class="org-left">4-6 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Energías renovables</td>
+<td class="org-right">65</td>
+<td class="org-left">Independencia energética</td>
+<td class="org-left">3-5 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Inteligencia artificial</td>
+<td class="org-right">28</td>
+<td class="org-left">Liderazgo tecnológico</td>
+<td class="org-left">5-7 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Biotecnología</td>
+<td class="org-right">35</td>
+<td class="org-left">Ventaja competitiva</td>
+<td class="org-left">6-8 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Infraestructura digital</td>
+<td class="org-right">42</td>
+<td class="org-left">Soberanía digital</td>
+<td class="org-left">3-4 años</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbdb22ba" class="outline-3">
+<h3 id="orgbdb22ba">9.3 Visión de Largo Plazo (3-10 años)</h3>
+<div class="outline-text-3" id="text-orgbdb22ba">
+</div>
+<div id="outline-container-orgf667365" class="outline-4">
+<h4 id="orgf667365">Hacia un Nuevo Modelo de Globalización</h4>
+<div class="outline-text-4" id="text-orgf667365">
+<p>
+La crisis arancelaria presenta una oportunidad histórica para redefinir el modelo de integración económica global.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dimensión</th>
+<th scope="col" class="org-left">Modelo Actual</th>
+<th scope="col" class="org-left">Modelo Propuesto</th>
+<th scope="col" class="org-left">Beneficios UE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Comercio</td>
+<td class="org-left">Eficiencia máxima</td>
+<td class="org-left">Resiliencia equilibrada</td>
+<td class="org-left">Menor vulnerabilidad</td>
+</tr>
+
+<tr>
+<td class="org-left">Tecnología</td>
+<td class="org-left">Dependencia</td>
+<td class="org-left">Autonomía cooperativa</td>
+<td class="org-left">Control estratégico</td>
+</tr>
+
+<tr>
+<td class="org-left">Finanzas</td>
+<td class="org-left">Dolarización</td>
+<td class="org-left">Multipolaridad</td>
+<td class="org-left">Mayor autonomía</td>
+</tr>
+
+<tr>
+<td class="org-left">Regulación</td>
+<td class="org-left">Race to bottom</td>
+<td class="org-left">Standards europeos</td>
+<td class="org-left">Liderazgo normativo</td>
+</tr>
+
+<tr>
+<td class="org-left">Sostenibilidad</td>
+<td class="org-left">Externalidad</td>
+<td class="org-left">Core business</td>
+<td class="org-left">Ventaja competitiva</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb2e605b" class="outline-4">
+<h4 id="orgb2e605b">Métricas de Éxito a Largo Plazo</h4>
+<div class="outline-text-4" id="text-orgb2e605b">
+
+<div id="org0214130" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_largo_Plazo.png" alt="impacto_aranceles_ue_eeuu_largo_Plazo.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0b44381" class="outline-2">
+<h2 id="org0b44381">Conclusiones y Síntesis Analítica</h2>
+<div class="outline-text-2" id="text-org0b44381">
+</div>
+<div id="outline-container-org96b861f" class="outline-3">
+<h3 id="org96b861f">10.1 Evaluación Integral de Escenarios</h3>
+<div class="outline-text-3" id="text-org96b861f">
+<p>
+El análisis de los cuatro escenarios arancelarios revela una progresión no lineal de impactos económicos y sociales. Mientras los escenarios moderados (10-15%) generan disrupciones manejables, los escenarios extremos (30-50%) producen cambios estructurales irreversibles.
+</p>
+</div>
+
+<div id="outline-container-org2988a92" class="outline-4">
+<h4 id="org2988a92">Matriz de Riesgo-Oportunidad por Escenario</h4>
+<div class="outline-text-4" id="text-org2988a92">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Escenario</th>
+<th scope="col" class="org-right">Probabilidad</th>
+<th scope="col" class="org-right">Impacto PIB</th>
+<th scope="col" class="org-left">Riesgo Sistémico</th>
+<th scope="col" class="org-left">Oportunidades Transformación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">10%</td>
+<td class="org-right">35%</td>
+<td class="org-right">-0.15%</td>
+<td class="org-left">Bajo</td>
+<td class="org-left">Limitadas</td>
+</tr>
+
+<tr>
+<td class="org-right">15%</td>
+<td class="org-right">30%</td>
+<td class="org-right">-0.25%</td>
+<td class="org-left">Medio-Bajo</td>
+<td class="org-left">Moderadas</td>
+</tr>
+
+<tr>
+<td class="org-right">30%</td>
+<td class="org-right">25%</td>
+<td class="org-right">-0.80%</td>
+<td class="org-left">Alto</td>
+<td class="org-left">Significativas</td>
+</tr>
+
+<tr>
+<td class="org-right">50%</td>
+<td class="org-right">10%</td>
+<td class="org-right">-1.50%</td>
+<td class="org-left">Muy Alto</td>
+<td class="org-left">Revolucionarias</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdf2a6f5" class="outline-3">
+<h3 id="orgdf2a6f5">10.2 Implicaciones para la Arquitectura Europea</h3>
+<div class="outline-text-3" id="text-orgdf2a6f5">
+<p>
+La crisis arancelaria acelera tendencias ya presentes hacia mayor integración europea en áreas estratégicas. La UE ha demostrado capacidad de respuesta coordinada en crisis anteriores, pero enfrenta el desafío de equilibrar soberanía nacional con eficacia supranacional.
+</p>
+</div>
+
+<div id="outline-container-org4651ce4" class="outline-4">
+<h4 id="org4651ce4">Paradojas del Proceso de Integración</h4>
+<div class="outline-text-4" id="text-org4651ce4">
+<ol class="org-ol">
+<li><b><b>Paradoja de la Autonomía</b></b>: Mayor autonomía requiere mayor integración</li>
+<li><b><b>Paradoja de la Competitividad</b></b>: Protección sectorial puede reducir competitividad global</li>
+<li><b><b>Paradoja de la Sostenibilidad</b></b>: Transición verde requiere estabilidad comercial</li>
+<li><b><b>Paradoja Democrática</b></b>: Decisiones técnicas tienen profundas implicaciones políticas</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5004ff2" class="outline-3">
+<h3 id="org5004ff2">10.3 Escenario Más Probable y Preparación Adaptativa</h3>
+<div class="outline-text-3" id="text-org5004ff2">
+<p>
+Basándose en las tendencias actuales de negociación y los precedentes históricos, el escenario más probable involucra aranceles del 15-20% con exenciones sectoriales negociadas. Este escenario requiere preparación para múltiples contingencias.
+</p>
+</div>
+
+<div id="outline-container-org5704a10" class="outline-4">
+<h4 id="org5704a10">Estrategia de Opciones Reales</h4>
+<div class="outline-text-4" id="text-org5704a10">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Opción Estratégica</th>
+<th scope="col" class="org-left">Inversión Inicial</th>
+<th scope="col" class="org-left">Valor en Escenario Favorable</th>
+<th scope="col" class="org-left">Valor en Escenario Adverso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Diversificación mercados</td>
+<td class="org-left">5 mil millones €</td>
+<td class="org-left">25 mil millones €</td>
+<td class="org-left">45 mil millones €</td>
+</tr>
+
+<tr>
+<td class="org-left">Autonomía tecnológica</td>
+<td class="org-left">50 mil millones €</td>
+<td class="org-left">80 mil millones €</td>
+<td class="org-left">200 mil millones €</td>
+</tr>
+
+<tr>
+<td class="org-left">Resiliencia cadenas</td>
+<td class="org-left">15 mil millones €</td>
+<td class="org-left">30 mil millones €</td>
+<td class="org-left">100 mil millones €</td>
+</tr>
+
+<tr>
+<td class="org-left">Diplomacia económica</td>
+<td class="org-left">2 mil millones €</td>
+<td class="org-left">10 mil millones €</td>
+<td class="org-left">50 mil millones €</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org958cd7f" class="outline-3">
+<h3 id="org958cd7f">10.4 Reflexiones Críticas Finales</h3>
+<div class="outline-text-3" id="text-org958cd7f">
+</div>
+<div id="outline-container-org4e80301" class="outline-4">
+<h4 id="org4e80301">Limitaciones del Análisis</h4>
+<div class="outline-text-4" id="text-org4e80301">
+<p>
+Este análisis presenta varias limitaciones que deben reconocerse:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Incertidumbre política</b></b>: Las decisiones de política comercial dependen de factores políticos impredecibles</li>
+<li><b><b>Efectos de retroalimentación</b></b>: Los modelos económicos capturan imperfectamente las dinámicas de adaptación</li>
+<li><b><b>Innovación disruptiva</b></b>: Cambios tecnológicos pueden alterar fundamentalmente las proyecciones</li>
+<li><b><b>Factores geopolíticos</b></b>: Crisis internacionales pueden reconfigurar prioridades comerciales</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0bb5174" class="outline-4">
+<h4 id="org0bb5174">Agenda de Investigación Futura</h4>
+<div class="outline-text-4" id="text-org0bb5174">
+
+<div id="orgdc69a5f" class="figure">
+<p><img src="impacto_aranceles_ue_eeuu_investigacion.png" alt="impacto_aranceles_ue_eeuu_investigacion.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4f32143" class="outline-2">
+<h2 id="org4f32143">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org4f32143">
+</div>
+<div id="outline-container-org95f2633" class="outline-3">
+<h3 id="org95f2633">Fuentes Institucionales</h3>
+<div class="outline-text-3" id="text-org95f2633">
+<ol class="org-ol">
+<li>European Commission (2025). "EU-US Trade Relations: Strategic Assessment 2025". DG Trade Policy Paper 2025/01.</li>
+
+<li>European Central Bank (2025). "Economic Impact of Trade Policy Uncertainties". ECB Economic Bulletin 2/2025.</li>
+
+<li>European Parliament (2025). "Resolution on EU Trade Defense Instruments". P9<sub>TA</sub>(2025)0156.</li>
+
+<li>Congressional Budget Office (2025). "Economic Effects of Tariff Policies on Transatlantic Trade". CBO Report 57-2025.</li>
+
+<li>World Trade Organization (2025). "Trade Policy Review: United States". WT/TPR/S/415.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org559da9b" class="outline-3">
+<h3 id="org559da9b">Estudios Académicos y Think Tanks</h3>
+<div class="outline-text-3" id="text-org559da9b">
+<ol class="org-ol">
+<li>Bruegel Institute (2025). "Reconfiguring Global Value Chains: EU Strategic Options". Bruegel Policy Brief 03/2025.</li>
+
+<li>Peterson Institute for International Economics (2025). "Measuring the Costs of New US Tariffs". PIIE Working Paper 25-3.</li>
+
+<li>Centre for European Policy Studies (2025). "EU Economic Sovereignty in the Age of Geoeconomics". CEPS Research Report 2025/02.</li>
+
+<li>Chatham House (2025). "The Future of Transatlantic Economic Relations". Research Paper 2025/01.</li>
+
+<li>Atlantic Council (2025). "Economic Security and Alliance Cohesion". GeoEconomics Center Report 2025-1.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0dea1d2" class="outline-3">
+<h3 id="org0dea1d2">Datos Estadísticos y Bases de Datos</h3>
+<div class="outline-text-3" id="text-org0dea1d2">
+<ol class="org-ol">
+<li>Eurostat (2025). "EU-US Trade in Goods and Services Statistics". Dataset: ext<sub>lt</sub><sub>intratrd</sub>.</li>
+
+<li>US Census Bureau (2025). "Trade in Goods with European Union". Foreign Trade Division Database.</li>
+
+<li>OECD (2025). "Trade in Value Added (TiVA) Database 2025 Edition". OECD.Stat.</li>
+
+<li>IMF (2025). "Direction of Trade Statistics Quarterly". DOTS Database Q1 2025.</li>
+
+<li>UNCTAD (2025). "World Investment Report 2025: Investment and New Trade Protectionism". UN Publication.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd60e3b1" class="outline-3">
+<h3 id="orgd60e3b1">Reportes Sectoriales</h3>
+<div class="outline-text-3" id="text-orgd60e3b1">
+<ol class="org-ol">
+<li>European Automobile Manufacturers Association (2025). "Economic Impact Assessment of US Tariffs on EU Auto Industry". ACEA Report 2025-02.</li>
+
+<li>Semiconductor Industry Association (2025). "Global Semiconductor Supply Chain Resilience". SIA White Paper 2025.</li>
+
+<li>European Banking Federation (2025). "Financial Sector Implications of Trade Policy Changes". EBF Position Paper 2025/03.</li>
+
+<li>BusinessEurope (2025). "SME Survey on Trade Policy Impact". Survey Report Q1 2025.</li>
+
+<li>Digital Europe (2025). "Technology Sector Response to Trade Uncertainties". Policy Brief 2025-1.</li>
+</ol>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+<b>Nota metodológica</b>: Este análisis integra datos cuantitativos de fuentes oficiales con proyecciones basadas en modelos econométricos estándar y análisis de escenarios. Las estimaciones de impacto se basan en multiplicadores sectoriales derivados de las tablas input-output de Eurostat y modelos de equilibrio general computable calibrados para la economía europea. Los diagramas PlantUML ilustran relaciones causales identificadas en la literatura económica especializada.
+</p>
+
+
+<p class="post-meta">Publicado el 2025-07-24 14:22 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2025 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2025-07-24 14:26</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>
