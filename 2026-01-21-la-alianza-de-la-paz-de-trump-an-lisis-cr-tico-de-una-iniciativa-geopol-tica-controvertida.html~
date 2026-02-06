@@ -1,0 +1,2064 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>La "Alianza de la Paz" de Trump: Análisis Crítico de una Iniciativa Geopolítica Controvertida</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis crítico sobre la propuesta del Presidente Trump de crear una Junta de la Paz con la participación de líderes acusados de crímenes de guerra por la Corte Penal Internacional" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">La "Alianza de la Paz" de Trump: Análisis Crítico de una Iniciativa Geopolítica Controvertida</h1>
+
+<div id="outline-container-org4334f07" class="outline-2">
+<h2 id="org4334f07">La "Alianza de la Paz" de Trump: Análisis Crítico de una Iniciativa Geopolítica Controvertida</h2>
+<div class="outline-text-2" id="text-org4334f07">
+
+<div id="org7f1ac19" class="figure">
+<p><img src="./assets/images/Alianzadelapaz.png" alt="Alianzadelapaz.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org71ae05b" class="outline-2">
+<h2 id="org71ae05b">Resumen Ejecutivo</h2>
+<div class="outline-text-2" id="text-org71ae05b">
+<p>
+El Presidente Donald Trump ha presentado la denominada "Junta de la Paz" (Board of Peace), una iniciativa que inicialmente se planteó para supervisar la implementación del alto el fuego en Gaza, pero que ha evolucionado hacia un ambicioso proyecto de organización internacional alternativa. Lo más controvertido de esta propuesta reside en la participación de líderes con órdenes de arresto vigentes de la Corte Penal Internacional (CPI): Benjamin Netanyahu (Israel) y Vladimir Putin (Rusia), ambos acusados de crímenes de guerra.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5fdf72e" class="outline-2">
+<h2 id="org5fdf72e">Contexto Histórico y Geopolítico</h2>
+<div class="outline-text-2" id="text-org5fdf72e">
+</div>
+<div id="outline-container-org4de0b30" class="outline-3">
+<h3 id="org4de0b30">Antecedentes del Conflicto de Gaza</h3>
+<div class="outline-text-3" id="text-org4de0b30">
+<p>
+El conflicto de Gaza se intensificó tras los ataques del 7 de octubre de 2023 perpetrados por Hamas, que desencadenaron una respuesta militar israelí de gran escala. El plan de paz presentado por Trump el 29 de septiembre de 2025 estableció un alto el fuego que entró en vigor el 10 de octubre de 2025, con el respaldo posterior del Consejo de Seguridad de la ONU el 17 de noviembre.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga50057a" class="outline-3">
+<h3 id="orga50057a">Las Órdenes de Arresto de la CPI</h3>
+<div class="outline-text-3" id="text-orga50057a">
+</div>
+<div id="outline-container-orgbc00483" class="outline-4">
+<h4 id="orgbc00483">Contra Benjamin Netanyahu y Yoav Gallant</h4>
+<div class="outline-text-4" id="text-orgbc00483">
+<p>
+El 21 de noviembre de 2024, la CPI emitió órdenes de arresto contra Netanyahu y su entonces ministro de Defensa Yoav Gallant por:
+</p>
+
+<ul class="org-ul">
+<li>Crimen de guerra de inanición como método de guerra</li>
+<li>Crímenes de lesa humanidad: asesinato, persecución y otros actos inhumanos</li>
+<li>Dirigir intencionalmente ataques contra población civil</li>
+</ul>
+
+<p>
+La Cámara Preliminar determinó que existían "motivos razonables" para creer que ambos líderes privaron intencionalmente a la población civil de Gaza de objetos indispensables para su supervivencia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc0a27a2" class="outline-4">
+<h4 id="orgc0a27a2">Contra Vladimir Putin</h4>
+<div class="outline-text-4" id="text-orgc0a27a2">
+<p>
+El 17 de marzo de 2023, la CPI emitió orden de arresto contra Putin por:
+</p>
+
+<ul class="org-ul">
+<li>Deportación y transferencia ilegal de niños ucranianos</li>
+<li>Crímenes de guerra en el contexto de la invasión de Ucrania</li>
+</ul>
+
+<p>
+Putin se convirtió en el primer líder de un miembro permanente del Consejo de Seguridad de la ONU con orden de arresto de la CPI.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb5890cf" class="outline-2">
+<h2 id="orgb5890cf">Estructura de la "Junta de la Paz"</h2>
+<div class="outline-text-2" id="text-orgb5890cf">
+</div>
+<div id="outline-container-org8e9b763" class="outline-3">
+<h3 id="org8e9b763">Composición del Comité Ejecutivo</h3>
+<div class="outline-text-3" id="text-org8e9b763">
+<p>
+El comité ejecutivo fundador incluye:
+</p>
+
+<ul class="org-ul">
+<li>Marco Rubio (Secretario de Estado de EE.UU.)</li>
+<li>Steve Witkoff (enviado de Trump para Medio Oriente)</li>
+<li>Jared Kushner (yerno de Trump)</li>
+<li>Tony Blair (ex Primer Ministro del Reino Unido)</li>
+<li>Marc Rowan (CEO de Apollo Global Management)</li>
+<li>Ajay Banga (Presidente del Banco Mundial)</li>
+<li>Robert Gabriel (asesor adjunto de seguridad nacional)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org45aa5d4" class="outline-3">
+<h3 id="org45aa5d4">Países Invitados</h3>
+<div class="outline-text-3" id="text-org45aa5d4">
+<p>
+La lista de invitaciones supera las dos docenas de naciones, incluyendo:
+</p>
+
+
+<div id="orgf74e10b" class="figure">
+<p><img src="./assets/images/board_members.png" alt="board_members.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge2085e4" class="outline-3">
+<h3 id="orge2085e4">Mecanismo de Financiación</h3>
+<div class="outline-text-3" id="text-orge2085e4">
+<p>
+La propuesta establece que las naciones deben pagar 1.000 millones de dólares para mantener membresía permanente después de tres años, lo que ha generado críticas sobre la mercantilización de la diplomacia internacional.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgab8a37d" class="outline-2">
+<h2 id="orgab8a37d">Análisis Crítico: Contradicciones Fundamentales</h2>
+<div class="outline-text-2" id="text-orgab8a37d">
+</div>
+<div id="outline-container-orgeacc91e" class="outline-3">
+<h3 id="orgeacc91e">La Paradoja de los "Pacificadores Acusados"</h3>
+<div class="outline-text-3" id="text-orgeacc91e">
+<pre class="example" id="org76cb531">
+┌─────────────────────────────────────────────────────┐
+│         CONTRADICCIÓN MORAL FUNDAMENTAL             │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+│  Líderes acusados de crímenes de guerra            │
+│           supervisando la paz                       │
+│                                                     │
+│  Netanyahu: 46.000+ palestinos muertos en Gaza     │
+│  Putin: 350.000+ víctimas en Ucrania               │
+│                                                     │
+│  ¿Legitimidad? ¿Credibilidad? ¿Coherencia?         │
+│                                                     │
+└─────────────────────────────────────────────────────┘
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orgb74c81f" class="outline-3">
+<h3 id="orgb74c81f">Reacciones Internacionales Divergentes</h3>
+<div class="outline-text-3" id="text-orgb74c81f">
+</div>
+<div id="outline-container-org1a6f007" class="outline-4">
+<h4 id="org1a6f007">Oposición dentro de Israel</h4>
+<div class="outline-text-4" id="text-org1a6f007">
+<p>
+El Ministro de Finanzas Bezalel Smotrich calificó la Junta como un "mal negocio para Israel" y pidió su disolución. Netanyahu inicialmente criticó la composición del comité ejecutivo por incluir a Turquía y Catar, rivales regionales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga35c837" class="outline-4">
+<h4 id="orga35c837">Hipocresía Occidental Documentada</h4>
+<div class="outline-text-4" id="text-orga35c837">
+<p>
+El contraste en las reacciones de gobiernos occidentales revela dobles estándares:
+</p>
+
+<ul class="org-ul">
+<li>Orden contra Putin (2023): celebrada por Biden, Blinken, Lindsey Graham</li>
+<li>Orden contra Netanyahu (2024): denunciada como "indignante" por Biden, "kangaroo court" por Graham</li>
+</ul>
+
+<p>
+Francia argumentó que Netanyahu tiene inmunidad por no ser Israel miembro de la CPI, mientras que celebró la orden contra Putin (Rusia tampoco es miembro).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org65f333f" class="outline-4">
+<h4 id="org65f333f">Respuestas de Países Invitados</h4>
+<div class="outline-text-4" id="text-org65f333f">
+
+<div id="org47b613c" class="figure">
+<p><img src="./assets/images/reactions.png" alt="reactions.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org493d6e7" class="outline-2">
+<h2 id="org493d6e7">Análisis de Viabilidad y Probabilidades</h2>
+<div class="outline-text-2" id="text-org493d6e7">
+</div>
+<div id="outline-container-orga0c6a58" class="outline-3">
+<h3 id="orga0c6a58">Tabla Comparativa: Obstáculos vs Facilitadores</h3>
+<div class="outline-text-3" id="text-orga0c6a58">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Factor</th>
+<th scope="col" class="org-left">Obstáculos (-)</th>
+<th scope="col" class="org-left">Facilitadores (+)</th>
+<th scope="col" class="org-left">Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>Legitimidad Legal</b></td>
+<td class="org-left">Órdenes CPI activas (125 estados obligados a arrestar)</td>
+<td class="org-left">EE.UU. no es miembro de la CPI</td>
+<td class="org-left">Negativo</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Credibilidad Moral</b></td>
+<td class="org-left">Acusados de crímenes graves liderando iniciativa de paz</td>
+<td class="org-left">Poder político y económico de participantes</td>
+<td class="org-left">Muy negativo</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Apoyo Internacional</b></td>
+<td class="org-left">Rechazo de ONG de DDHH, divisiones en UE</td>
+<td class="org-left">Apoyo de regímenes autoritarios y algunos aliados</td>
+<td class="org-left">Negativo</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Pragmatismo Geopolítico</b></td>
+<td class="org-left">Contradice orden internacional establecido</td>
+<td class="org-left">Poder de EE.UU. para imponer su visión</td>
+<td class="org-left">Neutro</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Financiamiento</b></td>
+<td class="org-left">Costo de $1.000 millones puede disuadir participación</td>
+<td class="org-left">Reconstrucción de Gaza requiere $53.000 millones (BM)</td>
+<td class="org-left">Negativo</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Conflictos Internos</b></td>
+<td class="org-left">Turquía y Catar en comité molestan a Israel</td>
+<td class="org-left">Intereses compartidos en estabilidad regional</td>
+<td class="org-left">Negativo</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Precedente Histórico</b></td>
+<td class="org-left">Ninguna iniciativa similar ha prosperado</td>
+<td class="org-left">Trump ya logró alto el fuego inicial</td>
+<td class="org-left">Neutro</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org5a54b9f" class="outline-3">
+<h3 id="org5a54b9f">Escenarios Probabilísticos</h3>
+<div class="outline-text-3" id="text-org5a54b9f">
+</div>
+<div id="outline-container-orge777d52" class="outline-4">
+<h4 id="orge777d52">Escenario 1: Fracaso Total (Probabilidad: 45%)</h4>
+<div class="outline-text-4" id="text-orge777d52">
+<p>
+La Junta se convierte en un proyecto simbólico sin poder real. Netanyahu y Putin enfrentan restricciones de viaje aumentadas. La comunidad internacional rechaza la iniciativa por falta de legitimidad moral y legal.
+</p>
+
+<p>
+<b>Indicadores</b>:
+</p>
+<ul class="org-ul">
+<li>Menos de 10 países pagan la membresía de $1.000 millones</li>
+<li>ONU y CPI mantienen su autoridad sin desafío significativo</li>
+<li>Violaciones continuas del alto el fuego en Gaza</li>
+<li>Oposición de organizaciones de derechos humanos</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4281c49" class="outline-4">
+<h4 id="org4281c49">Escenario 2: Éxito Parcial (Probabilidad: 35%)</h4>
+<div class="outline-text-4" id="text-org4281c49">
+<p>
+La Junta funciona como mecanismo informal de coordinación entre potencias, sin reemplazar instituciones existentes. Logra algunos objetivos limitados en Gaza pero no alcanza legitimidad internacional amplia.
+</p>
+
+<p>
+<b>Indicadores</b>:
+</p>
+<ul class="org-ul">
+<li>15-20 países participan activamente</li>
+<li>Logra coordinar ayuda humanitaria a Gaza</li>
+<li>No puede resolver conflictos estructurales</li>
+<li>Convive con sistema ONU de manera tensa</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2f0fe24" class="outline-4">
+<h4 id="org2f0fe24">Escenario 3: Transformación del Orden Internacional (Probabilidad: 15%)</h4>
+<div class="outline-text-4" id="text-org2f0fe24">
+<p>
+La Junta se convierte en alternativa real a la ONU para ciertos temas, liderada por EE.UU. y aliados autoritarios. Debilita significativamente el sistema multilateral liberal.
+</p>
+
+<p>
+<b>Indicadores</b>:
+</p>
+<ul class="org-ul">
+<li>Más de 25 países pagan membresía completa</li>
+<li>Logra acuerdos en múltiples conflictos</li>
+<li>CPI pierde influencia práctica</li>
+<li>Emerge nuevo bloque geopolítico</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org84fff1d" class="outline-4">
+<h4 id="org84fff1d">Escenario 4: Implosión Rápida (Probabilidad: 5%)</h4>
+<div class="outline-text-4" id="text-org84fff1d">
+<p>
+La iniciativa colapsa en pocos meses por contradicciones internas, especialmente entre Israel y países como Turquía/Catar, o por cambios políticos en EE.UU.
+</p>
+
+<p>
+<b>Indicadores</b>:
+</p>
+<ul class="org-ul">
+<li>Conflictos abiertos entre miembros</li>
+<li>Retiro de participantes clave</li>
+<li>Fracaso en implementar fase 2 en Gaza</li>
+<li>Pérdida de interés de Trump</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org15c5e2a" class="outline-3">
+<h3 id="org15c5e2a">Diagrama de Flujo: Factores Determinantes del Éxito</h3>
+<div class="outline-text-3" id="text-org15c5e2a">
+
+<div id="orgcd7f387" class="figure">
+<p><img src="./assets/images/decision_tree.png" alt="decision_tree.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org74803fc" class="outline-2">
+<h2 id="org74803fc">Implicaciones para el Orden Internacional</h2>
+<div class="outline-text-2" id="text-org74803fc">
+</div>
+<div id="outline-container-org73eb092" class="outline-3">
+<h3 id="org73eb092">Erosión del Derecho Internacional Humanitario</h3>
+<div class="outline-text-3" id="text-org73eb092">
+<p>
+La participación de líderes con órdenes de arresto de la CPI en una iniciativa de paz socava fundamentalmente el sistema de justicia internacional establecido tras Nuremberg. Establece el precedente de que el poder político puede anular la responsabilidad legal.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68d5c35" class="outline-3">
+<h3 id="org68d5c35">Precedente de "Realpolitik" sobre Principios</h3>
+<div class="outline-text-3" id="text-org68d5c35">
+<p>
+La Junta ejemplifica el triunfo del pragmatismo geopolítico sobre los valores humanitarios declarados. Países como Francia, que celebró la orden contra Putin, ahora argumentan inmunidad para Netanyahu, revelando la instrumentalización selectiva de la justicia internacional.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3efc14b" class="outline-3">
+<h3 id="org3efc14b">Alternativa a la ONU o Complemento</h3>
+<div class="outline-text-3" id="text-org3efc14b">
+<pre class="example" id="org2ae9150">
+Comparación: ONU vs Junta de la Paz
+
+┌─────────────────┬──────────────────┬──────────────────┐
+│   Característica│       ONU        │  Junta de Paz    │
+├─────────────────┼──────────────────┼──────────────────┤
+│ Legitimidad     │ 193 miembros     │ ~20-25 invitados │
+│ Transparencia   │ Procesos públicos│ Opacidad inicial │
+│ Financiamiento  │ Cuotas reguladas │ $1.000M por país │
+│ Inclusividad    │ Universal        │ Selectiva        │
+│ Eficacia        │ Vetoes paralizan │ ¿Desconocida?    │
+│ Accountability  │ Múltiples órganos│ Control de Trump │
+└─────────────────┴──────────────────┴──────────────────┘
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org775e499" class="outline-2">
+<h2 id="org775e499">Dimensión de Derechos Humanos</h2>
+<div class="outline-text-2" id="text-org775e499">
+</div>
+<div id="outline-container-orgc482707" class="outline-3">
+<h3 id="orgc482707">La "Alianza de los Impresentables": Análisis Crítico</h3>
+<div class="outline-text-3" id="text-orgc482707">
+<p>
+La denominación popular de "Junta de Multimillonarios y Criminales de Guerra" refleja la percepción generalizada entre organizaciones de derechos humanos:
+</p>
+
+<ol class="org-ol">
+<li><b>Netanyahu</b>: 46.000+ palestinos muertos en Gaza según el Ministerio de Salud gazatí; restricciones sistemáticas de ayuda humanitaria.</li>
+
+<li><b>Putin</b>: Responsable de la invasión de Ucrania (350.000+ víctimas estimadas), deportación de miles de niños ucranianos.</li>
+
+<li><b>Lukashenko</b>: Apoyo a la invasión de Ucrania, represión de oposición en Bielorrusia durante 30+ años.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4c471a6" class="outline-3">
+<h3 id="org4c471a6">Violaciones Continuas del Alto el Fuego</h3>
+<div class="outline-text-3" id="text-org4c471a6">
+<p>
+Datos documentados:
+</p>
+<ul class="org-ul">
+<li>465 palestinos muertos desde inicio del alto el fuego (10 oct 2025)</li>
+<li>1.287 heridos en el mismo período</li>
+<li>1.200+ violaciones israelíes del alto el fuego documentadas</li>
+<li>Restricciones persistentes a entrada de ayuda humanitaria</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org28bfa80" class="outline-3">
+<h3 id="org28bfa80">Posición de Organizaciones Internacionales</h3>
+<div class="outline-text-3" id="text-org28bfa80">
+<p>
+Organizaciones como Human Rights Watch, Amnistía Internacional y la misma CPI han enfatizado que las acusaciones se basan en:
+</p>
+<ul class="org-ul">
+<li>Uso sistemático de inanición como método de guerra</li>
+<li>Ataques deliberados contra población civil</li>
+<li>Privación intencional de agua, alimentos, medicinas y electricidad</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge62214a" class="outline-2">
+<h2 id="orge62214a">Análisis Geopolítico Profundo</h2>
+<div class="outline-text-2" id="text-orge62214a">
+</div>
+<div id="outline-container-org8d84461" class="outline-3">
+<h3 id="org8d84461">Motivaciones de Trump</h3>
+<div class="outline-text-3" id="text-org8d84461">
+<ol class="org-ol">
+<li><b>Legado Presidencial</b>: Buscar el Premio Nobel de la Paz mediante "logros" en Medio Oriente</li>
+<li><b>Debilitamiento del Multilateralismo</b>: Crear alternativa a instituciones que critica (ONU, CPI)</li>
+<li><b>Alianzas Estratégicas</b>: Fortalecer vínculos con Israel y explorar apertura con Rusia</li>
+<li><b>Intereses Económicos</b>: Reconstrucción de Gaza presenta oportunidades para empresas estadounidenses ($53.000 millones según Banco Mundial)</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orga9da012" class="outline-3">
+<h3 id="orga9da012">Cálculo de Netanyahu</h3>
+<div class="outline-text-3" id="text-orga9da012">
+<ul class="org-ul">
+<li><b>Supervivencia Política</b>: Mantener apoyo de extrema derecha mientras gestiona relación con EE.UU.</li>
+<li><b>Evadir Justicia Internacional</b>: Participación legitimaría su posición frente a CPI</li>
+<li><b>Control sobre Gaza</b>: Influir en composición de autoridad administrativa palestina</li>
+<li><b>Objeción a Rivales</b>: Ha insistido en excluir a Turquía y Catar del proceso</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdc41ce4" class="outline-3">
+<h3 id="orgdc41ce4">Estrategia de Putin</h3>
+<div class="outline-text-3" id="text-orgdc41ce4">
+<ul class="org-ul">
+<li><b>Romper Aislamiento</b>: Primera oportunidad significativa de reintegración internacional desde 2022</li>
+<li><b>Equivalencia Moral</b>: Normalizar su situación legal equiparándola con la de Netanyahu</li>
+<li><b>Dividir Occidente</b>: Explotar tensiones entre EE.UU. y Europa</li>
+<li><b>Legitimación</b>: Participar en "solución de paz" mejora imagen internacional</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2426ba9" class="outline-2">
+<h2 id="org2426ba9">Conclusiones Analíticas</h2>
+<div class="outline-text-2" id="text-org2426ba9">
+</div>
+<div id="outline-container-orgd6cab40" class="outline-3">
+<h3 id="orgd6cab40">1. Viabilidad Estructural: Baja a Media</h3>
+<div class="outline-text-3" id="text-orgd6cab40">
+<p>
+La Junta enfrenta contradicciones fundamentales que limitan su viabilidad a largo plazo:
+</p>
+
+<ul class="org-ul">
+<li><b>Legitimidad cuestionada</b>: La participación de líderes acusados de crímenes de guerra erosiona cualquier pretensión de autoridad moral</li>
+<li><b>Conflictos internos</b>: Las tensiones entre Israel y países como Turquía/Catar hacen difícil el consenso</li>
+<li><b>Oposición institucional</b>: ONU, CPI y múltiples ONG rechazan la premisa básica de la iniciativa</li>
+</ul>
+
+<p>
+<b>Probabilidad de implementación efectiva</b>: 30-40%
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6534f8e" class="outline-3">
+<h3 id="org6534f8e">2. Impacto en Derecho Internacional: Significativo y Negativo</h3>
+<div class="outline-text-3" id="text-org6534f8e">
+<p>
+La iniciativa representa un desafío directo al sistema de justicia internacional:
+</p>
+
+<ul class="org-ul">
+<li>Normaliza la impunidad de líderes poderosos</li>
+<li>Establece precedente de que órdenes de la CPI pueden ignorarse con suficiente poder político</li>
+<li>Profundiza la percepción de "justicia selectiva" que ya afecta a la CPI</li>
+</ul>
+
+<p>
+<b>Riesgo de erosión del orden legal internacional</b>: Alto
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfeecc00" class="outline-3">
+<h3 id="orgfeecc00">3. Excentricidad Trumpiana: Consistente con Patrón Histórico</h3>
+<div class="outline-text-3" id="text-orgfeecc00">
+<p>
+La iniciativa es coherente con el estilo diplomático de Trump:
+</p>
+
+<ul class="org-ul">
+<li>Preferencia por acuerdos bilaterales sobre instituciones multilaterales</li>
+<li>Énfasis en relaciones personales con líderes autoritarios</li>
+<li>Desprecio por normas internacionales establecidas</li>
+<li>Mercantilización de la diplomacia (membresía de $1.000 millones)</li>
+</ul>
+
+<p>
+Esta no es una desviación sino una continuación de su visión transaccional de las relaciones internacionales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd3f9111" class="outline-3">
+<h3 id="orgd3f9111">4. Paradoja Fundamental: Paz a través de Acusados de Guerra</h3>
+<div class="outline-text-3" id="text-orgd3f9111">
+<p>
+La contradicción central es irresoluble: ¿cómo pueden supervisar crediblemente un proceso de paz quienes están acusados de crímenes sistemáticos contra civiles? La respuesta es que no pueden, al menos no con legitimidad moral reconocida globalmente.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org228e69d" class="outline-3">
+<h3 id="org228e69d">5. Probabilidades de Éxito por Métrica</h3>
+<div class="outline-text-3" id="text-org228e69d">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Métrica de Éxito</th>
+<th scope="col" class="org-right">Probabilidad</th>
+<th scope="col" class="org-left">Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Implementar fase 2 en Gaza</td>
+<td class="org-right">45%</td>
+<td class="org-left">Depende de voluntad israelí y cumplimiento de Hamas</td>
+</tr>
+
+<tr>
+<td class="org-left">Reconstrucción significativa</td>
+<td class="org-right">30%</td>
+<td class="org-left">Requiere financiamiento masivo y seguridad</td>
+</tr>
+
+<tr>
+<td class="org-left">Legitimidad internacional amplia</td>
+<td class="org-right">15%</td>
+<td class="org-left">Oposición de Europa, ONU, sociedad civil</td>
+</tr>
+
+<tr>
+<td class="org-left">Supervivencia &gt; 2 años</td>
+<td class="org-right">40%</td>
+<td class="org-left">Puede mantenerse como foro informal</td>
+</tr>
+
+<tr>
+<td class="org-left">Replantear orden internacional</td>
+<td class="org-right">10%</td>
+<td class="org-left">Resistencia institucional demasiado fuerte</td>
+</tr>
+
+<tr>
+<td class="org-left">Exonerar a Netanyahu/Putin</td>
+<td class="org-right">5%</td>
+<td class="org-left">CPI mantiene independencia formal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org6d18dad" class="outline-3">
+<h3 id="org6d18dad">6. Escenario Más Probable</h3>
+<div class="outline-text-3" id="text-org6d18dad">
+<p>
+La Junta funcionará como mecanismo informal de coordinación entre potencias seleccionadas, sin alcanzar legitimidad universal ni reemplazar instituciones existentes. Logrará algunos objetivos limitados en Gaza (ayuda humanitaria, coordinación parcial) pero fracasará en transformar el orden internacional o resolver conflictos estructurales. Netanyahu y Putin utilizarán la participación para proyectar normalidad, pero sus órdenes de arresto de la CPI permanecerán vigentes.
+</p>
+
+<p>
+<b>Probabilidad de este escenario</b>: 35-40%
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org581ec29" class="outline-2">
+<h2 id="org581ec29">Reflexión Final</h2>
+<div class="outline-text-2" id="text-org581ec29">
+<p>
+La "Alianza de la Paz" representa una de las iniciativas diplomáticas más controvertidas del siglo XXI. Su misma existencia plantea preguntas fundamentales sobre la naturaleza del orden internacional contemporáneo:
+</p>
+
+<p>
+¿Prevalecerá el derecho internacional sobre el poder político? ¿O el pragmatismo geopolítico hará irrelevantes las normas de derechos humanos?
+</p>
+
+<p>
+La respuesta determinará no solo el futuro de Gaza, sino la credibilidad misma del sistema de justicia internacional construido laboriosamente desde 1945. Por ahora, la iniciativa parece ser más una expresión de la voluntad de poder estadounidense que un mecanismo genuino para la paz sostenible.
+</p>
+
+<p>
+La historia juzgará si esta fue una innovación diplomática audaz o, como sugieren los críticos, una "Alianza de los Impresentables" que socavó décadas de progreso en responsabilidad internacional.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfcb7129" class="outline-2">
+<h2 id="orgfcb7129">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-orgfcb7129">
+<ol class="org-ol">
+<li>National Public Radio (NPR). "Israel's Netanyahu agrees to join Trump's Board of Peace". 21 enero 2026.</li>
+
+<li>NBC News. "Trump's 'Board of Peace' could upend world order, but it faces pushback from allies". 21 enero 2026.</li>
+
+<li>International Criminal Court. "Arrest warrants for Benjamin Netanyahu and Yoav Gallant". 21 noviembre 2024.</li>
+
+<li>International Criminal Court. "Arrest warrant for Vladimir Putin". 17 marzo 2023.</li>
+
+<li>Common Dreams. "Trump Invites Putin, Netanyahu to Join Peace Panel Mocked as 'Board of Billionaires and War Criminals'". 20 enero 2026.</li>
+
+<li>World Bank. "Gaza and West Bank Interim Rapid Damage and Needs Assessment (IRDNA)". 2024.</li>
+
+<li>PBS News Hour. "War crimes court issues warrants for Netanyahu and former Israeli defense minister". 22 noviembre 2024.</li>
+
+<li>Al Jazeera. "Is Netanyahu immune from ICC arrest warrant as France claims?" 29 noviembre 2024.</li>
+
+<li>CNBC. "Putin invited to join Trump's 'Board of Peace,' Kremlin says". 19 enero 2026.</li>
+
+<li>CNN. "Netanyahu arrest warrant tests Western commitment to international law". 4 diciembre 2024.</li>
+</ol>
+
+<blockquote>
+<p>
+"La justicia internacional no puede ser selectiva. O se aplica a todos por igual, o pierde toda credibilidad."
+— Kenneth Roth, ex Director Ejecutivo de Human Rights Watch
+</p>
+</blockquote>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+<b>Nota metodológica</b>: Este análisis se basa en fuentes periodísticas internacionales verificadas, documentos oficiales de la CPI, y análisis de expertos en derecho internacional y geopolítica. Las probabilidades presentadas representan evaluaciones analíticas basadas en precedentes históricos y tendencias actuales, no predicciones definitivas.
+</p>
+
+<p>
+<a href="2026-01-21-trump-y-la-corte-penal-internacional-anatom-a-de-una-guerra-sistem-tica-contra-la-justicia-global.html">Trump y la Corte Penal Internacional: Anatomía de una Guerra Sistemática contra la Justicia Global</a>
+</p>
+
+
+<p class="post-meta">Publicado el 2026-01-21 19:50 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:18</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

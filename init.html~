@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-07-19 sáb 19:49 -->
+<!-- 2026-02-06 vie 20:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Init - Configuración del Sistema</title>
@@ -771,18 +771,18 @@ gtag('config', 'G-D0JDZ5P5C1');
 <div id="content" class="content">
 <h1 class="title">Init - Configuración del Sistema</h1>
 
-<div id="outline-container-org58d0905" class="outline-2">
-<h2 id="org58d0905">⚙️ Configuración del Sistema GeoClaude4</h2>
-<div class="outline-text-2" id="text-org58d0905">
+<div id="outline-container-orgf9ba677" class="outline-2">
+<h2 id="orgf9ba677">⚙️ Configuración del Sistema GeoClaude4</h2>
+<div class="outline-text-2" id="text-orgf9ba677">
 <p>
 Esta página contiene información sobre la configuración y uso del sistema de blog.
 </p>
 </div>
 
-<div id="outline-container-org7874259" class="outline-3">
-<h3 id="org7874259">🚀 Comandos Principales</h3>
-<div class="outline-text-3" id="text-org7874259">
-<pre class="example" id="org3944438">
+<div id="outline-container-org49ddd21" class="outline-3">
+<h3 id="org49ddd21">🚀 Comandos Principales</h3>
+<div class="outline-text-3" id="text-org49ddd21">
+<pre class="example" id="org3ed49c3">
 M-x ggeoclaude4-init-blog      ; Inicializar blog
 M-x ggeoclaude4-new-post       ; Crear nuevo post
 M-x ggeoclaude4-new-page       ; Crear nueva página
@@ -793,10 +793,10 @@ M-x ggeoclaude4-menu           ; Menú interactivo
 </div>
 </div>
 
-<div id="outline-container-org4648863" class="outline-3">
-<h3 id="org4648863">📁 Estructura de Directorios</h3>
-<div class="outline-text-3" id="text-org4648863">
-<pre class="example" id="org2cc4d70">
+<div id="outline-container-org722d8fe" class="outline-3">
+<h3 id="org722d8fe">📁 Estructura de Directorios</h3>
+<div class="outline-text-3" id="text-org722d8fe">
+<pre class="example" id="org343123f">
 ~/GeoClaude4/
 ├── posts/          ; Posts del blog
 ├── pages/          ; Páginas estáticas
@@ -809,9 +809,9 @@ M-x ggeoclaude4-menu           ; Menú interactivo
 </div>
 </div>
 
-<div id="outline-container-orgdca6609" class="outline-3">
-<h3 id="orgdca6609">🎯 Variables de Configuración</h3>
-<div class="outline-text-3" id="text-orgdca6609">
+<div id="outline-container-org1cbb0f2" class="outline-3">
+<h3 id="org1cbb0f2">🎯 Variables de Configuración</h3>
+<div class="outline-text-3" id="text-org1cbb0f2">
 <div class="org-src-container">
 <pre class="src src-emacs-lisp">ggeoclaude4-blog-title           ; Título del blog
 ggeoclaude4-blog-subtitle        ; Subtítulo
@@ -825,9 +825,9 @@ ggeoclaude4-github-pages-url     ; URL de GitHub Pages
 </div>
 </div>
 
-<div id="outline-container-orgcb63eb9" class="outline-3">
-<h3 id="orgcb63eb9">📝 Formato de Posts</h3>
-<div class="outline-text-3" id="text-orgcb63eb9">
+<div id="outline-container-orgb424631" class="outline-3">
+<h3 id="orgb424631">📝 Formato de Posts</h3>
+<div class="outline-text-3" id="text-orgb424631">
 <p>
 Los posts deben incluir:
 </p>
@@ -841,9 +841,9 @@ Los posts deben incluir:
 </div>
 </div>
 
-<div id="outline-container-orgcb0ccf1" class="outline-3">
-<h3 id="orgcb0ccf1">🖼️ Manejo de Imágenes</h3>
-<div class="outline-text-3" id="text-orgcb0ccf1">
+<div id="outline-container-orgbd5cc15" class="outline-3">
+<h3 id="orgbd5cc15">🖼️ Manejo de Imágenes</h3>
+<div class="outline-text-3" id="text-orgbd5cc15">
 <p>
 Use M-x ggeoclaude4-insert-and-copy-image para:
 </p>
@@ -856,9 +856,9 @@ Use M-x ggeoclaude4-insert-and-copy-image para:
 </div>
 </div>
 
-<div id="outline-container-org01e1745" class="outline-3">
-<h3 id="org01e1745">📊 Estadísticas</h3>
-<div class="outline-text-3" id="text-org01e1745">
+<div id="outline-container-org9e5a4ca" class="outline-3">
+<h3 id="org9e5a4ca">📊 Estadísticas</h3>
+<div class="outline-text-3" id="text-org9e5a4ca">
 <p>
 Use M-x ggeoclaude4-get-blog-stats para ver estadísticas del blog.
 </p>
@@ -870,9 +870,9 @@ Use M-x ggeoclaude4-get-blog-stats para ver estadísticas del blog.
 </div>
 <footer>
 <div class="container">
-<p>© 2025 El Mapa y El Código</p>
+<p>© 2026 El Mapa y El Código</p>
 <p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
-<p>Última actualización: 2025-07-19 19:49</p>
+<p>Última actualización: 2026-02-06 20:19</p>
 </div>
 </footer>
 <!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->

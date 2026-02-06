@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Crisis de Incendios Forestales en España - Agosto 2025: Análisis Crítico y Evaluación Institucional</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Documento analítico sobre la oleada de incendios forestales en España durante agosto de 2025, evaluando la respuesta institucional, competencias, y lecciones aprendidas" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Crisis de Incendios Forestales en España - Agosto 2025: Análisis Crítico y Evaluación Institucional</h1>
+
+<div id="outline-container-org4663810" class="outline-2">
+<h2 id="org4663810">Crisis de Incendios Forestales en España - Agosto 2025: Análisis Crítico y Evaluación Institucional</h2>
+<div class="outline-text-2" id="text-org4663810">
+<p>
+España ha vivido en agosto de 2025 una de las crisis de incendios forestales más devastadoras de su historia reciente. Hasta el 12 de agosto, los últimos datos disponibles en el Sistema Europeo de Información sobre Incendios Forestales (EFFIS), creado por la Comisión Europea, el fuego ha devastado ya 144.083 hectáreas en lo que va de 2025, con estimaciones más recientes que elevan la cifra a más de 344.000 hectáreas según Copernicus.
+</p>
+
+
+
+<div id="orga233610" class="figure">
+<p><img src="./assets/images/timeline_incendios.png" alt="timeline_incendios.png" width="600px" />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org2dd9415" class="outline-3">
+<h3 id="org2dd9415">Cifras Clave</h3>
+<div class="outline-text-3" id="text-org2dd9415">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Concepto</th>
+<th scope="col" class="org-left">Valor</th>
+<th scope="col" class="org-left">Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Hectáreas quemadas (EFFIS 12 ago)</td>
+<td class="org-left">144.083 ha</td>
+<td class="org-left">EFFIS/CE</td>
+</tr>
+
+<tr>
+<td class="org-left">Hectáreas estimadas (18 ago)</td>
+<td class="org-left">344.417 ha</td>
+<td class="org-left">Copernicus</td>
+</tr>
+
+<tr>
+<td class="org-left">Día récord (10 agosto)</td>
+<td class="org-left">46.599 ha</td>
+<td class="org-left">Newtral</td>
+</tr>
+
+<tr>
+<td class="org-left">Galicia (solo Ourense)</td>
+<td class="org-left">&gt;46.000 ha</td>
+<td class="org-left">Xunta</td>
+</tr>
+
+<tr>
+<td class="org-left">Personas desalojadas</td>
+<td class="org-left">&gt;9.000</td>
+<td class="org-left">Varios medios</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org63b77dd" class="outline-2">
+<h2 id="org63b77dd">Análisis por Comunidades Autónomas</h2>
+<div class="outline-text-2" id="text-org63b77dd">
+</div>
+<div id="outline-container-orgc259ea9" class="outline-3">
+<h3 id="orgc259ea9">Galicia: El Epicentro de la Crisis</h3>
+<div class="outline-text-3" id="text-orgc259ea9">
+<p>
+Galicia se ha convertido en el foco principal de la crisis. Galicia lleva más de una semana sufriendo una oleada de incendios sin control que calcina más de 51.220 hectáreas, la mayoría en la provincia de Ourense que mantiene vigente la Situación 2.
+</p>
+</div>
+
+<div id="outline-container-org3fc85c4" class="outline-4">
+<h4 id="org3fc85c4">Evaluación Crítica - Galicia</h4>
+<div class="outline-text-4" id="text-org3fc85c4">
+</div>
+<ul class="org-ul">
+<li><a id="org94b0a05"></a>Errores Identificados:<br />
+<div class="outline-text-5" id="text-org94b0a05">
+<ul class="org-ul">
+<li>Aparente insuficiencia de medios iniciales</li>
+<li>Posible retraso en la activación de protocolos de máxima emergencia</li>
+<li>Falta de coordinación en las primeras horas críticas</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org2e247af"></a>Aciertos:<br />
+<div class="outline-text-5" id="text-org2e247af">
+<ul class="org-ul">
+<li>Activación rápida del Plan de Emergencias de Galicia</li>
+<li>Coordinación efectiva para evacuaciones masivas</li>
+<li>Solicitud temprana de apoyo estatal</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8d7d0e3" class="outline-3">
+<h3 id="org8d7d0e3">Castilla y León: Crisis Múltiple</h3>
+<div class="outline-text-3" id="text-org8d7d0e3">
+<p>
+La región experimentó múltiples focos simultáneos con más de 2.500 personas desalojadas, poniendo a prueba su capacidad de respuesta distribuida.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org02563d4" class="outline-3">
+<h3 id="org02563d4">Madrid: Impacto Urbano-Rural</h3>
+<div class="outline-text-3" id="text-org02563d4">
+<p>
+El 11 de agosto, un incendio cerca a Tres Cantos (Madrid) se propagó con rapidez debido a una tormenta seca y fuertes vientos, arrasó 1 500 hectáreas de campo, obligó a evacuar urbanizaciones, provocó la muerte de un hombre con quemaduras en el 98 % de su cuerpo y dejó otro herido.
+</p>
+</div>
+
+<div id="outline-container-orgdd98031" class="outline-4">
+<h4 id="orgdd98031">Análisis Crítico Madrid:</h4>
+<div class="outline-text-4" id="text-orgdd98031">
+<ul class="org-ul">
+<li><b><b>Error grave</b></b>: Insuficiente preparación para incendios en interfaz urbano-forestal</li>
+<li><b><b>Consecuencia trágica</b></b>: Víctimas mortales evitables con mejor protocolo de evacuación</li>
+<li><b><b>Acierto</b></b>: Respuesta rápida de servicios de emergencia una vez activados</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2cc3d82" class="outline-2">
+<h2 id="org2cc3d82">Marco Competencial y Respuesta Institucional</h2>
+<div class="outline-text-2" id="text-org2cc3d82">
+
+<div id="org3069547" class="figure">
+<p><img src="./assets/images/competencias_incendios.png" alt="competencias_incendios.png" width="600px" />
+</p>
+</div>
+
+<p>
+## Marco Legal y Competencial
+</p>
+
+<p>
+La lucha contra los incendios forestales en España no la gestiona un solo organismo central, sino que es una responsabilidad que recae principalmente en cada Comunidad Autónoma. La Constitución Española lo permite, y la Ley de Montes (Ley 43/2003) lo establece claramente.
+</p>
+
+<p>
+### Evaluación del Reparto Competencial
+</p>
+
+<p>
+#### Fortalezas del Sistema:
+</p>
+<ul class="org-ul">
+<li>Conocimiento local del territorio</li>
+<li>Especialización regional</li>
+<li>Capacidad de respuesta adaptada</li>
+</ul>
+
+<p>
+#### Debilidades Evidenciadas:
+</p>
+<ul class="org-ul">
+<li>Fragmentación de recursos</li>
+<li>Descoordinación interautonómica</li>
+<li>Disparidad en capacidades técnicas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org58b629f" class="outline-2">
+<h2 id="org58b629f">Análisis de la Respuesta del Gobierno Central</h2>
+<div class="outline-text-2" id="text-org58b629f">
+<p>
+## Actuación del Ministerio del Interior
+</p>
+
+<p>
+La Dirección General de Protección Civil y Emergencias está en comunicación constante con la Dirección General de Protección Civil y Operaciones de Ayuda Humanitaria Europeas (ECHO) por si fuera necesaria la activación de medios europeos a través del Mecanismo de Protección Civil de la UE.
+</p>
+
+<p>
+## Posición Gubernamental
+</p>
+
+<p>
+La ministra ha asegurado que el Gobierno ha respondido a todas las solicitudes de medios realizadas por las comunidades autónomas.
+</p>
+
+<p>
+### Evaluación Crítica - Gobierno Central
+</p>
+
+<p>
+#### Aciertos:
+</p>
+<ul class="org-ul">
+<li>Respuesta a solicitudes de apoyo</li>
+<li>Activación proactiva de protocolos europeos</li>
+<li>Despliegue de la UME según demanda</li>
+</ul>
+
+<p>
+#### Errores y Omisiones:
+</p>
+<ul class="org-ul">
+<li>Falta de liderazgo proactivo en crisis nacional</li>
+<li>Ausencia de protocolo de emergencia nacional automática</li>
+<li>Comunicación reactiva vs. proactiva</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5146d1d" class="outline-2">
+<h2 id="org5146d1d">Crítica a la Oposición Política</h2>
+<div class="outline-text-2" id="text-org5146d1d">
+<p>
+## Posición del Partido Popular
+</p>
+
+<p>
+El líder del PP descarga el peso de sus barones y afirma que, aunque las competencias en materia de extinción recaen en las comunidades, la voracidad de las llamas exige una implicación más intensa del Estado.
+</p>
+
+<p>
+### Análisis Crítico - Oposición
+</p>
+
+<p>
+#### Contradicciones Evidentes:
+La competencia en materia de extinción corresponde a las comunidades autónomas en virtud de sus atribuciones en materia de protección civil y gestión forestal, pero el PP reclama mayor intervención estatal cuando gobierna estas mismas comunidades.
+</p>
+
+<p>
+#### Incoherencia Política:
+</p>
+<ul class="org-ul">
+<li><b><b>Madrid (PP)</b></b>: Crisis con víctimas mortales, pero culpabiliza al gobierno central</li>
+<li><b><b>Galicia (PP)</b></b>: Solicita más medios tras años de recortes propios</li>
+<li><b><b>Castilla y León (PP)</b></b>: Demanda recursos sin reconocer responsabilidad autonómica</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3198d90" class="outline-2">
+<h2 id="org3198d90">Factores Agravantes y Causas Estructurales</h2>
+<div class="outline-text-2" id="text-org3198d90">
+
+<div id="org0c235cc" class="figure">
+<p><img src="./assets/images/causas_incendios.png" alt="causas_incendios.png" width="1000px" />
+</p>
+</div>
+
+<p>
+## Negligencias Documentadas
+</p>
+
+<p>
+### Caso Oímbra (Ourense)
+Se ha detenido al presunto autor del incendio de Oímbra, que ha arrasado más de 5.000 hectáreas, evidenciando la dimensión criminal de algunos siniestros.
+</p>
+
+<p>
+### Factores Meteorológicos Extremos
+El domingo 10 de agosto en España se registró el récord de superficie calcinada en 2025: 46.599 hectáreas solo en un día, coincidiendo con condiciones meteorológicas excepcionales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf59526b" class="outline-2">
+<h2 id="orgf59526b">Evaluación de Ganadores y Perdedores</h2>
+<div class="outline-text-2" id="text-orgf59526b">
+<p>
+## Ganadores (Relativos)
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actor</th>
+<th scope="col" class="org-left">Razón</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b><b>UME</b></b></td>
+<td class="org-left">Demostró efectividad y profesionalidad</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Servicios Emergencias</b></b></td>
+<td class="org-left">Evitaron mayor número de víctimas</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Medios Comunicación</b></b></td>
+<td class="org-left">Cobertura informativa de calidad</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Ciudadanía</b></b></td>
+<td class="org-left">Solidaridad y comportamiento ejemplar</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+## Perdedores
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actor</th>
+<th scope="col" class="org-left">Motivo del Fracaso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b><b>Galicia (Xunta)</b></b></td>
+<td class="org-left">Crisis de gestión forestal evidente</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Madrid (CAM)</b></b></td>
+<td class="org-left">Víctimas mortales evitables</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Castilla y León</b></b></td>
+<td class="org-left">Múltiples focos simultáneos descontrolados</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Sistema Competencial</b></b></td>
+<td class="org-left">Fragmentación contraproducente</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Clase Política</b></b></td>
+<td class="org-left">Politización de la crisis</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org4e7dd4d" class="outline-2">
+<h2 id="org4e7dd4d">Propuestas de Mejora Estructural</h2>
+<div class="outline-text-2" id="text-org4e7dd4d">
+<p>
+## Reformas Urgentes Necesarias
+</p>
+
+<p>
+### 1. Marco Competencial
+</p>
+<ul class="org-ul">
+<li><b><b>Creación de Agencia Nacional de Incendios</b></b>: Coordinación supraautonómica</li>
+<li><b><b>Protocolos automáticos</b></b>: Activación sin solicitud previa en emergencias</li>
+<li><b><b>Recursos compartidos</b></b>: Pool nacional de medios especializados</li>
+</ul>
+
+<p>
+### 2. Inversión y Tecnología
+</p>
+<ul class="org-ul">
+<li><b><b>Sistemas de alerta temprana</b></b>: Red nacional integrada</li>
+<li><b><b>Flota aérea ampliada</b></b>: Incremento del 50% en capacidad</li>
+<li><b><b>Inteligencia artificial</b></b>: Predicción de riesgo y comportamiento del fuego</li>
+</ul>
+
+<p>
+### 3. Prevención y Gestión Forestal
+</p>
+<ul class="org-ul">
+<li><b><b>Plan Nacional de Gestión</b></b>: Coordinado y científicamente fundamentado</li>
+<li><b><b>Incentivos rurales</b></b>: Repoblación y mantenimiento territorial</li>
+<li><b><b>Silvicultura preventiva</b></b>: Gestión activa de combustible forestal</li>
+</ul>
+
+
+<div id="org773ba11" class="figure">
+<p><img src="./assets/images/modelo_futuro.png" alt="modelo_futuro.png" width="600px" />
+</p>
+</div>
+
+<p>
+## Opciones Futuras y Escenarios
+</p>
+
+<p>
+### Escenario A: Status Quo Mejorado
+</p>
+<ul class="org-ul">
+<li>Mejoras incrementales en coordinación</li>
+<li>Inversión moderada en recursos</li>
+<li><b><b>Riesgo</b></b>: Repetición de crisis similares</li>
+</ul>
+
+<p>
+### Escenario B: Reforma Competencial Profunda  
+</p>
+<ul class="org-ul">
+<li>Agencia nacional de incendios</li>
+<li>Recentralización parcial</li>
+<li><b><b>Ventaja</b></b>: Respuesta coordinada y eficaz</li>
+</ul>
+
+<p>
+### Escenario C: Federalización del Sistema
+</p>
+<ul class="org-ul">
+<li>Modelo similar al de otros países federales</li>
+<li>Especialización y subsidiariedad</li>
+<li><b><b>Complejidad</b></b>: Reforma constitucional necesaria</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4625018" class="outline-2">
+<h2 id="org4625018">Conclusiones y Recomendaciones</h2>
+<div class="outline-text-2" id="text-org4625018">
+<p>
+## Conclusiones Principales
+</p>
+
+<ol class="org-ol">
+<li><b><b>Crisis Multisistémica</b></b>: No solo meteorológica, sino de gestión institucional</li>
+<li><b><b>Fragmentación Contraproducente</b></b>: El modelo competencial actual es inadecuado para crisis de esta magnitud</li>
+<li><b><b>Politización Perjudicial</b></b>: El debate partidista ha dificultado la respuesta efectiva</li>
+<li><b><b>Necesidad de Reforma</b></b>: Cambios estructurales urgentes e ineludibles</li>
+</ol>
+
+<p>
+## Recomendaciones Inmediatas
+</p>
+
+<p>
+### Corto Plazo (2025-2026)
+</p>
+<ul class="org-ul">
+<li>Evaluación independiente de la crisis</li>
+<li>Plan de inversión extraordinaria</li>
+<li>Protocolos de coordinación mejorados</li>
+</ul>
+
+<p>
+### Medio Plazo (2026-2028)  
+</p>
+<ul class="org-ul">
+<li>Creación de la Agencia Nacional de Incendios</li>
+<li>Reforma del marco legal</li>
+<li>Inversión en tecnología y prevención</li>
+</ul>
+
+<p>
+### Largo Plazo (2028-2035)
+</p>
+<ul class="org-ul">
+<li>Transformación del modelo forestal nacional</li>
+<li>Adaptación al cambio climático</li>
+<li>Construcción de resiliencia territorial</li>
+</ul>
+
+<p>
+## Reflexión Final
+</p>
+
+<p>
+La crisis de agosto de 2025 representa un punto de inflexión para España. Ya son 344.417 las hectáreas quemadas por los incendios, según estimaciones de Copernicus, una cifra que debería generar una reflexión profunda sobre nuestro modelo de gestión del territorio y de las emergencias.
+</p>
+
+<p>
+La respuesta no puede limitarse a inversiones adicionales o ajustes menores. Se requiere una transformación del sistema que preserve las ventajas de la descentralización autonómica pero que incorpore mecanismos de coordinación, recursos compartidos y respuesta nacional para emergencias de esta magnitud.
+</p>
+
+<p>
+El futuro de nuestros bosques, y en última instancia de nuestro territorio, depende de la capacidad de aprender de esta crisis y implementar cambios estructurales que nos preparen para los desafíos del cambio climático y la intensificación de fenómenos extremos.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb55093d" class="outline-2">
+<h2 id="orgb55093d">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-orgb55093d">
+<ol class="org-ol">
+<li>Sistema Europeo de Información sobre Incendios Forestales (EFFIS) - Comisión Europea</li>
+<li>Copernicus - Servicio de Monitoreo de la Atmósfera</li>
+<li>Ley 43/2003 de Montes</li>
+<li>Informes de medios: Infobae, El Español, El Independiente, Nueva Tribuna</li>
+<li>Fuentes oficiales: La Moncloa, Xunta de Galicia, Comunidad de Madrid</li>
+</ol>
+
+<p>
+&#x2014;
+</p>
+
+<p class="post-meta">Publicado el 2025-08-18 20:44 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:18</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

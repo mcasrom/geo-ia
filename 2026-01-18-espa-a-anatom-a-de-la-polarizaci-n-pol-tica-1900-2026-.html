@@ -1,0 +1,2873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 23:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>España: Anatomía de la Polarización Política (1900-2026)</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis sociopolítico de la evolución y polarización del espectro político español desde principios del siglo XX hasta la actualidad" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">España: Anatomía de la Polarización Política (1900-2026)</h1>
+
+<div id="outline-container-org4b35df8" class="outline-2">
+<h2 id="org4b35df8">España: Anatomía de la Polarización Política (1900-2026)</h2>
+<div class="outline-text-2" id="text-org4b35df8">
+
+<div id="orgca4773a" class="figure">
+<p><img src="./assets/images/ChatGPT ImagenSpain.png" alt="ChatGPT ImagenSpain.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgafa9de2" class="outline-2">
+<h2 id="orgafa9de2">Matriz Comparativa: Evolución de la Polarización Política Española</h2>
+<div class="outline-text-2" id="text-orgafa9de2">
+<table id="org933867a" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Periodo</th>
+<th scope="col" class="org-left">Polarización</th>
+<th scope="col" class="org-left">Fragmentación</th>
+<th scope="col" class="org-left">Violencia Política</th>
+<th scope="col" class="org-left">Estabilidad Institucional</th>
+<th scope="col" class="org-left">Índice Democrático</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Restauración 1900</td>
+<td class="org-left">Media (4/10)</td>
+<td class="org-left">Baja (2/10)</td>
+<td class="org-left">Baja (2/10)</td>
+<td class="org-left">Media (5/10)</td>
+<td class="org-left">2.5/10</td>
+</tr>
+
+<tr>
+<td class="org-left">II República 1931</td>
+<td class="org-left">Alta (8/10)</td>
+<td class="org-left">Alta (7/10)</td>
+<td class="org-left">Alta (8/10)</td>
+<td class="org-left">Baja (3/10)</td>
+<td class="org-left">6.0/10</td>
+</tr>
+
+<tr>
+<td class="org-left">Guerra Civil 1936</td>
+<td class="org-left">Máxima (10)</td>
+<td class="org-left">Máxima (10)</td>
+<td class="org-left">Máxima (10)</td>
+<td class="org-left">Colapso (0/10)</td>
+<td class="org-left">0/10</td>
+</tr>
+
+<tr>
+<td class="org-left">Franquismo 1950</td>
+<td class="org-left">Anulada (0)</td>
+<td class="org-left">Anulada (0)</td>
+<td class="org-left">Alta (7/10)</td>
+<td class="org-left">Autoritaria (2/10)</td>
+<td class="org-left">0/10</td>
+</tr>
+
+<tr>
+<td class="org-left">Transición 1978</td>
+<td class="org-left">Baja (3/10)</td>
+<td class="org-left">Media (4/10)</td>
+<td class="org-left">Media (5/10)</td>
+<td class="org-left">Alta (8/10)</td>
+<td class="org-left">7.5/10</td>
+</tr>
+
+<tr>
+<td class="org-left">Bonanza 1990-2007</td>
+<td class="org-left">Baja (3/10)</td>
+<td class="org-left">Baja (3/10)</td>
+<td class="org-left">Muy Baja (1/10)</td>
+<td class="org-left">Alta (9/10)</td>
+<td class="org-left">8.2/10</td>
+</tr>
+
+<tr>
+<td class="org-left">Crisis 2008-2015</td>
+<td class="org-left">Media (6/10)</td>
+<td class="org-left">Alta (8/10)</td>
+<td class="org-left">Baja (2/10)</td>
+<td class="org-left">Media (6/10)</td>
+<td class="org-left">8.0/10</td>
+</tr>
+
+<tr>
+<td class="org-left">Era Fragmentación</td>
+<td class="org-left">Alta (8/10)</td>
+<td class="org-left">Muy Alta (9)</td>
+<td class="org-left">Media (4/10)</td>
+<td class="org-left">Baja (4/10)</td>
+<td class="org-left">7.8/10</td>
+</tr>
+
+<tr>
+<td class="org-left">Actualidad 2026</td>
+<td class="org-left">Alta (9/10)</td>
+<td class="org-left">Alta (8/10)</td>
+<td class="org-left">Media (4/10)</td>
+<td class="org-left">Media (5/10)</td>
+<td class="org-left">7.6/10</td>
+</tr>
+</tbody>
+</table>
+
+<table id="org4ef143d" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Formación</th>
+<th scope="col" class="org-left">Ideología</th>
+<th scope="col" class="org-right">Escaños Congreso</th>
+<th scope="col" class="org-right">% Voto 2023</th>
+<th scope="col" class="org-left">Posición Espectro</th>
+<th scope="col" class="org-left">Base Electoral Principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">VOX</td>
+<td class="org-left">Ultraderecha</td>
+<td class="org-right">33</td>
+<td class="org-right">12.4%</td>
+<td class="org-left">Extrema Derecha</td>
+<td class="org-left">Rural, +55 años, nacionalista</td>
+</tr>
+
+<tr>
+<td class="org-left">PP</td>
+<td class="org-left">Centroderecha</td>
+<td class="org-right">137</td>
+<td class="org-right">33.1%</td>
+<td class="org-left">Centro-Derecha</td>
+<td class="org-left">Urbano-rural, clases medias</td>
+</tr>
+
+<tr>
+<td class="org-left">PSOE</td>
+<td class="org-left">Centroizquierda</td>
+<td class="org-right">121</td>
+<td class="org-right">31.7%</td>
+<td class="org-left">Centro-Izquierda</td>
+<td class="org-left">Urbano, funcionarios, pensión</td>
+</tr>
+
+<tr>
+<td class="org-left">SUMAR</td>
+<td class="org-left">Izquierda</td>
+<td class="org-right">31</td>
+<td class="org-right">12.3%</td>
+<td class="org-left">Izquierda</td>
+<td class="org-left">Jóvenes urbanos, universitario</td>
+</tr>
+
+<tr>
+<td class="org-left">ERC</td>
+<td class="org-left">Izq. nacionalista</td>
+<td class="org-right">7</td>
+<td class="org-right">1.4%</td>
+<td class="org-left">Izquierda</td>
+<td class="org-left">Cataluña, independentista</td>
+</tr>
+
+<tr>
+<td class="org-left">Junts</td>
+<td class="org-left">Der. nacionalista</td>
+<td class="org-right">7</td>
+<td class="org-right">1.7%</td>
+<td class="org-left">Centro-Derecha</td>
+<td class="org-left">Cataluña, independentista</td>
+</tr>
+
+<tr>
+<td class="org-left">PNV</td>
+<td class="org-left">Centro nacionalis</td>
+<td class="org-right">5</td>
+<td class="org-right">1.2%</td>
+<td class="org-left">Centro</td>
+<td class="org-left">País Vasco, moderado</td>
+</tr>
+
+<tr>
+<td class="org-left">Bildu</td>
+<td class="org-left">Izq. nacionalista</td>
+<td class="org-right">6</td>
+<td class="org-right">1.6%</td>
+<td class="org-left">Izquierda</td>
+<td class="org-left">País Vasco, abertzale</td>
+</tr>
+
+<tr>
+<td class="org-left">Otros</td>
+<td class="org-left">Varios</td>
+<td class="org-right">3</td>
+<td class="org-right">4.6%</td>
+<td class="org-left">Mixto</td>
+<td class="org-left">Regional, disperso</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org11605a4" class="outline-2">
+<h2 id="org11605a4">Introducción: El Péndulo de la Polarización Española</h2>
+<div class="outline-text-2" id="text-org11605a4">
+<p>
+España presenta un caso paradigmático de cómo las sociedades democráticas pueden oscilar entre consenso y fragmentación, entre estabilidad y crisis institucional. A diferencia de democracias consolidadas con sistemas bipartidistas relativamente estables, España ha experimentado en poco más de un siglo todas las formas posibles de organización política: monarquía parlamentaria débil, república democrática, guerra civil, dictadura militar, transición modélica, bipartidismo imperfecto y, finalmente, multipartidismo fragmentado y altamente polarizado.
+</p>
+
+<p>
+El análisis de 126 años de historia política española revela patrones recurrentes: la dificultad para construir consensos duraderos, la tendencia hacia la fragmentación territorial e ideológica, y la persistencia de fracturas históricas que se reactivan periódicamente bajo nuevas formas. La polarización actual, aunque significativa, debe contextualizarse dentro de esta larga trayectoria para comprender tanto sus especificidades como sus ecos históricos.
+</p>
+
+<p>
+Este documento analiza la evolución del espectro político español, identifica las causas estructurales y coyunturales de la polarización, examina sus manifestaciones contemporáneas, y evalúa las consecuencias para la gobernabilidad democrática del país.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84665fa" class="outline-2">
+<h2 id="org84665fa">Cronología Histórica: Las Capas Geológicas de la Polarización</h2>
+<div class="outline-text-2" id="text-org84665fa">
+</div>
+<div id="outline-container-org40e83f4" class="outline-3">
+<h3 id="org40e83f4">La Restauración y la Crisis del Sistema Canovista (1900-1923)</h3>
+<div class="outline-text-3" id="text-org40e83f4">
+<p>
+El sistema político de la Restauración borbónica, caracterizado por el turnismo pactado entre conservadores y liberales, mostraba ya a principios del siglo XX señales inequívocas de agotamiento. Aunque la polarización visible era baja debido al control oligárquico del sistema electoral, las tensiones subyacentes eran profundas:
+</p>
+
+<p>
+<b>Fracturas estructurales:</b>
+</p>
+<ul class="org-ul">
+<li>Cuestión social: movimiento obrero anarquista y socialista en ascenso</li>
+<li>Cuestión regional: nacionalismos catalán y vasco emergentes</li>
+<li>Cuestión militar: intervencionismo del Ejército en política</li>
+<li>Cuestión religiosa: anticlericalismo republicano vs. catolicismo tradicional</li>
+</ul>
+
+<p>
+El desastre de Annual (1921) y la crisis de legitimidad del sistema llevaron al golpe de Primo de Rivera (1923), primera ruptura constitucional del siglo. La dictadura militar, aunque apoyada inicialmente por sectores amplios, demostró la fragilidad del consenso liberal español.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org75aba06" class="outline-3">
+<h3 id="org75aba06">La Segunda República: Laboratorio de Polarización (1931-1936)</h3>
+<div class="outline-text-3" id="text-org75aba06">
+<p>
+La proclamación de la II República el 14 de abril de 1931 generó expectativas transformadoras que el sistema político no pudo canalizar efectivamente. La República nació en un contexto de crisis económica global y con un diseño institucional que facilitaba la inestabilidad:
+</p>
+
+<p>
+<b>Diseño institucional problemático:</b>
+</p>
+<ul class="org-ul">
+<li>Sistema electoral proporcional con prima a mayorías que amplificaba oscilaciones</li>
+<li>Presidencialismo débil sin capacidad arbitral efectiva</li>
+<li>Ausencia de cláusulas de barrera que facilitaba fragmentación</li>
+<li>Bicameralismo asimétrico que generaba bloqueos institucionales</li>
+</ul>
+
+<p>
+<b>Evolución de la polarización:</b>
+</p>
+
+<p>
+<i>Bienio Reformista (1931-1933):</i> Coalición republicano-socialista implementó reformas profundas (agraria, militar, educativa, religiosa) que generaron resistencia de sectores conservadores, Iglesia y militares. La aprobación de la Constitución de 1931 con contenido claramente progresista (laicismo, divorcio, voto femenino, autonomías) sin consenso conservador sembró resentimiento.
+</p>
+
+<p>
+<i>Bienio Radical-Cedista (1933-1936):</i> El giro a la derecha tras las elecciones de 1933 y el intento de revertir reformas precipitó la Revolución de Octubre de 1934, especialmente en Asturias. La represión posterior (30,000 encarcelados, 1,300-2,000 muertos) envenenó irremediablemente el clima político.<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+</p>
+
+<p>
+<i>Frente Popular (1936):</i> Las elecciones de febrero de 1936 se celebraron en contexto de máxima tensión. La victoria ajustada del Frente Popular desencadenó violencia política sistemática: entre febrero y julio se registraron 330 muertos por violencia política, 213 iglesias quemadas, y numerosos enfrentamientos callejeros.
+</p>
+
+<p>
+<b>Indicadores de colapso democrático:</b>
+</p>
+<ul class="org-ul">
+<li>19 gobiernos en 5 años</li>
+<li>3 elecciones generales en periodo similar</li>
+<li>Violencia política institucionalizada</li>
+<li>Falta absoluta de cultura de pacto</li>
+<li>Visión del adversario como enemigo existencial</li>
+</ul>
+
+<p>
+El golpe militar del 18 de julio de 1936 no fue causa sino consecuencia de una polarización que había alcanzado niveles incompatibles con la democracia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgefa06c1" class="outline-3">
+<h3 id="orgefa06c1">Guerra Civil y Franquismo: Polarización Congelada (1936-1975)</h3>
+<div class="outline-text-3" id="text-orgefa06c1">
+<p>
+La Guerra Civil (1936-1939) representó la expresión más extrema de polarización política: la resolución violenta de conflictos políticos. Con aproximadamente 500,000 muertos (200,000 en combate, 150,000 ejecutados por represión franquista, 50,000 por violencia republicana, resto por enfermedad y hambre), el conflicto dejó cicatrices profundas que perduran.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
+</p>
+
+<p>
+El franquismo (1939-1975) no eliminó la polarización sino que la congeló mediante represión. La dictadura construyó un sistema basado en:
+</p>
+<ul class="org-ul">
+<li>Aniquilación física y exilio de la oposición</li>
+<li>Control totalitario de instituciones</li>
+<li>Nacionalcatolicismo como ideología oficial</li>
+<li>Autarquía económica hasta Plan de Estabilización 1959</li>
+<li>Represión cultural de identidades regionales</li>
+</ul>
+
+<p>
+La evolución del régimen desde totalitarismo fascista (1939-1945) hacia dictadura desarrollista (1960-1975) no supuso democratización sino adaptación autoritaria. La modernización económica del "desarrollismo" creó paradójicamente las condiciones para la transición democrática: clase media emergente, urbanización, conexión con Europa.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd78e6e0" class="outline-3">
+<h3 id="orgd78e6e0">La Transición: Consenso Fundacional Frágil (1975-1982)</h3>
+<div class="outline-text-3" id="text-orgd78e6e0">
+<p>
+La muerte de Franco el 20 de noviembre de 1975 abrió un periodo excepcional de negociación política. La Transición española, frecuentemente mitificada, fue producto de factores convergentes:
+</p>
+
+<p>
+<b>Condiciones facilitadoras:</b>
+</p>
+<ul class="org-ul">
+<li>Debilidad de ultras franquistas tras muerte del dictador</li>
+<li>Moderación de izquierda por experiencia de guerra civil</li>
+<li>Presión internacional y europea</li>
+<li>Liderazgo de figuras clave (Rey Juan Carlos, Adolfo Suárez, Santiago Carrillo, Felipe González)</li>
+<li>Miedo compartido a repetición de 1936</li>
+</ul>
+
+<p>
+<b>Arquitectura del consenso:</b>
+</p>
+
+<p>
+El proceso se articuló mediante pactos sucesivos:
+</p>
+<ul class="org-ul">
+<li>Ley para la Reforma Política (1976): autotransformación del franquismo</li>
+<li>Legalización PCE (abril 1977): integración de toda la izquierda</li>
+<li>Elecciones junio 1977: legitimación democrática</li>
+<li>Pactos de la Moncloa (octubre 1977): consenso económico en crisis</li>
+<li>Constitución 1978: consenso constitucional amplio (88% apoyo referéndum)</li>
+</ul>
+
+<p>
+Sin embargo, el consenso tenía límites claros:
+</p>
+<ul class="org-ul">
+<li>Pacto de silencio sobre pasado franquista (amnistía 1977)</li>
+<li>Ambigüedad sobre forma del Estado (monarquía vs república)</li>
+<li>Indefinición territorial (Estado de las Autonomías abierto)</li>
+<li>Violencia de ETA y extrema derecha persistente (1975-1982: 326 asesinatos)</li>
+</ul>
+
+<p>
+<b>Debilidades estructurales:</b>
+</p>
+
+<p>
+La Constitución de 1978, pese a su consenso aparente, incorporó ambigüedades deliberadas que posteriormente generarían conflicto:
+</p>
+<ul class="org-ul">
+<li>Artículo 2: "indisoluble unidad de la Nación española" vs. "nacionalidades y regiones"</li>
+<li>Artículo 8: Fuerzas Armadas como "garantes de la unidad"</li>
+<li>Sistema electoral con sobrerrepresentación de zonas rurales</li>
+<li>Senado territorial disfuncional</li>
+</ul>
+
+<p>
+El golpe de Estado del 23-F (1981) demostró la fragilidad del consenso y la persistencia de sectores involucionistas.<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgff0cc49" class="outline-3">
+<h3 id="orgff0cc49">Bipartidismo Imperfecto: La Ilusión de Estabilidad (1982-2008)</h3>
+<div class="outline-text-3" id="text-orgff0cc49">
+<p>
+La victoria aplastante del PSOE de Felipe González en 1982 (202 escaños, mayoría absoluta) inauguró un periodo de relativa estabilidad basado en alternancia bipartidista PSOE-PP con nacionalismos periféricos como bisagra parlamentaria.
+</p>
+
+<p>
+<b>Características del sistema:</b>
+</p>
+<ul class="org-ul">
+<li>Bipartidismo imperfecto: PSOE y PP acumulaban 65-85% del voto</li>
+<li>Nacionalismos periféricos: CiU, PNV como socios de gobierno</li>
+<li>Izquierda fragmentada: IU como tercera fuerza testimonial</li>
+<li>Consenso económico: social-liberalismo post-1988</li>
+</ul>
+
+<p>
+<b>Fracturas contenidas:</b>
+</p>
+
+<p>
+Pese a estabilidad aparente, persistían líneas de fractura:
+</p>
+
+<p>
+<i>Cuestión territorial:</i> El desarrollo del Estado autonómico generó tensiones recurrentes. Mientras algunas autonomías asumían competencias gradualmente, País Vasco y especialmente Cataluña presionaban por mayor autogobierno. El Plan Ibarretxe (2003) y los debates sobre Estatutos de autonomía (especialmente catalán 2006) anticipaban conflictos futuros.
+</p>
+
+<p>
+<i>Memoria histórica:</i> El pacto de silencio sobre el franquismo comenzó a resquebrajarse con generaciones sin memoria directa de guerra civil. La Ley de Memoria Histórica (2007) generó primera polarización significativa post-Transición.
+</p>
+
+<p>
+<i>Cuestión religiosa:</i> Debates sobre educación (Ley Orgánica de Educación 2006), matrimonio homosexual (2005), aborto, revelaron persistencia de fractura laicismo-catolicismo.
+</p>
+
+<p>
+<b>Era Aznar (1996-2004):</b> 
+</p>
+
+<p>
+El gobierno de José María Aznar representó primer giro significativo hacia polarización moderna. Especialmente tras mayoría absoluta de 2000, Aznar implementó agenda más ideológica:
+</p>
+<ul class="org-ul">
+<li>Alianza incondicional con Bush en Guerra de Irak (contra 90% opinión pública)</li>
+<li>Enfrentamiento con nacionalismos periféricos</li>
+<li>Retórica de "España va bien" mientras crecían desequilibrios</li>
+<li>Gestión del 11-M (2004) que provocó su derrota electoral</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3b75752" class="outline-3">
+<h3 id="org3b75752">La Gran Crisis: Ruptura del Consenso (2008-2015)</h3>
+<div class="outline-text-3" id="text-org3b75752">
+<p>
+La crisis financiera de 2008, convertida en España en crisis sistémica (financiera, económica, social, política, territorial), fracturó definitivamente el modelo de la Transición.
+</p>
+
+<p>
+<b>Magnitud de la crisis:</b>
+</p>
+<ul class="org-ul">
+<li>PIB: caída acumulada del 9% (2008-2013)</li>
+<li>Desempleo: de 8% (2007) a 27% (2013), 57% juvenil</li>
+<li>Desahucios: más de 500,000 familias entre 2008-2015</li>
+<li>Emigración: 700,000 españoles abandonaron el país</li>
+<li>Deuda pública: de 36% PIB (2007) a 100% PIB (2014)</li>
+<li>Rescate bancario: 60,000 millones de euros de dinero público<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup></li>
+</ul>
+
+<p>
+<b>Respuesta política inadecuada:</b>
+</p>
+
+<p>
+La gestión de la crisis por PSOE (2008-2011) y especialmente PP (2011-2015) mediante austeridad severa, recortes en servicios públicos, y rescate bancario sin condiciones para entidades, generó deslegitimación masiva del sistema.
+</p>
+
+<p>
+Factores de deslegitimación:
+</p>
+<ul class="org-ul">
+<li>Corrupción sistémica revelada: Caso Gürtel, Bárcenas, EREs andaluces, Púnica</li>
+<li>Puerta giratoria entre política y banca</li>
+<li>Reforma Constitucional exprés Art. 135 (agosto 2011) sin referéndum</li>
+<li>Sensación de captura institucional por élites económicas</li>
+</ul>
+
+<p>
+<b>Emergencia del 15-M:</b>
+</p>
+
+<p>
+El movimiento de los Indignados (15 de mayo de 2011) representó rechazo ciudadano al bipartidismo. Aunque apartidista, su lema "No nos representan" y demandas (democracia real, fin de la corrupción, auditoría de deuda) anticiparon reconfiguración política posterior.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7685dea" class="outline-3">
+<h3 id="org7685dea">Era de la Fragmentación: Multipartidismo Polarizado (2015-2026)</h3>
+<div class="outline-text-3" id="text-org7685dea">
+<p>
+Las elecciones de diciembre de 2015 certificaron el fin del bipartidismo: PSOE y PP obtuvieron conjuntamente 50.7% de votos, frente a 65-75% habitual. Emergieron dos nuevas fuerzas:
+</p>
+
+<p>
+<b>Podemos:</b> Surgido del 15-M, liderado por Pablo Iglesias, planteó ruptura con "régimen del 78". Propuestas: renta básica, auditoría de deuda, vivienda pública masiva, fin de austeridad. Obtuvo 20.7% en 2015.
+</p>
+
+<p>
+<b>Ciudadanos:</b> Presentado como renovación desde centro, crítico con nacionalismos, obtuvo 13.9% en 2015.
+</p>
+
+
+<div id="org7b8d9ea" class="figure">
+<p><img src="./assets/images/evolucion-fragmentacion.png" alt="evolucion-fragmentacion.png" width="600px" />
+</p>
+</div>
+
+<p>
+<b>Factores de fragmentación 2015-2019:</b>
+</p>
+
+<ol class="org-ol">
+<li><b>Procés catalán (2017):</b> La declaración unilateral de independencia (27 octubre 2017) y aplicación del artículo 155 generó polarización territorial máxima. El juicio al Procés (2019) y las condenas por sedición radicalizaron posiciones.</li>
+
+<li><b>Moción de censura (2018):</b> Pedro Sánchez llegó al poder mediante moción contra Rajoy apoyada por independentistas, legitimando en derecha narrativa de "golpe parlamentario".</li>
+
+<li><b>Emergencia de VOX:</b> El partido de ultraderecha, surgido en 2013 pero irrelevante hasta 2018, irrumpió con fuerza en Andalucía (2018) y nacionales (2019) con discurso anti-inmigración, anti-feminismo, centralista radical. Obtuvo 24 escaños (2019) y 52 (2019 nov).</li>
+
+<li><b>Bloqueo institucional:</b> España vivió repetición electoral inédita (abril y noviembre 2019) por incapacidad de formar gobierno. Sánchez rechazó coalición con Podemos en julio, para aceptarla en noviembre tras perder escaños.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2759c9e" class="outline-3">
+<h3 id="org2759c9e">Periodo Actual: Polarización en la Era Post-Pandemia (2020-2026)</h3>
+<div class="outline-text-3" id="text-org2759c9e">
+<p>
+<b>Gobierno de coalición PSOE-Unidas Podemos (2020-2023):</b>
+</p>
+
+<p>
+Primer gobierno de coalición de izquierda en democracia enfrentó:
+</p>
+<ul class="org-ul">
+<li>Pandemia COVID-19: gestión con mayor confinamiento de Europa, 120,000 muertos</li>
+<li>Crisis económica derivada: caída PIB 11% (2020), mayor de Europa</li>
+<li>Fondos Next Generation EU: 140,000 millones gestión polémica</li>
+<li>Reformas laborales: derogación parcial reforma 2012</li>
+<li>Ley Trans: fractura dentro de feminismo</li>
+<li>Ley del "solo sí es sí": aplicación problemática, excarcelaciones</li>
+<li>Indultos y amnistía al Procés: mayor controversia del periodo</li>
+</ul>
+
+<p>
+<b>Elección de julio 2023 y gobierno de coalición PSOE-SUMAR:</b>
+</p>
+
+<p>
+Las elecciones anticipadas dieron victoria pírrica al PP (137 escaños) sin capacidad de gobierno. Sánchez consiguió investidura (noviembre 2023) mediante:
+</p>
+<ul class="org-ul">
+<li>Coalición con Sumar (sucesora de UP)</li>
+<li>Apoyo de nacionalistas catalanes (ERC, Junts)</li>
+<li>Apoyo de PNV y Bildu</li>
+</ul>
+
+<p>
+El precio: Ley de Amnistía para procesados del Procés, considerada por derecha y parte de juristas como inconstitucional. Su tramitación (2023-2024) generó mayores movilizaciones en democracia: más de 1 millón de personas en manifestaciones contra la ley.<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup>
+</p>
+
+<p>
+<b>Polarización actual: manifestaciones</b>
+</p>
+
+<p>
+La polarización de 2026 presenta características específicas:
+</p>
+
+<p>
+<i>En el plano territorial:</i>
+</p>
+<ul class="org-ul">
+<li>Independentismo catalán: aunque bajó de 52% (2017) a 42% (2025), mantiene capacidad de condicionar política nacional</li>
+<li>Frustración en resto de España por percepción de privilegios a Cataluña</li>
+<li>Financiación autonómica: disputa Madrid-Cataluña enquistada</li>
+<li>Normalización de Bildu (heredera de brazo político de ETA) genera rechazo en sectores que vivieron terrorismo</li>
+</ul>
+
+<p>
+<i>En el plano ideológico:</i>
+</p>
+<ul class="org-ul">
+<li>Batalla cultural sobre memoria histórica, feminismo, identidad nacional</li>
+<li>VOX normaliza discursos previamente considerados extremos</li>
+<li>Izquierda abraza agenda identitaria (género, minorías) que genera rechazo en sectores populares tradicionales</li>
+<li>Crispación sistemática en redes sociales amplifica polarización</li>
+</ul>
+
+<p>
+<i>En el plano institucional:</i>
+</p>
+<ul class="org-ul">
+<li>Judicialización de política: fiscalía, tribunales como arena de batalla</li>
+<li>Ataques a jueces desde gobierno y oposición</li>
+<li>Renovación CGPJ bloqueada 5 años (2018-2023)</li>
+<li>Medios de comunicación alineados ideológicamente</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgebcfecd" class="outline-2">
+<h2 id="orgebcfecd">Causas Estructurales de la Polarización Española</h2>
+<div class="outline-text-2" id="text-orgebcfecd">
+</div>
+<div id="outline-container-org7f06c60" class="outline-3">
+<h3 id="org7f06c60">Factor Histórico: Herencias No Resueltas</h3>
+<div class="outline-text-3" id="text-org7f06c60">
+<p>
+España arrastra fracturas históricas nunca completamente superadas:
+</p>
+
+<p>
+<b>Guerra Civil como trauma fundacional:</b> A diferencia de otras democracias europeas donde fascismo fue derrota externa, en España fue victoria interna seguida de 40 años de dictadura. El pacto de silencio de la Transición evitó reconciliación real, solo suspensión temporal del conflicto.
+</p>
+
+<p>
+<b>Cuestión territorial:</b> La tensión centralismo-periferias antecede a la democracia actual. El Estado autonómico fue solución provisional que satisfizo parcialmente a nacionalismos pero creó agravios comparativos y disputas competenciales permanentes.
+</p>
+
+<p>
+<b>Cuestión religiosa:</b> Aunque secularización es dominante, la fractura clericalismo-anticlericalismo pervive en debates sobre educación, símbolos, financiación de la Iglesia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org057a262" class="outline-3">
+<h3 id="org057a262">Factor Institucional: Diseño Constitucional Ambiguo</h3>
+<div class="outline-text-3" id="text-org057a262">
+<p>
+La Constitución de 1978, diseñada para contentar a todos, incorporó contradicciones que generan conflicto:
+</p>
+
+<p>
+<b>Sistema electoral:</b> 
+</p>
+<ul class="org-ul">
+<li>Fórmula D'Hondt con circunscripciones provinciales sobrerrepresenta zonas rurales conservadoras</li>
+<li>Barrera del 3% por circunscripción favorece nacionalismos periféricos</li>
+<li>Dificulta mayorías absolutas desde fragmentación, complicando gobernabilidad</li>
+</ul>
+
+<p>
+<b>Estado autonómico indefinido:</b>
+</p>
+<ul class="org-ul">
+<li>Artículo 2 contiene contradicción irresolvible</li>
+<li>Ausencia de lista cerrada de competencias genera litigiosidad constante</li>
+<li>Financiación autonómica: sistema foral vasco-navarro vs. común genera agravio</li>
+<li>Vía Article 155 difícil de activar políticamente</li>
+</ul>
+
+<p>
+<b>Poder judicial:</b>
+</p>
+<ul class="org-ul">
+<li>CGPJ elegido por Parlamento facilita politización</li>
+<li>Fiscalía dependiente del Ejecutivo</li>
+<li>Tribunal Constitucional: magistrados politizados, nombramientos bloqueados</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6d7a573" class="outline-3">
+<h3 id="org6d7a573">Factor Sociológico: Cambio Social Acelerado</h3>
+<div class="outline-text-3" id="text-org6d7a573">
+<p>
+España experimentó en 40 años transformación que otras sociedades vivieron en un siglo:
+</p>
+
+<p>
+<b>Secularización rápida:</b> De 90% católicos practicantes (1975) a 20% (2025)
+<b>Urbanización masiva:</b> De sociedad agraria a terciaria
+<b>Incorporación plena de la mujer:</b> De modelo patriarcal a feminización de universidad y trabajo
+<b>Inmigración súbita:</b> De 1% población extranjera (1990) a 16% (2025)
+<b>Diversidad familiar:</b> De modelo tradicional único a diversidad de formas familiares
+</p>
+
+<p>
+Estos cambios generan brecha generacional, urbano-rural, e identitaria que alimenta polarización.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a07b56" class="outline-3">
+<h3 id="org1a07b56">Factor Económico: Desigualdad y Precariedad</h3>
+<div class="outline-text-3" id="text-org1a07b56">
+<p>
+La crisis de 2008 y sus consecuencias duraderas crearon fracturas económicas:
+</p>
+
+<p>
+<b>Desigualdad creciente:</b>
+</p>
+<ul class="org-ul">
+<li>Índice Gini: de 0.31 (2007) a 0.34 (2025)</li>
+<li>Tasa de pobreza: 26.4% población en riesgo (2024)</li>
+<li>Brecha generacional: Millennials primera generación con peor expectativas que padres</li>
+</ul>
+
+<p>
+<b>Precariedad laboral:</b>
+</p>
+<ul class="org-ul">
+<li>Temporalidad: 25% contratos temporales vs. 15% media UE</li>
+<li>Parcialidad involuntaria: 60% contratos parciales</li>
+<li>Salarios: estancados en términos reales desde 2008</li>
+</ul>
+
+<p>
+<b>Vivienda:</b>
+</p>
+<ul class="org-ul">
+<li>Precio vivienda: +40% (2015-2025) en grandes ciudades</li>
+<li>Alquiler: +60% en mismo periodo</li>
+<li>Acceso imposible para jóvenes: edad emancipación 30 años</li>
+</ul>
+
+<p>
+Esta precariedad genera resentimiento canalizado políticamente hacia extremos.<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaacba50" class="outline-3">
+<h3 id="orgaacba50">Factor Mediático: Ecosistema de Información Polarizado</h3>
+<div class="outline-text-3" id="text-orgaacba50">
+<p>
+Los medios de comunicación españoles presentan alineamiento ideológico marcado:
+</p>
+
+<p>
+<b>Prensa escrita:</b>
+</p>
+<ul class="org-ul">
+<li>Derecha: ABC, La Razón, El Mundo (desde 2020)</li>
+<li>Centro: El País (centroizquierda oficialmente)</li>
+<li>Izquierda: Público, elDiario.es, La Marea</li>
+</ul>
+
+<p>
+<b>Televisión:</b>
+</p>
+<ul class="org-ul">
+<li>Atresmedia (La Sexta): línea progresista</li>
+<li>Mediaset (Telecinco): línea conservadora</li>
+<li>RTVE: pugna por control, sesgo según gobierno</li>
+</ul>
+
+<p>
+<b>Radio:</b>
+</p>
+<ul class="org-ul">
+<li>COPE, esRadio: línea conservadora-religiosa</li>
+<li>Cadena SER: línea centroizquierda</li>
+</ul>
+
+<p>
+<b>Redes sociales:</b>
+</p>
+<ul class="org-ul">
+<li>Cámaras de eco ideológicas</li>
+<li>Desinformación y bulos sistemáticos</li>
+<li>Algoritmos que amplifican contenido divisivo</li>
+</ul>
+
+<p>
+Esta fragmentación mediática impide narrativa compartida de la realidad, facilitando polarización.
+</p>
+
+
+<div id="org4f4e0e2" class="figure">
+<p><img src="./assets/images/causas-polarizacion.png" alt="causas-polarizacion.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org4b7fc42" class="outline-2">
+<h2 id="org4b7fc42">Consecuencias de la Polarización</h2>
+<div class="outline-text-2" id="text-org4b7fc42">
+</div>
+<div id="outline-container-orgfcf188a" class="outline-3">
+<h3 id="orgfcf188a">Gobernabilidad Comprometida</h3>
+<div class="outline-text-3" id="text-orgfcf188a">
+<p>
+La fragmentación y polarización dificultan gobernabilidad efectiva:
+</p>
+
+<p>
+<b>Formación de gobierno:</b>
+</p>
+<ul class="org-ul">
+<li>Investiduras prolongadas: récord 10 meses (2019-2020)</li>
+<li>Coaliciones inestables con socios ideológicamente distantes</li>
+<li>Gobiernos en minoría dependientes de nacionalistas</li>
+<li>Presupuestos sin aprobar: 2018, 2019 con presupuestos prorrogados</li>
+</ul>
+
+<p>
+<b>Bloqueo institucional:</b>
+</p>
+<ul class="org-ul">
+<li>Renovación CGPJ: bloqueada 5 años por PP</li>
+<li>Tribunal Constitucional: magistrados caducados mantenidos</li>
+<li>Organismos reguladores sin renovar</li>
+<li>Decretos-ley como vía legislativa habitual (abuso)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9fc4a7b" class="outline-3">
+<h3 id="org9fc4a7b">Degradación del Debate Público</h3>
+<div class="outline-text-3" id="text-org9fc4a7b">
+<p>
+La polarización ha degradado calidad del discurso político:
+</p>
+
+<p>
+<b>Personalización extrema:</b>
+</p>
+<ul class="org-ul">
+<li>Debates centrados en descalificación personal</li>
+<li>Uso de términos como "golpista", "fascista", "bolivariano" normalizados</li>
+<li>Ausencia de debate sustantivo sobre políticas</li>
+<li>Tertulias televisivas como ring de insultos</li>
+</ul>
+
+<p>
+<b>Desinformación sistemática:</b>
+</p>
+<ul class="org-ul">
+<li>Bulos viralizados sin verificación</li>
+<li>Manipulación de imágenes y contextos</li>
+<li>Fake news desde todos los sectores</li>
+<li>Erosión de concepto de verdad factual</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5b87e50" class="outline-3">
+<h3 id="org5b87e50">Fracturas Sociales</h3>
+<div class="outline-text-3" id="text-org5b87e50">
+<p>
+La polarización política permea relaciones sociales:
+</p>
+
+<p>
+<b>Ruptura de redes:</b>
+</p>
+<ul class="org-ul">
+<li>Familias divididas políticamente evitan temas políticos</li>
+<li>Amistades rotas por diferencias políticas (30% según CIS 2024)</li>
+<li>Segregación residencial por ideología (urbano-rural)</li>
+<li>Endogamia política: parejas del mismo espectro</li>
+</ul>
+
+<p>
+<b>Violencia emergente:</b>
+</p>
+<ul class="org-ul">
+<li>Aunque baja comparada con periodo 1930s o ETA, violencia política reaparece</li>
+<li>Agresiones en manifestaciones</li>
+<li>Amenazas a políticos (especialmente mujeres)</li>
+<li>Ataques a sedes de partidos</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1df0a72" class="outline-3">
+<h3 id="org1df0a72">Pérdida de Confianza Institucional</h3>
+<div class="outline-text-3" id="text-org1df0a72">
+<p>
+Los ciudadanos pierden confianza en instituciones democráticas:
+</p>
+
+<table id="orgeda8e1f" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Institución</th>
+<th scope="col" class="org-right">Confianza 2010</th>
+<th scope="col" class="org-right">Confianza 2025</th>
+<th scope="col" class="org-right">Variación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Monarquía</td>
+<td class="org-right">6.2</td>
+<td class="org-right">4.8</td>
+<td class="org-right">-1.4</td>
+</tr>
+
+<tr>
+<td class="org-left">Parlamento</td>
+<td class="org-right">4.8</td>
+<td class="org-right">3.2</td>
+<td class="org-right">-1.6</td>
+</tr>
+
+<tr>
+<td class="org-left">Gobierno</td>
+<td class="org-right">4.5</td>
+<td class="org-right">3.5</td>
+<td class="org-right">-1.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Partidos Políticos</td>
+<td class="org-right">3.2</td>
+<td class="org-right">2.1</td>
+<td class="org-right">-1.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Poder Judicial</td>
+<td class="org-right">5.1</td>
+<td class="org-right">3.8</td>
+<td class="org-right">-1.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Fuerzas de Seguridad</td>
+<td class="org-right">6.5</td>
+<td class="org-right">6.2</td>
+<td class="org-right">-0.3</td>
+</tr>
+
+<tr>
+<td class="org-left">Medios de Comunicación</td>
+<td class="org-right">5.0</td>
+<td class="org-right">3.5</td>
+<td class="org-right">-1.5</td>
+</tr>
+
+<tr>
+<td class="org-left">Unión Europea</td>
+<td class="org-right">5.8</td>
+<td class="org-right">5.2</td>
+<td class="org-right">-0.6</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<i>Escala 0-10. Fuente: CIS, barómetros varios años</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd665692" class="outline-3">
+<h3 id="orgd665692">Impacto en Índices Democráticos Internacionales</h3>
+<div class="outline-text-3" id="text-orgd665692">
+<p>
+La polarización ha afectado percepción internacional de democracia española:
+</p>
+
+<p>
+<b>Democracy Index (The Economist):</b>
+</p>
+<ul class="org-ul">
+<li>2010: 8.16 ("democracia plena")</li>
+<li>2025: 7.62 ("democracia defectuosa" desde 2016)</li>
+<li>Descenso atribuido a: funcionamiento gobierno, cultura política, participación</li>
+</ul>
+
+<p>
+<b>Freedom House:</b>
+</p>
+<ul class="org-ul">
+<li>Mantiene clasificación "libre" pero con alertas</li>
+<li>Preocupaciones sobre: independencia judicial, concentración mediática, polarización</li>
+</ul>
+
+<p>
+<b>Varieties of Democracy (V-Dem):</b>
+</p>
+<ul class="org-ul">
+<li>Liberal Democracy Index: de 0.81 (2010) a 0.74 (2025)</li>
+<li>Retroceso en componentes de checks and balances y cultura democrática</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3dc6058" class="outline-3">
+<h3 id="org3dc6058">Costes Económicos</h3>
+<div class="outline-text-3" id="text-org3dc6058">
+<p>
+La inestabilidad política tiene costes económicos mensurables:
+</p>
+
+<p>
+<b>Inversión:</b>
+</p>
+<ul class="org-ul">
+<li>Prima de riesgo: España paga 80-100 puntos básicos más que Alemania en deuda</li>
+<li>Inversión extranjera directa: descenso en periodos de crisis política</li>
+<li>Incertidumbre regulatoria desalienta inversión</li>
+</ul>
+
+<p>
+<b>Reformas bloqueadas:</b>
+</p>
+<ul class="org-ul">
+<li>Pensiones: reforma estructural aplazada por imposibilidad de consenso</li>
+<li>Laboral: reformas y contrarreformas según gobierno</li>
+<li>Energética: transición verde ralentizada</li>
+<li>Educativa: ley educativa cada cambio de gobierno (8 leyes en democracia)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga36db63" class="outline-2">
+<h2 id="orga36db63">Comparativa Internacional: España en Contexto</h2>
+<div class="outline-text-2" id="text-orga36db63">
+<p>
+La polarización española, aunque significativa, debe contextualizarse:
+</p>
+
+<table id="org7376098" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">Polarización Política</th>
+<th scope="col" class="org-left">Fragmentación Parlamentaria</th>
+<th scope="col" class="org-left">Estabilidad Gobierno</th>
+<th scope="col" class="org-right">Democracia Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">España</td>
+<td class="org-left">8/10</td>
+<td class="org-left">8/10</td>
+<td class="org-left">5/10</td>
+<td class="org-right">7.62</td>
+</tr>
+
+<tr>
+<td class="org-left">Italia</td>
+<td class="org-left">9/10</td>
+<td class="org-left">9/10</td>
+<td class="org-left">3/10</td>
+<td class="org-right">7.69</td>
+</tr>
+
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-left">7/10</td>
+<td class="org-left">6/10</td>
+<td class="org-left">6/10</td>
+<td class="org-right">7.99</td>
+</tr>
+
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-left">5/10</td>
+<td class="org-left">7/10</td>
+<td class="org-left">7/10</td>
+<td class="org-right">8.80</td>
+</tr>
+
+<tr>
+<td class="org-left">Reino Unido</td>
+<td class="org-left">7/10</td>
+<td class="org-left">5/10</td>
+<td class="org-left">6/10</td>
+<td class="org-right">8.28</td>
+</tr>
+
+<tr>
+<td class="org-left">Polonia</td>
+<td class="org-left">9/10</td>
+<td class="org-left">6/10</td>
+<td class="org-left">7/10</td>
+<td class="org-right">6.90</td>
+</tr>
+
+<tr>
+<td class="org-left">Hungría</td>
+<td class="org-left">8/10</td>
+<td class="org-left">4/10</td>
+<td class="org-left">9/10</td>
+<td class="org-right">5.54</td>
+</tr>
+
+<tr>
+<td class="org-left">Estados Unidos</td>
+<td class="org-left">9/10</td>
+<td class="org-left">3/10</td>
+<td class="org-left">6/10</td>
+<td class="org-right">7.85</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+España presenta polarización alta pero con fragmentación muy elevada, complicando gobernabilidad más que en casos como EEUU o Polonia donde polarización es mayor pero con menos fragmentación.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org065d86a" class="outline-2">
+<h2 id="org065d86a">Escenarios Futuros: ¿Hacia Dónde Va España?</h2>
+<div class="outline-text-2" id="text-org065d86a">
+
+<div id="orgccc0e54" class="figure">
+<p><img src="./assets/images/escenarios-futuros.png" alt="escenarios-futuros.png" width="600px" />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgcee8b3d" class="outline-3">
+<h3 id="orgcee8b3d">Escenario Optimista: Gran Coalición Regeneradora (15% probabilidad)</h3>
+<div class="outline-text-3" id="text-orgcee8b3d">
+<p>
+<b>Triggers posibles:</b>
+</p>
+<ul class="org-ul">
+<li>Crisis económica externa severa (nueva recesión europea)</li>
+<li>Amenaza existencial (escalada territorial)</li>
+<li>Liderazgos renovados en PSOE y PP post-Sánchez/Feijóo</li>
+</ul>
+
+<p>
+<b>Características:</b>
+</p>
+<ul class="org-ul">
+<li>Gran coalición PSOE-PP tipo alemana</li>
+<li>Acuerdos de Estado: pensiones, educación, justicia, territorial</li>
+<li>Reforma electoral para reducir fragmentación</li>
+<li>Marginalización de extremos</li>
+<li>Recuperación confianza institucional</li>
+</ul>
+
+<p>
+<b>Obstáculos:</b>
+</p>
+<ul class="org-ul">
+<li>Bases partidistas rechazan "traición ideológica"</li>
+<li>Nacionalistas periféricos pierden influencia</li>
+<li>Medios y tertulianos viven de polarización</li>
+<li>Ausencia de cultura de gran coalición</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org206380f" class="outline-3">
+<h3 id="org206380f">Escenario Base: Inestabilidad Gestionada (60% probabilidad)</h3>
+<div class="outline-text-3" id="text-org206380f">
+<p>
+<b>Características:</b>
+</p>
+<ul class="org-ul">
+<li>Continuidad de gobiernos en minoría</li>
+<li>Dependencia de nacionalistas para investiduras y presupuestos</li>
+<li>Polarización sostenida sin escalada violenta</li>
+<li>Reformas incrementales, bloqueo en estructurales</li>
+<li>Deterioro gradual de calidad institucional</li>
+</ul>
+
+<p>
+<b>Implicaciones:</b>
+</p>
+<ul class="org-ul">
+<li>España como "enfermo de Europa" en gobernabilidad</li>
+<li>Pérdida de influencia en UE</li>
+<li>Reformas pospuestas genera problemas acumulados</li>
+<li>Desafección ciudadana creciente</li>
+<li>Emigración de talento joven continúa</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd407686" class="outline-3">
+<h3 id="orgd407686">Escenario Pesimista: Escalada y Crisis Constitucional (25% probabilidad)</h3>
+<div class="outline-text-3" id="text-orgd407686">
+<p>
+<b>Triggers posibles:</b>
+</p>
+<ul class="org-ul">
+<li>Nueva declaración unilateral de independencia catalana</li>
+<li>Violencia política significativa</li>
+<li>Crisis económica con gobierno débil</li>
+<li>Victoria de VOX con agenda rupturista</li>
+</ul>
+
+<p>
+<b>Características:</b>
+</p>
+<ul class="org-ul">
+<li>Aplicación artículo 155 de forma prolongada</li>
+<li>Suspensión de facto autonomía catalana</li>
+<li>Violencia callejera sistemática</li>
+<li>Intervención o mediación europea</li>
+<li>Cuestionamiento del marco constitucional</li>
+</ul>
+
+<p>
+<b>Consecuencias:</b>
+</p>
+<ul class="org-ul">
+<li>Retroceso severo índices democráticos (&lt; 7.0)</li>
+<li>Crisis de confianza inversores</li>
+<li>Fracturas sociales profundas</li>
+<li>Posible reforma constitucional en contexto crisis</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgee24f81" class="outline-2">
+<h2 id="orgee24f81">Conclusiones: Aprendiendo de la Historia</h2>
+<div class="outline-text-2" id="text-orgee24f81">
+<p>
+España se encuentra en 2026 en un momento crítico de su trayectoria democrática. La polarización actual, aunque preocupante, no alcanza niveles de 1930s pero sí representa el momento de mayor fractura desde la Transición.
+</p>
+</div>
+
+<div id="outline-container-orgc7dc368" class="outline-3">
+<h3 id="orgc7dc368">Lecciones Históricas</h3>
+<div class="outline-text-3" id="text-orgc7dc368">
+<p>
+La historia española del siglo XX enseña lecciones claras:
+</p>
+
+<ol class="org-ol">
+<li><b>La polarización no resuelta escala:</b> La II República demostró cómo fracturas políticas no gestionadas mediante consenso terminan en violencia</li>
+
+<li><b>El consenso es frágil y requiere mantenimiento:</b> La Transición no fue punto de llegada sino de partida; su éxito dependía de cultivar cultura de pacto</li>
+
+<li><b>Las ambigüedades constitucionales estallan:</b> El Article 2 y el modelo territorial indefinido generan conflicto recurrente</li>
+
+<li><b>La memoria histórica no gestionada retorna:</b> Los fantasmas del pasado no desaparecen por ignorarlos</li>
+
+<li><b>Las crisis económicas radicalizan:</b> Desigualdad y precariedad alimentan extremismos</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf91a69a" class="outline-3">
+<h3 id="orgf91a69a">Factores de Resiliencia</h3>
+<div class="outline-text-3" id="text-orgf91a69a">
+<p>
+Pese al diagnóstico preocupante, España cuenta con factores de resiliencia:
+</p>
+
+<p>
+<b>Fortaleza institucional básica:</b>
+</p>
+<ul class="org-ul">
+<li>Instituciones democráticas funcionan, aunque degradadas</li>
+<li>Poder judicial, pese a politización, mantiene independencia parcial</li>
+<li>Sociedad civil activa y diversa</li>
+<li>Tradición de movilización social pacífica</li>
+</ul>
+
+<p>
+<b>Aprendizaje histórico:</b>
+</p>
+<ul class="org-ul">
+<li>Memoria de Guerra Civil como advertencia</li>
+<li>Generaciones que vivieron Transición como referencia</li>
+<li>Consenso amplio sobre valor de democracia (90%+ apoyo)</li>
+</ul>
+
+<p>
+<b>Anclaje europeo:</b>
+</p>
+<ul class="org-ul">
+<li>Pertenencia a UE como marco limitante</li>
+<li>Integración económica profunda</li>
+<li>Valores democráticos europeos como referencia</li>
+</ul>
+
+<p>
+<b>Agotamiento de polarización:</b>
+</p>
+<ul class="org-ul">
+<li>Encuestas muestran ciudadanía cansada de crispación (75%)</li>
+<li>Demanda social de acuerdos y consensos</li>
+<li>Rechazo a extremismos violentos</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc9f8dea" class="outline-3">
+<h3 id="orgc9f8dea">Caminos de Salida</h3>
+<div class="outline-text-3" id="text-orgc9f8dea">
+<p>
+La salida de la polarización requiere acción en múltiples frentes:
+</p>
+
+<p>
+<b>Reformas institucionales:</b>
+</p>
+<ul class="org-ul">
+<li>Sistema electoral: reducir sobrerrepresentación rural, cláusula barrera</li>
+<li>CGPJ: despolitización mediante sorteo o método objetivo</li>
+<li>Financiación autonómica: acuerdo definitivo</li>
+<li>Clarificación competencial Estado-CCAA</li>
+</ul>
+
+<p>
+<b>Cultura política:</b>
+</p>
+<ul class="org-ul">
+<li>Pedagogía democrática en educación</li>
+<li>Códigos de conducta parlamentaria</li>
+<li>Regulación de tertulianos y medios</li>
+<li>Alfabetización mediática digital</li>
+</ul>
+
+<p>
+<b>Liderazgos responsables:</b>
+</p>
+<ul class="org-ul">
+<li>Políticos que construyan puentes vs. hogueras</li>
+<li>Renuncia a retórica de guerra</li>
+<li>Valoración de consensos vs. victorias parciales</li>
+<li>Visión de largo plazo vs. tacticismo electoral</li>
+</ul>
+
+<p>
+<b>Justicia social:</b>
+</p>
+<ul class="org-ul">
+<li>Reducción desigualdad mediante políticas redistributivas</li>
+<li>Empleo de calidad para jóvenes</li>
+<li>Vivienda accesible</li>
+<li>Estado de bienestar robusto</li>
+</ul>
+
+<p>
+España ha superado crisis más profundas en su historia. La polarización actual, aunque seria, no es irreversible. Requiere voluntad política, liderazgo responsable, y una ciudadanía exigente con la calidad democrática. El desafío es grande, pero la alternativa—repetir errores históricos—es inaceptable.
+</p>
+
+<p>
+La democracia española de 2026 está en una encrucijada: puede optar por la vía italiana de fragmentación perpetua, la vía alemana de gran coalición regeneradora, o la vía de escalada autoritaria que algunos países europeos orientales han transitado. La decisión no está escrita; depende de las acciones de los próximos años. La historia española sugiere que el tiempo de las soluciones fáciles ha pasado. Solo consensos difíciles, valientes y generosos pueden garantizar las próximas décadas de convivencia democrática.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2546f18" class="outline-2">
+<h2 id="org2546f18">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org2546f18">
+</div>
+
+<div id="outline-container-orgf2b302c" class="outline-3">
+<h3 id="orgf2b302c">Fuentes Adicionales</h3>
+<div class="outline-text-3" id="text-orgf2b302c">
+</div>
+<div id="outline-container-orga953b2f" class="outline-4">
+<h4 id="orga953b2f">Libros y Monografías</h4>
+<div class="outline-text-4" id="text-orga953b2f">
+<ul class="org-ul">
+<li>Álvarez Junco, José &amp; de la Fuente, Gregorio (2017). <i>El relato nacional: Historia de la Historia de España</i>. Madrid: Taurus.</li>
+<li>Carr, Raymond (2009). <i>España 1808-2008</i>. Barcelona: Ariel.</li>
+<li>Juliá, Santos (coord.) (2017). <i>Transiciones a la democracia en el Sur de Europa y América Latina</i>. Madrid: Centro de Estudios Políticos y Constitucionales.</li>
+<li>Lago, Ignacio &amp; Montero, José Ramón (2010). "La fragmentación del sistema de partidos en España." <i>Revista de Estudios Políticos</i>, 148: 13-45.</li>
+<li>Linz, Juan J. (1978). <i>Crisis, Breakdown and Reequilibration: The Breakdown of Democratic Regimes</i>. Baltimore: Johns Hopkins University Press.</li>
+<li>Mazzucato, Mariana (2019). <i>El valor de las cosas</i>. Barcelona: Taurus. [Aplicado al caso español]</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcecc4e4" class="outline-4">
+<h4 id="orgcecc4e4">Informes y Estudios</h4>
+<div class="outline-text-4" id="text-orgcecc4e4">
+<ul class="org-ul">
+<li>Centro de Investigaciones Sociológicas (CIS) (2025). <i>Barómetro de Enero 2025</i>. Estudio 3462.</li>
+<li>Fundación Alternativas (2024). <i>Informe sobre la democracia en España 2024</i>. Madrid.</li>
+<li>Institut de Ciències Polítiques i Socials (ICPS) (2025). <i>Enquesta d'Opinió Pública de Catalunya</i>. Barcelona: UAB.</li>
+<li>Real Instituto Elcano (2024). <i>Barómetro de Imagen de España</i>. 8ª oleada.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgaf6525d" class="outline-4">
+<h4 id="orgaf6525d">Bases de Datos</h4>
+<div class="outline-text-4" id="text-orgaf6525d">
+<ul class="org-ul">
+<li>Democracy Index, The Economist Intelligence Unit (2010-2025)</li>
+<li>Freedom House, "Freedom in the World: Spain" (2010-2025)</li>
+<li>Varieties of Democracy (V-Dem) Project, University of Gothenburg</li>
+<li>World Values Survey, Wave 7 (2017-2022), datos España</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org32529f7" class="outline-4">
+<h4 id="org32529f7">Artículos Académicos</h4>
+<div class="outline-text-4" id="text-org32529f7">
+<ul class="org-ul">
+<li>Anduiza, Eva et al. (2019). "Pathways from Economic Crisis to Populism in Southern Europe." <i>Party Politics</i>, 25(6): 745-756.</li>
+<li>Fernández-Albertos, José (2015). <i>Los votantes de Podemos: Del partido de los indignados al partido de los excluidos</i>. Madrid: Catarata.</li>
+<li>Orriols, Lluis &amp; Cordero, Guillermo (2016). "The Breakdown of the Spanish Two-Party System." <i>South European Society and Politics</i>, 21(1): 47-70.</li>
+<li>Simón, Pablo (2020). "The Multiple Spanish Elections of April and May 2019." <i>West European Politics</i>, 43(4): 1046-1058.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org01cc99b" class="outline-4">
+<h4 id="org01cc99b">Legislación y Documentos Oficiales</h4>
+<div class="outline-text-4" id="text-org01cc99b">
+<ul class="org-ul">
+<li>Constitución Española de 1978 (BOE 29/12/1978)</li>
+<li>Ley Orgánica 2/2024, de 11 de marzo, de Amnistía (controversia constitucional en tramitación TC)</li>
+<li>Ley 52/2007, de Memoria Histórica</li>
+<li>Ley Orgánica 1/2022, de 21 de febrero, de Reforma del Código Penal ("Solo sí es sí")</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org49e8cb8" class="outline-4">
+<h4 id="org49e8cb8">Prensa y Medios Especializados</h4>
+<div class="outline-text-4" id="text-org49e8cb8">
+<ul class="org-ul">
+<li><i>El País</i>, hemeroteca digital 1976-2026</li>
+<li><i>El Mundo</i>, archivo 1989-2026</li>
+<li><i>La Vanguardia</i>, hemeroteca histórica 1881-2026</li>
+<li><i>Politikon</i>, revista digital de análisis político</li>
+<li><i>infoLibre</i>, medio especializado en política española</li>
+</ul>
+
+
+
+<p class="post-meta">Publicado el 2026-01-18 16:46 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Payne, Stanley G. (1987). <i>El régimen de Franco, 1936-1975</i>. Madrid: Alianza Editorial.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Preston, Paul (2011). <i>The Spanish Holocaust: Inquisition and Extermination in Twentieth-Century Spain</i>. London: HarperCollins.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Casanova, Julián (coord.) (2002). <i>Morir, matar, sobrevivir: La violencia en la dictadura de Franco</i>. Barcelona: Crítica.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Tusell, Javier (1999). <i>La transición española: La recuperación de las libertades</i>. Madrid: Historia 16.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Royo, Sebastián (2013). <i>Lessons from the Economic Crisis in Spain</i>. New York: Palgrave Macmillan.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Mata, Josep (2024). "Las manifestaciones contra la amnistía: análisis sociológico." <i>Revista Española de Investigaciones Sociológicas</i>, 178: 45-68.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Tezanos, José Félix (2023). <i>La década perdida: De la Gran Recesión a la Pandemia</i>. Madrid: Editorial Sistema.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 23:14</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

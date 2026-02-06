@@ -1,0 +1,2326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sir Donald Trump: Un Pirata del Siglo XXI</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Estudio similitudes estructurales entre la administración Trump y las operaciones de piratería estatal del siglo XIX" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Sir Donald Trump: Un Pirata del Siglo XXI</h1>
+
+<div id="outline-container-org9a8c9f5" class="outline-2">
+<h2 id="org9a8c9f5">Sir Donald Trump: Un Pirata del Siglo XXI</h2>
+<div class="outline-text-2" id="text-org9a8c9f5">
+
+<div id="org4f36f45" class="figure">
+<p><img src="./assets/images/ChatGPTrump.png" alt="ChatGPTrump.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbc26ea8" class="outline-2">
+<h2 id="orgbc26ea8">Resumen Ejecutivo</h2>
+<div class="outline-text-2" id="text-orgbc26ea8">
+<p>
+El presente documento examina las convergencias estructurales entre la administración de Donald Trump (2017-2021, 2025-presente) y las prácticas de piratería estatal y filibusterismo que caracterizaron la expansión imperial del siglo XIX. Más allá de una comparación superficial, este análisis identifica patrones sistemáticos de comportamiento geopolítico que trascienden el simple oportunismo, revelando una filosofía transaccional de las relaciones internacionales que recuerda los métodos de adquisición territorial y explotación de recursos propios de la era de los corsarios y bucaneros estatalmente sancionados.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org21e3b4c" class="outline-2">
+<h2 id="org21e3b4c">Introducción: Piratería como Modelo Geopolítico</h2>
+<div class="outline-text-2" id="text-org21e3b4c">
+</div>
+<div id="outline-container-org595e14e" class="outline-3">
+<h3 id="org595e14e">Contexto Histórico: La Edad de Oro de la Piratería Estatal</h3>
+<div class="outline-text-3" id="text-org595e14e">
+<p>
+Entre 1650 y 1850, las potencias europeas emplearon sistemáticamente la piratería como instrumento de política exterior. Las "Cartas de Marca" otorgadas por monarcas convertían a criminales marítimos en agentes estatales, autorizándoles a saquear embarcaciones enemigas reteniendo porcentajes del botín. Esta institucionalización del pillaje creó una zona gris jurídica donde la agresión económica podía ejecutarse con negación plausible.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge88ff95" class="outline-3">
+<h3 id="orge88ff95">El Filibusterismo Estadounidense del Siglo XIX</h3>
+<div class="outline-text-3" id="text-orge88ff95">
+<p>
+Estados Unidos desarrolló su propia variante: el filibusterismo. Aventureros privados como William Walker (Nicaragua, 1856), Narciso López (Cuba, 1850) y Aaron Burr (México, 1806) intentaron conquistar territorios latinoamericanos con apoyo tácito gubernamental. Estas operaciones combinaban:
+</p>
+
+<ul class="org-ul">
+<li>Negación oficial de responsabilidad</li>
+<li>Apoyo logístico encubierto</li>
+<li>Justificación ideológica (Destino Manifiesto)</li>
+<li>Objetivos de explotación económica</li>
+<li>Desprecio por la soberanía de naciones débiles</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge27271a" class="outline-2">
+<h2 id="orge27271a">Marco Teórico: Transaccionalismo Extractivo</h2>
+<div class="outline-text-2" id="text-orge27271a">
+</div>
+<div id="outline-container-orga2f7b69" class="outline-3">
+<h3 id="orga2f7b69">Definición del Concepto</h3>
+<div class="outline-text-3" id="text-orga2f7b69">
+<p>
+El <b>transaccionalismo extractivo</b> describe una aproximación a las relaciones internacionales caracterizada por:
+</p>
+
+<ol class="org-ol">
+<li>Reducción de alianzas a intercambios comerciales</li>
+<li>Ausencia de compromisos ideológicos duraderos</li>
+<li>Valoración de territorios según recursos explotables</li>
+<li>Disposición a violar normas internacionales cuando es rentable</li>
+<li>Uso instrumental de amenazas militares para extracción económica</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgde83c70" class="outline-3">
+<h3 id="orgde83c70">Diferencias con el Realismo Clásico</h3>
+<div class="outline-text-3" id="text-orgde83c70">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Aspecto</th>
+<th scope="col" class="org-left">Realismo Clásico</th>
+<th scope="col" class="org-left">Transaccionalismo Extractivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Horizonte temporal</td>
+<td class="org-left">Largo plazo estratégico</td>
+<td class="org-left">Ganancias inmediatas</td>
+</tr>
+
+<tr>
+<td class="org-left">Alianzas</td>
+<td class="org-left">Estabilidad institucional</td>
+<td class="org-left">Negociables continuamente</td>
+</tr>
+
+<tr>
+<td class="org-left">Legitimidad</td>
+<td class="org-left">Importante para hegemonía</td>
+<td class="org-left">Irrelevante si hay poder</td>
+</tr>
+
+<tr>
+<td class="org-left">Normas internacionales</td>
+<td class="org-left">Útiles para orden</td>
+<td class="org-left">Obstáculos negociables</td>
+</tr>
+
+<tr>
+<td class="org-left">Objetivo primario</td>
+<td class="org-left">Seguridad nacional</td>
+<td class="org-left">Beneficio económico directo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org875dc5f" class="outline-2">
+<h2 id="org875dc5f">Análisis Comparativo Estructural</h2>
+<div class="outline-text-2" id="text-org875dc5f">
+</div>
+<div id="outline-container-org335ffed" class="outline-3">
+<h3 id="org335ffed">Territorialismo Oportunista</h3>
+<div class="outline-text-3" id="text-org335ffed">
+</div>
+<div id="outline-container-org4a2bcc6" class="outline-4">
+<h4 id="org4a2bcc6">Piratería Histórica: Conquista de Plazas Fuertes</h4>
+<div class="outline-text-4" id="text-org4a2bcc6">
+<p>
+Los piratas del Caribe establecieron "repúblicas" en territorios estratégicos:
+</p>
+<ul class="org-ul">
+<li>Port Royal (Jamaica): Base de operaciones inglesa</li>
+<li>Tortuga (Haití): Refugio de bucaneros franceses</li>
+<li>Nassau (Bahamas): República pirata de facto (1706-1718)</li>
+</ul>
+
+<p>
+Estas posiciones ofrecían:
+</p>
+<ul class="org-ul">
+<li>Control de rutas comerciales</li>
+<li>Acceso a recursos (maderas, agua, provisiones)</li>
+<li>Refugio de autoridades hostiles</li>
+<li>Posición para futuras expansiones</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org066dbc0" class="outline-4">
+<h4 id="org066dbc0">Administración Trump: Expansionismo Explícito</h4>
+<div class="outline-text-4" id="text-org066dbc0">
+<p>
+El segundo mandato de Trump ha retomado propuestas territoriales que en administraciones anteriores serían impensables:
+</p>
+
+<p>
+<b>Groenlandia (2019, 2025):</b> Oferta de compra a Dinamarca, rechazada como "absurda". Trump reiteró en enero 2025 que la adquisición de Groenlandia es una "necesidad absoluta" para seguridad nacional, citando minerales raros y posicionamiento estratégico ártico.
+</p>
+
+<p>
+<b>Canal de Panamá (2024-2025):</b> Amenazas de "recuperar" el canal si no se reducen las tarifas para buques estadounidenses, alegando que su transferencia fue un "error histórico" y que China ejerce influencia indebida a través de empresas portuarias.
+</p>
+
+<p>
+<b>Anexión de Canadá (2024-2025):</b> Propuestas "semi-serias" de convertir a Canadá en el "estado 51", justificadas por integración económica y supuestos subsidios estadounidenses defensivos.
+</p>
+
+<p>
+<b>Venezuela (2019-2025):</b> Reconocimiento de Juan Guaidó como "presidente legítimo" (2019-2023), sanciones petroleras masivas, confiscación de activos venezolanos en EEUU (CITGO, reservas oro), apoyo a intentos de golpe (Operación Gedeón, 2020). En 2025, Trump renovó amenazas de "acción militar" si Maduro no abandona el poder, citando el control de reservas petroleras como "interés estratégico estadounidense".
+</p>
+
+
+<div id="org34b4c82" class="figure">
+<p><img src="./assets/images/trump-territorial-ambitions.png" alt="trump-territorial-ambitions.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org10ab021" class="outline-3">
+<h3 id="org10ab021">Extracción Económica sin Reciprocidad</h3>
+<div class="outline-text-3" id="text-org10ab021">
+</div>
+<div id="outline-container-org4a91cff" class="outline-4">
+<h4 id="org4a91cff">Modelo Pirata: Botín y Tributo</h4>
+<div class="outline-text-4" id="text-org4a91cff">
+<p>
+Los piratas operaban bajo el principio de máxima extracción:
+</p>
+<ul class="org-ul">
+<li>Saqueo de cargamentos sin compensación</li>
+<li>Exigencia de "rescates" a ciudades costeras</li>
+<li>Captura de esclavos para venta</li>
+<li>Ausencia total de reciprocidad comercial</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc23c3fb" class="outline-4">
+<h4 id="orgc23c3fb">Modelo Trump: Aranceles como Arma Extractiva</h4>
+<div class="outline-text-4" id="text-orgc23c3fb">
+<p>
+La política comercial trumpista emplea aranceles no como instrumentos de política comercial estratégica, sino como herramientas de extracción:
+</p>
+
+<p>
+<b>Acero y Aluminio (2018):</b> Aranceles del 25% y 10% respectivamente, aplicados incluso a aliados de la OTAN, justificados por "seguridad nacional" bajo Sección 232.
+</p>
+
+<p>
+<b>China (2018-2020):</b> Aranceles escalonados hasta 25% en $370 mil millones de importaciones, presentados no como protección industrial sino como "tributo" por "robo de propiedad intelectual".
+</p>
+
+<p>
+<b>México (Amenazas 2019, 2025):</b> Aranceles amenazados del 5% escalando hasta 25% si no reducía migración, convirtiendo política migratoria en moneda de extracción económica.
+</p>
+
+<p>
+<b>Amenazas Universales (2025):</b> Propuestas de aranceles del 10% universal y 60% a China, concebidos explícitamente como fuente de ingresos gubernamentales más que como herramienta de política industrial.
+</p>
+
+
+<div id="orgd02b31f" class="figure">
+<p><img src="./assets/images/tariff-extraction-model.png" alt="tariff-extraction-model.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgefa743b" class="outline-3">
+<h3 id="orgefa743b">Deslegitimación de Instituciones Multilaterales</h3>
+<div class="outline-text-3" id="text-orgefa743b">
+</div>
+<div id="outline-container-org532033a" class="outline-4">
+<h4 id="org532033a">Piratas: Guerra contra el Orden Marítimo</h4>
+<div class="outline-text-4" id="text-org532033a">
+<p>
+Los piratas operaban explícitamente fuera del derecho marítimo internacional:
+</p>
+<ul class="org-ul">
+<li>Rechazo de jurisdicciones navales</li>
+<li>Creación de códigos propios (Código Pirata)</li>
+<li>Negación de legitimidad a cortes del Almirantazgo</li>
+<li>Establecimiento de "zonas libres" sin ley internacional</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org821e2de" class="outline-4">
+<h4 id="org821e2de">Trump: Desmantelamiento del Orden Liberal</h4>
+<div class="outline-text-4" id="text-org821e2de">
+<p>
+La administración Trump ha atacado sistemáticamente instituciones multilaterales:
+</p>
+
+<p>
+<b>Organización Mundial del Comercio:</b> Bloqueo de nombramientos al órgano de apelación (2017-2020), paralizando el sistema de resolución de disputas. Amenazas de retiro total si no se "reforma" según intereses estadounidenses.
+</p>
+
+<p>
+<b>OTAN:</b> Cuestionamiento público de la cláusula de defensa colectiva (Artículo 5), condicionando protección al "pago de cuotas" inexistentes, tratando la alianza como servicio de protección mercenario.
+</p>
+
+<p>
+<b>Acuerdo de París:</b> Retiro en 2017 (efectivo 2020), reingreso por Biden 2021, nuevo retiro anunciado enero 2025, tratando compromisos climáticos como opcionales según conveniencia económica.
+</p>
+
+<p>
+<b>Organización Mundial de la Salud:</b> Retiro y suspensión de fondos durante pandemia COVID-19 (2020), acusándola de ser "controlada por China".
+</p>
+
+<p>
+<b>Corte Penal Internacional:</b> Sanciones a fiscales y jueces (2020) por investigar potenciales crímenes de guerra estadounidenses en Afganistán.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfeede17" class="outline-3">
+<h3 id="orgfeede17">Personalización del Poder: Del Rey al Caudillo</h3>
+<div class="outline-text-3" id="text-orgfeede17">
+</div>
+<div id="outline-container-org5bf2c3c" class="outline-4">
+<h4 id="org5bf2c3c">Piratas: Carisma sobre Instituciones</h4>
+<div class="outline-text-4" id="text-org5bf2c3c">
+<p>
+Las "repúblicas piratas" funcionaban por lealtad personal al capitán:
+</p>
+<ul class="org-ul">
+<li>Elección de líderes por carisma y éxito en saqueos</li>
+<li>Ausencia de instituciones permanentes</li>
+<li>Distribución de botín según jerarquía personal</li>
+<li>Expulsión o ejecución de capitanes fallidos</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org10ea9c9" class="outline-4">
+<h4 id="org10ea9c9">Trump: Lealtad Personal sobre Partido</h4>
+<div class="outline-text-4" id="text-org10ea9c9">
+<p>
+La conducción trumpista del gobierno estadounidense refleja este modelo:
+</p>
+
+<p>
+<b>Rotación de Gabinete:</b> Récord histórico de turnover (92% en primer mandato), con despidos públicos de quienes muestran independencia institucional.
+</p>
+
+<p>
+<b>Pruebas de Lealtad:</b> Exigencias de declaraciones públicas de fidelidad personal, como las solicitadas a James Comey (FBI) antes de su despido.
+</p>
+
+<p>
+<b>Purgas Partidarias:</b> Exclusión de republicanos críticos (Liz Cheney, Mitt Romney) del partido, redefiniendo GOP como movimiento personal.
+</p>
+
+<p>
+<b>Nombramiento Familiar:</b> Jared Kushner e Ivanka Trump en posiciones de influencia sin credenciales institucionales, modelo dinástico-empresarial.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3c6f6ba" class="outline-3">
+<h3 id="org3c6f6ba">El Caso Venezuela: Piratería Petrolera del Siglo XXI</h3>
+<div class="outline-text-3" id="text-org3c6f6ba">
+<p>
+El tratamiento de Venezuela por la administración Trump representa quizás el ejemplo más puro de piratería estatal moderna: la combinación de cambio de régimen, confiscación de activos y control de recursos naturales bajo pretexto de legitimidad democrática.
+</p>
+</div>
+
+<div id="outline-container-orgc9d4e94" class="outline-4">
+<h4 id="orgc9d4e94">Cronología del Asalto Venezolano</h4>
+<div class="outline-text-4" id="text-orgc9d4e94">
+<p>
+<b>Enero 2019:</b> Reconocimiento de Juan Guaidó como "presidente interino" apenas días después de su autoproclamación, sin control territorial efectivo. Esto marca el inicio de la estrategia de "doble gobierno" que permite a EEUU reclamar legitimidad para confiscaciones posteriores.
+</p>
+
+<p>
+<b>Febrero 2019:</b> Sanciones petroleras que prohíben importaciones de crudo venezolano a EEUU (previamente 500,000 barriles/día), bloqueando $11 mil millones anuales en ingresos petroleros. El objetivo declarado: "asfixiar" financieramente al régimen de Maduro.
+</p>
+
+<p>
+<b>Marzo 2019:</b> Transferencia de control de CITGO (refinería venezolana en EEUU valorada en $8 mil millones) a la "administración Guaidó", efectivamente confiscando el activo extranjero más valioso de Venezuela.
+</p>
+
+<p>
+<b>Mayo 2020:</b> Operación Gedeón, intento de incursión paramilitar para "capturar" a Maduro, ejecutada por contratistas estadounidenses con supuesto conocimiento previo de la administración Trump. El fracaso fue comparado con la invasión de Bahía de Cochinos.
+</p>
+
+<p>
+<b>Agosto 2020:</b> Confiscación de reservas de oro venezolano en Banco de Inglaterra ($1.95 mil millones), reconociendo la reclamación de Guaidó sobre estos activos tras presión estadounidense.
+</p>
+
+<p>
+<b>Enero 2025:</b> Trump reitera amenazas de "todas las opciones sobre la mesa, incluyendo acción militar" para "liberar las reservas petroleras más grandes del mundo del control comunista".
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc81b59c" class="outline-4">
+<h4 id="orgc81b59c">Paralelos con Piratería Histórica</h4>
+<div class="outline-text-4" id="text-orgc81b59c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Elemento Pirata</th>
+<th scope="col" class="org-left">Implementación Venezuela</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ficción legal</td>
+<td class="org-left">Reconocimiento Guaidó sin control</td>
+</tr>
+
+<tr>
+<td class="org-left">Confiscación activos</td>
+<td class="org-left">CITGO, oro, cuentas bancarias</td>
+</tr>
+
+<tr>
+<td class="org-left">Bloqueo comercial</td>
+<td class="org-left">Sanciones petroleras/financieras</td>
+</tr>
+
+<tr>
+<td class="org-left">Expedición militar</td>
+<td class="org-left">Operación Gedeón, amenazas invasión</td>
+</tr>
+
+<tr>
+<td class="org-left">Objetivo: recursos</td>
+<td class="org-left">300 mil millones barriles reservados</td>
+</tr>
+
+<tr>
+<td class="org-left">Negación plausible</td>
+<td class="org-left">Contratistas privados, no tropas</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org987f7c1" class="outline-4">
+<h4 id="org987f7c1">Diagrama: Estructura del Asalto Venezolano</h4>
+<div class="outline-text-4" id="text-org987f7c1">
+
+<div id="org1c4cc70" class="figure">
+<p><img src="./assets/images/venezuela-piracy-structure.png" alt="venezuela-piracy-structure.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org9ad0445" class="outline-4">
+<h4 id="org9ad0445">La Lógica del Botín Petrolero</h4>
+<div class="outline-text-4" id="text-org9ad0445">
+<p>
+Venezuela posee las mayores reservas probadas de petróleo del mundo (303 mil millones de barriles según OPEP 2021), superando a Arabia Saudita. La estrategia trumpista hacia Venezuela no puede entenderse sin este contexto de recursos.
+</p>
+
+<p>
+En declaraciones de 2019, Trump afirmó que Venezuela sería "muy rica" si tuviera un gobierno "correcto", y en reuniones privadas según John Bolton preguntó repetidamente "¿por qué no podemos simplemente tomar su petróleo?"
+</p>
+
+<p>
+Esta aproximación replica exactamente la lógica pirata histórica:
+</p>
+<ol class="org-ol">
+<li>Identificar objetivo rico en recursos</li>
+<li>Crear pretexto para intervención</li>
+<li>Confiscar activos bajo cobertura legal</li>
+<li>Amenazar violencia para completar control</li>
+<li>Justificar como acción "moral" contra tiranía</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2931bff" class="outline-4">
+<h4 id="org2931bff">Consecuencias del Modelo Venezuela</h4>
+<div class="outline-text-4" id="text-org2931bff">
+<p>
+El caso venezolano establece precedentes peligrosos:
+</p>
+
+<p>
+<b>Reconocimiento Selectivo:</b> EEUU se arroga el derecho de determinar unilateralmente qué gobiernos son legítimos, independientemente de control territorial efectivo.
+</p>
+
+<p>
+<b>Confiscación Extraterritorial:</b> Activos soberanos pueden ser transferidos a actores no estatales que EEUU reconoce políticamente.
+</p>
+
+<p>
+<b>Sanciones como Arma Total:</b> El bloqueo financiero va más allá de presión diplomática hacia estrangulamiento económico deliberado de poblaciones civiles (ONU reportó 40,000 muertes atribuibles a sanciones 2017-2018).
+</p>
+
+<p>
+<b>Privatización de Violencia:</b> Uso de contratistas militares privados permite operaciones encubiertas con negación plausible.
+</p>
+
+<p>
+Este modelo ya se replica parcialmente con Irán, Corea del Norte, Nicaragua y otros estados considerados "regímenes hostiles" con recursos estratégicos.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org55b51ed" class="outline-2">
+<h2 id="org55b51ed">Diferencias Fundamentales</h2>
+<div class="outline-text-2" id="text-org55b51ed">
+<p>
+A pesar de las similitudes estructurales, existen diferencias cruciales:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Aspecto</th>
+<th scope="col" class="org-left">Piratería S. XIX</th>
+<th scope="col" class="org-left">Trumpismo S. XXI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Marco legal</td>
+<td class="org-left">Abiertamente criminal</td>
+<td class="org-left">Formalmente constitucional</td>
+</tr>
+
+<tr>
+<td class="org-left">Violencia</td>
+<td class="org-left">Directa y física</td>
+<td class="org-left">Económica y amenaza</td>
+</tr>
+
+<tr>
+<td class="org-left">Escala</td>
+<td class="org-left">Operaciones limitadas</td>
+<td class="org-left">Poder de superpotencia</td>
+</tr>
+
+<tr>
+<td class="org-left">Legitimidad</td>
+<td class="org-left">Ninguna pretensión</td>
+<td class="org-left">Reclamo de legalidad</td>
+</tr>
+
+<tr>
+<td class="org-left">Institucionalización</td>
+<td class="org-left">Inexistente</td>
+<td class="org-left">Captura de instituciones</td>
+</tr>
+
+<tr>
+<td class="org-left">Ideología</td>
+<td class="org-left">Botín puro</td>
+<td class="org-left">Nacionalismo transaccional</td>
+</tr>
+
+<tr>
+<td class="org-left">Sostenibilidad</td>
+<td class="org-left">Inherentemente temporal</td>
+<td class="org-left">Potencialmente sistémico</td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="org21eb33d" class="figure">
+<p><img src="./assets/images/piracy-comparison.png" alt="piracy-comparison.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgd073f1a" class="outline-2">
+<h2 id="orgd073f1a">Implicaciones Geopolíticas</h2>
+<div class="outline-text-2" id="text-orgd073f1a">
+</div>
+<div id="outline-container-org2e2e275" class="outline-3">
+<h3 id="org2e2e275">Erosión del Sistema de Alianzas</h3>
+<div class="outline-text-3" id="text-org2e2e275">
+<p>
+La aproximación trumpista genera dilemas de compromiso creíble:
+</p>
+
+<ul class="org-ul">
+<li>Aliados dudan de la fiabilidad de compromisos defensivos</li>
+<li>Incentivos para desarrollar capacidades independientes</li>
+<li>Posible realineamiento hacia potencias más predecibles</li>
+<li>Fragmentación del orden liberal occidental</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge8f58c7" class="outline-3">
+<h3 id="orge8f58c7">Proliferación del Modelo Transaccional</h3>
+<div class="outline-text-3" id="text-orge8f58c7">
+<p>
+El éxito electoral de Trump legitima aproximaciones similares:
+</p>
+
+<ul class="org-ul">
+<li>Javier Milei (Argentina): Transaccionalismo económico radical</li>
+<li>Nayib Bukele (El Salvador): Personalismo autoritario</li>
+<li>Viktor Orbán (Hungría): Nacionalismo extractivo en UE</li>
+<li>Recep Erdoğan (Turquía): Oportunismo geopolítico entre bloques</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga103fbd" class="outline-3">
+<h3 id="orga103fbd">Regreso a Políticas de Esferas de Influencia</h3>
+<div class="outline-text-3" id="text-orga103fbd">
+<p>
+El trumpismo facilita la reconstitución de zonas de dominio exclusivo:
+</p>
+
+<ul class="org-ul">
+<li>Rusia: Mayor libertad en espacio post-soviético</li>
+<li>China: Consolidación en Indo-Pacífico</li>
+<li>Potencias regionales: Menor restricción estadounidense</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org37fad1f" class="outline-2">
+<h2 id="org37fad1f">Análisis de Riesgos Sistémicos</h2>
+<div class="outline-text-2" id="text-org37fad1f">
+
+<div id="org7de7bf2" class="figure">
+<p><img src="./assets/images/systemic-risks.png" alt="systemic-risks.png" width="600px" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdbda603" class="outline-3">
+<h3 id="orgdbda603">Riesgos Económicos</h3>
+<div class="outline-text-3" id="text-orgdbda603">
+<p>
+<b>Fragmentación Comercial:</b> La guerra arancelaria universal amenaza con dividir la economía global en bloques cerrados, revirtiendo décadas de integración.
+</p>
+
+<p>
+<b>Colapso de Cadenas de Suministro:</b> La incertidumbre regulatoria desincentiva inversiones transnacionales de largo plazo.
+</p>
+
+<p>
+<b>Cuestionamiento del Dólar:</b> El uso del sistema financiero como arma (sanciones, SWIFT) acelera búsqueda de alternativas (yuan digital, BRICS+).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0a02925" class="outline-3">
+<h3 id="org0a02925">Riesgos de Seguridad</h3>
+<div class="outline-text-3" id="text-org0a02925">
+<p>
+<b>Proliferación Nuclear:</b> Dudas sobre paraguas nuclear estadounidense pueden impulsar programas independientes (Japón, Corea del Sur, Arabia Saudita).
+</p>
+
+<p>
+<b>Conflictos No Contenidos:</b> Retracción estadounidense crea vacíos de poder en Medio Oriente, Europa del Este, Indo-Pacífico.
+</p>
+
+<p>
+<b>Nuevas Alianzas Opositoras:</b> Rusia-China-Irán-Corea del Norte consolidan eje anti-occidental por presión estadounidense.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8a28a3b" class="outline-2">
+<h2 id="org8a28a3b">Escenarios Prospectivos</h2>
+<div class="outline-text-2" id="text-org8a28a3b">
+</div>
+<div id="outline-container-org90e45b6" class="outline-3">
+<h3 id="org90e45b6">Escenario 1: Trumpismo como Paréntesis (Probabilidad: 30%)</h3>
+<div class="outline-text-3" id="text-org90e45b6">
+<ul class="org-ul">
+<li>Derrota electoral 2028 o limitación segundo mandato</li>
+<li>Restauración parcial del multilateralismo</li>
+<li>Daño reputacional duradero pero manejable</li>
+<li>Retorno gradual a política exterior bipartidista</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7f1fafa" class="outline-3">
+<h3 id="org7f1fafa">Escenario 2: Normalización del Modelo (Probabilidad: 45%)</h3>
+<div class="outline-text-3" id="text-org7f1fafa">
+<ul class="org-ul">
+<li>Trumpismo se consolida como nueva ortodoxia republicana</li>
+<li>Demócratas adoptan versiones "lite" del transaccionalismo</li>
+<li>Erosión permanente de instituciones multilaterales</li>
+<li>Mundo multipolar con EEUU como potencia transaccional</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org43467df" class="outline-3">
+<h3 id="org43467df">Escenario 3: Colapso del Liderazgo Estadounidense (Probabilidad: 25%)</h3>
+<div class="outline-text-3" id="text-org43467df">
+<ul class="org-ul">
+<li>Aliados desarrollan autonomía estratégica total</li>
+<li>China consolida orden alternativo en Asia-Pacífico</li>
+<li>UE emerge como polo independiente</li>
+<li>EEUU retiene poder militar pero pierde influencia normativa</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org104170e" class="outline-2">
+<h2 id="org104170e">Conclusiones: Sir Donald Trump y la Piratería Institucional</h2>
+<div class="outline-text-2" id="text-org104170e">
+<p>
+La comparación entre la administración Trump y la piratería histórica revela más que una analogía superficial. Identifica un patrón recurrente en la política internacional: la tentación de las grandes potencias de tratar sus capacidades superiores como licencia para extracción oportunista en lugar de construcción de orden.
+</p>
+</div>
+
+<div id="outline-container-orgd1b5384" class="outline-3">
+<h3 id="orgd1b5384">Convergencias Fundamentales</h3>
+<div class="outline-text-3" id="text-orgd1b5384">
+<ol class="org-ol">
+<li><b>Transaccionalismo Puro:</b> Reducción de relaciones internacionales a intercambios de suma cero sin consideración por reciprocidad de largo plazo.</li>
+
+<li><b>Territorialismo Extractivo:</b> Valoración de territorios exclusivamente por recursos y posición estratégica, sin consideración por soberanía o legitimidad.</li>
+
+<li><b>Rechazo Institucional:</b> Desprecio activo por normas multilaterales percibidas como restricciones a la libertad de acción.</li>
+
+<li><b>Personalización:</b> Conducción basada en lealtad personal más que en procedimientos burocráticos o institucionales.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf915e31" class="outline-3">
+<h3 id="orgf915e31">La Paradoja del Poder Pirata</h3>
+<div class="outline-text-3" id="text-orgf915e31">
+<p>
+Los piratas históricos fueron finalmente derrotados no por potencias superiores sino por la consolidación de un orden que hizo su modelo insostenible. La Royal Navy británica erradicó la piratería caribeña cuando Gran Bretaña determinó que un orden marítimo predecible servía mejor a sus intereses comerciales de largo plazo que el pillaje de corto plazo.
+</p>
+
+<p>
+Estados Unidos enfrenta una elección similar: mantener hegemonía mediante construcción de orden (costosa pero duradera) o extraer rentas mediante poder transaccional (lucrativo pero autodestructivo).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org81faaa9" class="outline-3">
+<h3 id="org81faaa9">El Legado del Pirata Institucional</h3>
+<div class="outline-text-3" id="text-org81faaa9">
+<p>
+Si el trumpismo representa el futuro de la política exterior estadounidense, el mundo se encamina hacia una era de piratería institucionalizada: potencias con capacidad de proyección empleándola para extracción inmediata en lugar de construcción de sistemas estables.
+</p>
+
+<p>
+Sir Donald Trump no sería entonces una aberración sino un pionero: el primer líder de una superpotencia en aplicar sistemáticamente la lógica pirata al ejercicio del poder estatal. Su legado no serían los territorios conquistados o el botín extraído, sino la demolición del principio de que el poder debe ejercerse dentro de marcos normativos compartidos.
+</p>
+
+<p>
+La pregunta histórica permanece abierta: ¿resultará el modelo pirata más efectivo que el modelo institucional en el siglo XXI? O, como en el siglo XIX, ¿descubrirá Estados Unidos que los costos de largo plazo de la piratería exceden sus beneficios inmediatos?
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7961cb1" class="outline-2">
+<h2 id="org7961cb1">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org7961cb1">
+</div>
+<div id="outline-container-orgfeff096" class="outline-3">
+<h3 id="orgfeff096">Fuentes Históricas sobre Piratería</h3>
+<div class="outline-text-3" id="text-orgfeff096">
+<ul class="org-ul">
+<li>Rediker, Marcus. <i>Villains of All Nations: Atlantic Pirates in the Golden Age</i>. Beacon Press, 2004.</li>
+
+<li>Konstam, Angus. <i>Piracy: The Complete History</i>. Osprey Publishing, 2008.</li>
+
+<li>May, Robert E. <i>Manifest Destiny's Underworld: Filibustering in Antebellum America</i>. University of North Carolina Press, 2002.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org62f8b56" class="outline-3">
+<h3 id="org62f8b56">Análisis Política Exterior Trump</h3>
+<div class="outline-text-3" id="text-org62f8b56">
+<ul class="org-ul">
+<li>Bolton, John. <i>The Room Where It Happened: A White House Memoir</i>. Simon &amp; Schuster, 2020.</li>
+
+<li>Wright, Thomas. "Trump's Foreign Policy Is No Longer Unpredictable". <i>The Atlantic</i>, January 2025.</li>
+
+<li>Kupchan, Charles A. <i>Isolationism: A History of America's Efforts to Shield Itself from the World</i>. Oxford University Press, 2020.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbc01f1a" class="outline-3">
+<h3 id="orgbc01f1a">Teoría de Relaciones Internacionales</h3>
+<div class="outline-text-3" id="text-orgbc01f1a">
+<ul class="org-ul">
+<li>Mearsheimer, John J. <i>The Great Delusion: Liberal Dreams and International Realities</i>. Yale University Press, 2018.</li>
+
+<li>Ikenberry, G. John. <i>A World Safe for Democracy: Liberal Internationalism and the Crisis of Global Order</i>. Yale University Press, 2020.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf9f19c2" class="outline-3">
+<h3 id="orgf9f19c2">Estudios sobre Venezuela y Sanciones</h3>
+<div class="outline-text-3" id="text-orgf9f19c2">
+<ul class="org-ul">
+<li>Weisbrot, Mark &amp; Sachs, Jeffrey. "Economic Sanctions as Collective Punishment: The Case of Venezuela". Center for Economic and Policy Research, 2019.</li>
+
+<li>Smilde, David &amp; Ramsey, Geoff. "Venezuela's Authoritarian Equilibrium". <i>Current History</i>, February 2021.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgccdd1f4" class="outline-3">
+<h3 id="orgccdd1f4">Fuentes Periodísticas Recientes</h3>
+<div class="outline-text-3" id="text-orgccdd1f4">
+<ul class="org-ul">
+<li>Informes de <i>The New York Times</i>, <i>The Washington Post</i>, <i>The Wall Street Journal</i> sobre propuestas territoriales Trump (enero 2025).</li>
+
+<li>Análisis de <i>Foreign Affairs</i> y <i>Foreign Policy</i> sobre segunda administración Trump (2025).</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1fcdd16" class="outline-2">
+<h2 id="org1fcdd16">Anexo: Cronología Comparativa</h2>
+<div class="outline-text-2" id="text-org1fcdd16">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-left">Piratería Histórica</th>
+<th scope="col" class="org-left">Paralelo Trumpista</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1671</td>
+<td class="org-left">Henry Morgan saquea Panamá</td>
+<td class="org-left">2025: Amenazas Canal de Panamá</td>
+</tr>
+
+<tr>
+<td class="org-right">1694</td>
+<td class="org-left">Piratería contra galeones españoles</td>
+<td class="org-left">2018-2025: Guerra arancelaria China</td>
+</tr>
+
+<tr>
+<td class="org-right">1806</td>
+<td class="org-left">Conspiración Aaron Burr (México)</td>
+<td class="org-left">2019: Propuesta compra Groenlandia</td>
+</tr>
+
+<tr>
+<td class="org-right">1850</td>
+<td class="org-left">Narciso López invade Cuba</td>
+<td class="org-left">2019-2025: Operaciones Venezuela</td>
+</tr>
+
+<tr>
+<td class="org-right">1856</td>
+<td class="org-left">William Walker "presidente" Nicaragua</td>
+<td class="org-left">2019: Guaidó "presidente" Venezuela</td>
+</tr>
+
+<tr>
+<td class="org-right">1718</td>
+<td class="org-left">Fin República Pirata de Nassau</td>
+<td class="org-left">¿2028?: ¿Fin era Trump?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgaccb85c" class="outline-2">
+<h2 id="orgaccb85c">Anexo: Tabla de Activos Confiscados Venezuela</h2>
+<div class="outline-text-2" id="text-orgaccb85c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Activo</th>
+<th scope="col" class="org-left">Valor Estimado</th>
+<th scope="col" class="org-left">Fecha Confiscación</th>
+<th scope="col" class="org-left">Mecanismo Legal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">CITGO (refinería EEUU)</td>
+<td class="org-left">$8 mil millones</td>
+<td class="org-left">Marzo 2019</td>
+<td class="org-left">Reconocimiento Guaidó</td>
+</tr>
+
+<tr>
+<td class="org-left">Reservas oro (UK)</td>
+<td class="org-left">$1.95 mil mill.</td>
+<td class="org-left">Agosto 2020</td>
+<td class="org-left">Presión diplomática UK</td>
+</tr>
+
+<tr>
+<td class="org-left">Cuentas bancarias (EEUU)</td>
+<td class="org-left">$342 millones</td>
+<td class="org-left">Febrero 2019</td>
+<td class="org-left">Sanciones OFAC</td>
+</tr>
+
+<tr>
+<td class="org-left">Bonos PDVSA</td>
+<td class="org-left">$7 mil millones</td>
+<td class="org-left">2019-2020</td>
+<td class="org-left">Default forzado/sanciones</td>
+</tr>
+
+<tr>
+<td class="org-left">Equipos petroleros (Carib)</td>
+<td class="org-left">$500 millones</td>
+<td class="org-left">2020-2021</td>
+<td class="org-left">Embargo equipos Chevron/Halliburton</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>TOTAL APROXIMADO</b></b></td>
+<td class="org-left"><b><b>~$18 mil mill.</b></b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgc2ddc0a" class="outline-2">
+<h2 id="orgc2ddc0a">Anexo: Diagrama Comparativo Métodos Extractivos</h2>
+<div class="outline-text-2" id="text-orgc2ddc0a">
+
+<div id="orgc9696a4" class="figure">
+<p><img src="./assets/images/extraction-methods-comparison.png" alt="extraction-methods-comparison.png" width="600px" />
+</p>
+</div>
+
+<blockquote>
+<p>
+"El único principio de la piratería es que no hay principios. El único código es que los códigos están para romperse. Y la única ley es la del más fuerte en el momento preciso."
+</p>
+
+<p>
+— Adaptación del Código Pirata histórico al contexto contemporáneo
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:18</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

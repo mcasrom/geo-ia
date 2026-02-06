@@ -1,0 +1,3393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bloques Geopolíticos del Siglo XXI: Transformaciones del Bienestar y Desarrollo Social (2000-2025)</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis sociológico de la evolución del bienestar ciudadano, desarrollo social, salud, demografía y libertades en Europa, América, América Latina, China, Rusia y economías emergentes durante el siglo XXI" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Bloques Geopolíticos del Siglo XXI: Transformaciones del Bienestar y Desarrollo Social (2000-2025)</h1>
+
+<div id="outline-container-org11dabd7" class="outline-2">
+<h2 id="org11dabd7">Bloques Geopolíticos del Siglo XXI: Transformaciones del Bienestar y Desarrollo Social (2000-2025)</h2>
+</div>
+
+<div id="outline-container-org9d74340" class="outline-2">
+<h2 id="org9d74340">Introducción: El Mundo Post-Guerra Fría</h2>
+<div class="outline-text-2" id="text-org9d74340">
+<p>
+El siglo XXI inauguró una nueva era geopolítica tras el colapso del bloque soviético. La supuesta "victoria definitiva" del capitalismo liberal democrático, proclamada por Francis Fukuyama como "el fin de la historia", resultó ser prematura. En su lugar, emergió un mundo multipolar caracterizado por:
+</p>
+
+<ul class="org-ul">
+<li>El ascenso vertiginoso de China como potencia económica global</li>
+<li>La resurgencia de Rusia bajo el autoritarismo de Putin</li>
+<li>La crisis y transformación del modelo europeo de bienestar</li>
+<li>El estancamiento relativo de Estados Unidos y crecientes divisiones internas</li>
+<li>La heterogeneidad creciente de América Latina entre modelos progresistas y neoliberales</li>
+<li>La emergencia del Sur Global (India, Brasil, Sudáfrica, Indonesia)</li>
+</ul>
+
+<p>
+Este análisis examina cómo estos bloques y regiones han evolucionado en las primeras décadas del siglo XXI respecto al bienestar ciudadano, desarrollo social, salud, demografía, desarrollo intelectual y satisfacción subjetiva.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc604c63" class="outline-2">
+<h2 id="orgc604c63">Metodología y Parámetros de Análisis</h2>
+<div class="outline-text-2" id="text-orgc604c63">
+</div>
+<div id="outline-container-org04614e2" class="outline-3">
+<h3 id="org04614e2">Dimensiones Evaluadas</h3>
+<div class="outline-text-3" id="text-org04614e2">
+<p>
+Mantenemos las seis dimensiones del análisis anterior, actualizadas para el siglo XXI:
+</p>
+
+<ol class="org-ol">
+<li><b>Bienestar Material</b>: Ingreso real, acceso a vivienda, tecnología, consumo</li>
+<li><b>Salud Pública</b>: Esperanza de vida, mortalidad infantil, enfermedades crónicas, salud mental</li>
+<li><b>Desarrollo Intelectual</b>: Educación terciaria, producción científica, innovación tecnológica</li>
+<li><b>Desarrollo Demográfico</b>: Envejecimiento, migraciones, estructura poblacional</li>
+<li><b>Libertades y Gobernanza</b>: Democracia, Estado de derecho, corrupción, derechos humanos</li>
+<li><b>Sostenibilidad y Bienestar Subjetivo</b>: Impacto ambiental, felicidad reportada, ansiedad</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb57a201" class="outline-3">
+<h3 id="orgb57a201">Nuevos Factores del Siglo XXI</h3>
+<div class="outline-text-3" id="text-orgb57a201">
+<p>
+El análisis incorpora fenómenos específicos de esta era:
+</p>
+
+<ul class="org-ul">
+<li><b>Digitalización</b>: Acceso a internet, brecha digital, vigilancia tecnológica</li>
+<li><b>Globalización financiera</b>: Integración económica, vulnerabilidad a crisis sistémicas</li>
+<li><b>Crisis climática</b>: Vulnerabilidad ambiental, políticas de mitigación</li>
+<li><b>Polarización política</b>: Erosión de consensos, auge de populismos</li>
+<li><b>Pandemias</b>: COVID-19 como test de resiliencia sistémica</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8fc39db" class="outline-2">
+<h2 id="org8fc39db">Unión Europea: Crisis y Resiliencia del Modelo Social Europeo</h2>
+<div class="outline-text-2" id="text-org8fc39db">
+</div>
+<div id="outline-container-orgcecc400" class="outline-3">
+<h3 id="orgcecc400">Matriz de Evolución (2000-2025)</h3>
+<div class="outline-text-3" id="text-orgcecc400">
+<table id="orga553248" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">2000</th>
+<th scope="col" class="org-right">2010</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Esperanza de vida (años)</td>
+<td class="org-right">77.9</td>
+<td class="org-right">80.3</td>
+<td class="org-right">82.1</td>
+<td class="org-left">Positiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Mortalidad infantil (‰)</td>
+<td class="org-right">5.3</td>
+<td class="org-right">4.0</td>
+<td class="org-right">3.2</td>
+<td class="org-left">Muy buena</td>
+</tr>
+
+<tr>
+<td class="org-left">Educación superior (%)</td>
+<td class="org-right">28.0</td>
+<td class="org-right">34.0</td>
+<td class="org-right">42.0</td>
+<td class="org-left">Excelente</td>
+</tr>
+
+<tr>
+<td class="org-left">PIB per cápita ($ 2020)</td>
+<td class="org-right">28,450</td>
+<td class="org-right">32,180</td>
+<td class="org-right">38,920</td>
+<td class="org-left">Moderada</td>
+</tr>
+
+<tr>
+<td class="org-left">Desempleo (%)</td>
+<td class="org-right">8.2</td>
+<td class="org-right">10.1</td>
+<td class="org-right">6.8</td>
+<td class="org-left">Volátil</td>
+</tr>
+
+<tr>
+<td class="org-left">Coef. Gini (desigualdad)</td>
+<td class="org-right">0.30</td>
+<td class="org-right">0.31</td>
+<td class="org-right">0.33</td>
+<td class="org-left">Deterioro</td>
+</tr>
+
+<tr>
+<td class="org-left">Satisfacción de vida (0-10)</td>
+<td class="org-right">7.2</td>
+<td class="org-right">7.0</td>
+<td class="org-right">6.9</td>
+<td class="org-left">Declive leve</td>
+</tr>
+
+<tr>
+<td class="org-left">Acceso internet (%)</td>
+<td class="org-right">35.0</td>
+<td class="org-right">70.0</td>
+<td class="org-right">92.0</td>
+<td class="org-left">Excelente</td>
+</tr>
+
+<tr>
+<td class="org-left">Emisiones CO₂ per cápita (ton)</td>
+<td class="org-right">9.2</td>
+<td class="org-right">8.1</td>
+<td class="org-right">6.8</td>
+<td class="org-left">Positiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Confianza institucional (%)</td>
+<td class="org-right">48.0</td>
+<td class="org-right">38.0</td>
+<td class="org-right">42.0</td>
+<td class="org-left">Recuperación</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org2bb37c7" class="outline-3">
+<h3 id="org2bb37c7">Análisis de la Trayectoria Europea</h3>
+<div class="outline-text-3" id="text-org2bb37c7">
+</div>
+<div id="outline-container-org7dd1cf6" class="outline-4">
+<h4 id="org7dd1cf6">La Crisis Financiera (2008-2012) y sus Secuelas</h4>
+<div class="outline-text-4" id="text-org7dd1cf6">
+<p>
+La crisis financiera global de 2008 golpeó duramente a Europa. La crisis de deuda soberana que siguió (2010-2012) especialmente en países mediterráneos (Grecia, España, Portugal, Italia) expuso fragilidades estructurales de la eurozona: moneda común sin unión fiscal, desequilibrios comerciales crónicos, rigideces regulatorias.
+</p>
+
+<p>
+Las políticas de austeridad impuestas por la Troika (BCE, Comisión Europea, FMI) devastaron los sistemas de bienestar en países periféricos. Grecia vio su PIB contraerse 25%, el desempleo juvenil superar el 50%, y la emigración masiva de jóvenes cualificados. España e Italia experimentaron recortes dramáticos en sanidad, educación y protección social.
+</p>
+
+<p>
+Sin embargo, los países del norte (Alemania, Países Bajos, Escandinavia) mantuvieron relativamente intactos sus sistemas de bienestar. Esta divergencia norte-sur profundizó tensiones dentro de la UE.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b2e046" class="outline-4">
+<h4 id="org2b2e046">Desafíos Demográficos: El Envejecimiento Acelerado</h4>
+<div class="outline-text-4" id="text-org2b2e046">
+<p>
+Europa enfrenta el envejecimiento poblacional más acelerado del mundo. La proporción de mayores de 65 años pasó de 16% (2000) a 21% (2025). La tasa de dependencia (población inactiva/activa) aumentó dramáticamente.
+</p>
+
+<p>
+Esto genera presiones insostenibles sobre sistemas de pensiones y salud. Los países responden con: aumento de edad de jubilación (67-68 años en varios países), inmigración (controversial política y socialmente), e incentivos a la natalidad (mayormente inefectivos).
+</p>
+
+<p>
+La inmigración, necesaria económicamente, genera tensiones sociales explotadas por partidos de extrema derecha. La crisis migratoria de 2015 (1+ millones de refugiados sirios y afganos) polarizó sociedades europeas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org13f9965" class="outline-4">
+<h4 id="org13f9965">Logros en Sostenibilidad y Transición Verde</h4>
+<div class="outline-text-4" id="text-org13f9965">
+<p>
+Europa lidera globalmente en políticas climáticas. El Acuerdo Verde Europeo (European Green Deal, 2019) compromete a la UE a neutralidad de carbono para 2050. Las emisiones per cápita cayeron 26% entre 2000 y 2025.
+</p>
+
+<p>
+Las energías renovables pasaron de 6% (2000) a 42% (2025) de la generación eléctrica. Alemania, España y Dinamarca lideran la transición. Sin embargo, la dependencia energética (gas ruso hasta 2022) expuso vulnerabilidades geopolíticas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8543784" class="outline-4">
+<h4 id="org8543784">Erosión Democrática y Auge de Populismos</h4>
+<div class="outline-text-4" id="text-org8543784">
+<p>
+Varios países europeos experimentan retrocesos democráticos. Hungría bajo Orbán y Polonia bajo el PiS implementaron reformas que erosionan independencia judicial, libertad de prensa y derechos de minorías.
+</p>
+
+<p>
+El Brexit (2016-2020) representó el primer abandono de la UE, exponiendo euroscepticismo profundo. Partidos populistas de derecha (Le Pen en Francia, Meloni en Italia, Wilders en Países Bajos) ganaron apoyos significativos explotando ansiedad económica, rechazo a inmigración y nostalgia nacionalista.
+</p>
+
+<p>
+La invasión rusa de Ucrania (2022) ironicamente revitalizó cohesión europea, pero a costa de aumento en gasto militar y vulnerabilidad energética.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7e082c5" class="outline-4">
+<h4 id="org7e082c5">Bienestar Subjetivo: Ansiedad en la Abundancia</h4>
+<div class="outline-text-4" id="text-org7e082c5">
+<p>
+A pesar de indicadores objetivos relativamente buenos, los europeos reportan ansiedad creciente. Las encuestas muestran:
+</p>
+
+<ul class="org-ul">
+<li>Preocupación por inestabilidad económica (trabajo precario, vivienda inasequible)</li>
+<li>Ansiedad climática, especialmente entre jóvenes</li>
+<li>Desconfianza en instituciones políticas</li>
+<li>Soledad epidémica (especialmente post-COVID)</li>
+<li>Presión por rendimiento constante en economías competitivas</li>
+</ul>
+
+<p>
+La satisfacción de vida cayó marginalmente de 7.2 (2000) a 6.9 (2025), con caídas más pronunciadas en países del sur afectados por austeridad.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc16bac0" class="outline-3">
+<h3 id="orgc16bac0">Diagrama: Círculo Vicioso de la Crisis Europea</h3>
+<div class="outline-text-3" id="text-orgc16bac0">
+
+<div id="orgdb805ee" class="figure">
+<p><img src="./assets/images/crisis-europea-xxi.png" alt="crisis-europea-xxi.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org03fdef4" class="outline-2">
+<h2 id="org03fdef4">Estados Unidos: Superpotencia en Declive Relativo</h2>
+<div class="outline-text-2" id="text-org03fdef4">
+</div>
+<div id="outline-container-orgeba4462" class="outline-3">
+<h3 id="orgeba4462">Matriz de Evolución (2000-2025)</h3>
+<div class="outline-text-3" id="text-orgeba4462">
+<table id="orgbaaddef" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">2000</th>
+<th scope="col" class="org-right">2010</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Esperanza de vida (años)</td>
+<td class="org-right">76.8</td>
+<td class="org-right">78.7</td>
+<td class="org-right">76.4</td>
+<td class="org-left">Declive</td>
+</tr>
+
+<tr>
+<td class="org-left">Mortalidad infantil (‰)</td>
+<td class="org-right">6.9</td>
+<td class="org-right">6.1</td>
+<td class="org-right">5.4</td>
+<td class="org-left">Lenta mejora</td>
+</tr>
+
+<tr>
+<td class="org-left">Educación superior (%)</td>
+<td class="org-right">38.0</td>
+<td class="org-right">42.0</td>
+<td class="org-right">48.0</td>
+<td class="org-left">Positiva</td>
+</tr>
+
+<tr>
+<td class="org-left">PIB per cápita ($ 2020)</td>
+<td class="org-right">44,980</td>
+<td class="org-right">50,520</td>
+<td class="org-right">63,540</td>
+<td class="org-left">Fuerte</td>
+</tr>
+
+<tr>
+<td class="org-left">Cobertura salud (%)</td>
+<td class="org-right">86.0</td>
+<td class="org-right">84.0</td>
+<td class="org-right">91.0</td>
+<td class="org-left">Mejora ACA</td>
+</tr>
+
+<tr>
+<td class="org-left">Coef. Gini (desigualdad)</td>
+<td class="org-right">0.41</td>
+<td class="org-right">0.44</td>
+<td class="org-right">0.48</td>
+<td class="org-left">Muy negativa</td>
+</tr>
+
+<tr>
+<td class="org-left">Satisfacción de vida (0-10)</td>
+<td class="org-right">7.4</td>
+<td class="org-right">7.0</td>
+<td class="org-right">6.7</td>
+<td class="org-left">Declive</td>
+</tr>
+
+<tr>
+<td class="org-left">Muertes por violencia (‰)</td>
+<td class="org-right">10.2</td>
+<td class="org-right">12.1</td>
+<td class="org-right">14.8</td>
+<td class="org-left">Muy negativa</td>
+</tr>
+
+<tr>
+<td class="org-left">Encarcelamiento (por 100k)</td>
+<td class="org-right">683</td>
+<td class="org-right">740</td>
+<td class="org-right">664</td>
+<td class="org-left">Alta (mejora)</td>
+</tr>
+
+<tr>
+<td class="org-left">Polarización política (índice)</td>
+<td class="org-right">0.45</td>
+<td class="org-right">0.62</td>
+<td class="org-right">0.78</td>
+<td class="org-left">Crisis</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org82fc6bd" class="outline-3">
+<h3 id="org82fc6bd">Análisis de la Trayectoria Estadounidense</h3>
+<div class="outline-text-3" id="text-org82fc6bd">
+</div>
+<div id="outline-container-orgdfa86b2" class="outline-4">
+<h4 id="orgdfa86b2">La Paradoja del Crecimiento sin Bienestar</h4>
+<div class="outline-text-4" id="text-orgdfa86b2">
+<p>
+Estados Unidos mantiene el PIB per cápita más alto entre economías avanzadas, liderando innovación tecnológica (Silicon Valley), finanzas globales (Wall Street) y proyección militar. Sin embargo, este crecimiento no se traduce en bienestar generalizado.
+</p>
+
+<p>
+La desigualdad alcanzó niveles no vistos desde los años 20. El 1% superior captura el 20% del ingreso nacional, mientras los salarios reales de la clase trabajadora se estancaron durante décadas. La movilidad social ascendente, mito fundacional estadounidense, cayó dramáticamente: solo el 50% de nacidos en 1980 ganan más que sus padres, comparado con 90% en generaciones previas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org19cb343" class="outline-4">
+<h4 id="org19cb343">Crisis de Salud Pública: El Caso Excepcional</h4>
+<div class="outline-text-4" id="text-org19cb343">
+<p>
+Estados Unidos es el único país desarrollado donde la esperanza de vida cayó en el siglo XXI. Tres crisis superpuestas explican este fenómeno:
+</p>
+
+<ol class="org-ol">
+<li><b>Epidemia de opioides</b>: Sobreprescripción médica de analgésicos opioides (OxyContin), adicción masiva, transición a heroína y fentanilo. Más de 500,000 muertes por sobredosis entre 2000-2025.</li>
+
+<li><b>Obesidad y enfermedades metabólicas</b>: 42% de adultos obesos (2025), generando epidemias de diabetes tipo 2, enfermedades cardiovasculares, cáncer.</li>
+
+<li><b>"Muertes por desesperanza"</b>: Suicidios y alcoholismo, especialmente entre hombres blancos de clase trabajadora en regiones desindustrializadas (Rust Belt, Appalachia).</li>
+</ol>
+
+<p>
+El sistema de salud, más caro del mundo (17% del PIB), produce resultados mediocres. 28 millones permanecen sin seguro a pesar del Obamacare (ACA, 2010). Los costos médicos son la principal causa de bancarrota.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgddff6b2" class="outline-4">
+<h4 id="orgddff6b2">Violencia Armada y Militarización Social</h4>
+<div class="outline-text-4" id="text-orgddff6b2">
+<p>
+Estados Unidos experimenta niveles de violencia armada incomparables en el mundo desarrollado. Con 400+ millones de armas civiles (más que habitantes), las muertes por armas de fuego (homicidios, suicidios, accidentes) alcanzan 45,000 anuales.
+</p>
+
+<p>
+Los tiroteos masivos (mass shootings) en escuelas, iglesias, centros comerciales se normalizaron trágicamente. A pesar del clamor ciudadano, el poder del lobby armamentista (NRA) bloquea reformas legislativas.
+</p>
+
+<p>
+La militarización policial post-11/9 y el sesgo racial sistemático generan tensiones explosivas. El movimiento Black Lives Matter (BLM, 2013-presente) visibilizó brutalidad policial contra afroamericanos, culminando en protestas masivas tras el asesinato de George Floyd (2020).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org263620d" class="outline-4">
+<h4 id="org263620d">Polarización Política Extrema</h4>
+<div class="outline-text-4" id="text-org263620d">
+<p>
+La división partidista alcanzó niveles no vistos desde la Guerra Civil. Republicanos y Demócratas no solo disienten en políticas sino en hechos básicos de la realidad. Las burbujas informativas (Fox News vs. MSNBC, redes sociales algorítmicas) refuerzan visiones de mundo incompatibles.
+</p>
+
+<p>
+La presidencia de Trump (2017-2021) aceleró polarización: retórica incendiaria, deslegitimación de instituciones, "fake news", nacionalismo blanco. El asalto al Capitolio (6 enero 2021) expuso fragilidad democrática.
+</p>
+
+<p>
+La administración Biden (2021-2025) logró cierta recuperación económica pero no sanó divisiones culturales. La agenda progresista (climate action, derechos trans, justicia racial) genera reacción conservadora feroz.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0834a05" class="outline-4">
+<h4 id="org0834a05">Bienestar Subjetivo en Crisis</h4>
+<div class="outline-text-4" id="text-org0834a05">
+<p>
+A pesar de riqueza material, los estadounidenses reportan niveles crecientes de infelicidad:
+</p>
+
+<ul class="org-ul">
+<li>Soledad epidémica: 60% reporta sentirse solo frecuentemente</li>
+<li>Ansiedad y depresión, especialmente entre jóvenes (Gen Z)</li>
+<li>Inseguridad económica: 40% no puede cubrir un gasto inesperado de $400</li>
+<li>Desconfianza institucional: menos del 20% confía en el Congreso</li>
+<li>Nihilismo cultural: pérdida de narrativas compartidas de sentido</li>
+</ul>
+
+<p>
+La satisfacción de vida cayó de 7.4 (2000) a 6.7 (2025), con caídas más pronunciadas entre trabajadores sin educación universitaria.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb111054" class="outline-3">
+<h3 id="orgb111054">Diagrama: Fragmentación del Sueño Americano</h3>
+<div class="outline-text-3" id="text-orgb111054">
+
+<div id="orge2125ba" class="figure">
+<p><img src="./assets/images/declive-eeuu-xxi.png" alt="declive-eeuu-xxi.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3925965" class="outline-2">
+<h2 id="org3925965">China: Ascenso a Superpotencia con Características Autoritarias</h2>
+<div class="outline-text-2" id="text-org3925965">
+</div>
+<div id="outline-container-orgab5d762" class="outline-3">
+<h3 id="orgab5d762">Matriz de Evolución (2000-2025)</h3>
+<div class="outline-text-3" id="text-orgab5d762">
+<table id="orgfc4549f" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">2000</th>
+<th scope="col" class="org-right">2010</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Esperanza de vida (años)</td>
+<td class="org-right">71.4</td>
+<td class="org-right">75.2</td>
+<td class="org-right">78.6</td>
+<td class="org-left">Excelente</td>
+</tr>
+
+<tr>
+<td class="org-left">Mortalidad infantil (‰)</td>
+<td class="org-right">30.0</td>
+<td class="org-right">13.0</td>
+<td class="org-right">5.2</td>
+<td class="org-left">Notable</td>
+</tr>
+
+<tr>
+<td class="org-left">Educación superior (%)</td>
+<td class="org-right">8.0</td>
+<td class="org-right">24.0</td>
+<td class="org-right">58.0</td>
+<td class="org-left">Extraordinaria</td>
+</tr>
+
+<tr>
+<td class="org-left">PIB per cápita ($ 2020)</td>
+<td class="org-right">3,580</td>
+<td class="org-right">10,220</td>
+<td class="org-right">19,340</td>
+<td class="org-left">Explosiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Población en pobreza extrema (%)</td>
+<td class="org-right">49.0</td>
+<td class="org-right">16.0</td>
+<td class="org-right">0.3</td>
+<td class="org-left">Erradicación</td>
+</tr>
+
+<tr>
+<td class="org-left">Coef. Gini (desigualdad)</td>
+<td class="org-right">0.40</td>
+<td class="org-right">0.47</td>
+<td class="org-right">0.46</td>
+<td class="org-left">Alta estable</td>
+</tr>
+
+<tr>
+<td class="org-left">Libertad de prensa (0-100)</td>
+<td class="org-right">18.0</td>
+<td class="org-right">12.0</td>
+<td class="org-right">9.0</td>
+<td class="org-left">Represión</td>
+</tr>
+
+<tr>
+<td class="org-left">Vigilancia digital (índice)</td>
+<td class="org-right">15.0</td>
+<td class="org-right">45.0</td>
+<td class="org-right">89.0</td>
+<td class="org-left">Totalitaria</td>
+</tr>
+
+<tr>
+<td class="org-left">Emisiones CO₂ per cápita (ton)</td>
+<td class="org-right">2.7</td>
+<td class="org-right">6.2</td>
+<td class="org-right">8.1</td>
+<td class="org-left">Muy negativa</td>
+</tr>
+
+<tr>
+<td class="org-left">Producción científica (% global)</td>
+<td class="org-right">5.0</td>
+<td class="org-right">12.0</td>
+<td class="org-right">21.0</td>
+<td class="org-left">Liderazgo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orga9720a4" class="outline-3">
+<h3 id="orga9720a4">Análisis del Modelo Chino</h3>
+<div class="outline-text-3" id="text-orga9720a4">
+</div>
+<div id="outline-container-orgc316f17" class="outline-4">
+<h4 id="orgc316f17">El Milagro Económico Más Grande de la Historia</h4>
+<div class="outline-text-4" id="text-orgc316f17">
+<p>
+China sacó a 850 millones de personas de la pobreza extrema entre 1980 y 2025, el mayor logro de desarrollo humano jamás registrado. El crecimiento económico promedio del 9% anual (2000-2010) y 6% (2010-2025) transformó un país rural empobrecido en la segunda economía mundial (primera en paridad de poder adquisitivo desde 2014).
+</p>
+
+<p>
+La urbanización masiva trasladó 500 millones de personas del campo a las ciudades en 25 años. Las megaciudades chinas (Shanghai, Beijing, Shenzhen, Guangzhou) rivalizan con cualquier metrópolis global en infraestructura y tecnología.
+</p>
+
+<p>
+Las inversiones masivas en infraestructura (trenes de alta velocidad conectando el país, puertos de última generación, redes 5G) crearon capacidades productivas sin precedentes. La Iniciativa del Cinturón y la Ruta (Belt and Road Initiative, BRI, desde 2013) proyecta influencia china globalmente mediante infraestructura y comercio.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e750d4" class="outline-4">
+<h4 id="org3e750d4">Transformación Educativa y Científica</h4>
+<div class="outline-text-4" id="text-org3e750d4">
+<p>
+China pasó de producir el 5% de publicaciones científicas globales (2000) al 21% (2025), superando a Estados Unidos. Las universidades chinas escalaron rankings globales. El país lidera en inteligencia artificial, tecnología 5G, energía solar, y biotecnología.
+</p>
+
+<p>
+El acceso a educación superior pasó del 8% (2000) al 58% (2025), una expansión vertiginosa. 10+ millones de estudiantes se gradúan anualmente de universidades, más que Estados Unidos y Europa combinados.
+</p>
+
+<p>
+Sin embargo, el énfasis en STEM y aplicación tecnológica va acompañado de control ideológico estricto en humanidades y ciencias sociales. El "pensamiento de Xi Jinping" es asignatura obligatoria. La censura académica limita investigación en temas sensibles (Tíbet, Xinjiang, Tiananmen, Taiwan).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e44a39" class="outline-4">
+<h4 id="org3e44a39">Salud Pública: Logros y Limitaciones</h4>
+<div class="outline-text-4" id="text-org3e44a39">
+<p>
+La esperanza de vida aumentó 7 años entre 2000 y 2025, alcanzando niveles de países desarrollados. La mortalidad infantil cayó dramáticamente. El sistema de salud se expandió significativamente, aunque persisten disparidades urbano-rurales.
+</p>
+
+<p>
+Sin embargo, emergen nuevos desafíos: envejecimiento acelerado (consecuencia de la política de hijo único, abolida en 2016), epidemias de diabetes y enfermedades cardiovasculares por cambios dietéticos, contaminación atmosférica devastadora en ciudades industriales.
+</p>
+
+<p>
+La gestión inicial de COVID-19 en Wuhan (diciembre 2019) fue desastrosa: censura de médicos alertadores, ocultamiento de información, permitiendo propagación global. Sin embargo, posteriormente China implementó política de "COVID cero" (confinamientos drásticos, rastreo masivo) hasta su abandono caótico en diciembre 2022.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org568796c" class="outline-4">
+<h4 id="org568796c">El Estado de Vigilancia Tecnológica</h4>
+<div class="outline-text-4" id="text-org568796c">
+<p>
+China desarrolló el sistema de vigilancia más sofisticado de la historia humana. El "Sistema de Crédito Social" (en desarrollo desde 2014) monitorea comportamiento ciudadano mediante: reconocimiento facial ubicuo, monitoreo de redes sociales, rastreo de transacciones financieras, integración de bases de datos estatales.
+</p>
+
+<p>
+Las cámaras de vigilancia (626 millones instaladas, 2025) con inteligencia artificial identifican individuos, analizan comportamientos, predicen "riesgos sociales". La censura de internet (Great Firewall) bloquea acceso a información externa. Las VPN son ilegales.
+</p>
+
+<p>
+Este aparato se despliega brutalmente en Xinjiang contra la minoría uigur: campos de "reeducación" (internamiento masivo), vigilancia total, supresión cultural, esterilizaciones forzadas. Organizaciones internacionales denuncian genocidio cultural, posiblemente crímenes contra la humanidad.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org067abc1" class="outline-4">
+<h4 id="org067abc1">Autoritarismo Consolidado bajo Xi Jinping</h4>
+<div class="outline-text-4" id="text-org067abc1">
+<p>
+Xi Jinping, en el poder desde 2012, consolidó control personal eliminando límites de mandatos (2018), purgando rivales mediante campañas "anticorrupción", y centralizando poder en grado no visto desde Mao.
+</p>
+
+<p>
+Las libertades se contrajeron dramáticamente: represión de activistas de derechos humanos, abogados, periodistas, académicos; supresión del movimiento prodemocracia de Hong Kong (Ley de Seguridad Nacional 2020), eliminando la autonomía prometida; amenazas crecientes contra Taiwan; nacionalismo agresivo ("China ha puesto de pie").
+</p>
+
+<p>
+El Partido Comunista penetra todas las esferas: empresas privadas obligadas a tener células partidistas, regulación draconiana de tecnológicas (represión de Jack Ma y Alibaba 2020-2021), control ideológico de entretenimiento y educación.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c1707c" class="outline-4">
+<h4 id="org5c1707c">Bienestar Subjetivo: Mejora Material vs. Ausencia de Libertades</h4>
+<div class="outline-text-4" id="text-org5c1707c">
+<p>
+La percepción ciudadana es difícil de evaluar en un régimen autoritario. Las encuestas oficiales muestran alta satisfacción (80%+), pero su fiabilidad es cuestionable bajo censura y miedo.
+</p>
+
+<p>
+Estudios indirectos sugieren:
+</p>
+<ul class="org-ul">
+<li>Satisfacción con mejoras materiales tangibles (vivienda, consumo, movilidad)</li>
+<li>Orgullo nacionalista por ascenso de China</li>
+<li>Ansiedad por competencia despiadada (educación, trabajo)</li>
+<li>Frustración entre jóvenes educados por oportunidades limitadas y control social</li>
+<li>Miedo omnipresente a represión política</li>
+</ul>
+
+<p>
+La emigración de élites chinas a Occidente (especialmente tras COVID y represión en Hong Kong) sugiere insatisfacción significativa entre quienes pueden elegir.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf467098" class="outline-3">
+<h3 id="orgf467098">Diagrama: Modelo de Desarrollo Autoritario Chino</h3>
+<div class="outline-text-3" id="text-orgf467098">
+
+<div id="orgb8b2708" class="figure">
+<p><img src="./assets/images/modelo-china-xxi.png" alt="modelo-china-xxi.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org24f2796" class="outline-2">
+<h2 id="org24f2796">Rusia: Autoritarismo Petroestatal y Nostalgia Imperial</h2>
+<div class="outline-text-2" id="text-org24f2796">
+</div>
+<div id="outline-container-org8f8022c" class="outline-3">
+<h3 id="org8f8022c">Matriz de Evolución (2000-2025)</h3>
+<div class="outline-text-3" id="text-org8f8022c">
+<table id="org731cb49" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">2000</th>
+<th scope="col" class="org-right">2010</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Esperanza de vida (años)</td>
+<td class="org-right">65.3</td>
+<td class="org-right">69.0</td>
+<td class="org-right">72.8</td>
+<td class="org-left">Mejora</td>
+</tr>
+
+<tr>
+<td class="org-left">Mortalidad infantil (‰)</td>
+<td class="org-right">15.3</td>
+<td class="org-right">10.0</td>
+<td class="org-right">4.9</td>
+<td class="org-left">Buena</td>
+</tr>
+
+<tr>
+<td class="org-left">Educación superior (%)</td>
+<td class="org-right">52.0</td>
+<td class="org-right">54.0</td>
+<td class="org-right">58.0</td>
+<td class="org-left">Alta estable</td>
+</tr>
+
+<tr>
+<td class="org-left">PIB per cápita ($ 2020)</td>
+<td class="org-right">8,560</td>
+<td class="org-right">15,640</td>
+<td class="org-right">11,230</td>
+<td class="org-left">Declive post-2014</td>
+</tr>
+
+<tr>
+<td class="org-left">Dependencia hidrocarburos (% exp)</td>
+<td class="org-right">55.0</td>
+<td class="org-right">68.0</td>
+<td class="org-right">62.0</td>
+<td class="org-left">Estructural</td>
+</tr>
+
+<tr>
+<td class="org-left">Libertad de prensa (0-100)</td>
+<td class="org-right">29.0</td>
+<td class="org-right">20.0</td>
+<td class="org-right">7.0</td>
+<td class="org-left">Represión total</td>
+</tr>
+
+<tr>
+<td class="org-left">Emigración anual (miles)</td>
+<td class="org-right">45</td>
+<td class="org-right">35</td>
+<td class="org-right">250</td>
+<td class="org-left">Fuga masiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Gasto militar (% PIB)</td>
+<td class="org-right">3.8</td>
+<td class="org-right">3.9</td>
+<td class="org-right">5.9</td>
+<td class="org-left">Militarización</td>
+</tr>
+
+<tr>
+<td class="org-left">Corrupción (índice 0-100)</td>
+<td class="org-right">21.0</td>
+<td class="org-right">21.0</td>
+<td class="org-right">26.0</td>
+<td class="org-left">Endémica</td>
+</tr>
+
+<tr>
+<td class="org-left">Confianza en Putin (%)</td>
+<td class="org-right">65.0</td>
+<td class="org-right">75.0</td>
+<td class="org-right">78.0</td>
+<td class="org-left">Culto personal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org53c52ef" class="outline-3">
+<h3 id="org53c52ef">Análisis del Sistema Putinista</h3>
+<div class="outline-text-3" id="text-org53c52ef">
+</div>
+<div id="outline-container-org3645c75" class="outline-4">
+<h4 id="org3645c75">Del Caos de los 90 a la Autocracia Rentista</h4>
+<div class="outline-text-4" id="text-org3645c75">
+<p>
+Vladimir Putin llegó al poder (2000) prometiendo restaurar el orden tras el caos de los 90 (colapso económico, criminalidad, humillación geopolítica). Los altos precios del petróleo (2000-2008, 2010-2014) permitieron crecimiento económico, recuperación salarial y consolidación del poder.
+</p>
+
+<p>
+Sin embargo, Putin construyó no una democracia sino una autocracia electoral: control de medios, manipulación electoral, represión de oposición, centralización extrema del poder. La élite gobernante (<b>siloviki</b>, hombres de seguridad del entorno de Putin) capturó las rentas petroleras mediante empresas estatales (Gazprom, Rosneft).
+</p>
+
+<p>
+La economía rusa permanece dependiente de hidrocarburos, vulnerable a fluctuaciones de precios. Los intentos de diversificación fracasaron. La corrupción sistémica ahuyenta inversión productiva. Las sanciones occidentales post-anexión de Crimea (2014) y especialmente post-invasión de Ucrania (2022) aislaron parcialmente la economía.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4962866" class="outline-4">
+<h4 id="org4962866">Represión Creciente y Oposición Silenciada</h4>
+<div class="outline-text-4" id="text-org4962866">
+<p>
+Las libertades políticas se erosionaron sistemáticamente. Medios independientes fueron cerrados o capturados por aliados del Kremlin. Periodistas críticos asesinados (Anna Politkovskaya 2006, Boris Nemtsov 2015) o encarcelados. Organizaciones de la sociedad civil reprimidas como "agentes extranjeros".
+</p>
+
+<p>
+La oposición política fue sistemáticamente eliminada: encarcelamiento de Alexei Navalny (envenenado con Novichok 2020, encarcelado 2021, muerto en prisión 2024), prohibición de partidos opositores, manipulación electoral garantizando "victorias" abrumadoras de Putin.
+</p>
+
+<p>
+Internet, inicialmente espacio de libertad relativa, fue progresivamente censurado. Tras la invasión de Ucrania, el régimen bloqueó redes sociales occidentales, criminalizó "fake news" sobre el ejército (15 años de prisión), forzando autoexilio a miles de activistas, periodistas e intelectuales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org633f281" class="outline-4">
+<h4 id="org633f281">La Aventura Imperial: Ucrania y sus Consecuencias</h4>
+<div class="outline-text-4" id="text-org633f281">
+<p>
+La anexión de Crimea (marzo 2014) tras el Euromaidan ucraniano generó apoyo nacionalista interno ("Crimea es nuestra") pero aislamiento internacional. Las sanciones occidentales golpearon la economía, que entró en recesión.
+</p>
+
+<p>
+La invasión total de Ucrania (24 febrero 2022) marcó un punto de inflexión. Putin esperaba una victoria rápida. En cambio, enfrentó resistencia ucraniana feroz, apoyo occidental masivo a Ucrania, sanciones occidentales sin precedentes (congelación de reservas, exclusión de SWIFT, embargo energético), y una guerra de desgaste costosa.
+</p>
+
+<p>
+Las consecuencias para Rusia son devastadoras: 
+</p>
+<ul class="org-ul">
+<li>Cientos de miles de muertos y heridos (estimaciones: 200,000-350,000)</li>
+<li>Emigración masiva de jóvenes educados (750,000+ entre 2022-2024)</li>
+<li>Economía en guerra: militarización extrema desviando recursos</li>
+<li>Aislamiento internacional, dependencia de China</li>
+<li>Represión interna totalitaria para sofocar disidencia</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org924f728" class="outline-4">
+<h4 id="org924f728">Sociedad en Transformación: Entre Propaganda y Realidad</h4>
+<div class="outline-text-4" id="text-org924f728">
+<p>
+La sociedad rusa muestra profundas divisiones generacionales. Los mayores, socializados en la URSS, apoyan mayoritariamente a Putin, nostálgicos del poder soviético y receptivos a propaganda nacionalista. Los jóvenes urbanos educados son más críticos, pero muchos emigraron o se autocensuran por miedo.
+</p>
+
+<p>
+La esperanza de vida mejoró significativamente respecto a los 90, cuando la mortalidad masculina alcanzó niveles catastróficos. Sin embargo, persisten problemas: alcoholismo endémico, VIH/SIDA, tuberculosis.
+</p>
+
+<p>
+La percepción ciudadana del bienestar es contradictoria: orgullo nacionalista convive con ansiedad económica, mejoras materiales modestas conviven con ausencia total de libertades. Las encuestas muestran apoyo a Putin del 70-80%, pero su fiabilidad bajo autoritarismo es cuestionable.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge58db6b" class="outline-3">
+<h3 id="orge58db6b">Diagrama: Petro-Estado Autoritario Ruso</h3>
+<div class="outline-text-3" id="text-orge58db6b">
+
+<div id="orgad50cc9" class="figure">
+<p><img src="./assets/images/petroestado-rusia.png" alt="petroestado-rusia.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org3a17a3b" class="outline-2">
+<h2 id="org3a17a3b">América Latina: Entre Progresismo y Regresión Neoliberal</h2>
+<div class="outline-text-2" id="text-org3a17a3b">
+</div>
+<div id="outline-container-org5ab682c" class="outline-3">
+<h3 id="org5ab682c">Matriz Regional de Evolución (2000-2025)</h3>
+<div class="outline-text-3" id="text-org5ab682c">
+<table id="orgdc91402" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">2000</th>
+<th scope="col" class="org-right">2010</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Esperanza de vida (años)</td>
+<td class="org-right">71.5</td>
+<td class="org-right">74.2</td>
+<td class="org-right">76.8</td>
+<td class="org-left">Positiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Mortalidad infantil (‰)</td>
+<td class="org-right">28.0</td>
+<td class="org-right">18.0</td>
+<td class="org-right">12.5</td>
+<td class="org-left">Buena mejora</td>
+</tr>
+
+<tr>
+<td class="org-left">Educación superior (%)</td>
+<td class="org-right">18.0</td>
+<td class="org-right">28.0</td>
+<td class="org-right">38.0</td>
+<td class="org-left">Positiva</td>
+</tr>
+
+<tr>
+<td class="org-left">PIB per cápita ($ 2020)</td>
+<td class="org-right">7,840</td>
+<td class="org-right">10,250</td>
+<td class="org-right">11,120</td>
+<td class="org-left">Estancada</td>
+</tr>
+
+<tr>
+<td class="org-left">Población en pobreza (%)</td>
+<td class="org-right">42.0</td>
+<td class="org-right">29.0</td>
+<td class="org-right">32.0</td>
+<td class="org-left">Retroceso</td>
+</tr>
+
+<tr>
+<td class="org-left">Coef. Gini (desigualdad)</td>
+<td class="org-right">0.54</td>
+<td class="org-right">0.50</td>
+<td class="org-right">0.46</td>
+<td class="org-left">Mejora</td>
+</tr>
+
+<tr>
+<td class="org-left">Homicidios (por 100k)</td>
+<td class="org-right">25.0</td>
+<td class="org-right">24.0</td>
+<td class="org-right">21.0</td>
+<td class="org-left">Leve mejora</td>
+</tr>
+
+<tr>
+<td class="org-left">Confianza institucional (%)</td>
+<td class="org-right">28.0</td>
+<td class="org-right">35.0</td>
+<td class="org-right">22.0</td>
+<td class="org-left">Colapso</td>
+</tr>
+
+<tr>
+<td class="org-left">Deforestación Amazonía (%)</td>
+<td class="org-right">15.0</td>
+<td class="org-right">17.0</td>
+<td class="org-right">20.0</td>
+<td class="org-left">Crisis</td>
+</tr>
+
+<tr>
+<td class="org-left">Acceso internet (%)</td>
+<td class="org-right">10.0</td>
+<td class="org-right">35.0</td>
+<td class="org-right">68.0</td>
+<td class="org-left">Rápida</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org7148627" class="outline-3">
+<h3 id="org7148627">Análisis de la Heterogeneidad Latinoamericana</h3>
+<div class="outline-text-3" id="text-org7148627">
+</div>
+<div id="outline-container-org41bb5ed" class="outline-4">
+<h4 id="org41bb5ed">La Marea Rosa (2000-2015): Experimentos Progresistas</h4>
+<div class="outline-text-4" id="text-org41bb5ed">
+<p>
+La primera década del siglo XXI vio el ascenso de gobiernos de centro-izquierda en la región: Lula en Brasil (2003-2010), Kirchner en Argentina (2003-2015), Chávez en Venezuela (1999-2013), Morales en Bolivia (2006-2019), Correa en Ecuador (2007-2017).
+</p>
+
+<p>
+Estos gobiernos implementaron políticas redistributivas aprovechando el boom de commodities (precios altos de soja, petróleo, minerales): programas de transferencias condicionadas (Bolsa Família en Brasil, reduciendo pobreza de 34% a 21%), aumentos salariales, expansión educativa y de salud, recuperación del rol estatal.
+</p>
+
+<p>
+Brasil bajo Lula sacó a 40 millones de pobreza. Bolivia redujo pobreza extrema del 38% al 17%. Argentina recuperó crecimiento tras el colapso de 2001. La desigualdad regional cayó del Gini 0.54 (2000) a 0.50 (2010).
+</p>
+
+<p>
+Sin embargo, estos modelos mostraron limitaciones: dependencia del boom de commodities (insostenible cuando los precios cayeron post-2014), corrupción sistémica (Lava Jato en Brasil exponiendo escándalos masivos), caudillismo y erosión institucional (Venezuela deslizándose hacia dictadura bajo Maduro post-2013), insuficiente diversificación productiva.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbc459c6" class="outline-4">
+<h4 id="orgbc459c6">El Giro Conservador (2015-2020)</h4>
+<div class="outline-text-4" id="text-orgbc459c6">
+<p>
+La caída de precios de commodities (2014) y escándalos de corrupción facilitaron giro conservador: Macri en Argentina (2015-2019), Temer y Bolsonaro en Brasil (2016-2022), golpes en Honduras (2009) y Bolivia (2019), restauración neoliberal.
+</p>
+
+<p>
+Estos gobiernos implementaron austeridad, recortes sociales, privatizaciones, reforma laboral regresiva. Los resultados fueron desalentadores: estancamiento económico, aumento de pobreza, descontento masivo.
+</p>
+
+<p>
+Brasil bajo Bolsonaro (2019-2022) vivió desastre multidimensional: gestión catastrófica de COVID (670,000 muertos, negacionismo presidencial), colapso ambiental (deforestación Amazonía disparada), retórica autoritaria amenazando democracia, estancamiento económico.
+</p>
+
+<p>
+Argentina sufrió crisis recurrentes: default de deuda (2020), inflación galopante (140% anual en 2023), pobreza escalando al 40%+. La elección de Javier Milei (2023), libertario radical, representa desesperación ante fracasos repetidos de peronismo y macrismo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org73e6c3b" class="outline-4">
+<h4 id="org73e6c3b">Violencia Crónica y Estados Frágiles</h4>
+<div class="outline-text-4" id="text-org73e6c3b">
+<p>
+América Latina concentra el 8% de la población global pero el 33% de homicidios mundiales. La violencia vinculada al narcotráfico devastó países: México (guerra contra el narco desde 2006, 350,000+ muertos), Centroamérica (maras controlando territorios, estados colapsados), Brasil (55,000+ homicidios anuales).
+</p>
+
+<p>
+La "guerra contra las drogas" fracasó espectacularmente. Algunos países experimentan alternativas: Uruguay legalizó cannabis (2013), Colombia implementó justicia transicional post-conflicto FARC.
+</p>
+
+<p>
+La violencia genera emigración masiva: caravanas centroamericanas hacia EEUU, venezolanos huyendo de dictadura y colapso económico (7+ millones emigrados, 2015-2025, mayor éxodo hemisférico), desplazamiento interno en Colombia y México.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2633158" class="outline-4">
+<h4 id="org2633158">Crisis Democrática y Desafección Ciudadana</h4>
+<div class="outline-text-4" id="text-org2633158">
+<p>
+La confianza en instituciones democráticas colapsó. Solo el 22% de latinoamericanos está satisfecho con la democracia (2025). Los parlamentos, partidos políticos y sistemas judiciales son percibidos como corruptos e ineficaces.
+</p>
+
+<p>
+Esto alimenta: abstención electoral creciente, protestas masivas (Chile 2019, Colombia 2021, Perú 2022), auge de outsiders populistas (Bukele en El Salvador, Milei en Argentina), erosión de normas democráticas.
+</p>
+
+<p>
+El Salvador bajo Bukele ejemplifica el dilema: su "guerra contra pandillas" (estado de excepción desde 2022, 70,000+ arrestos sin debido proceso) redujo dramáticamente homicidios, generando apoyo popular masivo (90%+) a pesar de autoritarismo evidente. Ciudadanos sacrifican libertades por seguridad.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgacb3c1e" class="outline-4">
+<h4 id="orgacb3c1e">Desigualdad Persistente y Movilidad Social Limitada</h4>
+<div class="outline-text-4" id="text-orgacb3c1e">
+<p>
+A pesar de mejoras (2000-2015), América Latina permanece como la región más desigual del mundo. Las élites capturan beneficios del crecimiento mientras las mayorías sobreviven en economías informales (50%+ de trabajadores).
+</p>
+
+<p>
+La educación, teoricamente vía de movilidad social, muestra calidad deficiente. Los resultados PISA ubican a países latinoamericanos en los últimos lugares globales. Las universidades públicas, aunque gratuitas, son inaccesibles para sectores populares por deficiencias educativas previas.
+</p>
+
+<p>
+La pandemia COVID-19 revirtió avances sociales: pobreza aumentó de 29% (2019) a 33% (2020), recuperándose parcialmente a 32% (2025). La desigualdad, que había disminuido, se estancó.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc261286" class="outline-4">
+<h4 id="orgc261286">Bienestar Subjetivo: Frustración y Nostalgia</h4>
+<div class="outline-text-4" id="text-orgc261286">
+<p>
+Los latinoamericanos expresan frustración profunda. Las encuestas muestran:
+</p>
+<ul class="org-ul">
+<li>Solo 30% satisfecho con su situación económica</li>
+<li>65% considera que sus hijos vivirán peor que ellos</li>
+<li>Desconfianza masiva en políticos (5-10% de confianza)</li>
+<li>Percepción de inseguridad omnipresente</li>
+<li>Nostalgia contradictoria por pasados idealizados</li>
+</ul>
+
+<p>
+La emigración hacia EEUU, Europa o Chile (destino regional) se acelera. Los jóvenes educados, desesperanzados, buscan oportunidades afuera.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org72e31e4" class="outline-3">
+<h3 id="org72e31e4">Diagrama: Trampa de Ingreso Medio Latinoamericana</h3>
+<div class="outline-text-3" id="text-org72e31e4">
+
+<div id="org3fb582b" class="figure">
+<p><img src="./assets/images/trampa-latam-xxi.png" alt="trampa-latam-xxi.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orga346071" class="outline-2">
+<h2 id="orga346071">Economías Emergentes: India, África Subsahariana, Asia del Sudeste</h2>
+<div class="outline-text-2" id="text-orga346071">
+</div>
+<div id="outline-container-org4b1b985" class="outline-3">
+<h3 id="org4b1b985">Matriz Comparativa (2000-2025)</h3>
+<div class="outline-text-3" id="text-org4b1b985">
+<table id="org3c8b6a7" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador / Región</th>
+<th scope="col" class="org-right">India 2000</th>
+<th scope="col" class="org-right">India 2025</th>
+<th scope="col" class="org-right">África SS 2000</th>
+<th scope="col" class="org-right">África SS 2025</th>
+<th scope="col" class="org-right">Asia SE 2000</th>
+<th scope="col" class="org-right">Asia SE 2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Esperanza vida (años)</td>
+<td class="org-right">63.0</td>
+<td class="org-right">70.8</td>
+<td class="org-right">50.3</td>
+<td class="org-right">64.2</td>
+<td class="org-right">68.0</td>
+<td class="org-right">75.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Mortalidad infantil (‰)</td>
+<td class="org-right">67.0</td>
+<td class="org-right">27.0</td>
+<td class="org-right">98.0</td>
+<td class="org-right">52.0</td>
+<td class="org-right">35.0</td>
+<td class="org-right">15.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Alfabetización (%)</td>
+<td class="org-right">61.0</td>
+<td class="org-right">77.0</td>
+<td class="org-right">61.0</td>
+<td class="org-right">68.0</td>
+<td class="org-right">92.0</td>
+<td class="org-right">96.5</td>
+</tr>
+
+<tr>
+<td class="org-left">PIB per cápita ($ 2020)</td>
+<td class="org-right">1,950</td>
+<td class="org-right">7,330</td>
+<td class="org-right">1,440</td>
+<td class="org-right">3,920</td>
+<td class="org-right">5,120</td>
+<td class="org-right">12,450</td>
+</tr>
+
+<tr>
+<td class="org-left">Acceso electricidad (%)</td>
+<td class="org-right">56.0</td>
+<td class="org-right">99.5</td>
+<td class="org-right">26.0</td>
+<td class="org-right">48.0</td>
+<td class="org-right">78.0</td>
+<td class="org-right">95.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Usuarios internet (%)</td>
+<td class="org-right">0.7</td>
+<td class="org-right">48.0</td>
+<td class="org-right">1.0</td>
+<td class="org-right">33.0</td>
+<td class="org-right">12.0</td>
+<td class="org-right">73.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orga73186e" class="outline-3">
+<h3 id="orga73186e">India: El Gigante Heterogéneo</h3>
+<div class="outline-text-3" id="text-orga73186e">
+<p>
+India experimentó crecimiento económico robusto (promedio 7% anual 2000-2025), emergiendo como quinta economía mundial. El sector tecnológico (Bangalore, Hyderabad) es líder global. Cientos de millones salieron de pobreza extrema.
+</p>
+
+<p>
+Sin embargo, persisten desafíos monumentales: 
+</p>
+<ul class="org-ul">
+<li>Desigualdad extrema (Gini 0.48)</li>
+<li>200+ millones en pobreza extrema</li>
+<li>Malnutrición infantil masiva (35% con retraso en crecimiento)</li>
+<li>Contaminación atmosférica catastrófica (Delhi entre las ciudades más contaminadas)</li>
+<li>Tensiones religiosas (hindutva bajo Modi, violencia antimusulmana)</li>
+<li>Sistema de castas persistente</li>
+</ul>
+
+<p>
+Bajo Modi (2014-presente), India gira hacia nacionalismo hindú, erosionando secularismo constitucional. La democracia se mantiene pero con libertades en contracción: represión de Cachemira, control de medios, intimidación a minorías.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaf98167" class="outline-3">
+<h3 id="orgaf98167">África Subsahariana: Crecimiento con Fragilidad</h3>
+<div class="outline-text-3" id="text-orgaf98167">
+<p>
+África experimenta el crecimiento demográfico más rápido del mundo (población pasará de 800 millones en 2000 a 1,500 millones en 2025). Esto representa tanto bono demográfico potencial como enorme desafío.
+</p>
+
+<p>
+Logros notables:
+</p>
+<ul class="org-ul">
+<li>Esperanza de vida aumentó 14 años (impacto de tratamientos VIH)</li>
+<li>Acceso a educación primaria prácticamente universal</li>
+<li>Mortalidad infantil cayó a menos de la mitad</li>
+<li>Crecimiento económico robusto en varios países (Etiopía, Ruanda, Ghana)</li>
+<li>Expansión de telefonía móvil y servicios financieros digitales</li>
+</ul>
+
+<p>
+Desafíos persistentes:
+</p>
+<ul class="org-ul">
+<li>Pobreza extrema concentrada (400+ millones)</li>
+<li>Estados frágiles y conflictos (Sahel, Cuerno de África, Congo)</li>
+<li>Cambio climático (sequías, desertificación)</li>
+<li>Dependencia de exportaciones primarias</li>
+<li>Corrupción y mal gobierno</li>
+<li>Infraestructura deficiente</li>
+</ul>
+
+<p>
+La influencia china crece mediante BRI (infraestructura a cambio de recursos), generando dependencia y controversia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5e4d78e" class="outline-3">
+<h3 id="org5e4d78e">Asia del Sudeste: Éxito Relativo con Excepciones</h3>
+<div class="outline-text-3" id="text-org5e4d78e">
+<p>
+La región (ASEAN: Indonesia, Tailandia, Vietnam, Filipinas, Malasia, Singapur, Myanmar, Camboya, Laos, Brunei) muestra trayectorias divergentes.
+</p>
+
+<p>
+<b>Casos de éxito</b>: Vietnam (crecimiento sostenido, industrialización), Indonesia (democracia estable post-Suharto), Singapur (ciudad-estado próspera).
+</p>
+
+<p>
+<b>Casos problemáticos</b>: Myanmar (golpe militar 2021, conflicto civil), Filipinas (guerra contra drogas, miles de ejecuciones extrajudiciales bajo Duterte), Tailandia (golpes militares recurrentes).
+</p>
+
+<p>
+La región se benefició de cadenas globales de valor, atrayendo manufactura que sale de China. La integración económica (ASEAN) promueve comercio regional.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org44f9458" class="outline-2">
+<h2 id="org44f9458">Análisis Comparativo Global del Siglo XXI</h2>
+<div class="outline-text-2" id="text-org44f9458">
+</div>
+<div id="outline-container-org277054a" class="outline-3">
+<h3 id="org277054a">Matriz de Comparación Integral (circa 2025)</h3>
+<div class="outline-text-3" id="text-org277054a">
+<table id="org61ecdad" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Región/Bloque</th>
+<th scope="col" class="org-right">Salud</th>
+<th scope="col" class="org-right">Educación</th>
+<th scope="col" class="org-right">Bienestar Mat.</th>
+<th scope="col" class="org-right">Libertades</th>
+<th scope="col" class="org-right">Igualdad</th>
+<th scope="col" class="org-right">Sostenibilidad</th>
+<th scope="col" class="org-right">Satisfacción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Europa Occidental</td>
+<td class="org-right">9.0</td>
+<td class="org-right">8.5</td>
+<td class="org-right">7.5</td>
+<td class="org-right">8.5</td>
+<td class="org-right">7.0</td>
+<td class="org-right">8.0</td>
+<td class="org-right">6.9</td>
+</tr>
+
+<tr>
+<td class="org-left">Estados Unidos</td>
+<td class="org-right">7.0</td>
+<td class="org-right">8.5</td>
+<td class="org-right">8.5</td>
+<td class="org-right">7.5</td>
+<td class="org-right">5.0</td>
+<td class="org-right">5.5</td>
+<td class="org-right">6.7</td>
+</tr>
+
+<tr>
+<td class="org-left">China</td>
+<td class="org-right">8.0</td>
+<td class="org-right">8.0</td>
+<td class="org-right">7.0</td>
+<td class="org-right">2.0</td>
+<td class="org-right">5.5</td>
+<td class="org-right">3.0</td>
+<td class="org-right">N/D</td>
+</tr>
+
+<tr>
+<td class="org-left">Rusia</td>
+<td class="org-right">6.5</td>
+<td class="org-right">7.5</td>
+<td class="org-right">5.0</td>
+<td class="org-right">1.0</td>
+<td class="org-right">5.0</td>
+<td class="org-right">4.0</td>
+<td class="org-right">6.0</td>
+</tr>
+
+<tr>
+<td class="org-left">América Latina</td>
+<td class="org-right">7.0</td>
+<td class="org-right">6.0</td>
+<td class="org-right">5.0</td>
+<td class="org-right">6.5</td>
+<td class="org-right">4.5</td>
+<td class="org-right">4.0</td>
+<td class="org-right">5.0</td>
+</tr>
+
+<tr>
+<td class="org-left">India</td>
+<td class="org-right">6.0</td>
+<td class="org-right">5.5</td>
+<td class="org-right">5.0</td>
+<td class="org-right">6.0</td>
+<td class="org-right">3.5</td>
+<td class="org-right">3.0</td>
+<td class="org-right">5.5</td>
+</tr>
+
+<tr>
+<td class="org-left">África Subsahar.</td>
+<td class="org-right">4.5</td>
+<td class="org-right">4.5</td>
+<td class="org-right">3.5</td>
+<td class="org-right">5.0</td>
+<td class="org-right">3.0</td>
+<td class="org-right">5.0</td>
+<td class="org-right">5.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Asia del Sudeste</td>
+<td class="org-right">7.5</td>
+<td class="org-right">7.0</td>
+<td class="org-right">6.5</td>
+<td class="org-right">5.5</td>
+<td class="org-right">6.0</td>
+<td class="org-right">5.0</td>
+<td class="org-right">6.5</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">Escala: 0 (pésimo) - 10 (excelente)</td>
+<td class="org-right">N/D = No disponible fiable</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgcd81f3b" class="outline-3">
+<h3 id="orgcd81f3b">Tendencias Globales Dominantes</h3>
+<div class="outline-text-3" id="text-orgcd81f3b">
+</div>
+<div id="outline-container-org156dab0" class="outline-4">
+<h4 id="org156dab0">1. Divergencia entre Crecimiento Económico y Bienestar Subjetivo</h4>
+<div class="outline-text-4" id="text-org156dab0">
+<p>
+El hallazgo más sorprendente del siglo XXI: el crecimiento económico global (PIB mundial aumentó 2.5x entre 2000-2025) no se tradujo en aumentos proporcionales de bienestar subjetivo. La "paradoja de Easterlin" se confirma globalmente.
+</p>
+
+<p>
+Causas identificadas:
+</p>
+<ul class="org-ul">
+<li><b>Desigualdad creciente</b>: los beneficios se concentran en élites</li>
+<li><b>Precariedad laboral</b>: gig economy, contratos temporales, inseguridad</li>
+<li><b>Crisis de sentido</b>: colapso de narrativas colectivas, individualismo extremo</li>
+<li><b>Ansiedad digital</b>: redes sociales, adicción tecnológica, comparación social constante</li>
+<li><b>Crisis climática</b>: ansiedad existencial, especialmente entre jóvenes</li>
+<li><b>Erosión comunitaria</b>: soledad epidémica, fragmentación social</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd224a7b" class="outline-4">
+<h4 id="orgd224a7b">2. El Retorno del Autoritarismo</h4>
+<div class="outline-text-4" id="text-orgd224a7b">
+<p>
+Contra predicciones de triunfo democrático post-1991, el autoritarismo resurge vigorosamente:
+</p>
+<ul class="org-ul">
+<li><b>Autocracias consolidadas</b>: China, Rusia, Arabia Saudita, Emiratos</li>
+<li><b>Democracias iliberales</b>: Hungría, Turquía, India, Filipinas</li>
+<li><b>Erosión democrática</b>: Estados Unidos, Brasil, Polonia, Israel</li>
+</ul>
+
+<p>
+Freedom House reporta: 17 años consecutivos de declive global de libertades (2006-2023). Solo el 13% de la población mundial vive en democracias plenas.
+</p>
+
+<p>
+Causas: inseguridad económica facilita strongmen prometiendo orden, redes sociales permiten propaganda sofisticada, crisis migratoria genera nacionalismo xenófobo, élites globalizadas desconectadas de mayorías.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4c5606d" class="outline-4">
+<h4 id="org4c5606d">3. Crisis Climática como Amenaza Existencial</h4>
+<div class="outline-text-4" id="text-org4c5606d">
+<p>
+El siglo XXI confirmó la realidad del cambio climático antropogénico. Las consecuencias se aceleran:
+</p>
+<ul class="org-ul">
+<li>Temperatura global +1.2°C (2025) respecto a era preindustrial</li>
+<li>Eventos climáticos extremos (sequías, inundaciones, incendios) multiplicados</li>
+<li>Acidificación oceánica, colapso de biodiversidad</li>
+<li>Migraciones climáticas crecientes</li>
+<li>Guerras por recursos (especialmente agua)</li>
+</ul>
+
+<p>
+Las respuestas son insuficientes. El Acuerdo de París (2015) comprometió limitar calentamiento a 1.5-2°C, pero las trayectorias actuales llevan a +2.7°C para 2100. Los países desarrollados incumplen compromisos de financiamiento climático. Los combustibles fósiles continúan dominando (80% de energía primaria).
+</p>
+
+<p>
+África y Asia sufrirán impactos desproporcionados a pesar de contribuir mínimamente a emisiones históricas. La injusticia climática genera tensiones norte-sur explosivas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge41f37a" class="outline-4">
+<h4 id="orge41f37a">4. Revolución Tecnológica: Promesas y Peligros</h4>
+<div class="outline-text-4" id="text-orge41f37a">
+<p>
+La digitalización transformó radicalmente las sociedades:
+</p>
+
+<p>
+<b>Aspectos positivos</b>:
+</p>
+<ul class="org-ul">
+<li>Acceso masivo a información y conocimiento</li>
+<li>Comunicación global instantánea</li>
+<li>Innovaciones en salud (telemedicina, genómica)</li>
+<li>Educación en línea democratizada</li>
+<li>Eficiencia productiva</li>
+</ul>
+
+<p>
+<b>Aspectos negativos</b>:
+</p>
+<ul class="org-ul">
+<li>Vigilancia masiva (China, pero también Occidente)</li>
+<li>Desinformación y polarización (algoritmos de redes sociales)</li>
+<li>Adicción tecnológica y salud mental</li>
+<li>Desempleo tecnológico (automatización)</li>
+<li>Concentración de poder (FAANG en Occidente, BAT en China)</li>
+</ul>
+
+<p>
+La inteligencia artificial emergente (desde 2022) plantea dilemas sin precedentes: desempleo masivo potencial, riesgos existenciales, aumento de desigualdad, sesgos algorítmicos, deep fakes amenazando verdad compartida.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2cc07e0" class="outline-4">
+<h4 id="org2cc07e0">5. Envejecimiento Global y Crisis de Cuidados</h4>
+<div class="outline-text-4" id="text-org2cc07e0">
+<p>
+El envejecimiento poblacional, inicialmente fenómeno de países ricos, se globaliza. China, Corea del Sur, Tailandia envejecen aceleradamente. Solo África y algunos países de Medio Oriente mantienen poblaciones jóvenes.
+</p>
+
+<p>
+Consecuencias:
+</p>
+<ul class="org-ul">
+<li>Presión sobre sistemas de pensiones y salud</li>
+<li>Escasez de trabajadores (Japón, Europa del Este)</li>
+<li>Crisis de cuidados (quién cuida a ancianos)</li>
+<li>Conflictos intergeneracionales por recursos</li>
+<li>Necesidad de migraciones (políticamente explosivas)</li>
+</ul>
+
+<p>
+Las sociedades no han desarrollado respuestas adecuadas. Los sistemas de bienestar diseñados para poblaciones jóvenes son insostenibles con pirámides invertidas.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd8cb4d6" class="outline-3">
+<h3 id="orgd8cb4d6">Diagrama: Policrisis Global del Siglo XXI</h3>
+<div class="outline-text-3" id="text-orgd8cb4d6">
+
+<div id="orgb49b2f2" class="figure">
+<p><img src="./assets/images/policrisis-global-xxi.png" alt="policrisis-global-xxi.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org4f7a285" class="outline-2">
+<h2 id="org4f7a285">Reflexiones Finales: Lecciones del Siglo XXI para el Futuro</h2>
+<div class="outline-text-2" id="text-org4f7a285">
+</div>
+<div id="outline-container-org413ca3a" class="outline-3">
+<h3 id="org413ca3a">La Ilusión del Progreso Lineal</h3>
+<div class="outline-text-3" id="text-org413ca3a">
+<p>
+El siglo XXI desmanteló la narrativa triunfalista post-1991. El progreso no es lineal ni inevitable. Las sociedades pueden retroceder: Estados Unidos vio caer su esperanza de vida, democracias consolidadas derivaron en autocracias, avances sociales fueron revertidos.
+</p>
+
+<p>
+La "historia" no terminó. Las contradicciones del capitalismo globalizado (desigualdad, precariedad, externalidades ambientales) generan inestabilidades crecientes. Los modelos políticos —tanto democracia liberal como autoritarismo— enfrentan crisis de legitimidad.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb1382ca" class="outline-3">
+<h3 id="orgb1382ca">El Dilema Autoritarismo-Desarrollo</h3>
+<div class="outline-text-3" id="text-orgb1382ca">
+<p>
+China desafió la teoría de modernización: demostró que desarrollo económico no conduce automáticamente a democratización. Su modelo —autoritarismo con eficiencia tecnocrática— resulta atractivo para élites de países en desarrollo.
+</p>
+
+<p>
+Sin embargo, los límites emergen: represión creciente, fuga de talentos, innovación limitada por control ideológico, vulnerabilidad a errores sin feedback (COVID inicial).
+</p>
+
+<p>
+Singapur mostró que autocracia benevolente puede generar prosperidad. Pero también mostró límites: sistema insostenible sin Lee Kuan Yew excepcional, libertades individuales sacrificadas, sociedad controlada.
+</p>
+
+<p>
+La conclusión provisional: autoritarismo puede acelerar desarrollo inicial, pero las democracias, con mecanismos de autocorrección, son más resilientes a largo plazo. El dilema persiste sin resolución clara.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd6fb086" class="outline-3">
+<h3 id="orgd6fb086">Europa: ¿El Futuro del Bienestar o Anacronismo?</h3>
+<div class="outline-text-3" id="text-orgd6fb086">
+<p>
+Europa representa el modelo de mayor bienestar integral: salud universal, educación gratuita, protección social robusta, libertades civiles, sostenibilidad ambiental. Sin embargo, enfrenta desafíos existenciales:
+</p>
+
+<ul class="org-ul">
+<li>Envejecimiento que hace insostenible el modelo actual</li>
+<li>Competitividad económica declinante frente a EEUU y China</li>
+<li>Integración de inmigrantes culturalmente difícil</li>
+<li>Energía más cara post-corte de gas ruso</li>
+<li>Déficit de innovación tecnológica</li>
+</ul>
+
+<p>
+¿Es Europa el futuro al que todas las sociedades deberían aspirar, o un lujo insostenible de sociedades prósperas en declive demográfico? La respuesta determinará trayectorias globales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4ebf0da" class="outline-3">
+<h3 id="org4ebf0da">América Latina: La Trampa Perpetua</h3>
+<div class="outline-text-3" id="text-org4ebf0da">
+<p>
+América Latina evidencia que ni progresismo redistributivo (década 2000) ni neoliberalismo ortodoxo (años 90, 2015-2020) generan desarrollo sostenible. La región permanece atrapada entre:
+</p>
+
+<ul class="org-ul">
+<li>Dependencia de commodities y captura de élites</li>
+<li>Instituciones débiles y corrupción endémica</li>
+<li>Desigualdad estructural y economía informal masiva</li>
+<li>Violencia crónica y estados frágiles</li>
+<li>Volatilidad política y falta de consensos</li>
+</ul>
+
+<p>
+Salir requiere: diversificación productiva (nunca lograda consistentemente), fortalecimiento institucional (saboteado por élites), pactos sociales amplios (fragmentación política lo impide), inversión educativa de calidad (recursos insuficientes, clientelismo).
+</p>
+
+<p>
+Sin transformaciones profundas, América Latina continuará oscilando entre populismos y ajustes neoliberales sin resolver contradicciones estructurales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf30fbf9" class="outline-3">
+<h3 id="orgf30fbf9">Bienestar en la Era Digital: Nuevas Dimensiones</h3>
+<div class="outline-text-3" id="text-orgf30fbf9">
+<p>
+El siglo XXI reveló que el bienestar humano incluye dimensiones antes no consideradas:
+</p>
+
+<ul class="org-ul">
+<li><b>Derecho a la desconexión</b>: no estar permanentemente disponible digitalmente</li>
+<li><b>Privacidad de datos</b>: control sobre información personal</li>
+<li><b>Libertad frente a manipulación algorítmica</b>: no ser objetivo de propaganda microfocalizada</li>
+<li><b>Salud mental</b>: tan importante como salud física</li>
+<li><b>Sentido y propósito</b>: no solo consumo material</li>
+<li><b>Comunidad y pertenencia</b>: contra soledad epidémica</li>
+<li><b>Justicia intergeneracional</b>: no hipotecar futuro por presente</li>
+</ul>
+
+<p>
+Los sistemas políticos y económicos actuales no abordan adecuadamente estas dimensiones. Se requiere reimaginación radical de qué constituye vida buena en siglo XXI.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org358dfe2" class="outline-3">
+<h3 id="org358dfe2">El Desafío Climático como Imperativo Civilizatorio</h3>
+<div class="outline-text-3" id="text-org358dfe2">
+<p>
+El cambio climático es el desafío definitorio del siglo XXI. Requiere cooperación global sin precedentes, precisamente cuando la geopolítica se fragmenta (rivalidad EEUU-China, guerra Rusia-Occidente, sur global resentido).
+</p>
+
+<p>
+Las soluciones técnicas existen (renovables, eficiencia energética, electrificación), pero la economía política las bloquea: intereses de industrias fósiles, distribución desigual de costos de transición, países en desarrollo exigiendo justicia (derecho a desarrollarse).
+</p>
+
+<p>
+El fracaso en limitar el calentamiento a 1.5-2°C generará: colapsos de ecosistemas, migraciones masivas, guerras por recursos, hambrunas, pandemias. Los países pobres, mínimamente responsables, sufrirán desproporcionadamente.
+</p>
+
+<p>
+La humanidad enfrenta una prueba existencial: ¿puede cooperar para evitar catástrofe, o las rivalidades geopolíticas y la codicia a corto plazo nos conducen al colapso civilizatorio?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge939e39" class="outline-3">
+<h3 id="orge939e39">Para el Ciudadano del Siglo XXI</h3>
+<div class="outline-text-3" id="text-orge939e39">
+<p>
+Las lecciones de estas primeras décadas son claras:
+</p>
+
+<ol class="org-ol">
+<li><b>El crecimiento económico no garantiza bienestar</b>. Importa cómo se distribuye y qué se sacrifica para lograrlo.</li>
+
+<li><b>Las libertades políticas son frágiles</b>. Requieren vigilancia constante. El autoritarismo resurge fácilmente explotando miedos.</li>
+
+<li><b>La desigualdad extrema corroe sociedades</b>. No es solo injusta moralmente; genera inestabilidad, polarización, erosión de confianza.</li>
+
+<li><b>La tecnología es ambivalente</b>. No es neutral. Su diseño y control determinan si libera o esclaviza.</li>
+
+<li><b>El individualismo extremo es insostenible</b>. Los humanos necesitan comunidad, propósito compartido, pertenencia.</li>
+
+<li><b>La sostenibilidad ambiental no es opcional</b>. La biosfera tiene límites. Superarlos genera colapso.</li>
+
+<li><b>La complejidad requiere humildad</b>. No hay soluciones simples. Desconfiar de salvadores con respuestas fáciles.</li>
+
+<li><b>La democracia, con todos sus defectos, sigue siendo superior a alternativas</b>. Permite corregir errores sin violencia.</li>
+
+<li><b>El bienestar es multidimensional</b>. Salud, educación, libertad, comunidad, sentido, sostenibilidad: todas importan.</li>
+
+<li><b>El futuro no está escrito</b>. Las trayectorias son contingentes. La acción colectiva puede cambiarlas.</li>
+</ol>
+
+<p>
+El siglo XXI es era de policrisis: climática, democrática, económica, sanitaria, de sentido. Estas crisis están interconectadas. Las respuestas requieren pensamiento sistémico, cooperación global, y reimaginación de cómo organizamos sociedades.
+</p>
+
+<p>
+La pregunta definitoria: ¿Seremos capaces de crear sistemas que maximicen bienestar humano integral (material, libertad, comunidad, sostenibilidad) para todos, o continuaremos en caminos que generan prosperidad para minorías mientras mayorías sufren y el planeta se degrada irreversiblemente?
+</p>
+
+<p>
+La respuesta depende de las decisiones políticas, económicas y sociales de los próximos años. La ventana de oportunidad para corregir rumbo se estrecha. La historia juzgará a esta generación por su capacidad —o incapacidad— de responder adecuadamente.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3db43f8" class="outline-2">
+<h2 id="org3db43f8">Referencias Bibliográficas</h2>
+<div class="outline-text-2" id="text-org3db43f8">
+<ol class="org-ol">
+<li>Piketty, Thomas (2019). <b>Capital e Ideología</b>. Ediciones Deusto.</li>
+
+<li>Milanovic, Branko (2016). <b>Global Inequality: A New Approach for the Age of Globalization</b>. Harvard University Press.</li>
+
+<li>Snyder, Timothy (2018). <b>The Road to Unfreedom: Russia, Europe, America</b>. Tim Duggan Books.</li>
+
+<li>Klein, Naomi (2014). <b>This Changes Everything: Capitalism vs. The Climate</b>. Simon &amp; Schuster.</li>
+
+<li>Case, Anne &amp; Deaton, Angus (2020). <b>Deaths of Despair and the Future of Capitalism</b>. Princeton University Press.</li>
+
+<li>Rodrik, Dani (2018). <b>Straight Talk on Trade: Ideas for a Sane World Economy</b>. Princeton University Press.</li>
+
+<li>Levitsky, Steven &amp; Ziblatt, Daniel (2018). <b>How Democracies Die</b>. Crown Publishing.</li>
+
+<li>Economy, Elizabeth C. (2018). <b>The Third Revolution: Xi Jinping and the New Chinese State</b>. Oxford University Press.</li>
+
+<li>UNDP (2020-2025). <b>Human Development Reports</b>. United Nations Development Programme.</li>
+
+<li>World Bank (2022). <b>Poverty and Shared Prosperity Report</b>. World Bank Group.</li>
+
+<li>Applebaum, Anne (2020). <b>Twilight of Democracy: The Seductive Lure of Authoritarianism</b>. Doubleday.</li>
+
+<li>Klein, Ezra (2020). <b>Why We're Polarized</b>. Avid Reader Press.</li>
+
+<li>CEPAL (2024). <b>Panorama Social de América Latina</b>. Comisión Económica para América Latina y el Caribe.</li>
+
+<li>IPCC (2023). <b>Sixth Assessment Report: Climate Change</b>. Intergovernmental Panel on Climate Change.</li>
+
+<li>Freedom House (2024). <b>Freedom in the World 2024: The Decline of Democracy</b>. Freedom House.</li>
+
+<li>Fukuyama, Francis (2022). <b>Liberalism and Its Discontents</b>. Farrar, Straus and Giroux.</li>
+
+<li>Mounk, Yascha (2018). <b>The People vs. Democracy: Why Our Freedom Is in Danger and How to Save It</b>. Harvard University Press.</li>
+
+<li>Acemoglu, Daron &amp; Robinson, James A. (2019). <b>The Narrow Corridor: States, Societies, and the Fate of Liberty</b>. Penguin Press.</li>
+
+<li>Stiglitz, Joseph E. (2019). <b>People, Power, and Profits: Progressive Capitalism for an Age of Discontent</b>. W. W. Norton &amp; Company.</li>
+
+<li>World Happiness Report (2024). <b>Sustainable Development Solutions Network</b>. United Nations.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgad101d2" class="outline-2">
+<h2 id="orgad101d2">Apéndice: Metodología de Valoración</h2>
+<div class="outline-text-2" id="text-orgad101d2">
+</div>
+<div id="outline-container-org96be10b" class="outline-3">
+<h3 id="org96be10b">Criterios de Evaluación por Dimensión</h3>
+<div class="outline-text-3" id="text-org96be10b">
+<p>
+Las evaluaciones cuantitativas (escala 0-10) en las matrices comparativas se basan en los siguientes criterios estandarizados:
+</p>
+</div>
+
+<div id="outline-container-orga693c78" class="outline-4">
+<h4 id="orga693c78">Salud (0-10)</h4>
+<div class="outline-text-4" id="text-orga693c78">
+<ul class="org-ul">
+<li>10: Esperanza vida &gt;82 años, mortalidad infantil &lt;3‰, acceso universal salud de calidad</li>
+<li>7-9: Esperanza vida 75-82, mortalidad infantil 3-10‰, acceso amplio</li>
+<li>4-6: Esperanza vida 65-75, mortalidad infantil 10-30‰, acceso limitado</li>
+<li>0-3: Esperanza vida &lt;65, mortalidad infantil &gt;30‰, acceso deficiente</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org30cdfc4" class="outline-4">
+<h4 id="org30cdfc4">Educación (0-10)</h4>
+<div class="outline-text-4" id="text-org30cdfc4">
+<ul class="org-ul">
+<li>10: &gt;50% educación superior, alfabetización &gt;99%, calidad alta (PISA &gt;500)</li>
+<li>7-9: 30-50% educación superior, alfabetización &gt;95%, calidad media-alta</li>
+<li>4-6: 15-30% educación superior, alfabetización 80-95%, calidad media</li>
+<li>0-3: &lt;15% educación superior, alfabetización &lt;80%, calidad baja</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfdb0b66" class="outline-4">
+<h4 id="orgfdb0b66">Bienestar Material (0-10)</h4>
+<div class="outline-text-4" id="text-orgfdb0b66">
+<ul class="org-ul">
+<li>10: PIB per cápita &gt;$40k, acceso universal servicios básicos, tecnología</li>
+<li>7-9: PIB per cápita $20-40k, acceso amplio servicios, consumo adecuado</li>
+<li>4-6: PIB per cápita $8-20k, acceso parcial servicios, consumo limitado</li>
+<li>0-3: PIB per cápita &lt;$8k, acceso deficiente servicios, pobreza extendida</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org07800a9" class="outline-4">
+<h4 id="org07800a9">Libertades (0-10)</h4>
+<div class="outline-text-4" id="text-org07800a9">
+<ul class="org-ul">
+<li>10: Democracia plena, Estado de derecho sólido, libertades civiles completas</li>
+<li>7-9: Democracia funcional, Estado de derecho moderado, libertades amplias</li>
+<li>4-6: Democracia defectuosa/híbrido, Estado derecho débil, libertades limitadas</li>
+<li>0-3: Autoritarismo, Estado derecho ausente, libertades mínimas/nulas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga20be3c" class="outline-4">
+<h4 id="orga20be3c">Igualdad (0-10)</h4>
+<div class="outline-text-4" id="text-orga20be3c">
+<ul class="org-ul">
+<li>10: Gini &lt;0.25, movilidad social alta, oportunidades equitativas</li>
+<li>7-9: Gini 0.25-0.35, movilidad social moderada-alta, oportunidades amplias</li>
+<li>4-6: Gini 0.35-0.45, movilidad social moderada-baja, oportunidades limitadas</li>
+<li>0-3: Gini &gt;0.45, movilidad social mínima, oportunidades concentradas en élites</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org476db4f" class="outline-4">
+<h4 id="org476db4f">Sostenibilidad (0-10)</h4>
+<div class="outline-text-4" id="text-org476db4f">
+<ul class="org-ul">
+<li>10: Emisiones &lt;3 ton CO₂/cap, energías renovables &gt;70%, conservación ecosistemas</li>
+<li>7-9: Emisiones 3-6 ton, renovables 40-70%, políticas ambientales sólidas</li>
+<li>4-6: Emisiones 6-10 ton, renovables 20-40%, políticas ambientales moderadas</li>
+<li>0-3: Emisiones &gt;10 ton, renovables &lt;20%, degradación ambiental severa</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf48f1f1" class="outline-4">
+<h4 id="orgf48f1f1">Satisfacción Subjetiva (0-10)</h4>
+<div class="outline-text-4" id="text-orgf48f1f1">
+<ul class="org-ul">
+<li>Basada en encuestas de satisfacción de vida (World Happiness Report, Gallup)</li>
+<li>Se correlaciona imperfectamente con indicadores objetivos</li>
+<li>Refleja percepción ciudadana de bienestar integral</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb9dd52d" class="outline-3">
+<h3 id="orgb9dd52d">Limitaciones Metodológicas</h3>
+<div class="outline-text-3" id="text-orgb9dd52d">
+<ol class="org-ol">
+<li><b>Promedios regionales</b>: Ocultan heterogeneidad interna significativa (ej: Europa incluye Noruega y Bulgaria con realidades muy distintas)</li>
+
+<li><b>Datos autoritarios</b>: Cifras de China, Rusia pueden estar manipuladas; percepción ciudadana inaccesible fiablemente</li>
+
+<li><b>Comparabilidad temporal</b>: Definiciones y metodologías de medición evolucionan, afectando comparaciones</li>
+
+<li><b>Causalidad compleja</b>: Correlaciones no implican causalidad; múltiples factores interactúan</li>
+
+<li><b>Valores culturales</b>: Satisfacción subjetiva depende de expectativas culturalmente determinadas</li>
+
+<li><b>Sesgo de supervivencia</b>: Análisis excluye a quienes no sobrevivieron para reportar (víctimas de conflictos, migrantes perdidos)</li>
+</ol>
+
+<p>
+A pesar de limitaciones, el análisis comparativo ofrece perspectiva valiosa sobre trayectorias relativas de desarrollo y bienestar.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org146f1a2" class="outline-2">
+<h2 id="org146f1a2">Conclusión: Navegando la Incertidumbre</h2>
+<div class="outline-text-2" id="text-org146f1a2">
+<p>
+El siglo XXI, apenas en su primer cuarto, ha demostrado ser una era de transformaciones vertiginosas y contradicciones profundas. El optimismo ingenuo del "fin de la historia" de los años 90 dio paso a la realidad de un mundo multipolar, inestable, enfrentando desafíos existenciales sin precedentes.
+</p>
+
+<p>
+No existe un modelo único de desarrollo que garantice bienestar integral. Europa Occidental, el modelo más equilibrado, enfrenta sostenibilidad cuestionada. Estados Unidos muestra que prosperidad material sin cohesión social genera crisis. China demuestra que autoritarismo puede coexistir con desarrollo económico, pero a costa de libertades fundamentales. América Latina permanece atrapada en ciclos de esperanza y decepción. Los países emergentes muestran que el desarrollo tardío es posible pero plagado de obstáculos.
+</p>
+
+<p>
+Las crisis se multiplican e interconectan: climática, democrática, de desigualdad, de sentido. Las soluciones requieren cooperación global precisamente cuando el mundo se fragmenta en bloques rivales. La ventana para evitar catástrofes climáticas y sociales se estrecha.
+</p>
+
+<p>
+Sin embargo, la historia humana es historia de superación de desafíos aparentemente insuperables. La abolición de la esclavitud, la erradicación de enfermedades, la extensión de derechos civiles, la reducción de pobreza extrema —todos parecían imposibles hasta que sucedieron.
+</p>
+
+<p>
+El futuro no está determinado. Depende de las decisiones colectivas: políticas que prioricen bienestar integral sobre crecimiento abstracto, instituciones que equilibren eficiencia y justicia, tecnologías diseñadas para servir a la humanidad no para explotarla, economías que operen dentro de límites planetarios, culturas que valoren comunidad y sostenibilidad tanto como logro individual.
+</p>
+
+<p>
+La tarea de esta generación es monumental: rediseñar sistemas para el bienestar universal en un planeta finito. El costo del fracaso —colapso civilizatorio— es inaceptable. La recompensa del éxito —florecimiento humano sostenible— es invaluable.
+</p>
+
+<p>
+La historia nos observa. Nuestros descendientes juzgarán si estuvimos a la altura del desafío o si fuimos la generación que, teniendo el conocimiento y los recursos para cambiar el rumbo, no tuvo la voluntad política y moral para hacerlo.
+</p>
+
+<p>
+El tiempo de actuar es ahora. El futuro del bienestar humano y del planeta depende de ello.
+</p>
+
+
+<p class="post-meta">Publicado el 2026-01-09 19:59 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:18</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

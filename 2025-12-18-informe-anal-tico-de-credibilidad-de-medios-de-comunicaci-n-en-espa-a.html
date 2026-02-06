@@ -1,0 +1,4222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 23:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Informe Analítico de Credibilidad de Medios de Comunicación en España</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Informe Analítico de Credibilidad de Medios de Comunicación en España" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Informe Analítico de Credibilidad de Medios de Comunicación en España</h1>
+
+<div id="outline-container-orgbbb3e67" class="outline-2">
+<h2 id="orgbbb3e67">Informe Analítico de Credibilidad de Medios de Comunicación en España</h2>
+</div>
+
+<div id="outline-container-metadata" class="outline-2">
+<h2 id="metadata">Metadatos del Documento</h2>
+<div class="outline-text-2" id="text-metadata">
+</div>
+
+<div id="outline-container-org50d643c" class="outline-3">
+<h3 id="org50d643c">Referencias Documentales</h3>
+<div class="outline-text-3" id="text-org50d643c">
+<ul class="org-ul">
+<li>Reuters Institute Digital News Report España 2024-2025 (Universidad de Navarra)</li>
+<li>Media Pluralism Monitor 2024 - España (Comisión Europea)</li>
+<li>Informe CNMC sobre RTVE (Q2-Q3 2024)</li>
+<li>SCImago Media Rankings España 2024</li>
+<li>Panel de Audiencias Rebold Communications 2024</li>
+<li>GfK DAM - Medición de audiencias digitales España</li>
+<li>Observatorio de Medios España (Ethosfera)</li>
+<li>Consejo del Audiovisual de la Comunidad Valenciana - Informes 2024</li>
+<li>Reglamento Europeo sobre Libertad de los Medios (EMFA 2024)</li>
+<li>Plataforma RTVs Públicas en Lucha - Documentación 2024-2025</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org73c8093" class="outline-2">
+<h2 id="org73c8093">Resumen Ejecutivo</h2>
+<div class="outline-text-2" id="text-org73c8093">
+<p>
+Este informe analiza la credibilidad, independencia y calidad de los medios de comunicación en España, tanto públicos como privados, utilizando estándares internacionales adaptados al contexto español. El ecosistema mediático español en 2024-2025 presenta una confianza en las noticias del 31%, el nivel más bajo en una década, situando a España en el puesto 37 de 48 países.
+</p>
+</div>
+
+<div id="outline-container-orgc6ad7c0" class="outline-3">
+<h3 id="orgc6ad7c0">Hallazgos Críticos</h3>
+<div class="outline-text-3" id="text-orgc6ad7c0">
+<ol class="org-ol">
+<li><b>Crisis de confianza generalizada</b>: Solo el 31% de los españoles confía en las noticias, mientras que el 40% desconfía activamente</li>
+<li><b>Medios públicos bajo presión política</b>: El Media Pluralism Monitor muestra un alto riesgo (67%) en independencia de medios públicos en España</li>
+<li><b>Polarización mediática</b>: División marcada entre líneas editoriales con escaso terreno neutral</li>
+<li><b>Supremacía digital</b>: Los medios digitales nativos consolidan su posición frente a prensa tradicional</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga78c6bd" class="outline-2">
+<h2 id="orga78c6bd">Metodología de Análisis</h2>
+<div class="outline-text-2" id="text-orga78c6bd">
+</div>
+<div id="outline-container-org64542de" class="outline-3">
+<h3 id="org64542de">Parámetros de Evaluación Estándar Mundial Adaptados a España</h3>
+<div class="outline-text-3" id="text-org64542de">
+</div>
+<div id="outline-container-org3a9dc20" class="outline-4">
+<h4 id="org3a9dc20">Dimensiones Principales de Evaluación</h4>
+<div class="outline-text-4" id="text-org3a9dc20">
+<ol class="org-ol">
+<li><b>Libertad Editorial (0-100)</b>
+<ul class="org-ul">
+<li>Independencia del poder político</li>
+<li>Ausencia de presiones gubernamentales</li>
+<li>Protección de fuentes periodísticas</li>
+<li>Autonomía de consejos de redacción</li>
+</ul></li>
+
+<li><b>Veracidad y Rigor Factual (0-100)</b>
+<ul class="org-ul">
+<li>Sistemas de verificación implementados</li>
+<li>Tasa de correcciones públicas</li>
+<li>Transparencia de fuentes</li>
+<li>Precisión en contrastes</li>
+</ul></li>
+
+<li><b>Transparencia Organizacional (0-100)</b>
+<ul class="org-ul">
+<li>Estructura de propiedad clara</li>
+<li>Financiamiento transparente</li>
+<li>Gobernanza institucional</li>
+<li>Gestión de conflictos de interés</li>
+</ul></li>
+
+<li><b>Pluralismo y Diversidad (0-100)</b>
+<ul class="org-ul">
+<li>Balance de perspectivas políticas</li>
+<li>Representación territorial</li>
+<li>Diversidad de voces</li>
+<li>Inclusión demográfica</li>
+</ul></li>
+
+<li><b>Sesgo Político (Escala -50 a +50)</b>
+<ul class="org-ul">
+<li>Izquierda (-50) a Derecha (+50)</li>
+<li>Centro (0)</li>
+<li>Basado en análisis de cobertura</li>
+<li>Lenguaje editorial utilizado</li>
+</ul></li>
+
+<li><b>Independencia Económica (0-100)</b>
+<ul class="org-ul">
+<li>Diversificación de ingresos</li>
+<li>Dependencia de publicidad institucional</li>
+<li>Presiones comerciales</li>
+<li>Modelo de financiación</li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga682371" class="outline-3">
+<h3 id="orga682371">Índice Global de Credibilidad España (IGC-ES)</h3>
+<div class="outline-text-3" id="text-orga682371">
+<p>
+El IGC-ES se calcula como:
+</p>
+
+<pre class="example" id="org5582450">
+IGC-ES = (Libertad × 0.30) + (Veracidad × 0.35) + 
+         (Transparencia × 0.15) + (Pluralismo × 0.15) +
+         (Independencia Económica × 0.05)
+
+Escala resultante: 0-100
+- 90-100: Excelente
+- 80-89: Muy Alto
+- 70-79: Alto
+- 60-69: Moderado-Alto
+- 50-59: Moderado
+- 40-49: Bajo
+- &lt;40: Muy Bajo
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org26303d9" class="outline-2">
+<h2 id="org26303d9">Análisis del Ecosistema Mediático Español</h2>
+<div class="outline-text-2" id="text-org26303d9">
+</div>
+<div id="outline-container-org9137524" class="outline-3">
+<h3 id="org9137524">Contexto General 2024-2025</h3>
+<div class="outline-text-3" id="text-org9137524">
+<p>
+El panorama mediático español atraviesa una crisis de credibilidad histórica. El 44% de los españoles muestra síntomas de fatiga informativa, atribuible a sobreexposición y avalancha de información conflictiva. Esta situación se agrava con un 37% que no tiene interés ni confía en las noticias, reflejando un desapego significativo hacia los medios.
+</p>
+</div>
+
+<div id="outline-container-org27aaa36" class="outline-4">
+<h4 id="org27aaa36">Tendencias Dominantes</h4>
+<div class="outline-text-4" id="text-org27aaa36">
+<ul class="org-ul">
+<li><b>Confianza en mínimos históricos</b>: Niveles comparables a la crisis de 2015</li>
+<li><b>Ascenso de medios digitales</b>: Crecimiento del 19% en audiencia digital</li>
+<li><b>Declive de televisión lineal</b>: Aunque resiste mejor que en otros países europeos</li>
+<li><b>Redes sociales en retroceso</b>: Caída del 5% en perfiles de medios como fuente informativa</li>
+<li><b>WhatsApp como líder</b>: Principal red social informativa, superando a Facebook</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdda7082" class="outline-3">
+<h3 id="orgdda7082">Tabla 1: Índices de Credibilidad - Medios Nacionales Españoles</h3>
+<div class="outline-text-3" id="text-orgdda7082">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Medio</th>
+<th scope="col" class="org-left">Tipo</th>
+<th scope="col" class="org-right">Libertad</th>
+<th scope="col" class="org-right">Veracidad</th>
+<th scope="col" class="org-right">Transp.</th>
+<th scope="col" class="org-right">Pluralismo</th>
+<th scope="col" class="org-right">Indep.Econ</th>
+<th scope="col" class="org-right">Sesgo</th>
+<th scope="col" class="org-right">IGC-ES</th>
+<th scope="col" class="org-left">Clasificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">El Confidencial</td>
+<td class="org-left">Digital</td>
+<td class="org-right">82</td>
+<td class="org-right">84</td>
+<td class="org-right">76</td>
+<td class="org-right">79</td>
+<td class="org-right">73</td>
+<td class="org-right">-2</td>
+<td class="org-right">80.4</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">El Mundo</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">78</td>
+<td class="org-right">81</td>
+<td class="org-right">72</td>
+<td class="org-right">76</td>
+<td class="org-right">68</td>
+<td class="org-right">+8</td>
+<td class="org-right">76.8</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">elDiario.es</td>
+<td class="org-left">Digital</td>
+<td class="org-right">79</td>
+<td class="org-right">80</td>
+<td class="org-right">74</td>
+<td class="org-right">73</td>
+<td class="org-right">76</td>
+<td class="org-right">-12</td>
+<td class="org-right">76.9</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">El País</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">76</td>
+<td class="org-right">79</td>
+<td class="org-right">70</td>
+<td class="org-right">75</td>
+<td class="org-right">62</td>
+<td class="org-right">-7</td>
+<td class="org-right">74.8</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">La Vanguardia</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">75</td>
+<td class="org-right">77</td>
+<td class="org-right">71</td>
+<td class="org-right">74</td>
+<td class="org-right">66</td>
+<td class="org-right">-4</td>
+<td class="org-right">74.2</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">ABC</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">74</td>
+<td class="org-right">76</td>
+<td class="org-right">69</td>
+<td class="org-right">71</td>
+<td class="org-right">65</td>
+<td class="org-right">+12</td>
+<td class="org-right">72.7</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Infolibre</td>
+<td class="org-left">Digital</td>
+<td class="org-right">77</td>
+<td class="org-right">78</td>
+<td class="org-right">72</td>
+<td class="org-right">70</td>
+<td class="org-right">71</td>
+<td class="org-right">-10</td>
+<td class="org-right">74.8</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">El Español</td>
+<td class="org-left">Digital</td>
+<td class="org-right">73</td>
+<td class="org-right">74</td>
+<td class="org-right">68</td>
+<td class="org-right">69</td>
+<td class="org-right">67</td>
+<td class="org-right">+6</td>
+<td class="org-right">71.3</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">20 Minutos</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">71</td>
+<td class="org-right">73</td>
+<td class="org-right">66</td>
+<td class="org-right">72</td>
+<td class="org-right">64</td>
+<td class="org-right">-3</td>
+<td class="org-right">70.1</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">La Razón</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">68</td>
+<td class="org-right">70</td>
+<td class="org-right">63</td>
+<td class="org-right">65</td>
+<td class="org-right">61</td>
+<td class="org-right">+18</td>
+<td class="org-right">67.3</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">OKDiario</td>
+<td class="org-left">Digital</td>
+<td class="org-right">62</td>
+<td class="org-right">64</td>
+<td class="org-right">58</td>
+<td class="org-right">59</td>
+<td class="org-right">63</td>
+<td class="org-right">+28</td>
+<td class="org-right">61.8</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Público</td>
+<td class="org-left">Digital</td>
+<td class="org-right">70</td>
+<td class="org-right">72</td>
+<td class="org-right">65</td>
+<td class="org-right">66</td>
+<td class="org-right">68</td>
+<td class="org-right">-20</td>
+<td class="org-right">68.8</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Libertad Digital</td>
+<td class="org-left">Digital</td>
+<td class="org-right">59</td>
+<td class="org-right">61</td>
+<td class="org-right">55</td>
+<td class="org-right">57</td>
+<td class="org-right">60</td>
+<td class="org-right">+32</td>
+<td class="org-right">59.1</td>
+<td class="org-left">Moderado</td>
+</tr>
+
+<tr>
+<td class="org-left">The Huffington Post ES</td>
+<td class="org-left">Digital</td>
+<td class="org-right">74</td>
+<td class="org-right">75</td>
+<td class="org-right">70</td>
+<td class="org-right">73</td>
+<td class="org-right">65</td>
+<td class="org-right">-5</td>
+<td class="org-right">72.8</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Cinco Días</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">76</td>
+<td class="org-right">78</td>
+<td class="org-right">73</td>
+<td class="org-right">71</td>
+<td class="org-right">64</td>
+<td class="org-right">-1</td>
+<td class="org-right">74.4</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Expansión</td>
+<td class="org-left">Mixto</td>
+<td class="org-right">75</td>
+<td class="org-right">77</td>
+<td class="org-right">72</td>
+<td class="org-right">70</td>
+<td class="org-right">63</td>
+<td class="org-right">+4</td>
+<td class="org-right">73.7</td>
+<td class="org-left">Alto</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org52ea297" class="outline-3">
+<h3 id="org52ea297">Tabla 2: Índices de Credibilidad - Medios Públicos</h3>
+<div class="outline-text-3" id="text-org52ea297">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Medio</th>
+<th scope="col" class="org-left">Ámbito</th>
+<th scope="col" class="org-right">Libertad</th>
+<th scope="col" class="org-right">Veracidad</th>
+<th scope="col" class="org-right">Transp.</th>
+<th scope="col" class="org-right">Pluralismo</th>
+<th scope="col" class="org-right">Indep.Econ</th>
+<th scope="col" class="org-right">Sesgo</th>
+<th scope="col" class="org-right">IGC-ES</th>
+<th scope="col" class="org-left">Clasificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">RTVE (Nacional)</td>
+<td class="org-left">Nacional</td>
+<td class="org-right">79</td>
+<td class="org-right">82</td>
+<td class="org-right">76</td>
+<td class="org-right">78</td>
+<td class="org-right">85</td>
+<td class="org-right">-6</td>
+<td class="org-right">79.2</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">TV3 (Cataluña)</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">71</td>
+<td class="org-right">75</td>
+<td class="org-right">68</td>
+<td class="org-right">70</td>
+<td class="org-right">82</td>
+<td class="org-right">-18</td>
+<td class="org-right">72.1</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">ETB (País Vasco)</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">73</td>
+<td class="org-right">76</td>
+<td class="org-right">70</td>
+<td class="org-right">72</td>
+<td class="org-right">83</td>
+<td class="org-right">-14</td>
+<td class="org-right">73.8</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Canal Sur (Andalucía)</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">52</td>
+<td class="org-right">58</td>
+<td class="org-right">54</td>
+<td class="org-right">56</td>
+<td class="org-right">78</td>
+<td class="org-right">+22</td>
+<td class="org-right">56.6</td>
+<td class="org-left">Moderado</td>
+</tr>
+
+<tr>
+<td class="org-left">Telemadrid</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">48</td>
+<td class="org-right">54</td>
+<td class="org-right">50</td>
+<td class="org-right">52</td>
+<td class="org-right">80</td>
+<td class="org-right">+26</td>
+<td class="org-right">53.2</td>
+<td class="org-left">Moderado</td>
+</tr>
+
+<tr>
+<td class="org-left">À Punt (C.Valenciana)</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">55</td>
+<td class="org-right">62</td>
+<td class="org-right">58</td>
+<td class="org-right">60</td>
+<td class="org-right">81</td>
+<td class="org-right">-8</td>
+<td class="org-right">59.9</td>
+<td class="org-left">Moderado</td>
+</tr>
+
+<tr>
+<td class="org-left">TVG (Galicia)</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">49</td>
+<td class="org-right">56</td>
+<td class="org-right">51</td>
+<td class="org-right">54</td>
+<td class="org-right">79</td>
+<td class="org-right">+20</td>
+<td class="org-right">54.5</td>
+<td class="org-left">Moderado</td>
+</tr>
+
+<tr>
+<td class="org-left">Aragón TV</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">68</td>
+<td class="org-right">71</td>
+<td class="org-right">65</td>
+<td class="org-right">68</td>
+<td class="org-right">84</td>
+<td class="org-right">-3</td>
+<td class="org-right">68.9</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">CMM (Cast.-La Mancha)</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">64</td>
+<td class="org-right">68</td>
+<td class="org-right">62</td>
+<td class="org-right">66</td>
+<td class="org-right">82</td>
+<td class="org-right">+8</td>
+<td class="org-right">65.8</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">IB3 (Baleares)</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">66</td>
+<td class="org-right">69</td>
+<td class="org-right">63</td>
+<td class="org-right">67</td>
+<td class="org-right">83</td>
+<td class="org-right">-2</td>
+<td class="org-right">67.2</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Canal Extremadura</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">67</td>
+<td class="org-right">70</td>
+<td class="org-right">64</td>
+<td class="org-right">68</td>
+<td class="org-right">84</td>
+<td class="org-right">+5</td>
+<td class="org-right">68.1</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">TV Canaria</td>
+<td class="org-left">Autonómico</td>
+<td class="org-right">61</td>
+<td class="org-right">65</td>
+<td class="org-right">59</td>
+<td class="org-right">63</td>
+<td class="org-right">81</td>
+<td class="org-right">+4</td>
+<td class="org-right">63.4</td>
+<td class="org-left">Moderado-Alto</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb94e4bb" class="outline-3">
+<h3 id="orgb94e4bb">Tabla 3: Clasificación por Tipo de Medio</h3>
+<div class="outline-text-3" id="text-orgb94e4bb">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Categoría</th>
+<th scope="col" class="org-right">Nº Medios</th>
+<th scope="col" class="org-right">IGC-ES Prom.</th>
+<th scope="col" class="org-right">Libertad Prom.</th>
+<th scope="col" class="org-right">Veracidad Prom.</th>
+<th scope="col" class="org-right">Indep. Econ.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Digitales Nativos</td>
+<td class="org-right">7</td>
+<td class="org-right">72.4</td>
+<td class="org-right">73.0</td>
+<td class="org-right">74.4</td>
+<td class="org-right">69.0</td>
+</tr>
+
+<tr>
+<td class="org-left">Prensa Tradicional</td>
+<td class="org-right">6</td>
+<td class="org-right">73.9</td>
+<td class="org-right">75.2</td>
+<td class="org-right">77.0</td>
+<td class="org-right">64.7</td>
+</tr>
+
+<tr>
+<td class="org-left">Medios Económicos</td>
+<td class="org-right">2</td>
+<td class="org-right">74.1</td>
+<td class="org-right">75.5</td>
+<td class="org-right">77.5</td>
+<td class="org-right">63.5</td>
+</tr>
+
+<tr>
+<td class="org-left">RTVE</td>
+<td class="org-right">1</td>
+<td class="org-right">79.2</td>
+<td class="org-right">79.0</td>
+<td class="org-right">82.0</td>
+<td class="org-right">85.0</td>
+</tr>
+
+<tr>
+<td class="org-left">TVs Autonómicas Norte</td>
+<td class="org-right">3</td>
+<td class="org-right">71.0</td>
+<td class="org-right">68.7</td>
+<td class="org-right">72.3</td>
+<td class="org-right">82.7</td>
+</tr>
+
+<tr>
+<td class="org-left">TVs Autonómicas Centro</td>
+<td class="org-right">5</td>
+<td class="org-right">64.7</td>
+<td class="org-right">61.2</td>
+<td class="org-right">65.8</td>
+<td class="org-right">82.6</td>
+</tr>
+
+<tr>
+<td class="org-left">TVs Autonómicas Sur</td>
+<td class="org-right">2</td>
+<td class="org-right">55.1</td>
+<td class="org-right">50.0</td>
+<td class="org-right">56.0</td>
+<td class="org-right">79.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgea3d59e" class="outline-3">
+<h3 id="orgea3d59e">Tabla 4: Ranking de Confianza Ciudadana (Digital News Report 2025)</h3>
+<div class="outline-text-3" id="text-orgea3d59e">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Posición</th>
+<th scope="col" class="org-left">Medio</th>
+<th scope="col" class="org-right">% Confianza</th>
+<th scope="col" class="org-right">% Desconfianza</th>
+<th scope="col" class="org-right">Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Prensa Local/Regional</td>
+<td class="org-right">51</td>
+<td class="org-right">12</td>
+<td class="org-right">+39</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">RTVE</td>
+<td class="org-right">48</td>
+<td class="org-right">18</td>
+<td class="org-right">+30</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Cadena SER</td>
+<td class="org-right">47</td>
+<td class="org-right">19</td>
+<td class="org-right">+28</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Antena 3 Noticias</td>
+<td class="org-right">46</td>
+<td class="org-right">21</td>
+<td class="org-right">+25</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">La Vanguardia</td>
+<td class="org-right">43</td>
+<td class="org-right">22</td>
+<td class="org-right">+21</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">El País</td>
+<td class="org-right">42</td>
+<td class="org-right">26</td>
+<td class="org-right">+16</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">El Confidencial</td>
+<td class="org-right">41</td>
+<td class="org-right">23</td>
+<td class="org-right">+18</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">elDiario.es</td>
+<td class="org-right">40</td>
+<td class="org-right">27</td>
+<td class="org-right">+13</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">El Mundo</td>
+<td class="org-right">39</td>
+<td class="org-right">28</td>
+<td class="org-right">+11</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">La Sexta</td>
+<td class="org-right">38</td>
+<td class="org-right">30</td>
+<td class="org-right">+8</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">ABC</td>
+<td class="org-right">36</td>
+<td class="org-right">32</td>
+<td class="org-right">+4</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Telecinco</td>
+<td class="org-right">32</td>
+<td class="org-right">35</td>
+<td class="org-right">-3</td>
+</tr>
+
+<tr>
+<td class="org-right">13</td>
+<td class="org-left">La Razón</td>
+<td class="org-right">29</td>
+<td class="org-right">38</td>
+<td class="org-right">-9</td>
+</tr>
+
+<tr>
+<td class="org-right">14</td>
+<td class="org-left">OKDiario</td>
+<td class="org-right">23</td>
+<td class="org-right">48</td>
+<td class="org-right">-25</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2f4862f" class="outline-2">
+<h2 id="org2f4862f">Análisis Detallado: Medio Público Nacional</h2>
+<div class="outline-text-2" id="text-org2f4862f">
+</div>
+<div id="outline-container-org52cb08d" class="outline-3">
+<h3 id="org52cb08d">RTVE (Radio Televisión Española)</h3>
+<div class="outline-text-3" id="text-org52cb08d">
+</div>
+<div id="outline-container-orgbf9a9d3" class="outline-4">
+<h4 id="orgbf9a9d3">Perfil General 2024-2025</h4>
+<div class="outline-text-4" id="text-orgbf9a9d3">
+<ul class="org-ul">
+<li><b>Fundación</b>: 1956 (TVE) / 2006 (RTVE corporación)</li>
+<li><b>Modelo</b>: Financiamiento público directo (Presupuestos Generales del Estado)</li>
+<li><b>Presupuesto 2024</b>: 1.200 millones de euros</li>
+<li><b>Alcance</b>: 33% de españoles siguen informativos RTVE (Q2 2024)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9f4e663" class="outline-4">
+<h4 id="org9f4e663">Evaluación Detallada</h4>
+<div class="outline-text-4" id="text-org9f4e663">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dimensión</th>
+<th scope="col" class="org-right">Puntuación</th>
+<th scope="col" class="org-left">Análisis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Libertad Editorial</td>
+<td class="org-right">79</td>
+<td class="org-left">Presión política creciente; consejos profesionales activos</td>
+</tr>
+
+<tr>
+<td class="org-left">Veracidad</td>
+<td class="org-right">82</td>
+<td class="org-left">Departamento de verificación robusto; correcciones transparentes</td>
+</tr>
+
+<tr>
+<td class="org-left">Transparencia</td>
+<td class="org-right">76</td>
+<td class="org-left">Financiación pública clara; gobernanza en crisis institucional</td>
+</tr>
+
+<tr>
+<td class="org-left">Pluralismo</td>
+<td class="org-right">78</td>
+<td class="org-left">Amplia cobertura territorial; balance político cuestionado</td>
+</tr>
+
+<tr>
+<td class="org-left">Independencia Económica</td>
+<td class="org-right">85</td>
+<td class="org-left">Sin presión publicitaria; dependencia gubernamental</td>
+</tr>
+
+<tr>
+<td class="org-left">Sesgo</td>
+<td class="org-right">-6</td>
+<td class="org-left">Centro-izquierda leve según análisis de cobertura</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgf3a30da" class="outline-4">
+<h4 id="orgf3a30da">Situación Crítica: Crisis de Gobernanza 2024</h4>
+<div class="outline-text-4" id="text-orgf3a30da">
+<p>
+Cerca del 75% de los encuestados advierten que la información de RTVE no es objetiva, mientras solo el 26,6% consideran objetivos los informativos. Sin embargo, RTVE ha experimentado un crecimiento notable de credibilidad, con un aumento de cinco puntos porcentuales hasta el 53%, superando a Antena 3 Noticias.
+</p>
+
+<p>
+<b>Decreto del Gobierno (Octubre 2024)</b>
+</p>
+
+<p>
+El Consejo de Ministros aprobó un decreto que cambia el sistema de elección del Consejo de RTVE para asegurar mayoría con sus socios, ampliando de 10 a 15 miembros y modificando la proporción Congreso-Senado de igual distribución a 11-4. El decreto rebaja la mayoría necesaria de tres quintos a mayoría absoluta y consolida poderes del presidente del Consejo.
+</p>
+
+<p>
+<b>Conflicto con Normativa Europea</b>
+</p>
+
+<p>
+La Comisión Europea confirmó estar al corriente del decreto y analizando el texto, recordando que el Reglamento de Medios establece garantías para el funcionamiento independiente de los medios públicos. El Media Pluralism Monitor sobre independencia de medios públicos muestra un alto riesgo (67%) en 2024 en España.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgebc7b76" class="outline-4">
+<h4 id="orgebc7b76">Fortalezas</h4>
+<div class="outline-text-4" id="text-orgebc7b76">
+<ul class="org-ul">
+<li>Mayor credibilidad entre medios públicos nacionales</li>
+<li>Red de corresponsales y producción propia extensa</li>
+<li>Financiamiento estable sin presión publicitaria</li>
+<li>Crecimiento de audiencia en franjas jóvenes (+9.2% en 25-34 años)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7f21766" class="outline-4">
+<h4 id="org7f21766">Debilidades Críticas</h4>
+<div class="outline-text-4" id="text-org7f21766">
+<ul class="org-ul">
+<li>Controversia por contratación del programa de David Broncano por 12 millones de euros anuales, que provocó destitución de presidenta interina</li>
+<li>Crisis de gobernanza con 6 de 10 consejeros con mandato caducado</li>
+<li>Percepción de falta de objetividad en 75% de población general</li>
+<li>Decreto gubernamental que contraviene recomendaciones europeas</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcbdb970" class="outline-2">
+<h2 id="orgcbdb970">Análisis de Medios Autonómicos: Crisis Sistémica</h2>
+<div class="outline-text-2" id="text-orgcbdb970">
+</div>
+<div id="outline-container-orgca4c0eb" class="outline-3">
+<h3 id="orgca4c0eb">Contexto General</h3>
+<div class="outline-text-3" id="text-orgca4c0eb">
+<p>
+Los comités de empresa de À Punt, RTV Andalucía y Canal Sur, IB3, RTPA, RTV Aragón, RTV Canarias, RTV Castilla-La Mancha, Canal Extremadura, Telemadrid, CSAG y TV3 conformaron la alianza RTVs Públicas en Lucha en 2024, denunciando el deterioro de la independencia informativa con casos groseros de manipulación y control político.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c8ab64" class="outline-3">
+<h3 id="org9c8ab64">Caso 1: Telemadrid - Del Liderazgo al Colapso</h3>
+<div class="outline-text-3" id="text-org9c8ab64">
+</div>
+<div id="outline-container-org9eea34a" class="outline-4">
+<h4 id="org9eea34a">Evolución de Audiencia</h4>
+<div class="outline-text-4" id="text-org9eea34a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-right">Cuota de Pantalla</th>
+<th scope="col" class="org-left">Contexto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1990</td>
+<td class="org-right">20%+</td>
+<td class="org-left">Época dorada, liderazgo autonómico</td>
+</tr>
+
+<tr>
+<td class="org-right">2012</td>
+<td class="org-right">8.2%</td>
+<td class="org-left">ERE masivo: eliminación 80% plantilla</td>
+</tr>
+
+<tr>
+<td class="org-right">2020</td>
+<td class="org-right">5.4%</td>
+<td class="org-left">Nueva dirección tras reforma</td>
+</tr>
+
+<tr>
+<td class="org-right">2024</td>
+<td class="org-right">4.7%</td>
+<td class="org-left">Mínimo histórico</td>
+</tr>
+
+<tr>
+<td class="org-right">2025</td>
+<td class="org-right">4.9%</td>
+<td class="org-left">Ligero repunte sin recuperación</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+En 2012, bajo gobierno de Esperanza Aguirre, Telemadrid entró en grave crisis por pérdida de espectadores, acusaciones de desinformación y expediente de regulación de empleo. El ERE fue declarado no ajustado a derecho por el TSJM y confirmado por el Supremo en 2014, considerando injustificada la magnitud de los despidos.
+</p>
+
+<p>
+En 2021, con gobierno de Díaz Ayuso y voto del PP más abstención de Vox, se alteró el sistema de elección de dirección para facilitar relevo de cúpula con objetivo de control político.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org189508d" class="outline-4">
+<h4 id="org189508d">Problemas Actuales</h4>
+<div class="outline-text-4" id="text-org189508d">
+<ul class="org-ul">
+<li>Credibilidad en mínimos históricos</li>
+<li>Línea editorial fuertemente alineada con gobierno regional</li>
+<li>Pérdida de producción propia relevante</li>
+<li>Despilfarro presupuestario en programas con audiencia mínima</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org38f7dec" class="outline-3">
+<h3 id="org38f7dec">Caso 2: Canal Sur (Andalucía) - Instrumentalización Política</h3>
+<div class="outline-text-3" id="text-org38f7dec">
+<p>
+La Federación de Asociaciones de Periodistas de España (FAPE) señaló en 2023 que la cobertura de Canal Sur sobre pozos ilegales en Doñana no cumplía con principios de veracidad e independencia. El gobierno andaluz ha gastado 4,6 millones de euros en 2025 en contratos de emisión de corridas de toros, frente a 10 millones en emisiones religiosas.
+</p>
+</div>
+
+<div id="outline-container-org61501ed" class="outline-4">
+<h4 id="org61501ed">Características</h4>
+<div class="outline-text-4" id="text-org61501ed">
+<ul class="org-ul">
+<li>Antiguo Consejo Profesional eliminado sin consulta</li>
+<li>Inversión desproporcionada en contenido taurino y religioso</li>
+<li>Acusaciones de manipulación informativa sistemática</li>
+<li>Bajo índice de credibilidad (IGC-ES: 56.6)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org06643b9" class="outline-3">
+<h3 id="org06643b9">Caso 3: À Punt (Comunidad Valenciana) - Apagón Informativo</h3>
+<div class="outline-text-3" id="text-org06643b9">
+<p>
+El 25 de octubre de 2025, en el primer aniversario de la DANA que dejó 229 fallecidos, À Punt decidió programar una corrida de toros grabada en 1997 mientras más de 50.000 personas manifestaban en Valencia. El Consejo del Audiovisual valenciano abrió diligencias por posible mala praxis al considerar incumplida la misión de servicio público esencial.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfefbebf" class="outline-3">
+<h3 id="orgfefbebf">Caso 4: TVG (Televisión de Galicia) - Privatización y Conflicto</h3>
+<div class="outline-text-3" id="text-orgfefbebf">
+<p>
+Las plantillas de TVG llevan desde 2009 en huelgas y manifestaciones semanales denunciando privatización de servicios y manipulación informativa. El 26 de septiembre de 2024, plantillas y sindicatos pararon contra privatización encubierta alertando de modelo que dilapida recursos y facilita manipulación.
+</p>
+</div>
+
+<div id="outline-container-org1a092a0" class="outline-4">
+<h4 id="org1a092a0">Inversión Cuestionable</h4>
+<div class="outline-text-4" id="text-org1a092a0">
+<ul class="org-ul">
+<li>839.772€ en programa de Miguel Lago con audiencia inferior al 3.5%</li>
+<li>7 millones en programas Land Rober para exhibir altos cargos del PP</li>
+<li>Externalización masiva de servicios periodísticos</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8b967bd" class="outline-3">
+<h3 id="org8b967bd">Comparativa: TV3 vs. Telemadrid</h3>
+<div class="outline-text-3" id="text-org8b967bd">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Parámetro</th>
+<th scope="col" class="org-left">TV3 (Cataluña)</th>
+<th scope="col" class="org-left">Telemadrid (Madrid)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Cuota de Pantalla 2024</td>
+<td class="org-left">13.2%</td>
+<td class="org-left">4.7%</td>
+</tr>
+
+<tr>
+<td class="org-left">Relación con Audiencia</td>
+<td class="org-left">Fidelidad alta</td>
+<td class="org-left">Pérdida constante</td>
+</tr>
+
+<tr>
+<td class="org-left">Producción Propia</td>
+<td class="org-left">Sólida y constante</td>
+<td class="org-left">Mínima y externa</td>
+</tr>
+
+<tr>
+<td class="org-left">Conflicto Político</td>
+<td class="org-left">Nacionalismo</td>
+<td class="org-left">Control PP</td>
+</tr>
+
+<tr>
+<td class="org-left">Modelo de Financiamiento</td>
+<td class="org-left">Público regional</td>
+<td class="org-left">Público regional</td>
+</tr>
+
+<tr>
+<td class="org-left">Credibilidad (IGC-ES)</td>
+<td class="org-left">72.1</td>
+<td class="org-left">53.2</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Mientras TV3 continúa liderando con fuerza en Cataluña y triplica la audiencia de Telemadrid, esta última es una sombra de lo que fue, sin que el apoyo político la haya salvado del naufragio.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge9c4869" class="outline-2">
+<h2 id="orge9c4869">Análisis de Medios Privados Principales</h2>
+<div class="outline-text-2" id="text-orge9c4869">
+</div>
+<div id="outline-container-org9fbc756" class="outline-3">
+<h3 id="org9fbc756">El País (Grupo PRISA)</h3>
+<div class="outline-text-3" id="text-org9fbc756">
+</div>
+<div id="outline-container-orgef197ad" class="outline-4">
+<h4 id="orgef197ad">Perfil</h4>
+<div class="outline-text-4" id="text-orgef197ad">
+<ul class="org-ul">
+<li><b>Fundación</b>: 1976</li>
+<li><b>Propiedad</b>: Grupo PRISA (43.35% Amber Capital)</li>
+<li><b>Posición digital</b>: Quinto medio con mejor reputación mundial según SCImago Media Rankings, primera posición española</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6f4c12b" class="outline-4">
+<h4 id="org6f4c12b">Evaluación</h4>
+<div class="outline-text-4" id="text-org6f4c12b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dimensión</th>
+<th scope="col" class="org-right">Puntuación</th>
+<th scope="col" class="org-left">Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Libertad Editorial</td>
+<td class="org-right">76</td>
+<td class="org-left">Línea editorial definida; presiones accionariales</td>
+</tr>
+
+<tr>
+<td class="org-left">Veracidad</td>
+<td class="org-right">79</td>
+<td class="org-left">Verificación robusta; ocasionales errores corregidos</td>
+</tr>
+
+<tr>
+<td class="org-left">Transparencia</td>
+<td class="org-right">70</td>
+<td class="org-left">Estructura accionarial compleja; deuda histórica</td>
+</tr>
+
+<tr>
+<td class="org-left">Pluralismo</td>
+<td class="org-right">75</td>
+<td class="org-left">Amplio espectro de firmas; sesgo centro-izquierda</td>
+</tr>
+
+<tr>
+<td class="org-left">Independencia Económica</td>
+<td class="org-right">62</td>
+<td class="org-left">Dependencia publicidad institucional elevada</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<b>Publicidad Institucional</b>: El País lidera la clasificación de publicidad gubernamental con 3.056.642 euros.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge6e813a" class="outline-3">
+<h3 id="orge6e813a">El Mundo (Unidad Editorial)</h3>
+<div class="outline-text-3" id="text-orge6e813a">
+</div>
+<div id="outline-container-orgb145482" class="outline-4">
+<h4 id="orgb145482">Perfil</h4>
+<div class="outline-text-4" id="text-orgb145482">
+<ul class="org-ul">
+<li><b>Fundación</b>: 1989</li>
+<li><b>Propiedad</b>: RCS MediaGroup (Italia)</li>
+<li><b>Posición</b>: Segunda cabecera generalista tradicional</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7ec1cd7" class="outline-4">
+<h4 id="org7ec1cd7">Evaluación</h4>
+<div class="outline-text-4" id="text-org7ec1cd7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dimensión</th>
+<th scope="col" class="org-right">Puntuación</th>
+<th scope="col" class="org-left">Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Libertad Editorial</td>
+<td class="org-right">78</td>
+<td class="org-left">Mayor independencia frente a poder político</td>
+</tr>
+
+<tr>
+<td class="org-left">Veracidad</td>
+<td class="org-right">81</td>
+<td class="org-left">Periodismo de investigación reconocido</td>
+</tr>
+
+<tr>
+<td class="org-left">Transparencia</td>
+<td class="org-right">72</td>
+<td class="org-left">Propiedad extranjera clara; operación transparente</td>
+</tr>
+
+<tr>
+<td class="org-left">Pluralismo</td>
+<td class="org-right">76</td>
+<td class="org-left">Diversidad interna; línea editorial centro-derecha</td>
+</tr>
+
+<tr>
+<td class="org-left">Independencia Económica</td>
+<td class="org-right">68</td>
+<td class="org-left">Menor dependencia publicidad institucional</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+El Mundo recibe 2.589.650 euros en publicidad institucional, menos que El País. El Mundo obtiene la nota más alta entre periódicos tradicionales en credibilidad con un 5,3 sobre 10.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd969e83" class="outline-3">
+<h3 id="orgd969e83">ABC (Vocento)</h3>
+<div class="outline-text-3" id="text-orgd969e83">
+</div>
+<div id="outline-container-org95f0b2d" class="outline-4">
+<h4 id="org95f0b2d">Perfil</h4>
+<div class="outline-text-4" id="text-org95f0b2d">
+<ul class="org-ul">
+<li><b>Fundación</b>: 1903 (decano de prensa española)</li>
+<li><b>Propiedad</b>: Grupo Vocento (familia propietaria)</li>
+<li><b>Posición</b>: ABC se sitúa en puesto 49 de ranking mundial de reputación SCImago</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge115ed7" class="outline-4">
+<h4 id="orge115ed7">Evaluación</h4>
+<div class="outline-text-4" id="text-orge115ed7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dimensión</th>
+<th scope="col" class="org-right">Puntuación</th>
+<th scope="col" class="org-left">Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Libertad Editorial</td>
+<td class="org-right">74</td>
+<td class="org-left">Línea conservadora marcada; independencia media</td>
+</tr>
+
+<tr>
+<td class="org-left">Veracidad</td>
+<td class="org-right">76</td>
+<td class="org-left">Estándares profesionales sólidos</td>
+</tr>
+
+<tr>
+<td class="org-left">Transparencia</td>
+<td class="org-right">69</td>
+<td class="org-left">Propiedad familiar clara; menos apertura</td>
+</tr>
+
+<tr>
+<td class="org-left">Pluralismo</td>
+<td class="org-right">71</td>
+<td class="org-left">Sesgo derecha evidente; pluralidad limitada</td>
+</tr>
+
+<tr>
+<td class="org-left">Independencia Económica</td>
+<td class="org-right">65</td>
+<td class="org-left">Grupo Vocento diversificado</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Vocento es el grupo de prensa que más recibe en publicidad institucional con casi 7 millones repartidos entre ABC y 18 periódicos regionales.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdc6c34f" class="outline-3">
+<h3 id="orgdc6c34f">El Confidencial</h3>
+<div class="outline-text-3" id="text-orgdc6c34f">
+</div>
+<div id="outline-container-org2a1976c" class="outline-4">
+<h4 id="org2a1976c">Perfil</h4>
+<div class="outline-text-4" id="text-org2a1976c">
+<ul class="org-ul">
+<li><b>Fundación</b>: 2001 (nativo digital)</li>
+<li><b>Modelo</b>: Independiente, inversores privados</li>
+<li><b>Relevancia</b>: Destacó con cobertura y primicia del escándalo sexual de Luis Rubiales que provocó su dimisión en 2023</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3914bef" class="outline-4">
+<h4 id="org3914bef">Evaluación</h4>
+<div class="outline-text-4" id="text-org3914bef">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dimensión</th>
+<th scope="col" class="org-right">Puntuación</th>
+<th scope="col" class="org-left">Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Libertad Editorial</td>
+<td class="org-right">82</td>
+<td class="org-left">Mayor independencia al no estar en grupo mediático</td>
+</tr>
+
+<tr>
+<td class="org-left">Veracidad</td>
+<td class="org-right">84</td>
+<td class="org-left">Periodismo de investigación como marca distintiva</td>
+</tr>
+
+<tr>
+<td class="org-left">Transparencia</td>
+<td class="org-right">76</td>
+<td class="org-left">Estructura accionarial visible; operación abierta</td>
+</tr>
+
+<tr>
+<td class="org-left">Pluralismo</td>
+<td class="org-right">79</td>
+<td class="org-left">Diversidad temática amplia; sesgo centro leve</td>
+</tr>
+
+<tr>
+<td class="org-left">Independencia Económica</td>
+<td class="org-right">73</td>
+<td class="org-left">Modelo mixto suscripción-publicidad equilibrado</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+El Confidencial obtiene calificación de 5,3 en credibilidad, equiparado con El Mundo como los más creíbles.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2100066" class="outline-3">
+<h3 id="org2100066">elDiario.es</h3>
+<div class="outline-text-3" id="text-org2100066">
+</div>
+<div id="outline-container-org75b122d" class="outline-4">
+<h4 id="org75b122d">Perfil</h4>
+<div class="outline-text-4" id="text-org75b122d">
+<ul class="org-ul">
+<li><b>Fundación</b>: 2012</li>
+<li><b>Modelo</b>: Cooperativa de socios + suscriptores</li>
+<li><b>Innovación</b>: Modelo de financiación ciudadana (80.000+ socios)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfa3a31b" class="outline-4">
+<h4 id="orgfa3a31b">Evaluación</h4>
+<div class="outline-text-4" id="text-orgfa3a31b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Dimensión</th>
+<th scope="col" class="org-right">Puntuación</th>
+<th scope="col" class="org-left">Observaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Libertad Editorial</td>
+<td class="org-right">79</td>
+<td class="org-left">Independencia por financiación cooperativa</td>
+</tr>
+
+<tr>
+<td class="org-left">Veracidad</td>
+<td class="org-right">80</td>
+<td class="org-left">Verificación activa; correcciones transparentes</td>
+</tr>
+
+<tr>
+<td class="org-left">Transparencia</td>
+<td class="org-right">74</td>
+<td class="org-left">Máxima apertura en financiación y gestión</td>
+</tr>
+
+<tr>
+<td class="org-left">Pluralismo</td>
+<td class="org-right">73</td>
+<td class="org-left">Línea editorial izquierda clara; voces progresistas</td>
+</tr>
+
+<tr>
+<td class="org-left">Independencia Económica</td>
+<td class="org-right">76</td>
+<td class="org-left">Modelo de socios minimiza presión publicitaria</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+elDiario.es obtiene 4,8 en credibilidad, a medio punto de los líderes.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf78ac41" class="outline-2">
+<h2 id="orgf78ac41">Análisis de Tendencias y Sesgo Político</h2>
+<div class="outline-text-2" id="text-orgf78ac41">
+</div>
+<div id="outline-container-orgf61abc1" class="outline-3">
+<h3 id="orgf61abc1">Distribución del Sesgo Político - Medios Españoles</h3>
+<div class="outline-text-3" id="text-orgf61abc1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Categoría</th>
+<th scope="col" class="org-left">Rango Sesgo</th>
+<th scope="col" class="org-right">Nº Medios</th>
+<th scope="col" class="org-right">Porcentaje</th>
+<th scope="col" class="org-left">Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Izquierda Marcada</td>
+<td class="org-left">-20 a -12</td>
+<td class="org-right">3</td>
+<td class="org-right">10.7%</td>
+<td class="org-left">elDiario.es, Público, TV3</td>
+</tr>
+
+<tr>
+<td class="org-left">Centro-Izquierda</td>
+<td class="org-left">-11 a -5</td>
+<td class="org-right">6</td>
+<td class="org-right">21.4%</td>
+<td class="org-left">El País, RTVE, Infolibre</td>
+</tr>
+
+<tr>
+<td class="org-left">Centro</td>
+<td class="org-left">-4 a +4</td>
+<td class="org-right">5</td>
+<td class="org-right">17.9%</td>
+<td class="org-left">El Confidencial, La Vanguardia</td>
+</tr>
+
+<tr>
+<td class="org-left">Centro-Derecha</td>
+<td class="org-left">+5 a +11</td>
+<td class="org-right">5</td>
+<td class="org-right">17.9%</td>
+<td class="org-left">El Mundo, El Español, ABC</td>
+</tr>
+
+<tr>
+<td class="org-left">Derecha Marcada</td>
+<td class="org-left">+12 a +24</td>
+<td class="org-right">5</td>
+<td class="org-right">17.9%</td>
+<td class="org-left">La Razón, Canal Sur, Telemadrid</td>
+</tr>
+
+<tr>
+<td class="org-left">Extrema Derecha</td>
+<td class="org-left">+25 a +50</td>
+<td class="org-right">4</td>
+<td class="org-right">14.3%</td>
+<td class="org-left">OKDiario, Libertad Digital</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgd45e774" class="outline-3">
+<h3 id="orgd45e774">Observaciones sobre Polarización</h3>
+<div class="outline-text-3" id="text-orgd45e774">
+<ol class="org-ol">
+<li><b>Ausencia de centro fuerte</b>: Solo el 17.9% de medios ocupan posiciones cercanas al centro absoluto, indicando polarización del ecosistema</li>
+
+<li><b>Prensa económica como refugio</b>: Cinco Días y Expansión mantienen posiciones más neutrales al centrarse en información financiera</li>
+
+<li><b>Medios autonómicos politizados</b>: Las televisiones autonómicas presentan sesgos marcados según el color político del gobierno regional</li>
+
+<li><b>Digitales nativos radicalizados</b>: Medios como OKDiario y Libertad Digital presentan los sesgos más extremos (+28 a +32)</li>
+
+<li><b>Correlación sesgo-credibilidad</b>: Los medios con sesgos extremos (|sesgo| &gt; 20) promedian un IGC-ES de 62.1, frente a 75.8 de medios moderados</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd414672" class="outline-3">
+<h3 id="orgd414672">Mapeo Político de Audiencias</h3>
+<div class="outline-text-3" id="text-orgd414672">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Posición Ideológica Usuario</th>
+<th scope="col" class="org-left">Medio Preferido Principal</th>
+<th scope="col" class="org-right">IGC-ES</th>
+<th scope="col" class="org-right">Sesgo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Izquierda</td>
+<td class="org-left">elDiario.es</td>
+<td class="org-right">76.9</td>
+<td class="org-right">-12</td>
+</tr>
+
+<tr>
+<td class="org-left">Centro-Izquierda</td>
+<td class="org-left">El País</td>
+<td class="org-right">74.8</td>
+<td class="org-right">-7</td>
+</tr>
+
+<tr>
+<td class="org-left">Centro</td>
+<td class="org-left">El Confidencial</td>
+<td class="org-right">80.4</td>
+<td class="org-right">-2</td>
+</tr>
+
+<tr>
+<td class="org-left">Centro-Derecha</td>
+<td class="org-left">El Mundo</td>
+<td class="org-right">76.8</td>
+<td class="org-right">+8</td>
+</tr>
+
+<tr>
+<td class="org-left">Derecha</td>
+<td class="org-left">ABC</td>
+<td class="org-right">72.7</td>
+<td class="org-right">+12</td>
+</tr>
+
+<tr>
+<td class="org-left">Extrema Derecha</td>
+<td class="org-left">OKDiario</td>
+<td class="org-right">61.8</td>
+<td class="org-right">+28</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfea5f52" class="outline-2">
+<h2 id="orgfea5f52">Publicidad Institucional: Influencia y Dependencia</h2>
+<div class="outline-text-2" id="text-orgfea5f52">
+</div>
+<div id="outline-container-org54802ce" class="outline-3">
+<h3 id="org54802ce">Tabla: Top Receptores de Publicidad Institucional 2024 (miles €)</h3>
+<div class="outline-text-3" id="text-org54802ce">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Grupo/Medio</th>
+<th scope="col" class="org-right">Gobierno Central</th>
+<th scope="col" class="org-right">CC.AA.</th>
+<th scope="col" class="org-right">Total</th>
+<th scope="col" class="org-right">% sobre ingresos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Vocento (ABC + Red)</td>
+<td class="org-right">4.238</td>
+<td class="org-right">2.762</td>
+<td class="org-right">7.000</td>
+<td class="org-right">12.3%</td>
+</tr>
+
+<tr>
+<td class="org-left">PRISA (El País)</td>
+<td class="org-right">3.057</td>
+<td class="org-right">1.894</td>
+<td class="org-right">4.951</td>
+<td class="org-right">9.8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Unidad Editorial (EMundo)</td>
+<td class="org-right">2.590</td>
+<td class="org-right">1.652</td>
+<td class="org-right">4.242</td>
+<td class="org-right">8.1%</td>
+</tr>
+
+<tr>
+<td class="org-left">Atresmedia</td>
+<td class="org-right">2.113</td>
+<td class="org-right">1.876</td>
+<td class="org-right">3.989</td>
+<td class="org-right">3.2%</td>
+</tr>
+
+<tr>
+<td class="org-left">Mediaset</td>
+<td class="org-right">1.897</td>
+<td class="org-right">1.654</td>
+<td class="org-right">3.551</td>
+<td class="org-right">2.9%</td>
+</tr>
+
+<tr>
+<td class="org-left">El Confidencial</td>
+<td class="org-right">892</td>
+<td class="org-right">487</td>
+<td class="org-right">1.379</td>
+<td class="org-right">4.7%</td>
+</tr>
+
+<tr>
+<td class="org-left">elDiario.es</td>
+<td class="org-right">634</td>
+<td class="org-right">412</td>
+<td class="org-right">1.046</td>
+<td class="org-right">3.1%</td>
+</tr>
+
+<tr>
+<td class="org-left">La Razón</td>
+<td class="org-right">1.456</td>
+<td class="org-right">832</td>
+<td class="org-right">2.288</td>
+<td class="org-right">14.9%</td>
+</tr>
+
+<tr>
+<td class="org-left">OKDiario</td>
+<td class="org-right">287</td>
+<td class="org-right">156</td>
+<td class="org-right">443</td>
+<td class="org-right">2.8%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org8d2bd76" class="outline-3">
+<h3 id="org8d2bd76">Análisis de Dependencia</h3>
+<div class="outline-text-3" id="text-org8d2bd76">
+<p>
+La dependencia de publicidad institucional genera una vulnerabilidad estructural en medios tradicionales. Los grupos Vocento y PRISA presentan los mayores porcentajes de ingresos provenientes de fondos públicos (12.3% y 9.8% respectivamente), mientras que medios digitales con modelo de suscripción como elDiario.es muestran menor dependencia (3.1%).
+</p>
+
+<p>
+La distribución de publicidad institucional sigue patrones políticos evidentes: gobiernos de izquierda favorecen a medios como El País y Cadena SER, mientras gobiernos de derecha regional dirigen fondos hacia ABC regional y medios conservadores.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd55f67d" class="outline-2">
+<h2 id="orgd55f67d">Crisis de Confianza: Datos Reuters Institute 2024-2025</h2>
+<div class="outline-text-2" id="text-orgd55f67d">
+</div>
+<div id="outline-container-org67abea4" class="outline-3">
+<h3 id="org67abea4">Evolución de la Confianza en Medios España (2015-2025)</h3>
+<div class="outline-text-3" id="text-org67abea4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-right">% Confía en Noticias</th>
+<th scope="col" class="org-right">% Desconfía</th>
+<th scope="col" class="org-right">% Neutro</th>
+<th scope="col" class="org-right">Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2015</td>
+<td class="org-right">34%</td>
+<td class="org-right">36%</td>
+<td class="org-right">30%</td>
+<td class="org-right">-2</td>
+</tr>
+
+<tr>
+<td class="org-right">2017</td>
+<td class="org-right">38%</td>
+<td class="org-right">32%</td>
+<td class="org-right">30%</td>
+<td class="org-right">+6</td>
+</tr>
+
+<tr>
+<td class="org-right">2019</td>
+<td class="org-right">40%</td>
+<td class="org-right">29%</td>
+<td class="org-right">31%</td>
+<td class="org-right">+11</td>
+</tr>
+
+<tr>
+<td class="org-right">2021</td>
+<td class="org-right">36%</td>
+<td class="org-right">34%</td>
+<td class="org-right">30%</td>
+<td class="org-right">+2</td>
+</tr>
+
+<tr>
+<td class="org-right">2022</td>
+<td class="org-right">32%</td>
+<td class="org-right">38%</td>
+<td class="org-right">30%</td>
+<td class="org-right">-6</td>
+</tr>
+
+<tr>
+<td class="org-right">2023</td>
+<td class="org-right">34%</td>
+<td class="org-right">37%</td>
+<td class="org-right">29%</td>
+<td class="org-right">-3</td>
+</tr>
+
+<tr>
+<td class="org-right">2024</td>
+<td class="org-right">32%</td>
+<td class="org-right">39%</td>
+<td class="org-right">29%</td>
+<td class="org-right">-7</td>
+</tr>
+
+<tr>
+<td class="org-right">2025</td>
+<td class="org-right">31%</td>
+<td class="org-right">40%</td>
+<td class="org-right">29%</td>
+<td class="org-right">-9</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgfdf7c23" class="outline-3">
+<h3 id="orgfdf7c23">Factores de Desconfianza</h3>
+<div class="outline-text-3" id="text-orgfdf7c23">
+<ol class="org-ol">
+<li><b>Polarización política</b>: 67% considera que los medios no separan hechos de opinión</li>
+<li><b>Percepción de sesgo</b>: 71% cree que medios favorecen partidos políticos específicos</li>
+<li><b>Clickbait y sensacionalismo</b>: 58% acusa a medios de exagerar titulares</li>
+<li><b>Conflictos de interés</b>: 62% desconfía por vínculos con poder económico y político</li>
+<li><b>Desinformación</b>: 53% preocupado por contenido falso en medios tradicionales</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0021b62" class="outline-3">
+<h3 id="org0021b62">Segmentación por Edad</h3>
+<div class="outline-text-3" id="text-org0021b62">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Grupo Edad</th>
+<th scope="col" class="org-right">% Confía</th>
+<th scope="col" class="org-right">% Desconfía</th>
+<th scope="col" class="org-left">Medio Preferido</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">18-24</td>
+<td class="org-right">24%</td>
+<td class="org-right">49%</td>
+<td class="org-left">Redes Sociales</td>
+</tr>
+
+<tr>
+<td class="org-right">25-34</td>
+<td class="org-right">28%</td>
+<td class="org-right">45%</td>
+<td class="org-left">Digitales Nativos</td>
+</tr>
+
+<tr>
+<td class="org-right">35-44</td>
+<td class="org-right">31%</td>
+<td class="org-right">42%</td>
+<td class="org-left">Digitales + Televisión</td>
+</tr>
+
+<tr>
+<td class="org-right">45-54</td>
+<td class="org-right">33%</td>
+<td class="org-right">39%</td>
+<td class="org-left">Televisión + Digitales</td>
+</tr>
+
+<tr>
+<td class="org-right">55-64</td>
+<td class="org-right">35%</td>
+<td class="org-right">36%</td>
+<td class="org-left">Televisión + Prensa</td>
+</tr>
+
+<tr>
+<td class="org-right">65+</td>
+<td class="org-right">41%</td>
+<td class="org-right">29%</td>
+<td class="org-left">Televisión</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+La juventud española muestra la mayor desconfianza hacia medios tradicionales, con solo el 24% de confianza en el grupo 18-24 años, representando un desafío estructural para la sostenibilidad del periodismo tradicional.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6c9372a" class="outline-2">
+<h2 id="org6c9372a">Verificación de Hechos y Fact-Checking en España</h2>
+<div class="outline-text-2" id="text-org6c9372a">
+</div>
+<div id="outline-container-org89d57c3" class="outline-3">
+<h3 id="org89d57c3">Iniciativas Principales</h3>
+<div class="outline-text-3" id="text-org89d57c3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Plataforma</th>
+<th scope="col" class="org-left">Afiliación</th>
+<th scope="col" class="org-left">Certificación IFCN</th>
+<th scope="col" class="org-right">Operativo desde</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Maldita.es</td>
+<td class="org-left">Independiente</td>
+<td class="org-left">Sí</td>
+<td class="org-right">2018</td>
+</tr>
+
+<tr>
+<td class="org-left">Newtral</td>
+<td class="org-left">Independiente</td>
+<td class="org-left">Sí</td>
+<td class="org-right">2018</td>
+</tr>
+
+<tr>
+<td class="org-left">EFE Verifica</td>
+<td class="org-left">Agencia EFE</td>
+<td class="org-left">Sí</td>
+<td class="org-right">2019</td>
+</tr>
+
+<tr>
+<td class="org-left">Verificat</td>
+<td class="org-left">Independiente (Cataluña)</td>
+<td class="org-left">Sí</td>
+<td class="org-right">2019</td>
+</tr>
+
+<tr>
+<td class="org-left">Ade Verifica</td>
+<td class="org-left">Fundación Galicia</td>
+<td class="org-left">No</td>
+<td class="org-right">2022</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb5c67c4" class="outline-3">
+<h3 id="orgb5c67c4">Evaluación de Efectividad</h3>
+<div class="outline-text-3" id="text-orgb5c67c4">
+<p>
+Las plataformas de verificación han desmentido más de 12.000 bulos desde 2020, con especial intensidad durante:
+</p>
+<ul class="org-ul">
+<li>Pandemia COVID-19 (2020-2021): 4.300 verificaciones</li>
+<li>Elecciones generales 2023: 1.870 verificaciones</li>
+<li>Guerra Ucrania (2022-2024): 2.100 verificaciones</li>
+<li>Conflicto Israel-Palestina (2023-2024): 1.600 verificaciones</li>
+</ul>
+
+<p>
+Sin embargo, el 68% de los españoles admite haber creído noticias falsas al menos una vez, y solo el 31% conoce plataformas de fact-checking, evidenciando una brecha entre esfuerzo verificador y alfabetización mediática ciudadana.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb246915" class="outline-2">
+<h2 id="orgb246915">Modelo Conceptual de Evaluación - Ecosistema Español</h2>
+<div class="outline-text-2" id="text-orgb246915">
+
+<div id="org52cfd60" class="figure">
+<p><img src="./assets/images/media-credibility-spain.png" alt="media-credibility-spain.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org940a2fc" class="outline-2">
+<h2 id="org940a2fc">Conclusiones y Recomendaciones</h2>
+<div class="outline-text-2" id="text-org940a2fc">
+</div>
+<div id="outline-container-org3f30485" class="outline-3">
+<h3 id="org3f30485">Hallazgos Principales</h3>
+<div class="outline-text-3" id="text-org3f30485">
+<ol class="org-ol">
+<li><b>Crisis de confianza histórica</b>: Con solo el 31% de confianza, España se sitúa en el puesto 37 de 48 países, evidenciando una crisis estructural en la relación ciudadanía-medios.</li>
+
+<li><b>Polarización extrema</b>: El ecosistema mediático español presenta una división marcada con escasa presencia de medios centristas (17.9%), dificultando el consenso informativo.</li>
+
+<li><b>Medios públicos capturados</b>: El Media Pluralism Monitor muestra un alto riesgo (67%) en independencia de medios públicos. Los casos de RTVE, Telemadrid, Canal Sur y TVG evidencian instrumentalización política sistemática.</li>
+
+<li><b>Dependencia económica problemática</b>: La elevada dependencia de publicidad institucional (hasta 14.9% en algunos medios) compromete la independencia editorial.</li>
+
+<li><b>Brecha generacional crítica</b>: Solo el 24% de jóvenes 18-24 confía en medios, mientras el 49% desconfía activamente, amenazando la sostenibilidad del periodismo tradicional.</li>
+
+<li><b>Medios digitales nativos en ascenso</b>: El Confidencial y elDiario.es muestran los mejores índices de credibilidad entre medios privados, sugiriendo que modelos alternativos de financiación generan mayor confianza.</li>
+
+<li><b>Corrupción informativa autonómica</b>: Las televisiones autonómicas del sur y centro presentan los IGC-ES más bajos (50-56), con casos graves de manipulación documentada.</li>
+
+<li><b>Fact-checking insuficiente</b>: A pesar de 12.000+ verificaciones desde 2020, solo el 31% de ciudadanos conoce plataformas de fact-checking.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgd681c17" class="outline-3">
+<h3 id="orgd681c17">Recomendaciones Urgentes</h3>
+<div class="outline-text-3" id="text-orgd681c17">
+</div>
+<div id="outline-container-orgc3d99b5" class="outline-4">
+<h4 id="orgc3d99b5">Para RTVE</h4>
+<div class="outline-text-4" id="text-orgc3d99b5">
+<ol class="org-ol">
+<li><b>Reforma de gobernanza</b>: Revocar el decreto de octubre 2024 y establecer sistema de elección por 3/5 con participación de sociedad civil</li>
+<li><b>Blindaje legal</b>: Implementar protecciones alineadas con European Media Freedom Act</li>
+<li><b>Transparencia presupuestaria</b>: Auditoría externa de contrataciones superiores a 5 millones de euros</li>
+<li><b>Consejo profesional independiente</b>: Con capacidad vinculante en línea editorial</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org59240a9" class="outline-4">
+<h4 id="org59240a9">Para Medios Autonómicos</h4>
+<div class="outline-text-4" id="text-org59240a9">
+<ol class="org-ol">
+<li><b>Telemadrid y Canal Sur</b>: Intervención urgente con comisión parlamentaria de reforma estructural</li>
+<li><b>Modelo de financiación</b>: Blindaje presupuestario plurianual independiente del gobierno de turno</li>
+<li><b>Despolitización de consejos</b>: Participación de colegios profesionales y universidades en elección de directivos</li>
+<li><b>Códigos éticos reforzados</b>: Con sanciones efectivas por manipulación informativa</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org67bbd32" class="outline-4">
+<h4 id="org67bbd32">Para Medios Privados</h4>
+<div class="outline-text-4" id="text-org67bbd32">
+<ol class="org-ol">
+<li><b>Diversificación económica</b>: Reducir dependencia de publicidad institucional por debajo del 5%</li>
+<li><b>Transparencia accionarial</b>: Registro público de todos los accionistas con más del 1%</li>
+<li><b>Separación información-opinión</b>: Etiquetado claro y diferenciado en contenidos digitales</li>
+<li><b>Fact-checking interno</b>: Departamentos de verificación en todos los medios con audiencia &gt;500k</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc50f33b" class="outline-4">
+<h4 id="orgc50f33b">Para Reguladores</h4>
+<div class="outline-text-4" id="text-orgc50f33b">
+<ol class="org-ol">
+<li><b>CNMC</b>: Auditorías anuales obligatorias de independencia editorial en medios públicos</li>
+<li><b>Reparto publicidad institucional</b>: Criterios objetivos basados en audiencia real, no lealtad política</li>
+<li><b>Protección de whistleblowers</b>: Periodistas que denuncien presiones políticas</li>
+<li><b>Observatorio independiente</b>: Evaluación trimestral de pluralismo y credibilidad</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4d77819" class="outline-4">
+<h4 id="org4d77819">Para la Ciudadanía</h4>
+<div class="outline-text-4" id="text-org4d77819">
+<ol class="org-ol">
+<li><b>Alfabetización mediática</b>: Programa nacional en educación secundaria sobre reconocimiento de desinformación</li>
+<li><b>Apoyo a medios independientes</b>: Incentivos fiscales a suscripciones de medios con IGC-ES &gt;75</li>
+<li><b>Participación activa</b>: Reclamaciones ante consejos audiovisuales por manipulación</li>
+<li><b>Diversificación de fuentes</b>: Consumir al menos 3 medios de diferentes sesgos políticos</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org012d372" class="outline-3">
+<h3 id="org012d372">Perspectivas 2025-2030</h3>
+<div class="outline-text-3" id="text-org012d372">
+<p>
+El ecosistema mediático español enfrenta una encrucijada crítica. Sin reformas estructurales urgentes, especialmente en medios públicos, la confianza ciudadana continuará en caída libre, alcanzando previsiblemente el 25% en 2030.
+</p>
+
+<p>
+<b>Escenario optimista</b>: Reforma de RTVE alineada con estándares europeos + despolitización de autonómicas + fortalecimiento de medios digitales independientes = recuperación gradual hasta 40% de confianza en 2030.
+</p>
+
+<p>
+<b>Escenario pesimista</b>: Mantenimiento del status quo + mayor polarización + colapso económico de prensa tradicional = 25% de confianza en 2030 y fragmentación informativa completa.
+</p>
+
+<p>
+La Ley Europea de Libertad de los Medios (EMFA) representa una oportunidad histórica para España de alinear su marco regulatorio con estándares democráticos avanzados, pero requiere voluntad política de aplicarla efectivamente, especialmente en medios autonómicos donde la deriva es más grave.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb067990" class="outline-2">
+<h2 id="orgb067990">Apéndices</h2>
+<div class="outline-text-2" id="text-orgb067990">
+</div>
+<div id="outline-container-org726dcb9" class="outline-3">
+<h3 id="org726dcb9">A. Metodología Ampliada - Criterios Específicos España</h3>
+<div class="outline-text-3" id="text-org726dcb9">
+</div>
+<div id="outline-container-org73e122f" class="outline-4">
+<h4 id="org73e122f">Libertad Editorial - Indicadores Contextualizados</h4>
+<div class="outline-text-4" id="text-org73e122f">
+<ol class="org-ol">
+<li><b>Independencia política</b> (40%)
+<ul class="org-ul">
+<li>Resistencia a cambios de dirección tras elecciones</li>
+<li>Ausencia de líneas editoriales dictadas externamente</li>
+<li>Protección efectiva de la redacción</li>
+</ul></li>
+
+<li><b>Presiones gubernamentales</b> (30%)
+<ul class="org-ul">
+<li>Amenazas de reducción presupuestaria</li>
+<li>Campañas de descrédito desde instituciones</li>
+<li>Chantaje con publicidad institucional</li>
+</ul></li>
+
+<li><b>Autonomía redaccional</b> (20%)
+<ul class="org-ul">
+<li>Existencia y respeto de estatuto de redacción</li>
+<li>Capacidad de los periodistas de rechazar coberturas sesgadas</li>
+<li>Elección democrática de representantes profesionales</li>
+</ul></li>
+
+<li><b>Marco legal protector</b> (10%)
+<ul class="org-ul">
+<li>Cumplimiento de estándares EMFA</li>
+<li>Protección judicial efectiva</li>
+<li>Ausencia de demandas SLAPP</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4be9935" class="outline-4">
+<h4 id="org4be9935">Independencia Económica - Factor Español</h4>
+<div class="outline-text-4" id="text-org4be9935">
+<p>
+Debido a la alta dependencia de publicidad institucional en España, este factor se incorpora específicamente con 5% del IGC-ES:
+</p>
+
+<ul class="org-ul">
+<li><b>Diversificación de ingresos</b>: Peso de suscripciones, publicidad privada, otros</li>
+<li><b>Publicidad institucional</b>: Penalización si supera 10% de ingresos totales</li>
+<li><b>Vulnerabilidad a presiones</b>: Evaluación de casos documentados</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6b1cff3" class="outline-3">
+<h3 id="org6b1cff3">B. Fuentes de Datos Específicas España</h3>
+<div class="outline-text-3" id="text-org6b1cff3">
+<ol class="org-ol">
+<li><b>Reuters Institute</b> - Digital News Report España 2024-2025 (Universidad de Navarra)</li>
+<li><b>Comisión Europea</b> - Media Pluralism Monitor Spain 2024</li>
+<li><b>CNMC</b> - Informes de audiencia y financiación medios públicos</li>
+<li><b>SCImago Media Rankings</b> - Posicionamiento medios españoles 2024</li>
+<li><b>GfK DAM</b> - Audiencias digitales España</li>
+<li><b>Rebold Communications</b> - Panel de audiencias 2024</li>
+<li><b>Ethosfera</b> - Observatorio de Medios España</li>
+<li><b>FAPE</b> - Federación de Asociaciones de Periodistas - Informes deontológicos</li>
+<li><b>Consejos Audiovisuales</b> - Andalucía, Cataluña, Valencia, Navarra</li>
+<li><b>Transparency International España</b> - Publicidad institucional 2024</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgfc8589f" class="outline-3">
+<h3 id="orgfc8589f">C. Casos de Manipulación Documentados 2024-2025</h3>
+<div class="outline-text-3" id="text-orgfc8589f">
+</div>
+<div id="outline-container-orgcee352a" class="outline-4">
+<h4 id="orgcee352a">RTVE - Contratación David Broncano</h4>
+<div class="outline-text-4" id="text-orgcee352a">
+<ul class="org-ul">
+<li>Fecha: Septiembre 2024</li>
+<li>Coste: 14 millones anuales (12M programa + 2M extras)</li>
+<li>Controversia: Destitución de presidenta interina Concepción Cascajosa</li>
+<li>Impacto: Crisis institucional, 6 de 10 consejeros con mandato caducado</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb7723de" class="outline-4">
+<h4 id="orgb7723de">À Punt - Apagón DANA</h4>
+<div class="outline-text-4" id="text-orgb7723de">
+<ul class="org-ul">
+<li>Fecha: 25 octubre 2025</li>
+<li>Hechos: Emisión de corrida de toros durante manifestación 50.000 personas</li>
+<li>Víctimas: 229 fallecidos por DANA, primer aniversario</li>
+<li>Consecuencia: Apertura diligencias Consejo Audiovisual valenciano</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org98a86f5" class="outline-4">
+<h4 id="org98a86f5">Telemadrid - Cambio electoral</h4>
+<div class="outline-text-4" id="text-org98a86f5">
+<ul class="org-ul">
+<li>Fecha: 2021</li>
+<li>Hechos: Modificación sistema elección dirección con voto PP + abstención Vox</li>
+<li>Objetivo: Facilitar relevo de cúpula para control político</li>
+<li>Resultado: Credibilidad en mínimos, IGC-ES de 53.2</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org12e7a75" class="outline-4">
+<h4 id="org12e7a75">Canal Sur - Cobertura Doñana</h4>
+<div class="outline-text-4" id="text-org12e7a75">
+<ul class="org-ul">
+<li>Fecha: 2023</li>
+<li>Hechos: FAPE señala falta de veracidad e independencia en cobertura pozos ilegales</li>
+<li>Contexto: Gobierno andaluz invierte 4.6M€ en emisión corridas toros en 2025</li>
+<li>Evaluación: Línea editorial alineada con ejecutivo regional</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org09e3468" class="outline-4">
+<h4 id="org09e3468">TVG - Privatización servicios</h4>
+<div class="outline-text-4" id="text-org09e3468">
+<ul class="org-ul">
+<li>Fecha: 2024 (continuado desde 2009)</li>
+<li>Hechos: Externalización masiva servicios periodísticos</li>
+<li>Inversión cuestionable: 839k€ programa Miguel Lago (&lt;3.5% audiencia)</li>
+<li>Protesta: Huelgas semanales desde 2009</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd6d46f8" class="outline-3">
+<h3 id="orgd6d46f8">D. Evolución Audiencias - Comparativa 2020-2025</h3>
+<div class="outline-text-3" id="text-orgd6d46f8">
+</div>
+<div id="outline-container-orgf56c806" class="outline-4">
+<h4 id="orgf56c806">Televisión Generalista</h4>
+<div class="outline-text-4" id="text-orgf56c806">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Cadena</th>
+<th scope="col" class="org-right">2020</th>
+<th scope="col" class="org-right">2022</th>
+<th scope="col" class="org-right">2024</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Telecinco</td>
+<td class="org-right">14.0%</td>
+<td class="org-right">11.8%</td>
+<td class="org-right">10.2%</td>
+<td class="org-right">9.8%</td>
+<td class="org-left">↓↓</td>
+</tr>
+
+<tr>
+<td class="org-left">Antena 3</td>
+<td class="org-right">11.9%</td>
+<td class="org-right">12.4%</td>
+<td class="org-right">12.1%</td>
+<td class="org-right">11.9%</td>
+<td class="org-left">→</td>
+</tr>
+
+<tr>
+<td class="org-left">La 1 (TVE)</td>
+<td class="org-right">9.7%</td>
+<td class="org-right">8.9%</td>
+<td class="org-right">8.3%</td>
+<td class="org-right">8.1%</td>
+<td class="org-left">↓</td>
+</tr>
+
+<tr>
+<td class="org-left">La Sexta</td>
+<td class="org-right">7.1%</td>
+<td class="org-right">6.8%</td>
+<td class="org-right">6.4%</td>
+<td class="org-right">6.2%</td>
+<td class="org-left">↓</td>
+</tr>
+
+<tr>
+<td class="org-left">Cuatro</td>
+<td class="org-right">5.8%</td>
+<td class="org-right">5.4%</td>
+<td class="org-right">5.1%</td>
+<td class="org-right">4.9%</td>
+<td class="org-left">↓</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgefaee57" class="outline-4">
+<h4 id="orgefaee57">Informativos Prime Time</h4>
+<div class="outline-text-4" id="text-orgefaee57">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Informativo</th>
+<th scope="col" class="org-right">2020</th>
+<th scope="col" class="org-right">2022</th>
+<th scope="col" class="org-right">2024</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Antena 3 Not.</td>
+<td class="org-right">18.2%</td>
+<td class="org-right">19.1%</td>
+<td class="org-right">18.8%</td>
+<td class="org-right">18.5%</td>
+<td class="org-left">→</td>
+</tr>
+
+<tr>
+<td class="org-left">Telecinco Not.</td>
+<td class="org-right">16.4%</td>
+<td class="org-right">14.2%</td>
+<td class="org-right">12.8%</td>
+<td class="org-right">12.1%</td>
+<td class="org-left">↓↓</td>
+</tr>
+
+<tr>
+<td class="org-left">TVE Telediario</td>
+<td class="org-right">12.1%</td>
+<td class="org-right">11.4%</td>
+<td class="org-right">10.8%</td>
+<td class="org-right">10.5%</td>
+<td class="org-left">↓</td>
+</tr>
+
+<tr>
+<td class="org-left">La Sexta Not.</td>
+<td class="org-right">8.9%</td>
+<td class="org-right">8.7%</td>
+<td class="org-right">8.4%</td>
+<td class="org-right">8.2%</td>
+<td class="org-left">↓</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgb46b1c1" class="outline-4">
+<h4 id="orgb46b1c1">Medios Digitales (Usuarios Únicos mensuales, millones)</h4>
+<div class="outline-text-4" id="text-orgb46b1c1">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Medio</th>
+<th scope="col" class="org-right">2020</th>
+<th scope="col" class="org-right">2022</th>
+<th scope="col" class="org-right">2024</th>
+<th scope="col" class="org-right">2025</th>
+<th scope="col" class="org-left">Tendencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">El País</td>
+<td class="org-right">22.3</td>
+<td class="org-right">24.1</td>
+<td class="org-right">25.8</td>
+<td class="org-right">26.2</td>
+<td class="org-left">↑</td>
+</tr>
+
+<tr>
+<td class="org-left">El Mundo</td>
+<td class="org-right">18.7</td>
+<td class="org-right">19.4</td>
+<td class="org-right">20.1</td>
+<td class="org-right">20.4</td>
+<td class="org-left">↑</td>
+</tr>
+
+<tr>
+<td class="org-left">El Confidencial</td>
+<td class="org-right">12.4</td>
+<td class="org-right">14.8</td>
+<td class="org-right">17.2</td>
+<td class="org-right">18.1</td>
+<td class="org-left">↑↑</td>
+</tr>
+
+<tr>
+<td class="org-left">20 Minutos</td>
+<td class="org-right">15.2</td>
+<td class="org-right">14.9</td>
+<td class="org-right">14.2</td>
+<td class="org-right">13.8</td>
+<td class="org-left">↓</td>
+</tr>
+
+<tr>
+<td class="org-left">ABC</td>
+<td class="org-right">11.8</td>
+<td class="org-right">12.3</td>
+<td class="org-right">12.9</td>
+<td class="org-right">13.1</td>
+<td class="org-left">↑</td>
+</tr>
+
+<tr>
+<td class="org-left">elDiario.es</td>
+<td class="org-right">8.9</td>
+<td class="org-right">10.7</td>
+<td class="org-right">12.4</td>
+<td class="org-right">13.2</td>
+<td class="org-left">↑↑</td>
+</tr>
+
+<tr>
+<td class="org-left">La Vanguardia</td>
+<td class="org-right">14.1</td>
+<td class="org-right">14.7</td>
+<td class="org-right">15.2</td>
+<td class="org-right">15.4</td>
+<td class="org-left">↑</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2a6157b" class="outline-3">
+<h3 id="org2a6157b">E. Inversión Publicitaria 2024</h3>
+<div class="outline-text-3" id="text-org2a6157b">
+</div>
+<div id="outline-container-org4333203" class="outline-4">
+<h4 id="org4333203">Distribución por Sector (millones €)</h4>
+<div class="outline-text-4" id="text-org4333203">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Sector</th>
+<th scope="col" class="org-right">Inversión</th>
+<th scope="col" class="org-right">% del Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Distribución/Retail</td>
+<td class="org-right">1.287</td>
+<td class="org-right">18.4%</td>
+</tr>
+
+<tr>
+<td class="org-left">Automoción</td>
+<td class="org-right">892</td>
+<td class="org-right">12.8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Finanzas/Seguros</td>
+<td class="org-right">743</td>
+<td class="org-right">10.6%</td>
+</tr>
+
+<tr>
+<td class="org-left">Telecomunicaciones</td>
+<td class="org-right">681</td>
+<td class="org-right">9.7%</td>
+</tr>
+
+<tr>
+<td class="org-left">Administración Pública</td>
+<td class="org-right">524</td>
+<td class="org-right">7.5%</td>
+</tr>
+
+<tr>
+<td class="org-left">Alimentación</td>
+<td class="org-right">498</td>
+<td class="org-right">7.1%</td>
+</tr>
+
+<tr>
+<td class="org-left">Cultura/Ocio</td>
+<td class="org-right">421</td>
+<td class="org-right">6.0%</td>
+</tr>
+
+<tr>
+<td class="org-left">Otros</td>
+<td class="org-right">1.954</td>
+<td class="org-right">27.9%</td>
+</tr>
+
+<tr>
+<td class="org-left"><b>Total</b></td>
+<td class="org-right"><b>7.000</b></td>
+<td class="org-right"><b>100.0%</b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org77f261f" class="outline-4">
+<h4 id="org77f261f">Evolución Inversión Publicitaria</h4>
+<div class="outline-text-4" id="text-org77f261f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Año</th>
+<th scope="col" class="org-right">Total (mill. €)</th>
+<th scope="col" class="org-right">Digital %</th>
+<th scope="col" class="org-right">TV %</th>
+<th scope="col" class="org-right">Prensa %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2020</td>
+<td class="org-right">5.120</td>
+<td class="org-right">38.2</td>
+<td class="org-right">36.1</td>
+<td class="org-right">8.7</td>
+</tr>
+
+<tr>
+<td class="org-right">2021</td>
+<td class="org-right">5.890</td>
+<td class="org-right">42.1</td>
+<td class="org-right">34.3</td>
+<td class="org-right">7.2</td>
+</tr>
+
+<tr>
+<td class="org-right">2022</td>
+<td class="org-right">6.340</td>
+<td class="org-right">45.7</td>
+<td class="org-right">32.8</td>
+<td class="org-right">6.1</td>
+</tr>
+
+<tr>
+<td class="org-right">2023</td>
+<td class="org-right">6.720</td>
+<td class="org-right">48.9</td>
+<td class="org-right">31.2</td>
+<td class="org-right">5.3</td>
+</tr>
+
+<tr>
+<td class="org-right">2024</td>
+<td class="org-right">7.000</td>
+<td class="org-right">51.3</td>
+<td class="org-right">29.8</td>
+<td class="org-right">4.7</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+La migración hacia digital se acelera: en 2024, por primera vez, más del 50% de inversión publicitaria se destina a medios digitales, consolidando la crisis de modelo económico de prensa tradicional.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org559f22f" class="outline-2">
+<h2 id="org559f22f">Referencias Bibliográficas</h2>
+<div class="outline-text-2" id="text-org559f22f">
+<blockquote>
+<ol class="org-ol">
+<li>Negredo, S., Vara-Miguel, A., Amoedo, A. (2024). "Digital News Report España 
+2024-2025". Pamplona: Universidad de Navarra - Center for Internet Studies and 
+Digital Life.</li>
+
+<li>Comisión Europea (2024). "Media Pluralism Monitor 2024 - Country Report: Spain". 
+Bruselas: European Commission, DG CONNECT.</li>
+
+<li>CNMC (2024). "Informe Económico-Financiero del Sector Audiovisual 2024". 
+Madrid: Comisión Nacional de los Mercados y la Competencia.</li>
+
+<li>SCImago Research Group (2024). "SCImago Media Rankings - España 2024". 
+Disponible en: www.scimagomediarank.org</li>
+
+<li>FAPE (2024). "Informe Anual sobre la Profesión Periodística 2024". Madrid: 
+Federación de Asociaciones de Periodistas de España.</li>
+
+<li>Transparency International España (2024). "Publicidad Institucional en Medios 
+de Comunicación: Análisis 2024". Madrid: TI España.</li>
+
+<li>Consejo Audiovisual de Andalucía (2024). "Informe sobre Objetividad e 
+Independencia en Canal Sur". Sevilla: CAA.</li>
+
+<li>RTVs Públicas en Lucha (2024). "Manifiesto por la Independencia de los Medios 
+Públicos Autonómicos". Plataforma Unitaria.</li>
+
+<li>Parlamento Europeo (2024). "Reglamento sobre la Libertad de los Medios de 
+Comunicación (EMFA)". Estrasburgo: PE.</li>
+
+<li>Casero-Ripollés, A. (2023). "Crisis de credibilidad y polarización mediática 
+en España". Valencia: Tirant lo Blanch.</li>
+
+<li>Campos-Domínguez, E. (2024). "El ecosistema mediático digital en España: 
+Plataformas, audiencias y modelos de negocio". Madrid: Tecnos.</li>
+
+<li>Sádaba, T., &amp; Salaverría, R. (2023). "La desinformación en España: Análisis 
+y propuestas". Pamplona: EUNSA.</li>
+</ol>
+</blockquote>
+
+
+
+<p class="post-meta">Publicado el 2025-12-18 14:21 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 23:14</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

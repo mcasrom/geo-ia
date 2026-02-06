@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 23:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Análisis Crítico: Los Acuerdos de Paz de Trump - Realidad vs Retórica</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Evaluación crítica y analítica de las afirmaciones de Donald Trump sobre sus supuestos seis o siete acuerdos de paz, examinando la realidad detrás de la retórica presidencial" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Análisis Crítico: Los Acuerdos de Paz de Trump - Realidad vs Retórica</h1>
+
+<div id="outline-container-org4da7828" class="outline-2">
+<h2 id="org4da7828">Análisis Crítico: Los Acuerdos de Paz de Trump - Realidad vs Retórica</h2>
+<div class="outline-text-2" id="text-org4da7828">
+<p>
+El artículo de Foreign Policy expone una discrepancia significativa entre las afirmaciones de Trump de haber "terminado seis guerras" (que luego se convirtió en "resolver siete guerras") y la realidad documentada de estos supuestos acuerdos de paz. Este análisis examina cada caso mencionado, evaluando la veracidad de las afirmaciones presidenciales y su impacto geopolítico real.
+</p>
+</div>
+
+<div id="outline-container-org27179e8" class="outline-3">
+<h3 id="org27179e8">Hallazgos Principales</h3>
+<div class="outline-text-3" id="text-org27179e8">
+<ul class="org-ul">
+<li>Inconsistencia numérica en las afirmaciones (6 vs 7 acuerdos)</li>
+<li>Participación variable de Estados Unidos en los procesos de mediación</li>
+<li>Fragilidad documentada de varios ceses al fuego</li>
+<li>Exageración sistemática del rol estadounidense</li>
+</ul>
+
+
+<div id="orgb2a74c6" class="figure">
+<p><img src="./assets/images/trump-peace-claims-verification.png" alt="trump-peace-claims-verification.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd7e2b4e" class="outline-2">
+<h2 id="orgd7e2b4e">Análisis por Casos</h2>
+<div class="outline-text-2" id="text-orgd7e2b4e">
+</div>
+<div id="outline-container-org0d5a865" class="outline-3">
+<h3 id="org0d5a865">India-Pakistán: Disputas sobre la Mediación</h3>
+<div class="outline-text-3" id="text-org0d5a865">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Aspecto</th>
+<th scope="col" class="org-left">Afirmación de Trump</th>
+<th scope="col" class="org-left">Realidad Documentada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Fecha</td>
+<td class="org-left">10 de mayo, 2025</td>
+<td class="org-left">Mayo 2025</td>
+</tr>
+
+<tr>
+<td class="org-left">Rol EEUU</td>
+<td class="org-left">"ALTO AL FUEGO TOTAL E INMEDIATO" tras "una larga noche de conversaciones mediadas por Estados Unidos"</td>
+<td class="org-left">India consistentemente minimizó y disputó el papel de Trump</td>
+</tr>
+
+<tr>
+<td class="org-left">Reconocimiento</td>
+<td class="org-left">Pakistán nominó a Trump al Nobel</td>
+<td class="org-left">India afirmó negociación directa</td>
+</tr>
+
+<tr>
+<td class="org-left">Resultado</td>
+<td class="org-left">Alto al fuego proclamado</td>
+<td class="org-left">Fin del conflicto confirmado</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgacf0346" class="outline-3">
+<h3 id="orgacf0346">Ruanda-República Democrática del Congo: Éxito Inicial, Fracaso Posterior</h3>
+<div class="outline-text-3" id="text-orgacf0346">
+<p>
+La administración Trump sí desempeñó un papel en asegurar una pausa en las hostilidades entre Ruanda y Congo, así como en negociar un acuerdo de paz preliminar que se firmó en la Casa Blanca a finales de junio. Sin embargo, ese alto al fuego no se mantuvo, y las conversaciones de paz destinadas a asegurar un acuerdo permanente fracasaron esta semana después de que el grupo rebelde M23 respaldado por Ruanda se retiró de las negociaciones.
+</p>
+
+
+<div id="org4431c3b" class="figure">
+<p><img src="./assets/images/congo-rwanda-timeline.png" alt="congo-rwanda-timeline.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3f929d4" class="outline-3">
+<h3 id="org3f929d4">Camboya-Tailandia: Mediación Cuestionable</h3>
+<div class="outline-text-3" id="text-org3f929d4">
+<p>
+El conflicto fronterizo que mató a más de 40 personas y desplazó a más de 300,000 personas el mes pasado fue mediado principalmente por Malasia y su primer ministro, Anwar Ibrahim, aunque Estados Unidos y China estuvieron involucrados en las conversaciones que condujeron a él. Trump publicó en Truth Social dos días antes del alto al fuego que Estados Unidos estaba "negociando sobre Comercio con ambos Países" pero no lo haría a menos que dejaran de luchar.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb82d8c5" class="outline-3">
+<h3 id="orgb82d8c5">Armenia-Azerbaiyán: El Caso Más Convincente</h3>
+<div class="outline-text-3" id="text-orgb82d8c5">
+<p>
+En la más reciente y quizás la más convincente de las afirmaciones de mediación de Trump, el presidente azerbaiyano Ilham Aliyev y el primer ministro armenio Nikol Pashinyan firmaron un acuerdo en Washington este mes para resolver su disputa de larga data sobre el llamado corredor de Zangezur. Que ahora será renombrado como la "Ruta Trump para la Paz y Prosperidad Internacional", con Washington también obteniendo derechos de arrendamiento para que una empresa estadounidense lo desarrolle.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5cf390c" class="outline-2">
+<h2 id="org5cf390c">Análisis Crítico: Patrones y Problemáticas</h2>
+<div class="outline-text-2" id="text-org5cf390c">
+</div>
+<div id="outline-container-org1f2a0e0" class="outline-3">
+<h3 id="org1f2a0e0">Inconsistencias Narrativas</h3>
+<div class="outline-text-3" id="text-org1f2a0e0">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Problema Identificado</th>
+<th scope="col" class="org-left">Evidencia</th>
+<th scope="col" class="org-left">Implicaciones</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Cambio numérico en 24h</td>
+<td class="org-left">6 → 7 guerras resueltas</td>
+<td class="org-left">Falta de rigor en comunicación</td>
+</tr>
+
+<tr>
+<td class="org-left">Negación de ceses al fuego</td>
+<td class="org-left">"no hice ningún alto al fuego" vs múltiples menciones de "CEASEFIRE"</td>
+<td class="org-left">Contradicción factual</td>
+</tr>
+
+<tr>
+<td class="org-left">Exageración de roles</td>
+<td class="org-left">Múltiples casos de minimización por otros países</td>
+<td class="org-left">Inflación diplomática</td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="org862ef45" class="figure">
+<p><img src="./assets/images/trump-credibility-analysis.png" alt="trump-credibility-analysis.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdc438ae" class="outline-3">
+<h3 id="orgdc438ae">Conflictos "Fantasma"</h3>
+<div class="outline-text-3" id="text-orgdc438ae">
+<p>
+El análisis revela dos casos particularmente problemáticos:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Egipto-Etiopía</b></b>: Los dos países no estaban en guerra, pero hay conflicto entre ellos por una represa hidroeléctrica. Trump afirmó en junio que había ayudado a resolver la disputa y que "hay paz, al menos por ahora", pero no se ha resuelto.</li>
+
+<li><b><b>Serbia-Kosovo</b></b>: Estos países no han estado en conflicto directo desde finales de los años 90. Trump sí ayudó a negociar un acuerdo de normalización económica entre los dos países en su primer mandato, pero sus tensiones de larga data están lejos de resolverse.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8a71cd4" class="outline-2">
+<h2 id="org8a71cd4">Análisis Geopolítico: Ganadores y Perdedores</h2>
+<div class="outline-text-2" id="text-org8a71cd4">
+</div>
+<div id="outline-container-org78eddcc" class="outline-3">
+<h3 id="org78eddcc">Ganadores</h3>
+<div class="outline-text-3" id="text-org78eddcc">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actor</th>
+<th scope="col" class="org-left">Beneficio</th>
+<th scope="col" class="org-left">Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b><b>Trump</b></b></td>
+<td class="org-left">Capital político interno</td>
+<td class="org-left">Narrativa de "pacificador" para base electoral</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Pakistán</b></b></td>
+<td class="org-left">Reconocimiento diplomático</td>
+<td class="org-left">Nominación al Nobel refuerza legitimidad</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Azerbaiyán</b></b></td>
+<td class="org-left">Corredor estratégico</td>
+<td class="org-left">Acceso garantizado y naming rights valiosos</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Armenia</b></b></td>
+<td class="org-left">Resolución territorial</td>
+<td class="org-left">Fin de disputa de larga data</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org8f27e61" class="outline-3">
+<h3 id="org8f27e61">Perdedores</h3>
+<div class="outline-text-3" id="text-org8f27e61">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actor</th>
+<th scope="col" class="org-left">Pérdida</th>
+<th scope="col" class="org-left">Impacto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b><b>India</b></b></td>
+<td class="org-left">Autonomía diplomática</td>
+<td class="org-left">Narrativa de dependencia de mediación externa</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Credibilidad diplomática EEUU</b></b></td>
+<td class="org-left">Confianza internacional</td>
+<td class="org-left">Múltiples críticos señalan que varios alto al fuego han demostrado ser frágiles</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Poblaciones afectadas</b></b></td>
+<td class="org-left">Paz sostenible</td>
+<td class="org-left">Conflictos reanudan tras acuerdos mediáticos</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Congo Oriental</b></b></td>
+<td class="org-left">Estabilidad regional</td>
+<td class="org-left">Las conversaciones de paz fracasaron después de que M23 se retiró</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org1f36bb4" class="outline-3">
+<h3 id="org1f36bb4">Neutrales/Contextuales</h3>
+<div class="outline-text-3" id="text-org1f36bb4">
+<ul class="org-ul">
+<li><b><b>Malasia</b></b>: Verdadero mediador en Camboya-Tailandia, minimizado en narrativa trumpiana</li>
+<li><b><b>China</b></b>: Co-mediador no reconocido públicamente</li>
+<li><b><b>Comunidad Internacional</b></b>: Escéptica pero pragmática ante resultados mixtos</li>
+</ul>
+
+
+<div id="orgf4b7708" class="figure">
+<p><img src="./assets/images/geopolitical-impact.png" alt="geopolitical-impact.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgee21875" class="outline-2">
+<h2 id="orgee21875">Implicaciones para la Política Exterior Estadounidense</h2>
+<div class="outline-text-2" id="text-orgee21875">
+</div>
+<div id="outline-container-orgc289429" class="outline-3">
+<h3 id="orgc289429">Patrón Transaccional vs Mediación Sostenible</h3>
+<div class="outline-text-3" id="text-orgc289429">
+<p>
+El análisis de los casos revela una filosofía de política exterior más amplia de Trump: impredecible, unilateral y fuertemente transaccional. Su enfoque buscó reafirmar la influencia estadounidense a través de presión y apalancamiento económico.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8f73310" class="outline-3">
+<h3 id="org8f73310">Problemas Sistémicos Identificados</h3>
+<div class="outline-text-3" id="text-org8f73310">
+<ol class="org-ol">
+<li><b><b>Sostenibilidad Limitada</b></b>: Varios de los alto al fuego y acuerdos de paz que Trump ha defendido han demostrado ser frágiles, con algunos rompiéndose o enfrentando violaciones en semanas.</li>
+
+<li><b><b>Verificación Insuficiente</b></b>: Otros críticos han cuestionado cuánta participación tuvo el presidente y la administración en varios procesos.</li>
+
+<li><b><b>Comunicación Inconsistente</b></b>: La Casa Blanca no respondió a una solicitud de aclaración sobre a qué conflictos se refería Trump.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org8b63d95" class="outline-3">
+<h3 id="org8b63d95">Contexto del Nobel Prize</h3>
+<div class="outline-text-3" id="text-org8b63d95">
+<p>
+"El presidente Trump ha negociado en promedio aproximadamente un acuerdo de paz o alto al fuego por mes durante sus seis meses en el cargo", dijo la secretaria de prensa de la Casa Blanca Karoline Leavitt durante una sesión informativa el mes pasado. "Ya es hora de que el presidente Trump sea galardonado con el Premio Nobel de la Paz".
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org483c2fb" class="outline-2">
+<h2 id="org483c2fb">Conclusiones y Evaluación Final</h2>
+<div class="outline-text-2" id="text-org483c2fb">
+</div>
+<div id="outline-container-orgaa04d10" class="outline-3">
+<h3 id="orgaa04d10">Evaluación por Criterios</h3>
+<div class="outline-text-3" id="text-orgaa04d10">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Criterio</th>
+<th scope="col" class="org-left">Calificación</th>
+<th scope="col" class="org-left">Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b><b>Veracidad Factual</b></b></td>
+<td class="org-left">3/10</td>
+<td class="org-left">Múltiples exageraciones y casos "fantasma"</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Impacto Real</b></b></td>
+<td class="org-left">5/10</td>
+<td class="org-left">Algunos logros genuinos, muchos frágiles</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Sostenibilidad</b></b></td>
+<td class="org-left">2/10</td>
+<td class="org-left">Múltiples acuerdos ya fracasados</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Transparencia</b></b></td>
+<td class="org-left">2/10</td>
+<td class="org-left">Falta de clarificación oficial</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>Coherencia Narrativa</b></b></td>
+<td class="org-left">1/10</td>
+<td class="org-left">Inconsistencias numéricas y factuales</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org7d332d8" class="outline-3">
+<h3 id="org7d332d8">Veredicto Analítico</h3>
+<div class="outline-text-3" id="text-org7d332d8">
+<p>
+La evidencia sugiere un patrón sistemático de <b><b>inflación diplomática</b></b> donde la administración Trump:
+</p>
+
+<ol class="org-ol">
+<li>Exagera su rol en procesos de mediación existentes</li>
+<li>Reclama crédito por resoluciones de conflictos inexistentes</li>
+<li>Ignora la fragilidad de acuerdos temporales</li>
+<li>Prioriza narrativas de campaña sobre verificación factual</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org97908e5" class="outline-3">
+<h3 id="org97908e5">Recomendaciones para Análisis Futuro</h3>
+<div class="outline-text-3" id="text-org97908e5">
+<ul class="org-ul">
+<li>Monitoreo independiente de la sostenibilidad de acuerdos proclamados</li>
+<li>Verificación cruzada con fuentes diplomáticas de países involucrados</li>
+<li>Análisis de discrepancias entre comunicación pública y realidad operacional</li>
+<li>Evaluación del impacto en credibilidad diplomática estadounidense a largo plazo</li>
+</ul>
+
+
+
+<div id="org04750b4" class="figure">
+<p><img src="./assets/images/conclusion-assessment.png" alt="conclusion-assessment.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgee6fd04" class="outline-2">
+<h2 id="orgee6fd04">Referencias y Fuentes</h2>
+<div class="outline-text-2" id="text-orgee6fd04">
+</div>
+<div id="outline-container-org541dc4d" class="outline-3">
+<h3 id="org541dc4d">Fuentes Primarias</h3>
+<div class="outline-text-3" id="text-org541dc4d">
+<ul class="org-ul">
+<li>Iyengar, R. &amp; Haltiwanger, J. (2025). "How Many Peace Deals Has Trump Actually Brokered?". <b>Foreign Policy</b>. 21 agosto.</li>
+<li>Trump, D. Posts en Truth Social (múltiples fechas, mayo-agosto 2025)</li>
+<li>Declaraciones oficiales Casa Blanca (2025)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0304ac7" class="outline-3">
+<h3 id="org0304ac7">Fuentes Secundarias</h3>
+<div class="outline-text-3" id="text-org0304ac7">
+<ul class="org-ul">
+<li>Análisis Axios sobre conflictos "terminados" por Trump</li>
+<li>Informes Newsweek sobre mapeo de acuerdos de paz</li>
+<li>Evaluaciones Middle East Institute sobre política exterior</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9215b71" class="outline-3">
+<h3 id="org9215b71">Metodología</h3>
+<div class="outline-text-3" id="text-org9215b71">
+<p>
+Este análisis empleó verificación cruzada de fuentes, análisis de discurso político, y evaluación de impacto geopolítico basada en evidencia documental y reportes de medios independientes especializados en política exterior.
+</p>
+
+<p>
+&#x2014;
+<b>Documento elaborado para análisis académico y evaluación crítica de políticas públicas internacionales.</b>
+</p>
+
+
+<p class="post-meta">Publicado el 2025-08-24 14:43 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 23:14</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

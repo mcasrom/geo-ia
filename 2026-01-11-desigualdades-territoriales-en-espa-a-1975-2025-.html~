@@ -1,0 +1,2403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Desigualdades Territoriales en España (1975-2025)</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Estudio exhaustivo de la evolución de las desigualdades económicas entre las comunidades" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Desigualdades Territoriales en España (1975-2025)</h1>
+
+<div id="outline-container-orgbaf6a0a" class="outline-2">
+<h2 id="orgbaf6a0a">Desigualdades Territoriales en España (1975-2025)</h2>
+<div class="outline-text-2" id="text-orgbaf6a0a">
+
+<div id="orgabbb67c" class="figure">
+<p><img src="./assets/images/chat_regional_spain.png" alt="chat_regional_spain.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org06e139b" class="outline-2">
+<h2 id="org06e139b">Introducción: El Mapa de la Desigualdad en la España Democrática</h2>
+<div class="outline-text-2" id="text-org06e139b">
+<p>
+El proceso de democratización iniciado tras la muerte de Francisco Franco en noviembre de 1975 no solo transformó el sistema político español, sino que reconfiguró profundamente el mapa territorial de las desigualdades económicas. El establecimiento del Estado de las Autonomías, consagrado en la Constitución de 1978, creó un marco institucional descentralizado que ha condicionado durante casi medio siglo los patrones de desarrollo regional y distribución de la renta.
+</p>
+
+<p>
+Entre 2011 y 2022, el coeficiente de Gini español descendió aproximadamente dos puntos, pero esta tendencia agregada oculta dinámicas territoriales heterogéneas y, en ocasiones, divergentes. La pregunta fundamental que orienta este análisis es: ¿ha favorecido el modelo autonómico la convergencia económica entre territorios o, por el contrario, ha perpetuado e incluso profundizado las fracturas históricas?
+</p>
+
+<p>
+Este documento examina la evolución de las desigualdades interterritoriales e intraterritoriales en España mediante el análisis del coeficiente de Gini y otros indicadores complementarios, desde una triple perspectiva: histórica (1975-2025), comparativa (entre comunidades autónomas) y crítica (evaluando el impacto de políticas públicas y transformaciones estructurales).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge8bcb1e" class="outline-2">
+<h2 id="orge8bcb1e">La España de 1975: Herencia Franquista y Desequilibrios Fundacionales</h2>
+<div class="outline-text-2" id="text-orge8bcb1e">
+</div>
+<div id="outline-container-org40c96d9" class="outline-3">
+<h3 id="org40c96d9">Contexto Económico-Territorial del Tardofranquismo</h3>
+<div class="outline-text-3" id="text-org40c96d9">
+<p>
+Al final del régimen franquista, España presentaba un mapa económico profundamente desigual, producto de cuatro décadas de industrialización selectiva y concentración urbana. El desarrollismo de los años sesenta y setenta había beneficiado primordialmente a:
+</p>
+
+<ul class="org-ul">
+<li>El eje mediterráneo (Cataluña, Valencia, Baleares)</li>
+<li>La cornisa cantábrica industrial (País Vasco, Asturias)</li>
+<li>El área metropolitana de Madrid como capital administrativa</li>
+</ul>
+
+<p>
+Paralelamente, vastas extensiones del interior peninsular (las dos Castillas, Extremadura, Aragón interior) experimentaban despoblación acelerada y estancamiento productivo. Esta dualidad Norte desarrollado/Sur atrasado, junto con la dicotomía litoral dinámico/interior estancado, constituía la herencia estructural que la democracia heredaría.
+</p>
+
+<p>
+Según datos de Contabilidad Regional del INE, en 1980 el PIB per cápita español pasó de 11.422 dólares a 18.654 dólares (PPA 1996) al final del periodo, con un crecimiento acumulado superior al 63%. Sin embargo, este crecimiento fue profundamente asimétrico territorialmente.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb712682" class="outline-3">
+<h3 id="orgb712682">Desigualdades Iniciales: Punto de Partida 1980</h3>
+<div class="outline-text-3" id="text-orgb712682">
+<p>
+Las disparidades de PIB per cápita entre territorios en 1980 revelaban brechas sustanciales. Madrid ganó más de 10 puntos de participación en el PIB nacional, seguida de Baleares, Castilla y León y Extremadura, mientras La Rioja sufrió retrocesos importantes. Este patrón inicial condicionaría las trayectorias posteriores de convergencia/divergencia.
+</p>
+
+<p>
+El coeficiente de variación del PIB per cápita entre comunidades autónomas mostraba en 1980 una dispersión moderada pero persistente, estableciendo el marco de referencia para evaluar la evolución democrática posterior.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcc18adc" class="outline-2">
+<h2 id="orgcc18adc">Evolución Cronológica de las Desigualdades Regionales (1980-2025)</h2>
+<div class="outline-text-2" id="text-orgcc18adc">
+</div>
+<div id="outline-container-orgb7377a5" class="outline-3">
+<h3 id="orgb7377a5">Fase I: Transición Democrática y Convergencia Inicial (1975-1986)</h3>
+<div class="outline-text-3" id="text-orgb7377a5">
+<p>
+El periodo de la Transición política coincidió con una dinámica económica contradictoria. Por un lado, la crisis petrolera de 1973 y la reconversión industrial golpearon duramente a las regiones industrializadas del norte (Asturias, País Vasco, Cantabria), erosionando sus ventajas históricas. Por otro, la democratización permitió inversiones públicas redistributivas hacia regiones históricamente marginadas.
+</p>
+
+<p>
+Entre las regiones divergentes figuraban economías con alto desarrollo como Cataluña e incluso Aragón, junto con otras por debajo de la media nacional como Galicia o Andalucía. Este patrón sugiere que la convergencia regional no siguió una lógica lineal de catching-up.
+</p>
+
+<p>
+La adhesión a las Comunidades Europeas el 12 de junio de 1985 marcó un punto de inflexión. El acceso a fondos estructurales europeos y la apertura económica generaron expectativas de modernización, aunque sus efectos diferenciales sobre los territorios tardarían años en materializarse.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga6690f9" class="outline-3">
+<h3 id="orga6690f9">Fase II: Integración Europea y Divergencia Renovada (1986-2000)</h3>
+<div class="outline-text-3" id="text-orga6690f9">
+<p>
+La entrada en la Comunidad Europea inauguró un periodo de crecimiento económico intenso pero territorialmente desequilibrado. Las regiones mejor conectadas a los flujos comerciales europeos (Cataluña, País Vasco, Madrid) capitalizaron las oportunidades de integración, mientras regiones periféricas quedaron relativamente rezagadas.
+</p>
+
+<p>
+Andalucía, Asturias, Castilla y León, Galicia y Murcia mostraron tendencia a empeorar ligeramente su relación con la media nacional, evidenciando que la integración europea no benefició uniformemente a todos los territorios.
+</p>
+
+<p>
+Simultáneamente, Baleares y Extremadura mostraron tendencia a converger respecto a la media española, aunque sus niveles de producto por habitante seguían siendo claramente distintos. Este fenómeno revela que convergencia estadística no equivale necesariamente a homogeneización de niveles de desarrollo.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfe06f78" class="outline-3">
+<h3 id="orgfe06f78">Fase III: Burbuja Inmobiliaria y Desigualdades Crecientes (2000-2008)</h3>
+<div class="outline-text-3" id="text-orgfe06f78">
+<p>
+La década previa a la Gran Recesión se caracterizó por un crecimiento económico basado en la construcción y los servicios turísticos, que benefició especialmente a las comunidades mediterráneas y los archipiélagos. El coeficiente de Gini agregado español alcanzó máximos históricos en torno a 2007-2008, reflejando tanto desigualdades interterritoriales como intraterritoriales crecientes.
+</p>
+
+<p>
+Durante este periodo, Madrid consolidó su posición como locomotora económica nacional, atraendo inversión extranjera y población cualificada. Cataluña mantuvo su peso industrial y de servicios avanzados, mientras Andalucía experimentó un crecimiento aparente basado en construcción que demostraría ser insostenible.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9a6343f" class="outline-3">
+<h3 id="org9a6343f">Fase IV: Gran Recesión y Crisis Asimétrica (2008-2014)</h3>
+<div class="outline-text-3" id="text-org9a6343f">
+<p>
+La crisis financiera de 2008 impactó diferencialmente a las comunidades autónomas. Aquellas con mayor dependencia del sector construcción (Comunidad Valenciana, Murcia, Andalucía, Castilla-La Mancha) sufrieron contracciones más severas del PIB y aumentos dramáticos del desempleo. El coeficiente de Gini español alcanzó su máximo histórico en 2014, situándose aproximadamente en 35, colocando a España entre los países más desiguales de Europa junto con Letonia.
+</p>
+
+<p>
+En 2010, el mayor nivel de desigualdad económica se alcanzaba en la Ciudad Autónoma de Ceuta, donde el 20% más rico acumulaba casi el 50% de las rentas, mientras el 20% más pobre se repartía sólo el 3,2%. Le seguían Melilla, Andalucía, Extremadura, Región de Murcia, Comunidad Valenciana, Castilla-La Mancha e Islas Baleares, todas con Gini superior a la media nacional.
+</p>
+
+<p>
+En contraste, la Comunidad Foral de Navarra presentaba el menor nivel de desigualdad, donde el 20% más rico acumulaba el 35% de las rentas, evidenciando que el modelo foral y las políticas redistributivas autonómicas podían mitigar significativamente la desigualdad.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3a76b64" class="outline-3">
+<h3 id="org3a76b64">Fase V: Recuperación Desigual y Consolidación (2014-2020)</h3>
+<div class="outline-text-3" id="text-org3a76b64">
+<p>
+La recuperación económica post-2014 fue territorialmente asimétrica. Comunidades con elevado peso turístico, como Baleares y Canarias, mostraron reducciones de la desigualdad que superaban los 4 puntos en el índice de Gini, vinculado a la recuperación del empleo en servicios turísticos.
+</p>
+
+<p>
+El índice de Gini español alcanzó 31,5 en 2023, el valor más bajo de toda la serie estudiada, señalando una mejora sustancial en la distribución de la renta agregada. Sin embargo, esta cifra nacional enmascara persistentes disparidades territoriales.
+</p>
+
+<p>
+El ratio S80/S20 (proporción entre el quintil superior e inferior de ingresos) mostró evoluciones divergentes entre comunidades. Mientras regiones como Navarra, País Vasco y Aragón mantenían ratios inferiores a 5, otras como Andalucía, Extremadura y las ciudades autónomas superaban el 6, indicando concentraciones de renta significativamente mayores.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeeca513" class="outline-3">
+<h3 id="orgeeca513">Fase VI: Pandemia COVID-19 y Nueva Reconfiguración (2020-2025)</h3>
+<div class="outline-text-3" id="text-orgeeca513">
+<p>
+La pandemia de COVID-19 constituyó un shock exógeno que reordenó temporalmente las desigualdades territoriales. Durante la pandemia, el índice de Gini sin transferencias públicas aumentó en más de 10 puntos entre febrero y mayo de 2020, mientras que considerando las transferencias el aumento fue muy inferior, de 2,3 puntos, demostrando el papel crucial de las políticas de apoyo público (ERTE, Ingreso Mínimo Vital) en amortiguar la desigualdad.
+</p>
+
+<p>
+Desde 2022, el indicador en tiempo real de CaixaBank Research muestra que la desigualdad ha mantenido tendencia a la baja, y en noviembre de 2024 el índice de Gini se situaba 2,9 puntos por debajo de los niveles previos a la pandemia. Esta reducción se vincula fundamentalmente a la caída del desempleo, que pasó de máximos del 26% (2013) a mínimos históricos del 11-12% (2024).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9ecf87a" class="outline-2">
+<h2 id="org9ecf87a">Matrices Comparativas: Coeficiente de Gini por Comunidades Autónomas</h2>
+<div class="outline-text-2" id="text-org9ecf87a">
+</div>
+<div id="outline-container-org030e169" class="outline-3">
+<h3 id="org030e169">Tabla 1: Coeficiente de Gini por Comunidad Autónoma (2008-2024)</h3>
+<div class="outline-text-3" id="text-org030e169">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Comunidad Autónoma</th>
+<th scope="col" class="org-right">2008</th>
+<th scope="col" class="org-right">2014</th>
+<th scope="col" class="org-right">2021</th>
+<th scope="col" class="org-right">2024*</th>
+<th scope="col" class="org-right">Δ 2008-2024</th>
+<th scope="col" class="org-left">Clasificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left"><b>España (media nacional)</b></td>
+<td class="org-right">31.9</td>
+<td class="org-right">34.7</td>
+<td class="org-right">33.0</td>
+<td class="org-right">31.0</td>
+<td class="org-right">-0.9</td>
+<td class="org-left">--</td>
+</tr>
+
+<tr>
+<td class="org-left">Andalucía</td>
+<td class="org-right">33.1</td>
+<td class="org-right">35.8</td>
+<td class="org-right">34.5</td>
+<td class="org-right">33.2</td>
+<td class="org-right">+0.1</td>
+<td class="org-left">Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Aragón</td>
+<td class="org-right">28.6</td>
+<td class="org-right">30.2</td>
+<td class="org-right">29.1</td>
+<td class="org-right">28.5</td>
+<td class="org-right">-0.1</td>
+<td class="org-left">Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Asturias</td>
+<td class="org-right">29.8</td>
+<td class="org-right">31.9</td>
+<td class="org-right">30.5</td>
+<td class="org-right">29.8</td>
+<td class="org-right">0.0</td>
+<td class="org-left">Media-Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Baleares</td>
+<td class="org-right">30.2</td>
+<td class="org-right">32.5</td>
+<td class="org-right">30.8</td>
+<td class="org-right">29.5</td>
+<td class="org-right">-0.7</td>
+<td class="org-left">Media-Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Canarias</td>
+<td class="org-right">32.8</td>
+<td class="org-right">34.6</td>
+<td class="org-right">33.2</td>
+<td class="org-right">31.8</td>
+<td class="org-right">-1.0</td>
+<td class="org-left">Media-Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Cantabria</td>
+<td class="org-right">29.5</td>
+<td class="org-right">31.8</td>
+<td class="org-right">30.2</td>
+<td class="org-right">29.6</td>
+<td class="org-right">+0.1</td>
+<td class="org-left">Media-Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Castilla y León</td>
+<td class="org-right">30.1</td>
+<td class="org-right">32.4</td>
+<td class="org-right">31.0</td>
+<td class="org-right">30.2</td>
+<td class="org-right">+0.1</td>
+<td class="org-left">Media</td>
+</tr>
+
+<tr>
+<td class="org-left">Castilla-La Mancha</td>
+<td class="org-right">31.8</td>
+<td class="org-right">34.2</td>
+<td class="org-right">32.8</td>
+<td class="org-right">31.5</td>
+<td class="org-right">-0.3</td>
+<td class="org-left">Media-Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Cataluña</td>
+<td class="org-right">30.5</td>
+<td class="org-right">32.8</td>
+<td class="org-right">31.2</td>
+<td class="org-right">30.0</td>
+<td class="org-right">-0.5</td>
+<td class="org-left">Media</td>
+</tr>
+
+<tr>
+<td class="org-left">Comunidad Valenciana</td>
+<td class="org-right">32.4</td>
+<td class="org-right">34.9</td>
+<td class="org-right">33.5</td>
+<td class="org-right">32.2</td>
+<td class="org-right">-0.2</td>
+<td class="org-left">Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Extremadura</td>
+<td class="org-right">32.6</td>
+<td class="org-right">34.8</td>
+<td class="org-right">33.8</td>
+<td class="org-right">32.8</td>
+<td class="org-right">+0.2</td>
+<td class="org-left">Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Galicia</td>
+<td class="org-right">31.2</td>
+<td class="org-right">33.1</td>
+<td class="org-right">31.8</td>
+<td class="org-right">30.8</td>
+<td class="org-right">-0.4</td>
+<td class="org-left">Media</td>
+</tr>
+
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-right">31.8</td>
+<td class="org-right">33.5</td>
+<td class="org-right">31.9</td>
+<td class="org-right">31.2</td>
+<td class="org-right">-0.6</td>
+<td class="org-left">Media</td>
+</tr>
+
+<tr>
+<td class="org-left">Murcia</td>
+<td class="org-right">32.9</td>
+<td class="org-right">35.2</td>
+<td class="org-right">33.9</td>
+<td class="org-right">32.6</td>
+<td class="org-right">-0.3</td>
+<td class="org-left">Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Navarra</td>
+<td class="org-right">26.8</td>
+<td class="org-right">28.5</td>
+<td class="org-right">27.2</td>
+<td class="org-right">26.5</td>
+<td class="org-right">-0.3</td>
+<td class="org-left">Muy Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">País Vasco</td>
+<td class="org-right">28.2</td>
+<td class="org-right">29.9</td>
+<td class="org-right">28.5</td>
+<td class="org-right">27.8</td>
+<td class="org-right">-0.4</td>
+<td class="org-left">Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">La Rioja</td>
+<td class="org-right">29.3</td>
+<td class="org-right">31.5</td>
+<td class="org-right">30.0</td>
+<td class="org-right">29.4</td>
+<td class="org-right">+0.1</td>
+<td class="org-left">Media-Baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Ceuta</td>
+<td class="org-right">36.5</td>
+<td class="org-right">38.9</td>
+<td class="org-right">37.2</td>
+<td class="org-right">36.8</td>
+<td class="org-right">+0.3</td>
+<td class="org-left">Muy Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Melilla</td>
+<td class="org-right">35.8</td>
+<td class="org-right">38.2</td>
+<td class="org-right">36.5</td>
+<td class="org-right">36.2</td>
+<td class="org-right">+0.4</td>
+<td class="org-left">Muy Alta</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+*Datos 2024: estimación basada en tendencias 2021-2023 e informes sectoriales.
+Fuente: Elaboración propia a partir de INE (Encuesta de Condiciones de Vida), EAPN-ES, Idescat, CaixaBank Research.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org05d0351" class="outline-3">
+<h3 id="org05d0351">Tabla 2: Indicador S80/S20 por Comunidad Autónoma (2021)</h3>
+<div class="outline-text-3" id="text-org05d0351">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Comunidad Autónoma</th>
+<th scope="col" class="org-right">S80/S20</th>
+<th scope="col" class="org-left">Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Navarra</td>
+<td class="org-right">4.7</td>
+<td class="org-left">El 20% más rico gana 4.7 veces más que el 20% más pobre</td>
+</tr>
+
+<tr>
+<td class="org-left">País Vasco</td>
+<td class="org-right">5.1</td>
+<td class="org-left">Distribución relativamente equitativa</td>
+</tr>
+
+<tr>
+<td class="org-left">Aragón</td>
+<td class="org-right">5.3</td>
+<td class="org-left">Baja desigualdad interna</td>
+</tr>
+
+<tr>
+<td class="org-left">Asturias</td>
+<td class="org-right">5.5</td>
+<td class="org-left">Distribución equilibrada</td>
+</tr>
+
+<tr>
+<td class="org-left">Cataluña</td>
+<td class="org-right">5.8</td>
+<td class="org-left">Desigualdad moderada</td>
+</tr>
+
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-right">6.0</td>
+<td class="org-left">Desigualdad media-alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Galicia</td>
+<td class="org-right">5.9</td>
+<td class="org-left">Desigualdad moderada</td>
+</tr>
+
+<tr>
+<td class="org-left">España</td>
+<td class="org-right">6.2</td>
+<td class="org-left">Referencia nacional</td>
+</tr>
+
+<tr>
+<td class="org-left">Comunidad Valenciana</td>
+<td class="org-right">6.5</td>
+<td class="org-left">Desigualdad elevada</td>
+</tr>
+
+<tr>
+<td class="org-left">Andalucía</td>
+<td class="org-right">6.8</td>
+<td class="org-left">Alta desigualdad interna</td>
+</tr>
+
+<tr>
+<td class="org-left">Extremadura</td>
+<td class="org-right">7.0</td>
+<td class="org-left">Muy alta desigualdad</td>
+</tr>
+
+<tr>
+<td class="org-left">Murcia</td>
+<td class="org-right">6.9</td>
+<td class="org-left">Muy alta desigualdad</td>
+</tr>
+
+<tr>
+<td class="org-left">Ceuta</td>
+<td class="org-right">8.2</td>
+<td class="org-left">Desigualdad extrema</td>
+</tr>
+
+<tr>
+<td class="org-left">Melilla</td>
+<td class="org-right">7.9</td>
+<td class="org-left">Desigualdad extrema</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Fuente: INE, Encuesta de Condiciones de Vida 2021.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8db1c49" class="outline-3">
+<h3 id="org8db1c49">Tabla 3: Desigualdad de Riqueza por Comunidades Autónomas (Índice de Gini Riqueza, 2022)</h3>
+<div class="outline-text-3" id="text-org8db1c49">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Comunidad Autónoma</th>
+<th scope="col" class="org-right">Gini Riqueza</th>
+<th scope="col" class="org-right">Riqueza Media (€)</th>
+<th scope="col" class="org-left">Caracterización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Canarias</td>
+<td class="org-right">75.2</td>
+<td class="org-right">185.400</td>
+<td class="org-left">Alta desigualdad, baja riqueza media</td>
+</tr>
+
+<tr>
+<td class="org-left">Baleares</td>
+<td class="org-right">72.7</td>
+<td class="org-right">298.600</td>
+<td class="org-left">Alta desigualdad, alta riqueza media</td>
+</tr>
+
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-right">71.8</td>
+<td class="org-right">312.500</td>
+<td class="org-left">Alta desigualdad, muy alta riqueza</td>
+</tr>
+
+<tr>
+<td class="org-left">Cataluña</td>
+<td class="org-right">70.5</td>
+<td class="org-right">265.800</td>
+<td class="org-left">Desigualdad media-alta, alta riqueza</td>
+</tr>
+
+<tr>
+<td class="org-left">Comunidad Valenciana</td>
+<td class="org-right">69.8</td>
+<td class="org-right">198.700</td>
+<td class="org-left">Desigualdad media-alta, riqueza media</td>
+</tr>
+
+<tr>
+<td class="org-left">Galicia</td>
+<td class="org-right">69.8</td>
+<td class="org-right">176.200</td>
+<td class="org-left">Desigualdad media-alta, baja riqueza</td>
+</tr>
+
+<tr>
+<td class="org-left">España (media)</td>
+<td class="org-right">71.3</td>
+<td class="org-right">235.400</td>
+<td class="org-left">Referencia nacional</td>
+</tr>
+
+<tr>
+<td class="org-left">La Rioja</td>
+<td class="org-right">68.2</td>
+<td class="org-right">246.300</td>
+<td class="org-left">Desigualdad moderada, riqueza alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Murcia</td>
+<td class="org-right">67.5</td>
+<td class="org-right">182.900</td>
+<td class="org-left">Desigualdad moderada, riqueza baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Andalucía</td>
+<td class="org-right">67.2</td>
+<td class="org-right">168.500</td>
+<td class="org-left">Desigualdad moderada, riqueza baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Aragón</td>
+<td class="org-right">66.8</td>
+<td class="org-right">241.800</td>
+<td class="org-left">Desigualdad moderada, riqueza alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Cantabria</td>
+<td class="org-right">65.6</td>
+<td class="org-right">223.400</td>
+<td class="org-left">Desigualdad baja, riqueza media-alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Asturias</td>
+<td class="org-right">64.9</td>
+<td class="org-right">205.300</td>
+<td class="org-left">Desigualdad baja, riqueza media</td>
+</tr>
+
+<tr>
+<td class="org-left">Castilla y León</td>
+<td class="org-right">63.6</td>
+<td class="org-right">198.200</td>
+<td class="org-left">Desigualdad baja, riqueza media</td>
+</tr>
+
+<tr>
+<td class="org-left">Extremadura</td>
+<td class="org-right">63.8</td>
+<td class="org-right">152.800</td>
+<td class="org-left">Desigualdad baja, riqueza muy baja</td>
+</tr>
+
+<tr>
+<td class="org-left">Castilla-La Mancha</td>
+<td class="org-right">62.4</td>
+<td class="org-right">171.600</td>
+<td class="org-left">Desigualdad muy baja, riqueza baja</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Fuente: Esade EcPol, Panel de Hogares AEAT-INE-IEF (2022).
+</p>
+
+<p>
+<b>Nota crítica</b>: Madrid, Cataluña y Baleares están entre las comunidades más ricas y más desiguales, mientras Extremadura, Castilla-La Mancha y Castilla y León muestran niveles bajos tanto de desigualdad como de riqueza media. Este patrón sugiere que alta riqueza agregada no garantiza distribución equitativa, mientras baja desigualdad puede coexistir con pobreza estructural.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4c0faa5" class="outline-2">
+<h2 id="org4c0faa5">Diagrama Conceptual: Factores Determinantes de las Desigualdades Territoriales</h2>
+<div class="outline-text-2" id="text-org4c0faa5">
+
+<div id="org2c99fd2" class="figure">
+<p><img src="./assets/images/desigualdad-territorial-espana.png" alt="desigualdad-territorial-espana.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb4f2315" class="outline-2">
+<h2 id="orgb4f2315">Diagrama de Flujo: Mecanismos de Convergencia/Divergencia Regional</h2>
+<div class="outline-text-2" id="text-orgb4f2315">
+
+<div id="org67b9043" class="figure">
+<p><img src="./assets/images/convergencia-divergencia.png" alt="convergencia-divergencia.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5acd1c7" class="outline-2">
+<h2 id="org5acd1c7">Análisis Crítico de las Dinámicas Territoriales</h2>
+<div class="outline-text-2" id="text-org5acd1c7">
+</div>
+<div id="outline-container-org9ec9573" class="outline-3">
+<h3 id="org9ec9573">La Paradoja de la Convergencia Estadística</h3>
+<div class="outline-text-3" id="text-org9ec9573">
+<p>
+La convergencia económica de numerosas regiones españolas se ha producido en las últimas cuatro décadas por defecto, sobre la base de su declive demográfico. Este fenómeno, denominado "convergencia por defecto", cuestiona el carácter óptimo del proceso: regiones como Castilla y León o Extremadura han visto reducirse su brecha de PIB per cápita no por crecimiento acelerado, sino por emigración masiva de población joven hacia áreas metropolitanas dinámicas.
+</p>
+
+<p>
+Esta dinámica genera una paradoja: estadísticamente convergen, pero socialmente se empobrecen al perder capital humano, servicios básicos y vitalidad demográfica. El resultado es una "España vaciada" con indicadores aparentemente mejorados pero con pueblos agonizantes y comarcas sin futuro.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge523c72" class="outline-3">
+<h3 id="orge523c72">El Eje Norte-Sur: Persistencia de Fracturas Históricas</h3>
+<div class="outline-text-3" id="text-orge523c72">
+<p>
+A pesar de casi medio siglo de democracia, el patrón Norte desarrollado/Sur atrasado se mantiene obstinadamente. Andalucía, Extremadura, Castilla-La Mancha y Murcia persisten en el cuartil inferior tanto de PIB per cápita como de coeficiente de Gini, evidenciando que las políticas redistributivas han sido insuficientes para revertir desequilibrios estructurales.
+</p>
+
+<p>
+El fenómeno se agrava al considerar la desigualdad de riqueza (no solo de renta). Canarias y en menor medida Galicia y Comunidad Valenciana se encuentran en situación menos favorable, al simultanear riqueza media por debajo de la media y niveles altos de desigualdad, configurando un escenario de "pobreza desigual" que contrasta con la "riqueza desigual" de Madrid o Cataluña.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfe78be3" class="outline-3">
+<h3 id="orgfe78be3">Las Ciudades Autónomas: Desigualdad Extrema en la Periferia</h3>
+<div class="outline-text-3" id="text-orgfe78be3">
+<p>
+Ceuta y Melilla presentan sistemáticamente los coeficientes de Gini más elevados de España, con valores superiores a 36-38 en renta disponible. Esta desigualdad extrema responde a factores estructurales específicos:
+</p>
+
+<ol class="org-ol">
+<li><b>Economía dual</b>: Coexistencia de funcionariado español con salarios elevados y población de origen norteafricano con altas tasas de desempleo y precariedad</li>
+<li><b>Mercado laboral segmentado</b>: Altísima dependencia del sector público (&gt;50% del empleo)</li>
+<li><b>Exclusión territorial</b>: Aislamiento geográfico y carencia de tejido productivo diversificado</li>
+<li><b>Problemática migratoria</b>: Presión migratoria irregular que agrava vulnerabilidad social</li>
+</ol>
+
+<p>
+Estos territorios constituyen laboratorios de la desigualdad extrema, donde políticas redistributivas estándar han demostrado ser insuficientes sin transformaciones estructurales profundas.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8cf53ca" class="outline-3">
+<h3 id="org8cf53ca">Modelos Exitosos: Navarra y País Vasco</h3>
+<div class="outline-text-3" id="text-org8cf53ca">
+<p>
+Navarra y País Vasco exhiben consistentemente los coeficientes de Gini más bajos de España (26.5 y 27.8 respectivamente), muy por debajo de la media nacional (31.0). Este éxito distributivo se explica por factores institucionales y de política pública:
+</p>
+
+<ol class="org-ol">
+<li><b>Sistema foral de financiación</b>: Mayor capacidad fiscal y control sobre recursos públicos permite políticas redistributivas más agresivas</li>
+<li><b>Políticas laborales activas</b>: Inversión intensiva en formación profesional y recualificación</li>
+<li><b>Pactos sociales tripartitos</b>: Consenso entre gobierno, empresas y sindicatos en torno a estrategias de desarrollo inclusivo</li>
+<li><b>Servicios públicos universales de calidad</b>: Educación, sanidad y servicios sociales bien financiados y eficientemente gestionados</li>
+<li><b>Tejido industrial competitivo</b>: Especialización en sectores de alto valor añadido con salarios relativamente elevados</li>
+</ol>
+
+<p>
+El "modelo vasco-navarro" demuestra que es posible combinar competitividad económica con distribución equitativa, desafiando la falsa dicotomía entre eficiencia y equidad.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org86a0089" class="outline-3">
+<h3 id="org86a0089">Cataluña y Madrid: Concentración de Riqueza y Poder</h3>
+<div class="outline-text-3" id="text-org86a0089">
+<p>
+Las dos mayores economías regionales (Cataluña y Madrid) presentan desigualdades internas moderadas en términos de renta (Gini 30.0 y 31.2), pero muy elevadas en términos de riqueza (70.5 y 71.8). Esta dualidad revela:
+</p>
+
+<ul class="org-ul">
+<li><b>Mercados laborales dinámicos</b> que generan empleo y reducen desigualdad de renta</li>
+<li><b>Concentración patrimonial</b> en elites propietarias de activos inmobiliarios y financieros</li>
+<li><b>Atracción de población diversa</b>: Alta heterogeneidad sociodemográfica con convivencia de segmentos muy ricos y muy pobres</li>
+<li><b>Efecto capitalidad</b>: Madrid como sede de grandes empresas, instituciones financieras y administración central concentra rentas del capital</li>
+</ul>
+
+<p>
+Ambas regiones ejercen como "aspiradoras" de talento y capital del resto de España, beneficiándose de externalidades de red y aglomeración que perpetúan su ventaja competitiva.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb84dbb3" class="outline-2">
+<h2 id="orgb84dbb3">El Papel del Mercado Laboral en la Desigualdad Territorial</h2>
+<div class="outline-text-2" id="text-orgb84dbb3">
+<p>
+El principal factor que está permitiendo que la desigualdad se reduzca es el buen comportamiento del mercado laboral y especialmente la reducción de la tasa de paro. La correlación entre desempleo y desigualdad es robusta: durante la pandemia, el 90% de los cambios en el índice de Gini los explicaban los movimientos de la tasa de paro.
+</p>
+
+<p>
+Esta relación tiene implicaciones territoriales cruciales. Comunidades con mercados laborales duales (alta proporción de empleo temporal y precario) presentan Gini más elevados. Andalucía, Extremadura y Murcia exhiben tasas de temporalidad superiores al 30%, frente al 20-22% de Navarra y País Vasco, correlacionándose directamente con sus respectivos niveles de desigualdad.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf3b4aa" class="outline-2">
+<h2 id="orgdf3b4aa">Tendencias Actuales y Perspectivas (2024-2025)</h2>
+<div class="outline-text-2" id="text-orgdf3b4aa">
+</div>
+<div id="outline-container-org6e89b26" class="outline-3">
+<h3 id="org6e89b26">Situación Socioeconómica Actual</h3>
+<div class="outline-text-3" id="text-org6e89b26">
+<p>
+A finales de 2024, España presenta un panorama de desigualdad territorial en transformación. Según datos recientes de CaixaBank Research, el índice de Gini nacional se sitúa en niveles mínimos históricos (31.0), impulsado principalmente por:
+</p>
+
+<ol class="org-ol">
+<li><b>Mercado laboral robusto</b>: Tasa de desempleo en mínimos de 15 años (11.6%), con creación neta de empleo de calidad</li>
+<li><b>Revalorización salarial</b>: Acuerdos de subida del Salario Mínimo Interprofesional (SMI) de 1.134€ mensuales, beneficiando especialmente a trabajadores de bajos ingresos</li>
+<li><b>Transferencias públicas robustas</b>: Mantenimiento del Ingreso Mínimo Vital (IMV), pensiones revalorizadas con IPC real, y ayudas específicas</li>
+<li><b>Recuperación turística completa</b>: Comunidades con alta dependencia turística (Baleares, Canarias, Andalucía) recuperan niveles pre-pandemia</li>
+</ol>
+
+<p>
+Sin embargo, esta mejora agregada oculta amenazas emergentes:
+</p>
+
+<ul class="org-ul">
+<li><b>Presión inflacionaria residual</b>: Coste de la vida especialmente elevado en Madrid, Barcelona y archipiélagos erosiona poder adquisitivo</li>
+<li><b>Crisis de vivienda</b>: Precios de alquiler y compra en máximos históricos en áreas metropolitanas principales, generando nueva desigualdad generacional</li>
+<li><b>Brecha digital territorial</b>: Despliegue desigual de infraestructuras digitales perpetúa desventajas de áreas rurales</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org66ebed4" class="outline-3">
+<h3 id="org66ebed4">Desafíos Estructurales Persistentes</h3>
+<div class="outline-text-3" id="text-org66ebed4">
+<p>
+Tres desafíos estructurales amenazan la sostenibilidad de las mejoras recientes:
+</p>
+
+<ol class="org-ol">
+<li><b>Despoblación y envejecimiento</b>: 16 provincias con densidad inferior a 12.5 hab/km² entran en "riesgo de desertificación demográfica". Castilla y León, Aragón interior, y provincias de Castilla-La Mancha pierden población productiva sistemáticamente.</li>
+
+<li><b>Transición ecológica desigual</b>: La descarbonización impactará asimétricamente. Regiones carboníferas (Asturias, León) y dependientes de industria intensiva en energía requieren planes de transición justa. Contrariamente, regiones con capacidad de generación renovable (Castilla-La Mancha, Aragón, Extremadura) pueden capturar nuevas oportunidades.</li>
+
+<li><b>Digitalización y automatización</b>: Riesgo de profundizar brechas territoriales si la inversión en capital humano y conectividad no es territorialmente equitativa.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orge836afc" class="outline-3">
+<h3 id="orge836afc">Políticas Públicas en Curso: Evaluación Crítica</h3>
+<div class="outline-text-3" id="text-orge836afc">
+</div>
+<div id="outline-container-org8048b0c" class="outline-4">
+<h4 id="org8048b0c">Estrategia Nacional frente al Reto Demográfico</h4>
+<div class="outline-text-4" id="text-org8048b0c">
+<p>
+Lanzada en 2019, busca revertir la despoblación mediante 130 medidas agrupadas en 10 ejes. Crítica: dotación presupuestaria insuficiente (3.440M€ 2021-2023), atomización de actuaciones sin masa crítica, y ausencia de reformas estructurales ambiciosas (incentivos fiscales territorializados, teletrabajo en administración pública).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org76d5eb4" class="outline-4">
+<h4 id="org76d5eb4">Plan de Recuperación, Transformación y Resiliencia (PRTR)</h4>
+<div class="outline-text-4" id="text-org76d5eb4">
+<p>
+Gestión de 163.000M€ de fondos Next Generation EU. Componente territorial mediante asignación específica a comunidades autónomas. Riesgo: perpetuar capacidades administrativas diferenciales, favoreciendo a comunidades con mayor músculo institucional (Madrid, Cataluña, País Vasco) frente a las más vulnerables.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc664ff6" class="outline-4">
+<h4 id="orgc664ff6">Reforma del Sistema de Financiación Autonómica</h4>
+<div class="outline-text-4" id="text-orgc664ff6">
+<p>
+Estancada desde 2009, constituye el elefante en la habitación del debate territorial español. El sistema actual genera agravios comparativos significativos entre comunidades de régimen común y favorece estructuralmente a aquellas con mayor PIB per cápita y menor población dependiente.
+</p>
+
+<p>
+Propuestas en debate:
+</p>
+<ul class="org-ul">
+<li>Incremento del Fondo de Garantía de Servicios Públicos Fundamentales</li>
+<li>Revisión de criterios de reparto (población ajustada vs población real)</li>
+<li>Incorporación de cláusulas de convergencia interregional</li>
+<li>Debate sobre singularidades catalanas vs defensa del statu quo foral vasco-navarro</li>
+</ul>
+
+<p>
+Obstáculo principal: consenso político inexistente entre fuerzas nacionalistas, Estado central, y regiones contribuidoras netas vs receptoras netas.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2bf8160" class="outline-2">
+<h2 id="org2bf8160">Diagrama Sistémico: Interrelación entre Desigualdad, Despoblación y Declive</h2>
+<div class="outline-text-2" id="text-org2bf8160">
+
+<div id="org55a3c2e" class="figure">
+<p><img src="./assets/images/sistema-desigualdad-despoblacion.png" alt="sistema-desigualdad-despoblacion.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org294c11b" class="outline-2">
+<h2 id="org294c11b">Conclusiones: Entre la Convergencia Estadística y la Divergencia Real</h2>
+<div class="outline-text-2" id="text-org294c11b">
+<p>
+El análisis de la evolución de las desigualdades territoriales en España desde 1975 hasta 2025 revela una narrativa compleja y frecuentemente contradictoria. Tres conclusiones principales emergen:
+</p>
+</div>
+
+<div id="outline-container-org1e7f740" class="outline-3">
+<h3 id="org1e7f740">1. Convergencia Aparente, Divergencia Estructural</h3>
+<div class="outline-text-3" id="text-org1e7f740">
+<p>
+Estadísticamente, las disparidades de PIB per cápita entre comunidades autónomas se han reducido moderadamente (coeficiente de variación descendente). Sin embargo, esta convergencia oculta dos fenómenos preocupantes:
+</p>
+
+<ul class="org-ul">
+<li><b>Convergencia por empobrecimiento demográfico</b>: Regiones del interior "convergen" por pérdida de población, no por crecimiento económico genuino</li>
+<li><b>Polarización metropolitana</b>: Concentración creciente de población, capital humano y actividad económica en áreas metropolitanas de Madrid, Barcelona, Valencia, Sevilla, Bilbao</li>
+</ul>
+
+<p>
+El resultado es un territorio español crecientemente dual: metrópolis globalizadas y dinámicas versus periferias rurales en declive inexorable.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0797094" class="outline-3">
+<h3 id="org0797094">2. El Estado Autonómico: Logros Parciales, Asimetrías Persistentes</h3>
+<div class="outline-text-3" id="text-org0797094">
+<p>
+El modelo autonómico ha permitido adaptación de políticas públicas a especificidades territoriales y ha generado élites político-administrativas regionales con capacidad de agencia. Sin embargo, no ha revertido desequilibrios fundacionales:
+</p>
+
+<ul class="org-ul">
+<li>Las brechas Norte-Sur y litoral-interior persisten con obstinación</li>
+<li>El sistema de financiación autonómica genera agravios comparativos y carece de mecanismos potentes de redistribución interterritorial</li>
+<li>La ausencia de políticas industriales territorializadas coherentes limita la diversificación productiva de regiones especializadas en sectores de baja productividad</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org37d8821" class="outline-3">
+<h3 id="org37d8821">3. Desigualdad Intra-Territorial: El Desafío Ignorado</h3>
+<div class="outline-text-3" id="text-org37d8821">
+<p>
+Mientras el debate político se focaliza obsesivamente en la desigualdad inter-territorial (balanzas fiscales, inversión estatal por habitante), la desigualdad intra-territorial —medida por el coeficiente de Gini autonómico— constituye el problema social más acuciante:
+</p>
+
+<ul class="org-ul">
+<li>Diferencia de 10 puntos entre Navarra (26.5) y Ceuta (36.8) revela Españas radicalmente distintas</li>
+<li>Alta desigualdad interna erosiona cohesión social, genera exclusión y alimenta populismos</li>
+<li>Políticas redistributivas autonómicas presentan eficacia muy variable, dependiendo de capacidad fiscal, orientación política y eficiencia administrativa</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org05dabaf" class="outline-3">
+<h3 id="org05dabaf">Prospectiva: Escenarios de Futuro</h3>
+<div class="outline-text-3" id="text-org05dabaf">
+<p>
+Tres escenarios posibles para la próxima década:
+</p>
+
+<p>
+<b>Escenario A - Profundización de dualizaciones</b> (probabilidad: 45%): Ausencia de reformas estructurales y perpetuación de dinámicas actuales generan España aún más fragmentada. Grandes metrópolis concentran 75% del PIB, mientras el 50% del territorio se convierte en "desierto demográfico" con servicios básicos en colapso. Desigualdad agregada aumenta por polarización territorial.
+</p>
+
+<p>
+<b>Escenario B - Convergencia impulsada por transición ecológica</b> (probabilidad: 35%): Inversión masiva en energías renovables, digitalización rural y economía circular reequilibra territorialmente el desarrollo. Castilla-La Mancha, Extremadura y Aragón capturan nuevas oportunidades. Políticas de cohesión europeas (2027-2034) refuerzan convergencia. Desigualdad territorial se reduce moderadamente.
+</p>
+
+<p>
+<b>Escenario C - Fragmentación política y bloqueo institucional</b> (probabilidad: 20%): Conflictos territoriales (Cataluña, financiación autonómica) se enquistan sin resolución. Competencia fiscal entre comunidades genera carrera a la baja en capacidad redistributiva. Mercado interno español se fragmenta. Desigualdad territorial explota como detonante de inestabilidad política sistémica.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgca1b791" class="outline-2">
+<h2 id="orgca1b791">Recomendaciones de Política Pública</h2>
+<div class="outline-text-2" id="text-orgca1b791">
+<p>
+Basándose en el análisis realizado, se proponen cinco líneas estratégicas de intervención:
+</p>
+
+<ol class="org-ol">
+<li><b>Reforma integral del sistema de financiación autonómica</b>: Incremento sustancial del componente redistributivo, incorporando cláusulas de convergencia que premien reducción de desigualdad interna y externa.</li>
+
+<li><b>Estrategia territorial de empleos de calidad</b>: Políticas activas de empleo territorializadas, focalizadas en creación de empleos indefinidos en sectores de alto valor añadido en regiones rezagadas.</li>
+
+<li><b>Plan Marshall para la España rural</b>: Inversión de 50.000M€ en 10 años en infraestructuras digitales, servicios públicos descentralizados (sanidad, educación), incentivos fiscales para emprendimiento rural, y teletrabajo institucionalizado en administraciones públicas.</li>
+
+<li><b>Observatorio permanente de desigualdad territorial</b>: Institución independiente que monitorice sistemáticamente evolución de indicadores de desigualdad (Gini, S80/S20, Palma, tasa de riesgo de pobreza) a nivel autonómico, provincial y comarcal, generando alertas tempranas.</li>
+
+<li><b>Pactos territoriales para la transición justa</b>: Acuerdos tripartitos gobierno-empresas-sindicatos a nivel autonómico que vinculen inversiones en descarbonización y digitalización con compromisos de creación de empleo de calidad y reducción de desigualdad.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org552e771" class="outline-2">
+<h2 id="org552e771">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org552e771">
+<ol class="org-ol">
+<li>Instituto Nacional de Estadística (INE) (2024). "Encuesta de Condiciones de Vida (ECV)". Serie temporal 2008-2023. Madrid.</li>
+
+<li>CaixaBank Research (2024). "Indicador en tiempo real del índice de Gini en España". Informes mensuales 2020-2024. Barcelona.</li>
+
+<li>Fundación FOESSA (2023). "Informe sobre Exclusión y Desarrollo Social en España". Cáritas Española. Madrid.</li>
+
+<li>Esade EcPol (2022). "Desigualdad de riqueza en España: diferencias territoriales". Policy Brief núm. 36. Barcelona.</li>
+
+<li>European Anti-Poverty Network España (EAPN-ES) (2024). "El Estado de la Pobreza en España 2024". Madrid.</li>
+
+<li>Ministerio de Hacienda y Función Pública (2023). "Sistema de Financiación de las Comunidades Autónomas de Régimen Común". Documentación técnica. Madrid.</li>
+
+<li>Goerlich, F.J. &amp; Mas, M. (2020). "Desigualdad económica en España: instrumentos y resultados". Fundación BBVA e Ivie. Bilbao.</li>
+
+<li>Ayala Cañón, L. &amp; Ruiz-Huerta, J. (2019). "Desigualdad y Estado de Bienestar en España". Fundación Alternativas. Madrid.</li>
+
+<li>Instituto Valenciano de Investigaciones Económicas (Ivie) (2024). "Base de datos de Contabilidad Regional de España". Actualización enero 2024.</li>
+
+<li>Consejo Económico y Social de España (CES) (2023). "Informe Anual sobre la situación socioeconómica y laboral de España 2022". Madrid.</li>
+
+<li>Conde-Ruiz, J.I. &amp; Marra de Artíñano, I. (2021). "40 años de desigualdad de renta en España". Fedea Policy Papers 2021/03. Madrid.</li>
+
+<li>López-Rodríguez, J. &amp; Faíña, A. (2023). "Convergencia económica regional en España: situación actual y perspectivas". Papeles de Economía Española, núm. 175, pp. 98-117.</li>
+
+<li>Red Europea de Lucha contra la Pobreza y la Exclusión Social (EAPN) España (2023). "Análisis territorial de la pobreza y la exclusión social en España". Madrid.</li>
+
+<li>Institut d'Estadística de Catalunya (Idescat) (2024). "Índice de Gini de la renta disponible ajustada de los hogares. Cataluña". Estadístiques territorials. Barcelona.</li>
+
+<li>Banco de España (2024). "Informe Anual 2023". Capítulo 4: "Desigualdad, distribución de la renta y cohesión territorial". Madrid.</li>
+</ol>
+
+<blockquote>
+<p>
+"Las desigualdades territoriales no son destino inexorable, sino resultado de elecciones políticas. España puede construir un modelo de cohesión territorial que combine competitividad económica con justicia distributiva, pero requiere voluntad política, recursos sustanciales y visión estratégica de largo plazo."
+— Reflexión final del análisis
+</p>
+</blockquote>
+
+
+<p class="post-meta">Publicado el 2026-01-11 14:29 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:18</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

@@ -1,0 +1,2542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:19 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Análisis Crítico de las Responsabilidades Administrativas en los Incendios Forestales de España - Agosto 2025</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Evaluación técnica e independiente de las competencias y responsabilidades de administraciones central, autonómicas y locales en la gestión de la crisis de incendios forestales del verano 2025, incluyendo análisis comparativo de recursos, protocolos de coordinación y propuestas de reforma estructural del sistema español de protección forestal" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Análisis Crítico de las Responsabilidades Administrativas en los Incendios Forestales de España - Agosto 2025</h1>
+
+<div id="outline-container-org3894c86" class="outline-2">
+<h2 id="org3894c86">Análisis Crítico de las Responsabilidades Administrativas en los Incendios Forestales de España - Agosto 2025</h2>
+</div>
+
+<div id="outline-container-org9d3c726" class="outline-2">
+<h2 id="org9d3c726">1. INTRODUCCIÓN Y CONTEXTO</h2>
+<div class="outline-text-2" id="text-org9d3c726">
+</div>
+<div id="outline-container-orgcade84c" class="outline-3">
+<h3 id="orgcade84c">1.1 Situación de Crisis</h3>
+<div class="outline-text-3" id="text-orgcade84c">
+<p>
+El verano de 2025 se ha convertido en uno de los más devastadores de la historia reciente de España en términos de incendios forestales. Los incendios forestales han quemado en lo que llevamos de 2025 un total de 343.862 hectáreas, más que ningún otro año de la serie histórica del Sistema Europeo de Información sobre Incendios Forestales (EFFIS), posicionando a 2025 como un año récord.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e8bdee" class="outline-3">
+<h3 id="org4e8bdee">1.2 Magnitud del Problema</h3>
+<div class="outline-text-3" id="text-org4e8bdee">
+<p>
+Ya han ardido 115.598 hectáreas en agosto en España, casi el triple que durante el resto de 2025, lo que evidencia la concentración temporal y la intensidad excepcional de los siniestros. Los fuegos de 2025 se han cebado especialmente con el noroeste peninsular. Con los últimos datos, los incendios iniciados en tres provincias (Zamora, Ourense y León) concentran tres de cada cuatro hectáreas calcinadas en 2025.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c52916" class="outline-3">
+<h3 id="org9c52916">1.3 Impacto Social y Humano</h3>
+<div class="outline-text-3" id="text-org9c52916">
+<p>
+La crisis ha tenido consecuencias dramáticas: los incendios forestales en España en 2025 han afectado a fecha 19 de agosto a una superficie estimada de cerca de 350.000 hectáreas afectadas, con múltiples víctimas mortales y miles de evacuados.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgec46a82" class="outline-2">
+<h2 id="orgec46a82">2. MARCO NORMATIVO Y COMPETENCIAL</h2>
+<div class="outline-text-2" id="text-orgec46a82">
+</div>
+<div id="outline-container-orgd2dd747" class="outline-3">
+<h3 id="orgd2dd747">2.1 Fundamento Constitucional</h3>
+<div class="outline-text-3" id="text-orgd2dd747">
+
+<div id="org98a4fbb" class="figure">
+<p><img src="./assets/images/fundamento_constitucional.png" alt="fundamento_constitucional.png" width="600px" />
+</p>
+</div>
+
+
+
+<p>
+De acuerdo con el artículo 148 de la Constitución Española, son las Comunidades Autónomas las que asumen las competencias en materia de montes y aprovechamientos forestales, y la gestión en materia de protección del medio ambiente a través de sus estatutos de autonomía.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org901106c" class="outline-3">
+<h3 id="org901106c">2.2 Marco Legal Específico</h3>
+<div class="outline-text-3" id="text-org901106c">
+</div>
+<div id="outline-container-org3797f68" class="outline-4">
+<h4 id="org3797f68">2.2.1 Normativa Principal</h4>
+<div class="outline-text-4" id="text-org3797f68">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Norma</th>
+<th scope="col" class="org-left">Fecha</th>
+<th scope="col" class="org-left">Ámbito</th>
+<th scope="col" class="org-left">Contenido Principal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ley 43/2003 de Montes</td>
+<td class="org-left">21/11/2003</td>
+<td class="org-left">Estatal</td>
+<td class="org-left">Distribución competencial básica</td>
+</tr>
+
+<tr>
+<td class="org-left">RD 893/2013</td>
+<td class="org-left">15/11/2013</td>
+<td class="org-left">Estatal</td>
+<td class="org-left">Directriz básica de planificación</td>
+</tr>
+
+<tr>
+<td class="org-left">RD-Ley 15/2022</td>
+<td class="org-left">01/08/2022</td>
+<td class="org-left">Estatal</td>
+<td class="org-left">Medidas urgentes coordinación</td>
+</tr>
+
+<tr>
+<td class="org-left">Ley 5/1999</td>
+<td class="org-left">29/06/1999</td>
+<td class="org-left">Estatal</td>
+<td class="org-left">Prevención y lucha contra incendios</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org1a27b6a" class="outline-4">
+<h4 id="org1a27b6a">2.2.2 Estructura Competencial Actual</h4>
+<div class="outline-text-4" id="text-org1a27b6a">
+
+<div id="org20edb94" class="figure">
+<p><img src="./assets/images/estructura_completa.png" alt="estructura_completa.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc974f38" class="outline-2">
+<h2 id="orgc974f38">3. SITUACIÓN ACTUAL DE LOS INCENDIOS (AGOSTO 2025)</h2>
+<div class="outline-text-2" id="text-orgc974f38">
+</div>
+<div id="outline-container-orgb09ae5f" class="outline-3">
+<h3 id="orgb09ae5f">3.1 Datos Cuantitativos</h3>
+<div class="outline-text-3" id="text-orgb09ae5f">
+</div>
+<div id="outline-container-orgf99663b" class="outline-4">
+<h4 id="orgf99663b">3.1.1 Superficies Afectadas por Comunidades Autónomas</h4>
+<div class="outline-text-4" id="text-orgf99663b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Comunidad Autónoma</th>
+<th scope="col" class="org-left">Hectáreas Afectadas</th>
+<th scope="col" class="org-right">Número de Incendios</th>
+<th scope="col" class="org-right">Porcentaje Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Galicia</td>
+<td class="org-left">~120,000</td>
+<td class="org-right">45+</td>
+<td class="org-right">35%</td>
+</tr>
+
+<tr>
+<td class="org-left">Castilla y León</td>
+<td class="org-left">~90,000</td>
+<td class="org-right">25+</td>
+<td class="org-right">26%</td>
+</tr>
+
+<tr>
+<td class="org-left">Extremadura</td>
+<td class="org-left">~40,000</td>
+<td class="org-right">15+</td>
+<td class="org-right">12%</td>
+</tr>
+
+<tr>
+<td class="org-left">Andalucía</td>
+<td class="org-left">~35,000</td>
+<td class="org-right">20+</td>
+<td class="org-right">10%</td>
+</tr>
+
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-left">~15,000</td>
+<td class="org-right">8+</td>
+<td class="org-right">4%</td>
+</tr>
+
+<tr>
+<td class="org-left">Cantabria</td>
+<td class="org-left">~8,000</td>
+<td class="org-right">5+</td>
+<td class="org-right">2%</td>
+</tr>
+
+<tr>
+<td class="org-left">Otras</td>
+<td class="org-left">~35,000</td>
+<td class="org-right">30+</td>
+<td class="org-right">11%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5376769" class="outline-3">
+<h3 id="org5376769">3.2 Incendios Más Significativos</h3>
+<div class="outline-text-3" id="text-org5376769">
+<p>
+Se han reportado (18/08/2025) 50 Grandes Incendios Forestales en España en 2025, destacando:
+</p>
+
+<ul class="org-ul">
+<li>Incendio de Oímbra (Ourense): &gt;5,000 ha</li>
+<li>Incendio de Méntrida (Toledo): 3,189 ha</li>
+<li>Incendio de Tres Cantos (Madrid): ~1,500 ha</li>
+<li>Incendio de Benahadux (Almería): 1,333 ha</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge312b07" class="outline-3">
+<h3 id="orge312b07">3.3 Causas Identificadas</h3>
+<div class="outline-text-3" id="text-orge312b07">
+<p>
+Los últimos han sido dos hombres en A Coruña que propagaron el fuego hasta provocar ocho incendios forestales después de quemar cables para robar el cobre, evidenciando el componente criminal en algunos casos.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org376e5b6" class="outline-2">
+<h2 id="org376e5b6">4. ANÁLISIS DE RESPONSABILIDADES POR ADMINISTRACIONES</h2>
+<div class="outline-text-2" id="text-org376e5b6">
+</div>
+<div id="outline-container-org659a322" class="outline-3">
+<h3 id="org659a322">4.1 ADMINISTRACIÓN CENTRAL (ESTADO)</h3>
+<div class="outline-text-3" id="text-org659a322">
+</div>
+<div id="outline-container-org0df93be" class="outline-4">
+<h4 id="org0df93be">4.1.1 Competencias y Recursos</h4>
+<div class="outline-text-4" id="text-org0df93be">
+
+<div id="org9b5f0ac" class="figure">
+<p><img src="./assets/images/competenciasyrecursos.png" alt="competenciasyrecursos.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org155a87a" class="outline-4">
+<h4 id="org155a87a">4.1.2 Limitaciones Estructurales del Estado</h4>
+<div class="outline-text-4" id="text-org155a87a">
+<p>
+<b>Fortalezas identificadas:</b>
+</p>
+<ul class="org-ul">
+<li>Sistema robusto de medios aéreos</li>
+<li>Capacidad de coordinación interautonómica</li>
+<li>Para el ejercicio de estas funciones el CCINIF publica diariamente en el siguiente enlace los partes de intervención de medios del Estado, así como información estadística actual e histórica</li>
+</ul>
+
+<p>
+<b>Debilidades críticas:</b>
+</p>
+<ul class="org-ul">
+<li>Dependencia de solicitudes autonómicas</li>
+<li>Falta de autoridad ejecutiva directa</li>
+<li>Recursos limitados frente a la magnitud actual</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3052dc3" class="outline-3">
+<h3 id="org3052dc3">4.2 ADMINISTRACIONES AUTONÓMICAS</h3>
+<div class="outline-text-3" id="text-org3052dc3">
+</div>
+<div id="outline-container-org54bcee5" class="outline-4">
+<h4 id="org54bcee5">4.2.1 Distribución de Competencias Principales</h4>
+<div class="outline-text-4" id="text-org54bcee5">
+<p>
+La competencia en materia de extinción corresponde a las comunidades autónomas en virtud de sus atribuciones en materia de protección civil y gestión forestal.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd6f5620" class="outline-4">
+<h4 id="orgd6f5620">4.2.2 Análisis por Comunidades Más Afectadas</h4>
+<div class="outline-text-4" id="text-orgd6f5620">
+<p>
+<b>GALICIA:</b>
+</p>
+<ul class="org-ul">
+<li>Dispositivo: 6,000+ efectivos (temporada alta)</li>
+<li>Medios aéreos: 60+ aeronaves</li>
+<li>Problemática: "La evolución de los incendios &#x2026; la peor situación de la historia" según el director general de Defensa del Monte</li>
+</ul>
+
+<p>
+<b>CASTILLA Y LEÓN:</b>
+</p>
+<ul class="org-ul">
+<li>Servicio: SEIF (Servicio de Extinción de Incendios Forestales)</li>
+<li>Cobertura: 94,147 km² territorio forestal</li>
+<li>Debilidades: Extensión territorial vs recursos disponibles</li>
+</ul>
+
+<p>
+<b>EXTREMADURA:</b>
+</p>
+<ul class="org-ul">
+<li>Plan: INFOEX (Plan de Lucha contra Incendios Forestales)</li>
+<li>Características: Alta especialización en prevención</li>
+<li>Limitaciones: Recursos humanos insuficientes para crisis excepcional</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3ca961a" class="outline-4">
+<h4 id="org3ca961a">4.2.3 Recursos Autonómicos Comparativos</h4>
+<div class="outline-text-4" id="text-org3ca961a">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Comunidad</th>
+<th scope="col" class="org-left">Efectivos (temporada)</th>
+<th scope="col" class="org-right">Medios Aéreos</th>
+<th scope="col" class="org-right">Presupuesto 2025 (€M)</th>
+<th scope="col" class="org-right">€/km² forestal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Andalucía</td>
+<td class="org-left">4,500</td>
+<td class="org-right">45</td>
+<td class="org-right">180</td>
+<td class="org-right">42</td>
+</tr>
+
+<tr>
+<td class="org-left">Galicia</td>
+<td class="org-left">6,200</td>
+<td class="org-right">62</td>
+<td class="org-right">165</td>
+<td class="org-right">55</td>
+</tr>
+
+<tr>
+<td class="org-left">Castilla y León</td>
+<td class="org-left">3,800</td>
+<td class="org-right">38</td>
+<td class="org-right">145</td>
+<td class="org-right">38</td>
+</tr>
+
+<tr>
+<td class="org-left">Extremadura</td>
+<td class="org-left">2,200</td>
+<td class="org-right">28</td>
+<td class="org-right">85</td>
+<td class="org-right">35</td>
+</tr>
+
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-left">1,200</td>
+<td class="org-right">15</td>
+<td class="org-right">45</td>
+<td class="org-right">67</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga8d8d59" class="outline-3">
+<h3 id="orga8d8d59">4.3 ADMINISTRACIONES LOCALES</h3>
+<div class="outline-text-3" id="text-orga8d8d59">
+</div>
+<div id="outline-container-org5b0b3c9" class="outline-4">
+<h4 id="org5b0b3c9">4.3.1 Competencias Municipales</h4>
+<div class="outline-text-4" id="text-org5b0b3c9">
+
+<div id="orgfe981c2" class="figure">
+<p><img src="./assets/images/competencias_municipales.png" alt="competencias_municipales.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org507d3cc" class="outline-4">
+<h4 id="org507d3cc">4.3.2 Problemática Municipal Específica</h4>
+<div class="outline-text-4" id="text-org507d3cc">
+<p>
+<b>Recursos Limitados:</b>
+</p>
+<ul class="org-ul">
+<li>67% municipios forestales &lt;5,000 habitantes</li>
+<li>Presupuestos insuficientes para equipamiento especializado</li>
+<li>Falta personal técnico especializado</li>
+</ul>
+
+<p>
+<b>Coordinación Deficiente:</b>
+</p>
+<ul class="org-ul">
+<li>Multiplicidad de protocolos autonómicos</li>
+<li>Comunicaciones no estandarizadas</li>
+<li>Solapamiento competencial con otros niveles</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2a7e7c8" class="outline-2">
+<h2 id="org2a7e7c8">5. VISIONES Y CONFRONTACIONES INTERADMINISTRATIVAS</h2>
+<div class="outline-text-2" id="text-org2a7e7c8">
+</div>
+<div id="outline-container-org1689699" class="outline-3">
+<h3 id="org1689699">5.1 DISCURSO DE LA ADMINISTRACIÓN CENTRAL</h3>
+<div class="outline-text-3" id="text-org1689699">
+</div>
+<div id="outline-container-orgb033ece" class="outline-4">
+<h4 id="orgb033ece">5.1.1 Posición Oficial del Gobierno</h4>
+<div class="outline-text-4" id="text-orgb033ece">
+<p>
+<b>Argumentos principales:</b>
+</p>
+<ol class="org-ol">
+<li><b><b>Competencia subsidiaria</b></b>: El Estado actúa como apoyo, no como responsable primario</li>
+<li><b><b>Recursos disponibles</b></b>: Todos los medios estatales están desplegados</li>
+<li><b><b>Coordinación eficaz</b></b>: El sistema CCINIF funciona correctamente</li>
+<li><b><b>Apoyo extraordinario</b></b>: UME desplegada en múltiples frentes</li>
+</ol>
+
+<p>
+<b>Críticas hacia las CCAA:</b>
+</p>
+<ul class="org-ul">
+<li>Solicitudes tardías de apoyo</li>
+<li>Planificación preventiva insuficiente</li>
+<li>Falta de inversión en infraestructuras preventivas</li>
+</ul>
+
+<p>
+### 5.1.2 Declaraciones Ministeriales Recientes
+</p>
+
+<p>
+Según fuentes ministeriales, "el Estado ha puesto a disposición todos sus recursos, pero la gestión directa corresponde a las comunidades autónomas, que deben reforzar sus dispositivos preventivos".
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7e7c80d" class="outline-3">
+<h3 id="org7e7c80d">5.2 DISCURSO DE LAS COMUNIDADES AUTÓNOMAS</h3>
+<div class="outline-text-3" id="text-org7e7c80d">
+</div>
+<div id="outline-container-org36eb488" class="outline-4">
+<h4 id="org36eb488">5.2.1 Críticas Generales al Estado</h4>
+<div class="outline-text-4" id="text-org36eb488">
+<p>
+<b>Argumentos recurrentes:</b>
+</p>
+<ol class="org-ol">
+<li><b><b>Infrafinanciación</b></b>: Los recursos transferidos son insuficientes</li>
+<li><b><b>Medios estatales limitados</b></b>: Flota aérea insuficiente para demanda simultánea</li>
+<li><b><b>Coordinación deficiente</b></b>: Retrasos en movilización de recursos estatales</li>
+<li><b><b>Competencias sin recursos</b></b>: Transferencia competencial sin financiación adecuada</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgac6dd6b" class="outline-4">
+<h4 id="orgac6dd6b">5.2.2 Posiciones Específicas por CCAA</h4>
+<div class="outline-text-4" id="text-orgac6dd6b">
+<p>
+<b>GALICIA (PP):</b>
+</p>
+<ul class="org-ul">
+<li>"Necesitamos más medios aéreos estatales"</li>
+<li>"La coordinación debe mejorar sustancialmente"</li>
+<li>Solicitud de declaración de zona catastrófica</li>
+</ul>
+
+<p>
+<b>CASTILLA Y LEÓN (PP):</b>
+</p>
+<ul class="org-ul">
+<li>Críticas por "lentitud en la activación de la UME"</li>
+<li>Demanda de mayor financiación para SEIF</li>
+<li>Propuesta de reforma del sistema de coordinación</li>
+</ul>
+
+<p>
+<b>EXTREMADURA (PSOE):</b>
+</p>
+<ul class="org-ul">
+<li>Defensa del dispositivo INFOEX</li>
+<li>Críticas "constructivas" al sistema estatal</li>
+<li>Propuesta de mayor coordinación preventiva</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgeedf37d" class="outline-4">
+<h4 id="orgeedf37d">5.2.3 Confrontación Partidista Subyacente</h4>
+<div class="outline-text-4" id="text-orgeedf37d">
+
+<div id="orgd102ec0" class="figure">
+<p><img src="./assets/images/confrontacion_partidista.png" alt="confrontacion_partidista.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9070479" class="outline-3">
+<h3 id="org9070479">5.3 PERSPECTIVA DE ADMINISTRACIONES LOCALES</h3>
+<div class="outline-text-3" id="text-org9070479">
+</div>
+<div id="outline-container-orge7ebfc6" class="outline-4">
+<h4 id="orge7ebfc6">5.3.1 Posición de la FEMP</h4>
+<div class="outline-text-4" id="text-orge7ebfc6">
+<p>
+La Federación Española de Municipios y Provincias ha manifestado:
+</p>
+<ul class="org-ul">
+<li>Necesidad de mayor financiación específica</li>
+<li>Mejora de protocolos de coordinación</li>
+<li>Reconocimiento del papel municipal en primera intervención</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org178da33" class="outline-4">
+<h4 id="org178da33">5.3.2 Críticas de Alcaldes Afectados</h4>
+<div class="outline-text-4" id="text-org178da33">
+<p>
+<b>Problemas identificados:</b>
+</p>
+<ul class="org-ul">
+<li>Información tardía sobre evolución de incendios</li>
+<li>Falta de recursos para evacuaciones masivas</li>
+<li>Coordinación deficiente entre niveles administrativos</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org84f8556" class="outline-2">
+<h2 id="org84f8556">6. RECURSOS Y COORDINACIÓN</h2>
+<div class="outline-text-2" id="text-org84f8556">
+</div>
+<div id="outline-container-org113bf28" class="outline-3">
+<h3 id="org113bf28">6.1 ANÁLISIS DE RECURSOS DISPONIBLES</h3>
+<div class="outline-text-3" id="text-org113bf28">
+</div>
+<div id="outline-container-orgfbdeb4d" class="outline-4">
+<h4 id="orgfbdeb4d">6.1.1 Medios Aéreos Totales (Nacional)</h4>
+<div class="outline-text-4" id="text-orgfbdeb4d">
+
+<div id="orge25a494" class="figure">
+<p><img src="./assets/images/medios_aereos.png" alt="medios_aereos.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org93fe6fc" class="outline-4">
+<h4 id="org93fe6fc">6.1.2 Efectivos Humanos Totales</h4>
+<div class="outline-text-4" id="text-org93fe6fc">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nivel Administrativo</th>
+<th scope="col" class="org-left">Efectivos Permanentes</th>
+<th scope="col" class="org-left">Efectivos Temporales</th>
+<th scope="col" class="org-left">Total Temporada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Estatal</td>
+<td class="org-left">1,200</td>
+<td class="org-left">800</td>
+<td class="org-left">2,000</td>
+</tr>
+
+<tr>
+<td class="org-left">Autonómico</td>
+<td class="org-left">8,500</td>
+<td class="org-left">12,000</td>
+<td class="org-left">20,500</td>
+</tr>
+
+<tr>
+<td class="org-left">Local</td>
+<td class="org-left">3,200</td>
+<td class="org-left">1,800</td>
+<td class="org-left">5,000</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>TOTAL NACIONAL</b></b></td>
+<td class="org-left"><b><b>12,900</b></b></td>
+<td class="org-left"><b><b>14,600</b></b></td>
+<td class="org-left"><b><b>27,500</b></b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge88a2b4" class="outline-3">
+<h3 id="orge88a2b4">6.2 SISTEMAS DE COORDINACIÓN</h3>
+<div class="outline-text-3" id="text-orge88a2b4">
+</div>
+<div id="outline-container-orgade853f" class="outline-4">
+<h4 id="orgade853f">6.2.1 Estructura Actual CCINIF</h4>
+<div class="outline-text-4" id="text-orgade853f">
+<p>
+En el CCINIF se encuentra la Central donde se coordina la movilización de los medios de extinción estatales que gestiona el Ministerio para apoyar a las comunidades autónomas y otros países que los soliciten.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbe3c09a" class="outline-4">
+<h4 id="orgbe3c09a">6.2.2 Deficiencias en la Coordinación</h4>
+<div class="outline-text-4" id="text-orgbe3c09a">
+<p>
+<b>Problemas técnicos identificados:</b>
+</p>
+<ul class="org-ul">
+<li>Sistemas de comunicación no interoperables</li>
+<li>Protocolos de activación lentos</li>
+<li>Información meteorológica no integrada</li>
+<li>Falta de sistemas de geolocalización unificados</li>
+</ul>
+
+<p>
+<b>Problemas organizativos:</b>
+</p>
+<ul class="org-ul">
+<li>Múltiples cadenas de mando</li>
+<li>Criterios dispares de activación</li>
+<li>Falta de formación conjunta</li>
+<li>Protocolos de evacuación no homogéneos</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org61cb623" class="outline-3">
+<h3 id="org61cb623">6.3 FINANCIACIÓN COMPARADA</h3>
+<div class="outline-text-3" id="text-org61cb623">
+</div>
+<div id="outline-container-orgffdf3c4" class="outline-4">
+<h4 id="orgffdf3c4">6.3.1 Inversión Total Nacional (2025)</h4>
+<div class="outline-text-4" id="text-orgffdf3c4">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Concepto</th>
+<th scope="col" class="org-right">Inversión Estatal (€M)</th>
+<th scope="col" class="org-right">Inversión Autonómica (€M)</th>
+<th scope="col" class="org-right">Inversión Local (€M)</th>
+<th scope="col" class="org-right">Total (€M)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Prevención</td>
+<td class="org-right">125</td>
+<td class="org-right">280</td>
+<td class="org-right">45</td>
+<td class="org-right">450</td>
+</tr>
+
+<tr>
+<td class="org-left">Extinción</td>
+<td class="org-right">210</td>
+<td class="org-right">520</td>
+<td class="org-right">85</td>
+<td class="org-right">815</td>
+</tr>
+
+<tr>
+<td class="org-left">Investigación</td>
+<td class="org-right">15</td>
+<td class="org-right">8</td>
+<td class="org-right">2</td>
+<td class="org-right">25</td>
+</tr>
+
+<tr>
+<td class="org-left">Restauración</td>
+<td class="org-right">80</td>
+<td class="org-right">120</td>
+<td class="org-right">15</td>
+<td class="org-right">215</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>TOTAL</b></b></td>
+<td class="org-right"><b><b>430</b></b></td>
+<td class="org-right"><b><b>928</b></b></td>
+<td class="org-right"><b><b>147</b></b></td>
+<td class="org-right"><b><b>1,505</b></b></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org89b970d" class="outline-2">
+<h2 id="org89b970d">7. ANÁLISIS CRÍTICO Y EVALUACIÓN</h2>
+<div class="outline-text-2" id="text-org89b970d">
+</div>
+<div id="outline-container-orgaf58f85" class="outline-3">
+<h3 id="orgaf58f85">7.1 EVALUACIÓN DE LA RESPUESTA INSTITUCIONAL</h3>
+<div class="outline-text-3" id="text-orgaf58f85">
+</div>
+<div id="outline-container-org98e062e" class="outline-4">
+<h4 id="org98e062e">7.1.1 Fortalezas del Sistema Actual</h4>
+<div class="outline-text-4" id="text-org98e062e">
+<p>
+<b>Aspectos positivos identificados:</b>
+</p>
+<ol class="org-ol">
+<li><b><b>Especialización territorial</b></b>: Las CCAA conocen mejor sus territorios</li>
+<li><b><b>Flexibilidad operativa</b></b>: Capacidad de adaptación a condiciones locales</li>
+<li><b><b>Recursos técnicos avanzados</b></b>: Tecnología puntera en detección y extinción</li>
+<li><b><b>Experiencia acumulada</b></b>: Décadas de experiencia en gestión forestal</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org02cc5be" class="outline-4">
+<h4 id="org02cc5be">7.1.2 Debilidades Estructurales Críticas</h4>
+<div class="outline-text-4" id="text-org02cc5be">
+<p>
+<b>Problemas sistémicos:</b>
+</p>
+
+
+<div id="orgd6c9e0c" class="figure">
+<p><img src="./assets/images/debilidades_estructurales.png" alt="debilidades_estructurales.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgddfd572" class="outline-3">
+<h3 id="orgddfd572">7.2 RESPONSABILIDADES ESPECÍFICAS IDENTIFICADAS</h3>
+<div class="outline-text-3" id="text-orgddfd572">
+</div>
+<div id="outline-container-org4334771" class="outline-4">
+<h4 id="org4334771">7.2.1 Responsabilidades del Estado</h4>
+<div class="outline-text-4" id="text-org4334771">
+<p>
+<b>Fallos identificados:</b>
+</p>
+<ol class="org-ol">
+<li><b><b>Insuficiencia de medios aéreos</b></b>: La flota estatal es insuficiente para crisis simultáneas</li>
+<li><b><b>Retrasos en activación UME</b></b>: Protocolos burocráticos lentos</li>
+<li><b><b>Financiación autonómica inadecuada</b></b>: Los recursos transferidos no cubren necesidades reales</li>
+<li><b><b>Falta de liderazgo coordinador</b></b>: Ausencia de autoridad ejecutiva efectiva</li>
+</ol>
+
+<p>
+<b>Cumplimientos destacables:</b>
+</p>
+<ol class="org-ol">
+<li>Disponibilidad de recursos solicitados</li>
+<li>Información meteorológica y de riesgo</li>
+<li>Investigación y desarrollo tecnológico</li>
+<li>Cooperación internacional</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgdcbc4ba" class="outline-4">
+<h4 id="orgdcbc4ba">7.2.2 Responsabilidades Autonómicas</h4>
+<div class="outline-text-4" id="text-orgdcbc4ba">
+<p>
+<b>Fallos críticos identificados:</b>
+</p>
+
+<p>
+<b>GALICIA:</b>
+</p>
+<ul class="org-ul">
+<li>Planificación preventiva insuficiente para condiciones extremas</li>
+<li>Retrasos en solicitud de apoyo estatal</li>
+<li>Falta de inversión en cortafuegos y infraestructuras</li>
+</ul>
+
+<p>
+<b>CASTILLA Y LEÓN:</b>
+</p>
+<ul class="org-ul">
+<li>Dimensionamiento inadecuado del SEIF para territorio</li>
+<li>Protocolos de evacuación deficientes</li>
+<li>Coordinación intermunicipal insuficiente</li>
+</ul>
+
+<p>
+<b>EXTREMADURA:</b>
+</p>
+<ul class="org-ul">
+<li>Recursos humanos insuficientes para crisis simultáneas</li>
+<li>Dependencia excesiva de medios estatales</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf472437" class="outline-4">
+<h4 id="orgf472437">7.2.3 Responsabilidades Municipales</h4>
+<div class="outline-text-4" id="text-orgf472437">
+<p>
+<b>Deficiencias principales:</b>
+</p>
+<ol class="org-ol">
+<li><b><b>Ordenación territorial inadecuada</b></b>: Construcciones en zonas de riesgo</li>
+<li><b><b>Mantenimiento deficiente</b></b>: Falta de limpieza de montes municipales</li>
+<li><b><b>Planes de evacuación obsoletos</b></b>: Protocolos no actualizados</li>
+<li><b><b>Comunicación ciudadana deficiente</b></b>: Información tardía a la población</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9610fcf" class="outline-3">
+<h3 id="org9610fcf">7.3 ANÁLISIS COMPARATIVO INTERNACIONAL</h3>
+<div class="outline-text-3" id="text-org9610fcf">
+</div>
+<div id="outline-container-org17d86c8" class="outline-4">
+<h4 id="org17d86c8">7.3.1 Sistemas de Referencia</h4>
+<div class="outline-text-4" id="text-org17d86c8">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">País</th>
+<th scope="col" class="org-left">Modelo Organizativo</th>
+<th scope="col" class="org-left">Efectividad</th>
+<th scope="col" class="org-left">Coste €/ha protegida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-left">Centralizado-departamental</td>
+<td class="org-left">Alta</td>
+<td class="org-left">8,5</td>
+</tr>
+
+<tr>
+<td class="org-left">Portugal</td>
+<td class="org-left">Híbrido autonómico</td>
+<td class="org-left">Media-alta</td>
+<td class="org-left">12,3</td>
+</tr>
+
+<tr>
+<td class="org-left">Italia</td>
+<td class="org-left">Descentralizado regional</td>
+<td class="org-left">Media</td>
+<td class="org-left">15,8</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><b>ESPAÑA</b></b></td>
+<td class="org-left"><b><b>Descentralizado autonómico</b></b></td>
+<td class="org-left"><b><b>Media</b></b></td>
+<td class="org-left"><b><b>18,2</b></b></td>
+</tr>
+
+<tr>
+<td class="org-left">Grecia</td>
+<td class="org-left">Centralizado estatal</td>
+<td class="org-left">Baja</td>
+<td class="org-left">22,4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfea747a" class="outline-2">
+<h2 id="orgfea747a">8. CONCLUSIONES Y RECOMENDACIONES</h2>
+<div class="outline-text-2" id="text-orgfea747a">
+</div>
+<div id="outline-container-org8081159" class="outline-3">
+<h3 id="org8081159">8.1 CONCLUSIONES PRINCIPALES</h3>
+<div class="outline-text-3" id="text-org8081159">
+<p>
+### 8.1.1 Diagnóstico General
+</p>
+
+<p>
+La crisis de incendios de agosto 2025 ha puesto de manifiesto las <b><b>debilidades estructurales</b></b> del sistema español de gestión forestal, caracterizado por:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Fragmentación competencial excesiva</b></b> que dificulta la coordinación efectiva</li>
+<li><b><b>Infrafinanciación crónica</b></b> especialmente evidente en crisis excepcionales</li>
+<li><b><b>Politización contraproducente</b></b> que impide una respuesta técnica eficaz</li>
+<li><b><b>Falta de adaptación</b></b> al nuevo contexto climático y de riesgo</li>
+</ol>
+
+<p>
+### 8.1.2 Distribución de Responsabilidades
+</p>
+
+
+<div id="org40371c4" class="figure">
+<p><img src="./assets/images/distro_respon.png" alt="distro_respon.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org35b9f09" class="outline-3">
+<h3 id="org35b9f09">8.2 RECOMENDACIONES ESTRUCTURALES</h3>
+<div class="outline-text-3" id="text-org35b9f09">
+<p>
+### 8.2.1 Reforma del Sistema de Coordinación
+</p>
+
+<p>
+<b>PROPUESTA: Sistema Nacional Integrado de Gestión de Incendios Forestales</b>
+</p>
+
+<ol class="org-ol">
+<li><b><b>Autoridad Nacional de Coordinación</b></b>
+<ul class="org-ul">
+<li>Creación de una Agencia Estatal con capacidad ejecutiva</li>
+<li>Protocolos de activación automática</li>
+<li>Sistemas de información unificados</li>
+</ul></li>
+
+<li><b><b>Interoperabilidad Técnica</b></b>
+<ul class="org-ul">
+<li>Estandarización de comunicaciones</li>
+<li>Sistemas de geolocalización unificados</li>
+<li>Protocolos de evacuación homogéneos</li>
+</ul></li>
+
+<li><b><b>Financiación Específica</b></b>
+<ul class="org-ul">
+<li>Fondo Nacional de Emergencias Forestales</li>
+<li>Financiación finalista para prevención</li>
+<li>Cofinanciación europea reforzada</li>
+</ul></li>
+</ol>
+
+<p>
+### 8.2.2 Reformas Normativas Urgentes
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Ámbito</th>
+<th scope="col" class="org-left">Reforma Propuesta</th>
+<th scope="col" class="org-left">Plazo</th>
+<th scope="col" class="org-left">Complejidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Constitucional</td>
+<td class="org-left">Art. 148 - Competencias concurrentes</td>
+<td class="org-left">5-10 años</td>
+<td class="org-left">Muy alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Legal</td>
+<td class="org-left">Nueva Ley Básica Incendios</td>
+<td class="org-left">1-2 años</td>
+<td class="org-left">Alta</td>
+</tr>
+
+<tr>
+<td class="org-left">Reglamentaria</td>
+<td class="org-left">Protocolos coordinación</td>
+<td class="org-left">6 meses</td>
+<td class="org-left">Media</td>
+</tr>
+
+<tr>
+<td class="org-left">Técnica</td>
+<td class="org-left">Sistemas información</td>
+<td class="org-left">1 año</td>
+<td class="org-left">Media</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+### 8.2.3 Medidas de Emergencia (Corto Plazo)
+</p>
+
+<ol class="org-ol">
+<li><b><b>Inmediatas (1 mes)</b></b>
+<ul class="org-ul">
+<li>Declaración de Emergencia Nacional</li>
+<li>Movilización total medios estatales</li>
+<li>Coordinación única de mando</li>
+</ul></li>
+
+<li><b><b>Urgentes (3 meses)</b></b>
+<ul class="org-ul">
+<li>Refuerzo flota aérea mediante contratos</li>
+<li>Creación de equipos de intervención rápida</li>
+<li>Protocolos de evacuación masiva</li>
+</ul></li>
+
+<li><b><b>Prioritarias (6 meses)</b></b>
+<ul class="org-ul">
+<li>Plan Nacional de Restauración</li>
+<li>Investigación judicial de causas</li>
+<li>Evaluación de responsabilidades administrativas</li>
+</ul></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb8a0687" class="outline-3">
+<h3 id="orgb8a0687">8.3 RECOMENDACIONES POR ADMINISTRACIÓN</h3>
+<div class="outline-text-3" id="text-orgb8a0687">
+<p>
+### 8.3.1 Para la Administración Central
+</p>
+
+<p>
+<b>Medidas urgentes:</b>
+</p>
+<ul class="org-ul">
+<li>Incremento inmediato de la flota aérea estatal</li>
+<li>Reforma de los protocolos de activación de la UME</li>
+<li>Creación de un fondo de emergencia específico para CCAA</li>
+</ul>
+
+<p>
+<b>Reformas estructurales:</b>
+</p>
+<ul class="org-ul">
+<li>Desarrollo de capacidad ejecutiva directa en emergencias</li>
+<li>Sistema nacional de alerta temprana</li>
+<li>Coordinación europea reforzada</li>
+</ul>
+
+<p>
+### 8.3.2 Para las Comunidades Autónomas
+</p>
+
+<p>
+<b>Galicia:</b>
+</p>
+<ul class="org-ul">
+<li>Incremento urgente de efectivos permanentes</li>
+<li>Inversión masiva en infraestructuras preventivas</li>
+<li>Revisión completa de protocolos de actuación</li>
+</ul>
+
+<p>
+<b>Castilla y León:</b>
+</p>
+<ul class="org-ul">
+<li>Redimensionamiento del SEIF</li>
+<li>Mejora de la coordinación intermunicipal</li>
+<li>Planes de evacuación específicos por comarcas</li>
+</ul>
+
+<p>
+<b>Extremadura:</b>
+</p>
+<ul class="org-ul">
+<li>Fortalecimiento del dispositivo humano</li>
+<li>Reducción de dependencia de medios estatales</li>
+<li>Inversión en tecnología de detección precoz</li>
+</ul>
+
+<p>
+### 8.3.3 Para las Administraciones Locales
+</p>
+
+<ul class="org-ul">
+<li>Revisión urgente de la ordenación territorial en zonas de riesgo</li>
+<li>Planes de evacuación actualizados y testados</li>
+<li>Inversión en mantenimiento preventivo de montes municipales</li>
+<li>Mejora de los sistemas de comunicación con la ciudadanía</li>
+</ul>
+
+<p>
+&#x2014;
+</p>
+
+<p>
+<b><b>DOCUMENTO ELABORADO</b></b>: 21 agosto 2025  
+<b><b>FUENTES</b></b>: Documentación oficial, análisis de medios, datos EFFIS/Copernicus  
+<b><b>CARÁCTER</b></b>: Análisis técnico independiente  
+<b><b>OBJETIVO</b></b>: Evaluación objetiva de responsabilidades administrativas
+</p>
+
+
+<p class="post-meta">Publicado el 2025-08-21 14:14 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:19</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

@@ -1,0 +1,3321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 23:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Raíces Sociológicas de la Polarización Española: Trabajo, Familia y Fracturas</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis profundo de los factores sociológicos, laborales y familiares que impulsan la polarización política en España" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Raíces Sociológicas de la Polarización Española: Trabajo, Familia y Fracturas</h1>
+
+<div id="outline-container-org19bbf89" class="outline-2">
+<h2 id="org19bbf89">Raíces Sociológicas de la Polarización Española: Trabajo, Familia y Fracturas</h2>
+<div class="outline-text-2" id="text-org19bbf89">
+
+<div id="org0b5a2a3" class="figure">
+<p><img src="./assets/images/ChatSatiric_generacion.png" alt="ChatSatiric_generacion.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5cab06a" class="outline-2">
+<h2 id="org5cab06a">Matriz de Indicadores Sociológicos y Polarización</h2>
+<div class="outline-text-2" id="text-org5cab06a">
+<table id="orgda56786" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Indicador</th>
+<th scope="col" class="org-right">2000</th>
+<th scope="col" class="org-right">2008</th>
+<th scope="col" class="org-right">2015</th>
+<th scope="col" class="org-right">2020</th>
+<th scope="col" class="org-right">2026</th>
+<th scope="col" class="org-left">Tendencia</th>
+<th scope="col" class="org-left">Impacto Polarización</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Tasa de paro (%)</td>
+<td class="org-right">11.9%</td>
+<td class="org-right">8.2%</td>
+<td class="org-right">22.1%</td>
+<td class="org-right">15.5%</td>
+<td class="org-right">11.8%</td>
+<td class="org-left">Cíclica</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Paro juvenil (&lt;25 años) (%)</td>
+<td class="org-right">25.6%</td>
+<td class="org-right">18.2%</td>
+<td class="org-right">48.4%</td>
+<td class="org-right">38.3%</td>
+<td class="org-right">26.9%</td>
+<td class="org-left">Cíclica</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Temporalidad laboral (%)</td>
+<td class="org-right">32.1%</td>
+<td class="org-right">29.2%</td>
+<td class="org-right">25.1%</td>
+<td class="org-right">23.8%</td>
+<td class="org-right">24.7%</td>
+<td class="org-left">↓ Lenta</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Salario mediano (€ año)</td>
+<td class="org-right">15800</td>
+<td class="org-right">18500</td>
+<td class="org-right">19500</td>
+<td class="org-right">20500</td>
+<td class="org-right">22300</td>
+<td class="org-left">↑ Lenta</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Brecha salarial género (%)</td>
+<td class="org-right">17.2%</td>
+<td class="org-right">16.1%</td>
+<td class="org-right">14.2%</td>
+<td class="org-right">11.8%</td>
+<td class="org-right">9.3%</td>
+<td class="org-left">↓ Const</td>
+<td class="org-left">Alto (cultural)</td>
+</tr>
+
+<tr>
+<td class="org-left">Edad emancipación promedio</td>
+<td class="org-right">26.3</td>
+<td class="org-right">27.1</td>
+<td class="org-right">29.3</td>
+<td class="org-right">29.8</td>
+<td class="org-right">30.2</td>
+<td class="org-left">↑ Const</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Precio vivienda (€/m² Madrid)</td>
+<td class="org-right">1580</td>
+<td class="org-right">2850</td>
+<td class="org-right">2320</td>
+<td class="org-right">3100</td>
+<td class="org-right">4200</td>
+<td class="org-left">↑↑ Accel</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Tasa de natalidad (por 1000 hab)</td>
+<td class="org-right">9.9</td>
+<td class="org-right">11.4</td>
+<td class="org-right">9.0</td>
+<td class="org-right">7.2</td>
+<td class="org-right">7.0</td>
+<td class="org-left">↓↓ Fuerte</td>
+<td class="org-left">Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Edad primer hijo (mujer)</td>
+<td class="org-right">29.1</td>
+<td class="org-right">30.8</td>
+<td class="org-right">31.9</td>
+<td class="org-right">32.2</td>
+<td class="org-right">32.8</td>
+<td class="org-left">↑ Const</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Hogares unipersonales (%)</td>
+<td class="org-right">17.2%</td>
+<td class="org-right">20.3%</td>
+<td class="org-right">24.8%</td>
+<td class="org-right">26.1%</td>
+<td class="org-right">27.5%</td>
+<td class="org-left">↑ Const</td>
+<td class="org-left">Medio</td>
+</tr>
+
+<tr>
+<td class="org-left">Personas en riesgo pobreza (%)</td>
+<td class="org-right">19.6%</td>
+<td class="org-right">19.8%</td>
+<td class="org-right">28.6%</td>
+<td class="org-right">26.4%</td>
+<td class="org-right">26.8%</td>
+<td class="org-left">↑ Crisis</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Índice Gini (desigualdad)</td>
+<td class="org-right">0.321</td>
+<td class="org-right">0.313</td>
+<td class="org-right">0.346</td>
+<td class="org-right">0.330</td>
+<td class="org-right">0.338</td>
+<td class="org-left">↑ Crisis</td>
+<td class="org-left">Muy Alto</td>
+</tr>
+
+<tr>
+<td class="org-left">Confianza interpersonal (0-10)</td>
+<td class="org-right">5.8</td>
+<td class="org-right">6.1</td>
+<td class="org-right">5.2</td>
+<td class="org-right">4.8</td>
+<td class="org-right">4.5</td>
+<td class="org-left">↓ Const</td>
+<td class="org-left">Alto</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org8b1383e" class="outline-2">
+<h2 id="org8b1383e">Introducción: Lo Personal es Político</h2>
+<div class="outline-text-2" id="text-org8b1383e">
+<p>
+La polarización política española no puede entenderse únicamente desde variables electorales, ideológicas o históricas. Bajo la superficie de debates parlamentarios y enfrentamientos partidistas subyacen transformaciones profundas en la estructura socioeconómica que afectan directamente la vida cotidiana de millones de españoles: cómo trabajan, cómo viven, cómo forman familias, cómo se relacionan entre generaciones.
+</p>
+
+<p>
+Este análisis examina cómo la precariedad laboral, la crisis de vivienda, la transformación del modelo familiar, las fracturas generacionales, la desigualdad territorial, y otros factores sociológicos alimentan y explican la polarización política. La hipótesis central es que <b><b>la polarización política es fundamentalmente una respuesta a la ansiedad social generada por la ruptura del contrato social de posguerra</b></b> que prometía movilidad ascendente, estabilidad laboral, acceso a vivienda, y mejores condiciones de vida para cada generación.
+</p>
+
+<p>
+Cuando estas promesas se quiebran, los ciudadanos buscan explicaciones y soluciones. La polarización surge cuando diferentes sectores sociales responsabilizan a actores distintos (inmigrantes, élites, independentistas, "la casta", feministas, etc.) y abrazan soluciones políticas opuestas (proteccionismo vs. apertura, centralismo vs. federalismo, tradición vs. progresismo).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84768e2" class="outline-2">
+<h2 id="org84768e2">La Precariedad Laboral Como Motor de Polarización</h2>
+<div class="outline-text-2" id="text-org84768e2">
+</div>
+<div id="outline-container-orgbb5c5f6" class="outline-3">
+<h3 id="orgbb5c5f6">El Modelo Dual del Mercado Laboral Español</h3>
+<div class="outline-text-3" id="text-orgbb5c5f6">
+<p>
+España presenta uno de los mercados laborales más segmentados de Europa, dividiendo a trabajadores entre "insiders" (contratos indefinidos, protección alta) y "outsiders" (temporales, precarios, desprotegidos).
+</p>
+
+
+<div id="org22087ac" class="figure">
+<p><img src="./assets/images/mercado-laboral-dual.png" alt="mercado-laboral-dual.png" width="600px" />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgb502768" class="outline-4">
+<h4 id="orgb502768">Dualidad y Sus Consecuencias Políticas</h4>
+<div class="outline-text-4" id="text-orgb502768">
+<p>
+Este modelo dual genera fracturas políticas profundas:
+</p>
+
+<p>
+<b>Generacional:</b> Los "insiders" son predominantemente baby boomers y Generación X temprana (45-65 años) que accedieron al mercado laboral en época de crecimiento (1980-2007). Los "outsiders" son millennials y Generación Z (25-40 años) que entraron durante o post-crisis 2008.
+</p>
+
+<p>
+<b>Territorial:</b> Madrid y País Vasco concentran empleo de calidad (sectores financiero, tecnológico, industrial avanzado). Andalucía, Extremadura, Murcia concentran empleo temporal agrícola, turístico, construcción.
+</p>
+
+<p>
+<b>Sectorial:</b> Sector público ofrece estabilidad; sector privado, especialmente servicios (hostelería, retail, cuidados), ofrece precariedad.
+</p>
+
+<p>
+<b>De género:</b> Mujeres sobrerrepresentadas en parcialidad involuntaria (65% de contratos parciales) y sectores precarizados (cuidados, limpieza, comercio).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfd1ecf4" class="outline-3">
+<h3 id="orgfd1ecf4">Datos de Precariedad Laboral</h3>
+<div class="outline-text-3" id="text-orgfd1ecf4">
+<table id="org3986aa7" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Tipo de Precariedad</th>
+<th scope="col" class="org-right">2000</th>
+<th scope="col" class="org-right">2008</th>
+<th scope="col" class="org-right">2015</th>
+<th scope="col" class="org-right">2026</th>
+<th scope="col" class="org-left">Población Afectada 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Temporalidad</td>
+<td class="org-right">32.1%</td>
+<td class="org-right">29.2%</td>
+<td class="org-right">25.1%</td>
+<td class="org-right">24.7%</td>
+<td class="org-left">4.8M trabajadores</td>
+</tr>
+
+<tr>
+<td class="org-left">Parcialidad involuntaria</td>
+<td class="org-right">28.5%</td>
+<td class="org-right">34.2%</td>
+<td class="org-right">62.3%</td>
+<td class="org-right">59.8%</td>
+<td class="org-left">2.1M trabajadores</td>
+</tr>
+
+<tr>
+<td class="org-left">Sobrecualificación</td>
+<td class="org-right">23.1%</td>
+<td class="org-right">18.9%</td>
+<td class="org-right">35.6%</td>
+<td class="org-right">32.4%</td>
+<td class="org-left">6.3M trabajadores</td>
+</tr>
+
+<tr>
+<td class="org-left">Salario &lt; 60% mediana</td>
+<td class="org-right">16.8%</td>
+<td class="org-right">14.2%</td>
+<td class="org-right">22.7%</td>
+<td class="org-right">21.3%</td>
+<td class="org-left">4.1M trabajadores</td>
+</tr>
+
+<tr>
+<td class="org-left">Sin contrato (sumergidos)</td>
+<td class="org-right">11.2%</td>
+<td class="org-right">8.7%</td>
+<td class="org-right">14.3%</td>
+<td class="org-right">12.1%</td>
+<td class="org-left">2.3M estimados</td>
+</tr>
+
+<tr>
+<td class="org-left">Falsos autónomos</td>
+<td class="org-right">3.4%</td>
+<td class="org-right">5.1%</td>
+<td class="org-right">8.9%</td>
+<td class="org-right">7.8%</td>
+<td class="org-left">1.2M trabajadores</td>
+</tr>
+
+<tr>
+<td class="org-left">Trabajo plataformas (gig)</td>
+<td class="org-right">0%</td>
+<td class="org-right">0.2%</td>
+<td class="org-right">2.1%</td>
+<td class="org-right">4.3%</td>
+<td class="org-left">850K trabajadores</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-orgbe230bf" class="outline-4">
+<h4 id="orgbe230bf">Impacto Psicosocial de la Precariedad</h4>
+<div class="outline-text-4" id="text-orgbe230bf">
+<p>
+La precariedad laboral genera consecuencias que trascienden lo económico:
+</p>
+
+<p>
+<b>Imposibilidad de planificación vital:</b>
+</p>
+<ul class="org-ul">
+<li>No se puede firmar hipoteca sin contrato indefinido</li>
+<li>Retraso en formación de pareja estable</li>
+<li>Aplazamiento de maternidad/paternidad</li>
+<li>Imposibilidad de ahorro para pensión</li>
+</ul>
+
+<p>
+<b>Ansiedad y estrés crónico:</b>
+</p>
+<ul class="org-ul">
+<li>Incertidumbre sobre ingresos próximos meses</li>
+<li>Estudios muestran correlación precariedad-ansiedad-depresión</li>
+<li>Consumo de ansiolíticos en España: +47% entre 2008-2024</li>
+<li>Población 25-40 años: mayor prevalencia trastornos ansiedad (28.3% según ESEMeD 2024)</li>
+</ul>
+
+<p>
+<b>Vergüenza y estigma social:</b>
+</p>
+<ul class="org-ul">
+<li>Percepción de fracaso personal por situación estructural</li>
+<li>Comparación con generación de padres (mejor situada)</li>
+<li>Ocultamiento de situación real a familia/amigos</li>
+<li>Sentimiento de "generación perdida"</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgfd3b629" class="outline-4">
+<h4 id="orgfd3b629">Cómo la Precariedad Alimenta Polarización</h4>
+<div class="outline-text-4" id="text-orgfd3b629">
+<p>
+La precariedad laboral se traduce políticamente de formas divergentes según edad, educación y contexto:
+</p>
+
+<p>
+<b>Jóvenes urbanos con educación superior:</b>
+</p>
+<ul class="org-ul">
+<li>Atribuyen precariedad a neoliberalismo, austeridad, poder empresarial</li>
+<li>Votan izquierda radical (Podemos/Sumar): promesas de regulación laboral, salario mínimo, vivienda pública</li>
+<li>Rechazan "sistema" que consideran capturado por élites</li>
+<li>Ejemplos: concentración voto Podemos en barrios urbanos jóvenes (Malasaña, Gràcia, Malagueta)</li>
+</ul>
+
+<p>
+<b>Jóvenes/adultos sin educación superior, zonas periurbanas/rurales:</b>
+</p>
+<ul class="org-ul">
+<li>Atribuyen precariedad a inmigración (competencia laboral), globalización, "chiringuitos" autonómicos</li>
+<li>Votan derecha radical (VOX): promesas de preferencia nacional en empleo, reducir inmigración, centralismo</li>
+<li>Rechazo a "progresía" que consideran desconectada de realidad laboral</li>
+<li>Ejemplos: crecimiento VOX en cinturones industriales desindustrializados (Alcorcón, Hospitalet, periferia Valencia)</li>
+</ul>
+
+<p>
+<b>Adultos mediana edad en paro larga duración:</b>
+</p>
+<ul class="org-ul">
+<li>Mayores de 45 años, parados de larga duración (&gt;12 meses): 850,000 personas</li>
+<li>Percepción de abandono por "sistema" que les desechó</li>
+<li>Voto volátil: PP tradicional, VOX, abstención</li>
+<li>Alto resentimiento hacia "subsidios" a otros (inmigrantes, independentistas)</li>
+</ul>
+
+<p>
+<b>Insiders cercanos a jubilación:</b>
+</p>
+<ul class="org-ul">
+<li>Temen perder estatus antes de retiro</li>
+<li>Voto conservador (PP) para mantener statu quo</li>
+<li>Rechazo a propuestas radicales de izquierda (temen despidos facilitados) o derecha (temen recortes sociales)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd24c5e5" class="outline-3">
+<h3 id="orgd24c5e5">La Economía Gig y los "Riders": Símbolo de Precariedad</h3>
+<div class="outline-text-3" id="text-orgd24c5e5">
+<p>
+La economía de plataformas (Glovo, Uber Eats, Deliveroo, Stuart) simboliza la precariedad extrema del siglo XXI:
+</p>
+
+<p>
+<b>Características:</b>
+</p>
+<ul class="org-ul">
+<li>Falsos autónomos: asumen riesgos, sin protección laboral</li>
+<li>Algoritmos opacidad: no saben cómo se les asigna trabajo</li>
+<li>Ingresos variables: 3-12€/hora según momento</li>
+<li>Sin derechos: bajas, vacaciones, desempleo</li>
+<li>Población: mayoritariamente inmigrantes (67%), jóvenes (82% &lt;35 años)</li>
+</ul>
+
+<p>
+<b>Impacto político:</b>
+</p>
+
+<p>
+El conflicto de los riders ha sido campo de batalla político-ideológico:
+</p>
+<ul class="org-ul">
+<li><b><b>Izquierda:</b></b> bandera de regulación, Ley Rider (2021) como victoria parcial</li>
+<li><b><b>Derecha:</b></b> crítica regulación como destrucción empleo, defensa "libertad de elección"</li>
+<li><b><b>Riders como sujeto político:</b></b> autoorganización, sindicatos alternativos, huelgas</li>
+</ul>
+
+<p>
+El debate sobre riders cristaliza visiones opuestas del trabajo en siglo XXI: ¿flexibilidad liberadora o precariedad explotadora?
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf460715" class="outline-2">
+<h2 id="orgf460715">Crisis de Vivienda: El Sueño Imposible</h2>
+<div class="outline-text-2" id="text-orgf460715">
+<p>
+Si hay un factor que unifica generacionalmente la frustración española es la <b><b>imposibilidad de acceso a vivienda digna y asequible</b></b>.
+</p>
+</div>
+
+<div id="outline-container-org3b52498" class="outline-3">
+<h3 id="org3b52498">Evolución del Precio de la Vivienda</h3>
+<div class="outline-text-3" id="text-org3b52498">
+<table id="org4b9aa55" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Ciudad</th>
+<th scope="col" class="org-right">Precio €/m² 2000</th>
+<th scope="col" class="org-right">Precio €/m² 2008</th>
+<th scope="col" class="org-right">Precio €/m² 2015</th>
+<th scope="col" class="org-right">Precio €/m² 2026</th>
+<th scope="col" class="org-right">Variación 2000-26</th>
+<th scope="col" class="org-left">Años salario medio para compra 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-right">1580</td>
+<td class="org-right">2850</td>
+<td class="org-right">2320</td>
+<td class="org-right">4200</td>
+<td class="org-right">+166%</td>
+<td class="org-left">15.8 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Barcelona</td>
+<td class="org-right">1620</td>
+<td class="org-right">2980</td>
+<td class="org-right">2450</td>
+<td class="org-right">4350</td>
+<td class="org-right">+168%</td>
+<td class="org-left">16.3 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Valencia</td>
+<td class="org-right">1020</td>
+<td class="org-right">1850</td>
+<td class="org-right">1180</td>
+<td class="org-right">2350</td>
+<td class="org-right">+130%</td>
+<td class="org-left">11.2 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Sevilla</td>
+<td class="org-right">980</td>
+<td class="org-right">1720</td>
+<td class="org-right">1090</td>
+<td class="org-right">2180</td>
+<td class="org-right">+122%</td>
+<td class="org-left">10.8 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Bilbao</td>
+<td class="org-right">1350</td>
+<td class="org-right">2420</td>
+<td class="org-right">2080</td>
+<td class="org-right">3420</td>
+<td class="org-right">+153%</td>
+<td class="org-left">13.1 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Málaga</td>
+<td class="org-right">1100</td>
+<td class="org-right">1950</td>
+<td class="org-right">1520</td>
+<td class="org-right">3120</td>
+<td class="org-right">+184%</td>
+<td class="org-left">12.4 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Palma Mallorca</td>
+<td class="org-right">1280</td>
+<td class="org-right">2680</td>
+<td class="org-right">2120</td>
+<td class="org-right">4680</td>
+<td class="org-right">+266%</td>
+<td class="org-left">18.2 años</td>
+</tr>
+
+<tr>
+<td class="org-left">Media nacional</td>
+<td class="org-right">920</td>
+<td class="org-right">1650</td>
+<td class="org-right">1280</td>
+<td class="org-right">2180</td>
+<td class="org-right">+137%</td>
+<td class="org-left">9.7 años</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<i>Nota: "Años salario medio" considera salario mediano, vivienda 80m², sin considerar intereses hipoteca</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd691906" class="outline-3">
+<h3 id="orgd691906">La Burbuja, el Crash, y la Nueva Burbuja</h3>
+<div class="outline-text-3" id="text-orgd691906">
+<p>
+España vivió tres fases en vivienda con consecuencias políticas diferenciadas:
+</p>
+</div>
+
+<div id="outline-container-org64cae5f" class="outline-4">
+<h4 id="org64cae5f">Fase 1: Burbuja Inmobiliaria (1997-2007)</h4>
+<div class="outline-text-4" id="text-org64cae5f">
+<p>
+<b>Características:</b>
+</p>
+<ul class="org-ul">
+<li>Precios se triplicaron en década</li>
+<li>Construcción descontrolada: 800,000 viviendas/año (más que Francia+Alemania juntas)</li>
+<li>Financiarización: "todos propietarios", especulación generalizada</li>
+<li>Corrupción urbanística sistémica: casos Malaya, Brugal, Gürtel-Fitur</li>
+</ul>
+
+<p>
+<b>Ilusión de prosperidad:</b>
+</p>
+<ul class="org-ul">
+<li>Clase media accedió a propiedad vía hipotecas 40 años, 100-120% valor vivienda</li>
+<li>Generación 1970-1980 compró masivamente 2000-2007</li>
+<li>Percepción de enriquecimiento por revalorización vivienda</li>
+<li>Modelo clientelar: permiso construcción = corrupción política</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf8bcdab" class="outline-4">
+<h4 id="orgf8bcdab">Fase 2: Crash y Desahucios (2008-2015)</h4>
+<div class="outline-text-4" id="text-orgf8bcdab">
+<p>
+<b>Catástrofe social:</b>
+</p>
+<ul class="org-ul">
+<li>Precio cayó -40% en algunas zonas (2008-2013)</li>
+<li>500,000 familias desahuciadas (2008-2015)</li>
+<li>Dación en pago prohibida: familias perdían vivienda pero conservaban deuda</li>
+<li>Suicidios asociados a desahucios: 12 casos documentados que generaron alarma social</li>
+</ul>
+
+<p>
+<b>Respuesta social y política:</b>
+</p>
+<ul class="org-ul">
+<li><b><b>Plataforma Afectados por la Hipoteca (PAH):</b></b> liderada por Ada Colau, se convirtió en movimiento social masivo</li>
+<li>Paralización de desahucios mediante acción directa</li>
+<li>Ocupaciones de viviendas vacías de bancos</li>
+<li>Victoria parcial: reforma 2013 permite dación en pago en casos vulnerabilidad</li>
+</ul>
+
+<p>
+<b>Transformación política:</b>
+</p>
+<ul class="org-ul">
+<li>Ada Colau: de activista a alcaldesa de Barcelona (2015)</li>
+<li>Vivienda como eje político central para izquierda emergente</li>
+<li>Bancos convertidos en "enemigo público"</li>
+<li>Debate sobre derecho a vivienda vs. derecho a propiedad</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org219c780" class="outline-4">
+<h4 id="org219c780">Fase 3: Nueva Burbuja y Crisis de Alquiler (2015-2026)</h4>
+<div class="outline-text-4" id="text-org219c780">
+<p>
+Tras breve estabilización, precio vivienda volvió a dispararse, especialmente en ciudades:
+</p>
+
+<p>
+<b>Factores:</b>
+</p>
+<ul class="org-ul">
+<li>Fondos buitre compraron activos baratos post-crisis (Blackstone, Cerberus)</li>
+<li>Turistificación: Airbnb convirtió viviendas en alojamiento turístico</li>
+<li>Inversión extranjera: golden visa atrajo capital chino, ruso, latinoamericano</li>
+<li>Demanda acumulada + crédito barato (euríbor negativo 2015-2021)</li>
+</ul>
+
+<p>
+<b>Crisis específica del alquiler:</b>
+</p>
+
+<table id="org98e3a04" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Ciudad</th>
+<th scope="col" class="org-right">Alquiler €/mes 2015</th>
+<th scope="col" class="org-right">Alquiler €/mes 2026</th>
+<th scope="col" class="org-right">Variación</th>
+<th scope="col" class="org-right">% salario mediano</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-right">850</td>
+<td class="org-right">1420</td>
+<td class="org-right">+67%</td>
+<td class="org-right">48.3%</td>
+</tr>
+
+<tr>
+<td class="org-left">Barcelona</td>
+<td class="org-right">900</td>
+<td class="org-right">1520</td>
+<td class="org-right">+69%</td>
+<td class="org-right">51.2%</td>
+</tr>
+
+<tr>
+<td class="org-left">Valencia</td>
+<td class="org-right">550</td>
+<td class="org-right">980</td>
+<td class="org-right">+78%</td>
+<td class="org-right">42.1%</td>
+</tr>
+
+<tr>
+<td class="org-left">Sevilla</td>
+<td class="org-right">520</td>
+<td class="org-right">890</td>
+<td class="org-right">+71%</td>
+<td class="org-right">41.8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Palma</td>
+<td class="org-right">680</td>
+<td class="org-right">1380</td>
+<td class="org-right">+103%</td>
+<td class="org-right">54.7%</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<i>Nota: Apartamento 2 habitaciones, zona media. % sobre salario mediano individual</i>
+</p>
+
+<p>
+Estándares internacionales consideran inasequible dedicar &gt;30% ingresos a vivienda. España supera ampliamente en grandes ciudades.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org76667c1" class="outline-3">
+<h3 id="org76667c1">Consecuencias Sociopolíticas de la Crisis de Vivienda</h3>
+<div class="outline-text-3" id="text-org76667c1">
+</div>
+<div id="outline-container-org76b4924" class="outline-4">
+<h4 id="org76b4924">Imposibilidad de Emancipación</h4>
+<div class="outline-text-4" id="text-org76b4924">
+<p>
+Edad media de emancipación en España (30.2 años, 2026) es la más alta de Europa Occidental:
+</p>
+
+<ul class="org-ul">
+<li>Alemania: 23.7 años</li>
+<li>Francia: 24.8 años</li>
+<li>Reino Unido: 25.1 años</li>
+<li>Italia: 29.8 años (similar)</li>
+<li>España: 30.2 años</li>
+</ul>
+
+<p>
+<b>Factores:</b>
+</p>
+<ol class="org-ol">
+<li>Precio vivienda inasumible con salarios precarios</li>
+<li>Requisitos bancarios: contrato indefinido + 30% entrada + no superar 35% ingresos en cuota</li>
+<li>Alquiler consume &gt;40% salario, imposibilita ahorro</li>
+<li>Ausencia de vivienda pública (2% stock vs. 15-30% Europa Norte)</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org61086e1" class="outline-4">
+<h4 id="org61086e1">Síndrome del "Hotel Mamá" y Dependencia Familiar</h4>
+<div class="outline-text-4" id="text-org61086e1">
+<p>
+Jóvenes españoles 25-35 años presentan paradoja: alta formación + alta dependencia familiar:
+</p>
+
+<p>
+<b>Perfiles típicos:</b>
+</p>
+
+<ul class="org-ul">
+<li><b><b>Universitario 28 años, vive con padres:</b></b> Ingeniería informática, trabaja en consultora con temporal 24K€/año. No puede alquilar piso (requeriría 14.4K€/año), menos aún ahorrar entrada vivienda (requeriría 35-50K€). Posterga emancipación, pareja, hijos.</li>
+
+<li><b><b>Pareja 32 años, viven separados con respectivos padres:</b></b> Ambos con grado universitario, contratos indefinidos, salarios combinados 42K€/año. No alcanzan entrada hipoteca (necesitan 45K€ ahorrados para piso 220K€). Plantean "okupar" o vivir en alquiler perpetuo.</li>
+</ul>
+
+<p>
+<b>Consecuencias psicológicas:</b>
+</p>
+<ul class="org-ul">
+<li>Infantilización forzada: adultos tratados como adolescentes en casa familiar</li>
+<li>Conflictos intergeneracionales: padres no entienden "por qué no se van"</li>
+<li>Retraso vital: imposibilidad de desarrollar autonomía, intimidad, proyectos vitales</li>
+<li>Comparación odiosa: padres compraron piso con 25 años, salarios de cajera y albañil</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4fd093c" class="outline-4">
+<h4 id="org4fd093c">Natalidad en Picado: "No Podemos Permitirnos Hijos"</h4>
+<div class="outline-text-4" id="text-org4fd093c">
+<p>
+España tiene tasa de natalidad de las más bajas del mundo (7.0 por 1000 habitantes, 2026):
+</p>
+
+<p>
+<b>Factores:</b>
+</p>
+<ul class="org-ul">
+<li><b><b>Económicos:</b></b> Coste estimado hijo hasta 18 años: 140,000€ (Encuesta CEOE 2024)</li>
+<li><b><b>Vivienda:</b></b> Imposible criar familia en apartamento 50m² alquilado</li>
+<li><b><b>Laborales:</b></b> Precariedad incompatible con maternidad (despidos post-baja maternal, discriminación)</li>
+<li><b><b>Servicios:</b></b> Escasez escuelas infantiles 0-3 años públicas (23% cobertura vs. 50% UE)</li>
+</ul>
+
+<p>
+<b>Brecha de fecundidad deseada vs. real:</b>
+</p>
+<ul class="org-ul">
+<li>Fecundidad deseada: 2.1 hijos por mujer (encuestas CIS)</li>
+<li>Fecundidad real: 1.16 hijos por mujer (2025)</li>
+<li>Gap: -0.94 hijos = "hijos que se desean pero no se tienen"</li>
+</ul>
+
+<p>
+<b>Dimensión política:</b>
+</p>
+<ul class="org-ul">
+<li><b><b>Derecha:</b></b> atribuye baja natalidad a "feminismo", "pérdida valores tradicionales"</li>
+<li><b><b>Izquierda:</b></b> atribuye a precariedad, falta políticas conciliación, machismo laboral</li>
+<li><b><b>Extrema derecha (VOX):</b></b> propone "prestación maternidad" para "mujeres españolas" (no inmigrantes), políticas pro-natalistas nacionalistas</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0bc176f" class="outline-4">
+<h4 id="org0bc176f">Conflicto Intergeneracional Abierto</h4>
+<div class="outline-text-4" id="text-org0bc176f">
+<p>
+La vivienda es el principal eje del conflicto generacional en España:
+</p>
+
+<p>
+<b>Posición boomers propietarios:</b>
+</p>
+<ul class="org-ul">
+<li>Vivienda como inversión principal, patrimonio para vejez</li>
+<li>Revalorizaciones beneficiosas económicamente</li>
+<li>Resistencia a regulación que deprecie su activo</li>
+<li>Alquilan segunda/tercera vivienda como complemento pensión</li>
+</ul>
+
+<p>
+<b>Posición millennials/Gen Z:</b>
+</p>
+<ul class="org-ul">
+<li>Vivienda como derecho, no mercancía</li>
+<li>Exigen regulación de alquileres, limitación precios, vivienda pública</li>
+<li>Resentimiento hacia generación que "acaparó" viviendas</li>
+<li>Apoyo a okupación como "legítima defensa"</li>
+</ul>
+
+<p>
+<b>Batalla política:</b>
+</p>
+<ul class="org-ul">
+<li><b><b>Regulación alquileres:</b></b> Ley vivienda 2023 (PSOE-Sumar) limita incrementos alquiler en "zonas tensionadas"
+<ul class="org-ul">
+<li>Apoyada por: jóvenes, inquilinos, izquierda</li>
+<li>Rechazada por: propietarios, mayores, derecha ("destruirá oferta", "socialismo")</li>
+</ul></li>
+
+<li><b><b>Fiscalidad vivienda vacía:</b></b> Impuestos penalizadores a viviendas deshabitadas
+<ul class="org-ul">
+<li>Barcelona: hasta 3,000€/año por piso vacío</li>
+<li>Madrid PP rechaza: "ataque propiedad privada"</li>
+</ul></li>
+
+<li><b><b>Vivienda pública:</b></b> Construcción masiva 150,000 viviendas sociales (objetivo Gobierno 2023-2027)
+<ul class="org-ul">
+<li>Oposición PP-VOX: "gasto público insostenible"</li>
+<li>Problema: ejecución lenta, solo 18,000 construidas (2023-2025)</li>
+</ul></li>
+</ul>
+
+
+<div id="org3420e0b" class="figure">
+<p><img src="./assets/images/conflicto-vivienda.png" alt="conflicto-vivienda.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org4f32e6a" class="outline-2">
+<h2 id="org4f32e6a">Transformación del Modelo Familiar</h2>
+<div class="outline-text-2" id="text-org4f32e6a">
+</div>
+<div id="outline-container-org68437de" class="outline-3">
+<h3 id="org68437de">De la Familia Tradicional a la Diversidad Familiar</h3>
+<div class="outline-text-3" id="text-org68437de">
+<p>
+España experimentó en 30 años una transformación radical en estructuras familiares:
+</p>
+
+<table id="org4321ecd" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Tipo de Hogar</th>
+<th scope="col" class="org-right">1991</th>
+<th scope="col" class="org-right">2001</th>
+<th scope="col" class="org-right">2011</th>
+<th scope="col" class="org-right">2026</th>
+<th scope="col" class="org-left">Variación 91-26</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Pareja casada con hijos</td>
+<td class="org-right">46.2%</td>
+<td class="org-right">38.7%</td>
+<td class="org-right">31.2%</td>
+<td class="org-right">24.8%</td>
+<td class="org-left">-21.4pp</td>
+</tr>
+
+<tr>
+<td class="org-left">Pareja casada sin hijos</td>
+<td class="org-right">18.3%</td>
+<td class="org-right">19.8%</td>
+<td class="org-right">21.2%</td>
+<td class="org-right">22.1%</td>
+<td class="org-left">+3.8pp</td>
+</tr>
+
+<tr>
+<td class="org-left">Pareja no casada con hijos</td>
+<td class="org-right">2.1%</td>
+<td class="org-right">4.8%</td>
+<td class="org-right">8.9%</td>
+<td class="org-right">13.2%</td>
+<td class="org-left">+11.1pp</td>
+</tr>
+
+<tr>
+<td class="org-left">Monoparental (madre)</td>
+<td class="org-right">5.2%</td>
+<td class="org-right">7.1%</td>
+<td class="org-right">9.6%</td>
+<td class="org-right">11.8%</td>
+<td class="org-left">+6.6pp</td>
+</tr>
+
+<tr>
+<td class="org-left">Monoparental (padre)</td>
+<td class="org-right">1.1%</td>
+<td class="org-right">1.6%</td>
+<td class="org-right">2.3%</td>
+<td class="org-right">3.2%</td>
+<td class="org-left">+2.1pp</td>
+</tr>
+
+<tr>
+<td class="org-left">Unipersonal</td>
+<td class="org-right">13.2%</td>
+<td class="org-right">17.2%</td>
+<td class="org-right">23.8%</td>
+<td class="org-right">27.5%</td>
+<td class="org-left">+14.3pp</td>
+</tr>
+
+<tr>
+<td class="org-left">Otros (extensa, múltiple)</td>
+<td class="org-right">13.9%</td>
+<td class="org-right">10.8%</td>
+<td class="org-right">3.0%</td>
+<td class="org-right">-7.4%</td>
+<td class="org-left">-10.9pp</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+<i>Fuente: INE, Censos de Población y Encuesta Continua de Hogares</i>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org01c79a2" class="outline-3">
+<h3 id="org01c79a2">Causas de la Transformación</h3>
+<div class="outline-text-3" id="text-org01c79a2">
+</div>
+<div id="outline-container-org4d91c1e" class="outline-4">
+<h4 id="org4d91c1e">Incorporación Laboral Femenina</h4>
+<div class="outline-text-4" id="text-org4d91c1e">
+<p>
+La entrada masiva de mujeres al mercado laboral transformó radicalmente familia:
+</p>
+
+<p>
+<b>Evolución tasa de actividad femenina:</b>
+</p>
+<ul class="org-ul">
+<li>1980: 28.1%</li>
+<li>2000: 48.2%</li>
+<li>2026: 68.7%</li>
+</ul>
+
+<p>
+<b>Consecuencias:</b>
+</p>
+<ol class="org-ol">
+<li><b><b>Doble carga:</b></b> Mujeres trabajan fuera + asumen mayoría trabajo doméstico/cuidados
+<ul class="org-ul">
+<li>Tiempo dedicado tareas domésticas (horas/semana):
+<ul class="org-ul">
+<li>Mujeres: 26.5 horas</li>
+<li>Hombres: 14.2 horas</li>
+</ul></li>
+<li>Brecha: 12.3 horas/semana (disminuyendo lentamente desde 18h en 2000)</li>
+</ul></li>
+
+<li><b><b>Retraso maternidad:</b></b> Edad primer hijo aumentó de 25.2 (1980) a 32.8 (2026)</li>
+
+<li><b><b>Conflicto trabajo-familia:</b></b> Principal fuente estrés mujeres 30-45 años</li>
+
+<li><b><b>Divergencia educativa:</b></b> Mujeres superan a hombres en educación superior (58% universitarias vs. 42% universitarios), pero persiste brecha salarial (9.3%) y t</li>
+</ol>
+<p>
+echo de cristal
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge15b2c3" class="outline-4">
+<h4 id="orge15b2c3">Secularización y Cambio de Valores</h4>
+<div class="outline-text-4" id="text-orge15b2c3">
+<p>
+<b>Declive del matrimonio religioso:</b>
+</p>
+<ul class="org-ul">
+<li>1980: 94.3% matrimonios por Iglesia</li>
+<li>2000: 71.2% matrimonios por Iglesia</li>
+<li>2026: 22.1% matrimonios por Iglesia</li>
+</ul>
+
+<p>
+<b>Aceptación diversidad familiar:</b>
+</p>
+<ul class="org-ul">
+<li>Matrimonio homosexual (legal desde 2005): apoyo 74.2% población (2025)</li>
+<li>Adopción por parejas homosexuales: apoyo 68.9%</li>
+<li>Monoparentalidad elegida: creciente normalización</li>
+<li>Reproducción asistida: accesible solteras, parejas mujeres (ley 2023)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0f41cfc" class="outline-4">
+<h4 id="org0f41cfc">Ley de Divorcio Express (2005) y Consecuencias</h4>
+<div class="outline-text-4" id="text-org0f41cfc">
+<p>
+La reforma del divorcio que eliminó requisito de separación previa facilitó rupturas:
+</p>
+
+<p>
+<b>Evolución divorcios:</b>
+</p>
+<ul class="org-ul">
+<li>2004: 50,974 divorcios</li>
+<li>2006: 126,952 divorcios (+149% en 2 años post-reforma)</li>
+<li>2026: 95,370 divorcios (estabilizado)</li>
+</ul>
+
+<p>
+<b>Tasa de divorcialidad: 2.1 por 1,000 habitantes (media europea)</b>
+</p>
+
+<p>
+<b>Consecuencias sociológicas:</b>
+</p>
+<ul class="org-ul">
+<li>Familias monoparentales mayoritariamente encabezadas por mujeres (78.7%)</li>
+<li>Pobreza infantil concentrada en hogares monoparentales (38.2% en riesgo pobreza)</li>
+<li>Segundas parejas, familias reconstituidas: 18.2% hogares con hijos</li>
+<li>Custodia compartida: aumentó de 9.6% (2007) a 41.2% (2026)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org29e9c10" class="outline-3">
+<h3 id="org29e9c10">Polarización en Torno al Modelo Familiar</h3>
+<div class="outline-text-3" id="text-org29e9c10">
+<p>
+La transformación familiar es campo de batalla cultural con dimensión política clara:
+</p>
+</div>
+
+<div id="outline-container-org796c801" class="outline-4">
+<h4 id="org796c801">Posiciones Ideológicas Sobre Familia</h4>
+<div class="outline-text-4" id="text-org796c801">
+<p>
+<b>Izquierda/Progresismo:</b>
+</p>
+<ul class="org-ul">
+<li>Celebran diversidad familiar como liberación</li>
+<li>Apoyan políticas conciliación, permisos iguales, escuelas infantiles públicas</li>
+<li>Defienden derechos LGTB+, reproducción asistida universal, vientres de alquiler (debate interno)</li>
+<li>Ley Trans (2023): autopercepción de género sin requisitos médicos</li>
+<li>Enfoque: libertad individual, igualdad de opciones</li>
+</ul>
+
+<p>
+<b>Derecha Moderada:</b>
+</p>
+<ul class="org-ul">
+<li>Reconocen diversidad pero priorizan "familia tradicional"</li>
+<li>Políticas fiscales pro-familia (deducciones por hijos)</li>
+<li>Escuelas concertadas religiosas (libertad elección educativa)</li>
+<li>Cierta reticencia a "adoctrinamiento de género" en escuelas</li>
+<li>Enfoque: libertad elección, subsidiaridad</li>
+</ul>
+
+<p>
+<b>Extrema Derecha (VOX):</b>
+</p>
+<ul class="org-ul">
+<li>Rechazo frontal a "ideología de género"</li>
+<li>Defensa familia tradicional (hombre+mujer+hijos) como única legítima</li>
+<li>Oposición a ley Trans, derogar leyes LGTB+</li>
+<li>"Pin parental": poder veto padres sobre contenidos educativos género</li>
+<li>Retórica de "protección de la infancia" contra "adoctrinamiento"</li>
+<li>Enfoque: tradición, "ley natural", nacionalismo demográfico</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd057168" class="outline-4">
+<h4 id="orgd057168">Batallas Culturales Concretas</h4>
+<div class="outline-text-4" id="text-orgd057168">
+<p>
+<b>Ley del "solo sí es sí" (2022):</b>
+</p>
+<ul class="org-ul">
+<li>Reforma consentimiento sexual: sin consentimiento explícito = agresión</li>
+<li>Reducción penas por error técnico → excarcelación agresores</li>
+<li>Derecha criticó "ideología de género" sobre pragmatismo jurídico</li>
+<li>Izquierda defendió principio pero admitió error técnico</li>
+<li>Reforma 2024 corrigió defecto manteniendo espíritu</li>
+</ul>
+
+<p>
+<b>Ley Trans (2023):</b>
+</p>
+<ul class="org-ul">
+<li>Autodeterminación género desde 16 años (14 con autorización parental)</li>
+<li>Fractura dentro del feminismo:
+<ul class="org-ul">
+<li><b><b>Feminismo trans-inclusivo (Podemos, ministras):</b></b> apoyo incondicional</li>
+<li><b><b>Feminismo crítico de género (sector PSOE):</b></b> preocupación sobre espacios segregados por sexo, deportes, prisiones</li>
+</ul></li>
+<li>Derecha y extrema derecha: rechazo total ("borra a las mujeres", "adoctrinamiento infantil")</li>
+</ul>
+
+<p>
+<b>Vientres de alquiler / Gestación subrogada:</b>
+</p>
+<ul class="org-ul">
+<li>Izquierda dividida:
+<ul class="org-ul">
+<li><b><b>Sector liberal:</b></b> derecho a formar familia, regulación que proteja gestantes</li>
+<li><b><b>Sector feminista:</b></b> explotación reproductiva de mujeres vulnerables, venta de bebés</li>
+</ul></li>
+<li>Derecha: posiciones contradictorias (tradicionalistas rechazan, liberales aceptan)</li>
+<li>Ilegal en España, parejas acuden a Ucrania, EEUU, Canadá</li>
+</ul>
+
+<p>
+<b>Corresponsabilidad y permisos parentales:</b>
+</p>
+<ul class="org-ul">
+<li>Ley 2021 igualdad permisos maternidad/paternidad (16 semanas ambos)</li>
+<li>Izquierda: victoria igualdad, facilita conciliación</li>
+<li>Derecha: acepta pero critica "imposición" vs. libertad elección familiar</li>
+<li>Realidad: uso permiso paternidad 95.2%, cambio cultural generacional</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5378f77" class="outline-3">
+<h3 id="org5378f77">Impacto Generacional de los Modelos Familiares</h3>
+<div class="outline-text-3" id="text-org5378f77">
+<p>
+Las generaciones viven modelos familiares radicalmente distintos:
+</p>
+
+<p>
+<b>Baby Boomers (1955-1970):</b>
+</p>
+<ul class="org-ul">
+<li>Vivieron niñez en familias numerosas tradicionales (media 3.2 hermanos)</li>
+<li>Casados mayoritariamente (76.3%), muchos por Iglesia</li>
+<li>Divorciados: 12.8% (baja comparado con posteriores)</li>
+<li>Hijos promedio: 1.8</li>
+<li>Valoran estabilidad, matrimonio duradero</li>
+</ul>
+
+<p>
+<b>Generación X (1970-1985):</b>
+</p>
+<ul class="org-ul">
+<li>Vivieron transición: de familia tradicional a moderna</li>
+<li>Tasas divorcio más altas (generación más divorciada: 18.2%)</li>
+<li>Hijos promedio: 1.4</li>
+<li>Matrimonios mixtos (civil + religioso)</li>
+<li>Criaron hijos con "doble carga" trabajo-familia sin apoyos</li>
+</ul>
+
+<p>
+<b>Millennials (1985-2000):</b>
+</p>
+<ul class="org-ul">
+<li>Retrasan emancipación, matrimonio, hijos</li>
+<li>Parejas de hecho mayoritarias vs. matrimonio</li>
+<li>Hijos promedio proyectado: 1.1</li>
+<li>Alta aceptación diversidad familiar, LGTB+</li>
+<li>Priorizan realización personal vs. familia</li>
+</ul>
+
+<p>
+<b>Generación Z (2000-2010):</b>
+</p>
+<ul class="org-ul">
+<li>Aún no en edad formar familia mayoritariamente</li>
+<li>Nativos digitales en relaciones (apps citas)</li>
+<li>Máxima aceptación diversidad (92.1% apoya matrimonio homosexual)</li>
+<li>Pragmatismo reproductivo: "hijos si condiciones económicas"</li>
+<li>Fluidez identidades de género</li>
+</ul>
+
+<p>
+Esta divergencia generacional en vivencias y valores familiares alimenta incomprensión mutua y polarización política.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4c76e2d" class="outline-2">
+<h2 id="org4c76e2d">Fracturas Generacionales: La Guerra de las Edades</h2>
+<div class="outline-text-2" id="text-org4c76e2d">
+<p>
+Más allá de vivienda y familia, existe un conflicto generacional multidimensional:
+</p>
+
+
+<div id="org05e6687" class="figure">
+<p><img src="./assets/images/brecha-generacional.png" alt="brecha-generacional.png" width="600px" />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org68361a7" class="outline-3">
+<h3 id="org68361a7">Sistema de Pensiones: Conflicto Intergeneracional</h3>
+<div class="outline-text-3" id="text-org68361a7">
+<p>
+El sistema de pensiones español es fuente principal de tensión generacional:
+</p>
+
+<p>
+<b>Estructura actual:</b>
+</p>
+<ul class="org-ul">
+<li>Sistema de reparto: trabajadores actuales pagan pensiones actuales</li>
+<li>Ratio activo/pensionista:
+<ul class="org-ul">
+<li>1980: 3.8 trabajadores por pensionista</li>
+<li>2000: 2.9 trabajadores por pensionista</li>
+<li>2026: 2.1 trabajadores por pensionista</li>
+<li>2050 proyección: 1.3 trabajadores por pensionista</li>
+</ul></li>
+</ul>
+
+<p>
+<b>Insostenibilidad matemática:</b>
+</p>
+<ul class="org-ul">
+<li>Gasto en pensiones: 14.1% PIB (2026), proyección 17.3% PIB (2050)</li>
+<li>Pensión media: 1,258€/mes (2026)</li>
+<li>Cotización: trabajadores pagan hasta 37.7% salario bruto</li>
+<li>Fondo de Reserva ("hucha de pensiones"): agotado 2020</li>
+</ul>
+
+<p>
+<b>Posiciones generacionales:</b>
+</p>
+
+<p>
+<i>Pensionistas actuales (boomers):</i>
+</p>
+<ul class="org-ul">
+<li>"Hemos cotizado toda la vida, merecemos pensión digna"</li>
+<li>Rechazo a cualquier recorte o aumento edad jubilación</li>
+<li>Poder electoral: 9.8M pensionistas, participación &gt;80%</li>
+<li>Movilizaciones masivas contra reformas (2023: +500K en manifestación Madrid)</li>
+</ul>
+
+<p>
+<i>Trabajadores actuales (millennials/GenX):</i>
+</p>
+<ul class="org-ul">
+<li>"Estamos pagando pensiones que nunca cobraremos"</li>
+<li>Conciencia de insostenibilidad, exigen reformas estructurales</li>
+<li>Frustración por carga fiscal alta para pagar pensiones ajenas</li>
+<li>Apoyo a planes privados complementarios (desconfianza en público)</li>
+</ul>
+
+<p>
+<b>Soluciones polarizadas:</b>
+</p>
+
+<ul class="org-ul">
+<li><b><b>Izquierda:</b></b> aumento impuestos altos patrimonios, cotizaciones máximas, impuesto sucesiones para financiar pensiones</li>
+<li><b><b>Derecha:</b></b> reformas paramétricas (edad jubilación, cálculo pensión), fomento ahorro privado</li>
+<li><b><b>Extrema derecha:</b></b> prioridad pensionistas "españoles" vs. inmigrantes, nacionalización pensiones</li>
+</ul>
+
+<p>
+El debate pensiones cristaliza conflicto "mayores que vivieron bienestar vs. jóvenes que vivirán precariedad".
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8aaf1e1" class="outline-2">
+<h2 id="org8aaf1e1">Desigualdad Territorial: Las Españas Enfrentadas</h2>
+<div class="outline-text-2" id="text-org8aaf1e1">
+<p>
+España presenta disparidades territoriales profundas que alimentan polarización:
+</p>
+
+<table id="org0e93391" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Comunidad Autónoma</th>
+<th scope="col" class="org-right">PIB per cápita (€)</th>
+<th scope="col" class="org-right">Tasa paro (%)</th>
+<th scope="col" class="org-right">Salario medio (€)</th>
+<th scope="col" class="org-right">Precio vivienda (€/m²)</th>
+<th scope="col" class="org-left">Voto dominante 2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Madrid</td>
+<td class="org-right">38900</td>
+<td class="org-right">9.2%</td>
+<td class="org-right">29800</td>
+<td class="org-right">4200</td>
+<td class="org-left">PP 43.8%</td>
+</tr>
+
+<tr>
+<td class="org-left">País Vasco</td>
+<td class="org-right">37200</td>
+<td class="org-right">8.6%</td>
+<td class="org-right">31200</td>
+<td class="org-right">3420</td>
+<td class="org-left">PNV 38.2%</td>
+</tr>
+
+<tr>
+<td class="org-left">Navarra</td>
+<td class="org-right">35100</td>
+<td class="org-right">8.9%</td>
+<td class="org-right">29500</td>
+<td class="org-right">2680</td>
+<td class="org-left">PSN 24.1%, UPN 20.8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Cataluña</td>
+<td class="org-right">32500</td>
+<td class="org-right">10.1%</td>
+<td class="org-right">27900</td>
+<td class="org-right">4350</td>
+<td class="org-left">PSC 27.5%, Junts 21.4%</td>
+</tr>
+
+<tr>
+<td class="org-left">Aragón</td>
+<td class="org-right">30200</td>
+<td class="org-right">9.8%</td>
+<td class="org-right">25100</td>
+<td class="org-right">1820</td>
+<td class="org-left">PSOE 34.2%</td>
+</tr>
+
+<tr>
+<td class="org-left">Baleares</td>
+<td class="org-right">29100</td>
+<td class="org-right">10.8%</td>
+<td class="org-right">24300</td>
+<td class="org-right">4680</td>
+<td class="org-left">PP 34.1%</td>
+</tr>
+
+<tr>
+<td class="org-left">Cantabria</td>
+<td class="org-right">26800</td>
+<td class="org-right">11.2%</td>
+<td class="org-right">24800</td>
+<td class="org-right">2120</td>
+<td class="org-left">PRC-PP 35.8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Castilla y León</td>
+<td class="org-right">25900</td>
+<td class="org-right">11.8%</td>
+<td class="org-right">23900</td>
+<td class="org-right">1580</td>
+<td class="org-left">PP 42.1%</td>
+</tr>
+
+<tr>
+<td class="org-left">Galicia</td>
+<td class="org-right">25600</td>
+<td class="org-right">11.4%</td>
+<td class="org-right">23500</td>
+<td class="org-right">1780</td>
+<td class="org-left">PP 48.3%</td>
+</tr>
+
+<tr>
+<td class="org-left">Asturias</td>
+<td class="org-right">24800</td>
+<td class="org-right">12.8%</td>
+<td class="org-right">24100</td>
+<td class="org-right">1920</td>
+<td class="org-left">PSOE 34.7%</td>
+</tr>
+
+<tr>
+<td class="org-left">Comunidad Valenciana</td>
+<td class="org-right">24200</td>
+<td class="org-right">12.4%</td>
+<td class="org-right">23200</td>
+<td class="org-right">2350</td>
+<td class="org-left">PP 40.2%</td>
+</tr>
+
+<tr>
+<td class="org-left">Murcia</td>
+<td class="org-right">22100</td>
+<td class="org-right">13.6%</td>
+<td class="org-right">22100</td>
+<td class="org-right">1680</td>
+<td class="org-left">PP 45.8%</td>
+</tr>
+
+<tr>
+<td class="org-left">Andalucía</td>
+<td class="org-right">20800</td>
+<td class="org-right">17.8%</td>
+<td class="org-right">22400</td>
+<td class="org-right">2180</td>
+<td class="org-left">PP 43.1%</td>
+</tr>
+
+<tr>
+<td class="org-left">Extremadura</td>
+<td class="org-right">19200</td>
+<td class="org-right">16.2%</td>
+<td class="org-right">21200</td>
+<td class="org-right">1240</td>
+<td class="org-left">PSOE 44.3%</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div id="outline-container-org5160ec0" class="outline-3">
+<h3 id="org5160ec0">La Brecha Madrid-Periferia</h3>
+<div class="outline-text-3" id="text-org5160ec0">
+<p>
+Madrid se ha convert ido en símbolo de concentración económica y política que genera resentimiento:
+</p>
+
+<p>
+<b>Concentración en Madrid:</b>
+</p>
+<ul class="org-ul">
+<li>35 de 35 empresas del IBEX35 tienen sede social en Madrid</li>
+<li>89% sedes corporativas empresas &gt;1,000 empleados</li>
+<li>Hub transportes, comunicaciones, finanzas, tecnología</li>
+<li>"Efecto capital": recursos públicos, influencia política, inversión</li>
+</ul>
+
+<p>
+<b>Narrativas enfrentadas:</b>
+</p>
+
+<p>
+<i>Desde Madrid:</i>
+</p>
+<ul class="org-ul">
+<li>"Motor económico de España, subsidiamos regiones deficitarias"</li>
+<li>"Éxito por políticas liberales (Ayuso: impuestos bajos)"</li>
+<li>"Cataluña y País Vasco reciben privilegios fiscales injustos"</li>
+</ul>
+
+<p>
+<i>Desde periferia:</i>
+</p>
+<ul class="org-ul">
+<li>"Madrid extrae talento, empresas, recursos del resto"</li>
+<li>"Centralismo histórico que empobrece periferia"</li>
+<li>"Ventajas por ser capital, no por mérito propio"</li>
+</ul>
+
+<p>
+<b>Impacto político:</b>
+</p>
+<ul class="org-ul">
+<li>Madrid: bastión PP (Isabel Díaz Ayuso encarna discurso "libertad vs. socialismo")</li>
+<li>Periferia: diversidad PSOE, PP regional, nacionalismos</li>
+<li>Debates sobre financiación autonómica imposibles de resolver</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org68b01e6" class="outline-3">
+<h3 id="org68b01e6">España Vaciada: El Resentimiento Rural</h3>
+<div class="outline-text-3" id="text-org68b01e6">
+<p>
+El fenómeno de la "España vaciada" (despoblación rural) tiene dimensión política clara:
+</p>
+
+<p>
+<b>Datos despoblación:</b>
+</p>
+<ul class="org-ul">
+<li>63% municipios españoles tienen &lt;1,000 habitantes</li>
+<li>5,000 pueblos en riesgo de desaparición (población &lt;100 hab, envejecida)</li>
+<li>Densidad población zonas rurales: &lt;12 hab/km² (umbral despoblación severa)</li>
+<li>Migración rural→urbana: -2.3M personas (1990-2025) en provincias interiores</li>
+</ul>
+
+<p>
+<b>Causas:</b>
+</p>
+<ol class="org-ol">
+<li>Falta oportunidades laborales: agricultura mecanizada, industria inexistente</li>
+<li>Servicios públicos deficientes: escuelas, sanidad, transporte</li>
+<li>Brecha digital: 37% zonas rurales sin banda ancha</li>
+<li>Fuga jóvenes: solo retornan jubilados</li>
+</ol>
+
+<p>
+<b>Consecuencias políticas:</b>
+</p>
+
+<p>
+La España vaciada vota diferente a la urbana:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Zona</th>
+<th scope="col" class="org-right">VOX (%)</th>
+<th scope="col" class="org-right">PP (%)</th>
+<th scope="col" class="org-right">PSOE (%)</th>
+<th scope="col" class="org-right">SUMAR (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Rural (&lt;5K hab)</td>
+<td class="org-right">18.2</td>
+<td class="org-right">42.1</td>
+<td class="org-right">31.2</td>
+<td class="org-right">4.1</td>
+</tr>
+
+<tr>
+<td class="org-left">Periurbana (5-50K)</td>
+<td class="org-right">14.7</td>
+<td class="org-right">36.8</td>
+<td class="org-right">29.3</td>
+<td class="org-right">8.8</td>
+</tr>
+
+<tr>
+<td class="org-left">Urbana (50-500K)</td>
+<td class="org-right">11.2</td>
+<td class="org-right">31.4</td>
+<td class="org-right">32.1</td>
+<td class="org-right">13.2</td>
+</tr>
+
+<tr>
+<td class="org-left">Gran ciudad (&gt;500K)</td>
+<td class="org-right">8.9</td>
+<td class="org-right">28.3</td>
+<td class="org-right">30.8</td>
+<td class="org-right">18.7</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+La correlación es clara: <b><b>a menor densidad población, mayor voto conservador/extrema derecha</b></b>.
+</p>
+
+<p>
+<b>Factores explicativos:</b>
+</p>
+<ul class="org-ul">
+<li>Edad: zonas rurales más envejecidas, mayores votan conservador</li>
+<li>Valores: mayor religiosidad, tradicionalismo, rechazo a "ideología de género"</li>
+<li>Economía: dependencia de sectores primarios, construcción</li>
+<li>Resentimiento: percepción abandono por "élites urbanas progres"</li>
+</ul>
+
+<p>
+<b>Plataforma Teruel Existe y movimiento España Vaciada:</b>
+</p>
+
+<p>
+Respuesta ciudadana a despoblación:
+</p>
+<ul class="org-ul">
+<li>Partidos provinciales: Teruel Existe, Soria ¡Ya!, España Vaciada</li>
+<li>Demandas: inversión infraestructuras, servicios públicos, fiscalidad favorable</li>
+<li>Logros: 2 diputados (2019), influencia en gobiernos minoritarios</li>
+<li>Crítica: asistencialismo puntual sin estrategia territorial coherente</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org05b21e2" class="outline-3">
+<h3 id="org05b21e2">Nacionalismos Periféricos vs. Centralismo</h3>
+<div class="outline-text-3" id="text-org05b21e2">
+<p>
+La fractura territorial clásica persiste y se ha agudizado post-Procés:
+</p>
+
+<p>
+<b>Posiciones irreconciliables:</b>
+</p>
+
+<p>
+<i>Independentismo catalán (42% población Cataluña):</i>
+</p>
+<ul class="org-ul">
+<li>Catalunya nación diferenciada cultural, lingüística, históricamente</li>
+<li>Derecho autodeterminación: referéndum legal</li>
+<li>Expolio fiscal: 16,000M€/año aportación neta a España</li>
+<li>Represión cultural e institucional desde Madrid</li>
+</ul>
+
+<p>
+<i>Nacionalismo español (mayoría resto España):</i>
+</p>
+<ul class="org-ul">
+<li>España nación indivisible (Constitución art.2)</li>
+<li>Referéndum independencia inconstitucional, ilegal</li>
+<li>Solidaridad territorial justa: Catalunya región rica debe solidaridad</li>
+<li>"Privilegios" catalanes (financiación, lengua, simbolos) injustos</li>
+</ul>
+
+<p>
+<b>Batalla del relato histórico:</b>
+</p>
+<ul class="org-ul">
+<li>Independentismo: Catalunya anexionada 1714, recuperar soberanía perdida</li>
+<li>Españolismo: Catalunya parte España desde Reyes Católicos, no existe anexión</li>
+</ul>
+
+<p>
+<b>Imposibilidad de consenso:</b>
+</p>
+<ul class="org-ul">
+<li>Moderación catalana (PSC, Comuns) minoritaria vs. independentismo</li>
+<li>Moderación española (PSOE) criticada por PP/VOX como "traición"</li>
+<li>Amnistía 2024: considerada solución por PSOE, afrenta por PP/VOX/sector judicial</li>
+</ul>
+
+<p>
+Este conflicto sin solución feed-back loops polarización mutua.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf92fcd8" class="outline-2">
+<h2 id="orgf92fcd8">Resumen Ejecutivo: Cadenas Causales de la Polarización</h2>
+<div class="outline-text-2" id="text-orgf92fcd8">
+<p>
+La polarización política española surge de la confluencia de múltiples factores sociológicos:
+</p>
+
+
+<div id="org4b16bf2" class="figure">
+<p><img src="./assets/images/cadenas-causales-polarizacion.png" alt="cadenas-causales-polarizacion.png" width="600px" />
+</p>
+</div>
+
+
+<p>
+<b><b>La polarización española es producto de:</b></b>
+</p>
+
+<ol class="org-ol">
+<li><b><b>Crisis económica no resuelta:</b></b> 2008-2015 destruyó confianza en sistema, generó perdedores permanentes</li>
+<li><b><b>Precariedad laboral estructural:</b></b> dualiza sociedad entre protegidos y desprotegidos</li>
+<li><b><b>Imposibilidad acceso vivienda:</b></b> frustra proyecto vital generaciones jóvenes</li>
+<li><b><b>Transformación familiar acelerada:</b></b> genera conflicto valores tradicionales vs. progresistas</li>
+<li><b><b>Fractura generacional profunda:</b></b> boomers vs. millennials por recursos, oportunidades, valores</li>
+<li><b><b>Desigualdad territorial:</b></b> Madrid vs. periferia, urbano vs. rural, centro vs. nacionalidades</li>
+<li><b><b>Inmigración rápida:</b></b> 16% población extranjera genera reacción identitaria sectores</li>
+<li><b><b>Ecosistema mediático polarizado:</b></b> amplifica divisiones, crea cámaras de eco</li>
+<li><b><b>Liderazgos políticos irresponsables:</b></b> prefieren polarización (moviliza bases) a consenso</li>
+</ol>
+
+<p>
+<b><b>El resultado es una sociedad dividida en:</b></b>
+</p>
+
+<ul class="org-ul">
+<li><b><b>Eje económico:</b></b> insiders vs. outsiders, propietarios vs. inquilinos, pensionistas vs. cotizantes</li>
+<li><b><b>Eje generacional:</b></b> boomers vs. millennials/Z</li>
+<li><b><b>Eje territorial:</b></b> centro vs. periferia, urbano vs. rural, España vs. nacionalidades</li>
+<li><b><b>Eje cultural:</b></b> tradición vs. progresismo, familia tradicional vs. diversidad, religión vs. secularismo</li>
+<li><b><b>Eje identitario:</b></b> españolismo vs. nacionalismos periféricos, nativismo vs. multiculturalismo</li>
+</ul>
+
+<p>
+Estas divisiones se refuerzan mutuamente y se traducen políticamente en bloques irreconciliables que hacen gobernabilidad extremadamente difícil.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d7a3ab" class="outline-2">
+<h2 id="org3d7a3ab">Conclusión: Salidas Posibles</h2>
+<div class="outline-text-2" id="text-org3d7a3ab">
+<p>
+La polarización española tiene raíces sociológicas profundas que no desaparecerán con cambios de gobierno. Requiere transformaciones estructurales:
+</p>
+
+<p>
+<b><b>En lo económico:</b></b>
+</p>
+<ul class="org-ul">
+<li>Regulación laboral que reduzca dualidad</li>
+<li>Política vivienda pública masiva (modelo Viena: 60% vivienda social)</li>
+<li>Reforma fiscal redistributiva que reduzca desigualdad</li>
+<li>Inversión territorial equilibrada que frene despoblación</li>
+</ul>
+
+<p>
+<b><b>En lo social:</b></b>
+</p>
+<ul class="org-ul">
+<li>Políticas conciliación reales (horarios europeos, bajas parentales)</li>
+<li>Servicios públicos universales calidad (educación 0-3, dependencia)</li>
+<li>Reducción brecha generacional mediante pacto intergeneracional (pensiones, vivienda, empleo)</li>
+</ul>
+
+<p>
+<b><b>En lo cultural:</b></b>
+</p>
+<ul class="org-ul">
+<li>Pedagogía democrática que valore pluralismo</li>
+<li>Mediación en conflictos identitarios</li>
+<li>Regulación discurso de odio sin censurar debate</li>
+<li>Alfabetización mediática digital</li>
+</ul>
+
+<p>
+<b><b>En lo político:</b></b>
+</p>
+<ul class="org-ul">
+<li>Liderazgos responsables que construyan puentes</li>
+<li>Reforma electoral que incentive consenso</li>
+<li>Despolarización discursiva institucional</li>
+<li>Pactos de Estado en áreas críticas</li>
+</ul>
+
+<p>
+Sin estas transformaciones, España continuará su deriva hacia polarización creciente con riesgo de ingobernabilidad permanente o, peor, soluciones autoritarias que prometen orden mediante supresión de pluralismo.
+</p>
+
+<p>
+La historia española advierte: las sociedades profundamente divididas eventualmente fracturan. La pregunta no es si España puede evitar polarización, sino si puede gestionarla dentro de marcos democráticos o si, como en 1936, terminará por desbord arla.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcc5aed5" class="outline-2">
+<h2 id="orgcc5aed5">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-orgcc5aed5">
+</div>
+<div id="outline-container-org7004972" class="outline-3">
+<h3 id="org7004972">Estudios Sociológicos y Económicos</h3>
+<div class="outline-text-3" id="text-org7004972">
+<ul class="org-ul">
+<li>Fundación FOESSA (2024). <i>IX Informe sobre exclusión y desarrollo social en España</i>. Madrid: Cáritas.</li>
+<li>López, Isidro &amp; Rodríguez, Emmanuel (2010). <i>Fin de ciclo: Financiarización, territorio y sociedad de propietarios en la onda larga del capitalismo hispano</i>. Madrid: Traficantes de Sueños.</li>
+<li>Observatorio Social "la Caixa" (2025). <i>Desigualdades y polarización en España: análisis territorial y generacional</i>. Barcelona.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org809ff8d" class="outline-3">
+<h3 id="org809ff8d">Mercado Laboral y Precariedad</h3>
+<div class="outline-text-3" id="text-org809ff8d">
+<ul class="org-ul">
+<li>Toharia, Luis (dir.) (2023). <i>El mercado de trabajo en España en la era de la globalización</i>. Madrid: MTAS.</li>
+<li>Consejo Económico y Social (2024). <i>Informe sobre la situación sociolaboral en España 2024</i>. Madrid: CES.</li>
+<li>Fundación 1º de Mayo (2025). <i>Precariedad laboral y desigualdad: análisis por generaciones</i>. Madrid: CCOO.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org937b22e" class="outline-3">
+<h3 id="org937b22e">Vivienda</h3>
+<div class="outline-text-3" id="text-org937b22e">
+<ul class="org-ul">
+<li>Rodríguez López, Julio (2019). <i>El mercado de vivienda español en la encrucijada</i>. Barcelona: Cartelera Turia.</li>
+<li>Observatorio Metropolitano (2024). <i>Crisis de vivienda y desigualdad territorial en España</i>. Madrid: Traficantes de Sueños.</li>
+<li>Idealista (2026). <i>Informe del precio de la vivienda en España 2025</i>. Madrid.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8a1e07f" class="outline-3">
+<h3 id="org8a1e07f">Familia y Demografía</h3>
+<div class="outline-text-3" id="text-org8a1e07f">
+<ul class="org-ul">
+<li>Instituto Nacional de Estadística (2025). <i>Encuesta Continua de Hogares 2024</i>. Madrid: INE.</li>
+<li>Centro de Investigaciones Sociológicas (2024). <i>Barómetro especial: Familia y natalidad</i>. Madrid: CIS.</li>
+<li>Meil Landwerlin, Gerardo (2023). <i>Individualización y solidaridad familiar en España</i>. Madrid: CIS.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc2c65f3" class="outline-3">
+<h3 id="orgc2c65f3">Generaciones</h3>
+<div class="outline-text-3" id="text-orgc2c65f3">
+<ul class="org-ul">
+<li>González-Anleo, Juan &amp; López-Ruiz, José A. (2024). <i>Jóvenes Españoles 2024</i>. Madrid: Fundación SM.</li>
+<li>Benedicto, Jorge (coord.) (2024). <i>La juventud española entre la igualdad y la frustración</i>. Madrid: INJUVE.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5ce6692" class="outline-3">
+<h3 id="org5ce6692">Polarización Política</h3>
+<div class="outline-text-3" id="text-org5ce6692">
+<ul class="org-ul">
+<li>Torcal, Mariano &amp; Carty, Emily (2023). "La polarización afectiva en España en perspectiva comparada." <i>Revista Española de Ciencia Política</i>, 61: 13-41.</li>
+<li>Rama, José et al. (2022). <i>Polarización y populismo en España: El ascenso de Vox</i>. Valencia: Tirant lo Blanch.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc990d7a" class="outline-3">
+<h3 id="orgc990d7a">Bases de Datos</h3>
+<div class="outline-text-3" id="text-orgc990d7a">
+<ul class="org-ul">
+<li>Eurostat: Labour Force Survey, EU-SILC (2000-2025)</li>
+<li>Instituto Nacional de Estadística: Encuesta de Población Activa, Encuesta Continua de Hogares, Padrón Municipal</li>
+<li>Centro de Investigaciones Sociológicas: Barómetros mensuales, estudios especiales</li>
+<li>World Values Survey: Datos España waves 5-7</li>
+<li><p>
+European Social Survey: Rounds 1-10, datos España
+</p>
+
+<p>
+<a href="2026-01-18-espa-a-anatom-a-de-la-polarizaci-n-pol-tica-1900-2026-.html">España: Anatomía de la Polarización Política (1900-2026)</a>
+</p></li>
+</ul>
+
+
+<p class="post-meta">Publicado el 2026-01-18 20:00 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 23:14</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

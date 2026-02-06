@@ -1,0 +1,2087 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Trump y la Corte Penal Internacional: Anatomía de una Guerra Sistemática contra la Justicia Global</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Análisis crítico sobre la posición de Trump frente a la CPI y sus implicaciones para el orden jurídico internacional" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Trump y la Corte Penal Internacional: Anatomía de una Guerra Sistemática contra la Justicia Global</h1>
+
+<div id="outline-container-org6600c5d" class="outline-2">
+<h2 id="org6600c5d">Trump y la Corte Penal Internacional: Anatomía de una Guerra Sistemática contra la Justicia Global</h2>
+<div class="outline-text-2" id="text-org6600c5d">
+
+<div id="org3cb2cbb" class="figure">
+<p><img src="./assets/images/ChatGPTASPA.png" alt="ChatGPTASPA.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga7e12bc" class="outline-2">
+<h2 id="orga7e12bc">Introducción: La Cruzada Antijusticia de Trump</h2>
+<div class="outline-text-2" id="text-orga7e12bc">
+<p>
+La "Junta de la Paz" propuesta por Donald Trump no es un episodio aislado de excentricidad diplomática, sino el punto culminante de una campaña sistemática y calculada contra la Corte Penal Internacional (CPI) que se extiende por más de dos décadas de política estadounidense. Sin embargo, bajo Trump, esta oposición ha alcanzado niveles sin precedentes de agresividad institucional, caracterizada por sanciones económicas devastadoras, amenazas militares implícitas, y presiones para modificar los fundamentos mismos del derecho internacional.
+</p>
+
+<p>
+Este análisis examina críticamente la posición de Trump frente a la CPI, revelando una estrategia coherente de desmantelamiento del sistema de justicia internacional que protege tanto sus propios intereses políticos como los de aliados acusados de crímenes de guerra.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0b1a582" class="outline-2">
+<h2 id="org0b1a582">El Arsenal Legal: La "Ley de Invasión de La Haya"</h2>
+<div class="outline-text-2" id="text-org0b1a582">
+</div>
+<div id="outline-container-org115441e" class="outline-3">
+<h3 id="org115441e">Génesis y Naturaleza de la ASPA</h3>
+<div class="outline-text-3" id="text-org115441e">
+<p>
+La American Service-Members' Protection Act (ASPA) de 2002, conocida coloquialmente como la "Ley de Invasión de La Haya", constituye el instrumento legal fundamental de la hostilidad estadounidense hacia la CPI. Firmada por George W. Bush, esta legislación extraordinaria autoriza al presidente estadounidense a usar "todos los medios necesarios y apropiados" para liberar a cualquier ciudadano estadounidense o de países aliados que sea detenido por la CPI.
+</p>
+
+
+
+<div id="org5743a1b" class="figure">
+<p><img src="./assets/images/aspa_box.png" alt="aspa_box.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb3b0bd3" class="outline-3">
+<h3 id="orgb3b0bd3">Significado Geopolítico</h3>
+<div class="outline-text-3" id="text-orgb3b0bd3">
+<p>
+La ASPA representa una declaración explícita de excepcionalismo estadounidense: Washington se reserva el derecho de usar la fuerza militar contra una corte internacional y contra aliados de la OTAN si estos arrestan a ciudadanos estadounidenses. Esta es una postura que comparten muy pocos estados: Rusia, China e Israel tampoco son miembros de la CPI, creando una alianza informal de rechazo al sistema de justicia penal internacional.
+</p>
+
+<p>
+La ley fue aprobada con amplio apoyo bipartidista (75-19 en el Senado), incluyendo votos de Hillary Clinton y John Kerry, lo que demuestra que la hostilidad hacia la CPI trasciende líneas partidistas en Washington.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga5ed743" class="outline-2">
+<h2 id="orga5ed743">Trump: Escalada de la Guerra contra la CPI</h2>
+<div class="outline-text-2" id="text-orga5ed743">
+</div>
+<div id="outline-container-orgaa2e018" class="outline-3">
+<h3 id="orgaa2e018">Primera Administración (2017-2021): Sentando Precedentes</h3>
+<div class="outline-text-3" id="text-orgaa2e018">
+<p>
+Durante su primer mandato, Trump intensificó dramáticamente la oposición estadounidense a la CPI, particularmente cuando el tribunal anunció investigaciones sobre presuntos crímenes de guerra estadounidenses en Afganistán.
+</p>
+</div>
+
+<div id="outline-container-org973731a" class="outline-4">
+<h4 id="org973731a">Orden Ejecutiva 13928 (11 de junio de 2020)</h4>
+<div class="outline-text-4" id="text-org973731a">
+<p>
+Trump declaró una "emergencia nacional" debido a la "amenaza" que la CPI representa para la seguridad nacional estadounidense. Esta orden:
+</p>
+
+<ul class="org-ul">
+<li>Declaró a la CPI una amenaza existencial para Estados Unidos</li>
+<li>Impuso sanciones económicas contra funcionarios de la CPI</li>
+<li>Bloqueó activos y prohibió entrada a EE.UU. de personal del tribunal</li>
+<li>Específicamente sancionó a la fiscal Fatou Bensouda y al director Phakiso Mochochoko</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org84e427b" class="outline-4">
+<h4 id="org84e427b">Consecuencias Humanitarias</h4>
+<div class="outline-text-4" id="text-org84e427b">
+<p>
+Las sanciones tuvieron efectos devastadores más allá de sus objetivos nominales. Investigadores, abogados y personal administrativo enfrentaron:
+</p>
+
+<ul class="org-ul">
+<li>Bloqueo de cuentas bancarias internacionales</li>
+<li>Imposibilidad de viajar a Estados Unidos</li>
+<li>Paralización de casos de víctimas en Uganda, Afganistán, Congo</li>
+<li>Renuncia del investigador principal del caso Gaza (tenía hijos en EE.UU.)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org25f1b07" class="outline-3">
+<h3 id="org25f1b07">Segunda Administración (2025-presente): Guerra Total</h3>
+<div class="outline-text-3" id="text-org25f1b07">
+</div>
+<div id="outline-container-org58261a6" class="outline-4">
+<h4 id="org58261a6">Orden Ejecutiva de Febrero de 2025</h4>
+<div class="outline-text-4" id="text-org58261a6">
+<p>
+Apenas 18 días después de asumir su segundo mandato, Trump reinstaló y expandió las sanciones contra la CPI, esta vez explícitamente dirigidas a proteger a Israel tras las órdenes de arresto contra Netanyahu y Gallant.
+</p>
+
+<p>
+La nueva orden ejecutiva:
+</p>
+
+
+<div id="org727def1" class="figure">
+<p><img src="./assets/images/trump_icc_timeline.png" alt="trump_icc_timeline.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org2ccc0a8" class="outline-4">
+<h4 id="org2ccc0a8">Sanciones sin Precedentes: Junio-Diciembre 2025</h4>
+<div class="outline-text-4" id="text-org2ccc0a8">
+<p>
+La administración Trump ha sancionado a:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fecha</th>
+<th scope="col" class="org-left">Objetivo</th>
+<th scope="col" class="org-left">Razón</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Febrero 2025</td>
+<td class="org-left">Fiscal Karim Khan</td>
+<td class="org-left">Órdenes de arresto Netanyahu/Gallant</td>
+</tr>
+
+<tr>
+<td class="org-left">Junio 2025</td>
+<td class="org-left">4 jueces (Alapini-Gansou, Hohler, Bossa, Ibáñez)</td>
+<td class="org-left">Aprobaron investigación en Gaza y Afganistán</td>
+</tr>
+
+<tr>
+<td class="org-left">Diciembre 2025</td>
+<td class="org-left">2 jueces (Lordkipanidze, Damdin)</td>
+<td class="org-left">Rechazaron apelación de Israel</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Total: 7 funcionarios judiciales sancionados, sin precedentes históricos contra una corte internacional.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc36a5a2" class="outline-4">
+<h4 id="orgc36a5a2">La Amenaza Más Extrema: Diciembre 2025</h4>
+<div class="outline-text-4" id="text-orgc36a5a2">
+<p>
+En el movimiento más agresivo hasta la fecha, la administración Trump exigió que la CPI modifique el Estatuto de Roma (su documento fundacional) para:
+</p>
+
+<ol class="org-ol">
+<li>Garantizar inmunidad permanente a Trump, el vicepresidente J.D. Vance, y funcionarios de alto nivel</li>
+<li>Abandonar investigaciones contra Netanyahu y Gallant</li>
+<li>Cerrar investigación sobre acciones estadounidenses en Afganistán</li>
+<li>Asegurar que "nunca" se investigará a autoridades estadounidenses, "ni ahora, ni en 2029, ni nunca"</li>
+</ol>
+
+<p>
+Si la CPI no accede, Trump amenaza con "consecuencias tangibles y significativas adicionales", incluyendo potencialmente la invocación de la ASPA.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org82379fc" class="outline-2">
+<h2 id="org82379fc">Análisis Crítico: Motivaciones y Contradicciones</h2>
+<div class="outline-text-2" id="text-org82379fc">
+</div>
+<div id="outline-container-org877b84d" class="outline-3">
+<h3 id="org877b84d">Motivación I: Autoprotección Anticipada</h3>
+<div class="outline-text-3" id="text-org877b84d">
+</div>
+<div id="outline-container-orgb6e7301" class="outline-4">
+<h4 id="orgb6e7301">Preocupación por Crímenes Futuros</h4>
+<div class="outline-text-4" id="text-orgb6e7301">
+<p>
+Un funcionario de la administración Trump admitió abiertamente que existe "conversación abierta" en la comunidad legal internacional sobre investigar a Trump y altos funcionarios por:
+</p>
+
+<ul class="org-ul">
+<li>Campaña de ataques contra embarcaciones de presuntos narcotraficantes en América Latina (posibles crímenes de guerra)</li>
+<li>Apoyo militar a Israel durante genocidio en Gaza (complicidad en crímenes contra la humanidad)</li>
+<li>Potenciales violaciones futuras durante deportaciones masivas</li>
+<li>Crímenes relacionados con política migratoria</li>
+</ul>
+
+<p>
+Esta admisión es extraordinaria: la administración reconoce implícitamente que teme investigación criminal internacional por acciones que planea emprender.
+</p>
+
+<pre class="example" id="orgb5428e6">
+LÓGICA PERVERSA DE TRUMP:
+
+1. Planifico acciones que podrían constituir crímenes de guerra
+2. Temo que la CPI me investigue por estos crímenes
+3. Por lo tanto, destruyo la CPI preventivamente
+4. Luego cometo los crímenes sin consecuencias legales
+
+Esto NO es defensa de soberanía nacional.
+Esto es GARANTIZAR IMPUNIDAD PARA CRÍMENES FUTUROS.
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7b241d2" class="outline-3">
+<h3 id="org7b241d2">Motivación II: Protección de Israel</h3>
+<div class="outline-text-3" id="text-org7b241d2">
+<p>
+Trump ha vinculado explícitamente sus sanciones contra la CPI a la protección de Netanyahu. La Orden Ejecutiva de febrero de 2025 afirma que la CPI "ha abusado de su poder al emitir órdenes de arresto sin fundamento contra el Primer Ministro israelí Benjamin Netanyahu y el ex Ministro de Defensa Yoav Gallant".
+</p>
+
+<p>
+Esta postura es particularmente notable porque:
+</p>
+
+<ol class="org-ol">
+<li>Trump y altos funcionarios celebraron la orden de arresto contra Putin en 2023</li>
+<li>Biden también celebró la orden contra Putin pero denunció la de Netanyahu</li>
+<li>Estados Unidos aplicó recompensas del Global Criminal Justice Rewards Program para capturar a otros acusados de la CPI (Joseph Kony, Ahmad Harun)</li>
+</ol>
+</div>
+
+<div id="outline-container-orgf7d1373" class="outline-4">
+<h4 id="orgf7d1373">El Doble Estándar Documentado</h4>
+<div class="outline-text-4" id="text-orgf7d1373">
+
+<div id="orgfebdd5d" class="figure">
+<p><img src="./assets/images/double_standard.png" alt="double_standard.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfeb5b52" class="outline-3">
+<h3 id="orgfeb5b52">Motivación III: Desmantelamiento del Multilateralismo</h3>
+<div class="outline-text-3" id="text-orgfeb5b52">
+<p>
+La hostilidad de Trump hacia la CPI es parte de un patrón más amplio de rechazo a instituciones multilaterales:
+</p>
+
+<ul class="org-ul">
+<li>Retirada del Acuerdo de París sobre cambio climático</li>
+<li>Abandono del Acuerdo Nuclear con Irán (JCPOA)</li>
+<li>Retirada de la UNESCO</li>
+<li>Amenazas de salida de la OTAN</li>
+<li>Defunding de la OMS durante pandemia</li>
+<li>Oposición a la OMC</li>
+<li>Y ahora, la creación de la "Junta de la Paz" como alternativa a la ONU</li>
+</ul>
+
+<p>
+Trump ve el orden multilateral liberal como una restricción inaceptable a la soberanía estadounidense, particularmente cuando limita la capacidad de Washington de actuar unilateralmente.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb1b3497" class="outline-2">
+<h2 id="orgb1b3497">Consecuencias Devastadoras</h2>
+<div class="outline-text-2" id="text-orgb1b3497">
+</div>
+<div id="outline-container-org16ae3d8" class="outline-3">
+<h3 id="org16ae3d8">Para el Funcionamiento de la CPI</h3>
+<div class="outline-text-3" id="text-org16ae3d8">
+<p>
+Las sanciones han paralizado significativamente las operaciones del tribunal:
+</p>
+</div>
+
+<div id="outline-container-org576b64e" class="outline-4">
+<h4 id="org576b64e">Casos Afectados Directamente</h4>
+<div class="outline-text-4" id="text-org576b64e">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Región</th>
+<th scope="col" class="org-left">Caso</th>
+<th scope="col" class="org-left">Impacto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Uganda</td>
+<td class="org-left">Joseph Kony</td>
+<td class="org-left">Abogados no pueden trabajar en caso</td>
+</tr>
+
+<tr>
+<td class="org-left">Afganistán</td>
+<td class="org-left">Crímenes de guerra talibanes</td>
+<td class="org-left">Investigadora principal renunció</td>
+</tr>
+
+<tr>
+<td class="org-left">Gaza</td>
+<td class="org-left">Crímenes israelíes/Hamas</td>
+<td class="org-left">Investigador principal renunció (hijos en EE.UU.)</td>
+</tr>
+
+<tr>
+<td class="org-left">Congo</td>
+<td class="org-left">Crímenes de lesa humanidad</td>
+<td class="org-left">Personal no puede recibir pagos</td>
+</tr>
+
+<tr>
+<td class="org-left">Darfur</td>
+<td class="org-left">Ahmad Harun</td>
+<td class="org-left">Cooperación legal bloqueada</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgbc50526" class="outline-4">
+<h4 id="orgbc50526">Efecto Paralizante</h4>
+<div class="outline-text-4" id="text-orgbc50526">
+<ul class="org-ul">
+<li>Personal de la CPI enfrenta amenazas de hasta 20 años de prisión en EE.UU. por "proveer servicios de asesoría" al tribunal</li>
+<li>Abogados estadounidenses especializados en violencia de género no pueden representar a mujeres afganas</li>
+<li>Organizaciones de víctimas pierden representación legal</li>
+<li>Bancos internacionales cierran cuentas de empleados de la CPI por miedo a sanciones secundarias</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org06c1d68" class="outline-3">
+<h3 id="org06c1d68">Para el Derecho Internacional</h3>
+<div class="outline-text-3" id="text-org06c1d68">
+</div>
+<div id="outline-container-orgeb5bd65" class="outline-4">
+<h4 id="orgeb5bd65">Precedente de Inmunidad por Poder</h4>
+<div class="outline-text-4" id="text-orgeb5bd65">
+<p>
+La posición de Trump establece un principio devastador: los poderosos están por encima de la ley. Si un presidente estadounidense puede amenazar con invasión militar para evitar responsabilidad legal, ¿qué diferencia hay entre Estados Unidos y cualquier dictadura?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org00e0f4e" class="outline-4">
+<h4 id="org00e0f4e">Erosión del Consenso Antimpunidad</h4>
+<div class="outline-text-4" id="text-org00e0f4e">
+<p>
+Desde Nuremberg (1945-1946), la comunidad internacional construyó laboriosamente un consenso de que ciertos crímenes (genocidio, crímenes de lesa humanidad, crímenes de guerra) no pueden quedar impunes independientemente del poder del perpetrador. Trump está destruyendo sistemáticamente este consenso.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1f0e407" class="outline-3">
+<h3 id="org1f0e407">Para Víctimas de Atrocidades</h3>
+<div class="outline-text-3" id="text-org1f0e407">
+<p>
+Las verdaderas víctimas de las acciones de Trump son personas concretas:
+</p>
+
+<ul class="org-ul">
+<li>Mujeres afganas buscando justicia por violencia sexual sistemática bajo el Talibán</li>
+<li>Niños ugandeses cuyas comunidades fueron destruidas por Joseph Kony</li>
+<li>Palestinos cuyas familias fueron asesinadas en Gaza</li>
+<li>Ucranianos cuyos hijos fueron deportados por Rusia</li>
+</ul>
+
+<p>
+Todas estas víctimas ven su acceso a la justicia bloqueado porque Trump teme que él mismo pueda ser investigado algún día.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org288fa52" class="outline-2">
+<h2 id="org288fa52">La Junta de la Paz en Contexto</h2>
+<div class="outline-text-2" id="text-org288fa52">
+<p>
+La "Junta de la Paz" ahora cobra un significado completamente diferente cuando se entiende en el contexto de la guerra de Trump contra la CPI:
+</p>
+</div>
+
+<div id="outline-container-org99ea9ca" class="outline-3">
+<h3 id="org99ea9ca">No es una Iniciativa Aislada</h3>
+<div class="outline-text-3" id="text-org99ea9ca">
+<p>
+Es el complemento lógico de la destrucción de la CPI:
+</p>
+
+<ol class="org-ol">
+<li><b>Paso 1</b>: Destruir la legitimidad de la CPI mediante sanciones</li>
+<li><b>Paso 2</b>: Crear estructura alternativa controlada por EE.UU.</li>
+<li><b>Paso 3</b>: Incluir líderes acusados de crímenes de guerra para normalizarlos</li>
+<li><b>Paso 4</b>: Reemplazar sistema de justicia internacional con sistema de poder político</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0c38ee3" class="outline-3">
+<h3 id="org0c38ee3">"El Eje de la Inconveniencia: Sinergias del Realismo Sucio."</h3>
+<div class="outline-text-3" id="text-org0c38ee3">
+<p>
+La inclusión de Netanyahu y Putin no es un error o excentricidad: es el punto central del proyecto. Trump está construyendo deliberadamente una coalición de líderes que rechazan la jurisdicción de la CPI y enfrentan posibles procesamientos.
+</p>
+
+
+
+<div id="org96d1c88" class="figure">
+<p><img src="./assets/images/junta_paz_proposito.png" alt="junta_paz_proposito.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org27fb38c" class="outline-2">
+<h2 id="org27fb38c">Posiciones de Actores Clave</h2>
+<div class="outline-text-2" id="text-org27fb38c">
+</div>
+<div id="outline-container-org7894d4e" class="outline-3">
+<h3 id="org7894d4e">La Hipocresía Europea</h3>
+<div class="outline-text-3" id="text-org7894d4e">
+</div>
+<div id="outline-container-orga573528" class="outline-4">
+<h4 id="orga573528">Francia: Caso Paradigmático</h4>
+<div class="outline-text-4" id="text-orga573528">
+<p>
+Francia ofreció una de las respuestas más reveladoras. Mientras celebró la orden contra Putin en 2023, argumentó que Netanyahu tiene "inmunidad" porque Israel no es miembro de la CPI, convenientemente ignorando que Rusia tampoco lo es.
+</p>
+
+<p>
+Esta posición ha sido denunciada como incoherente incluso por juristas franceses, pero revela la primacía de consideraciones políticas sobre principios legales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6731481" class="outline-4">
+<h4 id="org6731481">Unión Europea: Parálisis</h4>
+<div class="outline-text-4" id="text-org6731481">
+<p>
+La UE ha condenado las sanciones de Trump pero no ha implementado medidas de bloqueo significativas que protegerían a sus ciudadanos que trabajan para la CPI. Eslovenia y algunos estados han presionado por acción colectiva, pero el bloque permanece dividido.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4adf3e2" class="outline-3">
+<h3 id="org4adf3e2">Organizaciones de Derechos Humanos: Alarma Unánime</h3>
+<div class="outline-text-3" id="text-org4adf3e2">
+<ul class="org-ul">
+<li><b>Human Rights Watch</b>: "Comportamiento de estado paria"</li>
+<li><b>Amnistía Internacional</b>: "Ataque al estado de derecho global"</li>
+<li><b>Human Rights Data Analysis Group</b>: "Ataque directo al estado de derecho"</li>
+<li><b>Open Society Justice Initiative</b>: Ha demandado al gobierno de EE.UU. por restricciones inconstitucionales a libertad de expresión</li>
+<li><b>Expertos de la ONU</b>: "Ataque a la justicia internacional global"</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf5106f4" class="outline-3">
+<h3 id="orgf5106f4">La CPI: Resistencia Bajo Presión</h3>
+<div class="outline-text-3" id="text-orgf5106f4">
+<p>
+La presidenta de la CPI, la jueza Tomoko Akane, declaró en diciembre de 2025 que el tribunal "nunca aceptará ningún tipo de presión". Sin embargo, el tribunal enfrenta crisis existencial:
+</p>
+
+<ul class="org-ul">
+<li>Personal renunciando por miedo</li>
+<li>Imposibilidad de reclutar ciudadanos estadounidenses</li>
+<li>Presión financiera debido a sanciones bancarias secundarias</li>
+<li>Aislamiento diplomático creciente</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf6cfe03" class="outline-2">
+<h2 id="orgf6cfe03">Conclusiones Analíticas</h2>
+<div class="outline-text-2" id="text-orgf6cfe03">
+</div>
+<div id="outline-container-org1c2228c" class="outline-3">
+<h3 id="org1c2228c">1. Trump No es una Aberración: Es la Consecuencia Lógica</h3>
+<div class="outline-text-3" id="text-org1c2228c">
+<p>
+La hostilidad de Trump hacia la CPI no es nueva ni exclusiva de él. Es la culminación extrema de una política estadounidense bipartidista de rechazo a la jurisdicción internacional sobre ciudadanos estadounidenses. La ASPA fue aprobada con apoyo bipartidista; Clinton firmó el Estatuto de Roma pero dijo que no lo sometería al Senado; Bush "des-firmó" el tratado; Obama mantuvo oposición selectiva.
+</p>
+
+<p>
+Lo que diferencia a Trump es la agresividad y la franqueza: dice explícitamente lo que otros presidentes pensaban pero no articulaban.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org38b4159" class="outline-3">
+<h3 id="org38b4159">2. Autoprotección, No Principio</h3>
+<div class="outline-text-3" id="text-org38b4159">
+<p>
+La motivación central de Trump es transparente: teme ser investigado por crímenes que planea cometer. Un funcionario lo admitió: hay "preocupación creciente" de que "en 2029 la CPI centre su atención en el presidente, el vicepresidente, el secretario de guerra y otros".
+</p>
+
+<p>
+Esto no es defensa de soberanía nacional. Es garantizar impunidad personal.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5a1fe60" class="outline-3">
+<h3 id="org5a1fe60">3. La Hipocresía es Sistemática, No Accidental</h3>
+<div class="outline-text-3" id="text-org5a1fe60">
+<p>
+El doble estándar respecto a Putin vs Netanyahu no es un error o inconsistencia: es política deliberada. Estados Unidos apoya la CPI cuando sirve sus intereses (Putin, Kony, Harun) y la destruye cuando amenaza a aliados (Netanyahu) o a sí mismo (Afganistán, operaciones antidroga).
+</p>
+
+<p>
+Esta selectividad destruye cualquier pretensión de que EE.UU. defiende "principios" o "estado de derecho".
+</p>
+</div>
+</div>
+
+<div id="outline-container-org23be221" class="outline-3">
+<h3 id="org23be221">4. El Proyecto es Coherente: Impunidad por Diseño</h3>
+<div class="outline-text-3" id="text-org23be221">
+<p>
+La "Junta de la Paz" no es excentricidad aislada. Es parte de un proyecto coherente:
+</p>
+
+<p>
+a) Destruir la CPI mediante sanciones económicas y amenazas militares
+b) Crear estructura alternativa controlada por Washington
+c) Incluir líderes acusados para normalizarlos y protegerlos mutuamente
+d) Reemplazar justicia internacional con política de poder
+</p>
+</div>
+</div>
+
+<div id="outline-container-org908b46d" class="outline-3">
+<h3 id="org908b46d">5. Las Víctimas Reales son Invisibilizadas</h3>
+<div class="outline-text-3" id="text-org908b46d">
+<p>
+El debate mediático se centra en Trump, Netanyahu, Putin. Pero las víctimas reales son:
+</p>
+
+<ul class="org-ul">
+<li>Mujeres afganas sin acceso a justicia</li>
+<li>Familias palestinas destruidas en Gaza</li>
+<li>Comunidades ugandesas aterrorizadas por Kony</li>
+<li>Niños ucranianos deportados ilegalmente</li>
+</ul>
+
+<p>
+Estas voces están ausentes del debate, precisamente porque carecen del poder que Trump, Netanyahu y Putin poseen.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org98c068b" class="outline-3">
+<h3 id="org98c068b">6. Probabilidad de Éxito del Proyecto de Trump</h3>
+<div class="outline-text-3" id="text-org98c068b">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Objetivo</th>
+<th scope="col" class="org-right">Probabilidad</th>
+<th scope="col" class="org-left">Justificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Paralizar CPI operativamente</td>
+<td class="org-right">60%</td>
+<td class="org-left">Ya está ocurriendo; renuncias y parálisis documentadas</td>
+</tr>
+
+<tr>
+<td class="org-left">Modificar Estatuto de Roma</td>
+<td class="org-right">5%</td>
+<td class="org-left">CPI ha rechazado presión; requeriría consenso de 123 estados miembros</td>
+</tr>
+
+<tr>
+<td class="org-left">Lograr inmunidad legal para Trump</td>
+<td class="org-right">40%</td>
+<td class="org-left">Puede lograr impunidad práctica sin modificar Estatuto</td>
+</tr>
+
+<tr>
+<td class="org-left">Legitimar a Netanyahu/Putin</td>
+<td class="org-right">25%</td>
+<td class="org-left">Órdenes de arresto permanecen; restricciones de viaje continúan</td>
+</tr>
+
+<tr>
+<td class="org-left">Consolidar Junta de la Paz como alternativa a ONU</td>
+<td class="org-right">20%</td>
+<td class="org-left">Oposición europea y de sociedad civil demasiado fuerte</td>
+</tr>
+
+<tr>
+<td class="org-left">Debilitar permanentemente CPI</td>
+<td class="org-right">70%</td>
+<td class="org-left">Daño ya es significativo; legitimidad erosionada</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge2c79c5" class="outline-2">
+<h2 id="orge2c79c5">Reflexión Final: ¿El Fin del Derecho Internacional?</h2>
+<div class="outline-text-2" id="text-orge2c79c5">
+<p>
+La campaña de Trump contra la CPI plantea una pregunta fundamental sobre el futuro del orden internacional: ¿puede existir un sistema de derecho internacional cuando las superpotencias rechazan explícitamente la jurisdicción sobre sus propios ciudadanos?
+</p>
+
+<p>
+La respuesta histórica sugiere pesimismo. La Liga de Naciones colapsó precisamente porque las grandes potencias la ignoraron cuando les convenía. La ONU sobrevive porque el Consejo de Seguridad da a las potencias poder de veto, es decir, inmunidad estructural.
+</p>
+
+<p>
+La CPI intentó crear un sistema donde incluso los poderosos pudieran ser responsabilizados. Trump está demostrando los límites de ese proyecto: cuando un poder suficientemente grande decide destruir una institución internacional, puede hacerlo, especialmente si está dispuesto a usar sanciones económicas devastadoras y amenazar con fuerza militar.
+</p>
+
+<p>
+La inclusión de Netanyahu y Putin en la "Junta de la Paz" no es simplemente irónica o hipócrita. Es una declaración ideológica: el poder define lo que es aceptable, no la ley. Los vencedores escriben las reglas, y los poderosos están exentos de ellas.
+</p>
+
+<p>
+Esta no es una visión de paz. Es una visión de impunidad sistémica, donde las atrocidades quedan impunes siempre que sean cometidas por quienes tienen suficiente poder político, militar y económico para resistir la rendición de cuentas.
+</p>
+
+<p>
+Las víctimas de crímenes de guerra en Gaza, Ucrania, Afganistán y en todas partes pagan el precio de esta excentricidad calculada que Trump presenta como diplomacia innovadora.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org913b86b" class="outline-2">
+<h2 id="org913b86b">Referencias Documentales</h2>
+<div class="outline-text-2" id="text-org913b86b">
+<ol class="org-ol">
+<li>PBS News Weekend. "How sanctions imposed by Trump are taking a toll on the International Criminal Court". 16 noviembre 2025.</li>
+
+<li>The White House. "Imposing Sanctions on the International Criminal Court - Executive Order". 10 febrero 2025.</li>
+
+<li>Truthout. "Trump Administration Reportedly Pushing ICC to Exempt Trump From War Crimes Prosecution". 10 diciembre 2025.</li>
+
+<li>Human Rights Data Analysis Group. "Trump Administration's Sanctions on the ICC are an Attack on the Rule of Law". 5 enero 2026.</li>
+
+<li>Amnesty International. "What do the Trump administration's sanctions on the ICC mean for justice and human rights?" 28 marzo 2025.</li>
+
+<li>Foreign Policy. "Trump's Pressure Campaign Against the ICC Reaches New Heights". 10 diciembre 2025.</li>
+
+<li>International Bar Association. "US presidency: ICC sanctions threaten the future of international justice". 2025.</li>
+
+<li>Human Rights Watch. "U.S.: 'Hague Invasion Act' Becomes Law". 3 agosto 2002.</li>
+
+<li>Middle East Eye. "Explainer: US lawmakers threaten ICC with 'The Hague Invasion Act' - but what is it?" 26 noviembre 2024.</li>
+
+<li>CNN. "Trump administration sanctions two more International Criminal Court judges for investigating Israel". 18 diciembre 2025.</li>
+</ol>
+
+<blockquote>
+<p>
+"La igualdad ante la ley debe aplicarse a todos, incluido el Presidente de Estados Unidos. Aquellos en el poder nunca deben socavar una corte por temor a que pueda centrar su atención en ellos."
+— Human Rights Data Analysis Group, Enero 2026
+</p>
+</blockquote>
+
+<p>
+<a href="2026-01-21-la-alianza-de-la-paz-de-trump-an-lisis-cr-tico-de-una-iniciativa-geopol-tica-controvertida.html">La "Alianza de la Paz" de Trump: Análisis Crítico de una Iniciativa Geopolítica Controvertida</a>
+</p>
+
+
+<p>
+&#x2014;
+</p>
+
+<p>
+<b>Nota crítica final</b>: Este análisis se basa en documentación oficial, órdenes ejecutivas publicadas, testimonios de funcionarios de la administración Trump, y reportes de organizaciones de derechos humanos. Las conclusiones representan un análisis crítico fundamentado en evidencia verificable sobre una de las campañas más agresivas contra una institución de justicia internacional en la historia moderna.
+</p>
+
+
+<p class="post-meta">Publicado el 2026-01-21 20:00 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:18</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

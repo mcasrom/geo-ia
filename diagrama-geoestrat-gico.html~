@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-07-19 sáb 19:49 -->
+<!-- 2026-02-06 vie 20:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Diagrama Geoestratégico</title>
@@ -771,16 +771,16 @@ gtag('config', 'G-D0JDZ5P5C1');
 <div id="content" class="content">
 <h1 class="title">Diagrama Geoestratégico</h1>
 
-<div id="outline-container-orgb0d4b6a" class="outline-2">
-<h2 id="orgb0d4b6a">Diagrama Geoestratégico</h2>
-<div class="outline-text-2" id="text-orgb0d4b6a">
+<div id="outline-container-org381a195" class="outline-2">
+<h2 id="org381a195">Diagrama Geoestratégico</h2>
+<div class="outline-text-2" id="text-org381a195">
 <ul class="org-ul">
 <li>El panorama global en 2025 se configura como un tablero dinámico de alianzas, rivalidades estratégicas y conflictos regionales con efectos sistémicos.
 En este artículo visualizamos las relaciones clave entre los principales actores del sistema internacional mediante un diagrama PlantUML y una tabla comparativa basada en criterios de poder, influencia y dependencia. Este contenido ha sido generado, editado y publicado íntegramente con Emacs en Linux, con el apoyo de inteligencia artificial para análisis y visualización.</li>
 </ul>
 
 
-<div id="org94ced15" class="figure">
+<div id="org3790f07" class="figure">
 <p><img src="./assets/images/poder_global_diagrama.png" alt="poder_global_diagrama.png" width="800px" />
 </p>
 </div>
@@ -788,9 +788,9 @@ En este artículo visualizamos las relaciones clave entre los principales actore
 
 
 
-<div id="outline-container-org519ed0f" class="outline-3">
-<h3 id="org519ed0f">Leyenda Interpretativa</h3>
-<div class="outline-text-3" id="text-org519ed0f">
+<div id="outline-container-orgc25e82c" class="outline-3">
+<h3 id="orgc25e82c">Leyenda Interpretativa</h3>
+<div class="outline-text-3" id="text-orgc25e82c">
 <ul class="org-ul">
 <li>Flechas en el Diagrama: Representan relaciones clave — desde alianzas (↔) hasta tensiones (→). Las direcciones muestran el flujo de influencia o dependencia.</li>
 <li>Colores: Los nodos son agrupaciones por actor o dominio (nación, región, tecnología o conflicto).</li>
@@ -806,9 +806,9 @@ En este artículo visualizamos las relaciones clave entre los principales actore
 </div>
 <footer>
 <div class="container">
-<p>© 2025 El Mapa y El Código</p>
+<p>© 2026 El Mapa y El Código</p>
 <p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
-<p>Última actualización: 2025-07-19 19:49</p>
+<p>Última actualización: 2026-02-06 20:19</p>
 </div>
 </footer>
 <!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->

@@ -1,0 +1,1930 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-02-06 vie 20:18 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Los Acuerdos de Minsk: Un Análisis Crítico del Fracaso Diplomático ante la Invasión Rusa de Ucrania</title>
+<meta name="author" content="GeoClaude4" />
+<meta name="description" content="Un Análisis Crítico del Fracaso Diplomático ante la Invasión Rusa de Ucrania" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-D0JDZ5P5C1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"><meta name="theme-color" content="#2c3e50"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="icon" type="image/png" href="./assets/images/favicon.png"><style>
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #4a6278 100%);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .header-text {
+    flex: 1;
+    text-align: left;
+  }
+
+/* Estilo para posicionar logo a la derecha */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+.header-logo {
+  flex-shrink: 0;
+  padding-left: 20px;
+}
+.blog-logo {
+  max-height: 80px;
+  width: auto;
+}
+  
+  .blog-logo {
+    max-width: 150px;
+    height: auto;
+    margin-left: 1rem;
+  }
+  
+  .blog-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    letter-spacing: -0.02em;
+  }
+  
+  .blog-subtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    margin-bottom: 0.5rem;
+    color: #ecf0f1;
+    opacity: 0.95;
+    line-height: 1.4;
+    max-width: 800px;
+    font-weight: 400;
+  }
+  
+  .blog-email {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    color: #bdc3c7;
+    opacity: 0.9;
+  }
+  
+  .blog-email a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .blog-email a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    flex: 0 1 auto;
+  }
+  
+  nav a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+  }
+  
+  nav a:hover, nav a.active {
+    background: #74b9ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(116, 185, 255, 0.3);
+  }
+  
+  .content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin: 2rem 0;
+    border: 1px solid rgba(0,0,0,0.05);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+  h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); }
+  h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: #34495e;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .post-list li {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    transition: all 0.3s ease;
+  }
+  
+  .post-list li:hover {
+    background: #e3f2fd;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .post-list h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .post-list h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .post-list h3 a:hover {
+    color: #74b9ff;
+  }
+  
+  .post-date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    background: #ddd6fe;
+    color: #5b21b6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .tag:hover {
+    background: #c4b5fd;
+    transform: scale(1.05);
+  }
+  
+  .stats-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3);
+  }
+  
+  .stats-box h2 {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .stats-box p {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .archive-year {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 8px;
+  }
+  
+  .archive-year h2 {
+    color: white;
+    margin: 0;
+  }
+  
+  .archive-month {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #74b9ff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tag-cloud {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .tag-cloud h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tag-cloud .tag {
+    margin: 0.25rem;
+    display: inline-block;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    color: #bdc3c7;
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: #74b9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0984e3;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .container {
+      padding: 0 1.5rem;
+    }
+    
+    .content {
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    nav ul {
+      gap: 0.25rem;
+    }
+    
+    nav a {
+      padding: 0.625rem 0.875rem;
+      font-size: 0.85rem;
+    }
+    
+    .header-text {
+      flex: 1;
+    }
+    
+    .blog-logo {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    header .container {
+      padding: 0.75rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header-text {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    
+    .blog-logo {
+      max-width: 100px;
+      margin-left: 0;
+    }
+    
+    .content {
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    
+    nav {
+      padding: 0.25rem 0;
+    }
+    
+    nav ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    nav li {
+      flex: 1 1 45%;
+      min-width: 120px;
+    }
+    
+    nav a {
+      padding: 0.5rem 0.5rem;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+    
+    .post-list li {
+      padding: 1.25rem;
+    }
+    
+    .stats-box {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 0 0.75rem;
+    }
+    
+    header .container {
+      padding: 0.5rem 0.75rem;
+    }
+    
+    .content {
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 8px;
+    }
+    
+    nav li {
+      flex: 1 1 100%;
+      margin: 0.125rem 0;
+    }
+    
+    nav a {
+      padding: 0.5rem;
+      font-size: 0.75rem;
+      border-radius: 6px;
+    }
+    
+    .post-list li {
+      padding: 1rem;
+    }
+    
+    .tags {
+      gap: 0.25rem;
+    }
+    
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .stats-box {
+      padding: 1.25rem;
+    }
+    
+    .archive-month {
+      padding: 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 80px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .container {
+      padding: 0 0.5rem;
+    }
+    
+    header .container {
+      padding: 0.5rem;
+    }
+    
+    .content {
+      padding: 0.875rem;
+      margin: 0.5rem 0;
+    }
+    
+    nav a {
+      padding: 0.4rem;
+      font-size: 0.7rem;
+    }
+    
+    .post-list li {
+      padding: 0.875rem;
+    }
+    
+    .stats-box {
+      padding: 1rem;
+    }
+    
+    .blog-logo {
+      max-width: 70px;
+    }
+  }
+  
+  /* Mejoras para tablets en orientación landscape */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    nav ul {
+      justify-content: center;
+    }
+    
+    nav li {
+      flex: 0 1 auto;
+    }
+    
+    nav a {
+      padding: 0.75rem 1.25rem;
+    }
+    
+    .blog-logo {
+      max-width: 130px;
+    }
+  }
+  
+  /* Optimizaciones adicionales para touch */
+  @media (hover: none) and (pointer: coarse) {
+    nav a, .post-list li, .tag {
+      transform: none;
+    }
+    
+    nav a:hover, .post-list li:hover, .tag:hover {
+      transform: none;
+    }
+    
+    nav a:active {
+      background: #74b9ff;
+      color: white;
+    }
+  }
+</style><script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-D0JDZ5P5C1');
+</script><header>
+<div class="container">
+  <div class="header-flex">
+    <div class="header-text">
+      <h1 class="blog-title">El Mapa y El Código</h1>
+      <p class="blog-subtitle">Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico</p>
+      <p class="blog-email">Contacto: <a href="mailto:mybloggingnotes@gmail.com">mybloggingnotes@gmail.com</a></p>
+    </div>
+    <div class="header-logo">
+      <img src="./assets/images/logoblog.png" alt="Logo de El Mapa y El Código" class="blog-logo">
+    </div>
+  </div>
+</div>
+</header>
+<nav>
+<div class="container">
+<ul>
+<li><a href="index.html" aria-label="Ir al inicio">🏠 Inicio</a></li>
+<li><a href="about.html" aria-label="Sobre el blog">👤 About</a></li>
+<li><a href="contact.html" aria-label="Página de contacto">📧 Contact</a></li>
+<li><a href="news-feed.html" aria-label="Noticias de geopolítica">📰 Geo News</a></li>
+<li><a href="archives.html" aria-label="Archivo de posts">📚 Archives</a></li>
+<li><a href="tags.html" aria-label="Explorar por tags">🏷️ Tags</a></li>
+<li><a href="sitemap.html" aria-label="Mapa del sitio">🗺️ Sitemap</a></li>
+</ul>
+</div>
+</nav>
+<div class="container">
+</div>
+<div id="content" class="content">
+<h1 class="title">Los Acuerdos de Minsk: Un Análisis Crítico del Fracaso Diplomático ante la Invasión Rusa de Ucrania</h1>
+
+<div id="outline-container-orgd7ce966" class="outline-2">
+<h2 id="orgd7ce966">Los Acuerdos de Minsk: Un Análisis Crítico del Fracaso Diplomático ante la Invasión Rusa de Ucrania</h2>
+<div class="outline-text-2" id="text-orgd7ce966">
+<p>
+Los Acuerdos de Minsk representan uno de los fracasos diplomáticos más significativos del siglo XXI. Diseñados para resolver el conflicto iniciado por la invasión rusa de Ucrania en 2014, estos acuerdos no solo fallaron en su objetivo principal, sino que sirvieron como una pausa temporal que permitió a Rusia consolidar sus posiciones y preparar la invasión a gran escala de 2022.
+</p>
+</div>
+
+<div id="outline-container-org85356a7" class="outline-3">
+<h3 id="org85356a7">Contexto Histórico</h3>
+<div class="outline-text-3" id="text-org85356a7">
+<p>
+La crisis ucraniana de 2014 marcó el inicio de una nueva fase en las relaciones internacionales postsoviéticas. La anexión de Crimea por parte de Rusia en marzo de 2014 y el posterior apoyo a los separatistas en el Donbás crearon un conflicto "congelado" que requería una solución diplomática urgente.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge29307b" class="outline-3">
+<h3 id="orge29307b">Objetivos del Documento</h3>
+<div class="outline-text-3" id="text-orge29307b">
+<p>
+Este análisis examina críticamente los Acuerdos de Minsk desde múltiples perspectivas: su formulación, implementación, fallas estructurales y consecuencias a largo plazo para la seguridad europea.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga8f74a3" class="outline-2">
+<h2 id="orga8f74a3">Los Acuerdos de Minsk: Marco Temporal y Protagonistas</h2>
+<div class="outline-text-2" id="text-orga8f74a3">
+</div>
+<div id="outline-container-orgc729ce0" class="outline-3">
+<h3 id="orgc729ce0">Minsk I (Protocolo de Minsk, 5 de septiembre de 2014)</h3>
+<div class="outline-text-3" id="text-orgc729ce0">
+</div>
+<div id="outline-container-org30cfb53" class="outline-4">
+<h4 id="org30cfb53">Contexto de la Negociación</h4>
+<div class="outline-text-4" id="text-org30cfb53">
+
+<div id="org86c50bd" class="figure">
+<p><img src="./assets/images/minsk_1.png" alt="minsk_1.png" width="600px" />
+</p>
+</div>
+
+<p>
+El primer acuerdo fue negociado tras intensos combates que habían resultado en significativas pérdidas territoriales ucranianas. Minsk I outlined commitments in three key areas: cessation of hostilities, conflict resolution, and enhanced security measures. It called for a bilateral ceasefire, OSCE monitoring, and the exchange of detainees.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org257ab13" class="outline-4">
+<h4 id="org257ab13">Disposiciones Principales</h4>
+<div class="outline-text-4" id="text-org257ab13">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Punto</th>
+<th scope="col" class="org-left">Contenido</th>
+<th scope="col" class="org-left">Estado de Implementación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-left">Cese inmediato del fuego</td>
+<td class="org-left">Violado repetidamente</td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-left">Retirada de armamento pesado</td>
+<td class="org-left">Parcialmente cumplido</td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-left">Monitoreo OSCE</td>
+<td class="org-left">Implementado limitadamente</td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-left">Diálogo sobre estatus especial</td>
+<td class="org-left">No implementado</td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-left">Liberación de prisioneros</td>
+<td class="org-left">Cumplido parcialmente</td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-left">Amnistía</td>
+<td class="org-left">No implementada</td>
+</tr>
+
+<tr>
+<td class="org-right">7</td>
+<td class="org-left">Intercambio de rehenes</td>
+<td class="org-left">Cumplido parcialmente</td>
+</tr>
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-left">Ayuda humanitaria</td>
+<td class="org-left">Implementada con restricciones</td>
+</tr>
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-left">Restablecimiento de vínculos sociales</td>
+<td class="org-left">No implementado</td>
+</tr>
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-left">Control fronterizo</td>
+<td class="org-left">No implementado</td>
+</tr>
+
+<tr>
+<td class="org-right">11</td>
+<td class="org-left">Retirada de grupos armados ilegales</td>
+<td class="org-left">No implementado</td>
+</tr>
+
+<tr>
+<td class="org-right">12</td>
+<td class="org-left">Reforma constitucional</td>
+<td class="org-left">Iniciada, no completada</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgadf0a64" class="outline-4">
+<h4 id="orgadf0a64">Fallas Inmediatas</h4>
+<div class="outline-text-4" id="text-orgadf0a64">
+<p>
+This agreement followed multiple previous attempts to stop the fighting in the region and aimed to implement an immediate ceasefire. The agreement failed to stop fighting. At the start of January 2015, Russia sent another large batch of its regular military.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga93d854" class="outline-3">
+<h3 id="orga93d854">Minsk II (Paquete de Medidas, 12 de febrero de 2015)</h3>
+<div class="outline-text-3" id="text-orga93d854">
+</div>
+<div id="outline-container-orge82c2dd" class="outline-4">
+<h4 id="orge82c2dd">Circunstancias de la Firma</h4>
+<div class="outline-text-4" id="text-orge82c2dd">
+
+<div id="org0ca4f51" class="figure">
+<p><img src="./assets/images/minsk_2.png" alt="minsk_2.png" width="600px" />
+</p>
+</div>
+
+
+<p>
+The Minsk 2 peace agreements between Russia and Ukraine, intended to stop the fighting in the Donbas region of Ukraine, were signed in February 2015, when Ukraine was experiencing some of its heaviest losses against Russian-controlled forces. Hundreds of Ukrainian soldiers had been killed
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga818df7" class="outline-4">
+<h4 id="orga818df7">Estructura del Acuerdo</h4>
+<div class="outline-text-4" id="text-orga818df7">
+
+<div id="org9337dbb" class="figure">
+<p><img src="./assets/images/minsk_acuerdo.png" alt="minsk_acuerdo.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgffe1bde" class="outline-4">
+<h4 id="orgffe1bde">Cronograma de Implementación</h4>
+<div class="outline-text-4" id="text-orgffe1bde">
+<p>
+The February 2015 agreement stated that Ukraine would start recovering control over its state border on day 1 after the holding of local elections in Donetsk and Luhansk, and that this process would end only after the full implementation of all political provisions.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org12ca926" class="outline-2">
+<h2 id="org12ca926">Análisis Crítico de las Fallas Estructurales</h2>
+<div class="outline-text-2" id="text-org12ca926">
+</div>
+<div id="outline-container-org2daa397" class="outline-3">
+<h3 id="org2daa397">Ambigüedades Interpretativas: El "Conundrum" de Minsk</h3>
+<div class="outline-text-3" id="text-org2daa397">
+<p>
+In general, Moscow and Kyiv interpret the pact very differently, leading to what has been dubbed by some observers as the "Minsk conundrum". Ukraine sees the 2015 agreement as an instrument to re-establish control over the rebel territories. It wants a ceasefire, control of the Russia-Ukraine
+</p>
+
+
+<div id="org66bbb3e" class="figure">
+<p><img src="./assets/images/minsk_ambiguedades.png" alt="minsk_ambiguedades.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3dd281b" class="outline-3">
+<h3 id="org3dd281b">Defectos de Diseño</h3>
+<div class="outline-text-3" id="text-org3dd281b">
+<p>
+Provisions of the memorandum were too general and vague to determine the actual resolution of the conflict and stabilization of the situation in the eastern Ukraine. The memorandum left its parties free to interpret individual provisions, which ultimately led to escalation of the conflict.
+</p>
+</div>
+
+<div id="outline-container-orgc14f107" class="outline-4">
+<h4 id="orgc14f107">Problemas de Secuenciación</h4>
+<div class="outline-text-4" id="text-orgc14f107">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Fase</th>
+<th scope="col" class="org-left">Según Ucrania</th>
+<th scope="col" class="org-left">Según Rusia</th>
+<th scope="col" class="org-left">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Fase 1</td>
+<td class="org-left">Cese del fuego → Control fronterizo</td>
+<td class="org-left">Reformas políticas → Cese del fuego</td>
+<td class="org-left">Deadlock</td>
+</tr>
+
+<tr>
+<td class="org-left">Fase 2</td>
+<td class="org-left">Elecciones libres → Estatus especial</td>
+<td class="org-left">Estatus especial → Elecciones controladas</td>
+<td class="org-left">Incompatible</td>
+</tr>
+
+<tr>
+<td class="org-left">Fase 3</td>
+<td class="org-left">Reintegración territorial</td>
+<td class="org-left">Autonomía permanente</td>
+<td class="org-left">Irreconciliable</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf608ad6" class="outline-3">
+<h3 id="orgf608ad6">Ausencia de Mecanismos de Cumplimiento</h3>
+<div class="outline-text-3" id="text-orgf608ad6">
+
+<div id="orgba4eb6b" class="figure">
+<p><img src="./assets/images/minsk_ausencias.png" alt="minsk_ausencias.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcd98eb7" class="outline-2">
+<h2 id="orgcd98eb7">La Dinámica de Implementación (2015-2022)</h2>
+<div class="outline-text-2" id="text-orgcd98eb7">
+</div>
+<div id="outline-container-orgd0f58fa" class="outline-3">
+<h3 id="orgd0f58fa">Evolución del Conflicto</h3>
+<div class="outline-text-3" id="text-orgd0f58fa">
+<p>
+The ceasefire agreements signed in September 2014 and February 2015, commonly known as 'Minsk I' and 'Minsk II', remained largely unimplemented throughout the following years, much to the frustration of the agreements' Western backers.
+</p>
+</div>
+
+<div id="outline-container-org7e68450" class="outline-4">
+<h4 id="org7e68450">Cronología de Violaciones Principales</h4>
+<div class="outline-text-4" id="text-org7e68450">
+
+<div id="orgf52902d" class="figure">
+<p><img src="./assets/images/minsk_crono.png" alt="minsk_crono.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf8d2c65" class="outline-3">
+<h3 id="orgf8d2c65">Presiones Internacionales</h3>
+<div class="outline-text-3" id="text-orgf8d2c65">
+<p>
+Over the years, observers have argued that Ukraine, under pressure from its international partners and a deteriorating situation on the battlefield, was forced to sign an unfavorable deal in 2014 and an even worse one in 2015.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd860cfb" class="outline-2">
+<h2 id="orgd860cfb">Perspectiva Geopolítica y Estratégica</h2>
+<div class="outline-text-2" id="text-orgd860cfb">
+</div>
+<div id="outline-container-org8d40cd4" class="outline-3">
+<h3 id="org8d40cd4">Los Acuerdos como Herramienta de Control</h3>
+<div class="outline-text-3" id="text-org8d40cd4">
+<p>
+several delegates noting that what was once intended to be a blueprint for the 2014 crisis has turned into Moscow's leverage to limit the sovereignty of Ukraine
+</p>
+
+
+<div id="org5202637" class="figure">
+<p><img src="./assets/images/minsk_acuerdos_control.png" alt="minsk_acuerdos_control.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0de75d0" class="outline-3">
+<h3 id="org0de75d0">El Fracaso del Formato Normandía</h3>
+<div class="outline-text-3" id="text-org0de75d0">
+</div>
+<div id="outline-container-orgc83faef" class="outline-4">
+<h4 id="orgc83faef">Actores del Formato Normandía</h4>
+<div class="outline-text-4" id="text-orgc83faef">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actor</th>
+<th scope="col" class="org-left">Intereses</th>
+<th scope="col" class="org-left">Estrategia</th>
+<th scope="col" class="org-left">Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Francia</td>
+<td class="org-left">Estabilidad europea</td>
+<td class="org-left">Diplomacia de compromiso</td>
+<td class="org-left">Frustración</td>
+</tr>
+
+<tr>
+<td class="org-left">Alemania</td>
+<td class="org-left">Relaciones económicas</td>
+<td class="org-left">Apaciguamiento pragmático</td>
+<td class="org-left">Fracaso</td>
+</tr>
+
+<tr>
+<td class="org-left">Ucrania</td>
+<td class="org-left">Integridad territorial</td>
+<td class="org-left">Resistencia selectiva</td>
+<td class="org-left">Aislamiento</td>
+</tr>
+
+<tr>
+<td class="org-left">Rusia</td>
+<td class="org-left">Influencia regional</td>
+<td class="org-left">Dilación estratégica</td>
+<td class="org-left">Éxito temporal</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org81e505d" class="outline-2">
+<h2 id="org81e505d">Consecuencias y Lecciones</h2>
+<div class="outline-text-2" id="text-org81e505d">
+</div>
+<div id="outline-container-org9191219" class="outline-3">
+<h3 id="org9191219">El Colapso Final</h3>
+<div class="outline-text-3" id="text-org9191219">
+<p>
+Still, Russia has continuously blamed Ukraine for failing to perform the Minsk agreements. In 2022, Russia pronounced that the agreements "no longer existed" and used it as one of the pretexts to launch the full-scale invasion of Ukraine.
+</p>
+
+<p>
+And second, that the 2014/2015 Minsk agreements—aimed at restoring peace in the region by ending the separatist war—had long been dead. On this last point, Putin was mostly correct.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4200c73" class="outline-3">
+<h3 id="org4200c73">Evaluación de Efectividad</h3>
+<div class="outline-text-3" id="text-org4200c73">
+
+<div id="orgb0c2d2c" class="figure">
+<p><img src="./assets/images/minsk_evaluacion.png" alt="minsk_evaluacion.png" width="600px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge1fd6d1" class="outline-3">
+<h3 id="orge1fd6d1">Lecciones para la Diplomacia Internacional</h3>
+<div class="outline-text-3" id="text-orge1fd6d1">
+<p>
+The Minsk Agreements show that the signing of a peace pact alone does not ensure a durable end to conflict
+</p>
+
+<p>
+### Lecciones Críticas Identificadas
+</p>
+
+<ol class="org-ol">
+<li><b><b>Necesidad de Mecanismos de Cumplimiento Robustos</b></b>: Los acuerdos sin consecuencias por violaciones están condenados al fracaso.</li>
+
+<li><b><b>Importancia de la Claridad Jurídica</b></b>: Las ambigüedades deliberadas no son compromiso diplomático sino recetas para el conflicto.</li>
+
+<li><b><b>Reconocimiento de la Asimetría de Poder</b></b>: Los acuerdos entre partes con capacidades desiguales requieren garantías compensatorias.</li>
+
+<li><b><b>Límites de la Diplomacia sin Disuasión</b></b>: La diplomacia pura es insuficiente contra actores que operan con mala fe sistemática.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc1629f8" class="outline-2">
+<h2 id="orgc1629f8">Análisis Documental y Fuentes</h2>
+<div class="outline-text-2" id="text-orgc1629f8">
+</div>
+<div id="outline-container-org3626501" class="outline-3">
+<h3 id="org3626501">Fuentes Primarias</h3>
+<div class="outline-text-3" id="text-org3626501">
+</div>
+<div id="outline-container-org55608af" class="outline-4">
+<h4 id="org55608af">Documentos Oficiales</h4>
+<div class="outline-text-4" id="text-org55608af">
+<ul class="org-ul">
+<li>Protocolo de Minsk (5 de septiembre de 2014): Documento original firmado en Minsk</li>
+<li>Memorando de Minsk (19 de septiembre de 2014): Aclaraciones técnicas al protocolo</li>
+<li>Paquete de Medidas para la Implementación de los Acuerdos de Minsk (12 de febrero de 2015): Minsk II</li>
+<li>Resolución 2202 del Consejo de Seguridad de la ONU (17 de febrero de 2015): Respaldo internacional</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8d3d1d4" class="outline-4">
+<h4 id="org8d3d1d4">Informes de Monitoreo</h4>
+<div class="outline-text-4" id="text-org8d3d1d4">
+<ul class="org-ul">
+<li>Informes diarios de la Misión Especial de Monitoreo de la OSCE en Ucrania (2014-2022)</li>
+<li>Reportes del Alto Comisionado de la ONU para los Derechos Humanos sobre Ucrania</li>
+<li>Análisis del Instituto Internacional de Estudios Estratégicos (IISS)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org87561f7" class="outline-3">
+<h3 id="org87561f7">Fuentes Secundarias</h3>
+<div class="outline-text-3" id="text-org87561f7">
+</div>
+<div id="outline-container-org5717bd6" class="outline-4">
+<h4 id="org5717bd6">Análisis Académicos</h4>
+<div class="outline-text-4" id="text-org5717bd6">
+<ul class="org-ul">
+<li>European Council on Foreign Relations: "Ukraine, Russia, and the Minsk agreements: A post-mortem"</li>
+<li>Carnegie Endowment for International Peace: "In the Shadow of the Minsk Agreements"</li>
+<li>Chatham House: "The Minsk Conundrum: Western Policy and Russia's War in Eastern Ukraine"</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org44014e2" class="outline-4">
+<h4 id="org44014e2">Perspectivas Periodísticas</h4>
+<div class="outline-text-4" id="text-org44014e2">
+<ul class="org-ul">
+<li>Foreign Policy: "Ukraine and Russia's Minsk Agreement Is a Problematic Peace Plan"</li>
+<li>The Moscow Times: "Explainer: What Are the Minsk Agreements?"</li>
+<li>Kyiv Independent: "What were the Minsk Agreements and why did they fail to bring peace in Ukraine?"</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfb83d67" class="outline-3">
+<h3 id="orgfb83d67">Limitaciones del Análisis Documental</h3>
+<div class="outline-text-3" id="text-orgfb83d67">
+<p>
+Las fuentes presentan inherentes limitaciones debido a:
+</p>
+
+<ol class="org-ol">
+<li><b><b>Acceso Restringido</b></b>: Muchas negociaciones permanecen clasificadas</li>
+<li><b><b>Sesgo Nacional</b></b>: Las fuentes reflejan perspectivas nacionales específicas</li>
+<li><b><b>Evolución Interpretativa</b></b>: Las interpretaciones han cambiado post-invasión 2022</li>
+<li><b><b>Información Fragmentada</b></b>: No existe un archivo completo accesible públicamente</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0bdbafb" class="outline-2">
+<h2 id="org0bdbafb">Conclusiones</h2>
+<div class="outline-text-2" id="text-org0bdbafb">
+<p>
+## Veredicto Final sobre los Acuerdos de Minsk
+</p>
+
+<p>
+The so-called Minsk Agreements, a series of ceasefire agreements with a controversial peace settlement road map that was signed in September 2014 and February 2015,3 de-escalated the war in the Donbas but proved insufficient to fully end hostilities and prevent Russia from invading Ukraine in 2022.
+</p>
+
+<p>
+Los Acuerdos de Minsk representan un caso paradigmático del fracaso de la diplomacia tradicional europea ante un actor que opera fuera del marco de normas internacionales establecidas. Más que un esfuerzo genuino por la paz, estos acuerdos funcionaron como un mecanismo de legitimación temporal que permitió a Rusia consolidar sus ganancias territoriales mientras preparaba una agresión mayor.
+</p>
+
+<p>
+## Implicaciones para la Arquitectura de Seguridad Europea
+</p>
+
+<p>
+El colapso de Minsk marca el fin de la era post-Guerra Fría en Europa y señala la necesidad de repensar fundamentalmente los mecanismos de seguridad continental. La confianza en que los acuerdos diplomáticos por sí solos pueden resolver conflictos con potencias revisionistas ha demostrado ser una ilusión peligrosa.
+</p>
+
+<p>
+## Relevancia Contemporánea
+</p>
+
+<p>
+La experiencia de Minsk ofrece lecciones cruciales para cualquier futura negociación con Rusia u otros actores que operan con lógicas similares. Los errores cometidos entre 2014 y 2022 no deben repetirse en futuras iniciativas diplomáticas.
+</p>
+
+<p width="600px">
+<img src="./assets/images/minsk_veredicto.png" alt="minsk_veredicto.png" width="600px" />
+<img src="minsk_veredicto.png" alt="minsk_veredicto.png" />
+</p>
+
+<p>
+La historia juzgará los Acuerdos de Minsk no como un esfuerzo noble que falló, sino como una pausa costosa que permitió que una agresión limitada evolucionara hacia una guerra total. Esta conclusión, aunque dura, es esencial para evitar repetir los mismos errores en el futuro inmediato de Europa.
+</p>
+
+<p>
+&#x2014;
+<b>Documento generado el 20 de agosto de 2025</b>
+<b>Basado en análisis de fuentes primarias y secundarias disponibles públicamente</b>
+</p>
+
+
+<p class="post-meta">Publicado el 2025-08-20 14:34 | Tags: geopolitica, tecnologia</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+</div>
+<footer>
+<div class="container">
+<p>© 2026 El Mapa y El Código</p>
+<p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
+<p>Última actualización: 2026-02-06 20:18</p>
+</div>
+</footer>
+<!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
+<script type="text/javascript">
+var sc_project=13142374; 
+var sc_invisible=0; 
+var sc_security="cb02053b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/13142374/0/cb02053b/0/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+</body>
+</div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-07-19 sáb 19:49 -->
+<!-- 2026-02-06 vie 20:19 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>About - Acerca del Blog</title>
@@ -771,9 +771,9 @@ gtag('config', 'G-D0JDZ5P5C1');
 <div id="content" class="content">
 <h1 class="title">About - Acerca del Blog</h1>
 
-<div id="outline-container-orgccf14b2" class="outline-2">
-<h2 id="orgccf14b2">👤 Acerca de El Mapa y El Código</h2>
-<div class="outline-text-2" id="text-orgccf14b2">
+<div id="outline-container-orgf6a44f5" class="outline-2">
+<h2 id="orgf6a44f5">👤 Acerca de El Mapa y El Código</h2>
+<div class="outline-text-2" id="text-orgf6a44f5">
 <p>
 Explora la intersección de geoestrategia, política y tecnología con un enfoque en Emacs para análisis geopolítico
 </p>
@@ -783,9 +783,9 @@ Este blog explora la intersección de geoestrategia, política y tecnología, co
 </p>
 </div>
 
-<div id="outline-container-org2673355" class="outline-3">
-<h3 id="org2673355">🎯 Misión</h3>
-<div class="outline-text-3" id="text-org2673355">
+<div id="outline-container-org682d67f" class="outline-3">
+<h3 id="org682d67f">🎯 Misión</h3>
+<div class="outline-text-3" id="text-org682d67f">
 <p>
 Proporcionar análisis profundos sobre:
 </p>
@@ -799,9 +799,9 @@ Proporcionar análisis profundos sobre:
 </div>
 </div>
 
-<div id="outline-container-org072450d" class="outline-3">
-<h3 id="org072450d">👨‍💻 Autor</h3>
-<div class="outline-text-3" id="text-org072450d">
+<div id="outline-container-org6904aec" class="outline-3">
+<h3 id="org6904aec">👨‍💻 Autor</h3>
+<div class="outline-text-3" id="text-org6904aec">
 <p>
 GeoClaude4 - Especialista en análisis geopolítico y tecnología
 </p>
@@ -812,9 +812,9 @@ Contacto: mybloggingnotes@gmail.com
 </div>
 </div>
 
-<div id="outline-container-org5e3503c" class="outline-3">
-<h3 id="org5e3503c">🛠️ Tecnología</h3>
-<div class="outline-text-3" id="text-org5e3503c">
+<div id="outline-container-org14a20e5" class="outline-3">
+<h3 id="org14a20e5">🛠️ Tecnología</h3>
+<div class="outline-text-3" id="text-org14a20e5">
 <p>
 Este blog está construido con:
 </p>
@@ -833,9 +833,9 @@ Este blog está construido con:
 </div>
 <footer>
 <div class="container">
-<p>© 2025 El Mapa y El Código</p>
+<p>© 2026 El Mapa y El Código</p>
 <p>Generado con Emacs y org-publish | ⚡ Powered by GeoClaude4</p>
-<p>Última actualización: 2025-07-19 19:49</p>
+<p>Última actualización: 2026-02-06 20:19</p>
 </div>
 </footer>
 <!-- Default Statcounter code for MyGitHubBlogs https://bloggingconemacsyai.netlify.app/ -->
